@@ -1,0 +1,111 @@
+<!doctype html><html lang="zh-Hant-HK"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Light Academia  · 風格卡</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;1,500&family=Lora:ital@0;1&family=Homemade+Apple&display=swap">
+<link rel="stylesheet" href="../blocks.css">
+<style>:root{--bg:#F8F3E9;--fg:#3E3328;--muted:#5B4B3B;--surface:#EFE7D6;--border:#D9CCB4;--accent:#4F5A3D;--accent-fg:#FFFFFF;--accent-grad:linear-gradient(90deg,#B79C7B,#8A8F6A);--radius:6px;--radius-sm:4px;--shadow:0 14px 34px rgba(62,51,40,.10);--btn-shadow:0 2px 0 rgba(62,51,40,.16);--art-bg:linear-gradient(115deg,rgba(255,236,190,.45) 0 40px,transparent 40px 90px),linear-gradient(180deg,#EADFCB,#C7D6DE);--media-bg:linear-gradient(180deg,#EFE7D6,#D9CCB4);--cta-bg:#EFE7D6;--input-bg:#FFFFFF;--ok:#3F6B4E;--warn:#A6483A;--font-display:'Cormorant Garamond','Noto Serif TC',serif;--font-body:Lora,'Noto Serif TC',serif;--font-mono:ui-monospace,'SF Mono',Menlo,monospace;--focus-ring:var(--accent);}
+
+
+body{background:linear-gradient(180deg,rgba(255,236,190,.28),transparent 30%),var(--bg)}
+body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;opacity:.35;
+ background-image:repeating-linear-gradient(180deg,transparent 0 27px,rgba(62,51,40,.10) 27px 28px)}
+.card,.plan,.quote,.tile-c,.rows,.log,.mock,.badge-card,.infolist{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);box-shadow:var(--shadow)}
+.hero h1{font-family:var(--font-display);font-weight:600;letter-spacing:.02em}
+.hero .eyebrow{font-family:'Homemade Apple',cursive;font-size:14px;color:var(--muted)}
+.sec-title{font-family:var(--font-display);font-weight:600;letter-spacing:.02em}
+.sec-title::after{content:"";display:block;width:110px;height:3px;margin-top:12px;background:linear-gradient(90deg,rgba(183,156,123,.85),rgba(138,143,106,.35),transparent)}
+.btn{border-radius:var(--radius-sm);font-family:var(--font-body)}
+.btn-primary{background:var(--accent);color:var(--accent-fg);border:1px solid var(--accent)}
+.btn-secondary{background:transparent;border:1px solid var(--border);color:var(--fg)}
+.chip{border-radius:999px;background:#FFFFFF;border:1px solid var(--border);color:var(--fg);font-size:13px}
+.avatar{border-radius:50%;background:#EADFCB;border:1px solid var(--border);color:var(--fg);font-family:var(--font-display)}
+.tag{background:var(--accent);color:var(--accent-fg);border-radius:999px;font-size:11px;letter-spacing:.06em}
+.tile-c .ph{color:transparent;background-image:linear-gradient(115deg,rgba(255,255,255,.35) 0 30px,transparent 30px),var(--art-bg)}
+.rows article{border-bottom:1px solid var(--border)}
+.rows article b,.infolist b{font-family:var(--font-display);font-size:1.06em}
+.infolist li{border-bottom:1px solid var(--border);padding-block:14px}
+.plan.featured{outline:1px solid var(--accent);outline-offset:4px}
+.hero-art{border:1px solid var(--border);border-radius:var(--radius);overflow:hidden}
+.hero-art::after{content:"";position:absolute;right:10px;top:10px;width:64px;height:22px;background:rgba(255,236,190,.75);transform:rotate(-12deg);border:1px solid rgba(62,51,40,.18);pointer-events:none}
+
+/* ---- 風格卡專用 ---- */
+body{background:var(--bg);color:var(--fg);font-family:var(--font-body)}
+.cp{max-width:1080px;margin:0 auto;padding:clamp(18px,4vw,40px)}
+.cp-head{border-bottom:2px solid var(--border);padding-bottom:18px;margin-bottom:26px}
+.cp-head h1{margin:.1em 0 .2em;font-family:var(--font-display);font-size:clamp(28px,5vw,46px)}
+.cp-meta{color:var(--muted);font-size:14px}
+.cp-tag{display:inline-block;border:1px solid var(--border);border-radius:999px;padding:3px 10px;font-size:12px;color:var(--muted);margin:0 6px 6px 0}
+.cp h2{font-family:var(--font-display);font-size:clamp(18px,2.4vw,24px);margin:34px 0 6px;padding-bottom:6px;border-bottom:1px solid var(--border)}
+.cp p.desc{color:var(--muted);margin:6px 0 14px;max-width:70ch}
+.sws{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:10px}
+.sw{border:1px solid var(--border);border-radius:10px;padding:9px;background:var(--surface);display:grid;gap:4px}
+.sw i{display:block;height:44px;border-radius:7px;border:1px solid var(--border)}
+.sw b{font-size:13px}.sw code{font:12px var(--font-mono,monospace);color:var(--muted)}
+.sw span{font-size:11px;color:var(--muted)}
+.typo div{border:1px solid var(--border);border-radius:10px;padding:12px 14px;margin-bottom:8px;background:var(--surface)}
+.typo .d{font-family:var(--font-display);font-size:32px;line-height:1.15}
+.typo .b{font-family:var(--font-body);font-size:16px}
+.typo .m{font-family:var(--font-mono,monospace);font-size:14px}
+.typo small{color:var(--muted);font-size:11px;display:block;margin-top:6px}
+.row{display:flex;gap:12px;flex-wrap:wrap;align-items:flex-start}
+.preview{border:1px dashed var(--border);border-radius:12px;overflow:hidden;margin-bottom:12px}
+.preview .lbl{font:11px var(--font-mono,monospace);color:var(--muted);padding:6px 10px;border-bottom:1px dashed var(--border)}
+.preview > div:last-child{transform-origin:top left}
+.cp-foot{margin-top:36px;padding-top:14px;border-top:1px solid var(--border);color:var(--muted);font-size:13px;display:flex;gap:14px;flex-wrap:wrap}
+.cp a{color:var(--accent)}
+@media print{.noprint{display:none}body{background:#fff}.cp{max-width:none;padding:0}.preview{page-break-inside:avoid}}
+</style></head><body>
+<div class="cp">
+  <div class="cp-head">
+    <span class="cp-tag">🏛️ 古典人文 Heritage &amp; Lifestyle</span><span class="cp-tag">15 個 block</span><span class="cp-tag">—</span>
+    <h1> Light Academia <span style="font-size:.6em;color:var(--muted)"></span></h1>
+    <p class="desc" style="font-size:17px;color:var(--fg)">柔和、詩意嘅古典求知 —— 奶油中性色、serif、書本、陽光、亞麻，安靜而精緻。</p>
+    <p class="cp-meta">示範品牌 <b>Lyceum</b> · 主要 CTA「預約試堂」· 行業：語言學校／補習</p>
+  </div>
+
+  <h2>1 · 色票 Palette</h2>
+  <p class="desc">所有元件都只可以用呢組 token（換色 = 改呢幾行）。</p>
+  <div class="sws"><div class="sw"><i style="background:#F8F3E9"></i><b>--bg</b><code>#F8F3E9</code><span>底色 Background</span></div><div class="sw"><i style="background:#3E3328"></i><b>--fg</b><code>#3E3328</code><span>主文字 Text</span></div><div class="sw"><i style="background:#5B4B3B"></i><b>--muted</b><code>#5B4B3B</code><span>次要文字 Muted</span></div><div class="sw"><i style="background:#EFE7D6"></i><b>--surface</b><code>#EFE7D6</code><span>卡片面 Surface</span></div><div class="sw"><i style="background:#D9CCB4"></i><b>--border</b><code>#D9CCB4</code><span>分隔線 Border</span></div><div class="sw"><i style="background:#4F5A3D"></i><b>--accent</b><code>#4F5A3D</code><span>強調色 Accent</span></div><div class="sw"><i style="background:#FFFFFF"></i><b>--accent-fg</b><code>#FFFFFF</code><span>強調上文字</span></div><div class="sw"><i style="background:#3F6B4E"></i><b>--ok</b><code>#3F6B4E</code><span>成功 Success</span></div><div class="sw"><i style="background:#A6483A"></i><b>--warn</b><code>#A6483A</code><span>警告 Warning</span></div></div>
+
+  <h2>2 · 字體 Typography</h2>
+  <p class="desc">最多兩個字重；標題 &#x27;Cormorant Garamond&#x27;,&#x27;Noto Serif TC&#x27;,serif、正文 Lora,&#x27;Noto Serif TC&#x27;,serif。</p>
+  <div class="typo">
+    <div class="d">一頁講清成件事 <small>Display · &#x27;Cormorant Garamond&#x27;,&#x27;Noto Serif TC&#x27;,serif</small></div>
+    <div class="b">正文用 Lora,&#x27;Noto Serif TC&#x27;,serif：16px、行高 1.65，唔會超過 70 個中文字一行。<small>Body</small></div>
+    <div class="m">HK$1,280 · 2026-09-22 · #REF-0042 <small>Mono／數字對齊（ui-monospace,&#x27;SF Mono&#x27;,Menlo,monospace）</small></div>
+  </div>
+
+  <h2>3 · 按鈕 Buttons</h2>
+  <p class="desc">11 個狀態齊：hover 升起、active 壓落、focus 外框（對比 ≥3:1）、disabled 變淡、loading／success。</p>
+  <div class="btn-row"><div class="state"><button class="btn btn-primary " type="button">Primary</button><small>Default</small></div><div class="state"><button class="btn btn-primary is-hover" type="button">Primary</button><small>Hover</small></div><div class="state"><button class="btn btn-primary is-active" type="button">Primary</button><small>Active</small></div><div class="state"><button class="btn btn-primary is-focus" type="button">Primary</button><small>Focus</small></div><div class="state"><button class="btn btn-primary " type="button" disabled>Primary</button><small>Disabled</small></div><div class="state"><button class="btn btn-primary btn-sm" type="button">Small</button><small>btn-sm</small></div><div class="state"><button class="btn btn-primary btn-lg" type="button">Large</button><small>btn-lg</small></div><div class="state"><button class="btn btn-primary btn-secondary" type="button">Secondary</button><small>Secondary</small></div></div>
+
+  <h2>4 · 組件 Components</h2>
+  <div class="row">
+    <article class="card" style="flex:1 1 260px"><span class="ico" aria-hidden="true">◆</span><h3>卡片標題</h3><p>一句講清重點，唔超過兩行。</p></article>
+    <div class="plan" style="flex:1 1 240px"><span class="tag">最受歡迎</span><h3>方案名</h3><div class="price">HK$1,280<small>/月</small></div>
+      <ul><li>包含咩</li><li>包含咩</li></ul><a class="btn btn-primary" href="#">揀呢個</a></div>
+    <blockquote class="quote" style="flex:1 1 260px">客人講嘅一句真話。<span class="avatar">阿</span><b>阿文</b><span>客戶 · 角色</span></blockquote>
+  </div>
+
+  <h2>5 · 真實 section 預覽</h2>
+  <p class="desc">以下係由正式 demo 直接抽落嚟（唔係另畫），所以卡同成品一定一致。</p>
+  <div class="preview"><div class="lbl">hero</div><div><section class="block hero" id="hero"><div class="wrap hero-grid"><div><span class="eyebrow rv">香港 · 語言學校 · 旺角</span><h1>學習係一種美</h1><p class="lead rv">小班 4–6 人、每堂 90 分鐘；導師背景全部寫明（示範身份，唔代表真實資歷）。</p><div class="actions rv"><a class="btn btn-primary" href="#cta">預約試堂 <span class="i" aria-hidden="true">→</span></a><a class="btn btn-secondary" href="#product">睇課程</a></div><p class="note rv">試堂 HK$120（可全額折抵學費）· 免費程度分班測試 · 課室喺旺角</p></div><figure class="hero-art rv"><div class="deco" aria-hidden="true" style="inset:0;background:linear-gradient(115deg,rgba(255,236,190,.45) 0 40px,transparent 40px 90px),linear-gradient(180deg,#EADFCB,#C7D6DE)"></div><figcaption>課室相片位（生成 media/light-academia-hero.jpg 自動代入）</figcaption></figure></div></section></div></div><div class="preview"><div class="lbl">pricing</div><div><section class="block" id="pricing"><div class="wrap"><h2 class="sec-title">學費</h2><p class="sec-sub">按堂數計，唔收報名費；可以分 2 期付。</p><div class="pricing"><article class="plan rv"><h3>試堂</h3><div class="price">HK$120 <small>/ 堂</small></div><p>入真班聽一堂 90 分鐘。</p><ul><li>真班試堂（4–6 人）</li><li>費用可全額折抵學費</li><li>課後導師 10 分鐘回饋</li></ul><a class="btn btn-secondary" href="#cta">預約試堂</a></article><article class="plan rv featured"><span class="tag">最多人報</span><h3>一期 12 堂</h3><div class="price">HK$3,600 <small>/ 期</small></div><p>英語會話最常報。</p><ul><li>12 堂 × 90 分鐘</li><li>每班最多 6 人</li><li>課後口語錄音回饋</li><li>請假可補 2 堂</li></ul><a class="btn btn-primary" href="#cta">預約試堂</a></article><article class="plan rv"><h3>一對一</h3><div class="price">HK$520 <small>/ 堂</small></div><p>時間自訂，進度按你。</p><ul><li>60 分鐘一對一</li><li>時間自訂（需 24 小時前預約）</li><li>教材按目標調整</li><li>一次最多買 10 堂</li></ul><a class="btn btn-secondary" href="#cta">預約傾時間</a></article></div></div></section></div></div><div class="preview"><div class="lbl">venue</div><div><section class="block" id="venue"><div class="wrap"><h2 class="sec-title">校舍資訊</h2><p class="sec-sub">示範網站：地址、開放時間同收費條件全部虛構。</p><ul class="infolist"><li><b>地址</b><span>旺角彌敦道（示範地址）· 3 樓 · 有升降機</span></li><li><b>開放時間</b><span>星期一至五 14:00–22:00；星期六 10:00–18:00；星期日休息</span></li><li><b>課室</b><span>4 間課室 · 每間最多 6 人 · 有白板同錄音設備</span></li><li><b>交通</b><span>旺角站出口步行 4 分鐘；樓下有巴士同小巴</span></li><li><b>轉班同請假</b><span>開課 7 日內可以轉班一次；請假可以補堂（一期最多 2 堂）</span></li><li><b>退費</b><span>開課前可以全額退；開課後按未上堂數退，扣 HK$200 手續費</span></li></ul></div></section></div></div>
+
+  <h2>6 · 動效（Pro 版）</h2>
+  <p class="desc">基本版純 CSS；Pro 版有載入幕、入場、scroll reveal、微互動。跟系統設定「減少動態」會自動降級。</p>
+  <p style="font:13px var(--font-mono,monospace);color:var(--muted)"></p>
+
+  <h2>7 · 點用</h2>
+  <ul style="color:var(--muted);font-size:14px">
+    <li>Tokens：<code>themes/light-academia.json</code>（含 <code>snippet_css</code> 同 Tailwind <code>theme.extend</code>）</li>
+    <li>Demo：<a href="../light-academia.html">基本版</a> · <a href="../light-academia-pro.html">Pro 動效版</a></li>
+    <li>改客人內容：<code>python3 gen_project.py brief.json</code>（自動驗 WCAG 4.5:1）</li>
+  </ul>
+
+  <div class="cp-foot">
+    <button class="btn btn-primary btn-sm noprint" type="button" onclick="window.print()">🖨️ Print／存 PDF</button>
+    <a href="index.html">← 全部風格卡</a>
+    <span>UIUX Style · Light Academia · 示範內容全部虛構</span>
+  </div>
+</div>
+</body></html>

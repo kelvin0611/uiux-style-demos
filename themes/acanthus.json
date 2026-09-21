@@ -1,0 +1,56 @@
+{
+ "slug": "acanthus",
+ "name": "Acanthus",
+ "cn": "",
+ "family": "🏛️ 古典人文 Heritage & Lifestyle",
+ "industry": "婚禮統籌／高端花藝",
+ "brand": "Laurel",
+ "cta": "預約諮詢",
+ "sections": "rows`：服務套餐 · `products`：作品 · `venue`：流程同檔期",
+ "css_variables": {
+  "--bg": "#F6F2E8",
+  "--fg": "#243020",
+  "--muted": "#5E6B3A",
+  "--surface": "rgba(255,255,255,.72)",
+  "--border": "rgba(36,48,32,.22)",
+  "--accent": "#7A5C2E",
+  "--accent-fg": "#F6F2E8",
+  "--accent-grad": "linear-gradient(135deg,#7A5C2E,#B08D57)",
+  "--radius": "14px",
+  "--radius-sm": "8px",
+  "--shadow": "0 12px 28px rgba(36,48,32,.10)",
+  "--btn-shadow": "0 4px 0 rgba(122,92,46,.26)",
+  "--art-bg": "linear-gradient(160deg,#E6E1D3,#B08D57 62%,#243020)",
+  "--media-bg": "linear-gradient(160deg,#F6F2E8,#D9D3C3)",
+  "--cta-bg": "linear-gradient(180deg,#F1ECE0,#E6E1D3)",
+  "--input-bg": "rgba(255,255,255,.92)",
+  "--ok": "#4E6146",
+  "--warn": "#9C3B2E",
+  "--font-display": "'Cormorant','Noto Serif TC',serif",
+  "--font-body": "'Spectral','Noto Serif TC',serif",
+  "--font-mono": "'Spectral',ui-monospace,'SFMono-Regular',monospace",
+  "--focus-ring": "var(--accent)"
+ },
+ "fonts": {
+  "google_url": "https://fonts.googleapis.com/css2?family=Cormorant:wght@500;700&family=Spectral:ital@0;1&display=swap",
+  "display": "'Cormorant','Noto Serif TC',serif",
+  "body": "'Spectral','Noto Serif TC',serif",
+  "mono": "'Spectral',ui-monospace,'SFMono-Regular',monospace"
+ },
+ "radius": {
+  "base": "14px",
+  "sm": "8px"
+ },
+ "shadow": {
+  "card": "0 12px 28px rgba(36,48,32,.10)",
+  "button": "0 4px 0 rgba(122,92,46,.26)"
+ },
+ "focus_ring": "var(--accent)",
+ "motion": {},
+ "demo": {
+  "basic": "Demos/acanthus.html",
+  "pro": "Demos/acanthus-pro.html"
+ },
+ "snippet_css": ":root{\n  --bg: #F6F2E8;\n  --fg: #243020;\n  --muted: #5E6B3A;\n  --surface: rgba(255,255,255,.72);\n  --border: rgba(36,48,32,.22);\n  --accent: #7A5C2E;\n  --accent-fg: #F6F2E8;\n  --accent-grad: linear-gradient(135deg,#7A5C2E,#B08D57);\n  --radius: 14px;\n  --radius-sm: 8px;\n  --shadow: 0 12px 28px rgba(36,48,32,.10);\n  --btn-shadow: 0 4px 0 rgba(122,92,46,.26);\n  --art-bg: linear-gradient(160deg,#E6E1D3,#B08D57 62%,#243020);\n  --media-bg: linear-gradient(160deg,#F6F2E8,#D9D3C3);\n  --cta-bg: linear-gradient(180deg,#F1ECE0,#E6E1D3);\n  --input-bg: rgba(255,255,255,.92);\n  --ok: #4E6146;\n  --warn: #9C3B2E;\n  --font-display: 'Cormorant','Noto Serif TC',serif;\n  --font-body: 'Spectral','Noto Serif TC',serif;\n  --font-mono: 'Spectral',ui-monospace,'SFMono-Regular',monospace;\n  --focus-ring: var(--accent);\n}",
+ "snippet_tailwind": "// tailwind.config.js → theme.extend\n{\n  \"colors\": {\n    \"bg\": \"#F6F2E8\",\n    \"fg\": \"#243020\",\n    \"muted\": \"#5E6B3A\",\n    \"surface\": \"rgba(255,255,255,.72)\",\n    \"border\": \"rgba(36,48,32,.22)\",\n    \"accent\": \"#7A5C2E\",\n    \"accent-fg\": \"#F6F2E8\",\n    \"ok\": \"#4E6146\",\n    \"warn\": \"#9C3B2E\",\n    \"focus-ring\": \"var(--accent)\"\n  },\n  \"borderRadius\": {\n    \"DEFAULT\": \"8px\",\n    \"lg\": \"14px\"\n  },\n  \"fontFamily\": {\n    \"display\": [\n      \"'Cormorant','Noto Serif TC',serif\"\n    ],\n    \"body\": [\n      \"'Spectral','Noto Serif TC',serif\"\n    ]\n  }\n}"
+}

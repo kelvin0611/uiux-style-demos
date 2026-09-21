@@ -1,0 +1,55 @@
+{
+ "slug": "kawaii",
+ "name": "Kawaii",
+ "cn": "",
+ "family": "✏️ 藝術手作 Artistic & Handmade",
+ "industry": "文具／生活雜貨",
+ "brand": "Momo` / `Momo Club",
+ "cta": "拎試用裝",
+ "sections": "",
+ "css_variables": {
+  "--bg": "#FFF7FA",
+  "--fg": "#5B4636",
+  "--muted": "#75665A",
+  "--surface": "#FFFFFF",
+  "--border": "#FFD9E6",
+  "--accent": "#FF7FAE",
+  "--accent-fg": "#4A3428",
+  "--accent-grad": "linear-gradient(#FFB7C5,#FF7FAE)",
+  "--radius": "26px",
+  "--radius-sm": "16px",
+  "--shadow": "0 10px 24px rgba(255,183,197,.42)",
+  "--btn-shadow": "0 5px 0 #FF9EBB",
+  "--art-bg": "radial-gradient(circle at 30% 25%,#FFF1A8,#FFB7C5)",
+  "--media-bg": "radial-gradient(circle at 30% 25%,#FFF1A8,#FFC9DD)",
+  "--cta-bg": "#FFE3EE",
+  "--input-bg": "#FFF7FA",
+  "--ok": "#B5EAD7",
+  "--warn": "#FF7FAE",
+  "--font-display": "\"Mochiy Pop One\",\"M PLUS Rounded 1c\",sans-serif",
+  "--font-body": "\"M PLUS Rounded 1c\",\"Noto Sans TC\",sans-serif",
+  "--focus-ring": "#FF0F67"
+ },
+ "fonts": {
+  "google_url": "https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=M+PLUS+Rounded+1c:wght@400;700;800&display=swap",
+  "display": "\"Mochiy Pop One\",\"M PLUS Rounded 1c\",sans-serif",
+  "body": "\"M PLUS Rounded 1c\",\"Noto Sans TC\",sans-serif",
+  "mono": ""
+ },
+ "radius": {
+  "base": "26px",
+  "sm": "16px"
+ },
+ "shadow": {
+  "card": "0 10px 24px rgba(255,183,197,.42)",
+  "button": "0 5px 0 #FF9EBB"
+ },
+ "focus_ring": "#FF0F67",
+ "motion": {},
+ "demo": {
+  "basic": "Demos/kawaii.html",
+  "pro": "Demos/kawaii-pro.html"
+ },
+ "snippet_css": ":root{\n  --bg: #FFF7FA;\n  --fg: #5B4636;\n  --muted: #75665A;\n  --surface: #FFFFFF;\n  --border: #FFD9E6;\n  --accent: #FF7FAE;\n  --accent-fg: #4A3428;\n  --accent-grad: linear-gradient(#FFB7C5,#FF7FAE);\n  --radius: 26px;\n  --radius-sm: 16px;\n  --shadow: 0 10px 24px rgba(255,183,197,.42);\n  --btn-shadow: 0 5px 0 #FF9EBB;\n  --art-bg: radial-gradient(circle at 30% 25%,#FFF1A8,#FFB7C5);\n  --media-bg: radial-gradient(circle at 30% 25%,#FFF1A8,#FFC9DD);\n  --cta-bg: #FFE3EE;\n  --input-bg: #FFF7FA;\n  --ok: #B5EAD7;\n  --warn: #FF7FAE;\n  --font-display: \"Mochiy Pop One\",\"M PLUS Rounded 1c\",sans-serif;\n  --font-body: \"M PLUS Rounded 1c\",\"Noto Sans TC\",sans-serif;\n  --focus-ring: #FF0F67;\n}",
+ "snippet_tailwind": "// tailwind.config.js → theme.extend\n{\n  \"colors\": {\n    \"bg\": \"#FFF7FA\",\n    \"fg\": \"#5B4636\",\n    \"muted\": \"#75665A\",\n    \"surface\": \"#FFFFFF\",\n    \"border\": \"#FFD9E6\",\n    \"accent\": \"#FF7FAE\",\n    \"accent-fg\": \"#4A3428\",\n    \"ok\": \"#B5EAD7\",\n    \"warn\": \"#FF7FAE\",\n    \"focus-ring\": \"#FF0F67\"\n  },\n  \"borderRadius\": {\n    \"DEFAULT\": \"16px\",\n    \"lg\": \"26px\"\n  },\n  \"fontFamily\": {\n    \"display\": [\n      \"\\\"Mochiy Pop One\\\",\\\"M PLUS Rounded 1c\\\",sans-serif\"\n    ],\n    \"body\": [\n      \"\\\"M PLUS Rounded 1c\\\",\\\"Noto Sans TC\\\",sans-serif\"\n    ]\n  }\n}"
+}

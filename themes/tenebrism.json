@@ -1,0 +1,55 @@
+{
+ "slug": "tenebrism",
+ "name": "Tenebrism",
+ "cn": "",
+ "family": "✏️ 藝術手作 Artistic & Handmade",
+ "industry": "高級餐飲／威士忌吧",
+ "brand": "Lumen` / `Lumen Table",
+ "cta": "訂位",
+ "sections": "",
+ "css_variables": {
+  "--bg": "#050505",
+  "--fg": "#F5F0E6",
+  "--muted": "#C9BFAE",
+  "--surface": "#120D08",
+  "--border": "#2B2114",
+  "--accent": "#F2C57C",
+  "--accent-fg": "#120B04",
+  "--radius": "0px",
+  "--radius-sm": "0px",
+  "--shadow": "0 30px 60px rgba(0,0,0,.85)",
+  "--btn-shadow": "none",
+  "--art-bg": "radial-gradient(circle at 50% 42%,#F2C57C,#4A0F0F 58%,#050505)",
+  "--media-bg": "radial-gradient(circle at 50% 45%,#F2C57C,#4A0F0F 60%,#050505)",
+  "--cta-bg": "#140F09",
+  "--input-bg": "#0A0705",
+  "--ok": "#F2C57C",
+  "--warn": "#8C2B2B",
+  "--font-display": "'Playfair Display',serif",
+  "--font-body": "'Cormorant Garamond',Georgia,serif",
+  "--font-mono": "'Courier New',monospace",
+  "--focus-ring": "var(--accent)"
+ },
+ "fonts": {
+  "google_url": "https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Cormorant+Garamond:wght@300;400;600&display=swap",
+  "display": "'Playfair Display',serif",
+  "body": "'Cormorant Garamond',Georgia,serif",
+  "mono": "'Courier New',monospace"
+ },
+ "radius": {
+  "base": "0px",
+  "sm": "0px"
+ },
+ "shadow": {
+  "card": "0 30px 60px rgba(0,0,0,.85)",
+  "button": "none"
+ },
+ "focus_ring": "var(--accent)",
+ "motion": {},
+ "demo": {
+  "basic": "Demos/tenebrism.html",
+  "pro": "Demos/tenebrism-pro.html"
+ },
+ "snippet_css": ":root{\n  --bg: #050505;\n  --fg: #F5F0E6;\n  --muted: #C9BFAE;\n  --surface: #120D08;\n  --border: #2B2114;\n  --accent: #F2C57C;\n  --accent-fg: #120B04;\n  --radius: 0px;\n  --radius-sm: 0px;\n  --shadow: 0 30px 60px rgba(0,0,0,.85);\n  --btn-shadow: none;\n  --art-bg: radial-gradient(circle at 50% 42%,#F2C57C,#4A0F0F 58%,#050505);\n  --media-bg: radial-gradient(circle at 50% 45%,#F2C57C,#4A0F0F 60%,#050505);\n  --cta-bg: #140F09;\n  --input-bg: #0A0705;\n  --ok: #F2C57C;\n  --warn: #8C2B2B;\n  --font-display: 'Playfair Display',serif;\n  --font-body: 'Cormorant Garamond',Georgia,serif;\n  --font-mono: 'Courier New',monospace;\n  --focus-ring: var(--accent);\n}",
+ "snippet_tailwind": "// tailwind.config.js → theme.extend\n{\n  \"colors\": {\n    \"bg\": \"#050505\",\n    \"fg\": \"#F5F0E6\",\n    \"muted\": \"#C9BFAE\",\n    \"surface\": \"#120D08\",\n    \"border\": \"#2B2114\",\n    \"accent\": \"#F2C57C\",\n    \"accent-fg\": \"#120B04\",\n    \"ok\": \"#F2C57C\",\n    \"warn\": \"#8C2B2B\",\n    \"focus-ring\": \"var(--accent)\"\n  },\n  \"borderRadius\": {\n    \"DEFAULT\": \"0px\",\n    \"lg\": \"0px\"\n  },\n  \"fontFamily\": {\n    \"display\": [\n      \"'Playfair Display',serif\"\n    ],\n    \"body\": [\n      \"'Cormorant Garamond',Georgia,serif\"\n    ]\n  }\n}"
+}

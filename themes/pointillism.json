@@ -1,0 +1,54 @@
+{
+ "slug": "pointillism",
+ "name": "Pointillism",
+ "cn": "",
+ "family": "✏️ 藝術手作 Artistic & Handmade",
+ "industry": "手作／藝術品牌",
+ "brand": "Stipple` / `Stipple Print",
+ "cta": "買作品",
+ "sections": "",
+ "css_variables": {
+  "--bg": "#FBF8F1",
+  "--fg": "#2E3A44",
+  "--muted": "#5F6B75",
+  "--surface": "#FFFFFF",
+  "--border": "#E2DCD0",
+  "--accent": "#7FB3D5",
+  "--accent-fg": "#12303F",
+  "--focus-ring": "#2F6E8F",
+  "--radius": "14px",
+  "--radius-sm": "10px",
+  "--shadow": "0 8px 18px rgba(80,100,120,.14)",
+  "--btn-shadow": "none",
+  "--art-bg": "radial-gradient(circle at 30% 25%,#F4D35E,#7FB3D5)",
+  "--media-bg": "radial-gradient(circle at 30% 25%,#F4D35E,#A3C585)",
+  "--cta-bg": "#F1EAE0",
+  "--input-bg": "#FFFFFF",
+  "--ok": "#6FA37A",
+  "--warn": "#C4573F",
+  "--font-display": "Fraunces,'DM Serif Display',serif",
+  "--font-body": "'DM Sans','Noto Sans TC',sans-serif"
+ },
+ "fonts": {
+  "google_url": "https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&family=DM+Sans:wght@400;500;700&display=swap",
+  "display": "Fraunces,'DM Serif Display',serif",
+  "body": "'DM Sans','Noto Sans TC',sans-serif",
+  "mono": ""
+ },
+ "radius": {
+  "base": "14px",
+  "sm": "10px"
+ },
+ "shadow": {
+  "card": "0 8px 18px rgba(80,100,120,.14)",
+  "button": "none"
+ },
+ "focus_ring": "#2F6E8F",
+ "motion": {},
+ "demo": {
+  "basic": "Demos/pointillism.html",
+  "pro": "Demos/pointillism-pro.html"
+ },
+ "snippet_css": ":root{\n  --bg: #FBF8F1;\n  --fg: #2E3A44;\n  --muted: #5F6B75;\n  --surface: #FFFFFF;\n  --border: #E2DCD0;\n  --accent: #7FB3D5;\n  --accent-fg: #12303F;\n  --focus-ring: #2F6E8F;\n  --radius: 14px;\n  --radius-sm: 10px;\n  --shadow: 0 8px 18px rgba(80,100,120,.14);\n  --btn-shadow: none;\n  --art-bg: radial-gradient(circle at 30% 25%,#F4D35E,#7FB3D5);\n  --media-bg: radial-gradient(circle at 30% 25%,#F4D35E,#A3C585);\n  --cta-bg: #F1EAE0;\n  --input-bg: #FFFFFF;\n  --ok: #6FA37A;\n  --warn: #C4573F;\n  --font-display: Fraunces,'DM Serif Display',serif;\n  --font-body: 'DM Sans','Noto Sans TC',sans-serif;\n}",
+ "snippet_tailwind": "// tailwind.config.js → theme.extend\n{\n  \"colors\": {\n    \"bg\": \"#FBF8F1\",\n    \"fg\": \"#2E3A44\",\n    \"muted\": \"#5F6B75\",\n    \"surface\": \"#FFFFFF\",\n    \"border\": \"#E2DCD0\",\n    \"accent\": \"#7FB3D5\",\n    \"accent-fg\": \"#12303F\",\n    \"focus-ring\": \"#2F6E8F\",\n    \"ok\": \"#6FA37A\",\n    \"warn\": \"#C4573F\"\n  },\n  \"borderRadius\": {\n    \"DEFAULT\": \"10px\",\n    \"lg\": \"14px\"\n  },\n  \"fontFamily\": {\n    \"display\": [\n      \"Fraunces,'DM Serif Display',serif\"\n    ],\n    \"body\": [\n      \"'DM Sans','Noto Sans TC',sans-serif\"\n    ]\n  }\n}"
+}

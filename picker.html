@@ -1,0 +1,1484 @@
+<!doctype html><html lang="zh-Hant-HK"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>揀風格 · UIUX Style 57 個</title>
+<style>
+:root{--bg:#0B0D12;--fg:#E9EEF5;--muted:#94A1B2;--surf:#141922;--line:#242B36;--acc:#4EA1FF}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:15px/1.55 -apple-system,"Noto Sans TC",system-ui,sans-serif}
+header{padding:26px 26px 0;max-width:1400px;margin:auto}
+h1{margin:0 0 6px;font-size:clamp(24px,3.4vw,38px);letter-spacing:-.02em}
+.sub{color:var(--muted);margin:0 0 18px;max-width:74ch}
+.bar{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin-bottom:12px}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+input[type=search]{flex:1 1 260px;min-height:44px;padding:10px 14px;border-radius:10px;border:1px solid var(--line);background:#0F141C;color:var(--fg);font-size:15px}
+.fchip{border:1px solid var(--line);background:var(--surf);color:var(--fg);border-radius:999px;padding:8px 14px;min-height:38px;cursor:pointer;font-size:14px}
+.fchip[aria-pressed=true]{background:var(--acc);border-color:var(--acc);color:#04121F;font-weight:600}
+.count{color:var(--muted);font-size:13px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(268px,1fr));gap:12px;padding:8px 26px 120px;max-width:1400px;margin:auto}
+.card{background:var(--surf);border:1px solid var(--line);border-radius:14px;padding:14px;display:grid;gap:7px}
+.card[hidden]{display:none}
+.sw{display:flex;gap:6px}.sw i{display:block;height:26px;border-radius:7px;flex:1}
+h3{margin:0;font-size:16px;display:flex;justify-content:space-between;gap:8px;align-items:baseline}
+.cn{font-size:11px;color:var(--muted);font-weight:400}
+.ind{margin:0;font-size:13px;color:#CBD5E1}
+.brand{margin:0;font-size:13px;color:var(--muted)}
+.font{margin:0;font-size:17px;border:1px dashed var(--line);border-radius:8px;padding:6px 9px}
+.acts{display:flex;gap:8px;align-items:center;margin-top:2px}
+.acts a{color:var(--acc);text-decoration:none;font-size:13px;font-weight:600}
+.add{margin-left:auto;border:1px solid var(--line);background:#0F141C;color:var(--fg);border-radius:8px;padding:7px 11px;cursor:pointer;font-size:13px}
+.add[data-on="1"]{background:#1E7A4E;border-color:#1E7A4E;color:#fff}
+#tray{position:fixed;left:0;right:0;bottom:0;background:#0E1319;border-top:1px solid var(--line);padding:12px 26px;display:flex;gap:12px;align-items:center;flex-wrap:wrap}
+#tray b{font-size:14px}
+#tray .list{color:var(--muted);font-size:13px;flex:1 1 340px}
+#tray button{min-height:40px;border-radius:9px;border:1px solid var(--line);background:var(--surf);color:var(--fg);padding:9px 14px;cursor:pointer;font-size:14px}
+#tray button.p{background:var(--acc);color:#04121F;border-color:var(--acc);font-weight:600}
+.empty{color:var(--muted);padding:20px 26px}
+</style></head><body>
+<header>
+  <h1>揀一個風格，直接睇成品</h1>
+  <p class="sub">57 個風格 · 每個都有 <b>基本版</b>（純 CSS）同 <b>Pro 版</b>（動效）。揀好之後可以「加入候選」，
+  再匯出清單俾客／自己留底；每個風格嘅 tokens 亦已經匯出成 JSON，落單之後可以直接套落客戶主題。
+  要換頁過場（View Transitions）就經 HTTP 開，唔好用 file://。</p>
+  <div class="bar">
+    <label class="sr-only" for="q">搜尋風格（風格名、行業、品牌、用途）</label>
+    <input id="q" type="search" placeholder="搜尋：風格名、行業、品牌、⋯（按 / 聚焦）" aria-describedby="count">
+    <span class="count" id="count"></span>
+  </div>
+  <div class="bar" id="fams"><button class="fchip" type="button" data-k="古典人文" aria-pressed="false">古典人文 <span style="opacity:.6">22</span></button><button class="fchip" type="button" data-k="藝術手作" aria-pressed="false">藝術手作 <span style="opacity:.6">10</span></button><button class="fchip" type="button" data-k="秩序理性" aria-pressed="false">秩序理性 <span style="opacity:.6">7</span></button><button class="fchip" type="button" data-k="張力反叛" aria-pressed="false">張力反叛 <span style="opacity:.6">7</span></button><button class="fchip" type="button" data-k="數碼懷舊" aria-pressed="false">數碼懷舊 <span style="opacity:.6">7</span></button><button class="fchip" type="button" data-k="立體質感" aria-pressed="false">立體質感 <span style="opacity:.6">4</span></button></div>
+  <div class="bar" id="uses"><button class="fchip" type="button" data-k="品牌 / 內容頁" aria-pressed="false">品牌 / 內容頁 <span style="opacity:.6">21</span></button><button class="fchip" type="button" data-k="商店 / 商品" aria-pressed="false">商店 / 商品 <span style="opacity:.6">12</span></button><button class="fchip" type="button" data-k="作品集 / 工作室" aria-pressed="false">作品集 / 工作室 <span style="opacity:.6">11</span></button><button class="fchip" type="button" data-k="餐飲 / 活動" aria-pressed="false">餐飲 / 活動 <span style="opacity:.6">8</span></button><button class="fchip" type="button" data-k="Landing / SaaS" aria-pressed="false">Landing / SaaS <span style="opacity:.6">6</span></button><button class="fchip" type="button" data-k="其他" aria-pressed="false">其他 <span style="opacity:.6">5</span></button><button class="fchip" type="button" data-k="教育 / 課程" aria-pressed="false">教育 / 課程 <span style="opacity:.6">4</span></button></div>
+  <div class="bar" id="inds"><button class="fchip" type="button" data-k="婚禮統籌" aria-pressed="false">婚禮統籌 <span style="opacity:.6">1</span></button><button class="fchip" type="button" data-k="兒童教育" aria-pressed="false">兒童教育 <span style="opacity:.6">1</span></button><button class="fchip" type="button" data-k="精品酒店" aria-pressed="false">精品酒店 <span style="opacity:.6">1</span></button><button class="fchip" type="button" data-k="香氛" aria-pressed="false">香氛 <span style="opacity:.6">1</span></button><button class="fchip" type="button" data-k="AI" aria-pressed="false">AI <span style="opacity:.6">1</span></button><button class="fchip" type="button" data-k="歌劇" aria-pressed="false">歌劇 <span style="opacity:.6">1</span></button><button class="fchip" type="button" data-k="建築" aria-pressed="false">建築 <span style="opacity:.6">1</span></button><button class="fchip" type="button" data-k="個人作品集" aria-pressed="false">個人作品集 <span style="opacity:.6">1</span></button><button class="fchip" type="button" data-k="手作市集" aria-pressed="false">手作市集 <span style="opacity:.6">1</span></button><button class="fchip" type="button" data-k="開發者工具" aria-pressed="false">開發者工具 <span style="opacity:.6">1</span></button><button class="fchip" type="button" data-k="兒童 app" aria-pressed="false">兒童 app <span style="opacity:.6">1</span></button><button class="fchip" type="button" data-k="UX 顧問" aria-pressed="false">UX 顧問 <span style="opacity:.6">1</span></button><button class="fchip" type="button" data-k="甜點烘焙" aria-pressed="false">甜點烘焙 <span style="opacity:.6">1</span></button><button class="fchip" type="button" data-k="網絡安全" aria-pressed="false">網絡安全 <span style="opacity:.6">1</span></button><button class="fchip" type="button" data-k="電子音樂節" aria-pressed="false">電子音樂節 <span style="opacity:.6">1</span></button><button class="fchip" type="button" data-k="推理遊戲" aria-pressed="false">推理遊戲 <span style="opacity:.6">1</span></button><button class="fchip" type="button" data-k="深度報導媒體" aria-pressed="false">深度報導媒體 <span style="opacity:.6">1</span></button><button class="fchip" type="button" data-k="冥想" aria-pressed="false">冥想 <span style="opacity:.6">1</span></button><button class="fchip" type="button" data-k="有機農產" aria-pressed="false">有機農產 <span style="opacity:.6">1</span></button><button class="fchip" type="button" data-k="高級珠寶" aria-pressed="false">高級珠寶 <span style="opacity:.6">1</span></button><button class="fchip" type="button" data-k="SaaS 儀表板" aria-pressed="false">SaaS 儀表板 <span style="opacity:.6">1</span></button><button class="fchip" type="button" data-k="獨立書店" aria-pressed="false">獨立書店 <span style="opacity:.6">1</span></button><button class="fchip" type="button" data-k="街頭服飾" aria-pressed="false">街頭服飾 <span style="opacity:.6">1</span></button><button class="fchip" type="button" data-k="家居傢俬" aria-pressed="false">家居傢俬 <span style="opacity:.6">1</span></button><button class="fchip" type="button" data-k="文具" aria-pressed="false">文具 <span style="opacity:.6">1</span></button><button class="fchip" type="button" data-k="Gen Z 潮流品牌" aria-pressed="false">Gen Z 潮流品牌 <span style="opacity:.6">1</span></button><button class="fchip" type="button" data-k="語言學校" aria-pressed="false">語言學校 <span style="opacity:.6">1</span></button><button class="fchip" type="button" data-k="高端時裝" aria-pressed="false">高端時裝 <span style="opacity:.6">1</span></button><button class="fchip" type="button" data-k="品牌體驗 agency" aria-pressed="false">品牌體驗 agency <span style="opacity:.6">1</span></button><button class="fchip" type="button" data-k="活動" aria-pressed="false">活動 <span style="opacity:.6">1</span></button><button class="fchip" type="button" data-k="復古 hi-fi" aria-pressed="false">復古 hi-fi <span style="opacity:.6">1</span></button><button class="fchip" type="button" data-k="生產力 app" aria-pressed="false">生產力 app <span style="opacity:.6">1</span></button><button class="fchip" type="button" data-k="獨立雜誌" aria-pressed="false">獨立雜誌 <span style="opacity:.6">1</span></button><button class="fchip" type="button" data-k="設計工作室" aria-pressed="false">設計工作室 <span style="opacity:.6">1</span></button><button class="fchip" type="button" data-k="精釀烈酒" aria-pressed="false">精釀烈酒 <span style="opacity:.6">1</span></button><button class="fchip" type="button" data-k="海鮮餐廳" aria-pressed="false">海鮮餐廳 <span style="opacity:.6">1</span></button><button class="fchip" type="button" data-k="創作者平台" aria-pressed="false">創作者平台 <span style="opacity:.6">1</span></button><button class="fchip" type="button" data-k="消費科技" aria-pressed="false">消費科技 <span style="opacity:.6">1</span></button><button class="fchip" type="button" data-k="博物館" aria-pressed="false">博物館 <span style="opacity:.6">1</span></button><button class="fchip" type="button" data-k="家用音響控制 app" aria-pressed="false">家用音響控制 app <span style="opacity:.6">1</span></button><button class="fchip" type="button" data-k="獨立遊戲" aria-pressed="false">獨立遊戲 <span style="opacity:.6">1</span></button><button class="fchip" type="button" data-k="手作" aria-pressed="false">手作 <span style="opacity:.6">1</span></button><button class="fchip" type="button" data-k="零售促銷" aria-pressed="false">零售促銷 <span style="opacity:.6">1</span></button><button class="fchip" type="button" data-k="教育教材（語文" aria-pressed="false">教育教材（語文 <span style="opacity:.6">1</span></button><button class="fchip" type="button" data-k="婚禮攝影" aria-pressed="false">婚禮攝影 <span style="opacity:.6">1</span></button><button class="fchip" type="button" data-k="婚禮佈置" aria-pressed="false">婚禮佈置 <span style="opacity:.6">1</span></button><button class="fchip" type="button" data-k="戶外用品" aria-pressed="false">戶外用品 <span style="opacity:.6">1</span></button><button class="fchip" type="button" data-k="手工錶" aria-pressed="false">手工錶 <span style="opacity:.6">1</span></button><button class="fchip" type="button" data-k="沉浸式藝術展" aria-pressed="false">沉浸式藝術展 <span style="opacity:.6">1</span></button><button class="fchip" type="button" data-k="銀行" aria-pressed="false">銀行 <span style="opacity:.6">1</span></button><button class="fchip" type="button" data-k="復古賽車遊戲" aria-pressed="false">復古賽車遊戲 <span style="opacity:.6">1</span></button><button class="fchip" type="button" data-k="高級餐飲" aria-pressed="false">高級餐飲 <span style="opacity:.6">1</span></button><button class="fchip" type="button" data-k="工業" aria-pressed="false">工業 <span style="opacity:.6">1</span></button><button class="fchip" type="button" data-k="獨立音樂" aria-pressed="false">獨立音樂 <span style="opacity:.6">1</span></button><button class="fchip" type="button" data-k="茶葉品牌" aria-pressed="false">茶葉品牌 <span style="opacity:.6">1</span></button><button class="fchip" type="button" data-k="陶藝工作室" aria-pressed="false">陶藝工作室 <span style="opacity:.6">1</span></button><button class="fchip" type="button" data-k="潮流配飾" aria-pressed="false">潮流配飾 <span style="opacity:.6">1</span></button></div>
+  <div class="bar"><button class="fchip" type="button" id="favOnly">★ 只顯示最愛 <span style="opacity:.6" id="favN">0</span></button>
+    <button class="fchip" type="button" id="recOnly">🕘 最近睇過</button>
+    <span class="count" id="hint">／ 搜尋 · ★ 最愛 · ⧉ 複製 tokens 去其他 project 重用</span></div>
+</header>
+<main class="grid" id="grid"><article class="card" data-fam="古典人文" data-ind="婚禮統籌／高端花藝" data-uses="品牌 / 內容頁" data-tokens=":root{
+  --bg: #F6F2E8;
+  --fg: #243020;
+  --muted: #5E6B3A;
+  --surface: rgba(255,255,255,.72);
+  --border: rgba(36,48,32,.22);
+  --accent: #7A5C2E;
+  --accent-fg: #F6F2E8;
+  --accent-grad: linear-gradient(135deg,#7A5C2E,#B08D57);
+  --radius: 14px;
+  --radius-sm: 8px;
+  --shadow: 0 12px 28px rgba(36,48,32,.10);
+  --btn-shadow: 0 4px 0 rgba(122,92,46,.26);
+  --art-bg: linear-gradient(160deg,#E6E1D3,#B08D57 62%,#243020);
+  --media-bg: linear-gradient(160deg,#F6F2E8,#D9D3C3);
+  --cta-bg: linear-gradient(180deg,#F1ECE0,#E6E1D3);
+  --input-bg: rgba(255,255,255,.92);
+  --ok: #4E6146;
+  --warn: #9C3B2E;
+  --font-display: &#x27;Cormorant&#x27;,&#x27;Noto Serif TC&#x27;,serif;
+  --font-body: &#x27;Spectral&#x27;,&#x27;Noto Serif TC&#x27;,serif;
+  --font-mono: &#x27;Spectral&#x27;,ui-monospace,&#x27;SFMono-Regular&#x27;,monospace;
+  --focus-ring: var(--accent);
+}" data-name="Acanthus acanthus Laurel 婚禮統籌／高端花藝 品牌 / 內容頁" data-slug="acanthus" data-brand="Laurel" data-cta="預約諮詢"><div class="sw"><i style="background:#F6F2E8"></i><i style="background:#7A5C2E"></i></div><h3>Acanthus <span class="cn">古典人文</span></h3><p class="ind">婚禮統籌／高端花藝</p><p class="brand"><b>Laurel</b> · 預約諮詢</p><p class="font" style="font-family:'Cormorant'">Aa 字體樣本 123</p><div class="acts"><a href="acanthus-pro.html">睇 Pro →</a><a href="acanthus.html">基本</a><button class="star" type="button" title="加入我的最愛">☆</button><button class="copy" type="button" title="複製 :root tokens">⧉</button><button class="add" type="button">＋ 候選</button></div><p class="recent" hidden>最近睇過</p></article>
+<article class="card" data-fam="藝術手作" data-ind="兒童教育／STEM" data-uses="教育 / 課程" data-tokens=":root{
+  --bg: #FFFBF2;
+  --fg: #2B2B2B;
+  --muted: #6F6558;
+  --surface: #FFFFFF;
+  --border: #2B2B2B;
+  --accent: #FF6F61;
+  --accent-fg: #2B2B2B;
+  --accent-grad: linear-gradient(#FFC93C,#FF6F61);
+  --radius: 26px;
+  --radius-sm: 16px;
+  --shadow: 0 10px 0 rgba(43,43,43,.12);
+  --btn-shadow: 0 5px 0 #2B2B2B;
+  --art-bg: radial-gradient(circle at 30% 25%,#FFF1C9,#B5EAD7);
+  --media-bg: radial-gradient(circle at 30% 25%,#FFF1C9,#B5EAD7);
+  --cta-bg: #FFF1C9;
+  --input-bg: #FFFFFF;
+  --ok: #7ED957;
+  --warn: #FF6F61;
+  --font-display: Fredoka,Nunito,sans-serif;
+  --font-body: Nunito,&quot;Noto Sans TC&quot;,sans-serif;
+  --focus-ring: #FF250F;
+}" data-name="Anthropomorphic anthropomorphic Buddy` / `Buddy Tutor 兒童教育／STEM 教育 / 課程" data-slug="anthropomorphic" data-brand="Buddy` / `Buddy Tutor" data-cta="免費試一堂"><div class="sw"><i style="background:#FFFBF2"></i><i style="background:#FF6F61"></i></div><h3>Anthropomorphic <span class="cn">藝術手作</span></h3><p class="ind">兒童教育／STEM</p><p class="brand"><b>Buddy` / `Buddy Tutor</b> · 免費試一堂</p><p class="font" style="font-family:Fredoka">Aa 字體樣本 123</p><div class="acts"><a href="anthropomorphic-pro.html">睇 Pro →</a><a href="anthropomorphic.html">基本</a><button class="star" type="button" title="加入我的最愛">☆</button><button class="copy" type="button" title="複製 :root tokens">⧉</button><button class="add" type="button">＋ 候選</button></div><p class="recent" hidden>最近睇過</p></article>
+<article class="card" data-fam="古典人文" data-ind="精品酒店／雞尾酒吧" data-uses="餐飲 / 活動" data-tokens=":root{
+  --bg: #0B0B0C;
+  --fg: #F5EFE1;
+  --muted: #C9B77A;
+  --surface: rgba(255,255,255,.08);
+  --border: rgba(212,175,55,.34);
+  --accent: #D4AF37;
+  --accent-fg: #0B0B0C;
+  --accent-grad: linear-gradient(180deg,#E9D9A6,#D4AF37);
+  --radius: 2px;
+  --radius-sm: 2px;
+  --shadow: 0 14px 34px rgba(0,0,0,.6);
+  --btn-shadow: 0 0 0 1px rgba(212,175,55,.6);
+  --art-bg: radial-gradient(circle at 50% 100%,#000 30%,transparent 70%),linear-gradient(160deg,#12213F,#0F5B4D 55%,#0B0B0C);
+  --media-bg: linear-gradient(160deg,#12213F,#0F5B4D);
+  --cta-bg: linear-gradient(180deg,rgba(15,91,77,.55),rgba(18,33,63,.55));
+  --input-bg: rgba(255,255,255,.08);
+  --ok: #1F7A63;
+  --warn: #B4302B;
+  --font-display: &#x27;Limelight&#x27;,&#x27;Poiret One&#x27;,&#x27;Noto Serif TC&#x27;,serif;
+  --font-body: &#x27;Josefin Sans&#x27;,&#x27;Noto Sans TC&#x27;,sans-serif;
+  --font-mono: &#x27;Josefin Sans&#x27;,ui-monospace,&#x27;SFMono-Regular&#x27;,monospace;
+  --focus-ring: var(--accent);
+}" data-name="Art Deco art-deco Gatsby 精品酒店／雞尾酒吧 餐飲 / 活動" data-slug="art-deco" data-brand="Gatsby" data-cta="訂房"><div class="sw"><i style="background:#0B0B0C"></i><i style="background:#D4AF37"></i></div><h3>Art Deco <span class="cn">古典人文</span></h3><p class="ind">精品酒店／雞尾酒吧</p><p class="brand"><b>Gatsby</b> · 訂房</p><p class="font" style="font-family:'Limelight'">Aa 字體樣本 123</p><div class="acts"><a href="art-deco-pro.html">睇 Pro →</a><a href="art-deco.html">基本</a><button class="star" type="button" title="加入我的最愛">☆</button><button class="copy" type="button" title="複製 :root tokens">⧉</button><button class="add" type="button">＋ 候選</button></div><p class="recent" hidden>最近睇過</p></article>
+<article class="card" data-fam="古典人文" data-ind="香氛／天然護膚" data-uses="商店 / 商品" data-tokens=":root{
+  --bg: #F2E8D5;
+  --fg: #5A4232;
+  --muted: #4E6146;
+  --surface: rgba(255,255,255,.68);
+  --border: rgba(90,66,50,.24);
+  --accent: #C98B7E;
+  --accent-fg: #2D2118;
+  --accent-grad: linear-gradient(135deg,#C98B7E,#C9A24B);
+  --radius: 18px;
+  --radius-sm: 12px;
+  --shadow: 0 10px 26px rgba(90,66,50,.14);
+  --btn-shadow: 0 4px 0 rgba(201,139,126,.4);
+  --art-bg: radial-gradient(circle at 50% 38%,#F2E8D5 0 30%,#C9A24B 30% 31%,#E9D6A8 31% 44%,transparent 45%),linear-gradient(160deg,#E9D6A8,#C98B7E);
+  --media-bg: linear-gradient(160deg,#E9D6A8,#8FA382);
+  --cta-bg: linear-gradient(180deg,#F7EFDD,#E9D6A8);
+  --input-bg: rgba(255,255,255,.9);
+  --ok: #4E6146;
+  --warn: #A85A4A;
+  --font-display: &#x27;Cinzel Decorative&#x27;,&#x27;Noto Serif TC&#x27;,serif;
+  --font-body: &#x27;Federo&#x27;,&#x27;Cormorant&#x27;,&#x27;Noto Serif TC&#x27;,serif;
+  --font-mono: &#x27;Cormorant&#x27;,ui-monospace,&#x27;SFMono-Regular&#x27;,monospace;
+  --focus-ring: #B45E4C;
+}" data-name="Art Nouveau art-nouveau Verveine 香氛／天然護膚 商店 / 商品" data-slug="art-nouveau" data-brand="Verveine" data-cta="選香"><div class="sw"><i style="background:#F2E8D5"></i><i style="background:#C98B7E"></i></div><h3>Art Nouveau <span class="cn">古典人文</span></h3><p class="ind">香氛／天然護膚</p><p class="brand"><b>Verveine</b> · 選香</p><p class="font" style="font-family:'Cinzel Decorative'">Aa 字體樣本 123</p><div class="acts"><a href="art-nouveau-pro.html">睇 Pro →</a><a href="art-nouveau.html">基本</a><button class="star" type="button" title="加入我的最愛">☆</button><button class="copy" type="button" title="複製 :root tokens">⧉</button><button class="add" type="button">＋ 候選</button></div><p class="recent" hidden>最近睇過</p></article>
+<article class="card" data-fam="立體質感" data-ind="AI／SaaS landing" data-uses="Landing / SaaS" data-tokens=":root{
+  --bg: #070B1A;
+  --fg: #EEF2FF;
+  --muted: #C3CBE6;
+  --surface: rgba(255,255,255,.06);
+  --border: rgba(255,255,255,.14);
+  --accent: #3CF2B4;
+  --accent-fg: #04141C;
+  --accent-grad: linear-gradient(100deg,#3CF2B4,#27C3F5 50%,#8B5CF6);
+  --radius: 24px;
+  --radius-sm: 14px;
+  --shadow: 0 20px 60px rgba(0,0,0,.42);
+  --art-bg: radial-gradient(circle at 25% 20%,rgba(60,242,180,.75),transparent 60%),radial-gradient(circle at 76% 72%,rgba(139,92,246,.8),transparent 60%),#0d1428;
+  --cta-bg: linear-gradient(120deg,rgba(60,242,180,.16),rgba(139,92,246,.22));
+  --input-bg: rgba(7,11,26,.55);
+  --btn-shadow: 0 0 44px rgba(139,92,246,.45);
+  --ok: #3CF2B4;
+  --warn: #F472B6;
+  --font-display: &quot;Inter Tight&quot;,Inter,system-ui,sans-serif;
+  --font-body: Inter,system-ui,sans-serif;
+  --font-mono: ui-monospace,SFMono-Regular,Menlo,monospace;
+  --focus-ring: var(--accent);
+}" data-name="Aurora aurora Aurora` / `Aurora AI AI／SaaS landing Landing / SaaS" data-slug="aurora" data-brand="Aurora` / `Aurora AI" data-cta="免費試用"><div class="sw"><i style="background:#070B1A"></i><i style="background:#3CF2B4"></i></div><h3>Aurora <span class="cn">立體質感</span></h3><p class="ind">AI／SaaS landing</p><p class="brand"><b>Aurora` / `Aurora AI</b> · 免費試用</p><p class="font" style="font-family:"Inter Tight"">Aa 字體樣本 123</p><div class="acts"><a href="aurora-pro.html">睇 Pro →</a><a href="aurora.html">基本</a><button class="star" type="button" title="加入我的最愛">☆</button><button class="copy" type="button" title="複製 :root tokens">⧉</button><button class="add" type="button">＋ 候選</button></div><p class="recent" hidden>最近睇過</p></article>
+<article class="card" data-fam="古典人文" data-ind="歌劇／表演藝術場館" data-uses="餐飲 / 活動" data-tokens=":root{
+  --bg: #120D0A;
+  --fg: #F3E9D2;
+  --muted: #B9A47C;
+  --surface: rgba(255,255,255,.07);
+  --border: rgba(232,199,102,.30);
+  --accent: #E8C766;
+  --accent-fg: #2A0B10;
+  --accent-grad: linear-gradient(135deg,#A07C16,#E8C766 50%,#A07C16);
+  --radius: 4px;
+  --radius-sm: 2px;
+  --shadow: 0 16px 40px rgba(0,0,0,.65);
+  --btn-shadow: 0 0 0 1px rgba(232,199,102,.5);
+  --art-bg: radial-gradient(circle at 50% 35%,#6b1a24,#2a0b10 70%),radial-gradient(420px 360px at 78% 50%,rgba(242,197,124,.18),transparent 70%);
+  --media-bg: linear-gradient(160deg,#2a0b10,#5B0F1A);
+  --cta-bg: radial-gradient(900px 500px at 70% 10%,#3a1a14,transparent),linear-gradient(#1f1410,#160e0b);
+  --input-bg: rgba(255,255,255,.08);
+  --ok: #2E7D5B;
+  --warn: #C24B4B;
+  --font-display: &#x27;Playfair Display&#x27;,&#x27;Noto Serif TC&#x27;,serif;
+  --font-body: &#x27;Crimson Pro&#x27;,&#x27;Noto Serif TC&#x27;,serif;
+  --font-mono: &#x27;Crimson Pro&#x27;,ui-monospace,&#x27;SFMono-Regular&#x27;,monospace;
+  --focus-ring: var(--accent);
+}" data-name="Baroque baroque Orfeo 歌劇／表演藝術場館 餐飲 / 活動" data-slug="baroque" data-brand="Orfeo" data-cta="買飛"><div class="sw"><i style="background:#120D0A"></i><i style="background:#E8C766"></i></div><h3>Baroque <span class="cn">古典人文</span></h3><p class="ind">歌劇／表演藝術場館</p><p class="brand"><b>Orfeo</b> · 買飛</p><p class="font" style="font-family:'Playfair Display'">Aa 字體樣本 123</p><div class="acts"><a href="baroque-pro.html">睇 Pro →</a><a href="baroque.html">基本</a><button class="star" type="button" title="加入我的最愛">☆</button><button class="copy" type="button" title="複製 :root tokens">⧉</button><button class="add" type="button">＋ 候選</button></div><p class="recent" hidden>最近睇過</p></article>
+<article class="card" data-fam="秩序理性" data-ind="建築／設計工作室" data-uses="作品集 / 工作室" data-tokens=":root{
+  --bg: #F2F0EB;
+  --fg: #101010;
+  --muted: #4A4A4A;
+  --surface: #FFFFFF;
+  --border: #101010;
+  --accent: #D62828;
+  --accent-fg: #FFFFFF;
+  --radius: 0px;
+  --radius-sm: 0px;
+  --shadow: none;
+  --btn-shadow: none;
+  --art-bg: linear-gradient(135deg,#D62828 0 33%,#F4C300 33% 66%,#0057B8 66%);
+  --media-bg: linear-gradient(135deg,#0057B8 0 50%,#F4C300 50%);
+  --cta-bg: #101010;
+  --input-bg: #FFFFFF;
+  --ok: #0057B8;
+  --warn: #D62828;
+  --font-display: Poppins,&#x27;Noto Sans TC&#x27;,sans-serif;
+  --font-body: Inter,&#x27;Noto Sans TC&#x27;,sans-serif;
+  --focus-ring: var(--accent);
+}" data-name="Bauhaus bauhaus Weimar` / `Weimar Studio 建築／設計工作室 作品集 / 工作室" data-slug="bauhaus" data-brand="Weimar` / `Weimar Studio" data-cta="報名"><div class="sw"><i style="background:#F2F0EB"></i><i style="background:#D62828"></i></div><h3>Bauhaus <span class="cn">秩序理性</span></h3><p class="ind">建築／設計工作室</p><p class="brand"><b>Weimar` / `Weimar Studio</b> · 報名</p><p class="font" style="font-family:Poppins">Aa 字體樣本 123</p><div class="acts"><a href="bauhaus-pro.html">睇 Pro →</a><a href="bauhaus.html">基本</a><button class="star" type="button" title="加入我的最愛">☆</button><button class="copy" type="button" title="複製 :root tokens">⧉</button><button class="add" type="button">＋ 候選</button></div><p class="recent" hidden>最近睇過</p></article>
+<article class="card" data-fam="秩序理性" data-ind="個人作品集／產品介紹頁" data-uses="作品集 / 工作室" data-tokens=":root{
+  --bg: #F5F5F7;
+  --fg: #1D1D1F;
+  --muted: #5F5F64;
+  --surface: #FFFFFF;
+  --border: rgba(29,29,31,.12);
+  --accent: #0071E3;
+  --accent-fg: #FFFFFF;
+  --accent-grad: linear-gradient(120deg,#0071E3,#5EA8FF);
+  --radius: 18px;
+  --radius-sm: 12px;
+  --shadow: 0 8px 24px rgba(29,29,31,.08);
+  --btn-shadow: 0 2px 6px rgba(0,113,227,.28);
+  --art-bg: linear-gradient(135deg,#E0F0FF,#fff 60%,#E8E0FF);
+  --media-bg: linear-gradient(135deg,#E0F0FF,#fff);
+  --cta-bg: linear-gradient(120deg,#FFE3EC,#E8E0FF 50%,#DDF6EC);
+  --input-bg: #FFFFFF;
+  --ok: #1B8A45;
+  --warn: #C0392B;
+  --font-display: Inter,&#x27;Noto Sans TC&#x27;,sans-serif;
+  --font-body: Inter,&#x27;Noto Sans TC&#x27;,sans-serif;
+  --font-mono: ui-monospace,&#x27;SFMono-Regular&#x27;,monospace;
+  --focus-ring: var(--accent);
+}" data-name="Bento Grid bento-grid Bento 個人作品集／產品介紹頁 作品集 / 工作室" data-slug="bento-grid" data-brand="Bento" data-cta="睇案例"><div class="sw"><i style="background:#F5F5F7"></i><i style="background:#0071E3"></i></div><h3>Bento Grid <span class="cn">秩序理性</span></h3><p class="ind">個人作品集／產品介紹頁</p><p class="brand"><b>Bento</b> · 睇案例</p><p class="font" style="font-family:Inter">Aa 字體樣本 123</p><div class="acts"><a href="bento-grid-pro.html">睇 Pro →</a><a href="bento-grid.html">基本</a><button class="star" type="button" title="加入我的最愛">☆</button><button class="copy" type="button" title="複製 :root tokens">⧉</button><button class="add" type="button">＋ 候選</button></div><p class="recent" hidden>最近睇過</p></article>
+<article class="card" data-fam="古典人文" data-ind="手作市集／旅店" data-uses="商店 / 商品 作品集 / 工作室" data-tokens=":root{
+  --bg: #FAF3E7;
+  --fg: #43301F;
+  --muted: #6B5544;
+  --surface: #F1E3CC;
+  --border: #D8C3A0;
+  --accent: #A0522D;
+  --accent-fg: #FFF7EC;
+  --accent-grad: linear-gradient(180deg,#A8552E,#8E4726);
+  --radius: 22px;
+  --radius-sm: 14px;
+  --shadow: 0 12px 26px rgba(74,52,38,.16);
+  --btn-shadow: 0 4px 0 rgba(74,52,38,.20);
+  --art-bg: linear-gradient(#E8D5B7,#D99058 58%,#A0522D);
+  --media-bg: linear-gradient(#E8D5B7,#C2703D);
+  --cta-bg: linear-gradient(180deg,#F4D58D,#E8D5B7);
+  --input-bg: #FFFDF8;
+  --ok: #4C5C40;
+  --warn: #B4441F;
+  --gold: #D4A017;
+  --olive: #5E6F50;
+  --font-script: &#x27;Allura&#x27;,cursive;
+  --font-display: &#x27;Fraunces&#x27;,&#x27;Noto Serif TC&#x27;,serif;
+  --font-body: &#x27;Lora&#x27;,&#x27;Noto Serif TC&#x27;,serif;
+  --font-mono: &#x27;Lora&#x27;,ui-serif,serif;
+  --focus-ring: var(--accent);
+}" data-name="Bohemian bohemian Wander 手作市集／旅店 商店 / 商品 作品集 / 工作室" data-slug="bohemian" data-brand="Wander" data-cta="預約"><div class="sw"><i style="background:#FAF3E7"></i><i style="background:#A0522D"></i></div><h3>Bohemian <span class="cn">古典人文</span></h3><p class="ind">手作市集／旅店</p><p class="brand"><b>Wander</b> · 預約</p><p class="font" style="font-family:'Fraunces'">Aa 字體樣本 123</p><div class="acts"><a href="bohemian-pro.html">睇 Pro →</a><a href="bohemian.html">基本</a><button class="star" type="button" title="加入我的最愛">☆</button><button class="copy" type="button" title="複製 :root tokens">⧉</button><button class="add" type="button">＋ 候選</button></div><p class="recent" hidden>最近睇過</p></article>
+<article class="card" data-fam="張力反叛" data-ind="開發者工具／開源項目" data-uses="Landing / SaaS" data-tokens=":root{
+  --bg: #FFFFFF;
+  --fg: #000000;
+  --muted: #444444;
+  --surface: #F0F0F0;
+  --border: #000000;
+  --accent: #0000EE;
+  --accent-fg: #FFFFFF;
+  --radius: 0px;
+  --radius-sm: 0px;
+  --shadow: none;
+  --btn-shadow: none;
+  --art-bg: #C0C0C0;
+  --media-bg: #C0C0C0;
+  --cta-bg: #F0F0F0;
+  --input-bg: #FFFFFF;
+  --ok: #007700;
+  --warn: #AA0000;
+  --font-display: &#x27;Space Mono&#x27;,&#x27;Courier New&#x27;,monospace;
+  --font-body: &#x27;Space Mono&#x27;,&#x27;Courier New&#x27;,monospace;
+  --font-mono: &#x27;Space Mono&#x27;,ui-monospace,Menlo,monospace;
+  --focus-ring: var(--accent);
+}" data-name="Brutalism brutalism Brute` / `Brute CLI 開發者工具／開源項目 Landing / SaaS" data-slug="brutalism" data-brand="Brute` / `Brute CLI" data-cta="睇 docs"><div class="sw"><i style="background:#FFFFFF"></i><i style="background:#0000EE"></i></div><h3>Brutalism <span class="cn">張力反叛</span></h3><p class="ind">開發者工具／開源項目</p><p class="brand"><b>Brute` / `Brute CLI</b> · 睇 docs</p><p class="font" style="font-family:'Space Mono'">Aa 字體樣本 123</p><div class="acts"><a href="brutalism-pro.html">睇 Pro →</a><a href="brutalism.html">基本</a><button class="star" type="button" title="加入我的最愛">☆</button><button class="copy" type="button" title="複製 :root tokens">⧉</button><button class="add" type="button">＋ 候選</button></div><p class="recent" hidden>最近睇過</p></article>
+<article class="card" data-fam="立體質感" data-ind="兒童 app／親子產品" data-uses="教育 / 課程" data-tokens=":root{
+  --bg: #F7F3FF;
+  --fg: #3A2340;
+  --muted: #5B4A6B;
+  --surface: #FFFFFF;
+  --border: #E7E1EE;
+  --accent: #6B3FA0;
+  --accent-fg: #FFFFFF;
+  --accent-grad: linear-gradient(180deg,#8A5CC4,#6B3FA0);
+  --radius: 30px;
+  --radius-sm: 20px;
+  --shadow: 0 12px 0 -4px rgba(58,35,64,.10),0 18px 28px rgba(58,35,64,.14),inset 0 -4px 0 rgba(58,35,64,.06);
+  --btn-shadow: 0 6px 0 rgba(107,63,160,.35);
+  --art-bg: linear-gradient(180deg,#E9F1FF,#B8E1FF 45%,#FFD6E0);
+  --media-bg: linear-gradient(180deg,#FFE9A8,#FFB5C8);
+  --cta-bg: linear-gradient(180deg,#C3F0CA,#B8E1FF);
+  --input-bg: #FFFFFF;
+  --ok: #1F7A45;
+  --warn: #C2185B;
+  --clay-pink: #FFD6E0;
+  --clay-mint: #C3F0CA;
+  --clay-sky: #B8E1FF;
+  --clay-yellow: #FFE9A8;
+  --font-display: &#x27;Fredoka&#x27;,&#x27;Noto Sans TC&#x27;,sans-serif;
+  --font-body: &#x27;Nunito&#x27;,&#x27;Noto Sans TC&#x27;,sans-serif;
+  --font-mono: &#x27;Nunito&#x27;,ui-monospace,monospace;
+  --focus-ring: var(--accent);
+}" data-name="Claymorphism claymorphism Clay 兒童 app／親子產品 教育 / 課程" data-slug="claymorphism" data-brand="Clay" data-cta="免費試"><div class="sw"><i style="background:#F7F3FF"></i><i style="background:#6B3FA0"></i></div><h3>Claymorphism <span class="cn">立體質感</span></h3><p class="ind">兒童 app／親子產品</p><p class="brand"><b>Clay</b> · 免費試</p><p class="font" style="font-family:'Fredoka'">Aa 字體樣本 123</p><div class="acts"><a href="claymorphism-pro.html">睇 Pro →</a><a href="claymorphism.html">基本</a><button class="star" type="button" title="加入我的最愛">☆</button><button class="copy" type="button" title="複製 :root tokens">⧉</button><button class="add" type="button">＋ 候選</button></div><p class="recent" hidden>最近睇過</p></article>
+<article class="card" data-fam="藝術手作" data-ind="UX 顧問／設計服務" data-uses="作品集 / 工作室" data-tokens=":root{
+  --bg: #FDFBF7;
+  --fg: #2F2F2F;
+  --muted: #575757;
+  --surface: #F4F2EC;
+  --border: #C9C4B8;
+  --accent: #1F4E9C;
+  --accent-fg: #FFFFFF;
+  --accent-grad: linear-gradient(180deg,#2E63B8,#1F4E9C);
+  --radius: 6px;
+  --radius-sm: 4px;
+  --shadow: 4px 4px 0 rgba(47,47,47,.14);
+  --btn-shadow: 3px 3px 0 rgba(31,78,156,.30);
+  --art-bg: linear-gradient(#E4E7EE 1px,transparent 1px) 0 0/26px 26px,linear-gradient(90deg,#E4E7EE 1px,transparent 1px) 0 0/26px 26px,#FDFBF7;
+  --media-bg: repeating-linear-gradient(0deg,#E7E4DB 0 1px,transparent 1px 22px),#FDFBF7;
+  --cta-bg: linear-gradient(transparent 58%,#FFF36B 58% 92%,transparent 92%),#FDFBF7;
+  --input-bg: #FFFFFF;
+  --ok: #1F6B3B;
+  --warn: #B3402F;
+  --hl: #FFF36B;
+  --font-hand: &#x27;Caveat&#x27;,cursive;
+  --font-display: &#x27;Architects Daughter&#x27;,&#x27;Noto Sans TC&#x27;,cursive;
+  --font-body: &#x27;Patrick Hand&#x27;,&#x27;Noto Sans TC&#x27;,cursive;
+  --font-mono: &#x27;Patrick Hand&#x27;,ui-monospace,monospace;
+  --focus-ring: var(--accent);
+}" data-name="Conceptual Sketch conceptual-sketch Draft UX 顧問／設計服務 作品集 / 工作室" data-slug="conceptual-sketch" data-brand="Draft" data-cta="預約傾 40 分鐘"><div class="sw"><i style="background:#FDFBF7"></i><i style="background:#1F4E9C"></i></div><h3>Conceptual Sketch <span class="cn">藝術手作</span></h3><p class="ind">UX 顧問／設計服務</p><p class="brand"><b>Draft</b> · 預約傾 40 分鐘</p><p class="font" style="font-family:'Architects Daughter'">Aa 字體樣本 123</p><div class="acts"><a href="conceptual-sketch-pro.html">睇 Pro →</a><a href="conceptual-sketch.html">基本</a><button class="star" type="button" title="加入我的最愛">☆</button><button class="copy" type="button" title="複製 :root tokens">⧉</button><button class="add" type="button">＋ 候選</button></div><p class="recent" hidden>最近睇過</p></article>
+<article class="card" data-fam="古典人文" data-ind="甜點烘焙／婚禮小物" data-uses="商店 / 商品 品牌 / 內容頁" data-tokens=":root{
+  --bg: #FFF8F6;
+  --fg: #8A3B53;
+  --muted: #7A5561;
+  --surface: #FDEEF2;
+  --border: #F0D3DA;
+  --accent: #A8405F;
+  --accent-fg: #FFF8F6;
+  --accent-grad: linear-gradient(180deg,#B0516B,#A8405F);
+  --radius: 20px;
+  --radius-sm: 12px;
+  --shadow: 0 10px 24px rgba(196,106,133,.20);
+  --btn-shadow: 0 4px 0 rgba(168,64,95,.22);
+  --art-bg: radial-gradient(circle at 50% 45%,#fff 0 14%,transparent 15%),linear-gradient(#F8D7DF,#EFA7B8);
+  --media-bg: radial-gradient(circle at 40% 40%,#fff 0 30%,#EDE4DC 60%,transparent 62%);
+  --cta-bg: linear-gradient(180deg,#FDEEF2,#F8D7DF);
+  --input-bg: #FFFFFF;
+  --ok: #2E6E4E;
+  --warn: #B03A54;
+  --ribbon: #EFA7B8;
+  --pearl: #EDE4DC;
+  --font-script: &#x27;Pinyon Script&#x27;,cursive;
+  --font-display: &#x27;Bodoni Moda&#x27;,&#x27;Noto Serif TC&#x27;,serif;
+  --font-body: &#x27;Cormorant&#x27;,&#x27;Noto Serif TC&#x27;,serif;
+  --font-mono: &#x27;Cormorant&#x27;,ui-serif,serif;
+  --focus-ring: var(--accent);
+}" data-name="Coquette coquette Ribbon 甜點烘焙／婚禮小物 商店 / 商品 品牌 / 內容頁" data-slug="coquette" data-brand="Ribbon" data-cta="訂蛋糕"><div class="sw"><i style="background:#FFF8F6"></i><i style="background:#A8405F"></i></div><h3>Coquette <span class="cn">古典人文</span></h3><p class="ind">甜點烘焙／婚禮小物</p><p class="brand"><b>Ribbon</b> · 訂蛋糕</p><p class="font" style="font-family:'Bodoni Moda'">Aa 字體樣本 123</p><div class="acts"><a href="coquette-pro.html">睇 Pro →</a><a href="coquette.html">基本</a><button class="star" type="button" title="加入我的最愛">☆</button><button class="copy" type="button" title="複製 :root tokens">⧉</button><button class="add" type="button">＋ 候選</button></div><p class="recent" hidden>最近睇過</p></article>
+<article class="card" data-fam="數碼懷舊" data-ind="網絡安全／滲透測試" data-uses="品牌 / 內容頁" data-tokens=":root{
+  --bg: #000018;
+  --fg: #00FF41;
+  --muted: #2FB862;
+  --surface: #0B0B2E;
+  --border: #C0C0C0;
+  --accent: #00FFFF;
+  --accent-fg: #00201F;
+  --accent-grad: linear-gradient(180deg,#5CFFFF,#00D9D9);
+  --radius: 0px;
+  --radius-sm: 0px;
+  --shadow: inset 1px 1px 0 rgba(255,255,255,.35),inset -1px -1px 0 #000,3px 3px 0 rgba(0,0,0,.55);
+  --btn-shadow: inset 1px 1px 0 rgba(255,255,255,.5),inset -1px -1px 0 #000,3px 3px 0 rgba(0,0,0,.6);
+  --art-bg: linear-gradient(180deg,#000036,#000018);
+  --media-bg: radial-gradient(rgba(255,255,255,.2) 1px,transparent 1.5px) 0 0/22px 22px,linear-gradient(180deg,#000030,#000018);
+  --cta-bg: linear-gradient(180deg,#0B0B2E,#000018);
+  --input-bg: #000020;
+  --ok: #00FF41;
+  --warn: #FF4466;
+  --win-bar: linear-gradient(90deg,#000080,#1084D0);
+  --win-bar-fg: #FFFFFF;
+  --chrome-fg: #0A0A0A;
+  --magenta: #FF00FF;
+  --yellow: #FFFF00;
+  --font-display: &#x27;VT323&#x27;,&#x27;Noto Sans TC&#x27;,monospace;
+  --font-body: &#x27;VT323&#x27;,&#x27;Noto Sans TC&#x27;,system-ui,sans-serif;
+  --font-mono: &#x27;VT323&#x27;,ui-monospace,Menlo,monospace;
+  --focus-ring: var(--accent);
+}" data-name="Cybercore cybercore Nullsec 網絡安全／滲透測試 品牌 / 內容頁" data-slug="cybercore" data-brand="Nullsec" data-cta="索取樣本報告"><div class="sw"><i style="background:#000018"></i><i style="background:#00FFFF"></i></div><h3>Cybercore <span class="cn">數碼懷舊</span></h3><p class="ind">網絡安全／滲透測試</p><p class="brand"><b>Nullsec</b> · 索取樣本報告</p><p class="font" style="font-family:'VT323'">Aa 字體樣本 123</p><div class="acts"><a href="cybercore-pro.html">睇 Pro →</a><a href="cybercore.html">基本</a><button class="star" type="button" title="加入我的最愛">☆</button><button class="copy" type="button" title="複製 :root tokens">⧉</button><button class="add" type="button">＋ 候選</button></div><p class="recent" hidden>最近睇過</p></article>
+<article class="card" data-fam="數碼懷舊" data-ind="電子音樂節／夜店" data-uses="餐飲 / 活動" data-tokens=":root{
+  --bg: #0A0A0F;
+  --fg: #E0E0E0;
+  --muted: #A8A8BE;
+  --surface: #12121A;
+  --border: #2A2A3A;
+  --accent: #00F0FF;
+  --accent-fg: #04161A;
+  --radius: 2px;
+  --radius-sm: 2px;
+  --shadow: 0 0 0 1px rgba(0,240,255,.18),0 12px 30px rgba(0,0,0,.55);
+  --btn-shadow: 0 0 0 1px rgba(0,240,255,.55),0 0 18px rgba(0,240,255,.35);
+  --art-bg: linear-gradient(135deg,rgba(0,240,255,.22),rgba(255,0,60,.22)),repeating-linear-gradient(0deg,transparent 0 3px,rgba(0,240,255,.10) 3px 4px);
+  --media-bg: linear-gradient(180deg,#12121A,#0A0A0F);
+  --cta-bg: linear-gradient(180deg,#12121A,#0A0A0F);
+  --input-bg: #0E0E16;
+  --ok: #46E08A;
+  --warn: #FF003C;
+  --font-display: Orbitron,&#x27;Noto Sans TC&#x27;,sans-serif;
+  --font-body: Rajdhani,&#x27;Noto Sans TC&#x27;,sans-serif;
+  --font-mono: &#x27;Share Tech Mono&#x27;,ui-monospace,monospace;
+  --focus-ring: var(--accent);
+}" data-name="Cyberpunk cyberpunk NIGHT//CITY 電子音樂節／夜店 餐飲 / 活動" data-slug="cyberpunk" data-brand="NIGHT//CITY" data-cta="買飛"><div class="sw"><i style="background:#0A0A0F"></i><i style="background:#00F0FF"></i></div><h3>Cyberpunk <span class="cn">數碼懷舊</span></h3><p class="ind">電子音樂節／夜店</p><p class="brand"><b>NIGHT//CITY</b> · 買飛</p><p class="font" style="font-family:Orbitron">Aa 字體樣本 123</p><div class="acts"><a href="cyberpunk-pro.html">睇 Pro →</a><a href="cyberpunk.html">基本</a><button class="star" type="button" title="加入我的最愛">☆</button><button class="copy" type="button" title="複製 :root tokens">⧉</button><button class="add" type="button">＋ 候選</button></div><p class="recent" hidden>最近睇過</p></article>
+<article class="card" data-fam="古典人文" data-ind="推理遊戲／沉浸劇場" data-uses="餐飲 / 活動 品牌 / 內容頁" data-tokens=":root{
+  --bg: #111014;
+  --fg: #E4D5B7;
+  --muted: #C0AE8A;
+  --surface: #1F2B24;
+  --border: #3B2A1E;
+  --accent: #C6A45A;
+  --accent-fg: #14120E;
+  --radius: 4px;
+  --radius-sm: 3px;
+  --shadow: 0 14px 34px rgba(0,0,0,.55);
+  --btn-shadow: 0 0 0 1px rgba(198,164,90,.45),0 8px 22px rgba(0,0,0,.5);
+  --art-bg: radial-gradient(circle at 50% 60%,#9E2A30 0 12%,#7E1F24 13% 15%,transparent 16%),linear-gradient(160deg,#1F2B24,#111014);
+  --media-bg: linear-gradient(180deg,#1F2B24,#111014);
+  --cta-bg: linear-gradient(180deg,#1F2B24,#111014);
+  --input-bg: #16181A;
+  --ok: #8FBF6A;
+  --warn: #B4453F;
+  --font-display: &#x27;Cinzel Decorative&#x27;,&#x27;Noto Serif TC&#x27;,serif;
+  --font-body: &#x27;EB Garamond&#x27;,&#x27;Noto Serif TC&#x27;,serif;
+  --font-mono: &#x27;IBM Plex Mono&#x27;,ui-monospace,monospace;
+  --focus-ring: var(--accent);
+}" data-name="Dark Magic Academia dark-magic-academia Umbra 推理遊戲／沉浸劇場 餐飲 / 活動 品牌 / 內容頁" data-slug="dark-magic-academia" data-brand="Umbra" data-cta="報名"><div class="sw"><i style="background:#111014"></i><i style="background:#C6A45A"></i></div><h3>Dark Magic Academia <span class="cn">古典人文</span></h3><p class="ind">推理遊戲／沉浸劇場</p><p class="brand"><b>Umbra</b> · 報名</p><p class="font" style="font-family:'Cinzel Decorative'">Aa 字體樣本 123</p><div class="acts"><a href="dark-magic-academia-pro.html">睇 Pro →</a><a href="dark-magic-academia.html">基本</a><button class="star" type="button" title="加入我的最愛">☆</button><button class="copy" type="button" title="複製 :root tokens">⧉</button><button class="add" type="button">＋ 候選</button></div><p class="recent" hidden>最近睇過</p></article>
+<article class="card" data-fam="秩序理性" data-ind="深度報導媒體" data-uses="品牌 / 內容頁" data-tokens=":root{
+  --bg: #FAF7F2;
+  --fg: #1A1A1A;
+  --muted: #57534E;
+  --surface: #FFFFFF;
+  --border: #D9D4CC;
+  --accent: #C8102E;
+  --accent-fg: #FFFFFF;
+  --radius: 0px;
+  --radius-sm: 0px;
+  --shadow: none;
+  --btn-shadow: none;
+  --art-bg: linear-gradient(135deg,#2B2B2B,#8A8580);
+  --media-bg: linear-gradient(160deg,#6E6A64,#D9D4CC);
+  --cta-bg: #1A1A1A;
+  --input-bg: #FFFFFF;
+  --ok: #1F6B45;
+  --warn: #C8102E;
+  --font-display: &#x27;Playfair Display&#x27;,&#x27;Noto Serif TC&#x27;,serif;
+  --font-body: &#x27;Source Serif 4&#x27;,&#x27;Noto Serif TC&#x27;,serif;
+  --font-mono: Inter,ui-sans-serif,system-ui,sans-serif;
+  --focus-ring: var(--accent);
+}" data-name="Editorial Design editorial-design Broadsheet 深度報導媒體 品牌 / 內容頁" data-slug="editorial-design" data-brand="Broadsheet" data-cta="訂閱"><div class="sw"><i style="background:#FAF7F2"></i><i style="background:#C8102E"></i></div><h3>Editorial Design <span class="cn">秩序理性</span></h3><p class="ind">深度報導媒體</p><p class="brand"><b>Broadsheet</b> · 訂閱</p><p class="font" style="font-family:'Playfair Display'">Aa 字體樣本 123</p><div class="acts"><a href="editorial-design-pro.html">睇 Pro →</a><a href="editorial-design.html">基本</a><button class="star" type="button" title="加入我的最愛">☆</button><button class="copy" type="button" title="複製 :root tokens">⧉</button><button class="add" type="button">＋ 候選</button></div><p class="recent" hidden>最近睇過</p></article>
+<article class="card" data-fam="藝術手作" data-ind="冥想／wellness app" data-uses="其他" data-tokens=":root{
+  --bg: #FBFAF8;
+  --fg: #3F3A4A;
+  --muted: #6B5B95;
+  --surface: #FFFFFF;
+  --border: #E4DCF0;
+  --accent: #6B5B95;
+  --accent-fg: #FFFFFF;
+  --radius: 24px;
+  --radius-sm: 14px;
+  --shadow: 0 18px 40px rgba(107,91,149,.14);
+  --btn-shadow: 0 8px 24px rgba(107,91,149,.28);
+  --art-bg: radial-gradient(at 22% 30%,#EBD5FF 0,transparent 42%),radial-gradient(at 78% 38%,#CDE9FF 0,transparent 42%),radial-gradient(at 50% 88%,#FFD3EA 0,transparent 42%);
+  --media-bg: linear-gradient(120deg,#EBD5FF,#FFD3EA,#CDE9FF);
+  --cta-bg: linear-gradient(120deg,#F3EBFF,#EAF4FF);
+  --input-bg: #FFFFFF;
+  --ok: #3F7A63;
+  --warn: #A9556B;
+  --font-display: &#x27;Cormorant Garamond&#x27;,&#x27;Noto Serif TC&#x27;,serif;
+  --font-body: Jost,&#x27;Noto Sans TC&#x27;,sans-serif;
+  --font-mono: Jost,ui-sans-serif,system-ui,sans-serif;
+  --focus-ring: var(--accent);
+}" data-name="Ethereal ethereal Halcyon 冥想／wellness app 其他" data-slug="ethereal" data-brand="Halcyon" data-cta="免費試"><div class="sw"><i style="background:#FBFAF8"></i><i style="background:#6B5B95"></i></div><h3>Ethereal <span class="cn">藝術手作</span></h3><p class="ind">冥想／wellness app</p><p class="brand"><b>Halcyon</b> · 免費試</p><p class="font" style="font-family:'Cormorant Garamond'">Aa 字體樣本 123</p><div class="acts"><a href="ethereal-pro.html">睇 Pro →</a><a href="ethereal.html">基本</a><button class="star" type="button" title="加入我的最愛">☆</button><button class="copy" type="button" title="複製 :root tokens">⧉</button><button class="add" type="button">＋ 候選</button></div><p class="recent" hidden>最近睇過</p></article>
+<article class="card" data-fam="古典人文" data-ind="有機農產／手作食品" data-uses="作品集 / 工作室" data-tokens=":root{
+  --bg: #FBF5E6;
+  --fg: #4A3A2C;
+  --muted: #6B4E37;
+  --surface: #FFFDF7;
+  --border: #E3CBA0;
+  --accent: #A34A31;
+  --accent-fg: #FFF6E8;
+  --radius: 16px;
+  --radius-sm: 10px;
+  --shadow: 0 12px 26px rgba(107,78,55,.16);
+  --btn-shadow: 0 5px 0 rgba(163,74,49,.28);
+  --art-bg: repeating-linear-gradient(90deg,rgba(163,74,49,.14) 0 12px,transparent 12px 24px),repeating-linear-gradient(0deg,rgba(106,138,90,.16) 0 12px,transparent 12px 24px);
+  --media-bg: linear-gradient(180deg,#F3EAD3,#E3CBA0);
+  --cta-bg: linear-gradient(180deg,#F5EEDC,#EBDFC4);
+  --input-bg: #FFFDF7;
+  --ok: #4E7A46;
+  --warn: #A34A31;
+  --font-display: Fraunces,&#x27;Noto Serif TC&#x27;,serif;
+  --font-body: Lora,&#x27;Noto Serif TC&#x27;,serif;
+  --font-mono: Fraunces,ui-serif,serif;
+  --focus-ring: var(--accent);
+}" data-name="Farmhouse & Cottagecore farmhouse-cottagecore Thistle 有機農產／手作食品 作品集 / 工作室" data-slug="farmhouse-cottagecore" data-brand="Thistle" data-cta="訂蔬菜箱"><div class="sw"><i style="background:#FBF5E6"></i><i style="background:#A34A31"></i></div><h3>Farmhouse & Cottagecore <span class="cn">古典人文</span></h3><p class="ind">有機農產／手作食品</p><p class="brand"><b>Thistle</b> · 訂蔬菜箱</p><p class="font" style="font-family:Fraunces">Aa 字體樣本 123</p><div class="acts"><a href="farmhouse-cottagecore-pro.html">睇 Pro →</a><a href="farmhouse-cottagecore.html">基本</a><button class="star" type="button" title="加入我的最愛">☆</button><button class="copy" type="button" title="複製 :root tokens">⧉</button><button class="add" type="button">＋ 候選</button></div><p class="recent" hidden>最近睇過</p></article>
+<article class="card" data-fam="古典人文" data-ind="高級珠寶" data-uses="商店 / 商品" data-tokens=":root{
+  --bg: #14213D;
+  --fg: #FBF7EE;
+  --muted: #D5CEBC;
+  --surface: rgba(255,255,255,.06);
+  --border: rgba(230,209,146,.38);
+  --accent: #E6D192;
+  --accent-fg: #14213D;
+  --accent-grad: linear-gradient(120deg,#8C6F2E,#F3E4B0 45%,#BFA05A 55%,#8C6F2E);
+  --radius: 3px;
+  --radius-sm: 2px;
+  --shadow: 0 18px 40px rgba(0,0,0,.45);
+  --btn-shadow: 0 0 0 1px rgba(230,209,146,.45),0 10px 24px rgba(191,160,90,.20);
+  --art-bg: radial-gradient(circle at 34% 30%,#FBF7EE,#F3E4B0 34%,#BFA05A 62%,#14213D);
+  --media-bg: linear-gradient(140deg,#1E2C4C,#3A4766);
+  --cta-bg: linear-gradient(140deg,#1B2743,#2A3960);
+  --input-bg: #16233F;
+  --ok: #9BD8B0;
+  --warn: #E9A38E;
+  --font-display: &#x27;Cormorant Garamond&#x27;,&#x27;Noto Serif TC&#x27;,serif;
+  --font-body: Lora,&#x27;Noto Serif TC&#x27;,serif;
+  --font-mono: ui-monospace,&#x27;SF Mono&#x27;,Menlo,monospace;
+  --focus-ring: var(--accent);
+}" data-name="Filigree filigree Filigrane 高級珠寶 商店 / 商品" data-slug="filigree" data-brand="Filigrane" data-cta="預約睇貨"><div class="sw"><i style="background:#14213D"></i><i style="background:#E6D192"></i></div><h3>Filigree <span class="cn">古典人文</span></h3><p class="ind">高級珠寶</p><p class="brand"><b>Filigrane</b> · 預約睇貨</p><p class="font" style="font-family:'Cormorant Garamond'">Aa 字體樣本 123</p><div class="acts"><a href="filigree-pro.html">睇 Pro →</a><a href="filigree.html">基本</a><button class="star" type="button" title="加入我的最愛">☆</button><button class="copy" type="button" title="複製 :root tokens">⧉</button><button class="add" type="button">＋ 候選</button></div><p class="recent" hidden>最近睇過</p></article>
+<article class="card" data-fam="立體質感" data-ind="SaaS 儀表板／生產力工具" data-uses="Landing / SaaS" data-tokens=":root{
+  --bg: #1B1436;
+  --fg: #FFFFFF;
+  --muted: #E4E0F2;
+  --surface: rgba(255,255,255,.12);
+  --border: rgba(255,255,255,.30);
+  --accent: #B79CFF;
+  --accent-fg: #191136;
+  --accent-grad: linear-gradient(135deg,#B79CFF,#7FE6E0);
+  --radius: 18px;
+  --radius-sm: 12px;
+  --shadow: 0 20px 50px rgba(9,4,24,.45),inset 0 1px 0 rgba(255,255,255,.28);
+  --btn-shadow: 0 10px 26px rgba(183,156,255,.30);
+  --art-bg: linear-gradient(135deg,rgba(255,255,255,.42),rgba(255,255,255,.06));
+  --media-bg: linear-gradient(135deg,rgba(127,90,240,.55),rgba(44,182,125,.35));
+  --cta-bg: rgba(255,255,255,.10);
+  --input-bg: rgba(255,255,255,.14);
+  --ok: #8BE8C0;
+  --warn: #FFA893;
+  --font-display: &#x27;Plus Jakarta Sans&#x27;,&#x27;Noto Sans TC&#x27;,sans-serif;
+  --font-body: &#x27;Plus Jakarta Sans&#x27;,&#x27;Noto Sans TC&#x27;,sans-serif;
+  --font-mono: ui-monospace,&#x27;SF Mono&#x27;,Menlo,monospace;
+  --focus-ring: var(--accent);
+}" data-name="Glassmorphism glassmorphism Prism SaaS 儀表板／生產力工具 Landing / SaaS" data-slug="glassmorphism" data-brand="Prism" data-cta="免費試"><div class="sw"><i style="background:#1B1436"></i><i style="background:#B79CFF"></i></div><h3>Glassmorphism <span class="cn">立體質感</span></h3><p class="ind">SaaS 儀表板／生產力工具</p><p class="brand"><b>Prism</b> · 免費試</p><p class="font" style="font-family:'Plus Jakarta Sans'">Aa 字體樣本 123</p><div class="acts"><a href="glassmorphism-pro.html">睇 Pro →</a><a href="glassmorphism.html">基本</a><button class="star" type="button" title="加入我的最愛">☆</button><button class="copy" type="button" title="複製 :root tokens">⧉</button><button class="add" type="button">＋ 候選</button></div><p class="recent" hidden>最近睇過</p></article>
+<article class="card" data-fam="古典人文" data-ind="獨立書店／黑暗文學出版" data-uses="品牌 / 內容頁" data-tokens=":root{
+  --bg: #0C0A0F;
+  --fg: #EAE6F0;
+  --muted: #BDB6CC;
+  --surface: #17121D;
+  --border: #4A3A58;
+  --accent: #E9C46A;
+  --accent-fg: #1A1020;
+  --accent-grad: linear-gradient(180deg,#F3D98C,#C9A34A);
+  --radius: 2px;
+  --radius-sm: 2px;
+  --shadow: 0 26px 60px rgba(0,0,0,.72);
+  --btn-shadow: 0 0 24px rgba(233,196,106,.22);
+  --art-bg: radial-gradient(circle at 50% 34%,#5E0B1D 0 20%,#2A1638 21% 44%,#0C0A0F 45%);
+  --media-bg: linear-gradient(180deg,#2A1638,#0C0A0F);
+  --cta-bg: #1D1428;
+  --input-bg: #17121D;
+  --ok: #7FC79B;
+  --warn: #E0795F;
+  --font-display: &#x27;Cormorant Garamond&#x27;,&#x27;Noto Serif TC&#x27;,serif;
+  --font-body: Lora,&#x27;Noto Serif TC&#x27;,serif;
+  --font-mono: ui-monospace,&#x27;SF Mono&#x27;,Menlo,monospace;
+  --focus-ring: var(--accent);
+}" data-name="Gothic gothic Vellum 獨立書店／黑暗文學出版 品牌 / 內容頁" data-slug="gothic" data-brand="Vellum" data-cta="訂書"><div class="sw"><i style="background:#0C0A0F"></i><i style="background:#E9C46A"></i></div><h3>Gothic <span class="cn">古典人文</span></h3><p class="ind">獨立書店／黑暗文學出版</p><p class="brand"><b>Vellum</b> · 訂書</p><p class="font" style="font-family:'Cormorant Garamond'">Aa 字體樣本 123</p><div class="acts"><a href="gothic-pro.html">睇 Pro →</a><a href="gothic.html">基本</a><button class="star" type="button" title="加入我的最愛">☆</button><button class="copy" type="button" title="複製 :root tokens">⧉</button><button class="add" type="button">＋ 候選</button></div><p class="recent" hidden>最近睇過</p></article>
+<article class="card" data-fam="張力反叛" data-ind="街頭服飾／滑板" data-uses="其他" data-tokens=":root{
+  --bg: #141414;
+  --fg: #F2F2F2;
+  --muted: #B5B5B5;
+  --surface: #1F1F1F;
+  --border: #333333;
+  --accent: #39FF14;
+  --accent-fg: #0E1A08;
+  --radius: 4px;
+  --radius-sm: 3px;
+  --shadow: 0 12px 30px rgba(0,0,0,.6);
+  --btn-shadow: 4px 4px 0 #FF2E88;
+  --art-bg: linear-gradient(135deg,#FF2E88,#FF7A00 46%,#00C2FF);
+  --media-bg: linear-gradient(135deg,#FF2E88,#FF7A00 46%,#00C2FF);
+  --cta-bg: #1C1C1C;
+  --input-bg: #101010;
+  --ok: #39FF14;
+  --warn: #FF2E88;
+  --font-display: &#x27;Permanent Marker&#x27;,cursive;
+  --font-body: Barlow,&#x27;Noto Sans TC&#x27;,sans-serif;
+  --focus-ring: var(--accent);
+}" data-name="Graffiti graffiti Sink` / `Sink Wears 街頭服飾／滑板 其他" data-slug="graffiti" data-brand="Sink` / `Sink Wears" data-cta="落單"><div class="sw"><i style="background:#141414"></i><i style="background:#39FF14"></i></div><h3>Graffiti <span class="cn">張力反叛</span></h3><p class="ind">街頭服飾／滑板</p><p class="brand"><b>Sink` / `Sink Wears</b> · 落單</p><p class="font" style="font-family:'Permanent Marker'">Aa 字體樣本 123</p><div class="acts"><a href="graffiti-pro.html">睇 Pro →</a><a href="graffiti.html">基本</a><button class="star" type="button" title="加入我的最愛">☆</button><button class="copy" type="button" title="複製 :root tokens">⧉</button><button class="add" type="button">＋ 候選</button></div><p class="recent" hidden>最近睇過</p></article>
+<article class="card" data-fam="古典人文" data-ind="家居傢俬" data-uses="商店 / 商品" data-tokens=":root{
+  --bg: #F7F4EE;
+  --fg: #2E2D2B;
+  --muted: #5A574F;
+  --surface: #EDE6DA;
+  --border: #D9D1C3;
+  --accent: #4A5741;
+  --accent-fg: #FFFFFF;
+  --accent-grad: linear-gradient(90deg,#C8AD8D,#B49673);
+  --radius: 6px;
+  --radius-sm: 4px;
+  --shadow: 0 10px 30px rgba(46,45,43,.08);
+  --btn-shadow: 0 1px 0 rgba(46,45,43,.14);
+  --art-bg: linear-gradient(180deg,#EDE6DA,#C8AD8D);
+  --media-bg: linear-gradient(180deg,#EDE6DA,#D9D1C3);
+  --cta-bg: #EDE6DA;
+  --input-bg: #FFFFFF;
+  --ok: #3F6B4E;
+  --warn: #A6483A;
+  --font-display: Jost,&#x27;Noto Sans TC&#x27;,sans-serif;
+  --font-body: Jost,&#x27;Noto Sans TC&#x27;,sans-serif;
+  --font-mono: ui-monospace,&#x27;SF Mono&#x27;,Menlo,monospace;
+  --focus-ring: var(--accent);
+}" data-name="Japandi japandi Hinoki 家居傢俬 商店 / 商品" data-slug="japandi" data-brand="Hinoki" data-cta="預約睇展廳"><div class="sw"><i style="background:#F7F4EE"></i><i style="background:#4A5741"></i></div><h3>Japandi <span class="cn">古典人文</span></h3><p class="ind">家居傢俬</p><p class="brand"><b>Hinoki</b> · 預約睇展廳</p><p class="font" style="font-family:Jost">Aa 字體樣本 123</p><div class="acts"><a href="japandi-pro.html">睇 Pro →</a><a href="japandi.html">基本</a><button class="star" type="button" title="加入我的最愛">☆</button><button class="copy" type="button" title="複製 :root tokens">⧉</button><button class="add" type="button">＋ 候選</button></div><p class="recent" hidden>最近睇過</p></article>
+<article class="card" data-fam="藝術手作" data-ind="文具／生活雜貨" data-uses="商店 / 商品" data-tokens=":root{
+  --bg: #FFF7FA;
+  --fg: #5B4636;
+  --muted: #75665A;
+  --surface: #FFFFFF;
+  --border: #FFD9E6;
+  --accent: #FF7FAE;
+  --accent-fg: #4A3428;
+  --accent-grad: linear-gradient(#FFB7C5,#FF7FAE);
+  --radius: 26px;
+  --radius-sm: 16px;
+  --shadow: 0 10px 24px rgba(255,183,197,.42);
+  --btn-shadow: 0 5px 0 #FF9EBB;
+  --art-bg: radial-gradient(circle at 30% 25%,#FFF1A8,#FFB7C5);
+  --media-bg: radial-gradient(circle at 30% 25%,#FFF1A8,#FFC9DD);
+  --cta-bg: #FFE3EE;
+  --input-bg: #FFF7FA;
+  --ok: #B5EAD7;
+  --warn: #FF7FAE;
+  --font-display: &quot;Mochiy Pop One&quot;,&quot;M PLUS Rounded 1c&quot;,sans-serif;
+  --font-body: &quot;M PLUS Rounded 1c&quot;,&quot;Noto Sans TC&quot;,sans-serif;
+  --focus-ring: #FF0F67;
+}" data-name="Kawaii kawaii Momo` / `Momo Club 文具／生活雜貨 商店 / 商品" data-slug="kawaii" data-brand="Momo` / `Momo Club" data-cta="拎試用裝"><div class="sw"><i style="background:#FFF7FA"></i><i style="background:#FF7FAE"></i></div><h3>Kawaii <span class="cn">藝術手作</span></h3><p class="ind">文具／生活雜貨</p><p class="brand"><b>Momo` / `Momo Club</b> · 拎試用裝</p><p class="font" style="font-family:"Mochiy Pop One"">Aa 字體樣本 123</p><div class="acts"><a href="kawaii-pro.html">睇 Pro →</a><a href="kawaii.html">基本</a><button class="star" type="button" title="加入我的最愛">☆</button><button class="copy" type="button" title="複製 :root tokens">⧉</button><button class="add" type="button">＋ 候選</button></div><p class="recent" hidden>最近睇過</p></article>
+<article class="card" data-fam="張力反叛" data-ind="Gen Z 潮流品牌" data-uses="商店 / 商品 品牌 / 內容頁" data-tokens=":root{
+  --bg: linear-gradient(135deg,#FF5FA2,#FFC700 55%,#1DD3B0);
+  --fg: #3B1B2C;
+  --muted: #5F2340;
+  --surface: #FFFFFF;
+  --border: #FF5FA2;
+  --accent: #FF5FA2;
+  --accent-fg: #FFFFFF;
+  --accent-grad: linear-gradient(#FF8FC0,#FF5FA2);
+  --radius: 20px;
+  --radius-sm: 12px;
+  --shadow: 8px 8px 0 rgba(142,68,255,.55);
+  --btn-shadow: 0 6px 0 #8E44FF;
+  --art-bg: repeating-linear-gradient(45deg,#FF5FA2 0 14px,#FFC700 14px 28px,#1DD3B0 28px 42px);
+  --media-bg: repeating-linear-gradient(45deg,#C58B3A 0 10px,#FFC700 10px 20px,#8E44FF 20px 30px);
+  --cta-bg: #FFFFFF;
+  --input-bg: #FFFDE7;
+  --ok: #1DD3B0;
+  --warn: #FF5FA2;
+  --font-display: Shrikhand,Lobster,cursive;
+  --font-body: &#x27;Comic Neue&#x27;,&#x27;Noto Sans TC&#x27;,cursive;
+  --focus-ring: var(--accent);
+}" data-name="Kitsch kitsch Tacky` / `Tacky Mart Gen Z 潮流品牌 商店 / 商品 品牌 / 內容頁" data-slug="kitsch" data-brand="Tacky` / `Tacky Mart" data-cta="入手"><div class="sw"><i style="background:linear-gradient(135deg,#FF5FA2,#FFC700 55%,#1DD3B0)"></i><i style="background:#FF5FA2"></i></div><h3>Kitsch <span class="cn">張力反叛</span></h3><p class="ind">Gen Z 潮流品牌</p><p class="brand"><b>Tacky` / `Tacky Mart</b> · 入手</p><p class="font" style="font-family:Shrikhand">Aa 字體樣本 123</p><div class="acts"><a href="kitsch-pro.html">睇 Pro →</a><a href="kitsch.html">基本</a><button class="star" type="button" title="加入我的最愛">☆</button><button class="copy" type="button" title="複製 :root tokens">⧉</button><button class="add" type="button">＋ 候選</button></div><p class="recent" hidden>最近睇過</p></article>
+<article class="card" data-fam="古典人文" data-ind="語言學校／補習" data-uses="教育 / 課程" data-tokens=":root{
+  --bg: #F8F3E9;
+  --fg: #3E3328;
+  --muted: #5B4B3B;
+  --surface: #EFE7D6;
+  --border: #D9CCB4;
+  --accent: #4F5A3D;
+  --accent-fg: #FFFFFF;
+  --accent-grad: linear-gradient(90deg,#B79C7B,#8A8F6A);
+  --radius: 6px;
+  --radius-sm: 4px;
+  --shadow: 0 14px 34px rgba(62,51,40,.10);
+  --btn-shadow: 0 2px 0 rgba(62,51,40,.16);
+  --art-bg: linear-gradient(115deg,rgba(255,236,190,.45) 0 40px,transparent 40px 90px),linear-gradient(180deg,#EADFCB,#C7D6DE);
+  --media-bg: linear-gradient(180deg,#EFE7D6,#D9CCB4);
+  --cta-bg: #EFE7D6;
+  --input-bg: #FFFFFF;
+  --ok: #3F6B4E;
+  --warn: #A6483A;
+  --font-display: &#x27;Cormorant Garamond&#x27;,&#x27;Noto Serif TC&#x27;,serif;
+  --font-body: Lora,&#x27;Noto Serif TC&#x27;,serif;
+  --font-mono: ui-monospace,&#x27;SF Mono&#x27;,Menlo,monospace;
+  --focus-ring: var(--accent);
+}" data-name="Light Academia light-academia Lyceum 語言學校／補習 教育 / 課程" data-slug="light-academia" data-brand="Lyceum" data-cta="預約試堂"><div class="sw"><i style="background:#F8F3E9"></i><i style="background:#4F5A3D"></i></div><h3>Light Academia <span class="cn">古典人文</span></h3><p class="ind">語言學校／補習</p><p class="brand"><b>Lyceum</b> · 預約試堂</p><p class="font" style="font-family:'Cormorant Garamond'">Aa 字體樣本 123</p><div class="acts"><a href="light-academia-pro.html">睇 Pro →</a><a href="light-academia.html">基本</a><button class="star" type="button" title="加入我的最愛">☆</button><button class="copy" type="button" title="複製 :root tokens">⧉</button><button class="add" type="button">＋ 候選</button></div><p class="recent" hidden>最近睇過</p></article>
+<article class="card" data-fam="古典人文" data-ind="高端時裝" data-uses="品牌 / 內容頁" data-tokens=":root{
+  --bg: #F5F1EA;
+  --fg: #0B0B0B;
+  --muted: #4D473F;
+  --surface: #FFFFFF;
+  --border: rgba(11,11,11,.22);
+  --accent: #7A5F2A;
+  --accent-fg: #F5F1EA;
+  --radius: 0px;
+  --radius-sm: 0px;
+  --shadow: none;
+  --btn-shadow: none;
+  --art-bg: linear-gradient(150deg,#E6DFD3,#CBBFA9);
+  --media-bg: linear-gradient(150deg,#E6DFD3,#CBBFA9);
+  --cta-bg: #EFE7D9;
+  --input-bg: #FFFFFF;
+  --ok: #1F5C3A;
+  --warn: #8E2F1E;
+  --font-display: &#x27;Bodoni Moda&#x27;,&#x27;Noto Serif TC&#x27;,serif;
+  --font-body: Montserrat,&#x27;Noto Sans TC&#x27;,sans-serif;
+  --font-mono: ui-monospace,Menlo,monospace;
+  --focus-ring: var(--accent);
+}" data-name="Luxury Typography luxury-typography Maison 高端時裝 品牌 / 內容頁" data-slug="luxury-typography" data-brand="Maison" data-cta="預約私人導購"><div class="sw"><i style="background:#F5F1EA"></i><i style="background:#7A5F2A"></i></div><h3>Luxury Typography <span class="cn">古典人文</span></h3><p class="ind">高端時裝</p><p class="brand"><b>Maison</b> · 預約私人導購</p><p class="font" style="font-family:'Bodoni Moda'">Aa 字體樣本 123</p><div class="acts"><a href="luxury-typography-pro.html">睇 Pro →</a><a href="luxury-typography.html">基本</a><button class="star" type="button" title="加入我的最愛">☆</button><button class="copy" type="button" title="複製 :root tokens">⧉</button><button class="add" type="button">＋ 候選</button></div><p class="recent" hidden>最近睇過</p></article>
+<article class="card" data-fam="張力反叛" data-ind="品牌體驗 agency" data-uses="作品集 / 工作室 品牌 / 內容頁" data-tokens=":root{
+  --bg: #6A4C93;
+  --fg: #FFFFFF;
+  --muted: #F6EAFF;
+  --surface: #3A2A57;
+  --border: #111111;
+  --accent: #FFD60A;
+  --accent-fg: #111111;
+  --radius: 0 28px 0 28px;
+  --radius-sm: 0 18px 0 18px;
+  --shadow: 8px 8px 0 #111111;
+  --btn-shadow: 6px 6px 0 #111111;
+  --art-bg: linear-gradient(135deg,#E63946,#6A4C93 55%,#2A9D8F);
+  --media-bg: linear-gradient(45deg,#FFD60A 0 14px,#FFFFFF 14px 28px);
+  --cta-bg: #3A2A57;
+  --input-bg: #2E2246;
+  --ok: #9DF3B8;
+  --warn: #FFC2D1;
+  --font-display: &#x27;Bricolage Grotesque&#x27;,&#x27;Noto Sans TC&#x27;,sans-serif;
+  --font-body: &#x27;Bricolage Grotesque&#x27;,&#x27;Noto Sans TC&#x27;,sans-serif;
+  --font-mono: &#x27;Rubik Mono One&#x27;,ui-monospace,monospace;
+  --focus-ring: var(--accent);
+}" data-name="Maximalism maximalism Carnival 品牌體驗 agency 作品集 / 工作室 品牌 / 內容頁" data-slug="maximalism" data-brand="Carnival" data-cta="開始對話"><div class="sw"><i style="background:#6A4C93"></i><i style="background:#FFD60A"></i></div><h3>Maximalism <span class="cn">張力反叛</span></h3><p class="ind">品牌體驗 agency</p><p class="brand"><b>Carnival</b> · 開始對話</p><p class="font" style="font-family:'Bricolage Grotesque'">Aa 字體樣本 123</p><div class="acts"><a href="maximalism-pro.html">睇 Pro →</a><a href="maximalism.html">基本</a><button class="star" type="button" title="加入我的最愛">☆</button><button class="copy" type="button" title="複製 :root tokens">⧉</button><button class="add" type="button">＋ 候選</button></div><p class="recent" hidden>最近睇過</p></article>
+<article class="card" data-fam="張力反叛" data-ind="活動／音樂節" data-uses="餐飲 / 活動" data-tokens=":root{
+  --bg: #FFFFFF;
+  --fg: #111111;
+  --muted: #4B4B4B;
+  --surface: #FFFFFF;
+  --border: #111111;
+  --accent: #FF6FB5;
+  --accent-fg: #111111;
+  --radius: 18px;
+  --radius-sm: 10px;
+  --shadow: 6px 6px 0 #111111;
+  --btn-shadow: 6px 6px 0 #111111;
+  --art-bg: conic-gradient(from 45deg,#FF6FB5,#FFD23F,#3BCEAC,#3A86FF,#EE4266,#FF6FB5);
+  --media-bg: conic-gradient(from 45deg,#FF6FB5,#FFD23F,#3BCEAC,#3A86FF,#FF6FB5);
+  --cta-bg: #FFD23F;
+  --input-bg: #FFFFFF;
+  --ok: #3BCEAC;
+  --warn: #EE4266;
+  --font-display: Bungee,Poppins,sans-serif;
+  --font-body: Poppins,&#x27;Noto Sans TC&#x27;,sans-serif;
+  --focus-ring: #FF1D8B;
+}" data-name="Memphis memphis Milano` / `Milano Fest 活動／音樂節 餐飲 / 活動" data-slug="memphis" data-brand="Milano` / `Milano Fest" data-cta="買飛"><div class="sw"><i style="background:#FFFFFF"></i><i style="background:#FF6FB5"></i></div><h3>Memphis <span class="cn">張力反叛</span></h3><p class="ind">活動／音樂節</p><p class="brand"><b>Milano` / `Milano Fest</b> · 買飛</p><p class="font" style="font-family:Bungee">Aa 字體樣本 123</p><div class="acts"><a href="memphis-pro.html">睇 Pro →</a><a href="memphis.html">基本</a><button class="star" type="button" title="加入我的最愛">☆</button><button class="copy" type="button" title="複製 :root tokens">⧉</button><button class="add" type="button">＋ 候選</button></div><p class="recent" hidden>最近睇過</p></article>
+<article class="card" data-fam="古典人文" data-ind="復古 hi-fi／音響品牌" data-uses="品牌 / 內容頁" data-tokens=":root{
+  --bg: #F4ECD8;
+  --fg: #2B2A28;
+  --muted: #5B554A;
+  --surface: #FFFFFF;
+  --border: #2B2A28;
+  --accent: #A34A17;
+  --accent-fg: #FFFFFF;
+  --radius: 18px;
+  --radius-sm: 12px;
+  --shadow: 0 10px 24px rgba(43,42,40,.10);
+  --btn-shadow: none;
+  --art-bg: radial-gradient(circle at 30% 40%,#E1A624 0 18%,transparent 19%),radial-gradient(circle at 65% 55%,#2A8C8C 0 22%,transparent 23%),#F4ECD8;
+  --media-bg: linear-gradient(150deg,#E1A624,#F4ECD8);
+  --cta-bg: linear-gradient(180deg,#E1A624,#F4ECD8);
+  --input-bg: #FFFDF6;
+  --ok: #1E6B5E;
+  --warn: #9B2C1F;
+  --font-display: &#x27;Josefin Sans&#x27;,&#x27;Noto Sans TC&#x27;,sans-serif;
+  --font-body: &#x27;Work Sans&#x27;,&#x27;Noto Sans TC&#x27;,sans-serif;
+  --font-mono: ui-monospace,Menlo,monospace;
+  --focus-ring: var(--accent);
+}" data-name="Mid-Century mid-century Sonor 復古 hi-fi／音響品牌 品牌 / 內容頁" data-slug="mid-century" data-brand="Sonor" data-cta="預約試聽"><div class="sw"><i style="background:#F4ECD8"></i><i style="background:#A34A17"></i></div><h3>Mid-Century <span class="cn">古典人文</span></h3><p class="ind">復古 hi-fi／音響品牌</p><p class="brand"><b>Sonor</b> · 預約試聽</p><p class="font" style="font-family:'Josefin Sans'">Aa 字體樣本 123</p><div class="acts"><a href="mid-century-pro.html">睇 Pro →</a><a href="mid-century.html">基本</a><button class="star" type="button" title="加入我的最愛">☆</button><button class="copy" type="button" title="複製 :root tokens">⧉</button><button class="add" type="button">＋ 候選</button></div><p class="recent" hidden>最近睇過</p></article>
+<article class="card" data-fam="秩序理性" data-ind="生產力 app" data-uses="Landing / SaaS" data-tokens=":root{
+  --bg: #FFFFFF;
+  --fg: #111111;
+  --muted: #616161;
+  --surface: #FFFFFF;
+  --border: #E4E4E4;
+  --accent: #0B57D0;
+  --accent-fg: #FFFFFF;
+  --radius: 10px;
+  --radius-sm: 6px;
+  --shadow: none;
+  --btn-shadow: none;
+  --art-bg: #F5F5F5;
+  --media-bg: #F7F7F7;
+  --cta-bg: #F7F7F7;
+  --input-bg: #FFFFFF;
+  --ok: #0E6B3E;
+  --warn: #B3261E;
+  --font-display: Inter,&#x27;Noto Sans TC&#x27;,sans-serif;
+  --font-body: Inter,&#x27;Noto Sans TC&#x27;,sans-serif;
+  --font-mono: ui-monospace,Menlo,monospace;
+  --focus-ring: var(--accent);
+}" data-name="Minimalism minimalism Plain 生產力 app Landing / SaaS" data-slug="minimalism" data-brand="Plain" data-cta="免費試"><div class="sw"><i style="background:#FFFFFF"></i><i style="background:#0B57D0"></i></div><h3>Minimalism <span class="cn">秩序理性</span></h3><p class="ind">生產力 app</p><p class="brand"><b>Plain</b> · 免費試</p><p class="font" style="font-family:Inter">Aa 字體樣本 123</p><div class="acts"><a href="minimalism-pro.html">睇 Pro →</a><a href="minimalism.html">基本</a><button class="star" type="button" title="加入我的最愛">☆</button><button class="copy" type="button" title="複製 :root tokens">⧉</button><button class="add" type="button">＋ 候選</button></div><p class="recent" hidden>最近睇過</p></article>
+<article class="card" data-fam="藝術手作" data-ind="獨立雜誌／出版" data-uses="品牌 / 內容頁" data-tokens=":root{
+  --bg: #F1ECE2;
+  --fg: #1B1B1B;
+  --muted: #5A554C;
+  --surface: #FFFFFF;
+  --border: #1B1B1B;
+  --accent: #C2331F;
+  --accent-fg: #FFFFFF;
+  --radius: 2px;
+  --radius-sm: 2px;
+  --shadow: 2px 3px 6px rgba(0,0,0,.22);
+  --btn-shadow: 2px 3px 6px rgba(0,0,0,.22);
+  --art-bg: linear-gradient(135deg,#C9A77C,#C2331F 58%,#2D5BD1);
+  --media-bg: linear-gradient(135deg,#C9A77C,#C2331F 58%,#2D5BD1);
+  --cta-bg: #FFFFFF;
+  --input-bg: #F1ECE2;
+  --ok: #2D5BD1;
+  --warn: #C2331F;
+  --font-display: Anton,Impact,sans-serif;
+  --font-body: &#x27;IBM Plex Sans&#x27;,Arial,sans-serif;
+  --font-mono: &#x27;Special Elite&#x27;,Courier,monospace;
+  --focus-ring: var(--accent);
+}" data-name="Mixed Media mixed-media Collage` / `Collage Press 獨立雜誌／出版 品牌 / 內容頁" data-slug="mixed-media" data-brand="Collage` / `Collage Press" data-cta="訂閱"><div class="sw"><i style="background:#F1ECE2"></i><i style="background:#C2331F"></i></div><h3>Mixed Media <span class="cn">藝術手作</span></h3><p class="ind">獨立雜誌／出版</p><p class="brand"><b>Collage` / `Collage Press</b> · 訂閱</p><p class="font" style="font-family:Anton">Aa 字體樣本 123</p><div class="acts"><a href="mixed-media-pro.html">睇 Pro →</a><a href="mixed-media.html">基本</a><button class="star" type="button" title="加入我的最愛">☆</button><button class="copy" type="button" title="複製 :root tokens">⧉</button><button class="add" type="button">＋ 候選</button></div><p class="recent" hidden>最近睇過</p></article>
+<article class="card" data-fam="秩序理性" data-ind="設計工作室／字體廠" data-uses="作品集 / 工作室" data-tokens=":root{
+  --bg: #FFFFFF;
+  --fg: #0A0A0A;
+  --muted: #555555;
+  --surface: #F2F2F2;
+  --border: #0A0A0A;
+  --accent: #0B5FFF;
+  --accent-fg: #FFFFFF;
+  --radius: 0px;
+  --radius-sm: 0px;
+  --shadow: none;
+  --btn-shadow: 4px 4px 0 #0A0A0A;
+  --art-bg: repeating-linear-gradient(90deg,#F2F2F2 0 24px,#fff 24px 48px);
+  --media-bg: repeating-linear-gradient(90deg,#F2F2F2 0 24px,#fff 24px 48px);
+  --cta-bg: #F2F2F2;
+  --input-bg: #FFFFFF;
+  --ok: #0B5FFF;
+  --warn: #C81E1E;
+  --font-display: &#x27;Space Grotesk&#x27;,&#x27;Noto Sans TC&#x27;,sans-serif;
+  --font-body: Inter,sans-serif;
+  --font-mono: &#x27;Space Grotesk&#x27;,monospace;
+  --focus-ring: var(--accent);
+}" data-name="Modular Typography modular-typography Modular` / `Modular Grid 設計工作室／字體廠 作品集 / 工作室" data-slug="modular-typography" data-brand="Modular` / `Modular Grid" data-cta="睇系統"><div class="sw"><i style="background:#FFFFFF"></i><i style="background:#0B5FFF"></i></div><h3>Modular Typography <span class="cn">秩序理性</span></h3><p class="ind">設計工作室／字體廠</p><p class="brand"><b>Modular` / `Modular Grid</b> · 睇系統</p><p class="font" style="font-family:'Space Grotesk'">Aa 字體樣本 123</p><div class="acts"><a href="modular-typography-pro.html">睇 Pro →</a><a href="modular-typography.html">基本</a><button class="star" type="button" title="加入我的最愛">☆</button><button class="copy" type="button" title="複製 :root tokens">⧉</button><button class="add" type="button">＋ 候選</button></div><p class="recent" hidden>最近睇過</p></article>
+<article class="card" data-fam="古典人文" data-ind="精釀烈酒" data-uses="其他" data-tokens=":root{
+  --bg: #1C2340;
+  --fg: #E7D3B0;
+  --muted: #C9A24B;
+  --surface: #262E52;
+  --border: #C9A24B;
+  --accent: #9E4522;
+  --accent-fg: #F6EAD6;
+  --radius: 12px;
+  --radius-sm: 8px;
+  --shadow: 0 8px 24px rgba(0,0,0,.35);
+  --btn-shadow: inset 0 0 0 3px #1C2340;
+  --art-bg: radial-gradient(circle at 50% 70%,#6E3B1E 0 30%,transparent 31%),linear-gradient(#1C2340,#B4552D);
+  --media-bg: linear-gradient(160deg,#1C2340,#6E3B1E);
+  --cta-bg: #262E52;
+  --input-bg: #232B4E;
+  --ok: #8FD9A0;
+  --warn: #E8A08B;
+  --font-display: Rye,&#x27;Noto Serif TC&#x27;,serif;
+  --font-body: &#x27;Libre Baskerville&#x27;,&#x27;Noto Serif TC&#x27;,serif;
+  --font-mono: ui-monospace,Menlo,monospace;
+  --focus-ring: #D05B2D;
+}" data-name="Mystical Western mystical-western Sundown 精釀烈酒 其他" data-slug="mystical-western" data-brand="Sundown" data-cta="訂購"><div class="sw"><i style="background:#1C2340"></i><i style="background:#9E4522"></i></div><h3>Mystical Western <span class="cn">古典人文</span></h3><p class="ind">精釀烈酒</p><p class="brand"><b>Sundown</b> · 訂購</p><p class="font" style="font-family:Rye">Aa 字體樣本 123</p><div class="acts"><a href="mystical-western-pro.html">睇 Pro →</a><a href="mystical-western.html">基本</a><button class="star" type="button" title="加入我的最愛">☆</button><button class="copy" type="button" title="複製 :root tokens">⧉</button><button class="add" type="button">＋ 候選</button></div><p class="recent" hidden>最近睇過</p></article>
+<article class="card" data-fam="古典人文" data-ind="海鮮餐廳／海島旅遊" data-uses="餐飲 / 活動 品牌 / 內容頁" data-tokens=":root{
+  --bg: #F3EEE3;
+  --fg: #14284B;
+  --muted: #4F5A75;
+  --surface: #FFFFFF;
+  --border: #C3B9A2;
+  --accent: #C8102E;
+  --accent-fg: #FFFFFF;
+  --radius: 3px;
+  --radius-sm: 2px;
+  --shadow: 0 2px 0 rgba(20,40,75,.16);
+  --btn-shadow: 0 4px 0 rgba(20,40,75,.35);
+  --art-bg: linear-gradient(180deg,#4A90B8,#14284B);
+  --media-bg: linear-gradient(180deg,#8FB6D2,#4A90B8);
+  --cta-bg: #14284B;
+  --input-bg: #FFFFFF;
+  --ok: #1E7A4B;
+  --warn: #C8102E;
+  --font-display: &#x27;Playfair Display&#x27;,&#x27;Noto Serif TC&#x27;,serif;
+  --font-body: &#x27;Source Sans 3&#x27;,&#x27;Noto Sans TC&#x27;,sans-serif;
+  --font-mono: &#x27;Allerta Stencil&#x27;,ui-monospace,Menlo,monospace;
+  --focus-ring: var(--accent);
+}" data-name="Nautical nautical Harbour 海鮮餐廳／海島旅遊 餐飲 / 活動 品牌 / 內容頁" data-slug="nautical" data-brand="Harbour" data-cta="訂位"><div class="sw"><i style="background:#F3EEE3"></i><i style="background:#C8102E"></i></div><h3>Nautical <span class="cn">古典人文</span></h3><p class="ind">海鮮餐廳／海島旅遊</p><p class="brand"><b>Harbour</b> · 訂位</p><p class="font" style="font-family:'Playfair Display'">Aa 字體樣本 123</p><div class="acts"><a href="nautical-pro.html">睇 Pro →</a><a href="nautical.html">基本</a><button class="star" type="button" title="加入我的最愛">☆</button><button class="copy" type="button" title="複製 :root tokens">⧉</button><button class="add" type="button">＋ 候選</button></div><p class="recent" hidden>最近睇過</p></article>
+<article class="card" data-fam="張力反叛" data-ind="創作者平台／作品集 hosting" data-uses="Landing / SaaS" data-tokens=":root{
+  --bg: #FFFDF5;
+  --fg: #000000;
+  --muted: #3B3B3B;
+  --surface: #FFFFFF;
+  --border: #000000;
+  --accent: #2F5BFF;
+  --accent-fg: #FFFFFF;
+  --radius: 0px;
+  --radius-sm: 0px;
+  --shadow: 6px 6px 0 #000000;
+  --btn-shadow: 5px 5px 0 #000000;
+  --art-bg: linear-gradient(135deg,#FFE600 0 34%,#A388EE 34% 67%,#4ECDC4 67%);
+  --media-bg: radial-gradient(#000 2px,transparent 2.5px) 0 0/16px 16px,#FFE600;
+  --cta-bg: #FFE600;
+  --input-bg: #FFFFFF;
+  --ok: #008751;
+  --warn: #D6002A;
+  --font-display: &#x27;Archivo Black&#x27;,&#x27;Noto Sans TC&#x27;,sans-serif;
+  --font-body: &#x27;Space Grotesk&#x27;,&#x27;Noto Sans TC&#x27;,sans-serif;
+  --font-mono: &#x27;Space Grotesk&#x27;,ui-monospace,monospace;
+  --focus-ring: var(--accent);
+}" data-name="Neo-Brutalism neo-brutalism Harsh 創作者平台／作品集 hosting Landing / SaaS" data-slug="neo-brutalism" data-brand="Harsh" data-cta="開免費戶口"><div class="sw"><i style="background:#FFFDF5"></i><i style="background:#2F5BFF"></i></div><h3>Neo-Brutalism <span class="cn">張力反叛</span></h3><p class="ind">創作者平台／作品集 hosting</p><p class="brand"><b>Harsh</b> · 開免費戶口</p><p class="font" style="font-family:'Archivo Black'">Aa 字體樣本 123</p><div class="acts"><a href="neo-brutalism-pro.html">睇 Pro →</a><a href="neo-brutalism.html">基本</a><button class="star" type="button" title="加入我的最愛">☆</button><button class="copy" type="button" title="複製 :root tokens">⧉</button><button class="add" type="button">＋ 候選</button></div><p class="recent" hidden>最近睇過</p></article>
+<article class="card" data-fam="數碼懷舊" data-ind="消費科技／SaaS" data-uses="Landing / SaaS" data-tokens=":root{
+  --bg: #E6F7FF;
+  --fg: #0B3A53;
+  --muted: #2E6B8A;
+  --surface: rgba(255,255,255,.78);
+  --border: rgba(255,255,255,.95);
+  --accent: #1B9FD8;
+  --accent-fg: #05293B;
+  --focus-ring: #0F6E99;
+  --radius: 22px;
+  --radius-sm: 14px;
+  --shadow: 0 10px 24px rgba(27,159,216,.20),inset 0 1px 0 rgba(255,255,255,.9);
+  --btn-shadow: 0 6px 0 rgba(27,159,216,.35);
+  --art-bg: linear-gradient(180deg,#BEEBFF,#5FD1E8 55%,#8FE3C0);
+  --media-bg: linear-gradient(180deg,#E8FAFF,#A8E6F5);
+  --cta-bg: linear-gradient(180deg,#D6F3FF,#B6E9F8);
+  --input-bg: rgba(255,255,255,.92);
+  --ok: #1E9E6A;
+  --warn: #D9614A;
+  --font-display: &#x27;Varela Round&#x27;,sans-serif;
+  --font-body: &#x27;Nunito Sans&#x27;,&#x27;Noto Sans TC&#x27;,sans-serif;
+}" data-name="Neo Frutiger Aero neo-frutiger-aero Aero` / `Aero Drive 消費科技／SaaS Landing / SaaS" data-slug="neo-frutiger-aero" data-brand="Aero` / `Aero Drive" data-cta="即刻試"><div class="sw"><i style="background:#E6F7FF"></i><i style="background:#1B9FD8"></i></div><h3>Neo Frutiger Aero <span class="cn">數碼懷舊</span></h3><p class="ind">消費科技／SaaS</p><p class="brand"><b>Aero` / `Aero Drive</b> · 即刻試</p><p class="font" style="font-family:'Varela Round'">Aa 字體樣本 123</p><div class="acts"><a href="neo-frutiger-aero-pro.html">睇 Pro →</a><a href="neo-frutiger-aero.html">基本</a><button class="star" type="button" title="加入我的最愛">☆</button><button class="copy" type="button" title="複製 :root tokens">⧉</button><button class="add" type="button">＋ 候選</button></div><p class="recent" hidden>最近睇過</p></article>
+<article class="card" data-fam="古典人文" data-ind="博物館／文化機構" data-uses="品牌 / 內容頁" data-tokens=":root{
+  --bg: #F4F1EA;
+  --fg: #22201C;
+  --muted: #5A5A52;
+  --surface: #FFFFFF;
+  --border: #D9D1C0;
+  --accent: #1F2A44;
+  --accent-fg: #FFFFFF;
+  --radius: 2px;
+  --radius-sm: 2px;
+  --shadow: 0 1px 0 rgba(184,155,94,.45);
+  --btn-shadow: none;
+  --art-bg: linear-gradient(180deg,#FBF9F4,#E6E0D4);
+  --media-bg: linear-gradient(180deg,#E6E0D4,#D9D1C0);
+  --cta-bg: #1F2A44;
+  --input-bg: #FFFFFF;
+  --ok: #2C6B4F;
+  --warn: #8C2F2F;
+  --font-display: Cinzel,&#x27;Noto Serif TC&#x27;,serif;
+  --font-body: &#x27;EB Garamond&#x27;,&#x27;Noto Serif TC&#x27;,serif;
+  --font-mono: Cinzel,ui-monospace,monospace;
+  --focus-ring: var(--accent);
+}" data-name="Neoclassical neoclassical Athenaeum 博物館／文化機構 品牌 / 內容頁" data-slug="neoclassical" data-brand="Athenaeum" data-cta="買飛"><div class="sw"><i style="background:#F4F1EA"></i><i style="background:#1F2A44"></i></div><h3>Neoclassical <span class="cn">古典人文</span></h3><p class="ind">博物館／文化機構</p><p class="brand"><b>Athenaeum</b> · 買飛</p><p class="font" style="font-family:Cinzel">Aa 字體樣本 123</p><div class="acts"><a href="neoclassical-pro.html">睇 Pro →</a><a href="neoclassical.html">基本</a><button class="star" type="button" title="加入我的最愛">☆</button><button class="copy" type="button" title="複製 :root tokens">⧉</button><button class="add" type="button">＋ 候選</button></div><p class="recent" hidden>最近睇過</p></article>
+<article class="card" data-fam="立體質感" data-ind="家用音響控制 app" data-uses="其他" data-tokens=":root{
+  --bg: #E0E5EC;
+  --fg: #2D3748;
+  --muted: #535E70;
+  --surface: #F1F4F9;
+  --border: #C8D0DC;
+  --accent: #4F46D6;
+  --accent-fg: #FFFFFF;
+  --radius: 22px;
+  --radius-sm: 14px;
+  --shadow: 9px 9px 18px #A3B1C6,-9px -9px 18px #FFFFFF;
+  --btn-shadow: 6px 6px 12px #A3B1C6,-6px -6px 12px #FFFFFF;
+  --art-bg: radial-gradient(circle at 30% 28%,#FFFFFF,transparent 46%),linear-gradient(160deg,#E8EDF4,#D3DAE6);
+  --media-bg: radial-gradient(circle at 34% 30%,#FFFFFF,transparent 48%),linear-gradient(160deg,#E4E9F1,#D3DAE6);
+  --cta-bg: #EDF1F7;
+  --input-bg: #E8ECF3;
+  --ok: #1F7A57;
+  --warn: #A32A3C;
+  --font-display: Poppins,&#x27;Noto Sans TC&#x27;,sans-serif;
+  --font-body: Poppins,&#x27;Noto Sans TC&#x27;,sans-serif;
+  --font-mono: &#x27;Roboto Mono&#x27;,ui-monospace,Menlo,monospace;
+  --focus-ring: var(--accent);
+}" data-name="Neumorphism neumorphism Softone 家用音響控制 app 其他" data-slug="neumorphism" data-brand="Softone" data-cta="免費試"><div class="sw"><i style="background:#E0E5EC"></i><i style="background:#4F46D6"></i></div><h3>Neumorphism <span class="cn">立體質感</span></h3><p class="ind">家用音響控制 app</p><p class="brand"><b>Softone</b> · 免費試</p><p class="font" style="font-family:Poppins">Aa 字體樣本 123</p><div class="acts"><a href="neumorphism-pro.html">睇 Pro →</a><a href="neumorphism.html">基本</a><button class="star" type="button" title="加入我的最愛">☆</button><button class="copy" type="button" title="複製 :root tokens">⧉</button><button class="add" type="button">＋ 候選</button></div><p class="recent" hidden>最近睇過</p></article>
+<article class="card" data-fam="數碼懷舊" data-ind="獨立遊戲" data-uses="品牌 / 內容頁" data-tokens=":root{
+  --bg: #1D2B53;
+  --fg: #FFF1E8;
+  --muted: #C2C3C7;
+  --surface: #243463;
+  --border: #5F574F;
+  --accent: #FFEC27;
+  --accent-fg: #1D2B53;
+  --radius: 0px;
+  --radius-sm: 0px;
+  --shadow: 4px 4px 0 #0E1730;
+  --btn-shadow: 4px 4px 0 #FF004D;
+  --art-bg: linear-gradient(180deg,#29ADFF 0 52%,#1D2B53 52%);
+  --media-bg: repeating-linear-gradient(0deg,#008751 0 12px,#00E436 12px 24px);
+  --cta-bg: #243463;
+  --input-bg: #16203D;
+  --ok: #00E436;
+  --warn: #FF004D;
+  --font-display: &#x27;Press Start 2P&#x27;,&#x27;Noto Sans TC&#x27;,monospace;
+  --font-body: &#x27;VT323&#x27;,&#x27;Noto Sans TC&#x27;,sans-serif;
+  --font-mono: &#x27;VT323&#x27;,ui-monospace,monospace;
+  --focus-ring: var(--accent);
+}" data-name="Pixel Art pixel-art Pixelco 獨立遊戲 品牌 / 內容頁" data-slug="pixel-art" data-brand="Pixelco" data-cta="加入願望清單"><div class="sw"><i style="background:#1D2B53"></i><i style="background:#FFEC27"></i></div><h3>Pixel Art <span class="cn">數碼懷舊</span></h3><p class="ind">獨立遊戲</p><p class="brand"><b>Pixelco</b> · 加入願望清單</p><p class="font" style="font-family:'Press Start 2P'">Aa 字體樣本 123</p><div class="acts"><a href="pixel-art-pro.html">睇 Pro →</a><a href="pixel-art.html">基本</a><button class="star" type="button" title="加入我的最愛">☆</button><button class="copy" type="button" title="複製 :root tokens">⧉</button><button class="add" type="button">＋ 候選</button></div><p class="recent" hidden>最近睇過</p></article>
+<article class="card" data-fam="藝術手作" data-ind="手作／藝術品牌" data-uses="作品集 / 工作室 品牌 / 內容頁" data-tokens=":root{
+  --bg: #FBF8F1;
+  --fg: #2E3A44;
+  --muted: #5F6B75;
+  --surface: #FFFFFF;
+  --border: #E2DCD0;
+  --accent: #7FB3D5;
+  --accent-fg: #12303F;
+  --focus-ring: #2F6E8F;
+  --radius: 14px;
+  --radius-sm: 10px;
+  --shadow: 0 8px 18px rgba(80,100,120,.14);
+  --btn-shadow: none;
+  --art-bg: radial-gradient(circle at 30% 25%,#F4D35E,#7FB3D5);
+  --media-bg: radial-gradient(circle at 30% 25%,#F4D35E,#A3C585);
+  --cta-bg: #F1EAE0;
+  --input-bg: #FFFFFF;
+  --ok: #6FA37A;
+  --warn: #C4573F;
+  --font-display: Fraunces,&#x27;DM Serif Display&#x27;,serif;
+  --font-body: &#x27;DM Sans&#x27;,&#x27;Noto Sans TC&#x27;,sans-serif;
+}" data-name="Pointillism pointillism Stipple` / `Stipple Print 手作／藝術品牌 作品集 / 工作室 品牌 / 內容頁" data-slug="pointillism" data-brand="Stipple` / `Stipple Print" data-cta="買作品"><div class="sw"><i style="background:#FBF8F1"></i><i style="background:#7FB3D5"></i></div><h3>Pointillism <span class="cn">藝術手作</span></h3><p class="ind">手作／藝術品牌</p><p class="brand"><b>Stipple` / `Stipple Print</b> · 買作品</p><p class="font" style="font-family:Fraunces">Aa 字體樣本 123</p><div class="acts"><a href="pointillism-pro.html">睇 Pro →</a><a href="pointillism.html">基本</a><button class="star" type="button" title="加入我的最愛">☆</button><button class="copy" type="button" title="複製 :root tokens">⧉</button><button class="add" type="button">＋ 候選</button></div><p class="recent" hidden>最近睇過</p></article>
+<article class="card" data-fam="張力反叛" data-ind="零售促銷／快閃" data-uses="商店 / 商品" data-tokens=":root{
+  --bg: #FFFFFF;
+  --fg: #000000;
+  --muted: #3A3A3A;
+  --surface: #FFFFFF;
+  --border: #000000;
+  --accent: #C4001F;
+  --accent-fg: #FFE500;
+  --radius: 0px;
+  --radius-sm: 0px;
+  --shadow: 5px 5px 0 #000000;
+  --btn-shadow: 5px 5px 0 #000000;
+  --art-bg: radial-gradient(#E4002B 3px,transparent 3.4px) 0 0/12px 12px,radial-gradient(#FFE500 3px,transparent 3.4px) 6px 6px/12px 12px,#00B5E2;
+  --media-bg: radial-gradient(#E4002B 3px,transparent 3.4px) 0 0/12px 12px,radial-gradient(#FFE500 3px,transparent 3.4px) 6px 6px/12px 12px,#00B5E2;
+  --cta-bg: #FFE500;
+  --input-bg: #FFFFFF;
+  --ok: #0057B8;
+  --warn: #E4002B;
+  --font-display: Bangers,sans-serif;
+  --font-body: &#x27;Roboto Condensed&#x27;,&#x27;Noto Sans TC&#x27;,sans-serif;
+  --focus-ring: var(--accent);
+}" data-name="Pop Art pop-art Pow` / `Pow Store 零售促銷／快閃 商店 / 商品" data-slug="pop-art" data-brand="Pow` / `Pow Store" data-cta="BUY NOW"><div class="sw"><i style="background:#FFFFFF"></i><i style="background:#C4001F"></i></div><h3>Pop Art <span class="cn">張力反叛</span></h3><p class="ind">零售促銷／快閃</p><p class="brand"><b>Pow` / `Pow Store</b> · BUY NOW</p><p class="font" style="font-family:Bangers">Aa 字體樣本 123</p><div class="acts"><a href="pop-art-pro.html">睇 Pro →</a><a href="pop-art.html">基本</a><button class="star" type="button" title="加入我的最愛">☆</button><button class="copy" type="button" title="複製 :root tokens">⧉</button><button class="add" type="button">＋ 候選</button></div><p class="recent" hidden>最近睇過</p></article>
+<article class="card" data-fam="藝術手作" data-ind="教育教材（語文／STEM）" data-uses="教育 / 課程" data-tokens=":root{
+  --bg: #FFFFFF;
+  --fg: #161616;
+  --muted: #565656;
+  --surface: #F4F4F4;
+  --border: #DCDCDC;
+  --accent: #0F62FE;
+  --accent-fg: #FFFFFF;
+  --radius: 8px;
+  --radius-sm: 8px;
+  --shadow: none;
+  --btn-shadow: none;
+  --art-bg: #F4F4F4;
+  --media-bg: #F4F4F4;
+  --cta-bg: #F4F4F4;
+  --input-bg: #FFFFFF;
+  --ok: #0F8A3C;
+  --warn: #DA1E28;
+  --font-display: &#x27;IBM Plex Sans&#x27;,&#x27;Archivo Black&#x27;,sans-serif;
+  --font-body: &#x27;IBM Plex Sans&#x27;,&#x27;Noto Sans TC&#x27;,sans-serif;
+  --focus-ring: var(--accent);
+}" data-name="Rebus rebus Rebus Lab` / `Rebus Cards 教育教材（語文／STEM） 教育 / 課程" data-slug="rebus" data-brand="Rebus Lab` / `Rebus Cards" data-cta="解一題"><div class="sw"><i style="background:#FFFFFF"></i><i style="background:#0F62FE"></i></div><h3>Rebus <span class="cn">藝術手作</span></h3><p class="ind">教育教材（語文／STEM）</p><p class="brand"><b>Rebus Lab` / `Rebus Cards</b> · 解一題</p><p class="font" style="font-family:'IBM Plex Sans'">Aa 字體樣本 123</p><div class="acts"><a href="rebus-pro.html">睇 Pro →</a><a href="rebus.html">基本</a><button class="star" type="button" title="加入我的最愛">☆</button><button class="copy" type="button" title="複製 :root tokens">⧉</button><button class="add" type="button">＋ 候選</button></div><p class="recent" hidden>最近睇過</p></article>
+<article class="card" data-fam="藝術手作" data-ind="婚禮攝影／活動紀錄" data-uses="作品集 / 工作室 品牌 / 內容頁" data-tokens=":root{
+  --bg: #FDFCF8;
+  --fg: #2B2B2B;
+  --muted: #5F5A52;
+  --surface: #FFFFFF;
+  --border: #E3DCCB;
+  --accent: #B8433C;
+  --accent-fg: #FFFFFF;
+  --radius: 10px;
+  --radius-sm: 6px;
+  --shadow: 2px 3px 0 rgba(43,43,43,.14);
+  --btn-shadow: 0 3px 0 rgba(43,43,43,.28);
+  --art-bg: linear-gradient(160deg,#9FD3E6,#F6C28B 60%,#E07A5F);
+  --media-bg: linear-gradient(160deg,#FBE3C5,#E8A87C);
+  --cta-bg: #F6EFE0;
+  --input-bg: #FFFFFF;
+  --ok: #3F7D5A;
+  --warn: #B0421F;
+  --font-display: &#x27;Caveat&#x27;,&#x27;Noto Sans TC&#x27;,cursive;
+  --font-body: &#x27;Lora&#x27;,&#x27;Noto Sans TC&#x27;,serif;
+  --font-mono: &#x27;Special Elite&#x27;,ui-monospace,monospace;
+  --focus-ring: var(--accent);
+}" data-name="Scrapbook scrapbook Snapbook 婚禮攝影／活動紀錄 作品集 / 工作室 品牌 / 內容頁" data-slug="scrapbook" data-brand="Snapbook" data-cta="預約拍攝"><div class="sw"><i style="background:#FDFCF8"></i><i style="background:#B8433C"></i></div><h3>Scrapbook <span class="cn">藝術手作</span></h3><p class="ind">婚禮攝影／活動紀錄</p><p class="brand"><b>Snapbook</b> · 預約拍攝</p><p class="font" style="font-family:'Caveat'">Aa 字體樣本 123</p><div class="acts"><a href="scrapbook-pro.html">睇 Pro →</a><a href="scrapbook.html">基本</a><button class="star" type="button" title="加入我的最愛">☆</button><button class="copy" type="button" title="複製 :root tokens">⧉</button><button class="add" type="button">＋ 候選</button></div><p class="recent" hidden>最近睇過</p></article>
+<article class="card" data-fam="古典人文" data-ind="婚禮佈置／家品店" data-uses="商店 / 商品 品牌 / 內容頁" data-tokens=":root{
+  --bg: #FAF6F0;
+  --fg: #5A4A48;
+  --muted: #6B5854;
+  --surface: #FFFDFA;
+  --border: #E4D8D2;
+  --accent: #8E5B5B;
+  --accent-fg: #FFFFFF;
+  --radius: 18px;
+  --radius-sm: 12px;
+  --shadow: 0 8px 20px rgba(142,91,91,.14);
+  --btn-shadow: 0 4px 0 rgba(142,91,91,.28);
+  --art-bg: radial-gradient(circle at 40% 70%,#BFD3DC 0 12%,transparent 13%),linear-gradient(160deg,#F7EAE7,#E8C5C1);
+  --media-bg: linear-gradient(160deg,#F7EAE7,#E8C5C1);
+  --cta-bg: #F7ECE9;
+  --input-bg: #FFFFFF;
+  --ok: #5E7F62;
+  --warn: #A6554B;
+  --font-display: &#x27;Playfair Display&#x27;,&#x27;Noto Serif TC&#x27;,serif;
+  --font-body: &#x27;Lora&#x27;,&#x27;Noto Sans TC&#x27;,serif;
+  --font-mono: &#x27;Courier New&#x27;,ui-monospace,monospace;
+  --focus-ring: var(--accent);
+}" data-name="Shabby Chic shabby-chic Rosewood 婚禮佈置／家品店 商店 / 商品 品牌 / 內容頁" data-slug="shabby-chic" data-brand="Rosewood" data-cta="預約場地佈置"><div class="sw"><i style="background:#FAF6F0"></i><i style="background:#8E5B5B"></i></div><h3>Shabby Chic <span class="cn">古典人文</span></h3><p class="ind">婚禮佈置／家品店</p><p class="brand"><b>Rosewood</b> · 預約場地佈置</p><p class="font" style="font-family:'Playfair Display'">Aa 字體樣本 123</p><div class="acts"><a href="shabby-chic-pro.html">睇 Pro →</a><a href="shabby-chic.html">基本</a><button class="star" type="button" title="加入我的最愛">☆</button><button class="copy" type="button" title="複製 :root tokens">⧉</button><button class="add" type="button">＋ 候選</button></div><p class="recent" hidden>最近睇過</p></article>
+<article class="card" data-fam="古典人文" data-ind="戶外用品／露營" data-uses="商店 / 商品" data-tokens=":root{
+  --bg: #EBD5B3;
+  --fg: #3A2718;
+  --muted: #5C4128;
+  --surface: #F6EAD4;
+  --border: #C9A97C;
+  --accent: #8E3B26;
+  --accent-fg: #FFFFFF;
+  --radius: 8px;
+  --radius-sm: 5px;
+  --shadow: 0 6px 0 rgba(58,39,24,.18);
+  --btn-shadow: 0 4px 0 #6E2E1E;
+  --art-bg: radial-gradient(circle at 50% 100%,#F2B84B 0 22%,transparent 23%),linear-gradient(#C1633B,#8E3B26 60%,#3A2718 61%);
+  --media-bg: linear-gradient(#C1633B,#8E3B26 70%,#3A2718 70%);
+  --cta-bg: #F2E3C6;
+  --input-bg: #FBF3E4;
+  --ok: #2F7D63;
+  --warn: #A83A22;
+  --font-display: &#x27;Alfa Slab One&#x27;,&#x27;Noto Sans TC&#x27;,serif;
+  --font-body: &#x27;Merriweather&#x27;,&#x27;Noto Sans TC&#x27;,serif;
+  --font-mono: &#x27;Courier New&#x27;,ui-monospace,monospace;
+  --focus-ring: var(--accent);
+}" data-name="South West & Wild West south-west-wild-west Cactus 戶外用品／露營 商店 / 商品" data-slug="south-west-wild-west" data-brand="Cactus" data-cta="訂購裝備"><div class="sw"><i style="background:#EBD5B3"></i><i style="background:#8E3B26"></i></div><h3>South West & Wild West <span class="cn">古典人文</span></h3><p class="ind">戶外用品／露營</p><p class="brand"><b>Cactus</b> · 訂購裝備</p><p class="font" style="font-family:'Alfa Slab One'">Aa 字體樣本 123</p><div class="acts"><a href="south-west-wild-west-pro.html">睇 Pro →</a><a href="south-west-wild-west.html">基本</a><button class="star" type="button" title="加入我的最愛">☆</button><button class="copy" type="button" title="複製 :root tokens">⧉</button><button class="add" type="button">＋ 候選</button></div><p class="recent" hidden>最近睇過</p></article>
+<article class="card" data-fam="古典人文" data-ind="手工錶／鐘錶維修" data-uses="作品集 / 工作室" data-tokens=":root{
+  --bg: #23372E;
+  --fg: #EAD9B8;
+  --muted: #CDB893;
+  --surface: #2A4034;
+  --border: #4E3F2A;
+  --accent: #E0B96A;
+  --accent-fg: #2B1B10;
+  --radius: 5px;
+  --radius-sm: 3px;
+  --shadow: 0 10px 24px rgba(0,0,0,.45),inset 0 1px 0 rgba(224,185,106,.22);
+  --btn-shadow: 0 4px 0 rgba(122,90,34,.9);
+  --art-bg: radial-gradient(circle at 50% 45%,#E0B96A 0 16%,#B5883E 17% 24%,#23372E 25%),radial-gradient(circle at 22% 22%,#E0B96A 0 3px,transparent 4px);
+  --media-bg: linear-gradient(180deg,#4A2E1F,#2B1B10);
+  --cta-bg: #3A2415;
+  --input-bg: #1E2E26;
+  --ok: #7FA99B;
+  --warn: #D98B5F;
+  --font-display: &#x27;IM Fell English SC&#x27;,&#x27;Noto Serif TC&#x27;,serif;
+  --font-body: &#x27;Libre Caslon Text&#x27;,&#x27;Noto Sans TC&#x27;,serif;
+  --font-mono: &#x27;Special Elite&#x27;,ui-monospace,monospace;
+  --focus-ring: var(--accent);
+}" data-name="Steampunk steampunk Cogwheel 手工錶／鐘錶維修 作品集 / 工作室" data-slug="steampunk" data-brand="Cogwheel" data-cta="預約維修"><div class="sw"><i style="background:#23372E"></i><i style="background:#E0B96A"></i></div><h3>Steampunk <span class="cn">古典人文</span></h3><p class="ind">手工錶／鐘錶維修</p><p class="brand"><b>Cogwheel</b> · 預約維修</p><p class="font" style="font-family:'IM Fell English SC'">Aa 字體樣本 123</p><div class="acts"><a href="steampunk-pro.html">睇 Pro →</a><a href="steampunk.html">基本</a><button class="star" type="button" title="加入我的最愛">☆</button><button class="copy" type="button" title="複製 :root tokens">⧉</button><button class="add" type="button">＋ 候選</button></div><p class="recent" hidden>最近睇過</p></article>
+<article class="card" data-fam="藝術手作" data-ind="沉浸式藝術展" data-uses="餐飲 / 活動" data-tokens=":root{
+  --bg: #BEDDF1;
+  --fg: #1C1B29;
+  --muted: #3D4A63;
+  --surface: #FBF7EF;
+  --border: #C6D8E6;
+  --accent: #2F5C93;
+  --accent-fg: #FFFFFF;
+  --radius: 20px;
+  --radius-sm: 12px;
+  --shadow: 0 18px 40px rgba(47,92,147,.18);
+  --btn-shadow: 0 6px 0 rgba(47,92,147,.30);
+  --art-bg: radial-gradient(circle at 35% 35%,#FFFFFF,#FAF3E0 40%,#E8C39E);
+  --media-bg: linear-gradient(#87CEEB,#BFE3F2 40%,#F7C5CC);
+  --cta-bg: #EAF3FA;
+  --input-bg: #FFFFFF;
+  --ok: #2E7D5B;
+  --warn: #B5503C;
+  --font-display: &#x27;Cormorant&#x27;,&#x27;Noto Serif TC&#x27;,serif;
+  --font-body: &#x27;Inter&#x27;,&#x27;Noto Sans TC&#x27;,sans-serif;
+  --font-mono: &#x27;Cormorant&#x27;,ui-monospace,monospace;
+  --focus-ring: var(--accent);
+}" data-name="Surrealism surrealism Reverie 沉浸式藝術展 餐飲 / 活動" data-slug="surrealism" data-brand="Reverie" data-cta="買飛"><div class="sw"><i style="background:#BEDDF1"></i><i style="background:#2F5C93"></i></div><h3>Surrealism <span class="cn">藝術手作</span></h3><p class="ind">沉浸式藝術展</p><p class="brand"><b>Reverie</b> · 買飛</p><p class="font" style="font-family:'Cormorant'">Aa 字體樣本 123</p><div class="acts"><a href="surrealism-pro.html">睇 Pro →</a><a href="surrealism.html">基本</a><button class="star" type="button" title="加入我的最愛">☆</button><button class="copy" type="button" title="複製 :root tokens">⧉</button><button class="add" type="button">＋ 候選</button></div><p class="recent" hidden>最近睇過</p></article>
+<article class="card" data-fam="秩序理性" data-ind="銀行／金融服務" data-uses="品牌 / 內容頁" data-tokens=":root{
+  --bg: #FFFFFF;
+  --fg: #141414;
+  --muted: #525252;
+  --surface: #F2F2F2;
+  --border: #141414;
+  --accent: #C81E1E;
+  --accent-fg: #FFFFFF;
+  --radius: 0px;
+  --radius-sm: 0px;
+  --shadow: none;
+  --btn-shadow: none;
+  --art-bg: linear-gradient(135deg,#141414 0 38%,#C81E1E 38% 62%,#E5E5E5 62%);
+  --media-bg: linear-gradient(180deg,#FFFFFF,#EDEDED);
+  --cta-bg: #EDEDED;
+  --input-bg: #FFFFFF;
+  --ok: #0E6B3C;
+  --warn: #B3121B;
+  --font-display: Inter,&#x27;Noto Sans TC&#x27;,sans-serif;
+  --font-body: Inter,&#x27;Noto Sans TC&#x27;,sans-serif;
+  --font-mono: &#x27;Inter&#x27;,ui-monospace,monospace;
+  --focus-ring: var(--accent);
+}" data-name="Swiss Design swiss-design Helvet 銀行／金融服務 品牌 / 內容頁" data-slug="swiss-design" data-brand="Helvet" data-cta="預約理財顧問"><div class="sw"><i style="background:#FFFFFF"></i><i style="background:#C81E1E"></i></div><h3>Swiss Design <span class="cn">秩序理性</span></h3><p class="ind">銀行／金融服務</p><p class="brand"><b>Helvet</b> · 預約理財顧問</p><p class="font" style="font-family:Inter">Aa 字體樣本 123</p><div class="acts"><a href="swiss-design-pro.html">睇 Pro →</a><a href="swiss-design.html">基本</a><button class="star" type="button" title="加入我的最愛">☆</button><button class="copy" type="button" title="複製 :root tokens">⧉</button><button class="add" type="button">＋ 候選</button></div><p class="recent" hidden>最近睇過</p></article>
+<article class="card" data-fam="數碼懷舊" data-ind="復古賽車遊戲" data-uses="品牌 / 內容頁" data-tokens=":root{
+  --bg: #0D0221;
+  --fg: #F9F1FF;
+  --muted: #C9A0FF;
+  --surface: rgba(255,255,255,.08);
+  --border: rgba(255,46,151,.45);
+  --accent: #FF2E97;
+  --accent-fg: #0D0221;
+  --radius: 2px;
+  --radius-sm: 2px;
+  --shadow: 0 0 0 1px rgba(255,46,151,.35),0 0 30px rgba(255,46,151,.22);
+  --btn-shadow: 0 0 18px rgba(0,240,255,.45);
+  --art-bg: linear-gradient(180deg,#0D0221 0%,#2B0F54 40%,#AB1F65 72%,#0D0221 72.2%);
+  --media-bg: linear-gradient(180deg,#F9F871,#FF8C42 45%,#FF2E97 80%);
+  --cta-bg: rgba(0,240,255,.10);
+  --input-bg: #150430;
+  --ok: #3CF2B4;
+  --warn: #F9F871;
+  --font-display: Orbitron,&#x27;Noto Sans TC&#x27;,sans-serif;
+  --font-body: Rajdhani,&#x27;Noto Sans TC&#x27;,sans-serif;
+  --font-mono: Orbitron,ui-monospace,monospace;
+  --focus-ring: var(--accent);
+}" data-name="Synthwave synthwave Neon Drift 復古賽車遊戲 品牌 / 內容頁" data-slug="synthwave" data-brand="Neon Drift" data-cta="加入願望清單"><div class="sw"><i style="background:#0D0221"></i><i style="background:#FF2E97"></i></div><h3>Synthwave <span class="cn">數碼懷舊</span></h3><p class="ind">復古賽車遊戲</p><p class="brand"><b>Neon Drift</b> · 加入願望清單</p><p class="font" style="font-family:Orbitron">Aa 字體樣本 123</p><div class="acts"><a href="synthwave-pro.html">睇 Pro →</a><a href="synthwave.html">基本</a><button class="star" type="button" title="加入我的最愛">☆</button><button class="copy" type="button" title="複製 :root tokens">⧉</button><button class="add" type="button">＋ 候選</button></div><p class="recent" hidden>最近睇過</p></article>
+<article class="card" data-fam="藝術手作" data-ind="高級餐飲／威士忌吧" data-uses="餐飲 / 活動" data-tokens=":root{
+  --bg: #050505;
+  --fg: #F5F0E6;
+  --muted: #C9BFAE;
+  --surface: #120D08;
+  --border: #2B2114;
+  --accent: #F2C57C;
+  --accent-fg: #120B04;
+  --radius: 0px;
+  --radius-sm: 0px;
+  --shadow: 0 30px 60px rgba(0,0,0,.85);
+  --btn-shadow: none;
+  --art-bg: radial-gradient(circle at 50% 42%,#F2C57C,#4A0F0F 58%,#050505);
+  --media-bg: radial-gradient(circle at 50% 45%,#F2C57C,#4A0F0F 60%,#050505);
+  --cta-bg: #140F09;
+  --input-bg: #0A0705;
+  --ok: #F2C57C;
+  --warn: #8C2B2B;
+  --font-display: &#x27;Playfair Display&#x27;,serif;
+  --font-body: &#x27;Cormorant Garamond&#x27;,Georgia,serif;
+  --font-mono: &#x27;Courier New&#x27;,monospace;
+  --focus-ring: var(--accent);
+}" data-name="Tenebrism tenebrism Lumen` / `Lumen Table 高級餐飲／威士忌吧 餐飲 / 活動" data-slug="tenebrism" data-brand="Lumen` / `Lumen Table" data-cta="訂位"><div class="sw"><i style="background:#050505"></i><i style="background:#F2C57C"></i></div><h3>Tenebrism <span class="cn">藝術手作</span></h3><p class="ind">高級餐飲／威士忌吧</p><p class="brand"><b>Lumen` / `Lumen Table</b> · 訂位</p><p class="font" style="font-family:'Playfair Display'">Aa 字體樣本 123</p><div class="acts"><a href="tenebrism-pro.html">睇 Pro →</a><a href="tenebrism.html">基本</a><button class="star" type="button" title="加入我的最愛">☆</button><button class="copy" type="button" title="複製 :root tokens">⧉</button><button class="add" type="button">＋ 候選</button></div><p class="recent" hidden>最近睇過</p></article>
+<article class="card" data-fam="秩序理性" data-ind="工業／製造 b2b" data-uses="其他" data-tokens=":root{
+  --bg: #FFFFFF;
+  --fg: #101418;
+  --muted: #5A6470;
+  --surface: #F7F8FA;
+  --border: #D5DAE0;
+  --accent: #1A4FD6;
+  --accent-fg: #FFFFFF;
+  --radius: 3px;
+  --radius-sm: 3px;
+  --shadow: none;
+  --btn-shadow: none;
+  --art-bg: #F0F3F7;
+  --media-bg: #F0F3F7;
+  --cta-bg: #F7F8FA;
+  --input-bg: #FFFFFF;
+  --ok: #0E7A46;
+  --warn: #B4232C;
+  --font-display: Inter,&#x27;Noto Sans TC&#x27;,sans-serif;
+  --font-body: Inter,&#x27;Noto Sans TC&#x27;,sans-serif;
+  --font-mono: &#x27;IBM Plex Mono&#x27;,ui-monospace,monospace;
+  --focus-ring: var(--accent);
+}" data-name="Utilitarian utilitarian Util` / `Util Spec 工業／製造 b2b 其他" data-slug="utilitarian" data-brand="Util` / `Util Spec" data-cta="索取報價"><div class="sw"><i style="background:#FFFFFF"></i><i style="background:#1A4FD6"></i></div><h3>Utilitarian <span class="cn">秩序理性</span></h3><p class="ind">工業／製造 b2b</p><p class="brand"><b>Util` / `Util Spec</b> · 索取報價</p><p class="font" style="font-family:Inter">Aa 字體樣本 123</p><div class="acts"><a href="utilitarian-pro.html">睇 Pro →</a><a href="utilitarian.html">基本</a><button class="star" type="button" title="加入我的最愛">☆</button><button class="copy" type="button" title="複製 :root tokens">⧉</button><button class="add" type="button">＋ 候選</button></div><p class="recent" hidden>最近睇過</p></article>
+<article class="card" data-fam="數碼懷舊" data-ind="獨立音樂／網上電台" data-uses="品牌 / 內容頁" data-tokens=":root{
+  --bg: linear-gradient(180deg,#14082B,#2B1055 52%,#46197A);
+  --fg: #F7F3FF;
+  --muted: #C9BEE8;
+  --surface: rgba(255,255,255,.07);
+  --border: rgba(255,255,255,.18);
+  --accent: #01CDFE;
+  --accent-fg: #07203A;
+  --radius: 0px;
+  --radius-sm: 0px;
+  --shadow: 0 0 0 2px rgba(1,205,254,.25);
+  --btn-shadow: 3px 3px 0 rgba(0,0,0,.45);
+  --art-bg: linear-gradient(180deg,#B967FF,#FF71CE 58%,#FFFB96);
+  --media-bg: linear-gradient(180deg,#B967FF,#FF71CE 58%,#FFFB96);
+  --cta-bg: rgba(1,205,254,.12);
+  --input-bg: #1B0E33;
+  --ok: #05FFA1;
+  --warn: #FF71CE;
+  --font-display: VT323,monospace;
+  --font-body: Tahoma,&#x27;Noto Sans JP&#x27;,&#x27;Noto Sans TC&#x27;,sans-serif;
+  --font-mono: VT323,monospace;
+  --focus-ring: var(--accent);
+}" data-name="Vaporwave vaporwave Virtual` / `Virtual Plaza 獨立音樂／網上電台 品牌 / 內容頁" data-slug="vaporwave" data-brand="Virtual` / `Virtual Plaza" data-cta="入商場"><div class="sw"><i style="background:linear-gradient(180deg,#14082B,#2B1055 52%,#46197A)"></i><i style="background:#01CDFE"></i></div><h3>Vaporwave <span class="cn">數碼懷舊</span></h3><p class="ind">獨立音樂／網上電台</p><p class="brand"><b>Virtual` / `Virtual Plaza</b> · 入商場</p><p class="font" style="font-family:VT323">Aa 字體樣本 123</p><div class="acts"><a href="vaporwave-pro.html">睇 Pro →</a><a href="vaporwave.html">基本</a><button class="star" type="button" title="加入我的最愛">☆</button><button class="copy" type="button" title="複製 :root tokens">⧉</button><button class="add" type="button">＋ 候選</button></div><p class="recent" hidden>最近睇過</p></article>
+<article class="card" data-fam="古典人文" data-ind="茶葉品牌" data-uses="商店 / 商品 品牌 / 內容頁" data-tokens=":root{
+  --bg: #F4EBD9;
+  --fg: #2A1E17;
+  --muted: #5A4632;
+  --surface: #FBF5E8;
+  --border: #C9A227;
+  --accent: #6D1A36;
+  --accent-fg: #FBF5E8;
+  --radius: 2px;
+  --radius-sm: 2px;
+  --shadow: 0 8px 22px rgba(42,30,23,.16);
+  --btn-shadow: 0 3px 0 rgba(109,26,54,.42);
+  --art-bg: radial-gradient(circle at 50% 40%,#8A2A4B,#2A1E17);
+  --media-bg: linear-gradient(180deg,#FBF5E8,#E7D9BD);
+  --cta-bg: #EFE3C8;
+  --input-bg: #FBF5E8;
+  --ok: #1F3B2D;
+  --warn: #8A2A4B;
+  --font-display: &#x27;Cormorant Garamond&#x27;,&#x27;Noto Serif TC&#x27;,serif;
+  --font-body: &#x27;EB Garamond&#x27;,&#x27;Noto Serif TC&#x27;,serif;
+  --font-mono: &#x27;EB Garamond&#x27;,ui-monospace,serif;
+  --focus-ring: var(--accent);
+}" data-name="Victorian victorian Thornfield 茶葉品牌 商店 / 商品 品牌 / 內容頁" data-slug="victorian" data-brand="Thornfield" data-cta="訂購茶葉"><div class="sw"><i style="background:#F4EBD9"></i><i style="background:#6D1A36"></i></div><h3>Victorian <span class="cn">古典人文</span></h3><p class="ind">茶葉品牌</p><p class="brand"><b>Thornfield</b> · 訂購茶葉</p><p class="font" style="font-family:'Cormorant Garamond'">Aa 字體樣本 123</p><div class="acts"><a href="victorian-pro.html">睇 Pro →</a><a href="victorian.html">基本</a><button class="star" type="button" title="加入我的最愛">☆</button><button class="copy" type="button" title="複製 :root tokens">⧉</button><button class="add" type="button">＋ 候選</button></div><p class="recent" hidden>最近睇過</p></article>
+<article class="card" data-fam="古典人文" data-ind="陶藝工作室" data-uses="作品集 / 工作室" data-tokens=":root{
+  --bg: #F2EDE4;
+  --fg: #3B3A36;
+  --muted: #635A4E;
+  --surface: #E9E2D6;
+  --border: #C9BFB0;
+  --accent: #8A5636;
+  --accent-fg: #FDFBF6;
+  --radius: 16px;
+  --radius-sm: 10px;
+  --shadow: 0 10px 26px rgba(59,58,54,.10);
+  --btn-shadow: 0 2px 0 rgba(138,86,54,.35);
+  --art-bg: radial-gradient(circle at 38% 32%,#E4DDD1,#A89A86 55%,#6F6353);
+  --media-bg: radial-gradient(circle at 34% 30%,#E4DDD1,#C9BFB0);
+  --cta-bg: #E9E2D6;
+  --input-bg: #FBF8F2;
+  --ok: #4E6B47;
+  --warn: #8C3B2E;
+  --font-display: Cormorant,&#x27;Noto Serif TC&#x27;,serif;
+  --font-body: &#x27;Noto Sans TC&#x27;,sans-serif;
+  --font-mono: &#x27;Cormorant&#x27;,ui-monospace,serif;
+  --focus-ring: var(--accent);
+}" data-name="Wabi-Sabi wabi-sabi Kanso 陶藝工作室 作品集 / 工作室" data-slug="wabi-sabi" data-brand="Kanso" data-cta="預約工作坊"><div class="sw"><i style="background:#F2EDE4"></i><i style="background:#8A5636"></i></div><h3>Wabi-Sabi <span class="cn">古典人文</span></h3><p class="ind">陶藝工作室</p><p class="brand"><b>Kanso</b> · 預約工作坊</p><p class="font" style="font-family:Cormorant">Aa 字體樣本 123</p><div class="acts"><a href="wabi-sabi-pro.html">睇 Pro →</a><a href="wabi-sabi.html">基本</a><button class="star" type="button" title="加入我的最愛">☆</button><button class="copy" type="button" title="複製 :root tokens">⧉</button><button class="add" type="button">＋ 候選</button></div><p class="recent" hidden>最近睇過</p></article>
+<article class="card" data-fam="數碼懷舊" data-ind="潮流配飾／手機配件" data-uses="商店 / 商品" data-tokens=":root{
+  --bg: #E1F5FE;
+  --fg: #0B2A66;
+  --muted: #3D5687;
+  --surface: #F7FBFF;
+  --border: #9FC6F0;
+  --accent: #D10070;
+  --accent-fg: #FFFFFF;
+  --radius: 20px;
+  --radius-sm: 12px;
+  --shadow: 0 8px 0 rgba(11,42,102,.10),0 14px 30px rgba(0,102,255,.16);
+  --btn-shadow: 0 4px 0 rgba(157,0,83,.45);
+  --art-bg: linear-gradient(180deg,#9FD8FF,#E1F5FE 40%,#FFE0F0);
+  --media-bg: linear-gradient(160deg,#CBE6FF,#FFE0F0 60%,#E9E0FF);
+  --cta-bg: #EAF7FF;
+  --input-bg: #FFFFFF;
+  --ok: #0E7A46;
+  --warn: #A61C4E;
+  --font-display: Syne,&#x27;Noto Sans TC&#x27;,sans-serif;
+  --font-body: Inter,&#x27;Noto Sans TC&#x27;,sans-serif;
+  --font-mono: Syne,ui-monospace,monospace;
+  --focus-ring: var(--accent);
+}" data-name="Y2K Aesthetic y2k-aesthetic Bubble 潮流配飾／手機配件 商店 / 商品" data-slug="y2k-aesthetic" data-brand="Bubble" data-cta="落單"><div class="sw"><i style="background:#E1F5FE"></i><i style="background:#D10070"></i></div><h3>Y2K Aesthetic <span class="cn">數碼懷舊</span></h3><p class="ind">潮流配飾／手機配件</p><p class="brand"><b>Bubble</b> · 落單</p><p class="font" style="font-family:Syne">Aa 字體樣本 123</p><div class="acts"><a href="y2k-aesthetic-pro.html">睇 Pro →</a><a href="y2k-aesthetic.html">基本</a><button class="star" type="button" title="加入我的最愛">☆</button><button class="copy" type="button" title="複製 :root tokens">⧉</button><button class="add" type="button">＋ 候選</button></div><p class="recent" hidden>最近睇過</p></article></main>
+<div id="tray"><b>候選：<span id="n">0</span></b><span class="list" id="list">（未揀）</span>
+  <button type="button" id="md">匯出 Markdown</button><button type="button" class="p" id="js">匯出 JSON</button>
+  <button type="button" id="clr">清空</button></div>
+<script>
+var cards=[].slice.call(document.querySelectorAll('.card'));
+var state={q:'',fam:'',ind:'',use:'',favOnly:false,recOnly:false};
+var FAV=JSON.parse(localStorage.getItem('uiux-favs')||'[]');
+var REC=JSON.parse(localStorage.getItem('uiux-recent')||'[]');
+var pick=JSON.parse(localStorage.getItem('uiux-picks')||'[]');
+function chips(){document.querySelectorAll('.fchip[data-k]').forEach(function(b){
+  var k=b.dataset.k, g=b.parentElement.id;
+  var on=(g==='fams'&&state.fam===k)||(g==='inds'&&state.ind===k)||(g==='uses'&&state.use===k);
+  b.setAttribute('aria-pressed',on?'true':'false');});}
+function apply(){
+  var n=0;
+  cards.forEach(function(c){
+    var ok=(!state.fam||c.dataset.fam===state.fam)&&(!state.ind||c.dataset.ind===state.ind)
+      &&(!state.use||(' '+c.dataset.uses+' ').indexOf(' '+state.use+' ')>-1)
+      &&(!state.q||c.dataset.name.toLowerCase().indexOf(state.q)>-1)
+      &&(!state.favOnly||FAV.indexOf(c.dataset.slug)>-1)
+      &&(!state.recOnly||REC.indexOf(c.dataset.slug)>-1);
+    c.hidden=!ok; if(ok)n++;
+  });
+  document.getElementById('count').textContent='顯示 '+n+' / '+cards.length+' 個';
+  document.getElementById('favN').textContent=FAV.length;
+  chips();
+}
+document.getElementById('q').addEventListener('input',function(e){state.q=e.target.value.toLowerCase();apply()});
+document.querySelectorAll('.fchip[data-k]').forEach(function(b){
+  b.addEventListener('click',function(){
+    var k=b.dataset.k, g=b.parentElement.id;
+    if(g==='fams')state.fam=(state.fam===k?'':k);
+    else if(g==='inds')state.ind=(state.ind===k?'':k);
+    else state.use=(state.use===k?'':k);
+    apply();});
+});
+document.getElementById('favOnly').addEventListener('click',function(){
+  state.favOnly=!state.favOnly;this.setAttribute('aria-pressed',state.favOnly?'true':'false');apply();});
+document.getElementById('recOnly').addEventListener('click',function(){
+  state.recOnly=!state.recOnly;this.setAttribute('aria-pressed',state.recOnly?'true':'false');apply();});
+addEventListener('keydown',function(e){if(e.key==='/'&&document.activeElement.tagName!=='INPUT'){e.preventDefault();document.getElementById('q').focus()}});
+function save(){
+  localStorage.setItem('uiux-picks',JSON.stringify(pick));
+  localStorage.setItem('uiux-favs',JSON.stringify(FAV));
+  localStorage.setItem('uiux-recent',JSON.stringify(REC));
+  document.getElementById('n').textContent=pick.length;
+  document.getElementById('list').textContent=pick.length?pick.map(function(p){return p.brand||p.slug}).join('、'):'（未揀）';
+  document.getElementById('favN').textContent=FAV.length;
+  cards.forEach(function(c){
+    var on=pick.some(function(p){return p.slug===c.dataset.slug});
+    var b=c.querySelector('.add');b.dataset.on=on?'1':'0';b.textContent=on?'✓ 已加入':'＋ 候選';
+    var st=c.querySelector('.star');var fav=FAV.indexOf(c.dataset.slug)>-1;
+    st.textContent=fav?'★':'☆';st.dataset.on=fav?'1':'0';
+    c.querySelector('.recent').hidden=!(state.recOnly&&REC.indexOf(c.dataset.slug)>-1);
+  });
+  chips();
+}
+cards.forEach(function(c){
+  var slug=c.dataset.slug, fam=c.querySelector('.cn').textContent;
+  c.querySelector('.add').addEventListener('click',function(){
+    var i=pick.findIndex(function(p){return p.slug===slug});
+    if(i>-1)pick.splice(i,1); else pick.push({slug:slug,brand:c.dataset.brand,cta:c.dataset.cta,
+      industry:c.querySelector('.ind').textContent,family:fam});
+    save();});
+  c.querySelector('.star').addEventListener('click',function(){
+    var i=FAV.indexOf(slug); if(i>-1)FAV.splice(i,1); else FAV.push(slug); save();});
+  c.querySelector('.copy').addEventListener('click',function(){
+    var txt=c.dataset.tokens, b=this;
+    (navigator.clipboard?navigator.clipboard.writeText(txt):Promise.reject()).then(function(){
+      b.textContent='✓ 已複製'; setTimeout(function(){b.textContent='⧉';},1400);
+    },function(){ var ta=document.createElement('textarea');ta.value=txt;document.body.appendChild(ta);
+      ta.select();document.execCommand('copy');ta.remove();b.textContent='✓ 已複製';
+      setTimeout(function(){b.textContent='⧉';},1400); });
+  });
+  c.querySelectorAll('.acts a').forEach(function(a){
+    a.addEventListener('click',function(){
+      REC=REC.filter(function(x){return x!==slug}); REC.unshift(slug); REC=REC.slice(0,12); save();});
+  });
+});
+function dl(name,text,type){var a=document.createElement('a');a.href=URL.createObjectURL(new Blob([text],{type:type}));a.download=name;a.click();}
+document.getElementById('md').addEventListener('click',function(){
+  if(!pick.length)return;
+  var NL=String.fromCharCode(10);
+  var rows=pick.map(function(p,i){return '| '+(i+1)+' | `'+p.slug+'` | '+p.family+' | '+p.industry+' | '+p.brand+' | '+p.cta+' | [Pro]('+p.slug+'-pro.html) |';});
+  var md=['# 風格候選（'+pick.length+' 個）','',
+          '| # | 風格 | 家族 | 行業 | 品牌 | 主要 CTA | Demo |',
+          '|---|---|---|---|---|---|---|'].concat(rows).concat(['',
+          '> tokens／字體／Tailwind snippet：themes/<slug>.json · 生成 project 骨架：python3 gen_project.py brief.json']).join(NL)+NL;
+  dl('style-shortlist.md',md,'text/markdown');});
+document.getElementById('js').addEventListener('click',function(){
+  if(!pick.length)return;
+  dl('style-shortlist.json',JSON.stringify({picked_at:new Date().toISOString(),count:pick.length,styles:pick},null,1),'application/json');});
+document.getElementById('clr').addEventListener('click',function(){pick=[];save()});
+save();apply();
+</script></body></html>

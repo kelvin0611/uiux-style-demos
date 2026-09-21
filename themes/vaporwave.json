@@ -1,0 +1,55 @@
+{
+ "slug": "vaporwave",
+ "name": "Vaporwave",
+ "cn": "",
+ "family": "👾 數碼懷舊 Retro Digital",
+ "industry": "獨立音樂／網上電台",
+ "brand": "Virtual` / `Virtual Plaza",
+ "cta": "入商場",
+ "sections": "",
+ "css_variables": {
+  "--bg": "linear-gradient(180deg,#14082B,#2B1055 52%,#46197A)",
+  "--fg": "#F7F3FF",
+  "--muted": "#C9BEE8",
+  "--surface": "rgba(255,255,255,.07)",
+  "--border": "rgba(255,255,255,.18)",
+  "--accent": "#01CDFE",
+  "--accent-fg": "#07203A",
+  "--radius": "0px",
+  "--radius-sm": "0px",
+  "--shadow": "0 0 0 2px rgba(1,205,254,.25)",
+  "--btn-shadow": "3px 3px 0 rgba(0,0,0,.45)",
+  "--art-bg": "linear-gradient(180deg,#B967FF,#FF71CE 58%,#FFFB96)",
+  "--media-bg": "linear-gradient(180deg,#B967FF,#FF71CE 58%,#FFFB96)",
+  "--cta-bg": "rgba(1,205,254,.12)",
+  "--input-bg": "#1B0E33",
+  "--ok": "#05FFA1",
+  "--warn": "#FF71CE",
+  "--font-display": "VT323,monospace",
+  "--font-body": "Tahoma,'Noto Sans JP','Noto Sans TC',sans-serif",
+  "--font-mono": "VT323,monospace",
+  "--focus-ring": "var(--accent)"
+ },
+ "fonts": {
+  "google_url": "https://fonts.googleapis.com/css2?family=VT323&family=Noto+Sans+JP:wght@400;700&display=swap",
+  "display": "VT323,monospace",
+  "body": "Tahoma,'Noto Sans JP','Noto Sans TC',sans-serif",
+  "mono": "VT323,monospace"
+ },
+ "radius": {
+  "base": "0px",
+  "sm": "0px"
+ },
+ "shadow": {
+  "card": "0 0 0 2px rgba(1,205,254,.25)",
+  "button": "3px 3px 0 rgba(0,0,0,.45)"
+ },
+ "focus_ring": "var(--accent)",
+ "motion": {},
+ "demo": {
+  "basic": "Demos/vaporwave.html",
+  "pro": "Demos/vaporwave-pro.html"
+ },
+ "snippet_css": ":root{\n  --bg: linear-gradient(180deg,#14082B,#2B1055 52%,#46197A);\n  --fg: #F7F3FF;\n  --muted: #C9BEE8;\n  --surface: rgba(255,255,255,.07);\n  --border: rgba(255,255,255,.18);\n  --accent: #01CDFE;\n  --accent-fg: #07203A;\n  --radius: 0px;\n  --radius-sm: 0px;\n  --shadow: 0 0 0 2px rgba(1,205,254,.25);\n  --btn-shadow: 3px 3px 0 rgba(0,0,0,.45);\n  --art-bg: linear-gradient(180deg,#B967FF,#FF71CE 58%,#FFFB96);\n  --media-bg: linear-gradient(180deg,#B967FF,#FF71CE 58%,#FFFB96);\n  --cta-bg: rgba(1,205,254,.12);\n  --input-bg: #1B0E33;\n  --ok: #05FFA1;\n  --warn: #FF71CE;\n  --font-display: VT323,monospace;\n  --font-body: Tahoma,'Noto Sans JP','Noto Sans TC',sans-serif;\n  --font-mono: VT323,monospace;\n  --focus-ring: var(--accent);\n}",
+ "snippet_tailwind": "// tailwind.config.js → theme.extend\n{\n  \"colors\": {\n    \"bg\": \"linear-gradient(180deg,#14082B,#2B1055 52%,#46197A)\",\n    \"fg\": \"#F7F3FF\",\n    \"muted\": \"#C9BEE8\",\n    \"surface\": \"rgba(255,255,255,.07)\",\n    \"border\": \"rgba(255,255,255,.18)\",\n    \"accent\": \"#01CDFE\",\n    \"accent-fg\": \"#07203A\",\n    \"ok\": \"#05FFA1\",\n    \"warn\": \"#FF71CE\",\n    \"focus-ring\": \"var(--accent)\"\n  },\n  \"borderRadius\": {\n    \"DEFAULT\": \"0px\",\n    \"lg\": \"0px\"\n  },\n  \"fontFamily\": {\n    \"display\": [\n      \"VT323,monospace\"\n    ],\n    \"body\": [\n      \"Tahoma,'Noto Sans JP','Noto Sans TC',sans-serif\"\n    ]\n  }\n}"
+}

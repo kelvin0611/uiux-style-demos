@@ -1,0 +1,55 @@
+{
+ "slug": "editorial-design",
+ "name": "Editorial Design",
+ "cn": "",
+ "family": "📐 秩序理性 Structure & Order",
+ "industry": "深度報導媒體",
+ "brand": "Broadsheet",
+ "cta": "訂閱",
+ "sections": "log`：專題 · `products`：作者 · `venue`：訂閱方案",
+ "css_variables": {
+  "--bg": "#FAF7F2",
+  "--fg": "#1A1A1A",
+  "--muted": "#57534E",
+  "--surface": "#FFFFFF",
+  "--border": "#D9D4CC",
+  "--accent": "#C8102E",
+  "--accent-fg": "#FFFFFF",
+  "--radius": "0px",
+  "--radius-sm": "0px",
+  "--shadow": "none",
+  "--btn-shadow": "none",
+  "--art-bg": "linear-gradient(135deg,#2B2B2B,#8A8580)",
+  "--media-bg": "linear-gradient(160deg,#6E6A64,#D9D4CC)",
+  "--cta-bg": "#1A1A1A",
+  "--input-bg": "#FFFFFF",
+  "--ok": "#1F6B45",
+  "--warn": "#C8102E",
+  "--font-display": "'Playfair Display','Noto Serif TC',serif",
+  "--font-body": "'Source Serif 4','Noto Serif TC',serif",
+  "--font-mono": "Inter,ui-sans-serif,system-ui,sans-serif",
+  "--focus-ring": "var(--accent)"
+ },
+ "fonts": {
+  "google_url": "https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,400&family=Source+Serif+4:ital,wght@0,400;1,400&family=Inter:wght@500;600&display=swap",
+  "display": "'Playfair Display','Noto Serif TC',serif",
+  "body": "'Source Serif 4','Noto Serif TC',serif",
+  "mono": "Inter,ui-sans-serif,system-ui,sans-serif"
+ },
+ "radius": {
+  "base": "0px",
+  "sm": "0px"
+ },
+ "shadow": {
+  "card": "none",
+  "button": "none"
+ },
+ "focus_ring": "var(--accent)",
+ "motion": {},
+ "demo": {
+  "basic": "Demos/editorial-design.html",
+  "pro": "Demos/editorial-design-pro.html"
+ },
+ "snippet_css": ":root{\n  --bg: #FAF7F2;\n  --fg: #1A1A1A;\n  --muted: #57534E;\n  --surface: #FFFFFF;\n  --border: #D9D4CC;\n  --accent: #C8102E;\n  --accent-fg: #FFFFFF;\n  --radius: 0px;\n  --radius-sm: 0px;\n  --shadow: none;\n  --btn-shadow: none;\n  --art-bg: linear-gradient(135deg,#2B2B2B,#8A8580);\n  --media-bg: linear-gradient(160deg,#6E6A64,#D9D4CC);\n  --cta-bg: #1A1A1A;\n  --input-bg: #FFFFFF;\n  --ok: #1F6B45;\n  --warn: #C8102E;\n  --font-display: 'Playfair Display','Noto Serif TC',serif;\n  --font-body: 'Source Serif 4','Noto Serif TC',serif;\n  --font-mono: Inter,ui-sans-serif,system-ui,sans-serif;\n  --focus-ring: var(--accent);\n}",
+ "snippet_tailwind": "// tailwind.config.js → theme.extend\n{\n  \"colors\": {\n    \"bg\": \"#FAF7F2\",\n    \"fg\": \"#1A1A1A\",\n    \"muted\": \"#57534E\",\n    \"surface\": \"#FFFFFF\",\n    \"border\": \"#D9D4CC\",\n    \"accent\": \"#C8102E\",\n    \"accent-fg\": \"#FFFFFF\",\n    \"ok\": \"#1F6B45\",\n    \"warn\": \"#C8102E\",\n    \"focus-ring\": \"var(--accent)\"\n  },\n  \"borderRadius\": {\n    \"DEFAULT\": \"0px\",\n    \"lg\": \"0px\"\n  },\n  \"fontFamily\": {\n    \"display\": [\n      \"'Playfair Display','Noto Serif TC',serif\"\n    ],\n    \"body\": [\n      \"'Source Serif 4','Noto Serif TC',serif\"\n    ]\n  }\n}"
+}

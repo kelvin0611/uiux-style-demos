@@ -1,0 +1,118 @@
+<!doctype html><html lang="zh-Hant-HK"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Farmhouse &amp; Cottagecore  · 風格卡</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600&family=Caveat:wght@600&family=Lora:ital@0;1&display=swap">
+<link rel="stylesheet" href="../blocks.css">
+<style>:root{--bg:#FBF5E6;--fg:#4A3A2C;--muted:#6B4E37;--surface:#FFFDF7;--border:#E3CBA0;--accent:#A34A31;--accent-fg:#FFF6E8;--radius:16px;--radius-sm:10px;--shadow:0 12px 26px rgba(107,78,55,.16);--btn-shadow:0 5px 0 rgba(163,74,49,.28);--art-bg:repeating-linear-gradient(90deg,rgba(163,74,49,.14) 0 12px,transparent 12px 24px),repeating-linear-gradient(0deg,rgba(106,138,90,.16) 0 12px,transparent 12px 24px);--media-bg:linear-gradient(180deg,#F3EAD3,#E3CBA0);--cta-bg:linear-gradient(180deg,#F5EEDC,#EBDFC4);--input-bg:#FFFDF7;--ok:#4E7A46;--warn:#A34A31;--font-display:Fraunces,'Noto Serif TC',serif;--font-body:Lora,'Noto Serif TC',serif;--font-mono:Fraunces,ui-serif,serif;--focus-ring:var(--accent);}
+
+
+body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;
+ background:repeating-linear-gradient(0deg,rgba(163,74,49,.06) 0 12px,transparent 12px 24px),
+ repeating-linear-gradient(90deg,rgba(106,138,90,.07) 0 12px,transparent 12px 24px)}
+.card,.plan,.quote,.tile-c,.mock,.rows,.log{border:1.5px solid var(--border);background:var(--surface);
+ border-radius:var(--radius);box-shadow:var(--shadow)}
+.sec-title{font-family:var(--font-display);font-weight:600;color:#5C3A26}
+.sec-title::after{content:"";display:block;width:88px;height:3px;margin-top:12px;
+ background:repeating-linear-gradient(90deg,var(--accent) 0 10px,transparent 10px 18px)}
+.hero h1{font-family:var(--font-display);font-weight:600;color:#5C3A26}
+.hero .eyebrow{font-family:'Caveat',cursive;font-size:20px;color:var(--accent);letter-spacing:.02em}
+.hero .lead{font-style:italic}
+.btn{border-radius:999px;font-family:var(--font-body)}
+.btn-primary{background:var(--accent);color:var(--accent-fg);box-shadow:var(--btn-shadow)}
+.btn-secondary{background:var(--surface);color:#4A3A2C;border:1.5px solid var(--border)}
+.chip{border-radius:999px;background:#F1E7CE;border:1px solid var(--border);font-size:13px}
+.avatar{border-radius:999px;background:#E9B9A9;color:#5C3A26}
+.tag{background:#4E6B40;color:#FBF5E6;border-radius:999px;font-family:'Caveat',cursive;font-size:15px}
+.plan.featured{outline:3px double var(--accent);outline-offset:4px}
+.tile-c .ph{background-image:none;background:var(--media-bg);border-radius:var(--radius-sm);
+ border-bottom:1.5px dashed var(--border);font-size:34px;display:flex;align-items:center;justify-content:center}
+.tile-c h3,.plan h3{font-family:var(--font-display);font-weight:600;color:#5C3A26}
+.cost{font-family:var(--font-display);font-weight:600;color:var(--accent)}
+.rows article:nth-child(odd),.log article:nth-child(odd){background:#F7EFDB}
+.rows article b{font-family:var(--font-display);color:#5C3A26}
+.stat .num{font-family:var(--font-display);font-weight:600;color:var(--accent)}
+.infolist li b{font-family:var(--font-display);color:#5C3A26}
+.quote p{font-style:italic}
+.hero-art{box-shadow:0 18px 34px rgba(107,78,55,.22)}
+
+/* ---- 風格卡專用 ---- */
+body{background:var(--bg);color:var(--fg);font-family:var(--font-body)}
+.cp{max-width:1080px;margin:0 auto;padding:clamp(18px,4vw,40px)}
+.cp-head{border-bottom:2px solid var(--border);padding-bottom:18px;margin-bottom:26px}
+.cp-head h1{margin:.1em 0 .2em;font-family:var(--font-display);font-size:clamp(28px,5vw,46px)}
+.cp-meta{color:var(--muted);font-size:14px}
+.cp-tag{display:inline-block;border:1px solid var(--border);border-radius:999px;padding:3px 10px;font-size:12px;color:var(--muted);margin:0 6px 6px 0}
+.cp h2{font-family:var(--font-display);font-size:clamp(18px,2.4vw,24px);margin:34px 0 6px;padding-bottom:6px;border-bottom:1px solid var(--border)}
+.cp p.desc{color:var(--muted);margin:6px 0 14px;max-width:70ch}
+.sws{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:10px}
+.sw{border:1px solid var(--border);border-radius:10px;padding:9px;background:var(--surface);display:grid;gap:4px}
+.sw i{display:block;height:44px;border-radius:7px;border:1px solid var(--border)}
+.sw b{font-size:13px}.sw code{font:12px var(--font-mono,monospace);color:var(--muted)}
+.sw span{font-size:11px;color:var(--muted)}
+.typo div{border:1px solid var(--border);border-radius:10px;padding:12px 14px;margin-bottom:8px;background:var(--surface)}
+.typo .d{font-family:var(--font-display);font-size:32px;line-height:1.15}
+.typo .b{font-family:var(--font-body);font-size:16px}
+.typo .m{font-family:var(--font-mono,monospace);font-size:14px}
+.typo small{color:var(--muted);font-size:11px;display:block;margin-top:6px}
+.row{display:flex;gap:12px;flex-wrap:wrap;align-items:flex-start}
+.preview{border:1px dashed var(--border);border-radius:12px;overflow:hidden;margin-bottom:12px}
+.preview .lbl{font:11px var(--font-mono,monospace);color:var(--muted);padding:6px 10px;border-bottom:1px dashed var(--border)}
+.preview > div:last-child{transform-origin:top left}
+.cp-foot{margin-top:36px;padding-top:14px;border-top:1px solid var(--border);color:var(--muted);font-size:13px;display:flex;gap:14px;flex-wrap:wrap}
+.cp a{color:var(--accent)}
+@media print{.noprint{display:none}body{background:#fff}.cp{max-width:none;padding:0}.preview{page-break-inside:avoid}}
+</style></head><body>
+<div class="cp">
+  <div class="cp-head">
+    <span class="cp-tag">🏛️ 古典人文 Heritage &amp; Lifestyle</span><span class="cp-tag">15 個 block</span><span class="cp-tag">—</span>
+    <h1> Farmhouse &amp; Cottagecore <span style="font-size:.6em;color:var(--muted)"></span></h1>
+    <p class="desc" style="font-size:17px;color:var(--fg)">浪漫化鄉郊慢活 —— 碎花、格仔布、木紋、手作質感，舒服、懷舊、健康。</p>
+    <p class="cp-meta">示範品牌 <b>Thistle</b> · 主要 CTA「訂蔬菜箱」· 行業：有機農產／手作食品</p>
+  </div>
+
+  <h2>1 · 色票 Palette</h2>
+  <p class="desc">所有元件都只可以用呢組 token（換色 = 改呢幾行）。</p>
+  <div class="sws"><div class="sw"><i style="background:#FBF5E6"></i><b>--bg</b><code>#FBF5E6</code><span>底色 Background</span></div><div class="sw"><i style="background:#4A3A2C"></i><b>--fg</b><code>#4A3A2C</code><span>主文字 Text</span></div><div class="sw"><i style="background:#6B4E37"></i><b>--muted</b><code>#6B4E37</code><span>次要文字 Muted</span></div><div class="sw"><i style="background:#FFFDF7"></i><b>--surface</b><code>#FFFDF7</code><span>卡片面 Surface</span></div><div class="sw"><i style="background:#E3CBA0"></i><b>--border</b><code>#E3CBA0</code><span>分隔線 Border</span></div><div class="sw"><i style="background:#A34A31"></i><b>--accent</b><code>#A34A31</code><span>強調色 Accent</span></div><div class="sw"><i style="background:#FFF6E8"></i><b>--accent-fg</b><code>#FFF6E8</code><span>強調上文字</span></div><div class="sw"><i style="background:#4E7A46"></i><b>--ok</b><code>#4E7A46</code><span>成功 Success</span></div><div class="sw"><i style="background:#A34A31"></i><b>--warn</b><code>#A34A31</code><span>警告 Warning</span></div></div>
+
+  <h2>2 · 字體 Typography</h2>
+  <p class="desc">最多兩個字重；標題 Fraunces,&#x27;Noto Serif TC&#x27;,serif、正文 Lora,&#x27;Noto Serif TC&#x27;,serif。</p>
+  <div class="typo">
+    <div class="d">一頁講清成件事 <small>Display · Fraunces,&#x27;Noto Serif TC&#x27;,serif</small></div>
+    <div class="b">正文用 Lora,&#x27;Noto Serif TC&#x27;,serif：16px、行高 1.65，唔會超過 70 個中文字一行。<small>Body</small></div>
+    <div class="m">HK$1,280 · 2026-09-22 · #REF-0042 <small>Mono／數字對齊（Fraunces,ui-serif,serif）</small></div>
+  </div>
+
+  <h2>3 · 按鈕 Buttons</h2>
+  <p class="desc">11 個狀態齊：hover 升起、active 壓落、focus 外框（對比 ≥3:1）、disabled 變淡、loading／success。</p>
+  <div class="btn-row"><div class="state"><button class="btn btn-primary " type="button">Primary</button><small>Default</small></div><div class="state"><button class="btn btn-primary is-hover" type="button">Primary</button><small>Hover</small></div><div class="state"><button class="btn btn-primary is-active" type="button">Primary</button><small>Active</small></div><div class="state"><button class="btn btn-primary is-focus" type="button">Primary</button><small>Focus</small></div><div class="state"><button class="btn btn-primary " type="button" disabled>Primary</button><small>Disabled</small></div><div class="state"><button class="btn btn-primary btn-sm" type="button">Small</button><small>btn-sm</small></div><div class="state"><button class="btn btn-primary btn-lg" type="button">Large</button><small>btn-lg</small></div><div class="state"><button class="btn btn-primary btn-secondary" type="button">Secondary</button><small>Secondary</small></div></div>
+
+  <h2>4 · 組件 Components</h2>
+  <div class="row">
+    <article class="card" style="flex:1 1 260px"><span class="ico" aria-hidden="true">◆</span><h3>卡片標題</h3><p>一句講清重點，唔超過兩行。</p></article>
+    <div class="plan" style="flex:1 1 240px"><span class="tag">最受歡迎</span><h3>方案名</h3><div class="price">HK$1,280<small>/月</small></div>
+      <ul><li>包含咩</li><li>包含咩</li></ul><a class="btn btn-primary" href="#">揀呢個</a></div>
+    <blockquote class="quote" style="flex:1 1 260px">客人講嘅一句真話。<span class="avatar">阿</span><b>阿文</b><span>客戶 · 角色</span></blockquote>
+  </div>
+
+  <h2>5 · 真實 section 預覽</h2>
+  <p class="desc">以下係由正式 demo 直接抽落嚟（唔係另畫），所以卡同成品一定一致。</p>
+  <div class="preview"><div class="lbl">hero</div><div><section class="block hero" id="hero"><div class="wrap hero-grid"><div><span class="eyebrow rv">逢星期三、六出貨 · 香港市區</span><h1>每星期送菜上門</h1><p class="lead rv">6–10 款當造菜，落單後 48 小時內送到；可以暫停一週。</p><div class="actions rv"><a class="btn btn-primary" href="#cta">訂蔬菜箱 <span class="i" aria-hidden="true">→</span></a><a class="btn btn-secondary" href="#product">睇配送安排</a></div><p class="note rv">HK$268 起 · 滿 HK$380 免運費 · 可重用膠箱</p></div><figure class="hero-art rv"><div class="deco" aria-hidden="true" style="inset:0;background:repeating-linear-gradient(90deg,rgba(163,74,49,.14) 0 12px,transparent 12px 24px),repeating-linear-gradient(0deg,rgba(106,138,90,.16) 0 12px,transparent 12px 24px)"></div><figcaption>蔬菜箱相片位（生成 media/farmhouse-cottagecore-hero.jpg 自動代入）</figcaption></figure></div></section></div></div><div class="preview"><div class="lbl">pricing</div><div><section class="block" id="pricing"><div class="wrap"><h2 class="sec-title">三個訂法</h2><p class="sec-sub">單箱試、月付、或者送禮都做得；隨時暫停。</p><div class="pricing"><article class="plan rv"><h3>單箱試</h3><div class="price">HK$268 <small>/ 箱</small></div><p>想先試一星期。</p><ul><li>細箱 6 款（約 2.5 公斤）</li><li>可以換走 2 款</li><li>未滿 HK$380 收運費 HK$45</li><li>可重用膠箱</li></ul><a class="btn btn-secondary" href="#cta">訂蔬菜箱</a></article><article class="plan rv featured"><span class="tag">最多人訂</span><h3>月付 4 箱</h3><div class="price">HK$1,352 <small>/ 月</small></div><p>每星期送，平均平 HK$30。</p><ul><li>每月 4 箱（逢三或六）</li><li>每箱可以換走 2 款</li><li>免運費</li><li>可以暫停一週</li></ul><a class="btn btn-primary" href="#cta">訂蔬菜箱</a></article><article class="plan rv"><h3>送禮 3 箱</h3><div class="price">HK$828 <small>/ 3 箱</small></div><p>附手寫卡。</p><ul><li>3 箱連續送出</li><li>可以指定送貨日</li><li>附手寫卡同保存指南</li><li>送禮對象可以自己收貨</li></ul><a class="btn btn-secondary" href="#cta">訂蔬菜箱</a></article></div></div></section></div></div><div class="preview"><div class="lbl">venue</div><div><section class="block" id="venue"><div class="wrap"><h2 class="sec-title">配送同保存</h2><p class="sec-sub">運費、包裝、暫停安排全部寫明；示範網站唔代表任何真實農場或認證。</p><ul class="infolist"><li><b>送貨日</b><span>星期三、六；香港島同九龍市區 09:00–18:00</span></li><li><b>運費</b><span>滿 HK$380 免運費；未滿收 HK$45（新界指定區另議）</span></li><li><b>包裝</b><span>可重用膠箱，下次送貨收回；唔用即棄發泡膠</span></li><li><b>保存建議</b><span>葉菜用廚房紙包好放雪櫃 0–4°C，3–5 日內食完</span></li><li><b>暫停同改期</b><span>送貨前 48 小時可以暫停一週，唔會扣錢</span></li></ul></div></section></div></div>
+
+  <h2>6 · 動效（Pro 版）</h2>
+  <p class="desc">基本版純 CSS；Pro 版有載入幕、入場、scroll reveal、微互動。跟系統設定「減少動態」會自動降級。</p>
+  <p style="font:13px var(--font-mono,monospace);color:var(--muted)"></p>
+
+  <h2>7 · 點用</h2>
+  <ul style="color:var(--muted);font-size:14px">
+    <li>Tokens：<code>themes/farmhouse-cottagecore.json</code>（含 <code>snippet_css</code> 同 Tailwind <code>theme.extend</code>）</li>
+    <li>Demo：<a href="../farmhouse-cottagecore.html">基本版</a> · <a href="../farmhouse-cottagecore-pro.html">Pro 動效版</a></li>
+    <li>改客人內容：<code>python3 gen_project.py brief.json</code>（自動驗 WCAG 4.5:1）</li>
+  </ul>
+
+  <div class="cp-foot">
+    <button class="btn btn-primary btn-sm noprint" type="button" onclick="window.print()">🖨️ Print／存 PDF</button>
+    <a href="index.html">← 全部風格卡</a>
+    <span>UIUX Style · Farmhouse &amp; Cottagecore · 示範內容全部虛構</span>
+  </div>
+</div>
+</body></html>

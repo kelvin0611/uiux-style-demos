@@ -1,0 +1,128 @@
+<!doctype html><html lang="zh-Hant-HK"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Cybercore  · 風格卡</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=VT323&display=swap">
+<link rel="stylesheet" href="../blocks.css">
+<style>:root{--bg:#000018;--fg:#00FF41;--muted:#2FB862;--surface:#0B0B2E;--border:#C0C0C0;--accent:#00FFFF;--accent-fg:#00201F;--accent-grad:linear-gradient(180deg,#5CFFFF,#00D9D9);--radius:0px;--radius-sm:0px;--shadow:inset 1px 1px 0 rgba(255,255,255,.35),inset -1px -1px 0 #000,3px 3px 0 rgba(0,0,0,.55);--btn-shadow:inset 1px 1px 0 rgba(255,255,255,.5),inset -1px -1px 0 #000,3px 3px 0 rgba(0,0,0,.6);--art-bg:linear-gradient(180deg,#000036,#000018);--media-bg:radial-gradient(rgba(255,255,255,.2) 1px,transparent 1.5px) 0 0/22px 22px,linear-gradient(180deg,#000030,#000018);--cta-bg:linear-gradient(180deg,#0B0B2E,#000018);--input-bg:#000020;--ok:#00FF41;--warn:#FF4466;--win-bar:linear-gradient(90deg,#000080,#1084D0);--win-bar-fg:#FFFFFF;--chrome-fg:#0A0A0A;--magenta:#FF00FF;--yellow:#FFFF00;--font-display:'VT323','Noto Sans TC',monospace;--font-body:'VT323','Noto Sans TC',system-ui,sans-serif;--font-mono:'VT323',ui-monospace,Menlo,monospace;--focus-ring:var(--accent);}
+
+
+body{font-size:18px;line-height:1.7}
+body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;background:
+ radial-gradient(rgba(255,255,255,.07) 1px,transparent 1.5px) 0 0/32px 32px,
+ radial-gradient(rgba(255,255,0,.06) 1px,transparent 1.5px) 16px 16px/64px 64px}
+.site-header{border:2px solid var(--border);background:var(--surface);padding:6px 10px;box-shadow:var(--shadow)}
+.logo{color:var(--accent);letter-spacing:.04em}
+.nav a{color:var(--muted);text-decoration:underline}
+.nav a:hover,.nav a[aria-current="page"]{color:var(--accent);background:transparent}
+.sec-title{display:inline-block;background:var(--win-bar);color:var(--win-bar-fg);padding:2px 12px;letter-spacing:.05em}
+.card,.plan,.quote,.rows,.tile-c,.mock,.faq details,.badge-card{border:2px solid var(--border);background:var(--surface);box-shadow:var(--shadow)}
+.card h3,.tile-c h3{background:var(--win-bar);color:var(--win-bar-fg);padding:3px 8px;margin:0 0 12px}
+.mock-bar{background:var(--win-bar);color:var(--win-bar-fg)}
+.mock-dot{background:var(--border)}
+.btn{border:2px solid var(--border);box-shadow:var(--btn-shadow)}
+.btn-secondary{background:var(--border);color:var(--chrome-fg);border-color:#fff}
+.btn:focus-visible{outline:2px dotted var(--accent);outline-offset:2px}
+.chip{border:1px solid var(--border);border-radius:0;background:var(--surface)}
+.tag{border-radius:0;background:var(--accent);color:var(--accent-fg)}
+.pill{border-radius:0}
+.avatar{border-radius:0;background:var(--win-bar);color:var(--win-bar-fg)}
+.tile-c .ph{background-image:var(--media-bg)}
+.hero h1{text-shadow:3px 3px 0 var(--magenta)}
+.hero .note::after{content:" ⚠ 網站建設中"}
+.eyebrow{color:var(--yellow);animation:bl 2s steps(1) infinite}
+@keyframes bl{50%{color:var(--magenta)}}
+.hero-art{border:2px solid var(--border)}
+.hero-art::before{content:"Nullsec — 授權測試示範畫面 _ □ ×";position:absolute;left:0;right:0;top:0;background:var(--win-bar);color:var(--win-bar-fg);font-size:15px;padding:3px 8px;z-index:2}
+.hero-art figcaption{left:8px;bottom:8px;background:rgba(0,0,0,.5);color:var(--win-bar-fg);padding:2px 6px;z-index:2}
+.stats{padding:16px;border:2px solid var(--border);background:var(--surface);box-shadow:var(--shadow)}
+.rows article:nth-child(odd){background:var(--bg)}
+.infolist li{border-bottom:1px dashed var(--muted)}
+.infolist b{color:var(--accent)}
+.plan.featured{border-color:var(--accent)}
+.win98-boot{width:min(420px,74vw);background:var(--border);color:var(--chrome-fg);border:2px solid #fff;border-right-color:#000;border-bottom-color:#000;padding:14px 16px 18px;box-shadow:5px 5px 0 rgba(0,0,0,.45);text-align:left}
+.win98-boot b{display:block;font:700 24px/1.15 var(--font-display)}
+.win98-boot .bar{height:16px;border:1px solid #000;background:#000;margin:12px 0 6px;padding:2px}
+.win98-boot .bar i{display:block;height:100%;width:62%;background:var(--accent)}
+.win98-boot small{color:var(--chrome-fg)}
+
+/* ---- 風格卡專用 ---- */
+body{background:var(--bg);color:var(--fg);font-family:var(--font-body)}
+.cp{max-width:1080px;margin:0 auto;padding:clamp(18px,4vw,40px)}
+.cp-head{border-bottom:2px solid var(--border);padding-bottom:18px;margin-bottom:26px}
+.cp-head h1{margin:.1em 0 .2em;font-family:var(--font-display);font-size:clamp(28px,5vw,46px)}
+.cp-meta{color:var(--muted);font-size:14px}
+.cp-tag{display:inline-block;border:1px solid var(--border);border-radius:999px;padding:3px 10px;font-size:12px;color:var(--muted);margin:0 6px 6px 0}
+.cp h2{font-family:var(--font-display);font-size:clamp(18px,2.4vw,24px);margin:34px 0 6px;padding-bottom:6px;border-bottom:1px solid var(--border)}
+.cp p.desc{color:var(--muted);margin:6px 0 14px;max-width:70ch}
+.sws{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:10px}
+.sw{border:1px solid var(--border);border-radius:10px;padding:9px;background:var(--surface);display:grid;gap:4px}
+.sw i{display:block;height:44px;border-radius:7px;border:1px solid var(--border)}
+.sw b{font-size:13px}.sw code{font:12px var(--font-mono,monospace);color:var(--muted)}
+.sw span{font-size:11px;color:var(--muted)}
+.typo div{border:1px solid var(--border);border-radius:10px;padding:12px 14px;margin-bottom:8px;background:var(--surface)}
+.typo .d{font-family:var(--font-display);font-size:32px;line-height:1.15}
+.typo .b{font-family:var(--font-body);font-size:16px}
+.typo .m{font-family:var(--font-mono,monospace);font-size:14px}
+.typo small{color:var(--muted);font-size:11px;display:block;margin-top:6px}
+.row{display:flex;gap:12px;flex-wrap:wrap;align-items:flex-start}
+.preview{border:1px dashed var(--border);border-radius:12px;overflow:hidden;margin-bottom:12px}
+.preview .lbl{font:11px var(--font-mono,monospace);color:var(--muted);padding:6px 10px;border-bottom:1px dashed var(--border)}
+.preview > div:last-child{transform-origin:top left}
+.cp-foot{margin-top:36px;padding-top:14px;border-top:1px solid var(--border);color:var(--muted);font-size:13px;display:flex;gap:14px;flex-wrap:wrap}
+.cp a{color:var(--accent)}
+@media print{.noprint{display:none}body{background:#fff}.cp{max-width:none;padding:0}.preview{page-break-inside:avoid}}
+</style></head><body>
+<div class="cp">
+  <div class="cp-head">
+    <span class="cp-tag">👾 數碼懷舊 Retro Digital</span><span class="cp-tag">15 個 block</span><span class="cp-tag">—</span>
+    <h1> Cybercore <span style="font-size:.6em;color:var(--muted)"></span></h1>
+    <p class="desc" style="font-size:17px;color:var(--fg)">早期互聯網嘅時光膠囊 —— Windows 98 視窗、GIF 動圖、星空背景、螢光綠字、訪客計數器、電子寵物，一種「數碼逃避」嘅懷舊。</p>
+    <p class="cp-meta">示範品牌 <b>Nullsec</b> · 主要 CTA「索取樣本報告」· 行業：網絡安全／滲透測試</p>
+  </div>
+
+  <h2>1 · 色票 Palette</h2>
+  <p class="desc">所有元件都只可以用呢組 token（換色 = 改呢幾行）。</p>
+  <div class="sws"><div class="sw"><i style="background:#000018"></i><b>--bg</b><code>#000018</code><span>底色 Background</span></div><div class="sw"><i style="background:#00FF41"></i><b>--fg</b><code>#00FF41</code><span>主文字 Text</span></div><div class="sw"><i style="background:#2FB862"></i><b>--muted</b><code>#2FB862</code><span>次要文字 Muted</span></div><div class="sw"><i style="background:#0B0B2E"></i><b>--surface</b><code>#0B0B2E</code><span>卡片面 Surface</span></div><div class="sw"><i style="background:#C0C0C0"></i><b>--border</b><code>#C0C0C0</code><span>分隔線 Border</span></div><div class="sw"><i style="background:#00FFFF"></i><b>--accent</b><code>#00FFFF</code><span>強調色 Accent</span></div><div class="sw"><i style="background:#00201F"></i><b>--accent-fg</b><code>#00201F</code><span>強調上文字</span></div><div class="sw"><i style="background:#00FF41"></i><b>--ok</b><code>#00FF41</code><span>成功 Success</span></div><div class="sw"><i style="background:#FF4466"></i><b>--warn</b><code>#FF4466</code><span>警告 Warning</span></div></div>
+
+  <h2>2 · 字體 Typography</h2>
+  <p class="desc">最多兩個字重；標題 &#x27;VT323&#x27;,&#x27;Noto Sans TC&#x27;,monospace、正文 &#x27;VT323&#x27;,&#x27;Noto Sans TC&#x27;,system-ui,sans-serif。</p>
+  <div class="typo">
+    <div class="d">一頁講清成件事 <small>Display · &#x27;VT323&#x27;,&#x27;Noto Sans TC&#x27;,monospace</small></div>
+    <div class="b">正文用 &#x27;VT323&#x27;,&#x27;Noto Sans TC&#x27;,system-ui,sans-serif：16px、行高 1.65，唔會超過 70 個中文字一行。<small>Body</small></div>
+    <div class="m">HK$1,280 · 2026-09-22 · #REF-0042 <small>Mono／數字對齊（&#x27;VT323&#x27;,ui-monospace,Menlo,monospace）</small></div>
+  </div>
+
+  <h2>3 · 按鈕 Buttons</h2>
+  <p class="desc">11 個狀態齊：hover 升起、active 壓落、focus 外框（對比 ≥3:1）、disabled 變淡、loading／success。</p>
+  <div class="btn-row"><div class="state"><button class="btn btn-primary " type="button">Primary</button><small>Default</small></div><div class="state"><button class="btn btn-primary is-hover" type="button">Primary</button><small>Hover</small></div><div class="state"><button class="btn btn-primary is-active" type="button">Primary</button><small>Active</small></div><div class="state"><button class="btn btn-primary is-focus" type="button">Primary</button><small>Focus</small></div><div class="state"><button class="btn btn-primary " type="button" disabled>Primary</button><small>Disabled</small></div><div class="state"><button class="btn btn-primary btn-sm" type="button">Small</button><small>btn-sm</small></div><div class="state"><button class="btn btn-primary btn-lg" type="button">Large</button><small>btn-lg</small></div><div class="state"><button class="btn btn-primary btn-secondary" type="button">Secondary</button><small>Secondary</small></div></div>
+
+  <h2>4 · 組件 Components</h2>
+  <div class="row">
+    <article class="card" style="flex:1 1 260px"><span class="ico" aria-hidden="true">◆</span><h3>卡片標題</h3><p>一句講清重點，唔超過兩行。</p></article>
+    <div class="plan" style="flex:1 1 240px"><span class="tag">最受歡迎</span><h3>方案名</h3><div class="price">HK$1,280<small>/月</small></div>
+      <ul><li>包含咩</li><li>包含咩</li></ul><a class="btn btn-primary" href="#">揀呢個</a></div>
+    <blockquote class="quote" style="flex:1 1 260px">客人講嘅一句真話。<span class="avatar">阿</span><b>阿文</b><span>客戶 · 角色</span></blockquote>
+  </div>
+
+  <h2>5 · 真實 section 預覽</h2>
+  <p class="desc">以下係由正式 demo 直接抽落嚟（唔係另畫），所以卡同成品一定一致。</p>
+  <div class="preview"><div class="lbl">hero</div><div><section class="block hero" id="hero"><div class="wrap hero-grid"><div><span class="eyebrow rv">香港 · 滲透測試 · 只做授權測試</span><h1>先授權，再測試</h1><p class="lead rv">只接有書面授權嘅滲透測試；測試範圍、時間窗、緊急聯絡人全部寫入合約。</p><div class="actions rv"><a class="btn btn-primary" href="#cta">索取樣本報告 <span class="i" aria-hidden="true">→</span></a><a class="btn btn-secondary" href="#product">睇服務範圍</a></div><p class="note rv">報價 2 個工作日 · 測試窗最早 5 個工作日後 · 樣本報告可以先睇</p></div><figure class="hero-art rv"><div class="deco" aria-hidden="true" style="inset:0;background:linear-gradient(180deg,#000036,#000018)"></div><figcaption>測試介面相片位（生成 media/cybercore-hero.jpg 自動代入）</figcaption></figure></div></section></div></div><div class="preview"><div class="lbl">pricing</div><div><section class="block" id="pricing"><div class="wrap"><h2 class="sec-title">三個範圍</h2><p class="sec-sub">固定範圍固定價；範圍未定可以先做 2 小時 scoping（HK$2,400，可扣落項目）。</p><div class="pricing"><article class="plan rv"><h3>單一網站</h3><div class="price">HK$38,000 <small>/ 專案起</small></div><p>一個域名開始。</p><ul><li>1 個域名</li><li>5 個工作日測試</li><li>報告 + 覆測</li><li>10 個工作天交報告</li></ul><a class="btn btn-secondary" href="#cta">索取樣本報告</a></article><article class="plan rv featured"><span class="tag">最多人問</span><h3>網站 + API</h3><div class="price">HK$58,000 <small>/ 專案起</small></div><p>最多人問。</p><ul><li>3 個域名 + 2 個 API</li><li>10 個工作日測試</li><li>每日進度同步</li><li>報告 + 覆測</li><li>緊急聯絡 24/7</li></ul><a class="btn btn-primary" href="#cta">索取樣本報告</a></article><article class="plan rv"><h3>內網 + App</h3><div class="price">HK$88,000 <small>/ 專案起</small></div><p>要安排現場或 VPN。</p><ul><li>最多 50 部主機</li><li>2 個手機 App</li><li>分段測試窗</li><li>報告 + 覆測</li></ul><a class="btn btn-secondary" href="#cta">索取報價</a></article></div></div></section></div></div><div class="preview"><div class="lbl">venue</div><div><section class="block" id="venue"><div class="wrap"><h2 class="sec-title">流程同授權要求</h2><p class="sec-sub">簽咗授權書才開工；冇授權嘅要求我們唔會做。</p><ul class="infolist"><li><b>授權書</b><span>要由有權限嘅人簽（通常係 IT 主管）；列明域名、IP、時間窗</span></li><li><b>時間窗</b><span>預設 22:00–06:00（HKT）；要避開生產高峰可以另議</span></li><li><b>緊急聯絡</b><span>測試期間 24 小時有人接電話；發現高風險 15 分鐘內通知</span></li><li><b>資料處理</b><span>測試數據只存喺加密機器，項目完結 30 日後刪除</span></li><li><b>唔會做</b><span>DDoS、騙同事密碼嘅社交工程、測試第三方未授權系統</span></li></ul></div></section></div></div>
+
+  <h2>6 · 動效（Pro 版）</h2>
+  <p class="desc">基本版純 CSS；Pro 版有載入幕、入場、scroll reveal、微互動。跟系統設定「減少動態」會自動降級。</p>
+  <p style="font:13px var(--font-mono,monospace);color:var(--muted)"></p>
+
+  <h2>7 · 點用</h2>
+  <ul style="color:var(--muted);font-size:14px">
+    <li>Tokens：<code>themes/cybercore.json</code>（含 <code>snippet_css</code> 同 Tailwind <code>theme.extend</code>）</li>
+    <li>Demo：<a href="../cybercore.html">基本版</a> · <a href="../cybercore-pro.html">Pro 動效版</a> · <a href="../cybercore-pro.html?deep=1">🧪 深度效果</a></li>
+    <li>改客人內容：<code>python3 gen_project.py brief.json</code>（自動驗 WCAG 4.5:1）</li>
+  </ul>
+
+  <div class="cp-foot">
+    <button class="btn btn-primary btn-sm noprint" type="button" onclick="window.print()">🖨️ Print／存 PDF</button>
+    <a href="index.html">← 全部風格卡</a>
+    <span>UIUX Style · Cybercore · 示範內容全部虛構</span>
+  </div>
+</div>
+</body></html>

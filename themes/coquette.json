@@ -1,0 +1,59 @@
+{
+ "slug": "coquette",
+ "name": "Coquette",
+ "cn": "",
+ "family": "🏛️ 古典人文 Heritage & Lifestyle",
+ "industry": "甜點烘焙／婚禮小物",
+ "brand": "Ribbon",
+ "cta": "訂蛋糕",
+ "sections": "products`：蛋糕系列 · `venue`：訂購流程 · `rows`：價目",
+ "css_variables": {
+  "--bg": "#FFF8F6",
+  "--fg": "#8A3B53",
+  "--muted": "#7A5561",
+  "--surface": "#FDEEF2",
+  "--border": "#F0D3DA",
+  "--accent": "#A8405F",
+  "--accent-fg": "#FFF8F6",
+  "--accent-grad": "linear-gradient(180deg,#B0516B,#A8405F)",
+  "--radius": "20px",
+  "--radius-sm": "12px",
+  "--shadow": "0 10px 24px rgba(196,106,133,.20)",
+  "--btn-shadow": "0 4px 0 rgba(168,64,95,.22)",
+  "--art-bg": "radial-gradient(circle at 50% 45%,#fff 0 14%,transparent 15%),linear-gradient(#F8D7DF,#EFA7B8)",
+  "--media-bg": "radial-gradient(circle at 40% 40%,#fff 0 30%,#EDE4DC 60%,transparent 62%)",
+  "--cta-bg": "linear-gradient(180deg,#FDEEF2,#F8D7DF)",
+  "--input-bg": "#FFFFFF",
+  "--ok": "#2E6E4E",
+  "--warn": "#B03A54",
+  "--ribbon": "#EFA7B8",
+  "--pearl": "#EDE4DC",
+  "--font-script": "'Pinyon Script',cursive",
+  "--font-display": "'Bodoni Moda','Noto Serif TC',serif",
+  "--font-body": "'Cormorant','Noto Serif TC',serif",
+  "--font-mono": "'Cormorant',ui-serif,serif",
+  "--focus-ring": "var(--accent)"
+ },
+ "fonts": {
+  "google_url": "https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@1,500&family=Pinyon+Script&family=Cormorant:wght@500&display=swap",
+  "display": "'Bodoni Moda','Noto Serif TC',serif",
+  "body": "'Cormorant','Noto Serif TC',serif",
+  "mono": "'Cormorant',ui-serif,serif"
+ },
+ "radius": {
+  "base": "20px",
+  "sm": "12px"
+ },
+ "shadow": {
+  "card": "0 10px 24px rgba(196,106,133,.20)",
+  "button": "0 4px 0 rgba(168,64,95,.22)"
+ },
+ "focus_ring": "var(--accent)",
+ "motion": {},
+ "demo": {
+  "basic": "Demos/coquette.html",
+  "pro": "Demos/coquette-pro.html"
+ },
+ "snippet_css": ":root{\n  --bg: #FFF8F6;\n  --fg: #8A3B53;\n  --muted: #7A5561;\n  --surface: #FDEEF2;\n  --border: #F0D3DA;\n  --accent: #A8405F;\n  --accent-fg: #FFF8F6;\n  --accent-grad: linear-gradient(180deg,#B0516B,#A8405F);\n  --radius: 20px;\n  --radius-sm: 12px;\n  --shadow: 0 10px 24px rgba(196,106,133,.20);\n  --btn-shadow: 0 4px 0 rgba(168,64,95,.22);\n  --art-bg: radial-gradient(circle at 50% 45%,#fff 0 14%,transparent 15%),linear-gradient(#F8D7DF,#EFA7B8);\n  --media-bg: radial-gradient(circle at 40% 40%,#fff 0 30%,#EDE4DC 60%,transparent 62%);\n  --cta-bg: linear-gradient(180deg,#FDEEF2,#F8D7DF);\n  --input-bg: #FFFFFF;\n  --ok: #2E6E4E;\n  --warn: #B03A54;\n  --ribbon: #EFA7B8;\n  --pearl: #EDE4DC;\n  --font-script: 'Pinyon Script',cursive;\n  --font-display: 'Bodoni Moda','Noto Serif TC',serif;\n  --font-body: 'Cormorant','Noto Serif TC',serif;\n  --font-mono: 'Cormorant',ui-serif,serif;\n  --focus-ring: var(--accent);\n}",
+ "snippet_tailwind": "// tailwind.config.js → theme.extend\n{\n  \"colors\": {\n    \"bg\": \"#FFF8F6\",\n    \"fg\": \"#8A3B53\",\n    \"muted\": \"#7A5561\",\n    \"surface\": \"#FDEEF2\",\n    \"border\": \"#F0D3DA\",\n    \"accent\": \"#A8405F\",\n    \"accent-fg\": \"#FFF8F6\",\n    \"ok\": \"#2E6E4E\",\n    \"warn\": \"#B03A54\",\n    \"focus-ring\": \"var(--accent)\"\n  },\n  \"borderRadius\": {\n    \"DEFAULT\": \"12px\",\n    \"lg\": \"20px\"\n  },\n  \"fontFamily\": {\n    \"display\": [\n      \"'Bodoni Moda','Noto Serif TC',serif\"\n    ],\n    \"body\": [\n      \"'Cormorant','Noto Serif TC',serif\"\n    ]\n  }\n}"
+}

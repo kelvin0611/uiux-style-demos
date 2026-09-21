@@ -1,0 +1,55 @@
+{
+ "slug": "kitsch",
+ "name": "Kitsch",
+ "cn": "",
+ "family": "💥 張力反叛 Bold & Raw",
+ "industry": "Gen Z 潮流品牌",
+ "brand": "Tacky` / `Tacky Mart",
+ "cta": "入手",
+ "sections": "",
+ "css_variables": {
+  "--bg": "linear-gradient(135deg,#FF5FA2,#FFC700 55%,#1DD3B0)",
+  "--fg": "#3B1B2C",
+  "--muted": "#5F2340",
+  "--surface": "#FFFFFF",
+  "--border": "#FF5FA2",
+  "--accent": "#FF5FA2",
+  "--accent-fg": "#FFFFFF",
+  "--accent-grad": "linear-gradient(#FF8FC0,#FF5FA2)",
+  "--radius": "20px",
+  "--radius-sm": "12px",
+  "--shadow": "8px 8px 0 rgba(142,68,255,.55)",
+  "--btn-shadow": "0 6px 0 #8E44FF",
+  "--art-bg": "repeating-linear-gradient(45deg,#FF5FA2 0 14px,#FFC700 14px 28px,#1DD3B0 28px 42px)",
+  "--media-bg": "repeating-linear-gradient(45deg,#C58B3A 0 10px,#FFC700 10px 20px,#8E44FF 20px 30px)",
+  "--cta-bg": "#FFFFFF",
+  "--input-bg": "#FFFDE7",
+  "--ok": "#1DD3B0",
+  "--warn": "#FF5FA2",
+  "--font-display": "Shrikhand,Lobster,cursive",
+  "--font-body": "'Comic Neue','Noto Sans TC',cursive",
+  "--focus-ring": "var(--accent)"
+ },
+ "fonts": {
+  "google_url": "https://fonts.googleapis.com/css2?family=Lobster&family=Shrikhand&family=Comic+Neue:wght@400;700&display=swap",
+  "display": "Shrikhand,Lobster,cursive",
+  "body": "'Comic Neue','Noto Sans TC',cursive",
+  "mono": ""
+ },
+ "radius": {
+  "base": "20px",
+  "sm": "12px"
+ },
+ "shadow": {
+  "card": "8px 8px 0 rgba(142,68,255,.55)",
+  "button": "0 6px 0 #8E44FF"
+ },
+ "focus_ring": "var(--accent)",
+ "motion": {},
+ "demo": {
+  "basic": "Demos/kitsch.html",
+  "pro": "Demos/kitsch-pro.html"
+ },
+ "snippet_css": ":root{\n  --bg: linear-gradient(135deg,#FF5FA2,#FFC700 55%,#1DD3B0);\n  --fg: #3B1B2C;\n  --muted: #5F2340;\n  --surface: #FFFFFF;\n  --border: #FF5FA2;\n  --accent: #FF5FA2;\n  --accent-fg: #FFFFFF;\n  --accent-grad: linear-gradient(#FF8FC0,#FF5FA2);\n  --radius: 20px;\n  --radius-sm: 12px;\n  --shadow: 8px 8px 0 rgba(142,68,255,.55);\n  --btn-shadow: 0 6px 0 #8E44FF;\n  --art-bg: repeating-linear-gradient(45deg,#FF5FA2 0 14px,#FFC700 14px 28px,#1DD3B0 28px 42px);\n  --media-bg: repeating-linear-gradient(45deg,#C58B3A 0 10px,#FFC700 10px 20px,#8E44FF 20px 30px);\n  --cta-bg: #FFFFFF;\n  --input-bg: #FFFDE7;\n  --ok: #1DD3B0;\n  --warn: #FF5FA2;\n  --font-display: Shrikhand,Lobster,cursive;\n  --font-body: 'Comic Neue','Noto Sans TC',cursive;\n  --focus-ring: var(--accent);\n}",
+ "snippet_tailwind": "// tailwind.config.js → theme.extend\n{\n  \"colors\": {\n    \"bg\": \"linear-gradient(135deg,#FF5FA2,#FFC700 55%,#1DD3B0)\",\n    \"fg\": \"#3B1B2C\",\n    \"muted\": \"#5F2340\",\n    \"surface\": \"#FFFFFF\",\n    \"border\": \"#FF5FA2\",\n    \"accent\": \"#FF5FA2\",\n    \"accent-fg\": \"#FFFFFF\",\n    \"ok\": \"#1DD3B0\",\n    \"warn\": \"#FF5FA2\",\n    \"focus-ring\": \"var(--accent)\"\n  },\n  \"borderRadius\": {\n    \"DEFAULT\": \"12px\",\n    \"lg\": \"20px\"\n  },\n  \"fontFamily\": {\n    \"display\": [\n      \"Shrikhand,Lobster,cursive\"\n    ],\n    \"body\": [\n      \"'Comic Neue','Noto Sans TC',cursive\"\n    ]\n  }\n}"
+}

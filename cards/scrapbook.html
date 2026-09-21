@@ -1,0 +1,109 @@
+<!doctype html><html lang="zh-Hant-HK"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Scrapbook  · 風格卡</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Special+Elite&family=Lora:ital,wght@0,400;1,400&display=swap">
+<link rel="stylesheet" href="../blocks.css">
+<style>:root{--bg:#FDFCF8;--fg:#2B2B2B;--muted:#5F5A52;--surface:#FFFFFF;--border:#E3DCCB;--accent:#B8433C;--accent-fg:#FFFFFF;--radius:10px;--radius-sm:6px;--shadow:2px 3px 0 rgba(43,43,43,.14);--btn-shadow:0 3px 0 rgba(43,43,43,.28);--art-bg:linear-gradient(160deg,#9FD3E6,#F6C28B 60%,#E07A5F);--media-bg:linear-gradient(160deg,#FBE3C5,#E8A87C);--cta-bg:#F6EFE0;--input-bg:#FFFFFF;--ok:#3F7D5A;--warn:#B0421F;--font-display:'Caveat','Noto Sans TC',cursive;--font-body:'Lora','Noto Sans TC',serif;--font-mono:'Special Elite',ui-monospace,monospace;--focus-ring:var(--accent);}
+
+
+body{background-image:linear-gradient(#E6EDF5 1px,transparent 1px),linear-gradient(90deg,#E6EDF5 1px,transparent 1px);background-size:26px 26px}
+.card,.tile-c,.quote,.plan,.rows,.log,.mock,.badge-card{background:var(--surface);border:1px solid var(--border);box-shadow:var(--shadow)}
+.card,.tile-c{position:relative}
+.card:nth-child(odd),.tile-c:nth-child(odd){rotate:-.5deg}
+.card:nth-child(even),.tile-c:nth-child(even){rotate:.4deg}
+.card::before,.tile-c::before{content:"";position:absolute;top:-9px;left:16px;width:62px;height:16px;rotate:-4deg;background:linear-gradient(180deg,rgba(242,209,107,.9),rgba(246,194,139,.8));border-left:1px dashed rgba(43,43,43,.18);border-right:1px dashed rgba(43,43,43,.18);pointer-events:none}
+.hero h1{font-weight:700;letter-spacing:.005em}
+.sec-title{font-weight:700}
+.sec-title::after{content:"";display:block;width:56px;height:5px;background:var(--accent);margin-top:8px;rotate:-1.5deg}
+.btn{border-radius:var(--radius-sm);border:1px solid var(--border)}
+.btn-primary{background:var(--accent);color:var(--accent-fg);border-color:var(--accent)}
+.btn-secondary{background:var(--surface);color:var(--fg)}
+.chip{border-radius:999px;background:#F7D6E0;color:var(--fg);border:1px solid var(--border)}
+.avatar{border-radius:4px;background:#9FD3E6;color:#2B2B2B;rotate:-2deg}
+.tag{background:#F2D16B;color:#2B2B2B;border-radius:4px}
+.tile-c .ph{background-image:linear-gradient(160deg,#9FD3E6,#F6C28B 60%,#E07A5F);color:#2B2B2B;font-size:40px}
+.hero-art{rotate:1.2deg;box-shadow:var(--shadow)}
+.hero::after{content:"Snapbook · 2026";position:absolute;right:6%;bottom:8%;padding:5px 12px;border:2px dashed var(--accent);color:var(--accent);font:400 13px 'Special Elite',monospace;rotate:-6deg;opacity:.9;pointer-events:none}
+.stat .num{font-family:'Caveat',cursive;font-size:clamp(30px,4vw,44px);color:var(--accent)}
+
+/* ---- 風格卡專用 ---- */
+body{background:var(--bg);color:var(--fg);font-family:var(--font-body)}
+.cp{max-width:1080px;margin:0 auto;padding:clamp(18px,4vw,40px)}
+.cp-head{border-bottom:2px solid var(--border);padding-bottom:18px;margin-bottom:26px}
+.cp-head h1{margin:.1em 0 .2em;font-family:var(--font-display);font-size:clamp(28px,5vw,46px)}
+.cp-meta{color:var(--muted);font-size:14px}
+.cp-tag{display:inline-block;border:1px solid var(--border);border-radius:999px;padding:3px 10px;font-size:12px;color:var(--muted);margin:0 6px 6px 0}
+.cp h2{font-family:var(--font-display);font-size:clamp(18px,2.4vw,24px);margin:34px 0 6px;padding-bottom:6px;border-bottom:1px solid var(--border)}
+.cp p.desc{color:var(--muted);margin:6px 0 14px;max-width:70ch}
+.sws{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:10px}
+.sw{border:1px solid var(--border);border-radius:10px;padding:9px;background:var(--surface);display:grid;gap:4px}
+.sw i{display:block;height:44px;border-radius:7px;border:1px solid var(--border)}
+.sw b{font-size:13px}.sw code{font:12px var(--font-mono,monospace);color:var(--muted)}
+.sw span{font-size:11px;color:var(--muted)}
+.typo div{border:1px solid var(--border);border-radius:10px;padding:12px 14px;margin-bottom:8px;background:var(--surface)}
+.typo .d{font-family:var(--font-display);font-size:32px;line-height:1.15}
+.typo .b{font-family:var(--font-body);font-size:16px}
+.typo .m{font-family:var(--font-mono,monospace);font-size:14px}
+.typo small{color:var(--muted);font-size:11px;display:block;margin-top:6px}
+.row{display:flex;gap:12px;flex-wrap:wrap;align-items:flex-start}
+.preview{border:1px dashed var(--border);border-radius:12px;overflow:hidden;margin-bottom:12px}
+.preview .lbl{font:11px var(--font-mono,monospace);color:var(--muted);padding:6px 10px;border-bottom:1px dashed var(--border)}
+.preview > div:last-child{transform-origin:top left}
+.cp-foot{margin-top:36px;padding-top:14px;border-top:1px solid var(--border);color:var(--muted);font-size:13px;display:flex;gap:14px;flex-wrap:wrap}
+.cp a{color:var(--accent)}
+@media print{.noprint{display:none}body{background:#fff}.cp{max-width:none;padding:0}.preview{page-break-inside:avoid}}
+</style></head><body>
+<div class="cp">
+  <div class="cp-head">
+    <span class="cp-tag">✏️ 藝術手作 Artistic &amp; Handmade</span><span class="cp-tag">15 個 block</span><span class="cp-tag">—</span>
+    <h1> Scrapbook <span style="font-size:.6em;color:var(--muted)"></span></h1>
+    <p class="desc" style="font-size:17px;color:var(--fg)">將網頁當成手作剪貼簿／手帳 —— 拍立得、膠紙、貼紙、剪報、手寫筆記、紙紋，隨意微斜咁貼上去。</p>
+    <p class="cp-meta">示範品牌 <b>Snapbook</b> · 主要 CTA「預約拍攝」· 行業：婚禮攝影／活動紀錄</p>
+  </div>
+
+  <h2>1 · 色票 Palette</h2>
+  <p class="desc">所有元件都只可以用呢組 token（換色 = 改呢幾行）。</p>
+  <div class="sws"><div class="sw"><i style="background:#FDFCF8"></i><b>--bg</b><code>#FDFCF8</code><span>底色 Background</span></div><div class="sw"><i style="background:#2B2B2B"></i><b>--fg</b><code>#2B2B2B</code><span>主文字 Text</span></div><div class="sw"><i style="background:#5F5A52"></i><b>--muted</b><code>#5F5A52</code><span>次要文字 Muted</span></div><div class="sw"><i style="background:#FFFFFF"></i><b>--surface</b><code>#FFFFFF</code><span>卡片面 Surface</span></div><div class="sw"><i style="background:#E3DCCB"></i><b>--border</b><code>#E3DCCB</code><span>分隔線 Border</span></div><div class="sw"><i style="background:#B8433C"></i><b>--accent</b><code>#B8433C</code><span>強調色 Accent</span></div><div class="sw"><i style="background:#FFFFFF"></i><b>--accent-fg</b><code>#FFFFFF</code><span>強調上文字</span></div><div class="sw"><i style="background:#3F7D5A"></i><b>--ok</b><code>#3F7D5A</code><span>成功 Success</span></div><div class="sw"><i style="background:#B0421F"></i><b>--warn</b><code>#B0421F</code><span>警告 Warning</span></div></div>
+
+  <h2>2 · 字體 Typography</h2>
+  <p class="desc">最多兩個字重；標題 &#x27;Caveat&#x27;,&#x27;Noto Sans TC&#x27;,cursive、正文 &#x27;Lora&#x27;,&#x27;Noto Sans TC&#x27;,serif。</p>
+  <div class="typo">
+    <div class="d">一頁講清成件事 <small>Display · &#x27;Caveat&#x27;,&#x27;Noto Sans TC&#x27;,cursive</small></div>
+    <div class="b">正文用 &#x27;Lora&#x27;,&#x27;Noto Sans TC&#x27;,serif：16px、行高 1.65，唔會超過 70 個中文字一行。<small>Body</small></div>
+    <div class="m">HK$1,280 · 2026-09-22 · #REF-0042 <small>Mono／數字對齊（&#x27;Special Elite&#x27;,ui-monospace,monospace）</small></div>
+  </div>
+
+  <h2>3 · 按鈕 Buttons</h2>
+  <p class="desc">11 個狀態齊：hover 升起、active 壓落、focus 外框（對比 ≥3:1）、disabled 變淡、loading／success。</p>
+  <div class="btn-row"><div class="state"><button class="btn btn-primary " type="button">Primary</button><small>Default</small></div><div class="state"><button class="btn btn-primary is-hover" type="button">Primary</button><small>Hover</small></div><div class="state"><button class="btn btn-primary is-active" type="button">Primary</button><small>Active</small></div><div class="state"><button class="btn btn-primary is-focus" type="button">Primary</button><small>Focus</small></div><div class="state"><button class="btn btn-primary " type="button" disabled>Primary</button><small>Disabled</small></div><div class="state"><button class="btn btn-primary btn-sm" type="button">Small</button><small>btn-sm</small></div><div class="state"><button class="btn btn-primary btn-lg" type="button">Large</button><small>btn-lg</small></div><div class="state"><button class="btn btn-primary btn-secondary" type="button">Secondary</button><small>Secondary</small></div></div>
+
+  <h2>4 · 組件 Components</h2>
+  <div class="row">
+    <article class="card" style="flex:1 1 260px"><span class="ico" aria-hidden="true">◆</span><h3>卡片標題</h3><p>一句講清重點，唔超過兩行。</p></article>
+    <div class="plan" style="flex:1 1 240px"><span class="tag">最受歡迎</span><h3>方案名</h3><div class="price">HK$1,280<small>/月</small></div>
+      <ul><li>包含咩</li><li>包含咩</li></ul><a class="btn btn-primary" href="#">揀呢個</a></div>
+    <blockquote class="quote" style="flex:1 1 260px">客人講嘅一句真話。<span class="avatar">阿</span><b>阿文</b><span>客戶 · 角色</span></blockquote>
+  </div>
+
+  <h2>5 · 真實 section 預覽</h2>
+  <p class="desc">以下係由正式 demo 直接抽落嚟（唔係另畫），所以卡同成品一定一致。</p>
+  <div class="preview"><div class="lbl">hero</div><div><section class="block hero" id="hero"><div class="wrap hero-grid"><div><span class="eyebrow rv">香港 · 婚禮同活動紀錄 · 2026 檔期</span><h1>影低嗰日嘅光</h1><p class="lead rv">婚禮、註冊、公司週年：紀實手法加菲林色調，交全部原檔加精修，唔會只交揀過嘅幾張。</p><div class="actions rv"><a class="btn btn-primary" href="#cta">預約拍攝 <span class="i" aria-hidden="true">→</span></a><a class="btn btn-secondary" href="#product">睇作品</a></div><p class="note rv">半日 4 小時 HK$4,800 起 · 交付 14 個工作日 · 可加購即日印相</p></div><figure class="hero-art rv"><div class="deco" aria-hidden="true" style="inset:0;background:linear-gradient(160deg,#9FD3E6,#F6C28B 60%,#E07A5F)"></div><figcaption>作品相片位（生成 media/scrapbook-hero.jpg 自動代入）</figcaption></figure></div></section></div></div><div class="preview"><div class="lbl">pricing</div><div><section class="block" id="pricing"><div class="wrap"><h2 class="sec-title">三個拍攝方案</h2><p class="sec-sub">可以先做最短嘅方案試我們嘅風格。</p><div class="pricing"><article class="plan rv"><h3>註冊日</h3><div class="price">HK$2,600 <small>/ 次</small></div><p>2 小時，一個場地。</p><ul><li>1 位攝影師</li><li>精修 40 張</li><li>雲端交付 14 個工作日</li><li>1 輪改圖</li></ul><a class="btn btn-secondary" href="#cta">預約拍攝</a></article><article class="plan rv featured"><span class="tag">最常揀</span><h3>半日 4 小時</h3><div class="price">HK$4,800 <small>/ 次</small></div><p>主禮＋午宴，最多人揀。</p><ul><li>1 位攝影師</li><li>原檔全部＋精修 80 張</li><li>即日 10 張預覽</li><li>相簿 8×8 吋 20 頁</li></ul><a class="btn btn-primary" href="#cta">預約拍攝</a></article><article class="plan rv"><h3>全日 9 小時</h3><div class="price">HK$12,800 <small>/ 次</small></div><p>2 位攝影師，主禮加宴會。</p><ul><li>2 位攝影師</li><li>原檔全部＋精修 150 張</li><li>相簿 20×20cm 30 頁</li><li>即日印相 30 張</li></ul><a class="btn btn-secondary" href="#cta">查檔期</a></article></div></div></section></div></div><div class="preview"><div class="lbl">venue</div><div><section class="block" id="venue"><div class="wrap"><h2 class="sec-title">流程同交付</h2><p class="sec-sub">訂金、逾時費、交付期全部寫喺報價單。</p><ul class="infolist"><li><b>預約</b><span>WhatsApp 傳日期、場地同人數；2 個工作日內回覆檔期</span></li><li><b>訂金</b><span>30% 訂金鎖檔期（FPS／轉帳）；尾款拍攝當日收</span></li><li><b>拍攝時間</b><span>半日 4 小時、全日 9 小時；逾時每小時 HK$1,200</span></li><li><b>交付</b><span>原檔 JPG 14 個工作日；精修 21 個工作日；急件 7 日加 20%</span></li><li><b>儲存</b><span>雲端連結保留 12 個月；建議自己下載備份，我們唔會另存副本</span></li></ul></div></section></div></div>
+
+  <h2>6 · 動效（Pro 版）</h2>
+  <p class="desc">基本版純 CSS；Pro 版有載入幕、入場、scroll reveal、微互動。跟系統設定「減少動態」會自動降級。</p>
+  <p style="font:13px var(--font-mono,monospace);color:var(--muted)"></p>
+
+  <h2>7 · 點用</h2>
+  <ul style="color:var(--muted);font-size:14px">
+    <li>Tokens：<code>themes/scrapbook.json</code>（含 <code>snippet_css</code> 同 Tailwind <code>theme.extend</code>）</li>
+    <li>Demo：<a href="../scrapbook.html">基本版</a> · <a href="../scrapbook-pro.html">Pro 動效版</a> · <a href="../scrapbook-pro.html?deep=1">🧪 深度效果</a></li>
+    <li>改客人內容：<code>python3 gen_project.py brief.json</code>（自動驗 WCAG 4.5:1）</li>
+  </ul>
+
+  <div class="cp-foot">
+    <button class="btn btn-primary btn-sm noprint" type="button" onclick="window.print()">🖨️ Print／存 PDF</button>
+    <a href="index.html">← 全部風格卡</a>
+    <span>UIUX Style · Scrapbook · 示範內容全部虛構</span>
+  </div>
+</div>
+</body></html>

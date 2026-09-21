@@ -1,0 +1,120 @@
+<!doctype html><html lang="zh-Hant-HK"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Editorial Design  · 風格卡</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,400&family=Source+Serif+4:ital,wght@0,400;1,400&family=Inter:wght@500;600&display=swap">
+<link rel="stylesheet" href="../blocks.css">
+<style>:root{--bg:#FAF7F2;--fg:#1A1A1A;--muted:#57534E;--surface:#FFFFFF;--border:#D9D4CC;--accent:#C8102E;--accent-fg:#FFFFFF;--radius:0px;--radius-sm:0px;--shadow:none;--btn-shadow:none;--art-bg:linear-gradient(135deg,#2B2B2B,#8A8580);--media-bg:linear-gradient(160deg,#6E6A64,#D9D4CC);--cta-bg:#1A1A1A;--input-bg:#FFFFFF;--ok:#1F6B45;--warn:#C8102E;--font-display:'Playfair Display','Noto Serif TC',serif;--font-body:'Source Serif 4','Noto Serif TC',serif;--font-mono:Inter,ui-sans-serif,system-ui,sans-serif;--focus-ring:var(--accent);}
+
+
+.card,.plan,.quote,.tile-c,.mock,.rows,.log{background:var(--surface);border:0;
+ border-top:1px solid var(--border);border-bottom:1px solid var(--border);box-shadow:none}
+.sec-title{font-family:var(--font-display);font-weight:900;letter-spacing:-.01em;
+ border-bottom:3px solid var(--fg);padding-bottom:10px}
+.sec-sub{font-style:italic}
+.hero h1{font-family:var(--font-display);font-weight:900;letter-spacing:-.02em;line-height:1.02}
+.hero .lead{font-family:var(--font-display);font-style:italic;font-size:clamp(17px,2vw,21px)}
+.hero .eyebrow{font-family:var(--font-mono);text-transform:uppercase;letter-spacing:.16em;
+ font-size:12px;color:var(--accent);font-weight:600}
+.btn{border-radius:0;font-family:var(--font-mono);text-transform:uppercase;letter-spacing:.08em;font-size:13px}
+.btn-primary{background:var(--accent);color:var(--accent-fg)}
+.btn-secondary{background:transparent;color:var(--fg);border:1.5px solid var(--fg)}
+.chip{border-radius:0;background:#F1EDE6;border:1px solid var(--border);font-family:var(--font-mono);font-size:12px}
+.avatar{border-radius:0;background:#1A1A1A;color:#FAF7F2;font-family:var(--font-display)}
+.tag{background:var(--accent);color:var(--accent-fg);border-radius:0;
+ font-family:var(--font-mono);font-size:11px;text-transform:uppercase}
+.tile-c .ph{background-image:none;background:var(--art-bg);border-radius:0}
+.rows article{border-bottom:1px solid var(--border);padding:16px 0}
+.rows article b,.log article b{font-family:var(--font-display);font-size:19px}
+.cost{font-family:var(--font-mono);font-weight:600}
+.log article ul li{padding-left:0;list-style:none}
+.log article ul li::before{content:"— ";color:var(--accent)}
+.quote p{font-family:var(--font-display);font-size:21px;line-height:1.45}
+.quote p::before{content:"“";color:var(--accent);font-size:38px;line-height:0;vertical-align:-8px;margin-right:2px}
+details summary{font-family:var(--font-display);font-weight:700;font-size:19px}
+.cta-band{background:var(--cta-bg);color:#FAF7F2}
+.cta-band h2{font-family:var(--font-display);font-weight:900}
+.cta-band .btn-secondary{color:#FAF7F2;border-color:#FAF7F2}
+.stat .num{font-family:var(--font-display);font-weight:900}
+.hero::after{content:"";position:absolute;right:0;top:0;width:2px;height:100%;background:var(--accent);opacity:.85;pointer-events:none}
+
+/* ---- 風格卡專用 ---- */
+body{background:var(--bg);color:var(--fg);font-family:var(--font-body)}
+.cp{max-width:1080px;margin:0 auto;padding:clamp(18px,4vw,40px)}
+.cp-head{border-bottom:2px solid var(--border);padding-bottom:18px;margin-bottom:26px}
+.cp-head h1{margin:.1em 0 .2em;font-family:var(--font-display);font-size:clamp(28px,5vw,46px)}
+.cp-meta{color:var(--muted);font-size:14px}
+.cp-tag{display:inline-block;border:1px solid var(--border);border-radius:999px;padding:3px 10px;font-size:12px;color:var(--muted);margin:0 6px 6px 0}
+.cp h2{font-family:var(--font-display);font-size:clamp(18px,2.4vw,24px);margin:34px 0 6px;padding-bottom:6px;border-bottom:1px solid var(--border)}
+.cp p.desc{color:var(--muted);margin:6px 0 14px;max-width:70ch}
+.sws{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:10px}
+.sw{border:1px solid var(--border);border-radius:10px;padding:9px;background:var(--surface);display:grid;gap:4px}
+.sw i{display:block;height:44px;border-radius:7px;border:1px solid var(--border)}
+.sw b{font-size:13px}.sw code{font:12px var(--font-mono,monospace);color:var(--muted)}
+.sw span{font-size:11px;color:var(--muted)}
+.typo div{border:1px solid var(--border);border-radius:10px;padding:12px 14px;margin-bottom:8px;background:var(--surface)}
+.typo .d{font-family:var(--font-display);font-size:32px;line-height:1.15}
+.typo .b{font-family:var(--font-body);font-size:16px}
+.typo .m{font-family:var(--font-mono,monospace);font-size:14px}
+.typo small{color:var(--muted);font-size:11px;display:block;margin-top:6px}
+.row{display:flex;gap:12px;flex-wrap:wrap;align-items:flex-start}
+.preview{border:1px dashed var(--border);border-radius:12px;overflow:hidden;margin-bottom:12px}
+.preview .lbl{font:11px var(--font-mono,monospace);color:var(--muted);padding:6px 10px;border-bottom:1px dashed var(--border)}
+.preview > div:last-child{transform-origin:top left}
+.cp-foot{margin-top:36px;padding-top:14px;border-top:1px solid var(--border);color:var(--muted);font-size:13px;display:flex;gap:14px;flex-wrap:wrap}
+.cp a{color:var(--accent)}
+@media print{.noprint{display:none}body{background:#fff}.cp{max-width:none;padding:0}.preview{page-break-inside:avoid}}
+</style></head><body>
+<div class="cp">
+  <div class="cp-head">
+    <span class="cp-tag">📐 秩序理性 Structure &amp; Order</span><span class="cp-tag">15 個 block</span><span class="cp-tag">—</span>
+    <h1> Editorial Design <span style="font-size:.6em;color:var(--muted)"></span></h1>
+    <p class="desc" style="font-size:17px;color:var(--fg)">將雜誌／報紙嘅排版功力搬上網 —— 大 serif 標題、多欄網格、pull quote、全出血攝影、清楚閱讀節奏。</p>
+    <p class="cp-meta">示範品牌 <b>Broadsheet</b> · 主要 CTA「訂閱」· 行業：深度報導媒體</p>
+  </div>
+
+  <h2>1 · 色票 Palette</h2>
+  <p class="desc">所有元件都只可以用呢組 token（換色 = 改呢幾行）。</p>
+  <div class="sws"><div class="sw"><i style="background:#FAF7F2"></i><b>--bg</b><code>#FAF7F2</code><span>底色 Background</span></div><div class="sw"><i style="background:#1A1A1A"></i><b>--fg</b><code>#1A1A1A</code><span>主文字 Text</span></div><div class="sw"><i style="background:#57534E"></i><b>--muted</b><code>#57534E</code><span>次要文字 Muted</span></div><div class="sw"><i style="background:#FFFFFF"></i><b>--surface</b><code>#FFFFFF</code><span>卡片面 Surface</span></div><div class="sw"><i style="background:#D9D4CC"></i><b>--border</b><code>#D9D4CC</code><span>分隔線 Border</span></div><div class="sw"><i style="background:#C8102E"></i><b>--accent</b><code>#C8102E</code><span>強調色 Accent</span></div><div class="sw"><i style="background:#FFFFFF"></i><b>--accent-fg</b><code>#FFFFFF</code><span>強調上文字</span></div><div class="sw"><i style="background:#1F6B45"></i><b>--ok</b><code>#1F6B45</code><span>成功 Success</span></div><div class="sw"><i style="background:#C8102E"></i><b>--warn</b><code>#C8102E</code><span>警告 Warning</span></div></div>
+
+  <h2>2 · 字體 Typography</h2>
+  <p class="desc">最多兩個字重；標題 &#x27;Playfair Display&#x27;,&#x27;Noto Serif TC&#x27;,serif、正文 &#x27;Source Serif 4&#x27;,&#x27;Noto Serif TC&#x27;,serif。</p>
+  <div class="typo">
+    <div class="d">一頁講清成件事 <small>Display · &#x27;Playfair Display&#x27;,&#x27;Noto Serif TC&#x27;,serif</small></div>
+    <div class="b">正文用 &#x27;Source Serif 4&#x27;,&#x27;Noto Serif TC&#x27;,serif：16px、行高 1.65，唔會超過 70 個中文字一行。<small>Body</small></div>
+    <div class="m">HK$1,280 · 2026-09-22 · #REF-0042 <small>Mono／數字對齊（Inter,ui-sans-serif,system-ui,sans-serif）</small></div>
+  </div>
+
+  <h2>3 · 按鈕 Buttons</h2>
+  <p class="desc">11 個狀態齊：hover 升起、active 壓落、focus 外框（對比 ≥3:1）、disabled 變淡、loading／success。</p>
+  <div class="btn-row"><div class="state"><button class="btn btn-primary " type="button">Primary</button><small>Default</small></div><div class="state"><button class="btn btn-primary is-hover" type="button">Primary</button><small>Hover</small></div><div class="state"><button class="btn btn-primary is-active" type="button">Primary</button><small>Active</small></div><div class="state"><button class="btn btn-primary is-focus" type="button">Primary</button><small>Focus</small></div><div class="state"><button class="btn btn-primary " type="button" disabled>Primary</button><small>Disabled</small></div><div class="state"><button class="btn btn-primary btn-sm" type="button">Small</button><small>btn-sm</small></div><div class="state"><button class="btn btn-primary btn-lg" type="button">Large</button><small>btn-lg</small></div><div class="state"><button class="btn btn-primary btn-secondary" type="button">Secondary</button><small>Secondary</small></div></div>
+
+  <h2>4 · 組件 Components</h2>
+  <div class="row">
+    <article class="card" style="flex:1 1 260px"><span class="ico" aria-hidden="true">◆</span><h3>卡片標題</h3><p>一句講清重點，唔超過兩行。</p></article>
+    <div class="plan" style="flex:1 1 240px"><span class="tag">最受歡迎</span><h3>方案名</h3><div class="price">HK$1,280<small>/月</small></div>
+      <ul><li>包含咩</li><li>包含咩</li></ul><a class="btn btn-primary" href="#">揀呢個</a></div>
+    <blockquote class="quote" style="flex:1 1 260px">客人講嘅一句真話。<span class="avatar">阿</span><b>阿文</b><span>客戶 · 角色</span></blockquote>
+  </div>
+
+  <h2>5 · 真實 section 預覽</h2>
+  <p class="desc">以下係由正式 demo 直接抽落嚟（唔係另畫），所以卡同成品一定一致。</p>
+  <div class="preview"><div class="lbl">hero</div><div><section class="block hero" id="hero"><div class="wrap hero-grid"><div><span class="eyebrow rv">深度報導 · 每兩星期出一期</span><h1>每期 6 篇<br>硬題目</h1><p class="lead rv">每兩星期一期：6 篇 3,000–8,000 字報導，附原始數據、訪談逐字稿同圖表。</p><div class="actions rv"><a class="btn btn-primary" href="#cta">訂閱 <span class="i" aria-hidden="true">→</span></a><a class="btn btn-secondary" href="#product">睇專題目錄</a></div><p class="note rv">HK$98／月 · 首 14 日免費 · 隨時取消</p></div><figure class="hero-art rv"><div class="deco" aria-hidden="true" style="inset:0;background:linear-gradient(135deg,#2B2B2B,#8A8580)"></div><figcaption>當期封面圖位（生成 media/editorial-design-hero.jpg 自動代入）</figcaption></figure></div></section></div></div><div class="preview"><div class="lbl">pricing</div><div><section class="block" id="pricing"><div class="wrap"><h2 class="sec-title">三個訂閱層</h2><p class="sec-sub">全部睇得齊文字內容；分別只在年刊同帳戶數。</p><div class="pricing"><article class="plan rv"><h3>月付</h3><div class="price">HK$98 <small>/ 月</small></div><p>想先試一期。</p><ul><li>每期 6 篇全文</li><li>舊期數（Vol. 1 起）</li><li>逐字稿同原始數據</li><li>隨時取消</li></ul><a class="btn btn-secondary" href="#cta">訂閱</a></article><article class="plan rv featured"><span class="tag">最多人訂</span><h3>年付</h3><div class="price">HK$980 <small>/ 年</small></div><p>一年 26 期，等於 10 個月價。</p><ul><li>上面全部</li><li>印刷年刊寄上門</li><li>下載 CSV 同圖表原檔</li><li>新專題優先 email</li></ul><a class="btn btn-primary" href="#cta">訂閱</a></article><article class="plan rv"><h3>機構</h3><div class="price">HK$68 <small>/ 位 · 月</small></div><p>5 個帳戶起。</p><ul><li>5 個帳戶起</li><li>可出正式發票</li><li>共用閱讀清單</li><li>可加內部轉載授權</li></ul><a class="btn btn-secondary" href="#cta">索取報價</a></article></div></div></section></div></div><div class="preview"><div class="lbl">venue</div><div><section class="block" id="venue"><div class="wrap"><h2 class="sec-title">訂閱方案</h2><p class="sec-sub">取消隨時可以；取消之後仍然睇得返已出版內容。</p><ul class="infolist"><li><b>月付</b><span>HK$98／月 · 每月出版日自動續期</span></li><li><b>年付</b><span>HK$980／年（等於 10 個月價）· 附印刷年刊一本</span></li><li><b>學生</b><span>HK$58／月 · 需要學生 email 驗證，每年重新確認</span></li><li><b>機構</b><span>5 個帳戶起 · HK$68／位／月 · 可出正式發票</span></li><li><b>取消同退款</b><span>14 日內全額退；之後按未用月份比例退</span></li></ul></div></section></div></div>
+
+  <h2>6 · 動效（Pro 版）</h2>
+  <p class="desc">基本版純 CSS；Pro 版有載入幕、入場、scroll reveal、微互動。跟系統設定「減少動態」會自動降級。</p>
+  <p style="font:13px var(--font-mono,monospace);color:var(--muted)"></p>
+
+  <h2>7 · 點用</h2>
+  <ul style="color:var(--muted);font-size:14px">
+    <li>Tokens：<code>themes/editorial-design.json</code>（含 <code>snippet_css</code> 同 Tailwind <code>theme.extend</code>）</li>
+    <li>Demo：<a href="../editorial-design.html">基本版</a> · <a href="../editorial-design-pro.html">Pro 動效版</a> · <a href="../editorial-design-pro.html?deep=1">🧪 深度效果</a></li>
+    <li>改客人內容：<code>python3 gen_project.py brief.json</code>（自動驗 WCAG 4.5:1）</li>
+  </ul>
+
+  <div class="cp-foot">
+    <button class="btn btn-primary btn-sm noprint" type="button" onclick="window.print()">🖨️ Print／存 PDF</button>
+    <a href="index.html">← 全部風格卡</a>
+    <span>UIUX Style · Editorial Design · 示範內容全部虛構</span>
+  </div>
+</div>
+</body></html>

@@ -1,0 +1,111 @@
+<!doctype html><html lang="zh-Hant-HK"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Filigree  · 風格卡</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Great+Vibes&family=Lora&display=swap">
+<link rel="stylesheet" href="../blocks.css">
+<style>:root{--bg:#14213D;--fg:#FBF7EE;--muted:#D5CEBC;--surface:rgba(255,255,255,.06);--border:rgba(230,209,146,.38);--accent:#E6D192;--accent-fg:#14213D;--accent-grad:linear-gradient(120deg,#8C6F2E,#F3E4B0 45%,#BFA05A 55%,#8C6F2E);--radius:3px;--radius-sm:2px;--shadow:0 18px 40px rgba(0,0,0,.45);--btn-shadow:0 0 0 1px rgba(230,209,146,.45),0 10px 24px rgba(191,160,90,.20);--art-bg:radial-gradient(circle at 34% 30%,#FBF7EE,#F3E4B0 34%,#BFA05A 62%,#14213D);--media-bg:linear-gradient(140deg,#1E2C4C,#3A4766);--cta-bg:linear-gradient(140deg,#1B2743,#2A3960);--input-bg:#16233F;--ok:#9BD8B0;--warn:#E9A38E;--font-display:'Cormorant Garamond','Noto Serif TC',serif;--font-body:Lora,'Noto Serif TC',serif;--font-mono:ui-monospace,'SF Mono',Menlo,monospace;--focus-ring:var(--accent);}
+
+
+body{background:radial-gradient(circle at 88% 4%,rgba(230,209,146,.10),transparent 46%),radial-gradient(circle at 4% 94%,rgba(191,160,90,.10),transparent 50%),var(--bg)}
+body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;opacity:.45;background-image:radial-gradient(circle,var(--accent) 1px,transparent 1.4px);background-size:24px 24px}
+.hero h1{font-family:var(--font-display);font-weight:500;letter-spacing:.02em}
+.hero h1::first-letter{font-family:'Great Vibes',cursive;font-size:1.3em;color:var(--accent)}
+.sec-title{font-family:var(--font-display);font-weight:500;letter-spacing:.04em}
+.sec-title::after{content:"";display:block;width:72px;height:1px;background:var(--accent-grad);margin-top:12px}
+.card,.plan,.quote,.tile-c,.rows,.log,.mock,.badge-card,.infolist{position:relative;background:var(--surface);border:1px solid var(--border);border-radius:var(--radius)}
+.card::after,.tile-c::after{content:"";position:absolute;inset:6px;border:1px solid rgba(230,209,146,.20);border-radius:var(--radius-sm);pointer-events:none}
+.btn{border-radius:999px;letter-spacing:.06em}
+.btn-primary{background:var(--accent-grad);color:var(--accent-fg);border:0}
+.btn-secondary{background:transparent;border:1px solid var(--border);color:var(--fg)}
+.chip{border-radius:999px;background:rgba(230,209,146,.10);border:1px solid var(--border)}
+.avatar{border-radius:50%;background:var(--accent-grad);color:var(--accent-fg);font-family:var(--font-display)}
+.tag{background:var(--accent);color:var(--accent-fg);border-radius:999px;letter-spacing:.06em}
+.rows article b,.infolist b{font-family:var(--font-display);letter-spacing:.02em}
+.rows article{border-bottom:1px solid rgba(230,209,146,.16)}
+.tile-c .ph{color:transparent;border-radius:2px;background-image:radial-gradient(circle at 30% 26%,rgba(251,247,238,.30),transparent 46%),var(--art-bg)}
+.stat .num{font-family:var(--font-display)}
+.plan.featured{outline:1px solid var(--accent);outline-offset:4px}
+.hero-art{border:1px solid var(--border);box-shadow:var(--shadow)}
+.hero-art::after{content:"";position:absolute;inset:10px;border:1px dashed rgba(230,209,146,.30);pointer-events:none}
+
+/* ---- 風格卡專用 ---- */
+body{background:var(--bg);color:var(--fg);font-family:var(--font-body)}
+.cp{max-width:1080px;margin:0 auto;padding:clamp(18px,4vw,40px)}
+.cp-head{border-bottom:2px solid var(--border);padding-bottom:18px;margin-bottom:26px}
+.cp-head h1{margin:.1em 0 .2em;font-family:var(--font-display);font-size:clamp(28px,5vw,46px)}
+.cp-meta{color:var(--muted);font-size:14px}
+.cp-tag{display:inline-block;border:1px solid var(--border);border-radius:999px;padding:3px 10px;font-size:12px;color:var(--muted);margin:0 6px 6px 0}
+.cp h2{font-family:var(--font-display);font-size:clamp(18px,2.4vw,24px);margin:34px 0 6px;padding-bottom:6px;border-bottom:1px solid var(--border)}
+.cp p.desc{color:var(--muted);margin:6px 0 14px;max-width:70ch}
+.sws{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:10px}
+.sw{border:1px solid var(--border);border-radius:10px;padding:9px;background:var(--surface);display:grid;gap:4px}
+.sw i{display:block;height:44px;border-radius:7px;border:1px solid var(--border)}
+.sw b{font-size:13px}.sw code{font:12px var(--font-mono,monospace);color:var(--muted)}
+.sw span{font-size:11px;color:var(--muted)}
+.typo div{border:1px solid var(--border);border-radius:10px;padding:12px 14px;margin-bottom:8px;background:var(--surface)}
+.typo .d{font-family:var(--font-display);font-size:32px;line-height:1.15}
+.typo .b{font-family:var(--font-body);font-size:16px}
+.typo .m{font-family:var(--font-mono,monospace);font-size:14px}
+.typo small{color:var(--muted);font-size:11px;display:block;margin-top:6px}
+.row{display:flex;gap:12px;flex-wrap:wrap;align-items:flex-start}
+.preview{border:1px dashed var(--border);border-radius:12px;overflow:hidden;margin-bottom:12px}
+.preview .lbl{font:11px var(--font-mono,monospace);color:var(--muted);padding:6px 10px;border-bottom:1px dashed var(--border)}
+.preview > div:last-child{transform-origin:top left}
+.cp-foot{margin-top:36px;padding-top:14px;border-top:1px solid var(--border);color:var(--muted);font-size:13px;display:flex;gap:14px;flex-wrap:wrap}
+.cp a{color:var(--accent)}
+@media print{.noprint{display:none}body{background:#fff}.cp{max-width:none;padding:0}.preview{page-break-inside:avoid}}
+</style></head><body>
+<div class="cp">
+  <div class="cp-head">
+    <span class="cp-tag">🏛️ 古典人文 Heritage &amp; Lifestyle</span><span class="cp-tag">15 個 block</span><span class="cp-tag">—</span>
+    <h1> Filigree <span style="font-size:.6em;color:var(--muted)"></span></h1>
+    <p class="desc" style="font-size:17px;color:var(--fg)">極精細嘅金銀線花紋 —— 好似首飾工藝咁嘅蕾絲線條、monogram、金屬墨，精緻、珍貴、有儀式感。</p>
+    <p class="cp-meta">示範品牌 <b>Filigrane</b> · 主要 CTA「預約睇貨」· 行業：高級珠寶</p>
+  </div>
+
+  <h2>1 · 色票 Palette</h2>
+  <p class="desc">所有元件都只可以用呢組 token（換色 = 改呢幾行）。</p>
+  <div class="sws"><div class="sw"><i style="background:#14213D"></i><b>--bg</b><code>#14213D</code><span>底色 Background</span></div><div class="sw"><i style="background:#FBF7EE"></i><b>--fg</b><code>#FBF7EE</code><span>主文字 Text</span></div><div class="sw"><i style="background:#D5CEBC"></i><b>--muted</b><code>#D5CEBC</code><span>次要文字 Muted</span></div><div class="sw"><i style="background:rgba(255,255,255,.06)"></i><b>--surface</b><code>rgba(255,255,255,.06)</code><span>卡片面 Surface</span></div><div class="sw"><i style="background:rgba(230,209,146,.38)"></i><b>--border</b><code>rgba(230,209,146,.38)</code><span>分隔線 Border</span></div><div class="sw"><i style="background:#E6D192"></i><b>--accent</b><code>#E6D192</code><span>強調色 Accent</span></div><div class="sw"><i style="background:#14213D"></i><b>--accent-fg</b><code>#14213D</code><span>強調上文字</span></div><div class="sw"><i style="background:#9BD8B0"></i><b>--ok</b><code>#9BD8B0</code><span>成功 Success</span></div><div class="sw"><i style="background:#E9A38E"></i><b>--warn</b><code>#E9A38E</code><span>警告 Warning</span></div></div>
+
+  <h2>2 · 字體 Typography</h2>
+  <p class="desc">最多兩個字重；標題 &#x27;Cormorant Garamond&#x27;,&#x27;Noto Serif TC&#x27;,serif、正文 Lora,&#x27;Noto Serif TC&#x27;,serif。</p>
+  <div class="typo">
+    <div class="d">一頁講清成件事 <small>Display · &#x27;Cormorant Garamond&#x27;,&#x27;Noto Serif TC&#x27;,serif</small></div>
+    <div class="b">正文用 Lora,&#x27;Noto Serif TC&#x27;,serif：16px、行高 1.65，唔會超過 70 個中文字一行。<small>Body</small></div>
+    <div class="m">HK$1,280 · 2026-09-22 · #REF-0042 <small>Mono／數字對齊（ui-monospace,&#x27;SF Mono&#x27;,Menlo,monospace）</small></div>
+  </div>
+
+  <h2>3 · 按鈕 Buttons</h2>
+  <p class="desc">11 個狀態齊：hover 升起、active 壓落、focus 外框（對比 ≥3:1）、disabled 變淡、loading／success。</p>
+  <div class="btn-row"><div class="state"><button class="btn btn-primary " type="button">Primary</button><small>Default</small></div><div class="state"><button class="btn btn-primary is-hover" type="button">Primary</button><small>Hover</small></div><div class="state"><button class="btn btn-primary is-active" type="button">Primary</button><small>Active</small></div><div class="state"><button class="btn btn-primary is-focus" type="button">Primary</button><small>Focus</small></div><div class="state"><button class="btn btn-primary " type="button" disabled>Primary</button><small>Disabled</small></div><div class="state"><button class="btn btn-primary btn-sm" type="button">Small</button><small>btn-sm</small></div><div class="state"><button class="btn btn-primary btn-lg" type="button">Large</button><small>btn-lg</small></div><div class="state"><button class="btn btn-primary btn-secondary" type="button">Secondary</button><small>Secondary</small></div></div>
+
+  <h2>4 · 組件 Components</h2>
+  <div class="row">
+    <article class="card" style="flex:1 1 260px"><span class="ico" aria-hidden="true">◆</span><h3>卡片標題</h3><p>一句講清重點，唔超過兩行。</p></article>
+    <div class="plan" style="flex:1 1 240px"><span class="tag">最受歡迎</span><h3>方案名</h3><div class="price">HK$1,280<small>/月</small></div>
+      <ul><li>包含咩</li><li>包含咩</li></ul><a class="btn btn-primary" href="#">揀呢個</a></div>
+    <blockquote class="quote" style="flex:1 1 260px">客人講嘅一句真話。<span class="avatar">阿</span><b>阿文</b><span>客戶 · 角色</span></blockquote>
+  </div>
+
+  <h2>5 · 真實 section 預覽</h2>
+  <p class="desc">以下係由正式 demo 直接抽落嚟（唔係另畫），所以卡同成品一定一致。</p>
+  <div class="preview"><div class="lbl">hero</div><div><section class="block hero" id="hero"><div class="wrap hero-grid"><div><span class="eyebrow rv">香港 · 高級珠寶 · 尖沙咀工作室</span><h1>細節即是價值</h1><p class="lead rv">0.3mm 金線手工繞成蕾絲，一件做 6–10 星期；每次只招呼一組客人。</p><div class="actions rv"><a class="btn btn-primary" href="#cta">預約睇貨 <span class="i" aria-hidden="true">→</span></a><a class="btn btn-secondary" href="#product">睇系列</a></div><p class="note rv">預約制 · 睇貨唔收費 · 一年內免費改圈一次</p></div><figure class="hero-art rv"><div class="deco" aria-hidden="true" style="inset:0;background:radial-gradient(circle at 34% 30%,#FBF7EE,#F3E4B0 34%,#BFA05A 62%,#14213D)"></div><figcaption>產品相片位（生成 media/filigree-hero.jpg 自動代入）</figcaption></figure></div></section></div></div><div class="preview"><div class="lbl">pricing</div><div><section class="block" id="pricing"><div class="wrap"><h2 class="sec-title">三種買法</h2><p class="sec-sub">可以由現貨開始，唔使一次過訂製。</p><div class="pricing"><article class="plan rv"><h3>現貨</h3><div class="price">HK$12,800 <small>/ 件起</small></div><p>工作室有貨可以即日取。</p><ul><li>吊墜／耳環為主</li><li>即日取貨</li><li>一年內免費改圈一次</li><li>不包刻字</li></ul><a class="btn btn-secondary" href="#cta">預約睇貨</a></article><article class="plan rv featured"><span class="tag">最多人做</span><h3>訂製</h3><div class="price">HK$28,800 <small>/ 件起</small></div><p>6–10 星期，最多人做。</p><ul><li>3 個手繪方向</li><li>蠟模打樣（可調整一次）</li><li>金重同石價寫明</li><li>終身保養</li></ul><a class="btn btn-primary" href="#cta">預約睇貨</a></article><article class="plan rv"><h3>高級訂製</h3><div class="price">報價 <small>/ 件</small></div><p>一對一設計，婚戒／傳家。</p><ul><li>私人設計會議</li><li>石可以由你帶或我們搵</li><li>分 3 期付</li><li>每年免費檢查</li></ul><a class="btn btn-secondary" href="#cta">預約諮詢</a></article></div></div></section></div></div><div class="preview"><div class="lbl">venue</div><div><section class="block" id="venue"><div class="wrap"><h2 class="sec-title">保養同證書</h2><p class="sec-sub">條件寫喺度，唔係口頭應承。</p><ul class="infolist"><li><b>保養</b><span>每年一次免費超聲波清洗同爪位檢查；斷鏈焊接 HK$380 起</span></li><li><b>證書</b><span>寶石附第三方實驗室報告（示範格式）；示範網站唔代表同任何機構有合作</span></li><li><b>改圈</b><span>一年內免費改一次（±1 號）；鑲鑽款式要先報價</span></li><li><b>以舊換新</b><span>18K 金按當日金價折抵，工費唔計（示範條件）</span></li><li><b>取貨</b><span>尖沙咀工作室自取為準；順豐保價寄送 HK$120</span></li></ul></div></section></div></div>
+
+  <h2>6 · 動效（Pro 版）</h2>
+  <p class="desc">基本版純 CSS；Pro 版有載入幕、入場、scroll reveal、微互動。跟系統設定「減少動態」會自動降級。</p>
+  <p style="font:13px var(--font-mono,monospace);color:var(--muted)"></p>
+
+  <h2>7 · 點用</h2>
+  <ul style="color:var(--muted);font-size:14px">
+    <li>Tokens：<code>themes/filigree.json</code>（含 <code>snippet_css</code> 同 Tailwind <code>theme.extend</code>）</li>
+    <li>Demo：<a href="../filigree.html">基本版</a> · <a href="../filigree-pro.html">Pro 動效版</a></li>
+    <li>改客人內容：<code>python3 gen_project.py brief.json</code>（自動驗 WCAG 4.5:1）</li>
+  </ul>
+
+  <div class="cp-foot">
+    <button class="btn btn-primary btn-sm noprint" type="button" onclick="window.print()">🖨️ Print／存 PDF</button>
+    <a href="index.html">← 全部風格卡</a>
+    <span>UIUX Style · Filigree · 示範內容全部虛構</span>
+  </div>
+</div>
+</body></html>

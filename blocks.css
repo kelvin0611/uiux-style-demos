@@ -1,0 +1,304 @@
+/* ============================================================
+   UIUX Style Demos · 共用元素庫（blocks.css）
+   12 個通用 block + 設計 QA 區。所有顏色／字／圓角／陰影一律用 CSS 變數，
+   每個風格只喺自己頁面 :root 覆寫。class 名唔准改。
+   變數：--bg --fg --muted --surface --border --accent --accent-fg --accent-grad
+        --radius --radius-sm --shadow --btn-shadow --media-bg --art-bg --cta-bg
+        --input-bg --font-display --font-body --font-mono
+   ============================================================ */
+*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--fg);font:16.5px/1.65 var(--font-body);overflow-x:clip}
+img{max-width:100%;height:auto;display:block}
+a{color:inherit}
+.wrap{max-width:1140px;margin:0 auto;padding-inline:clamp(16px,4vw,40px)}
+
+/* ---------- demo 工具條（唔屬於任何風格） ---------- */
+.demo-bar{position:sticky;top:0;z-index:99;display:flex;gap:12px;flex-wrap:wrap;justify-content:space-between;align-items:center;padding:6px 16px;background:#111;color:#ddd;font:12px/1.5 -apple-system,system-ui,sans-serif}
+.demo-bar a{color:#fff}.demo-bar b{color:#fff}
+
+/* ---------- 通用 block 殼 ---------- */
+.block{padding-block:clamp(44px,7vw,84px);position:relative}
+.block.tight{padding-block:clamp(26px,4vw,46px)}
+.band{background:var(--surface);border-block:1px solid var(--border)}
+.sec-title{font:600 clamp(24px,3.4vw,34px)/1.15 var(--font-display);margin:0 0 10px;letter-spacing:-.01em}
+.sec-sub{color:var(--muted);margin:0 0 30px;max-width:64ch}
+.eyebrow{display:inline-block;font-size:13px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--accent)}
+.grid{display:grid;gap:20px}
+.g2{grid-template-columns:repeat(auto-fit,minmax(290px,1fr))}
+.g3{grid-template-columns:repeat(auto-fit,minmax(255px,1fr))}
+.g4{grid-template-columns:repeat(auto-fit,minmax(215px,1fr))}
+
+/* ---------- 1 navbar ---------- */
+.site-header{position:relative;display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:16px;border-bottom:1px solid var(--border)}
+.logo{font:600 22px/1 var(--font-display);display:flex;align-items:center;gap:10px;letter-spacing:-.01em}
+.nav{display:flex;gap:2px;align-items:center}
+.nav a{text-decoration:none;padding:9px 13px;border-radius:999px;color:var(--muted);font-weight:500}
+.nav a:hover,.nav a[aria-current="page"]{color:var(--fg);background:var(--surface)}
+.nav-toggle-input{position:absolute;opacity:0;pointer-events:none}
+.nav-toggle{display:none}
+
+/* ---------- 2 hero ---------- */
+.hero-grid{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:clamp(24px,4vw,56px);align-items:center}
+.hero h1{font:600 clamp(34px,5.4vw,60px)/1.06 var(--font-display);letter-spacing:-.02em;margin:.28em 0 .35em}
+.hero .lead{color:var(--muted);font-size:18px;max-width:50ch;margin:0}
+.actions{display:flex;gap:14px;flex-wrap:wrap;margin-top:26px}
+.note{color:var(--muted);font-size:14px;margin:14px 0 0}
+.hero-art{position:relative;border-radius:var(--radius);min-height:330px;background:var(--art-bg,var(--surface));border:1px solid var(--border);overflow:hidden}
+.hero-art img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hero-art figcaption{position:absolute;left:16px;bottom:14px;font-size:13px;color:var(--muted)}
+
+/* ---------- 3 trust bar ---------- */
+.trust{display:flex;flex-wrap:wrap;gap:12px 30px;align-items:center}
+.trust .lbl{color:var(--muted);font-size:14px;margin-right:6px}
+.wordmark{font:600 18px/1 var(--font-display);letter-spacing:.08em;text-transform:uppercase;opacity:.7}
+.marquee{overflow:hidden;white-space:nowrap;margin-inline:calc(50% - 50vw)}
+.marquee .track{display:inline-flex;will-change:transform}
+.marquee .track span{padding-right:1.4em}
+
+/* ---------- 4 features / cards ---------- */
+.card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:24px}
+.card h3{font:600 19px var(--font-display);margin:.1em 0 .5em}
+.card p{color:var(--muted);margin:0 0 .5em}
+.card .ico{font-size:26px;line-height:1;display:block;margin-bottom:12px}
+.card-media{aspect-ratio:16/10;border-radius:var(--radius-sm);background:var(--media-bg);display:grid;place-items:center;font-size:44px;margin-bottom:16px}
+
+/* ---------- 5 product in motion（假 UI） ---------- */
+.mock{border:1px solid var(--border);border-radius:var(--radius);background:var(--surface);overflow:hidden;box-shadow:var(--shadow)}
+.mock-bar{display:flex;gap:6px;align-items:center;padding:11px 14px;border-bottom:1px solid var(--border);color:var(--muted);font-size:12px}
+.mock-dot{width:10px;height:10px;border-radius:50%;background:var(--border)}
+.mock-body{display:grid;grid-template-columns:180px minmax(0,1fr) 160px}
+.mock-side,.mock-right{padding:14px;display:grid;gap:9px;align-content:start;font-size:13px;color:var(--muted)}
+.mock-side{border-right:1px solid var(--border)}
+.mock-right{border-left:1px solid var(--border)}
+.mock-main{padding:16px;display:grid;gap:10px;font:13px/1.75 var(--font-mono,ui-monospace,SFMono-Regular,Menlo,monospace)}
+.mock-side b,.mock-right b{color:var(--fg);font-weight:600}
+.mock-row{padding:9px 12px;border:1px solid var(--border);border-radius:var(--radius-sm);background:var(--bg)}
+.diff-add{color:var(--ok,#3CF2B4)}
+.diff-del{color:var(--warn,#F472B6)}
+.pill{display:inline-block;border:1px solid var(--border);border-radius:999px;padding:3px 10px;font-size:12px}
+
+/* ---------- 6 how it works ---------- */
+.steps{counter-reset:s;display:grid;gap:22px;grid-template-columns:repeat(auto-fit,minmax(230px,1fr))}
+.steps li{list-style:none;position:relative;padding-top:48px}
+.steps li::before{counter-increment:s;content:counter(s);position:absolute;top:0;left:0;width:32px;height:32px;border-radius:50%;display:grid;place-items:center;background:var(--accent);color:var(--accent-fg);font-weight:700}
+.steps h3{font:600 18px var(--font-display);margin:0 0 6px}
+.steps p{color:var(--muted);margin:0}
+
+/* ---------- 7 stats ---------- */
+.stats{display:grid;gap:20px;grid-template-columns:repeat(auto-fit,minmax(160px,1fr))}
+.stat .num{display:block;font:600 clamp(28px,4vw,44px)/1 var(--font-display);color:var(--accent)}
+.stat span{color:var(--muted);font-size:14px}
+
+/* ---------- 8 testimonial ---------- */
+.quote{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:26px}
+.quote p{font-size:18px;margin:0 0 18px}
+.who{display:flex;gap:12px;align-items:center;font-size:14px;color:var(--muted)}
+.avatar{width:42px;height:42px;border-radius:50%;display:grid;place-items:center;background:var(--accent-grad,var(--accent));color:var(--accent-fg);font-weight:700;flex:none}
+
+/* ---------- 9 pricing ---------- */
+.pricing{display:grid;gap:20px;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));align-items:start}
+.plan{position:relative;background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:26px}
+.plan.featured{border-color:var(--accent);box-shadow:var(--shadow)}
+.plan .price{font:600 34px/1 var(--font-display);margin:12px 0 4px}
+.plan .price small{font:500 14px var(--font-body);color:var(--muted)}
+.plan ul{list-style:none;padding:0;margin:18px 0 0;display:grid;gap:9px;font-size:15px}
+.plan li::before{content:"✓ ";color:var(--accent);font-weight:700}
+.plan .btn{margin-top:20px;width:100%;justify-content:center}
+.tag{position:absolute;top:-13px;right:18px;background:var(--accent);color:var(--accent-fg);font:600 12px/1 var(--font-display);padding:7px 12px;border-radius:999px}
+
+/* ---------- 10 FAQ ---------- */
+.faq{display:grid;gap:10px;max-width:840px}
+.faq details{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-sm);padding:14px 18px}
+.faq summary{cursor:pointer;font-weight:600;list-style:none;display:flex;justify-content:space-between;gap:12px;align-items:center}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";color:var(--accent);font-weight:700}
+.faq details[open] summary::after{content:"−"}
+.faq .ans{color:var(--muted);padding-top:12px}
+
+/* ---------- 11 CTA band ---------- */
+.cta-band{background:var(--cta-bg,var(--surface));border:1px solid var(--border);border-radius:var(--radius);padding:clamp(28px,5vw,54px);text-align:center}
+.cta-band h2{font:600 clamp(26px,3.6vw,38px)/1.1 var(--font-display);margin:0 0 10px}
+.cta-band p{color:var(--muted);margin:0 auto 24px;max-width:56ch}
+.cta-band .actions{justify-content:center;margin-top:0}
+
+/* ---------- 12 footer ---------- */
+.site-footer{border-top:1px solid var(--border);padding-block:46px}
+.foot-grid{display:grid;gap:26px;grid-template-columns:repeat(auto-fit,minmax(150px,1fr))}
+.foot-grid h4{font:600 13px var(--font-display);letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin:0 0 12px}
+.foot-grid a{display:block;text-decoration:none;padding:4px 0;color:var(--muted)}
+.foot-grid a:hover{color:var(--fg)}
+.news{display:flex;gap:10px;flex-wrap:wrap;margin-top:10px}
+.news input{flex:1 1 180px}
+.foot-bottom{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-top:30px;padding-top:18px;border-top:1px solid var(--border);color:var(--muted);font-size:14px}
+
+/* ---------- 行業原生：整合 / 合規 / ROI ---------- */
+/* 表格式列表：課程表、售票階段、價目 */
+.rows{display:grid;border:1px solid var(--border);border-radius:var(--radius);overflow:hidden;background:var(--surface)}
+.rows article{display:grid;grid-template-columns:1.3fr 2fr auto;gap:16px;align-items:center;padding:16px 20px;border-bottom:1px solid var(--border)}
+.rows article:last-child{border-bottom:0}
+.rows b{font:600 17px var(--font-display)}
+.rows span{color:var(--muted);font-size:15px}
+.rows .cost{font:600 16px var(--font-display);color:var(--accent);white-space:nowrap}
+/* 卡片組：導師、商品、門市、會員 */
+.tiles{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(230px,1fr))}
+.tile-c{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:20px}
+.tile-c .ph{aspect-ratio:1;border-radius:50%;display:grid;place-items:center;font-size:40px;background:var(--media-bg);margin-bottom:14px;overflow:hidden}
+.tile-c .ph.wide{aspect-ratio:16/10;border-radius:var(--radius-sm)}
+.tile-c h3{font:600 18px var(--font-display);margin:0 0 6px}
+.tile-c p{color:var(--muted);margin:0 0 8px;font-size:15px}
+.tile-c .cost{font:600 17px var(--font-display);color:var(--accent)}
+/* 倒數／重點數字盒 */
+.cd{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(150px,1fr))}
+.cd div{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-sm);padding:20px;text-align:center}
+.cd b{display:block;font:600 24px var(--font-display);margin-bottom:6px}
+.cd span{color:var(--muted);font-size:13px}
+/* 分日陣容 */
+.daygrid{display:grid;gap:24px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.daygrid h3{font:600 18px var(--font-display);margin:0 0 12px;padding-bottom:8px;border-bottom:1px solid var(--border)}
+.daygrid ul{list-style:none;padding:0;margin:0;display:grid;gap:8px}
+.daygrid li{display:flex;justify-content:space-between;gap:12px;color:var(--muted);font-size:15px}
+.daygrid li b{color:var(--fg)}
+/* 資訊列表：場地、交通 */
+.infolist{list-style:none;padding:0;margin:0;display:grid;gap:12px;max-width:760px}
+.infolist li{display:grid;grid-template-columns:104px 1fr;gap:14px;padding-bottom:12px;border-bottom:1px dashed var(--border)}
+.infolist b{font:600 13px var(--font-display);letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.infolist span{color:var(--fg)}
+.chips{display:flex;flex-wrap:wrap;gap:10px}
+/* Quickstart 指令碼 */
+.codebox{background:var(--input-bg,var(--surface));border:1px solid var(--border);border-radius:var(--radius-sm);padding:18px 20px;overflow-x:auto;font:14px/1.75 var(--font-mono,ui-monospace,Menlo,monospace);margin:0 0 12px}
+.codebox code{white-space:pre;color:var(--fg);font:inherit}
+/* Changelog */
+.log{display:grid;border:1px solid var(--border);border-radius:var(--radius);overflow:hidden;background:var(--surface)}
+.log article{display:grid;grid-template-columns:132px 1fr;gap:16px;padding:16px 20px;border-bottom:1px solid var(--border)}
+.log article:last-child{border-bottom:0}
+.log b{font:600 15px var(--font-mono,ui-monospace,Menlo,monospace)}
+.log ul{list-style:none;padding:0;margin:0;display:grid;gap:6px;color:var(--muted);font-size:15px}
+.log ul li::before{content:"– ";color:var(--accent);font-weight:700}
+.chip{border:1px solid var(--border);border-radius:999px;padding:8px 16px;font-size:14px;background:var(--surface)}
+.badge-cards{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(210px,1fr))}
+.badge-card{border:1px dashed var(--border);border-radius:var(--radius-sm);padding:18px}
+.badge-card b{display:block;font:600 16px var(--font-display);margin-bottom:6px}
+.badge-card span{color:var(--muted);font-size:14px}
+.roi{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:26px;display:grid;gap:16px;max-width:640px}
+.roi label{font-size:14px;font-weight:600;display:block}
+.roi input[type=range]{width:100%;accent-color:var(--accent);margin-top:10px}
+.roi .out{font:600 clamp(26px,4vw,40px)/1.05 var(--font-display);color:var(--accent)}
+.roi .out small{display:block;margin-top:8px;font:500 16px var(--font-body);color:var(--muted)}
+.roi .note{margin:0}
+
+/* ---------- 設計 QA 區（button 狀態 + form） ---------- */
+.btn-row{display:flex;gap:16px;flex-wrap:wrap;align-items:flex-start}
+.state{display:grid;gap:8px;justify-items:center}
+.state small{font-size:12px;color:var(--muted)}
+.form{display:grid;gap:16px;max-width:520px}
+.field{display:grid;gap:6px}
+label{font-size:14px;font-weight:600}
+input,select{font:inherit;padding:12px 14px;border-radius:var(--radius-sm);border:1px solid var(--border);background:var(--input-bg,var(--bg));color:var(--fg)}
+input::placeholder{color:var(--muted);opacity:1}
+input:focus-visible,select:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.check{display:flex;gap:12px;align-items:center;font-weight:600}
+.toggle{appearance:none;-webkit-appearance:none;width:52px;height:30px;border-radius:999px;background:var(--border);position:relative;cursor:pointer;flex:none;margin:0}
+.toggle::after{content:"";position:absolute;top:3px;left:3px;width:24px;height:24px;border-radius:50%;background:var(--fg);transition:transform .25s}
+.toggle:checked{background:var(--accent)}
+.toggle:checked::after{transform:translateX(22px)}
+
+/* ---------- buttons ---------- */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.55em;min-height:46px;line-height:1.15;cursor:pointer;text-decoration:none;border:1px solid transparent;background:none;font:600 16px var(--font-display);padding:12px 24px;border-radius:var(--radius-sm);transition:translate var(--dur-md) var(--ease-entrance),scale var(--dur-xs) var(--ease-standard),background-color var(--dur-md) var(--ease-standard),border-color var(--dur-md) var(--ease-standard),color var(--dur-md) var(--ease-standard),box-shadow var(--dur-md) var(--ease-standard),filter var(--dur-md) var(--ease-standard)}
+/* 箭頭 affordance：hover 時向目標方向推，價位感更明確（純裝飾，aria-hidden） */
+.btn .i{display:inline-block;transition:translate var(--dur-sm) var(--ease-standard)}
+.btn:hover .i{translate:.18em 0}
+.btn-lg{min-height:54px;padding:15px 30px;font-size:17px}
+.btn-sm{min-height:38px;padding:8px 16px;font-size:14px}
+.btn-primary{background:var(--accent-grad,var(--accent));color:var(--accent-fg);box-shadow:var(--btn-shadow,none)}
+.btn-primary:hover,.btn.is-hover{filter:brightness(1.07);transform:translateY(-1px)}
+.btn-primary:active,.btn.is-active{transform:translateY(1px);filter:brightness(.95)}
+.btn-secondary{background:var(--surface);color:var(--fg);border-color:var(--border)}
+.btn:focus-visible,.btn.is-focus{outline:2px solid var(--focus-ring,var(--accent));outline-offset:3px}
+.btn:disabled,.btn.is-disabled{opacity:.45;cursor:not-allowed;translate:none!important;scale:none!important;transform:none;filter:none;box-shadow:var(--btn-shadow,none)}
+
+/* ---------- 裝飾層 ---------- */
+.deco{position:absolute;pointer-events:none;z-index:0}
+.block>.wrap{position:relative;z-index:1}
+
+/* ---------- 響應式 ---------- */
+@media(max-width:980px){
+  .hero-grid{grid-template-columns:1fr}
+  .hero-art{min-height:240px;order:-1}
+  .mock-body{grid-template-columns:1fr}
+  .mock-side,.mock-right{display:none}
+}
+@media(max-width:720px){
+  .nav{display:none}
+  .nav-toggle{display:inline-flex;align-items:center;gap:6px;background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-sm);color:var(--fg);font:600 14px var(--font-display);padding:9px 14px;cursor:pointer}
+  .nav-toggle-input:checked ~ .nav{display:grid;position:absolute;left:0;right:0;top:100%;background:var(--bg);border:1px solid var(--border);border-radius:var(--radius);padding:10px;z-index:60;box-shadow:var(--shadow)}
+  .site-header{flex-wrap:wrap}
+}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
+
+/* ============================================================
+   動效層（2026-09 加）：跟業界標準 —— 微互動 150–300ms、entrance 用 ease-out、
+   exit 用 ease-in、只 animate transform／opacity、focus ring 一定唔可以淡入、
+   reduced-motion 一律 collapse 做 opacity。
+   ============================================================ */
+:root{
+  --dur-xs:80ms; --dur-sm:140ms; --dur-md:200ms; --dur-lg:260ms; --dur-xl:400ms;
+  --ease-standard:cubic-bezier(.2,0,0,1);
+  --ease-entrance:cubic-bezier(.18,.89,.32,1);
+  --ease-exit:cubic-bezier(.4,0,1,1);
+  --ease-bounce:cubic-bezier(.34,1.56,.64,1);
+}
+/* 微互動：hover 升起（200ms ease-out）／按壓縮 2%（80–100ms，即時感） */
+/* 統一：同上面 .btn 同一組 property（唔可以只列 transform，否則 hover 換色會硬切） */
+.btn{transition:translate var(--dur-md) var(--ease-entrance),scale var(--dur-xs) var(--ease-standard),background-color var(--dur-md) var(--ease-standard),border-color var(--dur-md) var(--ease-standard),color var(--dur-md) var(--ease-standard),box-shadow var(--dur-md) var(--ease-standard),filter var(--dur-md) var(--ease-standard)}
+.btn:hover:not(:disabled):not([data-state=loading]):not(.is-hover){translate:0 -2px}
+/* 用 translate／scale（個別屬性）而唔係 transform —— 同各風格自己嘅 hover transform 並存，
+   唔會互相覆蓋（P2 之前通用版用 transform 蓋走咗成批風格嘅按壓效果）。 */
+/* 按壓：落 1px + 縮 0.985 + 暗 7%（三樣一齊，肉眼一定分得出） */
+.btn:active:not(:disabled),.btn.is-active{translate:0 1px;scale:.985;filter:brightness(.93);transition-duration:var(--dur-xs);box-shadow:var(--btn-shadow-press,none)}
+.nav a,.foot-grid a,.chip{transition:color var(--dur-sm) var(--ease-standard),background var(--dur-sm) var(--ease-standard),transform var(--dur-sm) var(--ease-standard)}
+.card,.plan,.quote,.tile-c,.badge-card{transition:transform var(--dur-md) var(--ease-entrance),box-shadow var(--dur-md) var(--ease-standard),border-color var(--dur-md) var(--ease-standard)}
+.card:hover,.tile-c:hover{transform:translateY(-2px)}
+/* focus ring：即時出現、唔淡入（否則鍵盤用戶開頭睇唔到指示） */
+.btn:focus-visible,input:focus-visible,select:focus-visible,summary:focus-visible,a:focus-visible{transition:none!important}
+/* focus ring 要對得住背景（WCAG 1.4.11 ≥3:1）：驗證腳本會查 --focus-ring／--accent 對 --bg／--surface */
+/* FAQ 開合：260ms ease-entrance */
+.faq details[open] .ans{animation:faqIn var(--dur-lg) var(--ease-entrance) both}
+@keyframes faqIn{from{opacity:0;transform:translateY(-6px)}}
+/* 骨架屏 shimmer（1.5s ease-in-out） */
+.skel{position:relative;overflow:hidden;background:var(--surface)}
+.skel::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,transparent,rgba(255,255,255,.4),transparent);transform:translateX(-100%);animation:skel 1.5s var(--ease-standard) infinite}
+@keyframes skel{to{transform:translateX(100%)}}
+/* 多狀態按鈕（idle → loading → done）：2026 最有感嘅微互動之一 */
+.btn[data-state=loading]{pointer-events:none;opacity:.92}
+.spin{width:14px;height:14px;border:2px solid currentColor;border-right-color:transparent;border-radius:50%;display:inline-block;animation:spin .8s linear infinite}
+@keyframes spin{to{rotate:360deg}}
+.btn[data-state=done]{background:var(--ok,var(--accent));color:#fff}
+/* 漸變進度條（純 CSS，支援 scroll-driven animations 嘅瀏覽器先用；有 GSAP 就自動讓路） */
+@supports (animation-timeline: scroll(root)){
+  .progress-css{position:fixed;left:0;top:0;height:3px;width:100%;transform-origin:0 50%;background:var(--accent-grad,var(--accent));scale:0 1;z-index:101;animation:scrProgress linear both;animation-timeline:scroll(root)}
+  @keyframes scrProgress{to{scale:1 1}}
+  html.has-pro .progress-css{display:none}
+}
+/* 跨文件 View Transitions（零 JS 頁面過場）：Chrome 126+/Safari 18.2+，其他瀏覽器即時跳轉＝冇事發生 */
+@view-transition{navigation:auto}
+.logo{view-transition-name:brand}
+.hero-art{view-transition-name:hero}
+::view-transition-old(root){animation:vtOut var(--dur-md) var(--ease-exit) both}
+::view-transition-new(root){animation:vtIn var(--dur-lg) var(--ease-entrance) both}
+::view-transition-group(brand),::view-transition-group(hero){animation-duration:var(--dur-lg);animation-timing-function:var(--ease-entrance)}
+@keyframes vtOut{to{opacity:0;transform:translateY(-10px)}}
+@keyframes vtIn{from{opacity:0;transform:translateY(12px)}}
+@media (prefers-reduced-motion:reduce){
+  ::view-transition-old(*),::view-transition-new(*),::view-transition-group(*){animation:none!important}
+  /* 進度條唔隱藏：scroll-linked 嘅位置指示器係功能性資訊，同瀏覽器自己嘅捲軸一樣 */
+}
+
+/* 表格式列表：4 欄或以上（例如 B2B 功能對比矩陣）自動轉 flex，第一欄闊啲、最後一欄靠右 */
+.rows.rows-wide article{display:flex;gap:14px;align-items:baseline}
+.rows.rows-wide article > :first-child{flex:1.6 1 0;min-width:0}
+.rows.rows-wide article > :not(:first-child){flex:1 1 0;min-width:0;text-align:center}
+.rows.rows-wide article > :last-child{text-align:right}
+@media (max-width:720px){
+  .rows.rows-wide{overflow-x:auto;-webkit-overflow-scrolling:touch}
+  .rows.rows-wide article{min-width:560px}
+}

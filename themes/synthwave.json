@@ -1,0 +1,55 @@
+{
+ "slug": "synthwave",
+ "name": "Synthwave",
+ "cn": "",
+ "family": "👾 數碼懷舊 Retro Digital",
+ "industry": "復古賽車遊戲",
+ "brand": "Neon Drift",
+ "cta": "加入願望清單",
+ "sections": "log`：版本 · `chips`：平台 · `venue`：系統需求",
+ "css_variables": {
+  "--bg": "#0D0221",
+  "--fg": "#F9F1FF",
+  "--muted": "#C9A0FF",
+  "--surface": "rgba(255,255,255,.08)",
+  "--border": "rgba(255,46,151,.45)",
+  "--accent": "#FF2E97",
+  "--accent-fg": "#0D0221",
+  "--radius": "2px",
+  "--radius-sm": "2px",
+  "--shadow": "0 0 0 1px rgba(255,46,151,.35),0 0 30px rgba(255,46,151,.22)",
+  "--btn-shadow": "0 0 18px rgba(0,240,255,.45)",
+  "--art-bg": "linear-gradient(180deg,#0D0221 0%,#2B0F54 40%,#AB1F65 72%,#0D0221 72.2%)",
+  "--media-bg": "linear-gradient(180deg,#F9F871,#FF8C42 45%,#FF2E97 80%)",
+  "--cta-bg": "rgba(0,240,255,.10)",
+  "--input-bg": "#150430",
+  "--ok": "#3CF2B4",
+  "--warn": "#F9F871",
+  "--font-display": "Orbitron,'Noto Sans TC',sans-serif",
+  "--font-body": "Rajdhani,'Noto Sans TC',sans-serif",
+  "--font-mono": "Orbitron,ui-monospace,monospace",
+  "--focus-ring": "var(--accent)"
+ },
+ "fonts": {
+  "google_url": "https://fonts.googleapis.com/css2?family=Orbitron:wght@500;900&family=Rajdhani:wght@500;700&family=Noto+Sans+TC:wght@400;700&display=swap",
+  "display": "Orbitron,'Noto Sans TC',sans-serif",
+  "body": "Rajdhani,'Noto Sans TC',sans-serif",
+  "mono": "Orbitron,ui-monospace,monospace"
+ },
+ "radius": {
+  "base": "2px",
+  "sm": "2px"
+ },
+ "shadow": {
+  "card": "0 0 0 1px rgba(255,46,151,.35),0 0 30px rgba(255,46,151,.22)",
+  "button": "0 0 18px rgba(0,240,255,.45)"
+ },
+ "focus_ring": "var(--accent)",
+ "motion": {},
+ "demo": {
+  "basic": "Demos/synthwave.html",
+  "pro": "Demos/synthwave-pro.html"
+ },
+ "snippet_css": ":root{\n  --bg: #0D0221;\n  --fg: #F9F1FF;\n  --muted: #C9A0FF;\n  --surface: rgba(255,255,255,.08);\n  --border: rgba(255,46,151,.45);\n  --accent: #FF2E97;\n  --accent-fg: #0D0221;\n  --radius: 2px;\n  --radius-sm: 2px;\n  --shadow: 0 0 0 1px rgba(255,46,151,.35),0 0 30px rgba(255,46,151,.22);\n  --btn-shadow: 0 0 18px rgba(0,240,255,.45);\n  --art-bg: linear-gradient(180deg,#0D0221 0%,#2B0F54 40%,#AB1F65 72%,#0D0221 72.2%);\n  --media-bg: linear-gradient(180deg,#F9F871,#FF8C42 45%,#FF2E97 80%);\n  --cta-bg: rgba(0,240,255,.10);\n  --input-bg: #150430;\n  --ok: #3CF2B4;\n  --warn: #F9F871;\n  --font-display: Orbitron,'Noto Sans TC',sans-serif;\n  --font-body: Rajdhani,'Noto Sans TC',sans-serif;\n  --font-mono: Orbitron,ui-monospace,monospace;\n  --focus-ring: var(--accent);\n}",
+ "snippet_tailwind": "// tailwind.config.js → theme.extend\n{\n  \"colors\": {\n    \"bg\": \"#0D0221\",\n    \"fg\": \"#F9F1FF\",\n    \"muted\": \"#C9A0FF\",\n    \"surface\": \"rgba(255,255,255,.08)\",\n    \"border\": \"rgba(255,46,151,.45)\",\n    \"accent\": \"#FF2E97\",\n    \"accent-fg\": \"#0D0221\",\n    \"ok\": \"#3CF2B4\",\n    \"warn\": \"#F9F871\",\n    \"focus-ring\": \"var(--accent)\"\n  },\n  \"borderRadius\": {\n    \"DEFAULT\": \"2px\",\n    \"lg\": \"2px\"\n  },\n  \"fontFamily\": {\n    \"display\": [\n      \"Orbitron,'Noto Sans TC',sans-serif\"\n    ],\n    \"body\": [\n      \"Rajdhani,'Noto Sans TC',sans-serif\"\n    ]\n  }\n}"
+}

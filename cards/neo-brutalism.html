@@ -1,0 +1,111 @@
+<!doctype html><html lang="zh-Hant-HK"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Neo-Brutalism  · 風格卡</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Space+Grotesk:wght@400;500;700&display=swap">
+<link rel="stylesheet" href="../blocks.css">
+<style>:root{--bg:#FFFDF5;--fg:#000000;--muted:#3B3B3B;--surface:#FFFFFF;--border:#000000;--accent:#2F5BFF;--accent-fg:#FFFFFF;--radius:0px;--radius-sm:0px;--shadow:6px 6px 0 #000000;--btn-shadow:5px 5px 0 #000000;--art-bg:linear-gradient(135deg,#FFE600 0 34%,#A388EE 34% 67%,#4ECDC4 67%);--media-bg:radial-gradient(#000 2px,transparent 2.5px) 0 0/16px 16px,#FFE600;--cta-bg:#FFE600;--input-bg:#FFFFFF;--ok:#008751;--warn:#D6002A;--font-display:'Archivo Black','Noto Sans TC',sans-serif;--font-body:'Space Grotesk','Noto Sans TC',sans-serif;--font-mono:'Space Grotesk',ui-monospace,monospace;--focus-ring:var(--accent);}
+
+
+.card,.plan,.quote,.tile-c,.rows,.log,.mock,.badge-card,.faq details,.roi{border:3px solid var(--fg);box-shadow:6px 6px 0 var(--fg);border-radius:0}
+.sec-title{font-family:var(--font-display);text-transform:uppercase;letter-spacing:-.01em;font-size:clamp(22px,3vw,30px)}
+.hero h1{font-family:var(--font-display);font-weight:400;line-height:.98;letter-spacing:-.03em}
+.hero .lead{font-weight:500}
+.rows article,.log article{border-bottom:3px solid var(--fg)}
+.rows article:last-child,.log article:last-child{border-bottom:0}
+.btn{border:3px solid var(--fg);border-radius:0;font-family:var(--font-display);font-size:15px}
+.btn-primary{background:var(--accent);color:var(--accent-fg);box-shadow:5px 5px 0 var(--fg)}
+.btn-secondary{background:#FFE600;color:#000;box-shadow:5px 5px 0 var(--fg)}
+.chip{border-radius:0;background:#A388EE;color:#000;border:2px solid var(--fg);font-family:var(--font-display);font-size:13px}
+.avatar{border-radius:0;border:3px solid var(--fg);background:var(--accent);color:var(--accent-fg);font-family:var(--font-display)}
+.tag{border-radius:0;background:#FFE600;color:#000;border:2px solid var(--fg);font-family:var(--font-display);letter-spacing:.04em}
+.tile-c .ph{border-radius:0;border:3px solid var(--fg);background:var(--media-bg);color:#000}
+.plan.featured{outline:4px solid var(--fg);outline-offset:0;box-shadow:9px 9px 0 var(--accent)}
+.cta-band{border:4px solid var(--fg);box-shadow:12px 12px 0 var(--fg);background:#FFE600}
+.cta-band .btn-secondary{background:#fff;color:#000}
+input,select{border-radius:0;border:3px solid var(--fg);background:var(--input-bg)}
+.toggle{border:3px solid var(--fg);border-radius:0}
+.hero::before{content:"";position:absolute;right:-40px;top:24px;width:190px;height:190px;background:#FFE600;border:4px solid #000;transform:rotate(9deg);z-index:0;pointer-events:none}
+.hero::after{content:"★";position:absolute;right:12%;bottom:6%;font-size:90px;line-height:1;color:#FF6B6B;-webkit-text-stroke:3px #000;pointer-events:none}
+.rows article:nth-child(odd),.log article:nth-child(odd){background:#FFFBD1}
+
+/* ---- 風格卡專用 ---- */
+body{background:var(--bg);color:var(--fg);font-family:var(--font-body)}
+.cp{max-width:1080px;margin:0 auto;padding:clamp(18px,4vw,40px)}
+.cp-head{border-bottom:2px solid var(--border);padding-bottom:18px;margin-bottom:26px}
+.cp-head h1{margin:.1em 0 .2em;font-family:var(--font-display);font-size:clamp(28px,5vw,46px)}
+.cp-meta{color:var(--muted);font-size:14px}
+.cp-tag{display:inline-block;border:1px solid var(--border);border-radius:999px;padding:3px 10px;font-size:12px;color:var(--muted);margin:0 6px 6px 0}
+.cp h2{font-family:var(--font-display);font-size:clamp(18px,2.4vw,24px);margin:34px 0 6px;padding-bottom:6px;border-bottom:1px solid var(--border)}
+.cp p.desc{color:var(--muted);margin:6px 0 14px;max-width:70ch}
+.sws{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:10px}
+.sw{border:1px solid var(--border);border-radius:10px;padding:9px;background:var(--surface);display:grid;gap:4px}
+.sw i{display:block;height:44px;border-radius:7px;border:1px solid var(--border)}
+.sw b{font-size:13px}.sw code{font:12px var(--font-mono,monospace);color:var(--muted)}
+.sw span{font-size:11px;color:var(--muted)}
+.typo div{border:1px solid var(--border);border-radius:10px;padding:12px 14px;margin-bottom:8px;background:var(--surface)}
+.typo .d{font-family:var(--font-display);font-size:32px;line-height:1.15}
+.typo .b{font-family:var(--font-body);font-size:16px}
+.typo .m{font-family:var(--font-mono,monospace);font-size:14px}
+.typo small{color:var(--muted);font-size:11px;display:block;margin-top:6px}
+.row{display:flex;gap:12px;flex-wrap:wrap;align-items:flex-start}
+.preview{border:1px dashed var(--border);border-radius:12px;overflow:hidden;margin-bottom:12px}
+.preview .lbl{font:11px var(--font-mono,monospace);color:var(--muted);padding:6px 10px;border-bottom:1px dashed var(--border)}
+.preview > div:last-child{transform-origin:top left}
+.cp-foot{margin-top:36px;padding-top:14px;border-top:1px solid var(--border);color:var(--muted);font-size:13px;display:flex;gap:14px;flex-wrap:wrap}
+.cp a{color:var(--accent)}
+@media print{.noprint{display:none}body{background:#fff}.cp{max-width:none;padding:0}.preview{page-break-inside:avoid}}
+</style></head><body>
+<div class="cp">
+  <div class="cp-head">
+    <span class="cp-tag">💥 張力反叛 Bold &amp; Raw</span><span class="cp-tag">15 個 block</span><span class="cp-tag">—</span>
+    <h1> Neo-Brutalism <span style="font-size:.6em;color:var(--muted)"></span></h1>
+    <p class="desc" style="font-size:17px;color:var(--fg)">粗黑框、無 blur 硬陰影、高飽和撞色、大粗字 —— 好似漫畫格同貼紙，坦白、大聲、好易認。</p>
+    <p class="cp-meta">示範品牌 <b>Harsh</b> · 主要 CTA「開免費戶口」· 行業：創作者平台／作品集 hosting</p>
+  </div>
+
+  <h2>1 · 色票 Palette</h2>
+  <p class="desc">所有元件都只可以用呢組 token（換色 = 改呢幾行）。</p>
+  <div class="sws"><div class="sw"><i style="background:#FFFDF5"></i><b>--bg</b><code>#FFFDF5</code><span>底色 Background</span></div><div class="sw"><i style="background:#000000"></i><b>--fg</b><code>#000000</code><span>主文字 Text</span></div><div class="sw"><i style="background:#3B3B3B"></i><b>--muted</b><code>#3B3B3B</code><span>次要文字 Muted</span></div><div class="sw"><i style="background:#FFFFFF"></i><b>--surface</b><code>#FFFFFF</code><span>卡片面 Surface</span></div><div class="sw"><i style="background:#000000"></i><b>--border</b><code>#000000</code><span>分隔線 Border</span></div><div class="sw"><i style="background:#2F5BFF"></i><b>--accent</b><code>#2F5BFF</code><span>強調色 Accent</span></div><div class="sw"><i style="background:#FFFFFF"></i><b>--accent-fg</b><code>#FFFFFF</code><span>強調上文字</span></div><div class="sw"><i style="background:#008751"></i><b>--ok</b><code>#008751</code><span>成功 Success</span></div><div class="sw"><i style="background:#D6002A"></i><b>--warn</b><code>#D6002A</code><span>警告 Warning</span></div></div>
+
+  <h2>2 · 字體 Typography</h2>
+  <p class="desc">最多兩個字重；標題 &#x27;Archivo Black&#x27;,&#x27;Noto Sans TC&#x27;,sans-serif、正文 &#x27;Space Grotesk&#x27;,&#x27;Noto Sans TC&#x27;,sans-serif。</p>
+  <div class="typo">
+    <div class="d">一頁講清成件事 <small>Display · &#x27;Archivo Black&#x27;,&#x27;Noto Sans TC&#x27;,sans-serif</small></div>
+    <div class="b">正文用 &#x27;Space Grotesk&#x27;,&#x27;Noto Sans TC&#x27;,sans-serif：16px、行高 1.65，唔會超過 70 個中文字一行。<small>Body</small></div>
+    <div class="m">HK$1,280 · 2026-09-22 · #REF-0042 <small>Mono／數字對齊（&#x27;Space Grotesk&#x27;,ui-monospace,monospace）</small></div>
+  </div>
+
+  <h2>3 · 按鈕 Buttons</h2>
+  <p class="desc">11 個狀態齊：hover 升起、active 壓落、focus 外框（對比 ≥3:1）、disabled 變淡、loading／success。</p>
+  <div class="btn-row"><div class="state"><button class="btn btn-primary " type="button">Primary</button><small>Default</small></div><div class="state"><button class="btn btn-primary is-hover" type="button">Primary</button><small>Hover</small></div><div class="state"><button class="btn btn-primary is-active" type="button">Primary</button><small>Active</small></div><div class="state"><button class="btn btn-primary is-focus" type="button">Primary</button><small>Focus</small></div><div class="state"><button class="btn btn-primary " type="button" disabled>Primary</button><small>Disabled</small></div><div class="state"><button class="btn btn-primary btn-sm" type="button">Small</button><small>btn-sm</small></div><div class="state"><button class="btn btn-primary btn-lg" type="button">Large</button><small>btn-lg</small></div><div class="state"><button class="btn btn-primary btn-secondary" type="button">Secondary</button><small>Secondary</small></div></div>
+
+  <h2>4 · 組件 Components</h2>
+  <div class="row">
+    <article class="card" style="flex:1 1 260px"><span class="ico" aria-hidden="true">◆</span><h3>卡片標題</h3><p>一句講清重點，唔超過兩行。</p></article>
+    <div class="plan" style="flex:1 1 240px"><span class="tag">最受歡迎</span><h3>方案名</h3><div class="price">HK$1,280<small>/月</small></div>
+      <ul><li>包含咩</li><li>包含咩</li></ul><a class="btn btn-primary" href="#">揀呢個</a></div>
+    <blockquote class="quote" style="flex:1 1 260px">客人講嘅一句真話。<span class="avatar">阿</span><b>阿文</b><span>客戶 · 角色</span></blockquote>
+  </div>
+
+  <h2>5 · 真實 section 預覽</h2>
+  <p class="desc">以下係由正式 demo 直接抽落嚟（唔係另畫），所以卡同成品一定一致。</p>
+  <div class="preview"><div class="lbl">hero</div><div><section class="block hero" id="hero"><div class="wrap hero-grid"><div><span class="eyebrow rv">創作者平台 · 免費戶口 · 唔收卡</span><h1>3 分鐘<br>搞好作品頁</h1><p class="lead rv">上傳 20 張圖、寫 200 字簡介，就出一個有自己網址嘅頁；免費戶口唔使輸入卡號。</p><div class="actions rv"><a class="btn btn-primary" href="#cta">開免費戶口 <span class="i" aria-hidden="true">→</span></a><a class="btn btn-secondary" href="#product">睇範本</a></div><p class="note rv">免費 3 個專案 · 10GB 圖 · 自訂網域要付費</p></div><figure class="hero-art rv"><div class="deco" aria-hidden="true" style="inset:0;background:linear-gradient(135deg,#FFE600 0 34%,#A388EE 34% 67%,#4ECDC4 67%)"></div><figcaption>介面相片位（生成 media/neo-brutalism-hero.jpg 自動代入）</figcaption></figure></div></section></div></div><div class="preview"><div class="lbl">pricing</div><div><section class="block" id="pricing"><div class="wrap"><h2 class="sec-title">三個方案</h2><p class="sec-sub">月付為主；年付平 2 個月。</p><div class="pricing"><article class="plan rv"><h3>免費</h3><div class="price">HK$0 <small>/ 月</small></div><p>試下先，唔使卡。</p><ul><li>3 個專案</li><li>10GB 圖</li><li>Harsh 子網域</li><li>頁尾有 Harsh 標誌</li></ul><a class="btn btn-secondary" href="#cta">開免費戶口</a></article><article class="plan rv featured"><span class="tag">最多人開</span><h3>基本</h3><div class="price">HK$48 <small>/ 月</small></div><p>最多人開。</p><ul><li>20 個專案</li><li>100GB 圖</li><li>綁 1 個自己網域</li><li>冇 Harsh 標誌</li><li>email 支援</li></ul><a class="btn btn-primary" href="#cta">開免費戶口</a></article><article class="plan rv"><h3>專業</h3><div class="price">HK$128 <small>/ 月</small></div><p>賣作品、接 job。</p><ul><li>不限專案</li><li>500GB 圖</li><li>密碼保護 + 自訂 CSS</li><li>作品販賣（3% 手續費）</li></ul><a class="btn btn-secondary" href="#cta">升級</a></article></div></div></section></div></div><div class="preview"><div class="lbl">venue</div><div><section class="block" id="venue"><div class="wrap"><h2 class="sec-title">支援同服務時間</h2><p class="sec-sub">唔收「優先支援」費，付費戶口都係同一個時間表。</p><ul class="infolist"><li><b>支援時間</b><span>星期一至五 10:00–19:00（HKT）；email 4 個鐘內首覆</span></li><li><b>免費戶口</b><span>文件 + 社群論壇；email 1 個工作日內覆</span></li><li><b>付費戶口</b><span>email + 聊天室；嚴重事故 2 個鐘內處理</span></li><li><b>搬遷服務</b><span>一次性，10 個工作日內完成（包 50 頁）</span></li><li><b>取消同退款</b><span>隨時取消，月費唔退；取消後 30 日內仲可以匯出</span></li></ul></div></section></div></div>
+
+  <h2>6 · 動效（Pro 版）</h2>
+  <p class="desc">基本版純 CSS；Pro 版有載入幕、入場、scroll reveal、微互動。跟系統設定「減少動態」會自動降級。</p>
+  <p style="font:13px var(--font-mono,monospace);color:var(--muted)"></p>
+
+  <h2>7 · 點用</h2>
+  <ul style="color:var(--muted);font-size:14px">
+    <li>Tokens：<code>themes/neo-brutalism.json</code>（含 <code>snippet_css</code> 同 Tailwind <code>theme.extend</code>）</li>
+    <li>Demo：<a href="../neo-brutalism.html">基本版</a> · <a href="../neo-brutalism-pro.html">Pro 動效版</a> · <a href="../neo-brutalism-pro.html?deep=1">🧪 深度效果</a></li>
+    <li>改客人內容：<code>python3 gen_project.py brief.json</code>（自動驗 WCAG 4.5:1）</li>
+  </ul>
+
+  <div class="cp-foot">
+    <button class="btn btn-primary btn-sm noprint" type="button" onclick="window.print()">🖨️ Print／存 PDF</button>
+    <a href="index.html">← 全部風格卡</a>
+    <span>UIUX Style · Neo-Brutalism · 示範內容全部虛構</span>
+  </div>
+</div>
+</body></html>

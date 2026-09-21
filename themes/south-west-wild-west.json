@@ -1,0 +1,55 @@
+{
+ "slug": "south-west-wild-west",
+ "name": "South West & Wild West",
+ "cn": "",
+ "family": "🏛️ 古典人文 Heritage & Lifestyle",
+ "industry": "戶外用品／露營",
+ "brand": "Cactus",
+ "cta": "訂購裝備",
+ "sections": "products`：裝備 · `rows`：價目 · `venue`：配送同保養",
+ "css_variables": {
+  "--bg": "#EBD5B3",
+  "--fg": "#3A2718",
+  "--muted": "#5C4128",
+  "--surface": "#F6EAD4",
+  "--border": "#C9A97C",
+  "--accent": "#8E3B26",
+  "--accent-fg": "#FFFFFF",
+  "--radius": "8px",
+  "--radius-sm": "5px",
+  "--shadow": "0 6px 0 rgba(58,39,24,.18)",
+  "--btn-shadow": "0 4px 0 #6E2E1E",
+  "--art-bg": "radial-gradient(circle at 50% 100%,#F2B84B 0 22%,transparent 23%),linear-gradient(#C1633B,#8E3B26 60%,#3A2718 61%)",
+  "--media-bg": "linear-gradient(#C1633B,#8E3B26 70%,#3A2718 70%)",
+  "--cta-bg": "#F2E3C6",
+  "--input-bg": "#FBF3E4",
+  "--ok": "#2F7D63",
+  "--warn": "#A83A22",
+  "--font-display": "'Alfa Slab One','Noto Sans TC',serif",
+  "--font-body": "'Merriweather','Noto Sans TC',serif",
+  "--font-mono": "'Courier New',ui-monospace,monospace",
+  "--focus-ring": "var(--accent)"
+ },
+ "fonts": {
+  "google_url": "https://fonts.googleapis.com/css2?family=Rye&family=Alfa+Slab+One&family=Merriweather:wght@400;700&display=swap",
+  "display": "'Alfa Slab One','Noto Sans TC',serif",
+  "body": "'Merriweather','Noto Sans TC',serif",
+  "mono": "'Courier New',ui-monospace,monospace"
+ },
+ "radius": {
+  "base": "8px",
+  "sm": "5px"
+ },
+ "shadow": {
+  "card": "0 6px 0 rgba(58,39,24,.18)",
+  "button": "0 4px 0 #6E2E1E"
+ },
+ "focus_ring": "var(--accent)",
+ "motion": {},
+ "demo": {
+  "basic": "Demos/south-west-wild-west.html",
+  "pro": "Demos/south-west-wild-west-pro.html"
+ },
+ "snippet_css": ":root{\n  --bg: #EBD5B3;\n  --fg: #3A2718;\n  --muted: #5C4128;\n  --surface: #F6EAD4;\n  --border: #C9A97C;\n  --accent: #8E3B26;\n  --accent-fg: #FFFFFF;\n  --radius: 8px;\n  --radius-sm: 5px;\n  --shadow: 0 6px 0 rgba(58,39,24,.18);\n  --btn-shadow: 0 4px 0 #6E2E1E;\n  --art-bg: radial-gradient(circle at 50% 100%,#F2B84B 0 22%,transparent 23%),linear-gradient(#C1633B,#8E3B26 60%,#3A2718 61%);\n  --media-bg: linear-gradient(#C1633B,#8E3B26 70%,#3A2718 70%);\n  --cta-bg: #F2E3C6;\n  --input-bg: #FBF3E4;\n  --ok: #2F7D63;\n  --warn: #A83A22;\n  --font-display: 'Alfa Slab One','Noto Sans TC',serif;\n  --font-body: 'Merriweather','Noto Sans TC',serif;\n  --font-mono: 'Courier New',ui-monospace,monospace;\n  --focus-ring: var(--accent);\n}",
+ "snippet_tailwind": "// tailwind.config.js → theme.extend\n{\n  \"colors\": {\n    \"bg\": \"#EBD5B3\",\n    \"fg\": \"#3A2718\",\n    \"muted\": \"#5C4128\",\n    \"surface\": \"#F6EAD4\",\n    \"border\": \"#C9A97C\",\n    \"accent\": \"#8E3B26\",\n    \"accent-fg\": \"#FFFFFF\",\n    \"ok\": \"#2F7D63\",\n    \"warn\": \"#A83A22\",\n    \"focus-ring\": \"var(--accent)\"\n  },\n  \"borderRadius\": {\n    \"DEFAULT\": \"5px\",\n    \"lg\": \"8px\"\n  },\n  \"fontFamily\": {\n    \"display\": [\n      \"'Alfa Slab One','Noto Sans TC',serif\"\n    ],\n    \"body\": [\n      \"'Merriweather','Noto Sans TC',serif\"\n    ]\n  }\n}"
+}

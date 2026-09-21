@@ -1,0 +1,54 @@
+{
+ "slug": "neo-frutiger-aero",
+ "name": "Neo Frutiger Aero",
+ "cn": "",
+ "family": "👾 數碼懷舊 Retro Digital",
+ "industry": "消費科技／SaaS",
+ "brand": "Aero` / `Aero Drive",
+ "cta": "即刻試",
+ "sections": "",
+ "css_variables": {
+  "--bg": "#E6F7FF",
+  "--fg": "#0B3A53",
+  "--muted": "#2E6B8A",
+  "--surface": "rgba(255,255,255,.78)",
+  "--border": "rgba(255,255,255,.95)",
+  "--accent": "#1B9FD8",
+  "--accent-fg": "#05293B",
+  "--focus-ring": "#0F6E99",
+  "--radius": "22px",
+  "--radius-sm": "14px",
+  "--shadow": "0 10px 24px rgba(27,159,216,.20),inset 0 1px 0 rgba(255,255,255,.9)",
+  "--btn-shadow": "0 6px 0 rgba(27,159,216,.35)",
+  "--art-bg": "linear-gradient(180deg,#BEEBFF,#5FD1E8 55%,#8FE3C0)",
+  "--media-bg": "linear-gradient(180deg,#E8FAFF,#A8E6F5)",
+  "--cta-bg": "linear-gradient(180deg,#D6F3FF,#B6E9F8)",
+  "--input-bg": "rgba(255,255,255,.92)",
+  "--ok": "#1E9E6A",
+  "--warn": "#D9614A",
+  "--font-display": "'Varela Round',sans-serif",
+  "--font-body": "'Nunito Sans','Noto Sans TC',sans-serif"
+ },
+ "fonts": {
+  "google_url": "https://fonts.googleapis.com/css2?family=Varela+Round&family=Nunito+Sans:wght@400;600;700&display=swap",
+  "display": "'Varela Round',sans-serif",
+  "body": "'Nunito Sans','Noto Sans TC',sans-serif",
+  "mono": ""
+ },
+ "radius": {
+  "base": "22px",
+  "sm": "14px"
+ },
+ "shadow": {
+  "card": "0 10px 24px rgba(27,159,216,.20),inset 0 1px 0 rgba(255,255,255,.9)",
+  "button": "0 6px 0 rgba(27,159,216,.35)"
+ },
+ "focus_ring": "#0F6E99",
+ "motion": {},
+ "demo": {
+  "basic": "Demos/neo-frutiger-aero.html",
+  "pro": "Demos/neo-frutiger-aero-pro.html"
+ },
+ "snippet_css": ":root{\n  --bg: #E6F7FF;\n  --fg: #0B3A53;\n  --muted: #2E6B8A;\n  --surface: rgba(255,255,255,.78);\n  --border: rgba(255,255,255,.95);\n  --accent: #1B9FD8;\n  --accent-fg: #05293B;\n  --focus-ring: #0F6E99;\n  --radius: 22px;\n  --radius-sm: 14px;\n  --shadow: 0 10px 24px rgba(27,159,216,.20),inset 0 1px 0 rgba(255,255,255,.9);\n  --btn-shadow: 0 6px 0 rgba(27,159,216,.35);\n  --art-bg: linear-gradient(180deg,#BEEBFF,#5FD1E8 55%,#8FE3C0);\n  --media-bg: linear-gradient(180deg,#E8FAFF,#A8E6F5);\n  --cta-bg: linear-gradient(180deg,#D6F3FF,#B6E9F8);\n  --input-bg: rgba(255,255,255,.92);\n  --ok: #1E9E6A;\n  --warn: #D9614A;\n  --font-display: 'Varela Round',sans-serif;\n  --font-body: 'Nunito Sans','Noto Sans TC',sans-serif;\n}",
+ "snippet_tailwind": "// tailwind.config.js → theme.extend\n{\n  \"colors\": {\n    \"bg\": \"#E6F7FF\",\n    \"fg\": \"#0B3A53\",\n    \"muted\": \"#2E6B8A\",\n    \"surface\": \"rgba(255,255,255,.78)\",\n    \"border\": \"rgba(255,255,255,.95)\",\n    \"accent\": \"#1B9FD8\",\n    \"accent-fg\": \"#05293B\",\n    \"focus-ring\": \"#0F6E99\",\n    \"ok\": \"#1E9E6A\",\n    \"warn\": \"#D9614A\"\n  },\n  \"borderRadius\": {\n    \"DEFAULT\": \"14px\",\n    \"lg\": \"22px\"\n  },\n  \"fontFamily\": {\n    \"display\": [\n      \"'Varela Round',sans-serif\"\n    ],\n    \"body\": [\n      \"'Nunito Sans','Noto Sans TC',sans-serif\"\n    ]\n  }\n}"
+}

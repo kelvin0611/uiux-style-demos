@@ -1,0 +1,100 @@
+<!doctype html><html lang="zh-Hant-HK"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Kawaii  · 風格卡</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=M+PLUS+Rounded+1c:wght@400;700;800&display=swap">
+<link rel="stylesheet" href="../blocks.css">
+<style>:root{--bg:#FFF7FA;--fg:#5B4636;--muted:#75665A;--surface:#FFFFFF;--border:#FFD9E6;--accent:#FF7FAE;--accent-fg:#4A3428;--accent-grad:linear-gradient(#FFB7C5,#FF7FAE);--radius:26px;--radius-sm:16px;--shadow:0 10px 24px rgba(255,183,197,.42);--btn-shadow:0 5px 0 #FF9EBB;--art-bg:radial-gradient(circle at 30% 25%,#FFF1A8,#FFB7C5);--media-bg:radial-gradient(circle at 30% 25%,#FFF1A8,#FFC9DD);--cta-bg:#FFE3EE;--input-bg:#FFF7FA;--ok:#B5EAD7;--warn:#FF7FAE;--font-display:"Mochiy Pop One","M PLUS Rounded 1c",sans-serif;--font-body:"M PLUS Rounded 1c","Noto Sans TC",sans-serif;--focus-ring:#FF0F67;}
+
+
+.card,.plan,.quote,.tile-c,.rows,.mock,.roi,.badge-card{border:2px dashed #FFD9E6}
+.tile-c,.plan{border-style:dashed}
+.btn{border:2px solid #FFD9E6}
+.logo::before{content:"✦";color:#FF7FAE;font-size:18px}
+.hero h1{text-shadow:2px 2px 0 #fff,4px 4px 0 #FFD9E6}
+.chip{border:2px dashed #FFB7C5;border-radius:999px;background:#FFF7FA}
+.avatar{background:linear-gradient(#FFB7C5,#FF7FAE)}
+.tag{transform:rotate(-3deg)}
+.hero::before{content:"";position:absolute;right:7%;top:10%;width:min(220px,24vw);aspect-ratio:1;border-radius:50%;background:radial-gradient(circle at 50% 56%,#FFF1A8,#FFDAC1);box-shadow:inset -8px -10px 0 rgba(255,183,197,.5);z-index:0;pointer-events:none}
+.hero::after{content:"";position:absolute;left:6%;top:16%;width:120px;height:70px;border-radius:50%;background:radial-gradient(circle,rgba(255,183,197,.5),transparent 70%);z-index:0;pointer-events:none}
+
+/* ---- 風格卡專用 ---- */
+body{background:var(--bg);color:var(--fg);font-family:var(--font-body)}
+.cp{max-width:1080px;margin:0 auto;padding:clamp(18px,4vw,40px)}
+.cp-head{border-bottom:2px solid var(--border);padding-bottom:18px;margin-bottom:26px}
+.cp-head h1{margin:.1em 0 .2em;font-family:var(--font-display);font-size:clamp(28px,5vw,46px)}
+.cp-meta{color:var(--muted);font-size:14px}
+.cp-tag{display:inline-block;border:1px solid var(--border);border-radius:999px;padding:3px 10px;font-size:12px;color:var(--muted);margin:0 6px 6px 0}
+.cp h2{font-family:var(--font-display);font-size:clamp(18px,2.4vw,24px);margin:34px 0 6px;padding-bottom:6px;border-bottom:1px solid var(--border)}
+.cp p.desc{color:var(--muted);margin:6px 0 14px;max-width:70ch}
+.sws{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:10px}
+.sw{border:1px solid var(--border);border-radius:10px;padding:9px;background:var(--surface);display:grid;gap:4px}
+.sw i{display:block;height:44px;border-radius:7px;border:1px solid var(--border)}
+.sw b{font-size:13px}.sw code{font:12px var(--font-mono,monospace);color:var(--muted)}
+.sw span{font-size:11px;color:var(--muted)}
+.typo div{border:1px solid var(--border);border-radius:10px;padding:12px 14px;margin-bottom:8px;background:var(--surface)}
+.typo .d{font-family:var(--font-display);font-size:32px;line-height:1.15}
+.typo .b{font-family:var(--font-body);font-size:16px}
+.typo .m{font-family:var(--font-mono,monospace);font-size:14px}
+.typo small{color:var(--muted);font-size:11px;display:block;margin-top:6px}
+.row{display:flex;gap:12px;flex-wrap:wrap;align-items:flex-start}
+.preview{border:1px dashed var(--border);border-radius:12px;overflow:hidden;margin-bottom:12px}
+.preview .lbl{font:11px var(--font-mono,monospace);color:var(--muted);padding:6px 10px;border-bottom:1px dashed var(--border)}
+.preview > div:last-child{transform-origin:top left}
+.cp-foot{margin-top:36px;padding-top:14px;border-top:1px solid var(--border);color:var(--muted);font-size:13px;display:flex;gap:14px;flex-wrap:wrap}
+.cp a{color:var(--accent)}
+@media print{.noprint{display:none}body{background:#fff}.cp{max-width:none;padding:0}.preview{page-break-inside:avoid}}
+</style></head><body>
+<div class="cp">
+  <div class="cp-head">
+    <span class="cp-tag">✏️ 藝術手作 Artistic &amp; Handmade</span><span class="cp-tag">15 個 block</span><span class="cp-tag">—</span>
+    <h1> Kawaii <span style="font-size:.6em;color:var(--muted)"></span></h1>
+    <p class="desc" style="font-size:17px;color:var(--fg)">日本「可愛」文化 —— 粉彩、圓圓 icon、BB 面、腮紅、手寫字，甜、純真、開心。</p>
+    <p class="cp-meta">示範品牌 <b>Momo` / `Momo Club</b> · 主要 CTA「拎試用裝」· 行業：文具／生活雜貨 · 次選 兒童 app、甜品店</p>
+  </div>
+
+  <h2>1 · 色票 Palette</h2>
+  <p class="desc">所有元件都只可以用呢組 token（換色 = 改呢幾行）。</p>
+  <div class="sws"><div class="sw"><i style="background:#FFF7FA"></i><b>--bg</b><code>#FFF7FA</code><span>底色 Background</span></div><div class="sw"><i style="background:#5B4636"></i><b>--fg</b><code>#5B4636</code><span>主文字 Text</span></div><div class="sw"><i style="background:#75665A"></i><b>--muted</b><code>#75665A</code><span>次要文字 Muted</span></div><div class="sw"><i style="background:#FFFFFF"></i><b>--surface</b><code>#FFFFFF</code><span>卡片面 Surface</span></div><div class="sw"><i style="background:#FFD9E6"></i><b>--border</b><code>#FFD9E6</code><span>分隔線 Border</span></div><div class="sw"><i style="background:#FF7FAE"></i><b>--accent</b><code>#FF7FAE</code><span>強調色 Accent</span></div><div class="sw"><i style="background:#4A3428"></i><b>--accent-fg</b><code>#4A3428</code><span>強調上文字</span></div><div class="sw"><i style="background:#B5EAD7"></i><b>--ok</b><code>#B5EAD7</code><span>成功 Success</span></div><div class="sw"><i style="background:#FF7FAE"></i><b>--warn</b><code>#FF7FAE</code><span>警告 Warning</span></div></div>
+
+  <h2>2 · 字體 Typography</h2>
+  <p class="desc">最多兩個字重；標題 &quot;Mochiy Pop One&quot;,&quot;M PLUS Rounded 1c&quot;,sans-serif、正文 &quot;M PLUS Rounded 1c&quot;,&quot;Noto Sans TC&quot;,sans-serif。</p>
+  <div class="typo">
+    <div class="d">一頁講清成件事 <small>Display · &quot;Mochiy Pop One&quot;,&quot;M PLUS Rounded 1c&quot;,sans-serif</small></div>
+    <div class="b">正文用 &quot;M PLUS Rounded 1c&quot;,&quot;Noto Sans TC&quot;,sans-serif：16px、行高 1.65，唔會超過 70 個中文字一行。<small>Body</small></div>
+    <div class="m">HK$1,280 · 2026-09-22 · #REF-0042 <small>Mono／數字對齊（ui-monospace）</small></div>
+  </div>
+
+  <h2>3 · 按鈕 Buttons</h2>
+  <p class="desc">11 個狀態齊：hover 升起、active 壓落、focus 外框（對比 ≥3:1）、disabled 變淡、loading／success。</p>
+  <div class="btn-row"><div class="state"><button class="btn btn-primary " type="button">Primary</button><small>Default</small></div><div class="state"><button class="btn btn-primary is-hover" type="button">Primary</button><small>Hover</small></div><div class="state"><button class="btn btn-primary is-active" type="button">Primary</button><small>Active</small></div><div class="state"><button class="btn btn-primary is-focus" type="button">Primary</button><small>Focus</small></div><div class="state"><button class="btn btn-primary " type="button" disabled>Primary</button><small>Disabled</small></div><div class="state"><button class="btn btn-primary btn-sm" type="button">Small</button><small>btn-sm</small></div><div class="state"><button class="btn btn-primary btn-lg" type="button">Large</button><small>btn-lg</small></div><div class="state"><button class="btn btn-primary btn-secondary" type="button">Secondary</button><small>Secondary</small></div></div>
+
+  <h2>4 · 組件 Components</h2>
+  <div class="row">
+    <article class="card" style="flex:1 1 260px"><span class="ico" aria-hidden="true">◆</span><h3>卡片標題</h3><p>一句講清重點，唔超過兩行。</p></article>
+    <div class="plan" style="flex:1 1 240px"><span class="tag">最受歡迎</span><h3>方案名</h3><div class="price">HK$1,280<small>/月</small></div>
+      <ul><li>包含咩</li><li>包含咩</li></ul><a class="btn btn-primary" href="#">揀呢個</a></div>
+    <blockquote class="quote" style="flex:1 1 260px">客人講嘅一句真話。<span class="avatar">阿</span><b>阿文</b><span>客戶 · 角色</span></blockquote>
+  </div>
+
+  <h2>5 · 真實 section 預覽</h2>
+  <p class="desc">以下係由正式 demo 直接抽落嚟（唔係另畫），所以卡同成品一定一致。</p>
+  <div class="preview"><div class="lbl">hero</div><div><section class="block hero" id="hero"><div class="wrap hero-grid"><div><span class="eyebrow rv">文具 · 生活雜貨 · 香港</span><h1>每日都想用嘅文具</h1><p class="lead rv">Momo 出嘅貼紙、筆記簿同小物：粉彩、圓角、摸落舒服。買一支筆都會笑。</p><div class="actions rv"><a class="btn btn-primary" href="#cta">拎試用裝 <span class="i" aria-hidden="true">→</span></a><a class="btn btn-secondary" href="#product">睇新品</a></div><p class="note rv">滿 HK$200 免運 · 三間門市可以自取</p></div><figure class="hero-art rv"><div class="deco" aria-hidden="true" style="inset:0;background:radial-gradient(circle at 30% 25%,#FFF1A8,#FFB7C5)"></div><figcaption>門市相片位（生成 media/kawaii-hero.jpg 自動代入）</figcaption></figure></div></section></div></div><div class="preview"><div class="lbl">pricing</div><div><section class="block" id="pricing"><div class="wrap"><h2 class="sec-title">會員計劃</h2><p class="sec-sub">唔想俾月費都得，散買一樣有會員價。</p><div class="pricing"><article class="plan rv"><h3>散買</h3><div class="price">HK$0 <small>/ 唔使入會</small></div><p>直接買，滿 $200 免運。</p><ul><li>網店同門市同價</li><li>滿 $200 免運</li><li>7 日退換</li></ul><a class="btn btn-secondary" href="#cta">去購物</a></article><article class="plan rv featured"><span class="tag">最受歡迎</span><h3>Momo Club</h3><div class="price">HK$38 <small>/ 月</small></div><p>每月一件小物 + 9 折。</p><ul><li>每月隨機小物一件</li><li>全店 9 折</li><li>新品優先買</li><li>生日雙倍積分</li></ul><a class="btn btn-primary" href="#cta">加入 Club</a></article><article class="plan rv"><h3>禮品包</h3><div class="price">報價 <small>/ 學校 · 公司</small></div><p>活動或員工禮物。</p><ul><li>可以印 logo</li><li>50 份起</li><li>三款預算可揀</li><li>香港本地出貨</li></ul><a class="btn btn-secondary" href="#cta">索取報價</a></article></div></div></section></div></div>
+
+  <h2>6 · 動效（Pro 版）</h2>
+  <p class="desc">基本版純 CSS；Pro 版有載入幕、入場、scroll reveal、微互動。跟系統設定「減少動態」會自動降級。</p>
+  <p style="font:13px var(--font-mono,monospace);color:var(--muted)"></p>
+
+  <h2>7 · 點用</h2>
+  <ul style="color:var(--muted);font-size:14px">
+    <li>Tokens：<code>themes/kawaii.json</code>（含 <code>snippet_css</code> 同 Tailwind <code>theme.extend</code>）</li>
+    <li>Demo：<a href="../kawaii.html">基本版</a> · <a href="../kawaii-pro.html">Pro 動效版</a></li>
+    <li>改客人內容：<code>python3 gen_project.py brief.json</code>（自動驗 WCAG 4.5:1）</li>
+  </ul>
+
+  <div class="cp-foot">
+    <button class="btn btn-primary btn-sm noprint" type="button" onclick="window.print()">🖨️ Print／存 PDF</button>
+    <a href="index.html">← 全部風格卡</a>
+    <span>UIUX Style · Kawaii · 示範內容全部虛構</span>
+  </div>
+</div>
+</body></html>

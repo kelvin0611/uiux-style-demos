@@ -1,0 +1,55 @@
+{
+ "slug": "swiss-design",
+ "name": "Swiss Design",
+ "cn": "",
+ "family": "📐 秩序理性 Structure & Order",
+ "industry": "銀行／金融服務",
+ "brand": "Helvet",
+ "cta": "預約理財顧問",
+ "sections": "rows`：服務 · `products`：收費 · `chips`：合規同保障",
+ "css_variables": {
+  "--bg": "#FFFFFF",
+  "--fg": "#141414",
+  "--muted": "#525252",
+  "--surface": "#F2F2F2",
+  "--border": "#141414",
+  "--accent": "#C81E1E",
+  "--accent-fg": "#FFFFFF",
+  "--radius": "0px",
+  "--radius-sm": "0px",
+  "--shadow": "none",
+  "--btn-shadow": "none",
+  "--art-bg": "linear-gradient(135deg,#141414 0 38%,#C81E1E 38% 62%,#E5E5E5 62%)",
+  "--media-bg": "linear-gradient(180deg,#FFFFFF,#EDEDED)",
+  "--cta-bg": "#EDEDED",
+  "--input-bg": "#FFFFFF",
+  "--ok": "#0E6B3C",
+  "--warn": "#B3121B",
+  "--font-display": "Inter,'Noto Sans TC',sans-serif",
+  "--font-body": "Inter,'Noto Sans TC',sans-serif",
+  "--font-mono": "'Inter',ui-monospace,monospace",
+  "--focus-ring": "var(--accent)"
+ },
+ "fonts": {
+  "google_url": "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&family=Noto+Sans+TC:wght@400;500;700&display=swap",
+  "display": "Inter,'Noto Sans TC',sans-serif",
+  "body": "Inter,'Noto Sans TC',sans-serif",
+  "mono": "'Inter',ui-monospace,monospace"
+ },
+ "radius": {
+  "base": "0px",
+  "sm": "0px"
+ },
+ "shadow": {
+  "card": "none",
+  "button": "none"
+ },
+ "focus_ring": "var(--accent)",
+ "motion": {},
+ "demo": {
+  "basic": "Demos/swiss-design.html",
+  "pro": "Demos/swiss-design-pro.html"
+ },
+ "snippet_css": ":root{\n  --bg: #FFFFFF;\n  --fg: #141414;\n  --muted: #525252;\n  --surface: #F2F2F2;\n  --border: #141414;\n  --accent: #C81E1E;\n  --accent-fg: #FFFFFF;\n  --radius: 0px;\n  --radius-sm: 0px;\n  --shadow: none;\n  --btn-shadow: none;\n  --art-bg: linear-gradient(135deg,#141414 0 38%,#C81E1E 38% 62%,#E5E5E5 62%);\n  --media-bg: linear-gradient(180deg,#FFFFFF,#EDEDED);\n  --cta-bg: #EDEDED;\n  --input-bg: #FFFFFF;\n  --ok: #0E6B3C;\n  --warn: #B3121B;\n  --font-display: Inter,'Noto Sans TC',sans-serif;\n  --font-body: Inter,'Noto Sans TC',sans-serif;\n  --font-mono: 'Inter',ui-monospace,monospace;\n  --focus-ring: var(--accent);\n}",
+ "snippet_tailwind": "// tailwind.config.js → theme.extend\n{\n  \"colors\": {\n    \"bg\": \"#FFFFFF\",\n    \"fg\": \"#141414\",\n    \"muted\": \"#525252\",\n    \"surface\": \"#F2F2F2\",\n    \"border\": \"#141414\",\n    \"accent\": \"#C81E1E\",\n    \"accent-fg\": \"#FFFFFF\",\n    \"ok\": \"#0E6B3C\",\n    \"warn\": \"#B3121B\",\n    \"focus-ring\": \"var(--accent)\"\n  },\n  \"borderRadius\": {\n    \"DEFAULT\": \"0px\",\n    \"lg\": \"0px\"\n  },\n  \"fontFamily\": {\n    \"display\": [\n      \"Inter,'Noto Sans TC',sans-serif\"\n    ],\n    \"body\": [\n      \"Inter,'Noto Sans TC',sans-serif\"\n    ]\n  }\n}"
+}

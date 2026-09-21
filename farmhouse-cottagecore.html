@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="zh-Hant-HK"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Farmhouse & Cottagecore · 田園小屋 — Thistle | UIUX Style Demo</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600&family=Caveat:wght@600&family=Lora:ital@0;1&display=swap">
+<meta name="description" content="6–10 款當造菜，落單後 48 小時內送到；可以暫停一週。">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Farmhouse &amp; Cottagecore · 田園小屋">
+<meta property="og:description" content="6–10 款當造菜，落單後 48 小時內送到；可以暫停一週。">
+<meta name="twitter:card" content="summary_large_image">
+<meta property="og:image" content="media/og/farmhouse-cottagecore.png">
+<link rel="stylesheet" href="blocks.css">
+<style>:root{--bg:#FBF5E6;--fg:#4A3A2C;--muted:#6B4E37;--surface:#FFFDF7;--border:#E3CBA0;--accent:#A34A31;--accent-fg:#FFF6E8;--radius:16px;--radius-sm:10px;--shadow:0 12px 26px rgba(107,78,55,.16);--btn-shadow:0 5px 0 rgba(163,74,49,.28);--art-bg:repeating-linear-gradient(90deg,rgba(163,74,49,.14) 0 12px,transparent 12px 24px),repeating-linear-gradient(0deg,rgba(106,138,90,.16) 0 12px,transparent 12px 24px);--media-bg:linear-gradient(180deg,#F3EAD3,#E3CBA0);--cta-bg:linear-gradient(180deg,#F5EEDC,#EBDFC4);--input-bg:#FFFDF7;--ok:#4E7A46;--warn:#A34A31;--font-display:Fraunces,'Noto Serif TC',serif;--font-body:Lora,'Noto Serif TC',serif;--font-mono:Fraunces,ui-serif,serif;--focus-ring:var(--accent);}
+
+body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;
+ background:repeating-linear-gradient(0deg,rgba(163,74,49,.06) 0 12px,transparent 12px 24px),
+ repeating-linear-gradient(90deg,rgba(106,138,90,.07) 0 12px,transparent 12px 24px)}
+.card,.plan,.quote,.tile-c,.mock,.rows,.log{border:1.5px solid var(--border);background:var(--surface);
+ border-radius:var(--radius);box-shadow:var(--shadow)}
+.sec-title{font-family:var(--font-display);font-weight:600;color:#5C3A26}
+.sec-title::after{content:"";display:block;width:88px;height:3px;margin-top:12px;
+ background:repeating-linear-gradient(90deg,var(--accent) 0 10px,transparent 10px 18px)}
+.hero h1{font-family:var(--font-display);font-weight:600;color:#5C3A26}
+.hero .eyebrow{font-family:'Caveat',cursive;font-size:20px;color:var(--accent);letter-spacing:.02em}
+.hero .lead{font-style:italic}
+.btn{border-radius:999px;font-family:var(--font-body)}
+.btn-primary{background:var(--accent);color:var(--accent-fg);box-shadow:var(--btn-shadow)}
+.btn-secondary{background:var(--surface);color:#4A3A2C;border:1.5px solid var(--border)}
+.chip{border-radius:999px;background:#F1E7CE;border:1px solid var(--border);font-size:13px}
+.avatar{border-radius:999px;background:#E9B9A9;color:#5C3A26}
+.tag{background:#4E6B40;color:#FBF5E6;border-radius:999px;font-family:'Caveat',cursive;font-size:15px}
+.plan.featured{outline:3px double var(--accent);outline-offset:4px}
+.tile-c .ph{background-image:none;background:var(--media-bg);border-radius:var(--radius-sm);
+ border-bottom:1.5px dashed var(--border);font-size:34px;display:flex;align-items:center;justify-content:center}
+.tile-c h3,.plan h3{font-family:var(--font-display);font-weight:600;color:#5C3A26}
+.cost{font-family:var(--font-display);font-weight:600;color:var(--accent)}
+.rows article:nth-child(odd),.log article:nth-child(odd){background:#F7EFDB}
+.rows article b{font-family:var(--font-display);color:#5C3A26}
+.stat .num{font-family:var(--font-display);font-weight:600;color:var(--accent)}
+.infolist li b{font-family:var(--font-display);color:#5C3A26}
+.quote p{font-style:italic}
+.hero-art{box-shadow:0 18px 34px rgba(107,78,55,.22)}
+</style>
+</head>
+<body>
+<div class="demo-bar"><span><a href="index.html">← 全部風格</a> · <b>🆕 32/57 🧺 Farmhouse & Cottagecore 田園小屋（12 block 全頁版）</b></span><span><a href="farmhouse-cottagecore-pro.html">✨ Pro 版</a> · <a href="ethereal.html">‹ Ethereal</a> · <a href="filigree.html">Filigree ›</a> · <a href="obsidian://open?vault=Obsidian&file=04-%E5%85%A7%E5%AE%B9%E5%89%B5%E4%BD%9C/UIUX%20Style/Styles/Farmhouse & Cottagecore">📝 Obsidian 筆記</a></span></div>
+<header class="site-header wrap"><div class="logo">Thistle</div><input type="checkbox" id="navToggle" class="nav-toggle-input" aria-label="開關選單"><label class="nav-toggle" for="navToggle">選單</label><nav class="nav" aria-label="主選單"><a href="#products" aria-current="page">蔬菜箱</a><a href="#venue">配送</a><a href="#rows">價目</a><a href="#faq">常見問題</a></nav><a class="btn btn-primary" href="#cta">訂蔬菜箱</a></header>
+<main>
+<section class="block hero" id="hero"><div class="wrap hero-grid"><div><span class="eyebrow rv">逢星期三、六出貨 · 香港市區</span><h1>每星期送菜上門</h1><p class="lead rv">6–10 款當造菜，落單後 48 小時內送到；可以暫停一週。</p><div class="actions rv"><a class="btn btn-primary" href="#cta">訂蔬菜箱 <span class="i" aria-hidden="true">→</span></a><a class="btn btn-secondary" href="#product">睇配送安排</a></div><p class="note rv">HK$268 起 · 滿 HK$380 免運費 · 可重用膠箱</p></div><figure class="hero-art rv"><div class="deco" aria-hidden="true" style="inset:0;background:repeating-linear-gradient(90deg,rgba(163,74,49,.14) 0 12px,transparent 12px 24px),repeating-linear-gradient(0deg,rgba(106,138,90,.16) 0 12px,transparent 12px 24px)"></div><figcaption>蔬菜箱相片位（生成 media/farmhouse-cottagecore-hero.jpg 自動代入）</figcaption></figure></div></section>
+<section class="block tight trust band"><div class="wrap trust"><span class="lbl">合作過（示範網站，全部虛構；唔代表任何真實農場或認證）：</span><span class="wordmark">小田園農場（虛構）</span><span class="wordmark">西貢手作坊</span><span class="wordmark">格仔雜貨</span><span class="wordmark">豆腐工房</span><span class="wordmark">烘焙小室</span></div></section>
+<section class="block" id="features"><div class="wrap"><h2 class="sec-title">四個實際安排</h2><p class="sec-sub">講清楚送咩、幾時送、點保存、唔啱食點算。</p><div class="grid g4"><article class="card rv"><span class="ico" aria-hidden="true">🧺</span><h3>每週 6–10 款</h3><p>按當週收成配，落單前睇得到菜款清單。</p></article><article class="card rv"><span class="ico" aria-hidden="true">🚚</span><h3>逢三、六送</h3><p>香港島同九龍市區 09:00–18:00；新界指定區另行安排。</p></article><article class="card rv"><span class="ico" aria-hidden="true">♻️</span><h3>可重用膠箱</h3><p>下次送貨收回；唔用即棄發泡膠同膠袋。</p></article><article class="card rv"><span class="ico" aria-hidden="true">🔁</span><h3>唔啱食可以換</h3><p>收到 24 小時內影相通知，下一箱換同等份量。</p></article></div></div></section>
+<section class="block band" id="product"><div class="wrap"><h2 class="sec-title">本週菜箱</h2><p class="sec-sub">每箱都有清單，可以自己改 2 款。</p><div class="mock rv"><div class="mock-bar"><span class="mock-dot"></span><span class="mock-dot"></span><span class="mock-dot"></span><span style="margin-left:8px">Thistle · 2026-11-14 送貨</span></div><div class="mock-body"><aside class="mock-side"><span><b>箱型</b></span><span>細箱 6 款</span><span>標準箱 8 款</span><span><b>狀態</b></span><span>已收單</span></aside><div class="mock-main"><div class="mock-row"><span class="pill">細箱</span> 菜心 · 芥蘭 · 甘筍 · 蕃茄 · 薯仔 · 香草</div><div class="mock-row"><span class="diff-add">+ 已換走：芥蘭 → 菠菜（客人要求）</span></div><div class="mock-row"><span class="pill">加餸</span> 本地蛋 6 隻 · 手工豆腐 1 盒</div><div class="mock-row"><span class="diff-del">− 紅菜頭缺貨，下一箱補回同等份量</div></div><aside class="mock-right"><span><b>運費</b></span><span>HK$0（滿 HK$380）</span><span><b>送貨時段</b></span><span>14:00–18:00</span></aside></div></div><p class="note">示範版係靜態畫面；Pro 版會逐行打出嚟。</p></div></section>
+<section class="block"><div class="wrap"><h2 class="sec-title">三步訂一箱</h2><p class="sec-sub">唔使簽約，每個星期都可以改。</p><ol class="steps"><li class="rv"><h3>揀箱同改菜款</h3><p>揀細箱或標準箱；落單前可以換走 2 款。</p></li><li class="rv"><h3>送貨前 48 小時截單</h3><p>截單之後加單要等下一輪；可以暫停一週。</p></li><li class="rv"><h3>收箱同保存</h3><p>14:00–18:00 送到；葉菜用廚房紙包好放雪櫃 3–5 日。</p></li></ol></div></section>
+<section class="block tight"><div class="wrap"><div class="stats"><div class="stat rv"><span class="num">6–10 款</span><span>每箱菜款</span></div><div class="stat rv"><span class="num">逢三、六</span><span>出貨日</span></div><div class="stat rv"><span class="num">48 小時</span><span>落單到送到</span></div><div class="stat rv"><span class="num">HK$268</span><span>細箱價錢</span></div></div></div></section>
+<section class="block" id="products"><div class="wrap"><h2 class="sec-title">蔬菜箱</h2><p class="sec-sub">箱型按人數分；落單前可以換走 2 款菜。</p><div class="tiles"><article class="tile-c rv"><div class="ph wide" aria-hidden="true">🥬</div><h3>細箱 6 款</h3><p>2–3 人食兩餐 · 約 2.5 公斤</p><span class="cost">HK$268</span></article><article class="tile-c rv"><div class="ph wide" aria-hidden="true">🧺</div><h3>標準箱 8 款</h3><p>3–4 人食三餐 · 約 4 公斤</p><span class="cost">HK$368</span></article><article class="tile-c rv"><div class="ph wide" aria-hidden="true">🎁</div><h3>周末加餸箱</h3><p>另加蛋、豆腐或手工醬</p><span class="cost">HK$438</span></article><article class="tile-c rv"><div class="ph wide" aria-hidden="true">🍓</div><h3>果醬同漬物套裝</h3><p>2 樽 200ml · 用當造水果</p><span class="cost">HK$158</span></article></div></div></section>
+<section class="block"><div class="wrap"><h2 class="sec-title">客人點講</h2><p class="sec-sub">示範網站用虛構名；真評語會喺真實訂單後補。</p><div class="grid g2"><figure class="quote rv"><p>「菜款清單寫得好清楚，換走唔想食嗰兩款就得，唔使成箱收到才知。」</p><figcaption class="who"><span class="avatar" aria-hidden="true">阿</span><span><b>阿玲</b><br>客人 · 兩人家（示範）</span></figcaption></figure><figure class="quote rv"><p>「膠箱收回呢點最實際，一星期唔會再積一堆紙箱。」</p><figcaption class="who"><span class="avatar" aria-hidden="true">家</span><span><b>家俊</b><br>客人 · 四人家庭（示範）</span></figcaption></figure></div></div></section>
+<section class="block" id="venue"><div class="wrap"><h2 class="sec-title">配送同保存</h2><p class="sec-sub">運費、包裝、暫停安排全部寫明；示範網站唔代表任何真實農場或認證。</p><ul class="infolist"><li><b>送貨日</b><span>星期三、六；香港島同九龍市區 09:00–18:00</span></li><li><b>運費</b><span>滿 HK$380 免運費；未滿收 HK$45（新界指定區另議）</span></li><li><b>包裝</b><span>可重用膠箱，下次送貨收回；唔用即棄發泡膠</span></li><li><b>保存建議</b><span>葉菜用廚房紙包好放雪櫃 0–4°C，3–5 日內食完</span></li><li><b>暫停同改期</b><span>送貨前 48 小時可以暫停一週，唔會扣錢</span></li></ul></div></section>
+<section class="block" id="pricing"><div class="wrap"><h2 class="sec-title">三個訂法</h2><p class="sec-sub">單箱試、月付、或者送禮都做得；隨時暫停。</p><div class="pricing"><article class="plan rv"><h3>單箱試</h3><div class="price">HK$268 <small>/ 箱</small></div><p>想先試一星期。</p><ul><li>細箱 6 款（約 2.5 公斤）</li><li>可以換走 2 款</li><li>未滿 HK$380 收運費 HK$45</li><li>可重用膠箱</li></ul><a class="btn btn-secondary" href="#cta">訂蔬菜箱</a></article><article class="plan rv featured"><span class="tag">最多人訂</span><h3>月付 4 箱</h3><div class="price">HK$1,352 <small>/ 月</small></div><p>每星期送，平均平 HK$30。</p><ul><li>每月 4 箱（逢三或六）</li><li>每箱可以換走 2 款</li><li>免運費</li><li>可以暫停一週</li></ul><a class="btn btn-primary" href="#cta">訂蔬菜箱</a></article><article class="plan rv"><h3>送禮 3 箱</h3><div class="price">HK$828 <small>/ 3 箱</small></div><p>附手寫卡。</p><ul><li>3 箱連續送出</li><li>可以指定送貨日</li><li>附手寫卡同保存指南</li><li>送禮對象可以自己收貨</li></ul><a class="btn btn-secondary" href="#cta">訂蔬菜箱</a></article></div></div></section>
+<section class="block" id="rows"><div class="wrap"><h2 class="sec-title rv">價目</h2><p class="sec-sub rv">散買同月付都有；菜款同價錢按當週收成浮動。</p><div class="rows"><article class="rv"><b>★ 細箱（6 款）</b><span>約 2.5 公斤 · 逢三、六送</span><span class="cost">HK$268</span></article><article class="rv"><b>★ 標準箱（8 款）</b><span>約 4 公斤 · 最多人訂</span><span class="cost">HK$368</span></article><article class="rv"><b>周末加餸箱</b><span>加蛋／豆腐／手工醬</span><span class="cost">HK$438</span></article><article class="rv"><b>單點散買</b><span>按當週清單 · 最低消費 HK$200</span><span class="cost">按項報價</span></article><article class="rv"><b>月付 4 箱</b><span>每月 4 箱 · 平均每箱平 HK$30</span><span class="cost">HK$1,352</span></article></div><p class="note rv">價錢係示範數字；實際菜款同價錢按當週收成同成本浮動。</p></div></section>
+<section class="block"><div class="wrap"><h2 class="sec-title">訂之前想知</h2><p class="sec-sub">問唔到嘅可以 WhatsApp 我們，一日內覆。</p><div class="faq"><details class="rv"><summary>係唔係有機認證？</summary><div class="ans">本示範網站唔代表任何真實農場或認證；真實產品要睇包裝上嘅正式證明。</div></details><details class="rv"><summary>可以改菜款嗎？</summary><div class="ans">可以，每箱換走 2 款；截單前 48 小時喺 app 改。</div></details><details class="rv"><summary>送唔送到離島？</summary><div class="ans">暫時只送香港島、九龍同新界指定區；離島唔送。</div></details><details class="rv"><summary>收到嘅菜唔靚點算？</summary><div class="ans">24 小時內影相通知，下一箱換同等份量，唔使退貨。</div></details><details class="rv"><summary>可以中途停嗎？</summary><div class="ans">可以。送貨前 48 小時暫停一週，或者直接取消月付。</div></details></div></div></section>
+<section class="block" id="cta"><div class="wrap"><div class="cta-band rv"><h2>本週菜款已出，逢三、六送</h2><p>滿 HK$380 免運費；可先訂一箱試。</p><div class="actions"><a class="btn btn-primary" href="#">訂蔬菜箱</a><a class="btn btn-secondary" href="#">睇配送安排</a></div></div></div></section>
+</main>
+<footer class="block site-footer"><div class="wrap"><div class="foot-grid"><div><h4>蔬菜箱</h4><a href="#">細箱 6 款</a><a href="#">標準箱 8 款</a><a href="#">周末加餸箱</a><a href="#">果醬同漬物</a></div><div><h4>配送</h4><a href="#">送貨日同時間</a><a href="#">運費</a><a href="#">可重用膠箱</a><a href="#">暫停同改期</a></div><div><h4>價目</h4><a href="#">單箱試</a><a href="#">月付 4 箱</a><a href="#">送禮 3 箱</a><a href="#">單點散買</a></div><div><h4>關於</h4><a href="#">Thistle 團隊</a><a href="#">合作農場（虛構）</a><a href="#">保存指南</a><a href="#">私隱政策</a></div><div><h4>每週菜款通知</h4><form class="news" onsubmit="return false"><label for="nl" style="display:none">每週菜款通知</label><input id="nl" type="email" placeholder="you@example.com"><button class="btn btn-primary" type="submit">訂閱</button></form></div></div><div class="foot-bottom"><span>© 2026 Thistle · 示範網站：農場、認證、菜款、價錢同評語全部虛構</span><span>IG · WhatsApp · Facebook</span></div></div></footer>
+<section class="block band" id="qa"><div class="wrap"><h2 class="sec-title">設計 QA · 按鈕同表單</h2><p class="sec-sub">同一套元素庫嘅 11 個按鈕狀態（含 loading／success／icon／size）+ 表單，用嚟驗風格嘅 focus／disabled／錯誤狀態夠唔夠清楚。</p><div class="btn-row"><div class="state"><button class="btn btn-primary " type="button">Primary</button><small>Default</small></div><div class="state"><button class="btn btn-primary is-hover" type="button">Primary</button><small>Hover</small></div><div class="state"><button class="btn btn-primary is-active" type="button">Primary</button><small>Active</small></div><div class="state"><button class="btn btn-primary is-focus" type="button">Primary</button><small>Focus</small></div><div class="state"><button class="btn btn-primary " type="button" disabled>Primary</button><small>Disabled</small></div><div class="state"><button class="btn btn-primary " type="button" data-state="loading"><span class="spin"></span> 傳送中…</button><small>Loading</small></div><div class="state"><button class="btn btn-primary " type="button" data-state="done">已收到 · 1 個工作日內覆你</button><small>Success</small></div><div class="state"><button class="btn btn-primary " type="button"><span class="i" aria-hidden="true">→</span> 下一步</button><small>Icon + arrow</small></div><div class="state"><button class="btn btn-primary btn-sm" type="button">Small</button><small>Small（btn-sm）</small></div><div class="state"><button class="btn btn-primary btn-lg" type="button">Large</button><small>Large（btn-lg）</small></div><div class="state"><button class="btn btn-secondary" type="button">Secondary</button><small>Secondary</small></div></div><form class="form" style="margin-top:38px" onsubmit="return false"><div class="field"><label for="n">你嘅名</label><input id="n" placeholder="例如：陳大文"></div><div class="field"><label for="e">工作電郵</label><input id="e" type="email" placeholder="you@company.com"></div><div class="field"><label for="c">團隊幾大？</label><select id="c"><option>1–5 人</option><option>6–20 人</option><option>21 人以上</option></select></div><label class="check"><input type="checkbox" class="toggle" checked> 接收產品更新</label><div><button class="btn btn-primary" type="submit">提交</button></div></form></div></section>
+<script>
+(function(){var s=document.getElementById('seats');if(!s)return;
+var o=document.getElementById('roiOut'),mo=document.getElementById('roiMoney'),so=document.getElementById('seatsOut');
+var H=6,R=900;
+function up(){var n=+s.value;so.textContent=n;var h=Math.round(n*H),m=h*R;
+o.textContent=h+' 小時 / 月';mo.textContent='約 HK$'+m.toLocaleString()+'（對比人手寫同樣嘅 PR）';}
+s.addEventListener('input',up);up();})();
+</script>
+<script>
+(function(){var f=document.querySelector('#qa form');if(!f)return;
+var b=f.querySelector('button[type=submit]');if(!b)return;
+var live=document.createElement('p');live.className='note';live.setAttribute('aria-live','polite');
+f.appendChild(live);
+f.addEventListener('submit',function(e){e.preventDefault();
+if(b.dataset.state==='loading')return;
+var label=b.textContent;b.dataset.state='loading';b.innerHTML='<span class="spin"></span> 傳送中…';
+setTimeout(function(){b.dataset.state='done';b.textContent='已收到 · 1 個工作日內覆你';
+live.textContent='（示範狀態：真表單要接後端；重新載入可以再試）';
+setTimeout(function(){b.dataset.state='';b.textContent=label;},2600);},900);});})();
+</script>
+</body></html>

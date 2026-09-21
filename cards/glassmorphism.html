@@ -1,0 +1,111 @@
+<!doctype html><html lang="zh-Hant-HK"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Glassmorphism  · 風格卡</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&family=Noto+Sans+TC:wght@400;500;700&display=swap">
+<link rel="stylesheet" href="../blocks.css">
+<style>:root{--bg:#1B1436;--fg:#FFFFFF;--muted:#E4E0F2;--surface:rgba(255,255,255,.12);--border:rgba(255,255,255,.30);--accent:#B79CFF;--accent-fg:#191136;--accent-grad:linear-gradient(135deg,#B79CFF,#7FE6E0);--radius:18px;--radius-sm:12px;--shadow:0 20px 50px rgba(9,4,24,.45),inset 0 1px 0 rgba(255,255,255,.28);--btn-shadow:0 10px 26px rgba(183,156,255,.30);--art-bg:linear-gradient(135deg,rgba(255,255,255,.42),rgba(255,255,255,.06));--media-bg:linear-gradient(135deg,rgba(127,90,240,.55),rgba(44,182,125,.35));--cta-bg:rgba(255,255,255,.10);--input-bg:rgba(255,255,255,.14);--ok:#8BE8C0;--warn:#FFA893;--font-display:'Plus Jakarta Sans','Noto Sans TC',sans-serif;--font-body:'Plus Jakarta Sans','Noto Sans TC',sans-serif;--font-mono:ui-monospace,'SF Mono',Menlo,monospace;--focus-ring:var(--accent);}
+
+
+body{background:linear-gradient(rgba(18,12,40,.28),rgba(18,12,40,.28)),
+ radial-gradient(circle at 10% 6%,rgba(255,209,102,.30),transparent 40%),
+ radial-gradient(circle at 90% 14%,rgba(74,222,222,.28),transparent 42%),
+ radial-gradient(circle at 58% 92%,rgba(255,110,199,.26),transparent 44%),var(--bg);background-attachment:fixed}
+/* blur 預算：只 3 個元素用 backdrop-filter（header／mock／cta-band，各一） */
+.site-header{background:rgba(255,255,255,.10);backdrop-filter:blur(14px) saturate(150%);border-bottom:1px solid var(--border)}
+.mock{background:rgba(255,255,255,.13);backdrop-filter:blur(16px) saturate(140%);border:1px solid var(--border)}
+.cta-band{background:rgba(255,255,255,.12);backdrop-filter:blur(14px) saturate(140%);border:1px solid var(--border)}
+.card,.plan,.quote,.tile-c,.rows,.log,.badge-card,.infolist{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);box-shadow:var(--shadow)}
+.hero h1{font-weight:700;letter-spacing:-.02em}
+.sec-title{font-weight:700;letter-spacing:-.01em}
+.btn{border-radius:999px;font-weight:600}
+.btn-primary{background:var(--accent-grad);color:var(--accent-fg);border:0}
+.btn-secondary{background:rgba(255,255,255,.10);border:1px solid var(--border);color:var(--fg)}
+.chip{border-radius:999px;background:rgba(255,255,255,.14);border:1px solid var(--border);color:var(--fg)}
+.avatar{border-radius:14px;background:rgba(255,255,255,.18);border:1px solid var(--border);color:var(--fg)}
+.tag{background:var(--accent);color:var(--accent-fg);border-radius:999px}
+.tile-c .ph{color:transparent;border-radius:14px;background-image:linear-gradient(135deg,rgba(255,255,255,.45),rgba(255,255,255,.05)),var(--media-bg)}
+.rows article{border-bottom:1px solid rgba(255,255,255,.16)}
+.plan.featured{outline:1px solid var(--accent);outline-offset:4px;background:rgba(255,255,255,.18)}
+.hero-art{border:1px solid var(--border);box-shadow:var(--shadow)}
+
+/* ---- 風格卡專用 ---- */
+body{background:var(--bg);color:var(--fg);font-family:var(--font-body)}
+.cp{max-width:1080px;margin:0 auto;padding:clamp(18px,4vw,40px)}
+.cp-head{border-bottom:2px solid var(--border);padding-bottom:18px;margin-bottom:26px}
+.cp-head h1{margin:.1em 0 .2em;font-family:var(--font-display);font-size:clamp(28px,5vw,46px)}
+.cp-meta{color:var(--muted);font-size:14px}
+.cp-tag{display:inline-block;border:1px solid var(--border);border-radius:999px;padding:3px 10px;font-size:12px;color:var(--muted);margin:0 6px 6px 0}
+.cp h2{font-family:var(--font-display);font-size:clamp(18px,2.4vw,24px);margin:34px 0 6px;padding-bottom:6px;border-bottom:1px solid var(--border)}
+.cp p.desc{color:var(--muted);margin:6px 0 14px;max-width:70ch}
+.sws{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:10px}
+.sw{border:1px solid var(--border);border-radius:10px;padding:9px;background:var(--surface);display:grid;gap:4px}
+.sw i{display:block;height:44px;border-radius:7px;border:1px solid var(--border)}
+.sw b{font-size:13px}.sw code{font:12px var(--font-mono,monospace);color:var(--muted)}
+.sw span{font-size:11px;color:var(--muted)}
+.typo div{border:1px solid var(--border);border-radius:10px;padding:12px 14px;margin-bottom:8px;background:var(--surface)}
+.typo .d{font-family:var(--font-display);font-size:32px;line-height:1.15}
+.typo .b{font-family:var(--font-body);font-size:16px}
+.typo .m{font-family:var(--font-mono,monospace);font-size:14px}
+.typo small{color:var(--muted);font-size:11px;display:block;margin-top:6px}
+.row{display:flex;gap:12px;flex-wrap:wrap;align-items:flex-start}
+.preview{border:1px dashed var(--border);border-radius:12px;overflow:hidden;margin-bottom:12px}
+.preview .lbl{font:11px var(--font-mono,monospace);color:var(--muted);padding:6px 10px;border-bottom:1px dashed var(--border)}
+.preview > div:last-child{transform-origin:top left}
+.cp-foot{margin-top:36px;padding-top:14px;border-top:1px solid var(--border);color:var(--muted);font-size:13px;display:flex;gap:14px;flex-wrap:wrap}
+.cp a{color:var(--accent)}
+@media print{.noprint{display:none}body{background:#fff}.cp{max-width:none;padding:0}.preview{page-break-inside:avoid}}
+</style></head><body>
+<div class="cp">
+  <div class="cp-head">
+    <span class="cp-tag">🫧 立體質感 Tactile Surface</span><span class="cp-tag">15 個 block</span><span class="cp-tag">—</span>
+    <h1> Glassmorphism <span style="font-size:.6em;color:var(--muted)"></span></h1>
+    <p class="desc" style="font-size:17px;color:var(--fg)">半透明磨砂玻璃卡片疊喺鮮艷漸變背景上，靠透明度同 blur 建立層次。</p>
+    <p class="cp-meta">示範品牌 <b>Prism</b> · 主要 CTA「免費試」· 行業：SaaS 儀表板／生產力工具</p>
+  </div>
+
+  <h2>1 · 色票 Palette</h2>
+  <p class="desc">所有元件都只可以用呢組 token（換色 = 改呢幾行）。</p>
+  <div class="sws"><div class="sw"><i style="background:#1B1436"></i><b>--bg</b><code>#1B1436</code><span>底色 Background</span></div><div class="sw"><i style="background:#FFFFFF"></i><b>--fg</b><code>#FFFFFF</code><span>主文字 Text</span></div><div class="sw"><i style="background:#E4E0F2"></i><b>--muted</b><code>#E4E0F2</code><span>次要文字 Muted</span></div><div class="sw"><i style="background:rgba(255,255,255,.12)"></i><b>--surface</b><code>rgba(255,255,255,.12)</code><span>卡片面 Surface</span></div><div class="sw"><i style="background:rgba(255,255,255,.30)"></i><b>--border</b><code>rgba(255,255,255,.30)</code><span>分隔線 Border</span></div><div class="sw"><i style="background:#B79CFF"></i><b>--accent</b><code>#B79CFF</code><span>強調色 Accent</span></div><div class="sw"><i style="background:#191136"></i><b>--accent-fg</b><code>#191136</code><span>強調上文字</span></div><div class="sw"><i style="background:#8BE8C0"></i><b>--ok</b><code>#8BE8C0</code><span>成功 Success</span></div><div class="sw"><i style="background:#FFA893"></i><b>--warn</b><code>#FFA893</code><span>警告 Warning</span></div></div>
+
+  <h2>2 · 字體 Typography</h2>
+  <p class="desc">最多兩個字重；標題 &#x27;Plus Jakarta Sans&#x27;,&#x27;Noto Sans TC&#x27;,sans-serif、正文 &#x27;Plus Jakarta Sans&#x27;,&#x27;Noto Sans TC&#x27;,sans-serif。</p>
+  <div class="typo">
+    <div class="d">一頁講清成件事 <small>Display · &#x27;Plus Jakarta Sans&#x27;,&#x27;Noto Sans TC&#x27;,sans-serif</small></div>
+    <div class="b">正文用 &#x27;Plus Jakarta Sans&#x27;,&#x27;Noto Sans TC&#x27;,sans-serif：16px、行高 1.65，唔會超過 70 個中文字一行。<small>Body</small></div>
+    <div class="m">HK$1,280 · 2026-09-22 · #REF-0042 <small>Mono／數字對齊（ui-monospace,&#x27;SF Mono&#x27;,Menlo,monospace）</small></div>
+  </div>
+
+  <h2>3 · 按鈕 Buttons</h2>
+  <p class="desc">11 個狀態齊：hover 升起、active 壓落、focus 外框（對比 ≥3:1）、disabled 變淡、loading／success。</p>
+  <div class="btn-row"><div class="state"><button class="btn btn-primary " type="button">Primary</button><small>Default</small></div><div class="state"><button class="btn btn-primary is-hover" type="button">Primary</button><small>Hover</small></div><div class="state"><button class="btn btn-primary is-active" type="button">Primary</button><small>Active</small></div><div class="state"><button class="btn btn-primary is-focus" type="button">Primary</button><small>Focus</small></div><div class="state"><button class="btn btn-primary " type="button" disabled>Primary</button><small>Disabled</small></div><div class="state"><button class="btn btn-primary btn-sm" type="button">Small</button><small>btn-sm</small></div><div class="state"><button class="btn btn-primary btn-lg" type="button">Large</button><small>btn-lg</small></div><div class="state"><button class="btn btn-primary btn-secondary" type="button">Secondary</button><small>Secondary</small></div></div>
+
+  <h2>4 · 組件 Components</h2>
+  <div class="row">
+    <article class="card" style="flex:1 1 260px"><span class="ico" aria-hidden="true">◆</span><h3>卡片標題</h3><p>一句講清重點，唔超過兩行。</p></article>
+    <div class="plan" style="flex:1 1 240px"><span class="tag">最受歡迎</span><h3>方案名</h3><div class="price">HK$1,280<small>/月</small></div>
+      <ul><li>包含咩</li><li>包含咩</li></ul><a class="btn btn-primary" href="#">揀呢個</a></div>
+    <blockquote class="quote" style="flex:1 1 260px">客人講嘅一句真話。<span class="avatar">阿</span><b>阿文</b><span>客戶 · 角色</span></blockquote>
+  </div>
+
+  <h2>5 · 真實 section 預覽</h2>
+  <p class="desc">以下係由正式 demo 直接抽落嚟（唔係另畫），所以卡同成品一定一致。</p>
+  <div class="preview"><div class="lbl">hero</div><div><section class="block hero" id="hero"><div class="wrap hero-grid"><div><span class="eyebrow rv">SaaS · 儀表板同生產力工具</span><h1>一個板睇齊全部</h1><p class="lead rv">任務、日曆、文件、指標放埋同一個板，開一個 tab 就做完一輪 review。</p><div class="actions rv"><a class="btn btn-primary" href="#cta">免費試 <span class="i" aria-hidden="true">→</span></a><a class="btn btn-secondary" href="#product">睇方案對比</a></div><p class="note rv">14 日免費 · 唔收信用卡 · 匯入現有任務同文件</p></div><figure class="hero-art rv"><div class="deco" aria-hidden="true" style="inset:0;background:linear-gradient(135deg,rgba(255,255,255,.42),rgba(255,255,255,.06))"></div><figcaption>介面相片位（生成 media/glassmorphism-hero.jpg 自動代入）</figcaption></figure></div></section></div></div><div class="preview"><div class="lbl">pricing</div><div><section class="block" id="pricing"><div class="wrap"><h2 class="sec-title">三個方案</h2><p class="sec-sub">按人頭計，唔收上線費；年付 9 折。</p><div class="pricing"><article class="plan rv"><h3>個人</h3><div class="price">HK$58 <small>/ 月</small></div><p>一個人，3 個板。</p><ul><li>3 個板</li><li>30 日版本紀錄</li><li>2 個整合</li><li>Email 支援 48 小時</li></ul><a class="btn btn-secondary" href="#cta">免費試 14 日</a></article><article class="plan rv featured"><span class="tag">最多人用</span><h3>團隊</h3><div class="price">HK$148 <small>/ 人 / 月</small></div><p>5 人以上，最常揀。</p><ul><li>不限板數</li><li>1 年版本紀錄</li><li>6 個整合 + API</li><li>8 小時回應時間</li></ul><a class="btn btn-primary" href="#cta">免費試 14 日</a></article><article class="plan rv"><h3>企業</h3><div class="price">報價 <small>/ 年</small></div><p>SSO、審計日誌、月結報告。</p><ul><li>不限用戶</li><li>永久版本紀錄</li><li>SSO 同審計日誌</li><li>99.9% 可用率目標</li><li>2 小時回應時間</li></ul><a class="btn btn-secondary" href="#cta">索取報價</a></article></div></div></section></div></div><div class="preview"><div class="lbl">venue</div><div><section class="block" id="venue"><div class="wrap"><h2 class="sec-title">支援同 SLA</h2><p class="sec-sub">回應時間寫明喺合約，唔係口頭承諾。</p><ul class="infolist"><li><b>服務時間</b><span>星期一至五 09:30–18:30（HKT）；緊急事故 24 小時收 email</span></li><li><b>回應時間</b><span>團隊 8 個工作小時；企業 2 個工作小時</span></li><li><b>可用率</b><span>目標 99.9%（示範數字，未經第三方審計）</span></li><li><b>資料匯出</b><span>隨時匯出 CSV／JSON；取消後保留 30 日再刪除</span></li><li><b>事故紀錄</b><span>公開狀態頁列過去 90 日事故（示範內容）</span></li></ul></div></section></div></div>
+
+  <h2>6 · 動效（Pro 版）</h2>
+  <p class="desc">基本版純 CSS；Pro 版有載入幕、入場、scroll reveal、微互動。跟系統設定「減少動態」會自動降級。</p>
+  <p style="font:13px var(--font-mono,monospace);color:var(--muted)"></p>
+
+  <h2>7 · 點用</h2>
+  <ul style="color:var(--muted);font-size:14px">
+    <li>Tokens：<code>themes/glassmorphism.json</code>（含 <code>snippet_css</code> 同 Tailwind <code>theme.extend</code>）</li>
+    <li>Demo：<a href="../glassmorphism.html">基本版</a> · <a href="../glassmorphism-pro.html">Pro 動效版</a> · <a href="../glassmorphism-pro.html?deep=1">🧪 深度效果</a></li>
+    <li>改客人內容：<code>python3 gen_project.py brief.json</code>（自動驗 WCAG 4.5:1）</li>
+  </ul>
+
+  <div class="cp-foot">
+    <button class="btn btn-primary btn-sm noprint" type="button" onclick="window.print()">🖨️ Print／存 PDF</button>
+    <a href="index.html">← 全部風格卡</a>
+    <span>UIUX Style · Glassmorphism · 示範內容全部虛構</span>
+  </div>
+</div>
+</body></html>

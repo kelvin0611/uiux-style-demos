@@ -1,0 +1,54 @@
+{
+ "slug": "pop-art",
+ "name": "Pop Art",
+ "cn": "",
+ "family": "💥 張力反叛 Bold & Raw",
+ "industry": "零售促銷／快閃",
+ "brand": "Pow` / `Pow Store",
+ "cta": "BUY NOW",
+ "sections": "",
+ "css_variables": {
+  "--bg": "#FFFFFF",
+  "--fg": "#000000",
+  "--muted": "#3A3A3A",
+  "--surface": "#FFFFFF",
+  "--border": "#000000",
+  "--accent": "#C4001F",
+  "--accent-fg": "#FFE500",
+  "--radius": "0px",
+  "--radius-sm": "0px",
+  "--shadow": "5px 5px 0 #000000",
+  "--btn-shadow": "5px 5px 0 #000000",
+  "--art-bg": "radial-gradient(#E4002B 3px,transparent 3.4px) 0 0/12px 12px,radial-gradient(#FFE500 3px,transparent 3.4px) 6px 6px/12px 12px,#00B5E2",
+  "--media-bg": "radial-gradient(#E4002B 3px,transparent 3.4px) 0 0/12px 12px,radial-gradient(#FFE500 3px,transparent 3.4px) 6px 6px/12px 12px,#00B5E2",
+  "--cta-bg": "#FFE500",
+  "--input-bg": "#FFFFFF",
+  "--ok": "#0057B8",
+  "--warn": "#E4002B",
+  "--font-display": "Bangers,sans-serif",
+  "--font-body": "'Roboto Condensed','Noto Sans TC',sans-serif",
+  "--focus-ring": "var(--accent)"
+ },
+ "fonts": {
+  "google_url": "https://fonts.googleapis.com/css2?family=Bangers&family=Roboto+Condensed:wght@400;700&display=swap",
+  "display": "Bangers,sans-serif",
+  "body": "'Roboto Condensed','Noto Sans TC',sans-serif",
+  "mono": ""
+ },
+ "radius": {
+  "base": "0px",
+  "sm": "0px"
+ },
+ "shadow": {
+  "card": "5px 5px 0 #000000",
+  "button": "5px 5px 0 #000000"
+ },
+ "focus_ring": "var(--accent)",
+ "motion": {},
+ "demo": {
+  "basic": "Demos/pop-art.html",
+  "pro": "Demos/pop-art-pro.html"
+ },
+ "snippet_css": ":root{\n  --bg: #FFFFFF;\n  --fg: #000000;\n  --muted: #3A3A3A;\n  --surface: #FFFFFF;\n  --border: #000000;\n  --accent: #C4001F;\n  --accent-fg: #FFE500;\n  --radius: 0px;\n  --radius-sm: 0px;\n  --shadow: 5px 5px 0 #000000;\n  --btn-shadow: 5px 5px 0 #000000;\n  --art-bg: radial-gradient(#E4002B 3px,transparent 3.4px) 0 0/12px 12px,radial-gradient(#FFE500 3px,transparent 3.4px) 6px 6px/12px 12px,#00B5E2;\n  --media-bg: radial-gradient(#E4002B 3px,transparent 3.4px) 0 0/12px 12px,radial-gradient(#FFE500 3px,transparent 3.4px) 6px 6px/12px 12px,#00B5E2;\n  --cta-bg: #FFE500;\n  --input-bg: #FFFFFF;\n  --ok: #0057B8;\n  --warn: #E4002B;\n  --font-display: Bangers,sans-serif;\n  --font-body: 'Roboto Condensed','Noto Sans TC',sans-serif;\n  --focus-ring: var(--accent);\n}",
+ "snippet_tailwind": "// tailwind.config.js → theme.extend\n{\n  \"colors\": {\n    \"bg\": \"#FFFFFF\",\n    \"fg\": \"#000000\",\n    \"muted\": \"#3A3A3A\",\n    \"surface\": \"#FFFFFF\",\n    \"border\": \"#000000\",\n    \"accent\": \"#C4001F\",\n    \"accent-fg\": \"#FFE500\",\n    \"ok\": \"#0057B8\",\n    \"warn\": \"#E4002B\",\n    \"focus-ring\": \"var(--accent)\"\n  },\n  \"borderRadius\": {\n    \"DEFAULT\": \"0px\",\n    \"lg\": \"0px\"\n  },\n  \"fontFamily\": {\n    \"display\": [\n      \"Bangers,sans-serif\"\n    ],\n    \"body\": [\n      \"'Roboto Condensed','Noto Sans TC',sans-serif\"\n    ]\n  }\n}"
+}

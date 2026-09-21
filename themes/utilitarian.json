@@ -1,0 +1,55 @@
+{
+ "slug": "utilitarian",
+ "name": "Utilitarian",
+ "cn": "",
+ "family": "📐 秩序理性 Structure & Order",
+ "industry": "工業／製造 b2b",
+ "brand": "Util` / `Util Spec",
+ "cta": "索取報價",
+ "sections": "",
+ "css_variables": {
+  "--bg": "#FFFFFF",
+  "--fg": "#101418",
+  "--muted": "#5A6470",
+  "--surface": "#F7F8FA",
+  "--border": "#D5DAE0",
+  "--accent": "#1A4FD6",
+  "--accent-fg": "#FFFFFF",
+  "--radius": "3px",
+  "--radius-sm": "3px",
+  "--shadow": "none",
+  "--btn-shadow": "none",
+  "--art-bg": "#F0F3F7",
+  "--media-bg": "#F0F3F7",
+  "--cta-bg": "#F7F8FA",
+  "--input-bg": "#FFFFFF",
+  "--ok": "#0E7A46",
+  "--warn": "#B4232C",
+  "--font-display": "Inter,'Noto Sans TC',sans-serif",
+  "--font-body": "Inter,'Noto Sans TC',sans-serif",
+  "--font-mono": "'IBM Plex Mono',ui-monospace,monospace",
+  "--focus-ring": "var(--accent)"
+ },
+ "fonts": {
+  "google_url": "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap",
+  "display": "Inter,'Noto Sans TC',sans-serif",
+  "body": "Inter,'Noto Sans TC',sans-serif",
+  "mono": "'IBM Plex Mono',ui-monospace,monospace"
+ },
+ "radius": {
+  "base": "3px",
+  "sm": "3px"
+ },
+ "shadow": {
+  "card": "none",
+  "button": "none"
+ },
+ "focus_ring": "var(--accent)",
+ "motion": {},
+ "demo": {
+  "basic": "Demos/utilitarian.html",
+  "pro": "Demos/utilitarian-pro.html"
+ },
+ "snippet_css": ":root{\n  --bg: #FFFFFF;\n  --fg: #101418;\n  --muted: #5A6470;\n  --surface: #F7F8FA;\n  --border: #D5DAE0;\n  --accent: #1A4FD6;\n  --accent-fg: #FFFFFF;\n  --radius: 3px;\n  --radius-sm: 3px;\n  --shadow: none;\n  --btn-shadow: none;\n  --art-bg: #F0F3F7;\n  --media-bg: #F0F3F7;\n  --cta-bg: #F7F8FA;\n  --input-bg: #FFFFFF;\n  --ok: #0E7A46;\n  --warn: #B4232C;\n  --font-display: Inter,'Noto Sans TC',sans-serif;\n  --font-body: Inter,'Noto Sans TC',sans-serif;\n  --font-mono: 'IBM Plex Mono',ui-monospace,monospace;\n  --focus-ring: var(--accent);\n}",
+ "snippet_tailwind": "// tailwind.config.js → theme.extend\n{\n  \"colors\": {\n    \"bg\": \"#FFFFFF\",\n    \"fg\": \"#101418\",\n    \"muted\": \"#5A6470\",\n    \"surface\": \"#F7F8FA\",\n    \"border\": \"#D5DAE0\",\n    \"accent\": \"#1A4FD6\",\n    \"accent-fg\": \"#FFFFFF\",\n    \"ok\": \"#0E7A46\",\n    \"warn\": \"#B4232C\",\n    \"focus-ring\": \"var(--accent)\"\n  },\n  \"borderRadius\": {\n    \"DEFAULT\": \"3px\",\n    \"lg\": \"3px\"\n  },\n  \"fontFamily\": {\n    \"display\": [\n      \"Inter,'Noto Sans TC',sans-serif\"\n    ],\n    \"body\": [\n      \"Inter,'Noto Sans TC',sans-serif\"\n    ]\n  }\n}"
+}

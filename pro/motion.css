@@ -1,0 +1,27 @@
+/* ============================================================
+   UIUX Style Demos · Pro 動效版共用 CSS（pro/motion.css）
+   配合 pro/motion.js 使用；行為由每頁 window.PRO 設定。
+   ============================================================ */
+html,body{overflow-x:clip}
+.pro-curtain{position:fixed;inset:0;z-index:95;display:grid;place-items:center;pointer-events:none;animation:proCurFallback 0s 4s forwards}
+@keyframes proCurFallback{to{visibility:hidden}}
+.pro-sticky{position:sticky;top:34px;z-index:40;transition:background .45s,box-shadow .45s,padding .45s}
+.pro-caret{display:inline-block;margin-left:.06em;font-size:.7em;vertical-align:baseline;animation:proBlink 1s steps(1) infinite}
+@keyframes proBlink{50%{opacity:0}}
+.pro-p{position:fixed;left:0;top:0;pointer-events:none;z-index:96;font-size:20px;line-height:1;will-change:transform,opacity}
+.pro-px{width:10px;height:10px;background:currentColor}
+.pro-glowtxt{text-shadow:0 0 8px currentColor,0 0 16px #fff}
+.pro-stroke{-webkit-text-stroke:1.5px #000}
+.pro-glow,.pro-dot,.pro-ring{position:fixed;left:0;top:0;border-radius:50%;pointer-events:none;will-change:transform}
+.pro-dot,.pro-ring{z-index:97}
+.pro-progress{position:fixed;left:0;top:0;height:3px;width:100%;transform-origin:0 50%;transform:scaleX(0);z-index:101}
+.pro-grain{position:fixed;inset:-100px;z-index:90;pointer-events:none;mix-blend-mode:overlay;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");animation:proGrain .8s steps(5) infinite}
+@keyframes proGrain{0%,100%{transform:translate(0,0)}25%{transform:translate(-30px,20px)}50%{transform:translate(20px,-40px)}75%{transform:translate(-40px,-10px)}}
+.pro-spot{position:absolute;inset:0;border-radius:inherit;pointer-events:none;opacity:0;transition:opacity .4s;z-index:1;background:radial-gradient(320px circle at var(--mx,50%) var(--my,50%),var(--spot,rgba(255,255,255,.18)),transparent 55%)}
+.card:hover>.pro-spot,.plan:hover>.pro-spot,.quote:hover>.pro-spot{opacity:1}
+.pro-marquee{overflow:hidden;white-space:nowrap;margin-inline:calc(50% - 50vw)}
+.pro-track{display:inline-flex;will-change:transform}
+.pro-track span{padding-right:1.4em}
+/* Pro 版：卡片／方案要 relative 先食到光斑 */
+.card,.plan,.quote,.badge-card{position:relative}
+@media (prefers-reduced-motion:reduce){.pro-curtain,.pro-grain{display:none!important}}

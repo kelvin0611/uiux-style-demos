@@ -1,0 +1,111 @@
+<!doctype html><html lang="zh-Hant-HK"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Japandi  · 風格卡</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500&family=Noto+Sans+TC:wght@300;400;500&display=swap">
+<link rel="stylesheet" href="../blocks.css">
+<style>:root{--bg:#F7F4EE;--fg:#2E2D2B;--muted:#5A574F;--surface:#EDE6DA;--border:#D9D1C3;--accent:#4A5741;--accent-fg:#FFFFFF;--accent-grad:linear-gradient(90deg,#C8AD8D,#B49673);--radius:6px;--radius-sm:4px;--shadow:0 10px 30px rgba(46,45,43,.08);--btn-shadow:0 1px 0 rgba(46,45,43,.14);--art-bg:linear-gradient(180deg,#EDE6DA,#C8AD8D);--media-bg:linear-gradient(180deg,#EDE6DA,#D9D1C3);--cta-bg:#EDE6DA;--input-bg:#FFFFFF;--ok:#3F6B4E;--warn:#A6483A;--font-display:Jost,'Noto Sans TC',sans-serif;--font-body:Jost,'Noto Sans TC',sans-serif;--font-mono:ui-monospace,'SF Mono',Menlo,monospace;--focus-ring:var(--accent);}
+
+
+body{background:linear-gradient(180deg,rgba(200,173,141,.10),transparent 32%),var(--bg)}
+.card,.plan,.quote,.tile-c,.rows,.log,.mock,.badge-card,.infolist{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);box-shadow:var(--shadow)}
+.hero h1{font-weight:300;letter-spacing:.14em}
+.hero .eyebrow{letter-spacing:.22em;text-transform:uppercase;font-size:12px;color:var(--muted)}
+.sec-title{font-weight:400;letter-spacing:.08em}
+.sec-title::after{content:"";display:block;width:40px;height:1px;background:var(--accent);margin-top:14px;opacity:.5}
+.btn{border-radius:var(--radius-sm);letter-spacing:.06em;font-weight:400}
+.btn-primary{background:var(--accent);color:var(--accent-fg);border:1px solid var(--accent)}
+.btn-secondary{background:transparent;border:1px solid var(--border);color:var(--fg)}
+.chip{border-radius:999px;background:transparent;border:1px solid var(--border);color:var(--muted)}
+.avatar{border-radius:50%;background:var(--surface);border:1px solid var(--border);color:var(--fg)}
+.tag{background:var(--accent-grad);color:#FFFFFF;border-radius:999px;font-size:11px;letter-spacing:.08em}
+.tile-c .ph{color:transparent;border-radius:var(--radius-sm);background-image:linear-gradient(180deg,rgba(255,255,255,.35),transparent 60%),var(--art-bg)}
+.tile-c .ph.wide{aspect-ratio:4/5}
+.rows article{border-bottom:1px solid var(--border)}
+.rows article b{font-weight:500;letter-spacing:.02em}
+.infolist li{border-bottom:1px solid var(--border);padding-block:14px}
+.plan{border-radius:var(--radius)}
+.plan.featured{outline:1px solid var(--accent);outline-offset:4px}
+.hero-art{border:1px solid var(--border);border-radius:var(--radius);overflow:hidden}
+.hero::before{content:"";position:absolute;left:0;right:0;top:0;height:1px;background:linear-gradient(90deg,transparent,var(--border),transparent);pointer-events:none}
+
+/* ---- 風格卡專用 ---- */
+body{background:var(--bg);color:var(--fg);font-family:var(--font-body)}
+.cp{max-width:1080px;margin:0 auto;padding:clamp(18px,4vw,40px)}
+.cp-head{border-bottom:2px solid var(--border);padding-bottom:18px;margin-bottom:26px}
+.cp-head h1{margin:.1em 0 .2em;font-family:var(--font-display);font-size:clamp(28px,5vw,46px)}
+.cp-meta{color:var(--muted);font-size:14px}
+.cp-tag{display:inline-block;border:1px solid var(--border);border-radius:999px;padding:3px 10px;font-size:12px;color:var(--muted);margin:0 6px 6px 0}
+.cp h2{font-family:var(--font-display);font-size:clamp(18px,2.4vw,24px);margin:34px 0 6px;padding-bottom:6px;border-bottom:1px solid var(--border)}
+.cp p.desc{color:var(--muted);margin:6px 0 14px;max-width:70ch}
+.sws{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:10px}
+.sw{border:1px solid var(--border);border-radius:10px;padding:9px;background:var(--surface);display:grid;gap:4px}
+.sw i{display:block;height:44px;border-radius:7px;border:1px solid var(--border)}
+.sw b{font-size:13px}.sw code{font:12px var(--font-mono,monospace);color:var(--muted)}
+.sw span{font-size:11px;color:var(--muted)}
+.typo div{border:1px solid var(--border);border-radius:10px;padding:12px 14px;margin-bottom:8px;background:var(--surface)}
+.typo .d{font-family:var(--font-display);font-size:32px;line-height:1.15}
+.typo .b{font-family:var(--font-body);font-size:16px}
+.typo .m{font-family:var(--font-mono,monospace);font-size:14px}
+.typo small{color:var(--muted);font-size:11px;display:block;margin-top:6px}
+.row{display:flex;gap:12px;flex-wrap:wrap;align-items:flex-start}
+.preview{border:1px dashed var(--border);border-radius:12px;overflow:hidden;margin-bottom:12px}
+.preview .lbl{font:11px var(--font-mono,monospace);color:var(--muted);padding:6px 10px;border-bottom:1px dashed var(--border)}
+.preview > div:last-child{transform-origin:top left}
+.cp-foot{margin-top:36px;padding-top:14px;border-top:1px solid var(--border);color:var(--muted);font-size:13px;display:flex;gap:14px;flex-wrap:wrap}
+.cp a{color:var(--accent)}
+@media print{.noprint{display:none}body{background:#fff}.cp{max-width:none;padding:0}.preview{page-break-inside:avoid}}
+</style></head><body>
+<div class="cp">
+  <div class="cp-head">
+    <span class="cp-tag">🏛️ 古典人文 Heritage &amp; Lifestyle</span><span class="cp-tag">15 個 block</span><span class="cp-tag">—</span>
+    <h1> Japandi <span style="font-size:.6em;color:var(--muted)"></span></h1>
+    <p class="desc" style="font-size:17px;color:var(--fg)">日本極簡 × 北歐實用 —— 淺木、米灰、天然材質、乾淨 sans，安靜、有意圖、耐看。</p>
+    <p class="cp-meta">示範品牌 <b>Hinoki</b> · 主要 CTA「預約睇展廳」· 行業：家居傢俬</p>
+  </div>
+
+  <h2>1 · 色票 Palette</h2>
+  <p class="desc">所有元件都只可以用呢組 token（換色 = 改呢幾行）。</p>
+  <div class="sws"><div class="sw"><i style="background:#F7F4EE"></i><b>--bg</b><code>#F7F4EE</code><span>底色 Background</span></div><div class="sw"><i style="background:#2E2D2B"></i><b>--fg</b><code>#2E2D2B</code><span>主文字 Text</span></div><div class="sw"><i style="background:#5A574F"></i><b>--muted</b><code>#5A574F</code><span>次要文字 Muted</span></div><div class="sw"><i style="background:#EDE6DA"></i><b>--surface</b><code>#EDE6DA</code><span>卡片面 Surface</span></div><div class="sw"><i style="background:#D9D1C3"></i><b>--border</b><code>#D9D1C3</code><span>分隔線 Border</span></div><div class="sw"><i style="background:#4A5741"></i><b>--accent</b><code>#4A5741</code><span>強調色 Accent</span></div><div class="sw"><i style="background:#FFFFFF"></i><b>--accent-fg</b><code>#FFFFFF</code><span>強調上文字</span></div><div class="sw"><i style="background:#3F6B4E"></i><b>--ok</b><code>#3F6B4E</code><span>成功 Success</span></div><div class="sw"><i style="background:#A6483A"></i><b>--warn</b><code>#A6483A</code><span>警告 Warning</span></div></div>
+
+  <h2>2 · 字體 Typography</h2>
+  <p class="desc">最多兩個字重；標題 Jost,&#x27;Noto Sans TC&#x27;,sans-serif、正文 Jost,&#x27;Noto Sans TC&#x27;,sans-serif。</p>
+  <div class="typo">
+    <div class="d">一頁講清成件事 <small>Display · Jost,&#x27;Noto Sans TC&#x27;,sans-serif</small></div>
+    <div class="b">正文用 Jost,&#x27;Noto Sans TC&#x27;,sans-serif：16px、行高 1.65，唔會超過 70 個中文字一行。<small>Body</small></div>
+    <div class="m">HK$1,280 · 2026-09-22 · #REF-0042 <small>Mono／數字對齊（ui-monospace,&#x27;SF Mono&#x27;,Menlo,monospace）</small></div>
+  </div>
+
+  <h2>3 · 按鈕 Buttons</h2>
+  <p class="desc">11 個狀態齊：hover 升起、active 壓落、focus 外框（對比 ≥3:1）、disabled 變淡、loading／success。</p>
+  <div class="btn-row"><div class="state"><button class="btn btn-primary " type="button">Primary</button><small>Default</small></div><div class="state"><button class="btn btn-primary is-hover" type="button">Primary</button><small>Hover</small></div><div class="state"><button class="btn btn-primary is-active" type="button">Primary</button><small>Active</small></div><div class="state"><button class="btn btn-primary is-focus" type="button">Primary</button><small>Focus</small></div><div class="state"><button class="btn btn-primary " type="button" disabled>Primary</button><small>Disabled</small></div><div class="state"><button class="btn btn-primary btn-sm" type="button">Small</button><small>btn-sm</small></div><div class="state"><button class="btn btn-primary btn-lg" type="button">Large</button><small>btn-lg</small></div><div class="state"><button class="btn btn-primary btn-secondary" type="button">Secondary</button><small>Secondary</small></div></div>
+
+  <h2>4 · 組件 Components</h2>
+  <div class="row">
+    <article class="card" style="flex:1 1 260px"><span class="ico" aria-hidden="true">◆</span><h3>卡片標題</h3><p>一句講清重點，唔超過兩行。</p></article>
+    <div class="plan" style="flex:1 1 240px"><span class="tag">最受歡迎</span><h3>方案名</h3><div class="price">HK$1,280<small>/月</small></div>
+      <ul><li>包含咩</li><li>包含咩</li></ul><a class="btn btn-primary" href="#">揀呢個</a></div>
+    <blockquote class="quote" style="flex:1 1 260px">客人講嘅一句真話。<span class="avatar">阿</span><b>阿文</b><span>客戶 · 角色</span></blockquote>
+  </div>
+
+  <h2>5 · 真實 section 預覽</h2>
+  <p class="desc">以下係由正式 demo 直接抽落嚟（唔係另畫），所以卡同成品一定一致。</p>
+  <div class="preview"><div class="lbl">hero</div><div><section class="block hero" id="hero"><div class="wrap hero-grid"><div><span class="eyebrow rv">香港 · 家居傢俬 · 觀塘展廳</span><h1>少而好</h1><p class="lead rv">淺木、米灰、亞麻同陶；一件一件揀，唔使一次過換全屋。</p><div class="actions rv"><a class="btn btn-primary" href="#cta">預約睇展廳 <span class="i" aria-hidden="true">→</span></a><a class="btn btn-secondary" href="#product">睇價目</a></div><p class="note rv">展廳喺觀塘 · 逢星期二休息 · 現場有實物尺寸卡同木樣</p></div><figure class="hero-art rv"><div class="deco" aria-hidden="true" style="inset:0;background:linear-gradient(180deg,#EDE6DA,#C8AD8D)"></div><figcaption>展廳相片位（生成 media/japandi-hero.jpg 自動代入）</figcaption></figure></div></section></div></div><div class="preview"><div class="lbl">pricing</div><div><section class="block" id="pricing"><div class="wrap"><h2 class="sec-title">三個買法</h2><p class="sec-sub">可以先買一件試，唔使一次過換全屋。</p><div class="pricing"><article class="plan rv"><h3>單件</h3><div class="price">HK$1,280 <small>/ 件起</small></div><p>餐椅、邊几、燈。</p><ul><li>現貨 7 個工作日內送</li><li>自己裝（有圖示）</li><li>結構 3 年保養</li></ul><a class="btn btn-secondary" href="#cta">預約睇展廳</a></article><article class="plan rv featured"><span class="tag">最多人揀</span><h3>房廳組合</h3><div class="price">HK$18,800 <small>/ 套</small></div><p>梳化 + 餐枱 + 4 椅。</p><ul><li>免費送貨同安裝</li><li>布色木色任揀</li><li>首 2 年免費補油</li><li>舊傢俬代搬走（1 件）</li></ul><a class="btn btn-primary" href="#cta">預約睇展廳</a></article><article class="plan rv"><h3>訂製</h3><div class="price">報價 <small>/ 套</small></div><p>尺寸、木種、布色全訂。</p><ul><li>上門量尺</li><li>4–6 星期交貨</li><li>設計圖確認後開工</li><li>結構 5 年保養</li></ul><a class="btn btn-secondary" href="#cta">預約量尺</a></article></div></div></section></div></div><div class="preview"><div class="lbl">venue</div><div><section class="block" id="venue"><div class="wrap"><h2 class="sec-title">配送同安裝</h2><p class="sec-sub">費用同時間寫明，送貨前一日會電話確認。</p><ul class="infolist"><li><b>送貨時間</b><span>現貨 7 個工作日內；訂製 4–6 星期，送貨前一日電話確認</span></li><li><b>運費</b><span>九龍同新界免費；港島加 HK$80；離島另議</span></li><li><b>安裝費</b><span>滿 HK$8,000 免費；未滿收 HK$300（自己裝可以免）</span></li><li><b>上樓梯</b><span>冇升降機每層 HK$120（3 樓以上）；大件要先量走廊</span></li><li><b>舊傢俬</b><span>可以代為搬走（每件 HK$200），落單時講明</span></li><li><b>保養</b><span>結構 3 年、布套 1 年；人為損壞另計</span></li></ul></div></section></div></div>
+
+  <h2>6 · 動效（Pro 版）</h2>
+  <p class="desc">基本版純 CSS；Pro 版有載入幕、入場、scroll reveal、微互動。跟系統設定「減少動態」會自動降級。</p>
+  <p style="font:13px var(--font-mono,monospace);color:var(--muted)"></p>
+
+  <h2>7 · 點用</h2>
+  <ul style="color:var(--muted);font-size:14px">
+    <li>Tokens：<code>themes/japandi.json</code>（含 <code>snippet_css</code> 同 Tailwind <code>theme.extend</code>）</li>
+    <li>Demo：<a href="../japandi.html">基本版</a> · <a href="../japandi-pro.html">Pro 動效版</a></li>
+    <li>改客人內容：<code>python3 gen_project.py brief.json</code>（自動驗 WCAG 4.5:1）</li>
+  </ul>
+
+  <div class="cp-foot">
+    <button class="btn btn-primary btn-sm noprint" type="button" onclick="window.print()">🖨️ Print／存 PDF</button>
+    <a href="index.html">← 全部風格卡</a>
+    <span>UIUX Style · Japandi · 示範內容全部虛構</span>
+  </div>
+</div>
+</body></html>

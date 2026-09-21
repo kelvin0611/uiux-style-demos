@@ -1,0 +1,101 @@
+<!doctype html><html lang="zh-Hant-HK"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Memphis  · 風格卡</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bungee&family=Poppins:wght@400;600;800&display=swap">
+<link rel="stylesheet" href="../blocks.css">
+<style>:root{--bg:#FFFFFF;--fg:#111111;--muted:#4B4B4B;--surface:#FFFFFF;--border:#111111;--accent:#FF6FB5;--accent-fg:#111111;--radius:18px;--radius-sm:10px;--shadow:6px 6px 0 #111111;--btn-shadow:6px 6px 0 #111111;--art-bg:conic-gradient(from 45deg,#FF6FB5,#FFD23F,#3BCEAC,#3A86FF,#EE4266,#FF6FB5);--media-bg:conic-gradient(from 45deg,#FF6FB5,#FFD23F,#3BCEAC,#3A86FF,#FF6FB5);--cta-bg:#FFD23F;--input-bg:#FFFFFF;--ok:#3BCEAC;--warn:#EE4266;--font-display:Bungee,Poppins,sans-serif;--font-body:Poppins,'Noto Sans TC',sans-serif;--focus-ring:#FF1D8B;}
+
+
+.card,.plan,.quote,.tile-c,.rows,.mock,.roi,.badge-card{border:3px solid #111;box-shadow:6px 6px 0 #111}
+.btn{border:3px solid #111}
+.chip{border:3px solid #111;box-shadow:3px 3px 0 #111;border-radius:0}
+.hero h1{color:#111;text-shadow:5px 5px 0 #FF6FB5,10px 10px 0 #3BCEAC}
+.eyebrow{background:#3A86FF;color:#fff;padding:6px 14px;border:3px solid #111;transform:rotate(-2deg);box-shadow:4px 4px 0 #111}
+.sec-title{letter-spacing:.01em}
+.avatar{border:3px solid #111;background:#3BCEAC;color:#111}
+.tile-c .ph{border:3px solid #111;border-radius:10px}
+.tag{transform:rotate(-4deg);border:3px solid #111}
+.plan.featured{transform:translateY(-6px) rotate(-1deg)}
+.rows article:nth-child(odd){background:rgba(255,210,63,.22)}
+
+/* ---- 風格卡專用 ---- */
+body{background:var(--bg);color:var(--fg);font-family:var(--font-body)}
+.cp{max-width:1080px;margin:0 auto;padding:clamp(18px,4vw,40px)}
+.cp-head{border-bottom:2px solid var(--border);padding-bottom:18px;margin-bottom:26px}
+.cp-head h1{margin:.1em 0 .2em;font-family:var(--font-display);font-size:clamp(28px,5vw,46px)}
+.cp-meta{color:var(--muted);font-size:14px}
+.cp-tag{display:inline-block;border:1px solid var(--border);border-radius:999px;padding:3px 10px;font-size:12px;color:var(--muted);margin:0 6px 6px 0}
+.cp h2{font-family:var(--font-display);font-size:clamp(18px,2.4vw,24px);margin:34px 0 6px;padding-bottom:6px;border-bottom:1px solid var(--border)}
+.cp p.desc{color:var(--muted);margin:6px 0 14px;max-width:70ch}
+.sws{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:10px}
+.sw{border:1px solid var(--border);border-radius:10px;padding:9px;background:var(--surface);display:grid;gap:4px}
+.sw i{display:block;height:44px;border-radius:7px;border:1px solid var(--border)}
+.sw b{font-size:13px}.sw code{font:12px var(--font-mono,monospace);color:var(--muted)}
+.sw span{font-size:11px;color:var(--muted)}
+.typo div{border:1px solid var(--border);border-radius:10px;padding:12px 14px;margin-bottom:8px;background:var(--surface)}
+.typo .d{font-family:var(--font-display);font-size:32px;line-height:1.15}
+.typo .b{font-family:var(--font-body);font-size:16px}
+.typo .m{font-family:var(--font-mono,monospace);font-size:14px}
+.typo small{color:var(--muted);font-size:11px;display:block;margin-top:6px}
+.row{display:flex;gap:12px;flex-wrap:wrap;align-items:flex-start}
+.preview{border:1px dashed var(--border);border-radius:12px;overflow:hidden;margin-bottom:12px}
+.preview .lbl{font:11px var(--font-mono,monospace);color:var(--muted);padding:6px 10px;border-bottom:1px dashed var(--border)}
+.preview > div:last-child{transform-origin:top left}
+.cp-foot{margin-top:36px;padding-top:14px;border-top:1px solid var(--border);color:var(--muted);font-size:13px;display:flex;gap:14px;flex-wrap:wrap}
+.cp a{color:var(--accent)}
+@media print{.noprint{display:none}body{background:#fff}.cp{max-width:none;padding:0}.preview{page-break-inside:avoid}}
+</style></head><body>
+<div class="cp">
+  <div class="cp-head">
+    <span class="cp-tag">💥 張力反叛 Bold &amp; Raw</span><span class="cp-tag">15 個 block</span><span class="cp-tag">—</span>
+    <h1> Memphis <span style="font-size:.6em;color:var(--muted)"></span></h1>
+    <p class="desc" style="font-size:17px;color:var(--fg)">80s 嘅大聲派對 —— 波浪線、三角、圓點、撞色、卡通幾何，故意反叛「好品味」。</p>
+    <p class="cp-meta">示範品牌 <b>Milano` / `Milano Fest</b> · 主要 CTA「買飛」· 行業：活動／音樂節 · 次選 潮流服飾、創意 agency</p>
+  </div>
+
+  <h2>1 · 色票 Palette</h2>
+  <p class="desc">所有元件都只可以用呢組 token（換色 = 改呢幾行）。</p>
+  <div class="sws"><div class="sw"><i style="background:#FFFFFF"></i><b>--bg</b><code>#FFFFFF</code><span>底色 Background</span></div><div class="sw"><i style="background:#111111"></i><b>--fg</b><code>#111111</code><span>主文字 Text</span></div><div class="sw"><i style="background:#4B4B4B"></i><b>--muted</b><code>#4B4B4B</code><span>次要文字 Muted</span></div><div class="sw"><i style="background:#FFFFFF"></i><b>--surface</b><code>#FFFFFF</code><span>卡片面 Surface</span></div><div class="sw"><i style="background:#111111"></i><b>--border</b><code>#111111</code><span>分隔線 Border</span></div><div class="sw"><i style="background:#FF6FB5"></i><b>--accent</b><code>#FF6FB5</code><span>強調色 Accent</span></div><div class="sw"><i style="background:#111111"></i><b>--accent-fg</b><code>#111111</code><span>強調上文字</span></div><div class="sw"><i style="background:#3BCEAC"></i><b>--ok</b><code>#3BCEAC</code><span>成功 Success</span></div><div class="sw"><i style="background:#EE4266"></i><b>--warn</b><code>#EE4266</code><span>警告 Warning</span></div></div>
+
+  <h2>2 · 字體 Typography</h2>
+  <p class="desc">最多兩個字重；標題 Bungee,Poppins,sans-serif、正文 Poppins,&#x27;Noto Sans TC&#x27;,sans-serif。</p>
+  <div class="typo">
+    <div class="d">一頁講清成件事 <small>Display · Bungee,Poppins,sans-serif</small></div>
+    <div class="b">正文用 Poppins,&#x27;Noto Sans TC&#x27;,sans-serif：16px、行高 1.65，唔會超過 70 個中文字一行。<small>Body</small></div>
+    <div class="m">HK$1,280 · 2026-09-22 · #REF-0042 <small>Mono／數字對齊（ui-monospace）</small></div>
+  </div>
+
+  <h2>3 · 按鈕 Buttons</h2>
+  <p class="desc">11 個狀態齊：hover 升起、active 壓落、focus 外框（對比 ≥3:1）、disabled 變淡、loading／success。</p>
+  <div class="btn-row"><div class="state"><button class="btn btn-primary " type="button">Primary</button><small>Default</small></div><div class="state"><button class="btn btn-primary is-hover" type="button">Primary</button><small>Hover</small></div><div class="state"><button class="btn btn-primary is-active" type="button">Primary</button><small>Active</small></div><div class="state"><button class="btn btn-primary is-focus" type="button">Primary</button><small>Focus</small></div><div class="state"><button class="btn btn-primary " type="button" disabled>Primary</button><small>Disabled</small></div><div class="state"><button class="btn btn-primary btn-sm" type="button">Small</button><small>btn-sm</small></div><div class="state"><button class="btn btn-primary btn-lg" type="button">Large</button><small>btn-lg</small></div><div class="state"><button class="btn btn-primary btn-secondary" type="button">Secondary</button><small>Secondary</small></div></div>
+
+  <h2>4 · 組件 Components</h2>
+  <div class="row">
+    <article class="card" style="flex:1 1 260px"><span class="ico" aria-hidden="true">◆</span><h3>卡片標題</h3><p>一句講清重點，唔超過兩行。</p></article>
+    <div class="plan" style="flex:1 1 240px"><span class="tag">最受歡迎</span><h3>方案名</h3><div class="price">HK$1,280<small>/月</small></div>
+      <ul><li>包含咩</li><li>包含咩</li></ul><a class="btn btn-primary" href="#">揀呢個</a></div>
+    <blockquote class="quote" style="flex:1 1 260px">客人講嘅一句真話。<span class="avatar">阿</span><b>阿文</b><span>客戶 · 角色</span></blockquote>
+  </div>
+
+  <h2>5 · 真實 section 預覽</h2>
+  <p class="desc">以下係由正式 demo 直接抽落嚟（唔係另畫），所以卡同成品一定一致。</p>
+  <div class="preview"><div class="lbl">hero</div><div><section class="block hero" id="hero"><div class="wrap hero-grid"><div><span class="eyebrow rv">2026 · 西九 · 兩日</span><h1>兩日，18 隊，聲到你耳鳴</h1><p class="lead rv">Milano Fest 2026 —— 本地樂隊、電子、嘻哈同一個週末上台，兩個舞台輪流開聲。</p><div class="actions rv"><a class="btn btn-primary" href="#cta">買飛 <span class="i" aria-hidden="true">→</span></a><a class="btn btn-secondary" href="#product">睇陣容</a></div><p class="note rv">早鳥至 3 月 7 日 · 學生半價 · 兩日票先有早鳥</p></div><figure class="hero-art rv"><div class="deco" aria-hidden="true" style="inset:0;background:conic-gradient(from 45deg,#FF6FB5,#FFD23F,#3BCEAC,#3A86FF,#EE4266,#FF6FB5)"></div><figcaption>主視覺圖位（生成 media/memphis-hero.jpg 自動代入）</figcaption></figure></div></section></div></div><div class="preview"><div class="lbl">pricing</div><div><section class="block" id="pricing"><div class="wrap"><h2 class="sec-title">場內加購</h2><p class="sec-sub">買飛之後可以加購，入場前都可以加。</p><div class="pricing"><article class="plan rv"><h3>飲品券</h3><div class="price">HK$120 <small>/ 5 杯</small></div><p>場內任何飲品檔通用。</p><ul><li>5 杯（任何飲品）</li><li>唔收手續費</li><li>可以轉贈朋友</li></ul><a class="btn btn-secondary" href="#cta">加購</a></article><article class="plan rv featured"><span class="tag">最抵</span><h3>週邊套裝</h3><div class="price">HK$420 <small>/ 一套</small></div><p>Tee + 毛巾 + 貼紙。</p><ul><li>限量 Tee（S–XL）</li><li>紀念毛巾</li><li>貼紙組</li><li>現場自取或順豐寄</li></ul><a class="btn btn-primary" href="#cta">加購</a></article><article class="plan rv"><h3>VIP 體驗</h3><div class="price">HK$980 <small>/ 一位</small></div><p>前台專區同後台導覽。</p><ul><li>前台專區位置</li><li>後台導覽 30 分鐘</li><li>免費飲品 3 杯</li><li>獨立入口同洗手間</li></ul><a class="btn btn-secondary" href="#cta">加購</a></article></div></div></section></div></div><div class="preview"><div class="lbl">venue</div><div><section class="block" id="venue"><div class="wrap"><h2 class="sec-title">場地同交通</h2><p class="sec-sub">戶外草地，可以帶地墊；唔准帶玻璃樽同專業相機。</p><ul class="infolist"><li><b>地點</b><span>西九文化區藝術公園（草地場）</span></li><li><b>港鐵</b><span>九龍站 E4 出口，行 8 分鐘；柯士甸站 D2 出口，行 12 分鐘</span></li><li><b>巴士</b><span>8、11、215X、281A 藝術公園站落車</span></li><li><b>尾班車</b><span>港鐵 00:45；散場有加班巴士去旺角同觀塘</span></li><li><b>入場</b><span>14:00 開閘 · 最後入場 21:00 · 散場 23:30</span></li></ul></div></section></div></div>
+
+  <h2>6 · 動效（Pro 版）</h2>
+  <p class="desc">基本版純 CSS；Pro 版有載入幕、入場、scroll reveal、微互動。跟系統設定「減少動態」會自動降級。</p>
+  <p style="font:13px var(--font-mono,monospace);color:var(--muted)"></p>
+
+  <h2>7 · 點用</h2>
+  <ul style="color:var(--muted);font-size:14px">
+    <li>Tokens：<code>themes/memphis.json</code>（含 <code>snippet_css</code> 同 Tailwind <code>theme.extend</code>）</li>
+    <li>Demo：<a href="../memphis.html">基本版</a> · <a href="../memphis-pro.html">Pro 動效版</a></li>
+    <li>改客人內容：<code>python3 gen_project.py brief.json</code>（自動驗 WCAG 4.5:1）</li>
+  </ul>
+
+  <div class="cp-foot">
+    <button class="btn btn-primary btn-sm noprint" type="button" onclick="window.print()">🖨️ Print／存 PDF</button>
+    <a href="index.html">← 全部風格卡</a>
+    <span>UIUX Style · Memphis · 示範內容全部虛構</span>
+  </div>
+</div>
+</body></html>

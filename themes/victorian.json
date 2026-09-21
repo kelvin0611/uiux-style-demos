@@ -1,0 +1,55 @@
+{
+ "slug": "victorian",
+ "name": "Victorian",
+ "cn": "",
+ "family": "🏛️ 古典人文 Heritage & Lifestyle",
+ "industry": "茶葉品牌",
+ "brand": "Thornfield",
+ "cta": "訂購茶葉",
+ "sections": "products`：茶款 · `rows`：價目 · `venue`：沖泡同配送",
+ "css_variables": {
+  "--bg": "#F4EBD9",
+  "--fg": "#2A1E17",
+  "--muted": "#5A4632",
+  "--surface": "#FBF5E8",
+  "--border": "#C9A227",
+  "--accent": "#6D1A36",
+  "--accent-fg": "#FBF5E8",
+  "--radius": "2px",
+  "--radius-sm": "2px",
+  "--shadow": "0 8px 22px rgba(42,30,23,.16)",
+  "--btn-shadow": "0 3px 0 rgba(109,26,54,.42)",
+  "--art-bg": "radial-gradient(circle at 50% 40%,#8A2A4B,#2A1E17)",
+  "--media-bg": "linear-gradient(180deg,#FBF5E8,#E7D9BD)",
+  "--cta-bg": "#EFE3C8",
+  "--input-bg": "#FBF5E8",
+  "--ok": "#1F3B2D",
+  "--warn": "#8A2A4B",
+  "--font-display": "'Cormorant Garamond','Noto Serif TC',serif",
+  "--font-body": "'EB Garamond','Noto Serif TC',serif",
+  "--font-mono": "'EB Garamond',ui-monospace,serif",
+  "--focus-ring": "var(--accent)"
+ },
+ "fonts": {
+  "google_url": "https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600&family=EB+Garamond:ital,wght@0,400;0,600;1,400&family=Noto+Serif+TC:wght@400;600&display=swap",
+  "display": "'Cormorant Garamond','Noto Serif TC',serif",
+  "body": "'EB Garamond','Noto Serif TC',serif",
+  "mono": "'EB Garamond',ui-monospace,serif"
+ },
+ "radius": {
+  "base": "2px",
+  "sm": "2px"
+ },
+ "shadow": {
+  "card": "0 8px 22px rgba(42,30,23,.16)",
+  "button": "0 3px 0 rgba(109,26,54,.42)"
+ },
+ "focus_ring": "var(--accent)",
+ "motion": {},
+ "demo": {
+  "basic": "Demos/victorian.html",
+  "pro": "Demos/victorian-pro.html"
+ },
+ "snippet_css": ":root{\n  --bg: #F4EBD9;\n  --fg: #2A1E17;\n  --muted: #5A4632;\n  --surface: #FBF5E8;\n  --border: #C9A227;\n  --accent: #6D1A36;\n  --accent-fg: #FBF5E8;\n  --radius: 2px;\n  --radius-sm: 2px;\n  --shadow: 0 8px 22px rgba(42,30,23,.16);\n  --btn-shadow: 0 3px 0 rgba(109,26,54,.42);\n  --art-bg: radial-gradient(circle at 50% 40%,#8A2A4B,#2A1E17);\n  --media-bg: linear-gradient(180deg,#FBF5E8,#E7D9BD);\n  --cta-bg: #EFE3C8;\n  --input-bg: #FBF5E8;\n  --ok: #1F3B2D;\n  --warn: #8A2A4B;\n  --font-display: 'Cormorant Garamond','Noto Serif TC',serif;\n  --font-body: 'EB Garamond','Noto Serif TC',serif;\n  --font-mono: 'EB Garamond',ui-monospace,serif;\n  --focus-ring: var(--accent);\n}",
+ "snippet_tailwind": "// tailwind.config.js → theme.extend\n{\n  \"colors\": {\n    \"bg\": \"#F4EBD9\",\n    \"fg\": \"#2A1E17\",\n    \"muted\": \"#5A4632\",\n    \"surface\": \"#FBF5E8\",\n    \"border\": \"#C9A227\",\n    \"accent\": \"#6D1A36\",\n    \"accent-fg\": \"#FBF5E8\",\n    \"ok\": \"#1F3B2D\",\n    \"warn\": \"#8A2A4B\",\n    \"focus-ring\": \"var(--accent)\"\n  },\n  \"borderRadius\": {\n    \"DEFAULT\": \"2px\",\n    \"lg\": \"2px\"\n  },\n  \"fontFamily\": {\n    \"display\": [\n      \"'Cormorant Garamond','Noto Serif TC',serif\"\n    ],\n    \"body\": [\n      \"'EB Garamond','Noto Serif TC',serif\"\n    ]\n  }\n}"
+}

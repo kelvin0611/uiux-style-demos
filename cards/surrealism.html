@@ -1,0 +1,105 @@
+<!doctype html><html lang="zh-Hant-HK"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Surrealism  · 風格卡</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,400;1,400;1,500&family=Inter:wght@400;500&display=swap">
+<link rel="stylesheet" href="../blocks.css">
+<style>:root{--bg:#BEDDF1;--fg:#1C1B29;--muted:#3D4A63;--surface:#FBF7EF;--border:#C6D8E6;--accent:#2F5C93;--accent-fg:#FFFFFF;--radius:20px;--radius-sm:12px;--shadow:0 18px 40px rgba(47,92,147,.18);--btn-shadow:0 6px 0 rgba(47,92,147,.30);--art-bg:radial-gradient(circle at 35% 35%,#FFFFFF,#FAF3E0 40%,#E8C39E);--media-bg:linear-gradient(#87CEEB,#BFE3F2 40%,#F7C5CC);--cta-bg:#EAF3FA;--input-bg:#FFFFFF;--ok:#2E7D5B;--warn:#B5503C;--font-display:'Cormorant','Noto Serif TC',serif;--font-body:'Inter','Noto Sans TC',sans-serif;--font-mono:'Cormorant',ui-monospace,monospace;--focus-ring:var(--accent);}
+
+
+body{background-image:linear-gradient(#87CEEB 0%,#BFE3F2 35%,#F7C5CC 70%,#E8C39E 100%);background-attachment:fixed}
+.card,.tile-c,.quote,.plan,.rows,.log,.mock,.badge-card{background:var(--surface);border:1px solid rgba(255,255,255,.85);box-shadow:var(--shadow)}
+.hero{overflow:hidden}
+.hero h1,.sec-title{font-family:'Cormorant','Noto Serif TC',serif;font-style:italic;font-weight:500;letter-spacing:.01em}
+.hero h1{font-size:clamp(44px,8vw,96px);line-height:.98}
+.btn{border-radius:999px;border:1px solid var(--border)}
+.btn-primary{background:var(--accent);color:var(--accent-fg);border-color:var(--accent)}
+.btn-secondary{background:rgba(255,255,255,.78);color:var(--fg);border-color:rgba(28,27,41,.22)}
+.chip{border-radius:999px;background:rgba(255,255,255,.8);color:var(--fg);border:1px solid rgba(28,27,41,.18)}
+.avatar{border-radius:50%;background:radial-gradient(circle at 35% 35%,#FFFFFF,#FAF3E0 40%,#E8C39E);color:var(--fg)}
+.tag{border-radius:999px;background:rgba(255,255,255,.85);color:var(--accent);border:1px solid var(--accent)}
+.tile-c .ph{background-image:radial-gradient(circle at 35% 35%,#FFFFFF,#FAF3E0 40%,#E8C39E);color:#2F5C93;font-size:42px}
+.hero::before{content:"";position:absolute;left:-30px;top:-20px;width:180px;aspect-ratio:1;border-radius:50%;background:radial-gradient(circle at 40% 38%,#FFFFFF,rgba(255,255,255,.25) 60%,transparent 70%);pointer-events:none}
+.hero::after{content:"🥚";position:absolute;right:7%;bottom:6%;font-size:76px;rotate:-12deg;opacity:.6;pointer-events:none}
+.stat .num{font-family:'Cormorant',serif;font-style:italic;color:var(--accent)}
+
+/* ---- 風格卡專用 ---- */
+body{background:var(--bg);color:var(--fg);font-family:var(--font-body)}
+.cp{max-width:1080px;margin:0 auto;padding:clamp(18px,4vw,40px)}
+.cp-head{border-bottom:2px solid var(--border);padding-bottom:18px;margin-bottom:26px}
+.cp-head h1{margin:.1em 0 .2em;font-family:var(--font-display);font-size:clamp(28px,5vw,46px)}
+.cp-meta{color:var(--muted);font-size:14px}
+.cp-tag{display:inline-block;border:1px solid var(--border);border-radius:999px;padding:3px 10px;font-size:12px;color:var(--muted);margin:0 6px 6px 0}
+.cp h2{font-family:var(--font-display);font-size:clamp(18px,2.4vw,24px);margin:34px 0 6px;padding-bottom:6px;border-bottom:1px solid var(--border)}
+.cp p.desc{color:var(--muted);margin:6px 0 14px;max-width:70ch}
+.sws{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:10px}
+.sw{border:1px solid var(--border);border-radius:10px;padding:9px;background:var(--surface);display:grid;gap:4px}
+.sw i{display:block;height:44px;border-radius:7px;border:1px solid var(--border)}
+.sw b{font-size:13px}.sw code{font:12px var(--font-mono,monospace);color:var(--muted)}
+.sw span{font-size:11px;color:var(--muted)}
+.typo div{border:1px solid var(--border);border-radius:10px;padding:12px 14px;margin-bottom:8px;background:var(--surface)}
+.typo .d{font-family:var(--font-display);font-size:32px;line-height:1.15}
+.typo .b{font-family:var(--font-body);font-size:16px}
+.typo .m{font-family:var(--font-mono,monospace);font-size:14px}
+.typo small{color:var(--muted);font-size:11px;display:block;margin-top:6px}
+.row{display:flex;gap:12px;flex-wrap:wrap;align-items:flex-start}
+.preview{border:1px dashed var(--border);border-radius:12px;overflow:hidden;margin-bottom:12px}
+.preview .lbl{font:11px var(--font-mono,monospace);color:var(--muted);padding:6px 10px;border-bottom:1px dashed var(--border)}
+.preview > div:last-child{transform-origin:top left}
+.cp-foot{margin-top:36px;padding-top:14px;border-top:1px solid var(--border);color:var(--muted);font-size:13px;display:flex;gap:14px;flex-wrap:wrap}
+.cp a{color:var(--accent)}
+@media print{.noprint{display:none}body{background:#fff}.cp{max-width:none;padding:0}.preview{page-break-inside:avoid}}
+</style></head><body>
+<div class="cp">
+  <div class="cp-head">
+    <span class="cp-tag">✏️ 藝術手作 Artistic &amp; Handmade</span><span class="cp-tag">15 個 block</span><span class="cp-tag">—</span>
+    <h1> Surrealism <span style="font-size:.6em;color:var(--muted)"></span></h1>
+    <p class="desc" style="font-size:17px;color:var(--fg)">將熟悉嘅物件放喺不可能嘅情境 —— 懸浮、比例錯亂、夢境拼貼、無限樓梯，令用戶「停一停、諗一諗」。</p>
+    <p class="cp-meta">示範品牌 <b>Reverie</b> · 主要 CTA「買飛」· 行業：沉浸式藝術展</p>
+  </div>
+
+  <h2>1 · 色票 Palette</h2>
+  <p class="desc">所有元件都只可以用呢組 token（換色 = 改呢幾行）。</p>
+  <div class="sws"><div class="sw"><i style="background:#BEDDF1"></i><b>--bg</b><code>#BEDDF1</code><span>底色 Background</span></div><div class="sw"><i style="background:#1C1B29"></i><b>--fg</b><code>#1C1B29</code><span>主文字 Text</span></div><div class="sw"><i style="background:#3D4A63"></i><b>--muted</b><code>#3D4A63</code><span>次要文字 Muted</span></div><div class="sw"><i style="background:#FBF7EF"></i><b>--surface</b><code>#FBF7EF</code><span>卡片面 Surface</span></div><div class="sw"><i style="background:#C6D8E6"></i><b>--border</b><code>#C6D8E6</code><span>分隔線 Border</span></div><div class="sw"><i style="background:#2F5C93"></i><b>--accent</b><code>#2F5C93</code><span>強調色 Accent</span></div><div class="sw"><i style="background:#FFFFFF"></i><b>--accent-fg</b><code>#FFFFFF</code><span>強調上文字</span></div><div class="sw"><i style="background:#2E7D5B"></i><b>--ok</b><code>#2E7D5B</code><span>成功 Success</span></div><div class="sw"><i style="background:#B5503C"></i><b>--warn</b><code>#B5503C</code><span>警告 Warning</span></div></div>
+
+  <h2>2 · 字體 Typography</h2>
+  <p class="desc">最多兩個字重；標題 &#x27;Cormorant&#x27;,&#x27;Noto Serif TC&#x27;,serif、正文 &#x27;Inter&#x27;,&#x27;Noto Sans TC&#x27;,sans-serif。</p>
+  <div class="typo">
+    <div class="d">一頁講清成件事 <small>Display · &#x27;Cormorant&#x27;,&#x27;Noto Serif TC&#x27;,serif</small></div>
+    <div class="b">正文用 &#x27;Inter&#x27;,&#x27;Noto Sans TC&#x27;,sans-serif：16px、行高 1.65，唔會超過 70 個中文字一行。<small>Body</small></div>
+    <div class="m">HK$1,280 · 2026-09-22 · #REF-0042 <small>Mono／數字對齊（&#x27;Cormorant&#x27;,ui-monospace,monospace）</small></div>
+  </div>
+
+  <h2>3 · 按鈕 Buttons</h2>
+  <p class="desc">11 個狀態齊：hover 升起、active 壓落、focus 外框（對比 ≥3:1）、disabled 變淡、loading／success。</p>
+  <div class="btn-row"><div class="state"><button class="btn btn-primary " type="button">Primary</button><small>Default</small></div><div class="state"><button class="btn btn-primary is-hover" type="button">Primary</button><small>Hover</small></div><div class="state"><button class="btn btn-primary is-active" type="button">Primary</button><small>Active</small></div><div class="state"><button class="btn btn-primary is-focus" type="button">Primary</button><small>Focus</small></div><div class="state"><button class="btn btn-primary " type="button" disabled>Primary</button><small>Disabled</small></div><div class="state"><button class="btn btn-primary btn-sm" type="button">Small</button><small>btn-sm</small></div><div class="state"><button class="btn btn-primary btn-lg" type="button">Large</button><small>btn-lg</small></div><div class="state"><button class="btn btn-primary btn-secondary" type="button">Secondary</button><small>Secondary</small></div></div>
+
+  <h2>4 · 組件 Components</h2>
+  <div class="row">
+    <article class="card" style="flex:1 1 260px"><span class="ico" aria-hidden="true">◆</span><h3>卡片標題</h3><p>一句講清重點，唔超過兩行。</p></article>
+    <div class="plan" style="flex:1 1 240px"><span class="tag">最受歡迎</span><h3>方案名</h3><div class="price">HK$1,280<small>/月</small></div>
+      <ul><li>包含咩</li><li>包含咩</li></ul><a class="btn btn-primary" href="#">揀呢個</a></div>
+    <blockquote class="quote" style="flex:1 1 260px">客人講嘅一句真話。<span class="avatar">阿</span><b>阿文</b><span>客戶 · 角色</span></blockquote>
+  </div>
+
+  <h2>5 · 真實 section 預覽</h2>
+  <p class="desc">以下係由正式 demo 直接抽落嚟（唔係另畫），所以卡同成品一定一致。</p>
+  <div class="preview"><div class="lbl">hero</div><div><section class="block hero" id="hero"><div class="wrap hero-grid"><div><span class="eyebrow rv">香港 · 沉浸式藝術展 · 2026 年 10 月開幕</span><h1>如果夢<br>可以設計？</h1><p class="lead rv">13 個展廳、45 分鐘動線：懸浮雕塑、倒轉嘅房、跟住你走嘅影子，行完自己決定點講。</p><div class="actions rv"><a class="btn btn-primary" href="#cta">買飛 <span class="i" aria-hidden="true">→</span></a><a class="btn btn-secondary" href="#product">睇展期</a></div><p class="note rv">平日成人 HK$220 · 每場限 60 人 · 開場前 24 小時可免費改期一次</p></div><figure class="hero-art rv"><div class="deco" aria-hidden="true" style="inset:0;background:radial-gradient(circle at 35% 35%,#FFFFFF,#FAF3E0 40%,#E8C39E)"></div><figcaption>展覽相片位（生成 media/surrealism-hero.jpg 自動代入）</figcaption></figure></div></section></div></div><div class="preview"><div class="lbl">pricing</div><div><section class="block" id="pricing"><div class="wrap"><h2 class="sec-title">三種飛</h2><p class="sec-sub">開幕週同週末價錢唔同；平日較鬆。</p><div class="pricing"><article class="plan rv"><h3>平日成人</h3><div class="price">HK$220 <small>/ 張</small></div><p>11:00–20:00 任選場次。</p><ul><li>13 個展廳</li><li>45 分鐘動線</li><li>粵語／英語語音導賞</li><li>可影相（唔用閃燈）</li></ul><a class="btn btn-secondary" href="#cta">買飛</a></article><article class="plan rv featured"><span class="tag">最多人買</span><h3>週末親子套票</h3><div class="price">HK$620 <small>/ 套</small></div><p>2 大 1 小，週末同假期。</p><ul><li>成人 ×2 + 小童 ×1</li><li>優先入場（早 15 分鐘）</li><li>導覽手冊 1 本</li><li>周邊店 9 折</li></ul><a class="btn btn-primary" href="#cta">買飛</a></article><article class="plan rv"><h3>導賞場</h3><div class="price">HK$480 <small>/ 位</small></div><p>逢星期三，限 25 人。</p><ul><li>策展人帶隊 90 分鐘</li><li>可以提問</li><li>含當日重入場</li><li>送明信片一套</li></ul><a class="btn btn-secondary" href="#cta">查場次</a></article></div></div></section></div></div><div class="preview"><div class="lbl">venue</div><div><section class="block" id="venue"><div class="wrap"><h2 class="sec-title">票務同入場</h2><p class="sec-sub">開放時間、改期同交通都寫喺呢度。</p><ul class="infolist"><li><b>開放時間</b><span>平日 11:00–20:00；週末 10:00–21:00；逢星期二休館</span></li><li><b>票價</b><span>成人 HK$220–280、學生 HK$150–180、6 歲以下免費</span></li><li><b>入場</b><span>開場前 15 分鐘開始入閘；遲到 30 分鐘要等下一場</span></li><li><b>改期同退票</b><span>開場前 24 小時免費改期一次；之後每次 HK$30；已入場唔退</span></li><li><b>場地同交通</b><span>觀塘工廈 3 樓；港鐵牛頭角站步行 6 分鐘，冇停車場</span></li></ul></div></section></div></div>
+
+  <h2>6 · 動效（Pro 版）</h2>
+  <p class="desc">基本版純 CSS；Pro 版有載入幕、入場、scroll reveal、微互動。跟系統設定「減少動態」會自動降級。</p>
+  <p style="font:13px var(--font-mono,monospace);color:var(--muted)"></p>
+
+  <h2>7 · 點用</h2>
+  <ul style="color:var(--muted);font-size:14px">
+    <li>Tokens：<code>themes/surrealism.json</code>（含 <code>snippet_css</code> 同 Tailwind <code>theme.extend</code>）</li>
+    <li>Demo：<a href="../surrealism.html">基本版</a> · <a href="../surrealism-pro.html">Pro 動效版</a> · <a href="../surrealism-pro.html?deep=1">🧪 深度效果</a></li>
+    <li>改客人內容：<code>python3 gen_project.py brief.json</code>（自動驗 WCAG 4.5:1）</li>
+  </ul>
+
+  <div class="cp-foot">
+    <button class="btn btn-primary btn-sm noprint" type="button" onclick="window.print()">🖨️ Print／存 PDF</button>
+    <a href="index.html">← 全部風格卡</a>
+    <span>UIUX Style · Surrealism · 示範內容全部虛構</span>
+  </div>
+</div>
+</body></html>

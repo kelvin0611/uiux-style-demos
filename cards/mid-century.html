@@ -1,0 +1,112 @@
+<!doctype html><html lang="zh-Hant-HK"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Mid-Century  · 風格卡</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=Work+Sans:wght@400;600&display=swap">
+<link rel="stylesheet" href="../blocks.css">
+<style>:root{--bg:#F4ECD8;--fg:#2B2A28;--muted:#5B554A;--surface:#FFFFFF;--border:#2B2A28;--accent:#A34A17;--accent-fg:#FFFFFF;--radius:18px;--radius-sm:12px;--shadow:0 10px 24px rgba(43,42,40,.10);--btn-shadow:none;--art-bg:radial-gradient(circle at 30% 40%,#E1A624 0 18%,transparent 19%),radial-gradient(circle at 65% 55%,#2A8C8C 0 22%,transparent 23%),#F4ECD8;--media-bg:linear-gradient(150deg,#E1A624,#F4ECD8);--cta-bg:linear-gradient(180deg,#E1A624,#F4ECD8);--input-bg:#FFFDF6;--ok:#1E6B5E;--warn:#9B2C1F;--font-display:'Josefin Sans','Noto Sans TC',sans-serif;--font-body:'Work Sans','Noto Sans TC',sans-serif;--font-mono:ui-monospace,Menlo,monospace;--focus-ring:var(--accent);}
+
+
+.logo{font:700 24px 'Josefin Sans',sans-serif;letter-spacing:.08em;text-transform:uppercase;color:#2B2A28}
+.nav a{font-weight:600}
+.nav a[aria-current]{color:#A34A17;box-shadow:inset 0 -2px 0 #A34A17}
+.hero::after{content:"";position:absolute;right:8%;top:24%;width:92px;height:92px;border-radius:50% 50% 50% 0;background:#E1A624;transform:rotate(45deg);pointer-events:none}
+.hero h1{font:700 clamp(40px,7vw,88px)/1.05 'Josefin Sans',sans-serif;text-transform:uppercase;letter-spacing:.04em}
+.eyebrow{color:#1E6B5E}
+.sec-title{font:700 clamp(26px,3.4vw,36px)/1.15 'Josefin Sans',sans-serif;text-transform:uppercase;letter-spacing:.05em}
+.btn{border-radius:999px;border:2px solid #2B2A28;font:700 16px 'Work Sans',sans-serif}
+.btn-primary{background:#A34A17;color:#fff}
+.btn-secondary{background:transparent;color:#2B2A28}
+.card{border:2px solid #2B2A28;border-radius:18px;box-shadow:none}
+.card:nth-child(2){background:#E1A624}
+.card:nth-child(3){background:#2A8C8C;color:#04211F}
+.card:nth-child(4){background:#B3521A;color:#FFF6E4}
+.tile-c .ph{background-image:radial-gradient(circle at 30% 40%,#E1A624 0 18%,transparent 19%),radial-gradient(circle at 65% 55%,#2A8C8C 0 22%,transparent 23%);border-radius:12px}
+.chip{background:#FFF8E8;border:2px solid #2B2A28;color:#2B2A28}
+.avatar{border-radius:12px;background:#2A8C8C;color:#04211F}
+.tag{background:#E1A624;color:#2B2A28;border-radius:999px}
+.plan.featured{outline:3px solid #A34A17;outline-offset:3px}
+.stat .num{font-family:'Josefin Sans',sans-serif}
+.rows article:nth-child(odd){background:#FFFDF6}
+.infolist{border-top:2px solid #2B2A28;padding-top:14px}
+
+/* ---- 風格卡專用 ---- */
+body{background:var(--bg);color:var(--fg);font-family:var(--font-body)}
+.cp{max-width:1080px;margin:0 auto;padding:clamp(18px,4vw,40px)}
+.cp-head{border-bottom:2px solid var(--border);padding-bottom:18px;margin-bottom:26px}
+.cp-head h1{margin:.1em 0 .2em;font-family:var(--font-display);font-size:clamp(28px,5vw,46px)}
+.cp-meta{color:var(--muted);font-size:14px}
+.cp-tag{display:inline-block;border:1px solid var(--border);border-radius:999px;padding:3px 10px;font-size:12px;color:var(--muted);margin:0 6px 6px 0}
+.cp h2{font-family:var(--font-display);font-size:clamp(18px,2.4vw,24px);margin:34px 0 6px;padding-bottom:6px;border-bottom:1px solid var(--border)}
+.cp p.desc{color:var(--muted);margin:6px 0 14px;max-width:70ch}
+.sws{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:10px}
+.sw{border:1px solid var(--border);border-radius:10px;padding:9px;background:var(--surface);display:grid;gap:4px}
+.sw i{display:block;height:44px;border-radius:7px;border:1px solid var(--border)}
+.sw b{font-size:13px}.sw code{font:12px var(--font-mono,monospace);color:var(--muted)}
+.sw span{font-size:11px;color:var(--muted)}
+.typo div{border:1px solid var(--border);border-radius:10px;padding:12px 14px;margin-bottom:8px;background:var(--surface)}
+.typo .d{font-family:var(--font-display);font-size:32px;line-height:1.15}
+.typo .b{font-family:var(--font-body);font-size:16px}
+.typo .m{font-family:var(--font-mono,monospace);font-size:14px}
+.typo small{color:var(--muted);font-size:11px;display:block;margin-top:6px}
+.row{display:flex;gap:12px;flex-wrap:wrap;align-items:flex-start}
+.preview{border:1px dashed var(--border);border-radius:12px;overflow:hidden;margin-bottom:12px}
+.preview .lbl{font:11px var(--font-mono,monospace);color:var(--muted);padding:6px 10px;border-bottom:1px dashed var(--border)}
+.preview > div:last-child{transform-origin:top left}
+.cp-foot{margin-top:36px;padding-top:14px;border-top:1px solid var(--border);color:var(--muted);font-size:13px;display:flex;gap:14px;flex-wrap:wrap}
+.cp a{color:var(--accent)}
+@media print{.noprint{display:none}body{background:#fff}.cp{max-width:none;padding:0}.preview{page-break-inside:avoid}}
+</style></head><body>
+<div class="cp">
+  <div class="cp-head">
+    <span class="cp-tag">🏛️ 古典人文 Heritage &amp; Lifestyle</span><span class="cp-tag">15 個 block</span><span class="cp-tag">—</span>
+    <h1> Mid-Century <span style="font-size:.6em;color:var(--muted)"></span></h1>
+    <p class="desc" style="font-size:17px;color:var(--fg)">戰後樂觀現代主義 —— 乾淨線條、有機幾何、回力鏢形、芥末橙綠，懷舊又友善。</p>
+    <p class="cp-meta">示範品牌 <b>Sonor</b> · 主要 CTA「預約試聽」· 行業：復古 hi-fi／音響品牌</p>
+  </div>
+
+  <h2>1 · 色票 Palette</h2>
+  <p class="desc">所有元件都只可以用呢組 token（換色 = 改呢幾行）。</p>
+  <div class="sws"><div class="sw"><i style="background:#F4ECD8"></i><b>--bg</b><code>#F4ECD8</code><span>底色 Background</span></div><div class="sw"><i style="background:#2B2A28"></i><b>--fg</b><code>#2B2A28</code><span>主文字 Text</span></div><div class="sw"><i style="background:#5B554A"></i><b>--muted</b><code>#5B554A</code><span>次要文字 Muted</span></div><div class="sw"><i style="background:#FFFFFF"></i><b>--surface</b><code>#FFFFFF</code><span>卡片面 Surface</span></div><div class="sw"><i style="background:#2B2A28"></i><b>--border</b><code>#2B2A28</code><span>分隔線 Border</span></div><div class="sw"><i style="background:#A34A17"></i><b>--accent</b><code>#A34A17</code><span>強調色 Accent</span></div><div class="sw"><i style="background:#FFFFFF"></i><b>--accent-fg</b><code>#FFFFFF</code><span>強調上文字</span></div><div class="sw"><i style="background:#1E6B5E"></i><b>--ok</b><code>#1E6B5E</code><span>成功 Success</span></div><div class="sw"><i style="background:#9B2C1F"></i><b>--warn</b><code>#9B2C1F</code><span>警告 Warning</span></div></div>
+
+  <h2>2 · 字體 Typography</h2>
+  <p class="desc">最多兩個字重；標題 &#x27;Josefin Sans&#x27;,&#x27;Noto Sans TC&#x27;,sans-serif、正文 &#x27;Work Sans&#x27;,&#x27;Noto Sans TC&#x27;,sans-serif。</p>
+  <div class="typo">
+    <div class="d">一頁講清成件事 <small>Display · &#x27;Josefin Sans&#x27;,&#x27;Noto Sans TC&#x27;,sans-serif</small></div>
+    <div class="b">正文用 &#x27;Work Sans&#x27;,&#x27;Noto Sans TC&#x27;,sans-serif：16px、行高 1.65，唔會超過 70 個中文字一行。<small>Body</small></div>
+    <div class="m">HK$1,280 · 2026-09-22 · #REF-0042 <small>Mono／數字對齊（ui-monospace,Menlo,monospace）</small></div>
+  </div>
+
+  <h2>3 · 按鈕 Buttons</h2>
+  <p class="desc">11 個狀態齊：hover 升起、active 壓落、focus 外框（對比 ≥3:1）、disabled 變淡、loading／success。</p>
+  <div class="btn-row"><div class="state"><button class="btn btn-primary " type="button">Primary</button><small>Default</small></div><div class="state"><button class="btn btn-primary is-hover" type="button">Primary</button><small>Hover</small></div><div class="state"><button class="btn btn-primary is-active" type="button">Primary</button><small>Active</small></div><div class="state"><button class="btn btn-primary is-focus" type="button">Primary</button><small>Focus</small></div><div class="state"><button class="btn btn-primary " type="button" disabled>Primary</button><small>Disabled</small></div><div class="state"><button class="btn btn-primary btn-sm" type="button">Small</button><small>btn-sm</small></div><div class="state"><button class="btn btn-primary btn-lg" type="button">Large</button><small>btn-lg</small></div><div class="state"><button class="btn btn-primary btn-secondary" type="button">Secondary</button><small>Secondary</small></div></div>
+
+  <h2>4 · 組件 Components</h2>
+  <div class="row">
+    <article class="card" style="flex:1 1 260px"><span class="ico" aria-hidden="true">◆</span><h3>卡片標題</h3><p>一句講清重點，唔超過兩行。</p></article>
+    <div class="plan" style="flex:1 1 240px"><span class="tag">最受歡迎</span><h3>方案名</h3><div class="price">HK$1,280<small>/月</small></div>
+      <ul><li>包含咩</li><li>包含咩</li></ul><a class="btn btn-primary" href="#">揀呢個</a></div>
+    <blockquote class="quote" style="flex:1 1 260px">客人講嘅一句真話。<span class="avatar">阿</span><b>阿文</b><span>客戶 · 角色</span></blockquote>
+  </div>
+
+  <h2>5 · 真實 section 預覽</h2>
+  <p class="desc">以下係由正式 demo 直接抽落嚟（唔係另畫），所以卡同成品一定一致。</p>
+  <div class="preview"><div class="lbl">hero</div><div><section class="block hero" id="hero"><div class="wrap hero-grid"><div><span class="eyebrow rv">香港 · 3 間門市試聽 · 2 年保養</span><h1>聽過<br>才買</h1><p class="lead rv">真空管擴音機、皮帶唱盤、號角喇叭：9 類型號喺門市全部駁好，坐低聽 45 分鐘再決定。</p><div class="actions rv"><a class="btn btn-primary" href="#cta">預約試聽 <span class="i" aria-hidden="true">→</span></a><a class="btn btn-secondary" href="#product">睇型號</a></div><p class="note rv">試聽 45 分鐘 · 可以帶自己嘅唱片 · 現貨 3 日送到</p></div><figure class="hero-art rv"><div class="deco" aria-hidden="true" style="inset:0;background:radial-gradient(circle at 30% 40%,#E1A624 0 18%,transparent 19%),radial-gradient(circle at 65% 55%,#2A8C8C 0 22%,transparent 23%),#F4ECD8"></div><figcaption>產品相片位（生成 media/mid-century-hero.jpg 自動代入）</figcaption></figure></div></section></div></div><div class="preview"><div class="lbl">pricing</div><div><section class="block" id="pricing"><div class="wrap"><h2 class="sec-title">三個組合</h2><p class="sec-sub">可以逐件買，或者成套（成套已含線材）。</p><div class="pricing"><article class="plan rv"><h3>入門組合</h3><div class="price">HK$9,600 <small>/ 套</small></div><p>喇叭 + 線材。</p><ul><li>S-120 書架喇叭</li><li>喇叭線 3m ×2</li><li>門市試聽 45 分鐘</li><li>2 年保養</li></ul><a class="btn btn-secondary" href="#cta">預約試聽</a></article><article class="plan rv featured"><span class="tag">最多人揀</span><h3>兩聲道組合</h3><div class="price">HK$28,400 <small>/ 套</small></div><p>擴音 + 喇叭 + 唱盤。</p><ul><li>A-40 擴音機</li><li>S-120 喇叭</li><li>P-3 唱盤</li><li>送一次上門擺位</li><li>3 日送到</li></ul><a class="btn btn-primary" href="#cta">預約試聽</a></article><article class="plan rv"><h3>號角組合</h3><div class="price">HK$54,000 <small>/ 套</small></div><p>H-9 號角 + 擴音。</p><ul><li>H-9 號角喇叭</li><li>A-40 擴音機</li><li>上門調聲 2 次</li><li>預訂 4 星期</li></ul><a class="btn btn-secondary" href="#cta">預約試聽</a></article></div></div></section></div></div><div class="preview"><div class="lbl">venue</div><div><section class="block" id="venue"><div class="wrap"><h2 class="sec-title">保養同維修</h2><p class="sec-sub">零件價同工時寫明，唔會收機先加價。</p><ul class="infolist"><li><b>保養</b><span>擴音機同唱盤 2 年；真空管 6 個月（消耗品）</span></li><li><b>維修</b><span>香港工場做，先報零件價；7 個工作日內覆</span></li><li><b>零件</b><span>唱針、皮帶、旋鈕有現貨；真空管約 2 星期</span></li><li><b>上門</b><span>買擴音機送一次上門擺位同調聲（免費）</span></li><li><b>回收</b><span>舊機可折價回收；我們確認功能後報價</span></li></ul></div></section></div></div>
+
+  <h2>6 · 動效（Pro 版）</h2>
+  <p class="desc">基本版純 CSS；Pro 版有載入幕、入場、scroll reveal、微互動。跟系統設定「減少動態」會自動降級。</p>
+  <p style="font:13px var(--font-mono,monospace);color:var(--muted)"></p>
+
+  <h2>7 · 點用</h2>
+  <ul style="color:var(--muted);font-size:14px">
+    <li>Tokens：<code>themes/mid-century.json</code>（含 <code>snippet_css</code> 同 Tailwind <code>theme.extend</code>）</li>
+    <li>Demo：<a href="../mid-century.html">基本版</a> · <a href="../mid-century-pro.html">Pro 動效版</a></li>
+    <li>改客人內容：<code>python3 gen_project.py brief.json</code>（自動驗 WCAG 4.5:1）</li>
+  </ul>
+
+  <div class="cp-foot">
+    <button class="btn btn-primary btn-sm noprint" type="button" onclick="window.print()">🖨️ Print／存 PDF</button>
+    <a href="index.html">← 全部風格卡</a>
+    <span>UIUX Style · Mid-Century · 示範內容全部虛構</span>
+  </div>
+</div>
+</body></html>

@@ -1,0 +1,55 @@
+{
+ "slug": "aurora",
+ "name": "Aurora",
+ "cn": "",
+ "family": "🫧 立體質感 Tactile Surface",
+ "industry": "AI／SaaS landing",
+ "brand": "Aurora` / `Aurora AI",
+ "cta": "免費試用",
+ "sections": "",
+ "css_variables": {
+  "--bg": "#070B1A",
+  "--fg": "#EEF2FF",
+  "--muted": "#C3CBE6",
+  "--surface": "rgba(255,255,255,.06)",
+  "--border": "rgba(255,255,255,.14)",
+  "--accent": "#3CF2B4",
+  "--accent-fg": "#04141C",
+  "--accent-grad": "linear-gradient(100deg,#3CF2B4,#27C3F5 50%,#8B5CF6)",
+  "--radius": "24px",
+  "--radius-sm": "14px",
+  "--shadow": "0 20px 60px rgba(0,0,0,.42)",
+  "--art-bg": "radial-gradient(circle at 25% 20%,rgba(60,242,180,.75),transparent 60%),radial-gradient(circle at 76% 72%,rgba(139,92,246,.8),transparent 60%),#0d1428",
+  "--cta-bg": "linear-gradient(120deg,rgba(60,242,180,.16),rgba(139,92,246,.22))",
+  "--input-bg": "rgba(7,11,26,.55)",
+  "--btn-shadow": "0 0 44px rgba(139,92,246,.45)",
+  "--ok": "#3CF2B4",
+  "--warn": "#F472B6",
+  "--font-display": "\"Inter Tight\",Inter,system-ui,sans-serif",
+  "--font-body": "Inter,system-ui,sans-serif",
+  "--font-mono": "ui-monospace,SFMono-Regular,Menlo,monospace",
+  "--focus-ring": "var(--accent)"
+ },
+ "fonts": {
+  "google_url": "https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap",
+  "display": "\"Inter Tight\",Inter,system-ui,sans-serif",
+  "body": "Inter,system-ui,sans-serif",
+  "mono": "ui-monospace,SFMono-Regular,Menlo,monospace"
+ },
+ "radius": {
+  "base": "24px",
+  "sm": "14px"
+ },
+ "shadow": {
+  "card": "0 20px 60px rgba(0,0,0,.42)",
+  "button": "0 0 44px rgba(139,92,246,.45)"
+ },
+ "focus_ring": "var(--accent)",
+ "motion": {},
+ "demo": {
+  "basic": "Demos/aurora.html",
+  "pro": "Demos/aurora-pro.html"
+ },
+ "snippet_css": ":root{\n  --bg: #070B1A;\n  --fg: #EEF2FF;\n  --muted: #C3CBE6;\n  --surface: rgba(255,255,255,.06);\n  --border: rgba(255,255,255,.14);\n  --accent: #3CF2B4;\n  --accent-fg: #04141C;\n  --accent-grad: linear-gradient(100deg,#3CF2B4,#27C3F5 50%,#8B5CF6);\n  --radius: 24px;\n  --radius-sm: 14px;\n  --shadow: 0 20px 60px rgba(0,0,0,.42);\n  --art-bg: radial-gradient(circle at 25% 20%,rgba(60,242,180,.75),transparent 60%),radial-gradient(circle at 76% 72%,rgba(139,92,246,.8),transparent 60%),#0d1428;\n  --cta-bg: linear-gradient(120deg,rgba(60,242,180,.16),rgba(139,92,246,.22));\n  --input-bg: rgba(7,11,26,.55);\n  --btn-shadow: 0 0 44px rgba(139,92,246,.45);\n  --ok: #3CF2B4;\n  --warn: #F472B6;\n  --font-display: \"Inter Tight\",Inter,system-ui,sans-serif;\n  --font-body: Inter,system-ui,sans-serif;\n  --font-mono: ui-monospace,SFMono-Regular,Menlo,monospace;\n  --focus-ring: var(--accent);\n}",
+ "snippet_tailwind": "// tailwind.config.js → theme.extend\n{\n  \"colors\": {\n    \"bg\": \"#070B1A\",\n    \"fg\": \"#EEF2FF\",\n    \"muted\": \"#C3CBE6\",\n    \"surface\": \"rgba(255,255,255,.06)\",\n    \"border\": \"rgba(255,255,255,.14)\",\n    \"accent\": \"#3CF2B4\",\n    \"accent-fg\": \"#04141C\",\n    \"ok\": \"#3CF2B4\",\n    \"warn\": \"#F472B6\",\n    \"focus-ring\": \"var(--accent)\"\n  },\n  \"borderRadius\": {\n    \"DEFAULT\": \"14px\",\n    \"lg\": \"24px\"\n  },\n  \"fontFamily\": {\n    \"display\": [\n      \"\\\"Inter Tight\\\",Inter,system-ui,sans-serif\"\n    ],\n    \"body\": [\n      \"Inter,system-ui,sans-serif\"\n    ]\n  }\n}"
+}

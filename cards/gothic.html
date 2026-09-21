@@ -1,0 +1,110 @@
+<!doctype html><html lang="zh-Hant-HK"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Gothic  · 風格卡</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&family=Cormorant+Garamond:ital,wght@0,500;0,700;1,500&family=Lora:ital@0;1&display=swap">
+<link rel="stylesheet" href="../blocks.css">
+<style>:root{--bg:#0C0A0F;--fg:#EAE6F0;--muted:#BDB6CC;--surface:#17121D;--border:#4A3A58;--accent:#E9C46A;--accent-fg:#1A1020;--accent-grad:linear-gradient(180deg,#F3D98C,#C9A34A);--radius:2px;--radius-sm:2px;--shadow:0 26px 60px rgba(0,0,0,.72);--btn-shadow:0 0 24px rgba(233,196,106,.22);--art-bg:radial-gradient(circle at 50% 34%,#5E0B1D 0 20%,#2A1638 21% 44%,#0C0A0F 45%);--media-bg:linear-gradient(180deg,#2A1638,#0C0A0F);--cta-bg:#1D1428;--input-bg:#17121D;--ok:#7FC79B;--warn:#E0795F;--font-display:'Cormorant Garamond','Noto Serif TC',serif;--font-body:Lora,'Noto Serif TC',serif;--font-mono:ui-monospace,'SF Mono',Menlo,monospace;--focus-ring:var(--accent);}
+
+
+body{background:radial-gradient(circle at 50% -10%,rgba(94,11,29,.45),transparent 55%),
+ radial-gradient(circle at 88% 96%,rgba(42,22,56,.55),transparent 50%),var(--bg)}
+.logo{font-family:'UnifrakturMaguntia',cursive;font-size:28px;letter-spacing:.04em;color:var(--accent)}
+.hero h1{font-family:var(--font-display);font-weight:700;letter-spacing:.03em}
+.sec-title{font-family:var(--font-display);font-weight:700;letter-spacing:.03em}
+.sec-title::before{content:"❧";color:var(--accent);margin-right:10px;font-size:.8em}
+.card,.plan,.quote,.tile-c,.rows,.log,.mock,.badge-card,.infolist{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius)}
+.card::after{content:"";position:absolute;inset:4px 4px auto;height:1px;background:linear-gradient(90deg,transparent,var(--accent),transparent);opacity:.5}
+.hero-art{border:1px solid var(--border);border-radius:50% 50% 0 0/34% 34% 0 0;overflow:hidden;box-shadow:0 0 60px rgba(233,196,106,.14)}
+.hero-art::after{content:"";position:absolute;inset:auto 0 0;height:2px;background:var(--accent);opacity:.35}
+.tile-c .ph{color:transparent;background-image:radial-gradient(circle,rgba(233,196,106,.28) 0 8%,transparent 9%),radial-gradient(circle at 50% 40%,#5E0B1D,#2A1638 45%,#0C0A0F 78%)}
+.btn{border-radius:2px;letter-spacing:.08em;text-transform:uppercase;font-size:13px}
+.btn-primary{background:var(--accent-grad);color:var(--accent-fg);border:0}
+.btn-secondary{background:transparent;border:1px solid var(--border);color:var(--fg)}
+.chip{border-radius:2px;background:#1D1428;border:1px solid var(--border);color:var(--fg)}
+.avatar{border-radius:0;background:#2A1638;color:var(--accent);border:1px solid var(--border);font-family:var(--font-display)}
+.tag{background:var(--accent);color:var(--accent-fg);border-radius:2px;letter-spacing:.06em}
+.rows article{border-bottom:1px solid #2A2136}
+.rows article b,.infolist b{font-family:var(--font-display);letter-spacing:.02em}
+.plan.featured{outline:1px solid var(--accent);outline-offset:4px}
+
+/* ---- 風格卡專用 ---- */
+body{background:var(--bg);color:var(--fg);font-family:var(--font-body)}
+.cp{max-width:1080px;margin:0 auto;padding:clamp(18px,4vw,40px)}
+.cp-head{border-bottom:2px solid var(--border);padding-bottom:18px;margin-bottom:26px}
+.cp-head h1{margin:.1em 0 .2em;font-family:var(--font-display);font-size:clamp(28px,5vw,46px)}
+.cp-meta{color:var(--muted);font-size:14px}
+.cp-tag{display:inline-block;border:1px solid var(--border);border-radius:999px;padding:3px 10px;font-size:12px;color:var(--muted);margin:0 6px 6px 0}
+.cp h2{font-family:var(--font-display);font-size:clamp(18px,2.4vw,24px);margin:34px 0 6px;padding-bottom:6px;border-bottom:1px solid var(--border)}
+.cp p.desc{color:var(--muted);margin:6px 0 14px;max-width:70ch}
+.sws{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:10px}
+.sw{border:1px solid var(--border);border-radius:10px;padding:9px;background:var(--surface);display:grid;gap:4px}
+.sw i{display:block;height:44px;border-radius:7px;border:1px solid var(--border)}
+.sw b{font-size:13px}.sw code{font:12px var(--font-mono,monospace);color:var(--muted)}
+.sw span{font-size:11px;color:var(--muted)}
+.typo div{border:1px solid var(--border);border-radius:10px;padding:12px 14px;margin-bottom:8px;background:var(--surface)}
+.typo .d{font-family:var(--font-display);font-size:32px;line-height:1.15}
+.typo .b{font-family:var(--font-body);font-size:16px}
+.typo .m{font-family:var(--font-mono,monospace);font-size:14px}
+.typo small{color:var(--muted);font-size:11px;display:block;margin-top:6px}
+.row{display:flex;gap:12px;flex-wrap:wrap;align-items:flex-start}
+.preview{border:1px dashed var(--border);border-radius:12px;overflow:hidden;margin-bottom:12px}
+.preview .lbl{font:11px var(--font-mono,monospace);color:var(--muted);padding:6px 10px;border-bottom:1px dashed var(--border)}
+.preview > div:last-child{transform-origin:top left}
+.cp-foot{margin-top:36px;padding-top:14px;border-top:1px solid var(--border);color:var(--muted);font-size:13px;display:flex;gap:14px;flex-wrap:wrap}
+.cp a{color:var(--accent)}
+@media print{.noprint{display:none}body{background:#fff}.cp{max-width:none;padding:0}.preview{page-break-inside:avoid}}
+</style></head><body>
+<div class="cp">
+  <div class="cp-head">
+    <span class="cp-tag">🏛️ 古典人文 Heritage &amp; Lifestyle</span><span class="cp-tag">15 個 block</span><span class="cp-tag">—</span>
+    <h1> Gothic <span style="font-size:.6em;color:var(--muted)"></span></h1>
+    <p class="desc" style="font-size:17px;color:var(--fg)">中世紀大教堂 × 黑暗浪漫 —— 尖拱、彩繪玻璃、blackletter、深紫黑，神秘、戲劇、有深度。</p>
+    <p class="cp-meta">示範品牌 <b>Vellum</b> · 主要 CTA「訂書」· 行業：獨立書店／黑暗文學出版</p>
+  </div>
+
+  <h2>1 · 色票 Palette</h2>
+  <p class="desc">所有元件都只可以用呢組 token（換色 = 改呢幾行）。</p>
+  <div class="sws"><div class="sw"><i style="background:#0C0A0F"></i><b>--bg</b><code>#0C0A0F</code><span>底色 Background</span></div><div class="sw"><i style="background:#EAE6F0"></i><b>--fg</b><code>#EAE6F0</code><span>主文字 Text</span></div><div class="sw"><i style="background:#BDB6CC"></i><b>--muted</b><code>#BDB6CC</code><span>次要文字 Muted</span></div><div class="sw"><i style="background:#17121D"></i><b>--surface</b><code>#17121D</code><span>卡片面 Surface</span></div><div class="sw"><i style="background:#4A3A58"></i><b>--border</b><code>#4A3A58</code><span>分隔線 Border</span></div><div class="sw"><i style="background:#E9C46A"></i><b>--accent</b><code>#E9C46A</code><span>強調色 Accent</span></div><div class="sw"><i style="background:#1A1020"></i><b>--accent-fg</b><code>#1A1020</code><span>強調上文字</span></div><div class="sw"><i style="background:#7FC79B"></i><b>--ok</b><code>#7FC79B</code><span>成功 Success</span></div><div class="sw"><i style="background:#E0795F"></i><b>--warn</b><code>#E0795F</code><span>警告 Warning</span></div></div>
+
+  <h2>2 · 字體 Typography</h2>
+  <p class="desc">最多兩個字重；標題 &#x27;Cormorant Garamond&#x27;,&#x27;Noto Serif TC&#x27;,serif、正文 Lora,&#x27;Noto Serif TC&#x27;,serif。</p>
+  <div class="typo">
+    <div class="d">一頁講清成件事 <small>Display · &#x27;Cormorant Garamond&#x27;,&#x27;Noto Serif TC&#x27;,serif</small></div>
+    <div class="b">正文用 Lora,&#x27;Noto Serif TC&#x27;,serif：16px、行高 1.65，唔會超過 70 個中文字一行。<small>Body</small></div>
+    <div class="m">HK$1,280 · 2026-09-22 · #REF-0042 <small>Mono／數字對齊（ui-monospace,&#x27;SF Mono&#x27;,Menlo,monospace）</small></div>
+  </div>
+
+  <h2>3 · 按鈕 Buttons</h2>
+  <p class="desc">11 個狀態齊：hover 升起、active 壓落、focus 外框（對比 ≥3:1）、disabled 變淡、loading／success。</p>
+  <div class="btn-row"><div class="state"><button class="btn btn-primary " type="button">Primary</button><small>Default</small></div><div class="state"><button class="btn btn-primary is-hover" type="button">Primary</button><small>Hover</small></div><div class="state"><button class="btn btn-primary is-active" type="button">Primary</button><small>Active</small></div><div class="state"><button class="btn btn-primary is-focus" type="button">Primary</button><small>Focus</small></div><div class="state"><button class="btn btn-primary " type="button" disabled>Primary</button><small>Disabled</small></div><div class="state"><button class="btn btn-primary btn-sm" type="button">Small</button><small>btn-sm</small></div><div class="state"><button class="btn btn-primary btn-lg" type="button">Large</button><small>btn-lg</small></div><div class="state"><button class="btn btn-primary btn-secondary" type="button">Secondary</button><small>Secondary</small></div></div>
+
+  <h2>4 · 組件 Components</h2>
+  <div class="row">
+    <article class="card" style="flex:1 1 260px"><span class="ico" aria-hidden="true">◆</span><h3>卡片標題</h3><p>一句講清重點，唔超過兩行。</p></article>
+    <div class="plan" style="flex:1 1 240px"><span class="tag">最受歡迎</span><h3>方案名</h3><div class="price">HK$1,280<small>/月</small></div>
+      <ul><li>包含咩</li><li>包含咩</li></ul><a class="btn btn-primary" href="#">揀呢個</a></div>
+    <blockquote class="quote" style="flex:1 1 260px">客人講嘅一句真話。<span class="avatar">阿</span><b>阿文</b><span>客戶 · 角色</span></blockquote>
+  </div>
+
+  <h2>5 · 真實 section 預覽</h2>
+  <p class="desc">以下係由正式 demo 直接抽落嚟（唔係另畫），所以卡同成品一定一致。</p>
+  <div class="preview"><div class="lbl">hero</div><div><section class="block hero" id="hero"><div class="wrap hero-grid"><div><span class="eyebrow rv">香港 · 獨立書店同黑暗文學出版社 · 深水埗</span><h1>黑暗中嘅書架</h1><p class="lead rv">尖拱書架、燭光朗讀會；每季出 2 本限量硬皮，賣完唔加印。</p><div class="actions rv"><a class="btn btn-primary" href="#cta">訂書 <span class="i" aria-hidden="true">→</span></a><a class="btn btn-secondary" href="#product">睇書單</a></div><p class="note rv">逢星期四晚朗讀會 · 訂書 3 個工作日到店 · 到店自取免運費</p></div><figure class="hero-art rv"><div class="deco" aria-hidden="true" style="inset:0;background:radial-gradient(circle at 50% 34%,#5E0B1D 0 20%,#2A1638 21% 44%,#0C0A0F 45%)"></div><figcaption>書架相片位（生成 media/gothic-hero.jpg 自動代入）</figcaption></figure></div></section></div></div><div class="preview"><div class="lbl">pricing</div><div><section class="block" id="pricing"><div class="wrap"><h2 class="sec-title">訂閱同會員</h2><p class="sec-sub">月訂可以隨時停；會員按年計。</p><div class="pricing"><article class="plan rv"><h3>單本</h3><div class="price">書價 <small>/ 本</small></div><p>有貨即取，或 3 個工作日到店。</p><ul><li>到店自取免運</li><li>寄送加 HK$30</li><li>附藏書票</li><li>留書 48 小時</li></ul><a class="btn btn-secondary" href="#cta">訂書</a></article><article class="plan rv featured"><span class="tag">最多人訂</span><h3>月訂書袋</h3><div class="price">HK$220 <small>/ 月</small></div><p>每月一本選書，最常訂。</p><ul><li>每月一本選書</li><li>限量藏書票</li><li>朗讀會優先留位</li><li>隨時停訂</li></ul><a class="btn btn-primary" href="#cta">開始訂閱</a></article><article class="plan rv"><h3>會員</h3><div class="price">HK$880 <small>/ 年</small></div><p>一年內書同周邊 9 折。</p><ul><li>全店 9 折</li><li>活動優先留位</li><li>每季限量版優先買</li><li>生日藏書票（手印）</li></ul><a class="btn btn-secondary" href="#cta">入會</a></article></div></div></section></div></div><div class="preview"><div class="lbl">venue</div><div><section class="block" id="venue"><div class="wrap"><h2 class="sec-title">活動同朗讀會</h2><p class="sec-sub">全部活動免費入場，但要留位；30 人為限。</p><ul class="infolist"><li><b>朗讀會</b><span>逢星期四 20:00–21:30；作者或譯者出席，30 人為限</span></li><li><b>新書首賣</b><span>每月第一個星期六 15:00；限量版現場發售，每人限 2 本</span></li><li><b>寫作夜</b><span>每月第三個星期三 19:30；帶自己嘅稿嚟讀，12 人為限</span></li><li><b>場地</b><span>深水埗大南街 2 樓（冇升降機，上 1 層樓梯）；20:00 後由側門入</span></li><li><b>取消</b><span>活動前 24 小時可以 WhatsApp 取消留位；唔出席兩次會暫停留位</span></li></ul></div></section></div></div>
+
+  <h2>6 · 動效（Pro 版）</h2>
+  <p class="desc">基本版純 CSS；Pro 版有載入幕、入場、scroll reveal、微互動。跟系統設定「減少動態」會自動降級。</p>
+  <p style="font:13px var(--font-mono,monospace);color:var(--muted)"></p>
+
+  <h2>7 · 點用</h2>
+  <ul style="color:var(--muted);font-size:14px">
+    <li>Tokens：<code>themes/gothic.json</code>（含 <code>snippet_css</code> 同 Tailwind <code>theme.extend</code>）</li>
+    <li>Demo：<a href="../gothic.html">基本版</a> · <a href="../gothic-pro.html">Pro 動效版</a></li>
+    <li>改客人內容：<code>python3 gen_project.py brief.json</code>（自動驗 WCAG 4.5:1）</li>
+  </ul>
+
+  <div class="cp-foot">
+    <button class="btn btn-primary btn-sm noprint" type="button" onclick="window.print()">🖨️ Print／存 PDF</button>
+    <a href="index.html">← 全部風格卡</a>
+    <span>UIUX Style · Gothic · 示範內容全部虛構</span>
+  </div>
+</div>
+</body></html>

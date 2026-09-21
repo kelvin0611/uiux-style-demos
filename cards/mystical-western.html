@@ -1,0 +1,117 @@
+<!doctype html><html lang="zh-Hant-HK"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Mystical Western  · 風格卡</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rye&family=Libre+Baskerville:ital@0;1&display=swap">
+<link rel="stylesheet" href="../blocks.css">
+<style>:root{--bg:#1C2340;--fg:#E7D3B0;--muted:#C9A24B;--surface:#262E52;--border:#C9A24B;--accent:#9E4522;--accent-fg:#F6EAD6;--radius:12px;--radius-sm:8px;--shadow:0 8px 24px rgba(0,0,0,.35);--btn-shadow:inset 0 0 0 3px #1C2340;--art-bg:radial-gradient(circle at 50% 70%,#6E3B1E 0 30%,transparent 31%),linear-gradient(#1C2340,#B4552D);--media-bg:linear-gradient(160deg,#1C2340,#6E3B1E);--cta-bg:#262E52;--input-bg:#232B4E;--ok:#8FD9A0;--warn:#E8A08B;--font-display:Rye,'Noto Serif TC',serif;--font-body:'Libre Baskerville','Noto Serif TC',serif;--font-mono:ui-monospace,Menlo,monospace;--focus-ring:#D05B2D;}
+
+
+body::before{content:"";position:fixed;inset:0;z-index:-1;background:
+ radial-gradient(1.5px 1.5px at 12% 18%,rgba(255,255,255,.55),transparent),
+ radial-gradient(1.5px 1.5px at 62% 12%,rgba(255,255,255,.4),transparent),
+ radial-gradient(1.5px 1.5px at 82% 42%,rgba(255,255,255,.35),transparent)}
+.logo{font:400 24px Rye,serif;color:#C9A24B}
+.nav a{color:#E7D3B0}
+.nav a[aria-current]{color:#C9A24B;box-shadow:inset 0 -2px 0 #C9A24B}
+.hero::after{content:"✦ ✧ ✦";position:absolute;right:8%;top:18%;color:#C9A24B;font-size:22px;letter-spacing:.3em;pointer-events:none}
+.hero h1{font:400 clamp(38px,7vw,86px)/1.06 Rye,serif;color:#C9A24B}
+.eyebrow{color:#C9A24B}
+.sec-title{font:400 clamp(26px,3.4vw,36px)/1.15 Rye,serif;color:#C9A24B}
+.hero .lead{color:#F2E6CE}
+.btn{border-radius:4px;border:2px solid #C9A24B;font:700 16px 'Libre Baskerville',serif}
+.btn-primary{background:#9E4522;color:#F6EAD6;box-shadow:inset 0 0 0 3px #1C2340}
+.btn-secondary{background:transparent;color:#E7D3B0}
+.card,.quote,.plan,.rows,.mock,.tile-c{background:#262E52;border:2px solid #C9A24B;border-radius:12px;box-shadow:none}
+.avatar{background:#C9A24B;color:#1C2340;font-family:Rye,serif}
+.chip{background:#1C2340;border:1px solid #C9A24B;color:#E7D3B0}
+.tag{background:#C9A24B;color:#1C2340}
+.tile-c .ph{background-image:radial-gradient(circle at 50% 70%,#6E3B1E 0 30%,transparent 31%),linear-gradient(#1C2340,#B4552D);border-radius:6px}
+.plan.featured{outline:3px solid #C9A24B;outline-offset:3px}
+.rows article:nth-child(odd){background:#2C3560}
+.rows .cost,.tile-c .cost{color:#E7D3B0}
+.faq summary::after{color:#C9A24B}
+.infolist{border-top:1px solid #C9A24B;padding-top:14px}
+.infolist b{color:#C9A24B}
+.stat .num{color:#E7D3B0}
+
+/* ---- 風格卡專用 ---- */
+body{background:var(--bg);color:var(--fg);font-family:var(--font-body)}
+.cp{max-width:1080px;margin:0 auto;padding:clamp(18px,4vw,40px)}
+.cp-head{border-bottom:2px solid var(--border);padding-bottom:18px;margin-bottom:26px}
+.cp-head h1{margin:.1em 0 .2em;font-family:var(--font-display);font-size:clamp(28px,5vw,46px)}
+.cp-meta{color:var(--muted);font-size:14px}
+.cp-tag{display:inline-block;border:1px solid var(--border);border-radius:999px;padding:3px 10px;font-size:12px;color:var(--muted);margin:0 6px 6px 0}
+.cp h2{font-family:var(--font-display);font-size:clamp(18px,2.4vw,24px);margin:34px 0 6px;padding-bottom:6px;border-bottom:1px solid var(--border)}
+.cp p.desc{color:var(--muted);margin:6px 0 14px;max-width:70ch}
+.sws{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:10px}
+.sw{border:1px solid var(--border);border-radius:10px;padding:9px;background:var(--surface);display:grid;gap:4px}
+.sw i{display:block;height:44px;border-radius:7px;border:1px solid var(--border)}
+.sw b{font-size:13px}.sw code{font:12px var(--font-mono,monospace);color:var(--muted)}
+.sw span{font-size:11px;color:var(--muted)}
+.typo div{border:1px solid var(--border);border-radius:10px;padding:12px 14px;margin-bottom:8px;background:var(--surface)}
+.typo .d{font-family:var(--font-display);font-size:32px;line-height:1.15}
+.typo .b{font-family:var(--font-body);font-size:16px}
+.typo .m{font-family:var(--font-mono,monospace);font-size:14px}
+.typo small{color:var(--muted);font-size:11px;display:block;margin-top:6px}
+.row{display:flex;gap:12px;flex-wrap:wrap;align-items:flex-start}
+.preview{border:1px dashed var(--border);border-radius:12px;overflow:hidden;margin-bottom:12px}
+.preview .lbl{font:11px var(--font-mono,monospace);color:var(--muted);padding:6px 10px;border-bottom:1px dashed var(--border)}
+.preview > div:last-child{transform-origin:top left}
+.cp-foot{margin-top:36px;padding-top:14px;border-top:1px solid var(--border);color:var(--muted);font-size:13px;display:flex;gap:14px;flex-wrap:wrap}
+.cp a{color:var(--accent)}
+@media print{.noprint{display:none}body{background:#fff}.cp{max-width:none;padding:0}.preview{page-break-inside:avoid}}
+</style></head><body>
+<div class="cp">
+  <div class="cp-head">
+    <span class="cp-tag">🏛️ 古典人文 Heritage &amp; Lifestyle</span><span class="cp-tag">15 個 block</span><span class="cp-tag">—</span>
+    <h1> Mystical Western <span style="font-size:.6em;color:var(--muted)"></span></h1>
+    <p class="desc" style="font-size:17px;color:var(--fg)">牛仔西部 × 神秘學 —— 仙人掌、太陽月亮、塔羅、皮革紋、大地色，粗獷又有民間傳說味。</p>
+    <p class="cp-meta">示範品牌 <b>Sundown</b> · 主要 CTA「訂購」· 行業：精釀烈酒</p>
+  </div>
+
+  <h2>1 · 色票 Palette</h2>
+  <p class="desc">所有元件都只可以用呢組 token（換色 = 改呢幾行）。</p>
+  <div class="sws"><div class="sw"><i style="background:#1C2340"></i><b>--bg</b><code>#1C2340</code><span>底色 Background</span></div><div class="sw"><i style="background:#E7D3B0"></i><b>--fg</b><code>#E7D3B0</code><span>主文字 Text</span></div><div class="sw"><i style="background:#C9A24B"></i><b>--muted</b><code>#C9A24B</code><span>次要文字 Muted</span></div><div class="sw"><i style="background:#262E52"></i><b>--surface</b><code>#262E52</code><span>卡片面 Surface</span></div><div class="sw"><i style="background:#C9A24B"></i><b>--border</b><code>#C9A24B</code><span>分隔線 Border</span></div><div class="sw"><i style="background:#9E4522"></i><b>--accent</b><code>#9E4522</code><span>強調色 Accent</span></div><div class="sw"><i style="background:#F6EAD6"></i><b>--accent-fg</b><code>#F6EAD6</code><span>強調上文字</span></div><div class="sw"><i style="background:#8FD9A0"></i><b>--ok</b><code>#8FD9A0</code><span>成功 Success</span></div><div class="sw"><i style="background:#E8A08B"></i><b>--warn</b><code>#E8A08B</code><span>警告 Warning</span></div></div>
+
+  <h2>2 · 字體 Typography</h2>
+  <p class="desc">最多兩個字重；標題 Rye,&#x27;Noto Serif TC&#x27;,serif、正文 &#x27;Libre Baskerville&#x27;,&#x27;Noto Serif TC&#x27;,serif。</p>
+  <div class="typo">
+    <div class="d">一頁講清成件事 <small>Display · Rye,&#x27;Noto Serif TC&#x27;,serif</small></div>
+    <div class="b">正文用 &#x27;Libre Baskerville&#x27;,&#x27;Noto Serif TC&#x27;,serif：16px、行高 1.65，唔會超過 70 個中文字一行。<small>Body</small></div>
+    <div class="m">HK$1,280 · 2026-09-22 · #REF-0042 <small>Mono／數字對齊（ui-monospace,Menlo,monospace）</small></div>
+  </div>
+
+  <h2>3 · 按鈕 Buttons</h2>
+  <p class="desc">11 個狀態齊：hover 升起、active 壓落、focus 外框（對比 ≥3:1）、disabled 變淡、loading／success。</p>
+  <div class="btn-row"><div class="state"><button class="btn btn-primary " type="button">Primary</button><small>Default</small></div><div class="state"><button class="btn btn-primary is-hover" type="button">Primary</button><small>Hover</small></div><div class="state"><button class="btn btn-primary is-active" type="button">Primary</button><small>Active</small></div><div class="state"><button class="btn btn-primary is-focus" type="button">Primary</button><small>Focus</small></div><div class="state"><button class="btn btn-primary " type="button" disabled>Primary</button><small>Disabled</small></div><div class="state"><button class="btn btn-primary btn-sm" type="button">Small</button><small>btn-sm</small></div><div class="state"><button class="btn btn-primary btn-lg" type="button">Large</button><small>btn-lg</small></div><div class="state"><button class="btn btn-primary btn-secondary" type="button">Secondary</button><small>Secondary</small></div></div>
+
+  <h2>4 · 組件 Components</h2>
+  <div class="row">
+    <article class="card" style="flex:1 1 260px"><span class="ico" aria-hidden="true">◆</span><h3>卡片標題</h3><p>一句講清重點，唔超過兩行。</p></article>
+    <div class="plan" style="flex:1 1 240px"><span class="tag">最受歡迎</span><h3>方案名</h3><div class="price">HK$1,280<small>/月</small></div>
+      <ul><li>包含咩</li><li>包含咩</li></ul><a class="btn btn-primary" href="#">揀呢個</a></div>
+    <blockquote class="quote" style="flex:1 1 260px">客人講嘅一句真話。<span class="avatar">阿</span><b>阿文</b><span>客戶 · 角色</span></blockquote>
+  </div>
+
+  <h2>5 · 真實 section 預覽</h2>
+  <p class="desc">以下係由正式 demo 直接抽落嚟（唔係另畫），所以卡同成品一定一致。</p>
+  <div class="preview"><div class="lbl">hero</div><div><section class="block hero" id="hero"><div class="wrap hero-grid"><div><span class="eyebrow rv">香港 · 小批量蒸餾 · 只限 18 歲以上</span><h1>星圖寫好嘅路</h1><p class="lead rv">沙漠蒸餾廠小批量做：每批 600 瓶，標明蒸餾日期同桶號。門市可以試 3 款，付款後 2 個工作日寄出。</p><div class="actions rv"><a class="btn btn-primary" href="#cta">訂購 <span class="i" aria-hidden="true">→</span></a><a class="btn btn-secondary" href="#product">睇酒款</a></div><p class="note rv">只限 18 歲以上 · 落單要填出生日期 · 收貨核對身份證</p></div><figure class="hero-art rv"><div class="deco" aria-hidden="true" style="inset:0;background:radial-gradient(circle at 50% 70%,#6E3B1E 0 30%,transparent 31%),linear-gradient(#1C2340,#B4552D)"></div><figcaption>酒瓶相片位（生成 media/mystical-western-hero.jpg 自動代入）</figcaption></figure></div></section></div></div><div class="preview"><div class="lbl">pricing</div><div><section class="block" id="pricing"><div class="wrap"><h2 class="sec-title">三個買法</h2><p class="sec-sub">只限 18 歲以上；落單前要確認年齡。</p><div class="pricing"><article class="plan rv"><h3>單瓶</h3><div class="price">HK$680 <small>/ 瓶起</small></div><p>揀一款試。</p><ul><li>Desert Dawn 700ml</li><li>含冷鏈運費</li><li>附批號卡</li><li>只限 18 歲以上</li></ul><a class="btn btn-secondary" href="#cta">訂購</a></article><article class="plan rv featured"><span class="tag">最多人訂</span><h3>試飲組</h3><div class="price">HK$520 <small>/ 組</small></div><p>3 款各 200ml。</p><ul><li>3 × 200ml</li><li>附批號卡</li><li>含冷鏈運費</li><li>只限 18 歲以上</li></ul><a class="btn btn-primary" href="#cta">訂購</a></article><article class="plan rv"><h3>私人選桶</h3><div class="price">HK$5,600 <small>/ 6 瓶起</small></div><p>自己揀桶號。</p><ul><li>6 瓶起</li><li>可貼自訂標籤</li><li>3 星期裝瓶</li><li>只限 18 歲以上</li></ul><a class="btn btn-secondary" href="#cta">訂購</a></article></div></div></section></div></div><div class="preview"><div class="lbl">venue</div><div><section class="block" id="venue"><div class="wrap"><h2 class="sec-title">配送同法律</h2><p class="sec-sub">香港法例：唔可以賣酒畀 18 歲以下人士。</p><ul class="infolist"><li><b>年齡限制</b><span>只售 18 歲以上；落單要填出生日期，收貨出示身份證</span></li><li><b>配送</b><span>順豐冷鏈 2 個工作日；離島加 1 日</span></li><li><b>運費</b><span>已含喺價錢內；6 瓶以上免運</span></li><li><b>退換</b><span>未開封 14 日內可以退；已開封唔可以退</span></li><li><b>法例</b><span>酒類唔可以轉售；我們唔會寄去唔准賣酒嘅地區</span></li></ul></div></section></div></div>
+
+  <h2>6 · 動效（Pro 版）</h2>
+  <p class="desc">基本版純 CSS；Pro 版有載入幕、入場、scroll reveal、微互動。跟系統設定「減少動態」會自動降級。</p>
+  <p style="font:13px var(--font-mono,monospace);color:var(--muted)"></p>
+
+  <h2>7 · 點用</h2>
+  <ul style="color:var(--muted);font-size:14px">
+    <li>Tokens：<code>themes/mystical-western.json</code>（含 <code>snippet_css</code> 同 Tailwind <code>theme.extend</code>）</li>
+    <li>Demo：<a href="../mystical-western.html">基本版</a> · <a href="../mystical-western-pro.html">Pro 動效版</a></li>
+    <li>改客人內容：<code>python3 gen_project.py brief.json</code>（自動驗 WCAG 4.5:1）</li>
+  </ul>
+
+  <div class="cp-foot">
+    <button class="btn btn-primary btn-sm noprint" type="button" onclick="window.print()">🖨️ Print／存 PDF</button>
+    <a href="index.html">← 全部風格卡</a>
+    <span>UIUX Style · Mystical Western · 示範內容全部虛構</span>
+  </div>
+</div>
+</body></html>

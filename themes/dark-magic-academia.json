@@ -1,0 +1,55 @@
+{
+ "slug": "dark-magic-academia",
+ "name": "Dark Magic Academia",
+ "cn": "",
+ "family": "🏛️ 古典人文 Heritage & Lifestyle",
+ "industry": "推理遊戲／沉浸劇場",
+ "brand": "Umbra",
+ "cta": "報名",
+ "sections": "rows`：場次 · `venue`：流程同規則 · `products`：道具周邊",
+ "css_variables": {
+  "--bg": "#111014",
+  "--fg": "#E4D5B7",
+  "--muted": "#C0AE8A",
+  "--surface": "#1F2B24",
+  "--border": "#3B2A1E",
+  "--accent": "#C6A45A",
+  "--accent-fg": "#14120E",
+  "--radius": "4px",
+  "--radius-sm": "3px",
+  "--shadow": "0 14px 34px rgba(0,0,0,.55)",
+  "--btn-shadow": "0 0 0 1px rgba(198,164,90,.45),0 8px 22px rgba(0,0,0,.5)",
+  "--art-bg": "radial-gradient(circle at 50% 60%,#9E2A30 0 12%,#7E1F24 13% 15%,transparent 16%),linear-gradient(160deg,#1F2B24,#111014)",
+  "--media-bg": "linear-gradient(180deg,#1F2B24,#111014)",
+  "--cta-bg": "linear-gradient(180deg,#1F2B24,#111014)",
+  "--input-bg": "#16181A",
+  "--ok": "#8FBF6A",
+  "--warn": "#B4453F",
+  "--font-display": "'Cinzel Decorative','Noto Serif TC',serif",
+  "--font-body": "'EB Garamond','Noto Serif TC',serif",
+  "--font-mono": "'IBM Plex Mono',ui-monospace,monospace",
+  "--focus-ring": "var(--accent)"
+ },
+ "fonts": {
+  "google_url": "https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=EB+Garamond:ital@0;1&family=IBM+Plex+Mono:wght@400&display=swap",
+  "display": "'Cinzel Decorative','Noto Serif TC',serif",
+  "body": "'EB Garamond','Noto Serif TC',serif",
+  "mono": "'IBM Plex Mono',ui-monospace,monospace"
+ },
+ "radius": {
+  "base": "4px",
+  "sm": "3px"
+ },
+ "shadow": {
+  "card": "0 14px 34px rgba(0,0,0,.55)",
+  "button": "0 0 0 1px rgba(198,164,90,.45),0 8px 22px rgba(0,0,0,.5)"
+ },
+ "focus_ring": "var(--accent)",
+ "motion": {},
+ "demo": {
+  "basic": "Demos/dark-magic-academia.html",
+  "pro": "Demos/dark-magic-academia-pro.html"
+ },
+ "snippet_css": ":root{\n  --bg: #111014;\n  --fg: #E4D5B7;\n  --muted: #C0AE8A;\n  --surface: #1F2B24;\n  --border: #3B2A1E;\n  --accent: #C6A45A;\n  --accent-fg: #14120E;\n  --radius: 4px;\n  --radius-sm: 3px;\n  --shadow: 0 14px 34px rgba(0,0,0,.55);\n  --btn-shadow: 0 0 0 1px rgba(198,164,90,.45),0 8px 22px rgba(0,0,0,.5);\n  --art-bg: radial-gradient(circle at 50% 60%,#9E2A30 0 12%,#7E1F24 13% 15%,transparent 16%),linear-gradient(160deg,#1F2B24,#111014);\n  --media-bg: linear-gradient(180deg,#1F2B24,#111014);\n  --cta-bg: linear-gradient(180deg,#1F2B24,#111014);\n  --input-bg: #16181A;\n  --ok: #8FBF6A;\n  --warn: #B4453F;\n  --font-display: 'Cinzel Decorative','Noto Serif TC',serif;\n  --font-body: 'EB Garamond','Noto Serif TC',serif;\n  --font-mono: 'IBM Plex Mono',ui-monospace,monospace;\n  --focus-ring: var(--accent);\n}",
+ "snippet_tailwind": "// tailwind.config.js → theme.extend\n{\n  \"colors\": {\n    \"bg\": \"#111014\",\n    \"fg\": \"#E4D5B7\",\n    \"muted\": \"#C0AE8A\",\n    \"surface\": \"#1F2B24\",\n    \"border\": \"#3B2A1E\",\n    \"accent\": \"#C6A45A\",\n    \"accent-fg\": \"#14120E\",\n    \"ok\": \"#8FBF6A\",\n    \"warn\": \"#B4453F\",\n    \"focus-ring\": \"var(--accent)\"\n  },\n  \"borderRadius\": {\n    \"DEFAULT\": \"3px\",\n    \"lg\": \"4px\"\n  },\n  \"fontFamily\": {\n    \"display\": [\n      \"'Cinzel Decorative','Noto Serif TC',serif\"\n    ],\n    \"body\": [\n      \"'EB Garamond','Noto Serif TC',serif\"\n    ]\n  }\n}"
+}

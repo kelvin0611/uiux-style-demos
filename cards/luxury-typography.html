@@ -1,0 +1,117 @@
+<!doctype html><html lang="zh-Hant-HK"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Luxury Typography  · 風格卡</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400;0,500;1,400&family=Montserrat:wght@400;500&display=swap">
+<link rel="stylesheet" href="../blocks.css">
+<style>:root{--bg:#F5F1EA;--fg:#0B0B0B;--muted:#4D473F;--surface:#FFFFFF;--border:rgba(11,11,11,.22);--accent:#7A5F2A;--accent-fg:#F5F1EA;--radius:0px;--radius-sm:0px;--shadow:none;--btn-shadow:none;--art-bg:linear-gradient(150deg,#E6DFD3,#CBBFA9);--media-bg:linear-gradient(150deg,#E6DFD3,#CBBFA9);--cta-bg:#EFE7D9;--input-bg:#FFFFFF;--ok:#1F5C3A;--warn:#8E2F1E;--font-display:'Bodoni Moda','Noto Serif TC',serif;--font-body:Montserrat,'Noto Sans TC',sans-serif;--font-mono:ui-monospace,Menlo,monospace;--focus-ring:var(--accent);}
+
+
+.site-header{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;border-bottom:1px solid rgba(11,11,11,.16);padding-block:22px}
+.logo{order:2;justify-content:center;font:400 26px 'Bodoni Moda',serif;letter-spacing:.36em;text-transform:uppercase}
+.site-header .nav{order:1}.site-header .btn{order:3;justify-self:end}
+.nav a{font:500 11px Montserrat,sans-serif;letter-spacing:.24em;text-transform:uppercase;border-radius:0}
+.nav a[aria-current]{text-decoration:underline;text-underline-offset:6px;color:#0B0B0B}
+@media(max-width:760px){.site-header{grid-template-columns:1fr;justify-items:center}.site-header>*{order:0!important;justify-self:center!important}}
+.hero{text-align:center}
+.hero h1{font:400 clamp(52px,11vw,148px)/.94 'Bodoni Moda',serif;letter-spacing:-.02em}
+.hero h1 em{font-style:italic;color:#7A5F2A}
+.hero::before{content:"";position:absolute;left:50%;top:0;width:1px;height:64px;background:#0B0B0B;pointer-events:none}
+.eyebrow{color:#7A5F2A}
+.btn{border-radius:0;font:500 11px Montserrat,sans-serif;letter-spacing:.26em;text-transform:uppercase;padding:18px 44px}
+.btn-primary{background:#0B0B0B;color:#F5F1EA;box-shadow:none}
+.btn-secondary{background:transparent;border:1px solid #0B0B0B;color:#0B0B0B}
+.card,.tile-c,.quote,.plan,.rows,.mock{border:1px solid rgba(11,11,11,.16);border-radius:0;box-shadow:none}
+.card{background:#FFFDF9}
+.sec-title{font-weight:400;letter-spacing:.01em}
+.sec-sub{font:400 15px 'Bodoni Moda',serif;font-style:italic;color:#4D473F}
+.avatar{border-radius:0;background:#0B0B0B;color:#F5F1EA;font:400 18px 'Bodoni Moda',serif}
+input,select{border-color:rgba(11,11,11,.45)}
+.chip{border-radius:0;background:transparent;border:1px solid rgba(11,11,11,.32)}
+.tag{background:#7A5F2A;color:#F5F1EA;border-radius:0;letter-spacing:.16em;text-transform:uppercase;font-size:11px}
+.tile-c .ph{background-image:linear-gradient(150deg,#E6DFD3,#CBBFA9);border-radius:0}
+.plan.featured{outline:1px solid #7A5F2A;outline-offset:4px}
+.stat .num{font:400 clamp(30px,4vw,46px)/1 'Bodoni Moda',serif}
+.rows article:nth-child(odd){background:#FFFDF9}
+.faq summary::after{color:#7A5F2A}
+
+/* ---- 風格卡專用 ---- */
+body{background:var(--bg);color:var(--fg);font-family:var(--font-body)}
+.cp{max-width:1080px;margin:0 auto;padding:clamp(18px,4vw,40px)}
+.cp-head{border-bottom:2px solid var(--border);padding-bottom:18px;margin-bottom:26px}
+.cp-head h1{margin:.1em 0 .2em;font-family:var(--font-display);font-size:clamp(28px,5vw,46px)}
+.cp-meta{color:var(--muted);font-size:14px}
+.cp-tag{display:inline-block;border:1px solid var(--border);border-radius:999px;padding:3px 10px;font-size:12px;color:var(--muted);margin:0 6px 6px 0}
+.cp h2{font-family:var(--font-display);font-size:clamp(18px,2.4vw,24px);margin:34px 0 6px;padding-bottom:6px;border-bottom:1px solid var(--border)}
+.cp p.desc{color:var(--muted);margin:6px 0 14px;max-width:70ch}
+.sws{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:10px}
+.sw{border:1px solid var(--border);border-radius:10px;padding:9px;background:var(--surface);display:grid;gap:4px}
+.sw i{display:block;height:44px;border-radius:7px;border:1px solid var(--border)}
+.sw b{font-size:13px}.sw code{font:12px var(--font-mono,monospace);color:var(--muted)}
+.sw span{font-size:11px;color:var(--muted)}
+.typo div{border:1px solid var(--border);border-radius:10px;padding:12px 14px;margin-bottom:8px;background:var(--surface)}
+.typo .d{font-family:var(--font-display);font-size:32px;line-height:1.15}
+.typo .b{font-family:var(--font-body);font-size:16px}
+.typo .m{font-family:var(--font-mono,monospace);font-size:14px}
+.typo small{color:var(--muted);font-size:11px;display:block;margin-top:6px}
+.row{display:flex;gap:12px;flex-wrap:wrap;align-items:flex-start}
+.preview{border:1px dashed var(--border);border-radius:12px;overflow:hidden;margin-bottom:12px}
+.preview .lbl{font:11px var(--font-mono,monospace);color:var(--muted);padding:6px 10px;border-bottom:1px dashed var(--border)}
+.preview > div:last-child{transform-origin:top left}
+.cp-foot{margin-top:36px;padding-top:14px;border-top:1px solid var(--border);color:var(--muted);font-size:13px;display:flex;gap:14px;flex-wrap:wrap}
+.cp a{color:var(--accent)}
+@media print{.noprint{display:none}body{background:#fff}.cp{max-width:none;padding:0}.preview{page-break-inside:avoid}}
+</style></head><body>
+<div class="cp">
+  <div class="cp-head">
+    <span class="cp-tag">🏛️ 古典人文 Heritage &amp; Lifestyle</span><span class="cp-tag">15 個 block</span><span class="cp-tag">—</span>
+    <h1> Luxury Typography <span style="font-size:.6em;color:var(--muted)"></span></h1>
+    <p class="desc" style="font-size:17px;color:var(--fg)">用極少元素表達高級 —— 巨型高對比 Didone serif、全大楷寬字距細字、黑米金、奢侈嘅留白，克制到極致。</p>
+    <p class="cp-meta">示範品牌 <b>Maison</b> · 主要 CTA「預約私人導購」· 行業：高端時裝</p>
+  </div>
+
+  <h2>1 · 色票 Palette</h2>
+  <p class="desc">所有元件都只可以用呢組 token（換色 = 改呢幾行）。</p>
+  <div class="sws"><div class="sw"><i style="background:#F5F1EA"></i><b>--bg</b><code>#F5F1EA</code><span>底色 Background</span></div><div class="sw"><i style="background:#0B0B0B"></i><b>--fg</b><code>#0B0B0B</code><span>主文字 Text</span></div><div class="sw"><i style="background:#4D473F"></i><b>--muted</b><code>#4D473F</code><span>次要文字 Muted</span></div><div class="sw"><i style="background:#FFFFFF"></i><b>--surface</b><code>#FFFFFF</code><span>卡片面 Surface</span></div><div class="sw"><i style="background:rgba(11,11,11,.22)"></i><b>--border</b><code>rgba(11,11,11,.22)</code><span>分隔線 Border</span></div><div class="sw"><i style="background:#7A5F2A"></i><b>--accent</b><code>#7A5F2A</code><span>強調色 Accent</span></div><div class="sw"><i style="background:#F5F1EA"></i><b>--accent-fg</b><code>#F5F1EA</code><span>強調上文字</span></div><div class="sw"><i style="background:#1F5C3A"></i><b>--ok</b><code>#1F5C3A</code><span>成功 Success</span></div><div class="sw"><i style="background:#8E2F1E"></i><b>--warn</b><code>#8E2F1E</code><span>警告 Warning</span></div></div>
+
+  <h2>2 · 字體 Typography</h2>
+  <p class="desc">最多兩個字重；標題 &#x27;Bodoni Moda&#x27;,&#x27;Noto Serif TC&#x27;,serif、正文 Montserrat,&#x27;Noto Sans TC&#x27;,sans-serif。</p>
+  <div class="typo">
+    <div class="d">一頁講清成件事 <small>Display · &#x27;Bodoni Moda&#x27;,&#x27;Noto Serif TC&#x27;,serif</small></div>
+    <div class="b">正文用 Montserrat,&#x27;Noto Sans TC&#x27;,sans-serif：16px、行高 1.65，唔會超過 70 個中文字一行。<small>Body</small></div>
+    <div class="m">HK$1,280 · 2026-09-22 · #REF-0042 <small>Mono／數字對齊（ui-monospace,Menlo,monospace）</small></div>
+  </div>
+
+  <h2>3 · 按鈕 Buttons</h2>
+  <p class="desc">11 個狀態齊：hover 升起、active 壓落、focus 外框（對比 ≥3:1）、disabled 變淡、loading／success。</p>
+  <div class="btn-row"><div class="state"><button class="btn btn-primary " type="button">Primary</button><small>Default</small></div><div class="state"><button class="btn btn-primary is-hover" type="button">Primary</button><small>Hover</small></div><div class="state"><button class="btn btn-primary is-active" type="button">Primary</button><small>Active</small></div><div class="state"><button class="btn btn-primary is-focus" type="button">Primary</button><small>Focus</small></div><div class="state"><button class="btn btn-primary " type="button" disabled>Primary</button><small>Disabled</small></div><div class="state"><button class="btn btn-primary btn-sm" type="button">Small</button><small>btn-sm</small></div><div class="state"><button class="btn btn-primary btn-lg" type="button">Large</button><small>btn-lg</small></div><div class="state"><button class="btn btn-primary btn-secondary" type="button">Secondary</button><small>Secondary</small></div></div>
+
+  <h2>4 · 組件 Components</h2>
+  <div class="row">
+    <article class="card" style="flex:1 1 260px"><span class="ico" aria-hidden="true">◆</span><h3>卡片標題</h3><p>一句講清重點，唔超過兩行。</p></article>
+    <div class="plan" style="flex:1 1 240px"><span class="tag">最受歡迎</span><h3>方案名</h3><div class="price">HK$1,280<small>/月</small></div>
+      <ul><li>包含咩</li><li>包含咩</li></ul><a class="btn btn-primary" href="#">揀呢個</a></div>
+    <blockquote class="quote" style="flex:1 1 260px">客人講嘅一句真話。<span class="avatar">阿</span><b>阿文</b><span>客戶 · 角色</span></blockquote>
+  </div>
+
+  <h2>5 · 真實 section 預覽</h2>
+  <p class="desc">以下係由正式 demo 直接抽落嚟（唔係另畫），所以卡同成品一定一致。</p>
+  <div class="preview"><div class="lbl">hero</div><div><section class="block hero" id="hero"><div class="wrap hero-grid"><div><span class="eyebrow rv">香港 · 私人導購 · 只做預約</span><h1>MAISON<br><em>Élégance</em></h1><p class="lead rv">每年只做 12 個系列，每件人手做 3–6 星期。到店試身，唔使上網估尺碼。</p><div class="actions rv"><a class="btn btn-primary" href="#cta">預約私人導購 <span class="i" aria-hidden="true">→</span></a><a class="btn btn-secondary" href="#product">睇系列</a></div><p class="note rv">私人導購 60 分鐘 · 改衣 2 次免費 · 全港 2 間店</p></div><figure class="hero-art rv"><div class="deco" aria-hidden="true" style="inset:0;background:linear-gradient(150deg,#E6DFD3,#CBBFA9)"></div><figcaption>產品相片位（生成 media/luxury-typography-hero.jpg 自動代入）</figcaption></figure></div></section></div></div><div class="preview"><div class="lbl">pricing</div><div><section class="block" id="pricing"><div class="wrap"><h2 class="sec-title">三種買法</h2><p class="sec-sub">可以先嚟試身，唔一定要即日買。</p><div class="pricing"><article class="plan rv"><h3>預約導購</h3><div class="price">HK$0 <small>/ 次</small></div><p>60 分鐘一對一。</p><ul><li>1 對 1 導購</li><li>試身 4–6 件</li><li>尺寸紀錄存档</li><li>無最低消費</li></ul><a class="btn btn-secondary" href="#cta">預約私人導購</a></article><article class="plan rv featured"><span class="tag">最多人預約</span><h3>成品系列</h3><div class="price">HK$12,600 <small>/ 件起</small></div><p>現有系列直接買。</p><ul><li>四季系列</li><li>改衣 2 次免費</li><li>12 個月保養</li><li>順豐免運</li></ul><a class="btn btn-primary" href="#cta">預約私人導購</a></article><article class="plan rv"><h3>私人訂製</h3><div class="price">HK$68,000 <small>/ 件起</small></div><p>由零開始訂做。</p><ul><li>3 次試身</li><li>面料另計</li><li>8–10 星期交貨</li><li>可繡名或縮寫</li></ul><a class="btn btn-secondary" href="#cta">預約諮詢</a></article></div></div></section></div></div><div class="preview"><div class="lbl">venue</div><div><section class="block" id="venue"><div class="wrap"><h2 class="sec-title">服務同改衣</h2><p class="sec-sub">改衣同交期寫明喺度，唔會取貨先講。</p><ul class="infolist"><li><b>預約</b><span>私人導購 60 分鐘；提前 2 日預約，唔收費、無最低消費</span></li><li><b>改衣</b><span>成品後 2 次免費（肩／袖／腰）；之後每次 HK$380</span></li><li><b>交期</b><span>3–6 星期；10–12 月旺季加 2 星期</span></li><li><b>取貨</b><span>到店自取或順豐送上門（免運）；唔代收貨款</span></li><li><b>保養</b><span>12 個月內非人為破損免費修補；羊絨可送回清洗</span></li></ul></div></section></div></div>
+
+  <h2>6 · 動效（Pro 版）</h2>
+  <p class="desc">基本版純 CSS；Pro 版有載入幕、入場、scroll reveal、微互動。跟系統設定「減少動態」會自動降級。</p>
+  <p style="font:13px var(--font-mono,monospace);color:var(--muted)"></p>
+
+  <h2>7 · 點用</h2>
+  <ul style="color:var(--muted);font-size:14px">
+    <li>Tokens：<code>themes/luxury-typography.json</code>（含 <code>snippet_css</code> 同 Tailwind <code>theme.extend</code>）</li>
+    <li>Demo：<a href="../luxury-typography.html">基本版</a> · <a href="../luxury-typography-pro.html">Pro 動效版</a> · <a href="../luxury-typography-pro.html?deep=1">🧪 深度效果</a></li>
+    <li>改客人內容：<code>python3 gen_project.py brief.json</code>（自動驗 WCAG 4.5:1）</li>
+  </ul>
+
+  <div class="cp-foot">
+    <button class="btn btn-primary btn-sm noprint" type="button" onclick="window.print()">🖨️ Print／存 PDF</button>
+    <a href="index.html">← 全部風格卡</a>
+    <span>UIUX Style · Luxury Typography · 示範內容全部虛構</span>
+  </div>
+</div>
+</body></html>

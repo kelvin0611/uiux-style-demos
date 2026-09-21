@@ -1,0 +1,55 @@
+{
+ "slug": "shabby-chic",
+ "name": "Shabby Chic",
+ "cn": "",
+ "family": "🏛️ 古典人文 Heritage & Lifestyle",
+ "industry": "婚禮佈置／家品店",
+ "brand": "Rosewood",
+ "cta": "預約場地佈置",
+ "sections": "rows`：服務 · `products`：家品 · `venue`：配送同安裝",
+ "css_variables": {
+  "--bg": "#FAF6F0",
+  "--fg": "#5A4A48",
+  "--muted": "#6B5854",
+  "--surface": "#FFFDFA",
+  "--border": "#E4D8D2",
+  "--accent": "#8E5B5B",
+  "--accent-fg": "#FFFFFF",
+  "--radius": "18px",
+  "--radius-sm": "12px",
+  "--shadow": "0 8px 20px rgba(142,91,91,.14)",
+  "--btn-shadow": "0 4px 0 rgba(142,91,91,.28)",
+  "--art-bg": "radial-gradient(circle at 40% 70%,#BFD3DC 0 12%,transparent 13%),linear-gradient(160deg,#F7EAE7,#E8C5C1)",
+  "--media-bg": "linear-gradient(160deg,#F7EAE7,#E8C5C1)",
+  "--cta-bg": "#F7ECE9",
+  "--input-bg": "#FFFFFF",
+  "--ok": "#5E7F62",
+  "--warn": "#A6554B",
+  "--font-display": "'Playfair Display','Noto Serif TC',serif",
+  "--font-body": "'Lora','Noto Sans TC',serif",
+  "--font-mono": "'Courier New',ui-monospace,monospace",
+  "--focus-ring": "var(--accent)"
+ },
+ "fonts": {
+  "google_url": "https://fonts.googleapis.com/css2?family=Parisienne&family=Playfair+Display:wght@500&family=Lora&display=swap",
+  "display": "'Playfair Display','Noto Serif TC',serif",
+  "body": "'Lora','Noto Sans TC',serif",
+  "mono": "'Courier New',ui-monospace,monospace"
+ },
+ "radius": {
+  "base": "18px",
+  "sm": "12px"
+ },
+ "shadow": {
+  "card": "0 8px 20px rgba(142,91,91,.14)",
+  "button": "0 4px 0 rgba(142,91,91,.28)"
+ },
+ "focus_ring": "var(--accent)",
+ "motion": {},
+ "demo": {
+  "basic": "Demos/shabby-chic.html",
+  "pro": "Demos/shabby-chic-pro.html"
+ },
+ "snippet_css": ":root{\n  --bg: #FAF6F0;\n  --fg: #5A4A48;\n  --muted: #6B5854;\n  --surface: #FFFDFA;\n  --border: #E4D8D2;\n  --accent: #8E5B5B;\n  --accent-fg: #FFFFFF;\n  --radius: 18px;\n  --radius-sm: 12px;\n  --shadow: 0 8px 20px rgba(142,91,91,.14);\n  --btn-shadow: 0 4px 0 rgba(142,91,91,.28);\n  --art-bg: radial-gradient(circle at 40% 70%,#BFD3DC 0 12%,transparent 13%),linear-gradient(160deg,#F7EAE7,#E8C5C1);\n  --media-bg: linear-gradient(160deg,#F7EAE7,#E8C5C1);\n  --cta-bg: #F7ECE9;\n  --input-bg: #FFFFFF;\n  --ok: #5E7F62;\n  --warn: #A6554B;\n  --font-display: 'Playfair Display','Noto Serif TC',serif;\n  --font-body: 'Lora','Noto Sans TC',serif;\n  --font-mono: 'Courier New',ui-monospace,monospace;\n  --focus-ring: var(--accent);\n}",
+ "snippet_tailwind": "// tailwind.config.js → theme.extend\n{\n  \"colors\": {\n    \"bg\": \"#FAF6F0\",\n    \"fg\": \"#5A4A48\",\n    \"muted\": \"#6B5854\",\n    \"surface\": \"#FFFDFA\",\n    \"border\": \"#E4D8D2\",\n    \"accent\": \"#8E5B5B\",\n    \"accent-fg\": \"#FFFFFF\",\n    \"ok\": \"#5E7F62\",\n    \"warn\": \"#A6554B\",\n    \"focus-ring\": \"var(--accent)\"\n  },\n  \"borderRadius\": {\n    \"DEFAULT\": \"12px\",\n    \"lg\": \"18px\"\n  },\n  \"fontFamily\": {\n    \"display\": [\n      \"'Playfair Display','Noto Serif TC',serif\"\n    ],\n    \"body\": [\n      \"'Lora','Noto Sans TC',serif\"\n    ]\n  }\n}"
+}

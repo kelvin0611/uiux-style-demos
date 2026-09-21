@@ -1,0 +1,56 @@
+{
+ "slug": "japandi",
+ "name": "Japandi",
+ "cn": "",
+ "family": "🏛️ 古典人文 Heritage & Lifestyle",
+ "industry": "家居傢俬",
+ "brand": "Hinoki",
+ "cta": "預約睇展廳",
+ "sections": "products`：傢俬 · `rows`：價目 · `venue`：配送同安裝",
+ "css_variables": {
+  "--bg": "#F7F4EE",
+  "--fg": "#2E2D2B",
+  "--muted": "#5A574F",
+  "--surface": "#EDE6DA",
+  "--border": "#D9D1C3",
+  "--accent": "#4A5741",
+  "--accent-fg": "#FFFFFF",
+  "--accent-grad": "linear-gradient(90deg,#C8AD8D,#B49673)",
+  "--radius": "6px",
+  "--radius-sm": "4px",
+  "--shadow": "0 10px 30px rgba(46,45,43,.08)",
+  "--btn-shadow": "0 1px 0 rgba(46,45,43,.14)",
+  "--art-bg": "linear-gradient(180deg,#EDE6DA,#C8AD8D)",
+  "--media-bg": "linear-gradient(180deg,#EDE6DA,#D9D1C3)",
+  "--cta-bg": "#EDE6DA",
+  "--input-bg": "#FFFFFF",
+  "--ok": "#3F6B4E",
+  "--warn": "#A6483A",
+  "--font-display": "Jost,'Noto Sans TC',sans-serif",
+  "--font-body": "Jost,'Noto Sans TC',sans-serif",
+  "--font-mono": "ui-monospace,'SF Mono',Menlo,monospace",
+  "--focus-ring": "var(--accent)"
+ },
+ "fonts": {
+  "google_url": "https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500&family=Noto+Sans+TC:wght@300;400;500&display=swap",
+  "display": "Jost,'Noto Sans TC',sans-serif",
+  "body": "Jost,'Noto Sans TC',sans-serif",
+  "mono": "ui-monospace,'SF Mono',Menlo,monospace"
+ },
+ "radius": {
+  "base": "6px",
+  "sm": "4px"
+ },
+ "shadow": {
+  "card": "0 10px 30px rgba(46,45,43,.08)",
+  "button": "0 1px 0 rgba(46,45,43,.14)"
+ },
+ "focus_ring": "var(--accent)",
+ "motion": {},
+ "demo": {
+  "basic": "Demos/japandi.html",
+  "pro": "Demos/japandi-pro.html"
+ },
+ "snippet_css": ":root{\n  --bg: #F7F4EE;\n  --fg: #2E2D2B;\n  --muted: #5A574F;\n  --surface: #EDE6DA;\n  --border: #D9D1C3;\n  --accent: #4A5741;\n  --accent-fg: #FFFFFF;\n  --accent-grad: linear-gradient(90deg,#C8AD8D,#B49673);\n  --radius: 6px;\n  --radius-sm: 4px;\n  --shadow: 0 10px 30px rgba(46,45,43,.08);\n  --btn-shadow: 0 1px 0 rgba(46,45,43,.14);\n  --art-bg: linear-gradient(180deg,#EDE6DA,#C8AD8D);\n  --media-bg: linear-gradient(180deg,#EDE6DA,#D9D1C3);\n  --cta-bg: #EDE6DA;\n  --input-bg: #FFFFFF;\n  --ok: #3F6B4E;\n  --warn: #A6483A;\n  --font-display: Jost,'Noto Sans TC',sans-serif;\n  --font-body: Jost,'Noto Sans TC',sans-serif;\n  --font-mono: ui-monospace,'SF Mono',Menlo,monospace;\n  --focus-ring: var(--accent);\n}",
+ "snippet_tailwind": "// tailwind.config.js → theme.extend\n{\n  \"colors\": {\n    \"bg\": \"#F7F4EE\",\n    \"fg\": \"#2E2D2B\",\n    \"muted\": \"#5A574F\",\n    \"surface\": \"#EDE6DA\",\n    \"border\": \"#D9D1C3\",\n    \"accent\": \"#4A5741\",\n    \"accent-fg\": \"#FFFFFF\",\n    \"ok\": \"#3F6B4E\",\n    \"warn\": \"#A6483A\",\n    \"focus-ring\": \"var(--accent)\"\n  },\n  \"borderRadius\": {\n    \"DEFAULT\": \"4px\",\n    \"lg\": \"6px\"\n  },\n  \"fontFamily\": {\n    \"display\": [\n      \"Jost,'Noto Sans TC',sans-serif\"\n    ],\n    \"body\": [\n      \"Jost,'Noto Sans TC',sans-serif\"\n    ]\n  }\n}"
+}

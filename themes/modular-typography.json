@@ -1,0 +1,55 @@
+{
+ "slug": "modular-typography",
+ "name": "Modular Typography",
+ "cn": "",
+ "family": "📐 秩序理性 Structure & Order",
+ "industry": "設計工作室／字體廠",
+ "brand": "Modular` / `Modular Grid",
+ "cta": "睇系統",
+ "sections": "",
+ "css_variables": {
+  "--bg": "#FFFFFF",
+  "--fg": "#0A0A0A",
+  "--muted": "#555555",
+  "--surface": "#F2F2F2",
+  "--border": "#0A0A0A",
+  "--accent": "#0B5FFF",
+  "--accent-fg": "#FFFFFF",
+  "--radius": "0px",
+  "--radius-sm": "0px",
+  "--shadow": "none",
+  "--btn-shadow": "4px 4px 0 #0A0A0A",
+  "--art-bg": "repeating-linear-gradient(90deg,#F2F2F2 0 24px,#fff 24px 48px)",
+  "--media-bg": "repeating-linear-gradient(90deg,#F2F2F2 0 24px,#fff 24px 48px)",
+  "--cta-bg": "#F2F2F2",
+  "--input-bg": "#FFFFFF",
+  "--ok": "#0B5FFF",
+  "--warn": "#C81E1E",
+  "--font-display": "'Space Grotesk','Noto Sans TC',sans-serif",
+  "--font-body": "Inter,sans-serif",
+  "--font-mono": "'Space Grotesk',monospace",
+  "--focus-ring": "var(--accent)"
+ },
+ "fonts": {
+  "google_url": "https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Inter:wght@400;500&display=swap",
+  "display": "'Space Grotesk','Noto Sans TC',sans-serif",
+  "body": "Inter,sans-serif",
+  "mono": "'Space Grotesk',monospace"
+ },
+ "radius": {
+  "base": "0px",
+  "sm": "0px"
+ },
+ "shadow": {
+  "card": "none",
+  "button": "4px 4px 0 #0A0A0A"
+ },
+ "focus_ring": "var(--accent)",
+ "motion": {},
+ "demo": {
+  "basic": "Demos/modular-typography.html",
+  "pro": "Demos/modular-typography-pro.html"
+ },
+ "snippet_css": ":root{\n  --bg: #FFFFFF;\n  --fg: #0A0A0A;\n  --muted: #555555;\n  --surface: #F2F2F2;\n  --border: #0A0A0A;\n  --accent: #0B5FFF;\n  --accent-fg: #FFFFFF;\n  --radius: 0px;\n  --radius-sm: 0px;\n  --shadow: none;\n  --btn-shadow: 4px 4px 0 #0A0A0A;\n  --art-bg: repeating-linear-gradient(90deg,#F2F2F2 0 24px,#fff 24px 48px);\n  --media-bg: repeating-linear-gradient(90deg,#F2F2F2 0 24px,#fff 24px 48px);\n  --cta-bg: #F2F2F2;\n  --input-bg: #FFFFFF;\n  --ok: #0B5FFF;\n  --warn: #C81E1E;\n  --font-display: 'Space Grotesk','Noto Sans TC',sans-serif;\n  --font-body: Inter,sans-serif;\n  --font-mono: 'Space Grotesk',monospace;\n  --focus-ring: var(--accent);\n}",
+ "snippet_tailwind": "// tailwind.config.js → theme.extend\n{\n  \"colors\": {\n    \"bg\": \"#FFFFFF\",\n    \"fg\": \"#0A0A0A\",\n    \"muted\": \"#555555\",\n    \"surface\": \"#F2F2F2\",\n    \"border\": \"#0A0A0A\",\n    \"accent\": \"#0B5FFF\",\n    \"accent-fg\": \"#FFFFFF\",\n    \"ok\": \"#0B5FFF\",\n    \"warn\": \"#C81E1E\",\n    \"focus-ring\": \"var(--accent)\"\n  },\n  \"borderRadius\": {\n    \"DEFAULT\": \"0px\",\n    \"lg\": \"0px\"\n  },\n  \"fontFamily\": {\n    \"display\": [\n      \"'Space Grotesk','Noto Sans TC',sans-serif\"\n    ],\n    \"body\": [\n      \"Inter,sans-serif\"\n    ]\n  }\n}"
+}

@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="zh-Hant-HK"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Minimalism · 極簡主義 — Plain | UIUX Style Demo</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap">
+<meta name="description" content="任務、筆記、日程放同一個位；冇分頁、冇裝飾、冇通知。開一個 10,000 項嘅專案 0.4 秒。">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Minimalism · 極簡主義">
+<meta property="og:description" content="任務、筆記、日程放同一個位；冇分頁、冇裝飾、冇通知。開一個 10,000 項嘅專案 0.4 秒。">
+<meta name="twitter:card" content="summary_large_image">
+<meta property="og:image" content="media/og/minimalism.png">
+<link rel="stylesheet" href="blocks.css">
+<style>:root{--bg:#FFFFFF;--fg:#111111;--muted:#616161;--surface:#FFFFFF;--border:#E4E4E4;--accent:#0B57D0;--accent-fg:#FFFFFF;--radius:10px;--radius-sm:6px;--shadow:none;--btn-shadow:none;--art-bg:#F5F5F5;--media-bg:#F7F7F7;--cta-bg:#F7F7F7;--input-bg:#FFFFFF;--ok:#0E6B3E;--warn:#B3261E;--font-display:Inter,'Noto Sans TC',sans-serif;--font-body:Inter,'Noto Sans TC',sans-serif;--font-mono:ui-monospace,Menlo,monospace;--focus-ring:var(--accent);}
+
+.site-header{border-bottom:1px solid #E4E4E4;padding-block:18px}
+.logo{font-weight:600;letter-spacing:-.02em}
+.nav a{color:#616161;font-size:14px}
+.nav a[aria-current]{color:#111;text-decoration:underline;text-underline-offset:5px}
+.hero{text-align:center;padding-block:clamp(64px,10vw,120px)}
+.hero h1{font-weight:600;font-size:clamp(38px,6.4vw,72px);line-height:1.06;letter-spacing:-.04em}
+.eyebrow{border:1px solid #E4E4E4;border-radius:999px;padding:4px 12px;color:#616161;font-size:13px;font-weight:500;letter-spacing:.02em;text-transform:none}
+.sec-title{font-size:14px;font-weight:500;color:#616161;letter-spacing:.08em;text-transform:uppercase}
+.sec-sub{color:#111}
+.card,.plan,.quote,.rows,.mock,.tile-c{border:1px solid #E4E4E4;border-radius:10px;box-shadow:none;background:#fff}
+.btn{border-radius:8px;font-weight:500;font-size:15px}
+.btn-primary{background:#0B57D0;color:#fff}
+.btn-secondary{background:#fff;color:#111;border:1px solid #E4E4E4}
+input,select{border-color:#8A8A8A}
+.chip{background:#fff;border:1px solid #E4E4E4;border-radius:999px;font-size:13px}
+.avatar{background:#111;color:#fff}
+.tag{background:#111;color:#fff;border-radius:999px;font-size:11px;letter-spacing:.02em}
+.tile-c .ph{background:#F7F7F7;border-radius:6px}
+.plan.featured{border-color:#0B57D0;box-shadow:none}
+.stat .num{font-weight:600;letter-spacing:-.03em}
+.rows article{border-bottom:1px solid #EDEDED}
+.hero-art{background:#F5F5F5}
+.faq summary::after{color:#111}
+</style>
+</head>
+<body>
+<div class="demo-bar"><span><a href="index.html">← 全部風格</a> · <b>🆕 41/57 ◻️ Minimalism 極簡主義（12 block 全頁版）</b></span><span><a href="minimalism-pro.html">✨ Pro 版</a> · <a href="mid-century.html">‹ Mid-Century</a> · <a href="mixed-media.html">Mixed Media ›</a> · <a href="obsidian://open?vault=Obsidian&file=04-%E5%85%A7%E5%AE%B9%E5%89%B5%E4%BD%9C/UIUX%20Style/Styles/Minimalism">📝 Obsidian 筆記</a></span></div>
+<div class="progress-css" aria-hidden="true"></div>
+<header class="site-header wrap"><div class="logo">Plain</div><input type="checkbox" id="navToggle" class="nav-toggle-input" aria-label="開關選單"><label class="nav-toggle" for="navToggle">選單</label><nav class="nav" aria-label="主選單"><a href="#rows" aria-current="page">方案</a><a href="#chips">整合</a><a href="#venue">支援</a><a href="#pricing">價錢</a></nav><a class="btn btn-primary" href="#cta">免費試</a></header>
+<main>
+<section class="block hero" id="hero"><div class="wrap hero-grid"><div><span class="eyebrow rv">香港 · 生產力 app · 免費試</span><h1>少啲工具，多啲完成</h1><p class="lead rv">任務、筆記、日程放同一個位；冇分頁、冇裝飾、冇通知。開一個 10,000 項嘅專案 0.4 秒。</p><div class="actions rv"><a class="btn btn-primary" href="#cta">免費試 <span class="i" aria-hidden="true">→</span></a><a class="btn btn-secondary" href="#product">睇方案</a></div><p class="note rv">免費版 3 個專案 · 匯入 Notion／CSV · 唔綁信用卡</p></div><figure class="hero-art rv"><div class="deco" aria-hidden="true" style="inset:0;background:#F5F5F5"></div><figcaption>介面相片位（生成 media/minimalism-hero.jpg 自動代入）</figcaption></figure></div></section>
+<section class="block tight trust band"><div class="wrap trust"><span class="lbl">用緊（示範網站，全部虛構）：</span><span class="wordmark">Paperland</span><span class="wordmark">Studio 45</span><span class="wordmark">格仔雜貨</span><span class="wordmark">Maker Kids</span><span class="wordmark">北角電業</span></div></section>
+<section class="block" id="features"><div class="wrap"><h2 class="sec-title">四個實際好處</h2><p class="sec-sub">每個功能都要證明自己存在嘅理由。</p><div class="grid g4"><article class="card rv"><span class="ico" aria-hidden="true">◻️</span><h3>一件工具</h3><p>任務、筆記、日程同一個位，唔使切 app。</p></article><article class="card rv"><span class="ico" aria-hidden="true">⌨️</span><h3>鍵盤先決</h3><p>任何操作 2 個鍵內做到，唔使摸滑鼠。</p></article><article class="card rv"><span class="ico" aria-hidden="true">⏱️</span><h3>0.4 秒開檔</h3><p>10,000 個項目嘅專案都唔卡。</p></article><article class="card rv"><span class="ico" aria-hidden="true">🔕</span><h3>預設靜音</h3><p>唔會彈通知；要提醒自己設。</p></article></div></div></section>
+<section class="block band" id="product"><div class="wrap"><h2 class="sec-title">今日</h2><p class="sec-sub">一頁睇齊今日要做嘅嘢，冇其他。</p><div class="mock rv"><div class="mock-bar"><span class="mock-dot"></span><span class="mock-dot"></span><span class="mock-dot"></span><span style="margin-left:8px">Plain · 今日</span></div><div class="mock-body"><aside class="mock-side"><span><b>清單</b></span><span>今日 4</span><span>本週 11</span><span><b>專案</b></span><span>3 個</span></aside><div class="mock-main"><div class="mock-row"><span class="pill">09:30</span> 交提案草稿</div><div class="mock-row"><span class="diff-add">+ 完成：客戶會議紀錄 → 歸檔</span></div><div class="mock-row"><span class="pill">14:00</span> 覆 3 封 email</div><div class="mock-row"><span class="pill">今日</span> 剩 2 項 · 預計 46 分鐘</div></div><aside class="mock-right"><span><b>焦點</b></span><span>提案草稿</span><span><b>同步</b></span><span>2 分鐘前</span></aside></div></div><p class="note">示範版係靜態畫面；Pro 版會逐行打出嚟。</p></div></section>
+<section class="block"><div class="wrap"><h2 class="sec-title">三步開始</h2><p class="sec-sub">由開戶到用得順，10 分鐘內搞完。</p><ol class="steps"><li class="rv"><h3>開戶</h3><p>用 email 開，唔使信用卡；匯入 Notion／CSV 一分鐘搞完。</p></li><li class="rv"><h3>設定焦點</h3><p>每日最多揀 3 項；其他全部入本週清單。</p></li><li class="rv"><h3>用鍵盤行</h3><p>2 個鍵內做到任何操作；有快捷鍵表可以印。</p></li></ol></div></section>
+<section class="block tight"><div class="wrap"><div class="stats"><div class="stat rv"><span class="num">0.4 秒</span><span>開檔時間</span></div><div class="stat rv"><span class="num">3 個</span><span>免費版專案</span></div><div class="stat rv"><span class="num">2 鍵</span><span>完成任何操作</span></div><div class="stat rv"><span class="num">4.8/5</span><span>用戶評分（示範數據）</span></div></div></div></section>
+<section class="block" id="rows"><div class="wrap"><h2 class="sec-title rv">方案</h2><p class="sec-sub rv">按人頭計；免費版永久，唔綁信用卡。</p><div class="rows"><article class="rv"><b>免費</b><span>1 人 · 3 個專案 · 7 日紀錄</span><span class="cost">HK$0</span></article><article class="rv"><b>★ 個人</b><span>1 人 · 不限專案 · 1 年紀錄 · 全部整合</span><span class="cost">HK$48 / 月</span></article><article class="rv"><b>團隊</b><span>25 人 · 共用專案 · 權限同角色</span><span class="cost">HK$38 / 人 / 月</span></article><article class="rv"><b>公司</b><span>不限人數 · SSO · 審計日誌</span><span class="cost">HK$68 / 人 / 月</span></article><article class="rv"><b>年付</b><span>年付免 2 個月（等於 8.3 折）</span><span class="cost">—</span></article></div><p class="note rv">以上係示範價目；功能同價錢以正式頁面為準。</p></div></section>
+<section class="block"><div class="wrap"><h2 class="sec-title">用戶點講</h2><p class="sec-sub">示範網站用虛構名；真評語會喺真實用戶後補。</p><div class="grid g2"><figure class="quote rv"><p>「開咗就寫，冇嘢擋住。我由三個 app 收返一個。」</p><figcaption class="who"><span class="avatar" aria-hidden="true">阿</span><span><b>阿鵬</b><br>用戶 · 產品設計</span></figcaption></figure><figure class="quote rv"><p>「終於有個 app 唔會彈通知叫我睇佢。」</p><figcaption class="who"><span class="avatar" aria-hidden="true">C</span><span><b>Cindy</b><br>用戶 · 編輯</span></figcaption></figure></div></div></section>
+<section class="block" id="chips"><div class="wrap"><h2 class="sec-title">整合</h2><p class="sec-sub">全部用官方 API；唔會叫你裝瀏覽器插件。</p><div class="chips"><span class="chip">Google Calendar</span><span class="chip">Apple 日曆</span><span class="chip">Notion 匯入</span><span class="chip">CSV／Markdown 匯出</span><span class="chip">Slack 通知</span><span class="chip">GitHub Issues</span><span class="chip">捷徑 Shortcuts</span><span class="chip">Webhook</span><span class="chip">離線模式</span><span class="chip">iOS／Android／Web</span></div></div></section>
+<section class="block" id="pricing"><div class="wrap"><h2 class="sec-title">三個方案</h2><p class="sec-sub">免費版永久；升級隨時，取消唔收費。</p><div class="pricing"><article class="plan rv"><h3>免費</h3><div class="price">HK$0 <small>/ 永久</small></div><p>1 個人用。</p><ul><li>3 個專案</li><li>7 日紀錄</li><li>基本同步</li><li>社群支援</li></ul><a class="btn btn-secondary" href="#cta">免費試</a></article><article class="plan rv featured"><span class="tag">最多人用</span><h3>個人</h3><div class="price">HK$48 <small>/ 月</small></div><p>1 個人，不限專案。</p><ul><li>不限專案</li><li>1 年紀錄</li><li>全部整合</li><li>離線模式</li><li>Email 支援</li></ul><a class="btn btn-primary" href="#cta">免費試</a></article><article class="plan rv"><h3>團隊</h3><div class="price">HK$38 <small>/ 人 / 月</small></div><p>2–25 人團隊。</p><ul><li>共用專案</li><li>權限同角色</li><li>SSO（公司版）</li><li>審計日誌</li><li>支援 1 個工作日</li></ul><a class="btn btn-secondary" href="#cta">預約示範</a></article></div></div></section>
+<section class="block" id="venue"><div class="wrap"><h2 class="sec-title">私隱同支援</h2><p class="sec-sub">寫明資料放喺邊、幾時刪（示範內容，唔代表真實認證）。</p><ul class="infolist"><li><b>資料存放</b><span>香港區伺服器；歐盟客戶可選德國區</span></li><li><b>加密</b><span>傳輸 TLS 1.3；靜態 AES-256；密鑰每 90 日輪換</span></li><li><b>匯出</b><span>任何時間匯出 Markdown 或 CSV，唔收費</span></li><li><b>刪戶</b><span>刪除後 30 日內清除所有備份</span></li><li><b>支援</b><span>Email 回覆 1 個工作日；付費方案有即時對話</span></li></ul></div></section>
+<section class="block"><div class="wrap"><h2 class="sec-title">開始前想知</h2><p class="sec-sub">問唔到嘅 email 我們，1 個工作日內覆。</p><div class="faq"><details class="rv"><summary>免費版有冇時間限制？</summary><div class="ans">冇，永久免費；只限 3 個專案同 1 個人。</div></details><details class="rv"><summary>資料會唔會用嚟訓練模型？</summary><div class="ans">唔會。呢個係示範網站，真實政策以正式條款為準。</div></details><details class="rv"><summary>可以匯出全部資料嗎？</summary><div class="ans">可以，Markdown 或 CSV，任何時間，唔收費。</div></details><details class="rv"><summary>支援中文輸入嗎？</summary><div class="ans">支援繁中輸入同搜尋；快捷鍵可以自訂。</div></details><details class="rv"><summary>有冇離線版？</summary><div class="ans">有。桌面同手機都可以離線改，連線後自動同步。</div></details><details class="rv"><summary>團隊版可以逐個人加嗎？</summary><div class="ans">可以，按實際人數計，隨時加減。</div></details></div></div></section>
+<section class="block" id="cta"><div class="wrap"><div class="cta-band rv"><h2>免費試，唔使信用卡</h2><p>開一個戶口就用得，30 秒搞定。</p><div class="actions"><a class="btn btn-primary" href="#">免費試</a><a class="btn btn-secondary" href="#">睇方案</a></div></div></div></section>
+</main>
+<footer class="block site-footer"><div class="wrap"><div class="foot-grid"><div><h4>產品</h4><a href="#">方案</a><a href="#">整合</a><a href="#">快捷鍵</a><a href="#">更新紀錄</a></div><div><h4>學習</h4><a href="#">3 分鐘上手</a><a href="#">匯入指南</a><a href="#">鍵盤表</a><a href="#">常見問題</a></div><div><h4>私隱</h4><a href="#">資料存放</a><a href="#">匯出同刪戶</a><a href="#">加密說明</a><a href="#">服務條款</a></div><div><h4>公司</h4><a href="#">關於 Plain</a><a href="#">聯絡我們</a><a href="#">狀態頁</a><a href="#">支援時間</a></div><div><h4>更新通知</h4><form class="news" onsubmit="return false"><label for="nl" style="display:none">更新通知</label><input id="nl" type="email" placeholder="you@example.com"><button class="btn btn-primary" type="submit">訂閱</button></form></div></div><div class="foot-bottom"><span>© 2026 Plain App · 示範網站：公司、數字、價目同評語全部虛構</span><span>Email · GitHub · X</span></div></div></footer>
+<section class="block band" id="qa"><div class="wrap"><h2 class="sec-title">設計 QA · 按鈕同表單</h2><p class="sec-sub">同一套元素庫嘅 11 個按鈕狀態（含 loading／success／icon／size）+ 表單，用嚟驗風格嘅 focus／disabled／錯誤狀態夠唔夠清楚。</p><div class="btn-row"><div class="state"><button class="btn btn-primary " type="button">Primary</button><small>Default</small></div><div class="state"><button class="btn btn-primary is-hover" type="button">Primary</button><small>Hover</small></div><div class="state"><button class="btn btn-primary is-active" type="button">Primary</button><small>Active</small></div><div class="state"><button class="btn btn-primary is-focus" type="button">Primary</button><small>Focus</small></div><div class="state"><button class="btn btn-primary " type="button" disabled>Primary</button><small>Disabled</small></div><div class="state"><button class="btn btn-primary " type="button" data-state="loading"><span class="spin"></span> 傳送中…</button><small>Loading</small></div><div class="state"><button class="btn btn-primary " type="button" data-state="done">已收到 · 1 個工作日內覆你</button><small>Success</small></div><div class="state"><button class="btn btn-primary " type="button"><span class="i" aria-hidden="true">→</span> 下一步</button><small>Icon + arrow</small></div><div class="state"><button class="btn btn-primary btn-sm" type="button">Small</button><small>Small（btn-sm）</small></div><div class="state"><button class="btn btn-primary btn-lg" type="button">Large</button><small>Large（btn-lg）</small></div><div class="state"><button class="btn btn-secondary" type="button">Secondary</button><small>Secondary</small></div></div><form class="form" style="margin-top:38px" onsubmit="return false"><div class="field"><label for="n">你嘅名</label><input id="n" placeholder="例如：陳大文"></div><div class="field"><label for="e">工作電郵</label><input id="e" type="email" placeholder="you@company.com"></div><div class="field"><label for="c">團隊幾大？</label><select id="c"><option>1–5 人</option><option>6–20 人</option><option>21 人以上</option></select></div><label class="check"><input type="checkbox" class="toggle" checked> 接收產品更新</label><div><button class="btn btn-primary" type="submit">提交</button></div></form></div></section>
+<script>
+(function(){var s=document.getElementById('seats');if(!s)return;
+var o=document.getElementById('roiOut'),mo=document.getElementById('roiMoney'),so=document.getElementById('seatsOut');
+var H=6,R=900;
+function up(){var n=+s.value;so.textContent=n;var h=Math.round(n*H),m=h*R;
+o.textContent=h+' 小時 / 月';mo.textContent='約 HK$'+m.toLocaleString()+'（對比人手寫同樣嘅 PR）';}
+s.addEventListener('input',up);up();})();
+</script>
+<script>
+(function(){var f=document.querySelector('#qa form');if(!f)return;
+var b=f.querySelector('button[type=submit]');if(!b)return;
+var live=document.createElement('p');live.className='note';live.setAttribute('aria-live','polite');
+f.appendChild(live);
+f.addEventListener('submit',function(e){e.preventDefault();
+if(b.dataset.state==='loading')return;
+var label=b.textContent;b.dataset.state='loading';b.innerHTML='<span class="spin"></span> 傳送中…';
+setTimeout(function(){b.dataset.state='done';b.textContent='已收到 · 1 個工作日內覆你';
+live.textContent='（示範狀態：真表單要接後端；重新載入可以再試）';
+setTimeout(function(){b.dataset.state='';b.textContent=label;},2600);},900);});})();
+</script>
+</body></html>

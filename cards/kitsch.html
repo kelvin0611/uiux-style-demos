@@ -1,0 +1,108 @@
+<!doctype html><html lang="zh-Hant-HK"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Kitsch  · 風格卡</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lobster&family=Shrikhand&family=Comic+Neue:wght@400;700&display=swap">
+<link rel="stylesheet" href="../blocks.css">
+<style>:root{--bg:linear-gradient(135deg,#FF5FA2,#FFC700 55%,#1DD3B0);--fg:#3B1B2C;--muted:#5F2340;--surface:#FFFFFF;--border:#FF5FA2;--accent:#FF5FA2;--accent-fg:#FFFFFF;--accent-grad:linear-gradient(#FF8FC0,#FF5FA2);--radius:20px;--radius-sm:12px;--shadow:8px 8px 0 rgba(142,68,255,.55);--btn-shadow:0 6px 0 #8E44FF;--art-bg:repeating-linear-gradient(45deg,#FF5FA2 0 14px,#FFC700 14px 28px,#1DD3B0 28px 42px);--media-bg:repeating-linear-gradient(45deg,#C58B3A 0 10px,#FFC700 10px 20px,#8E44FF 20px 30px);--cta-bg:#FFFFFF;--input-bg:#FFFDE7;--ok:#1DD3B0;--warn:#FF5FA2;--font-display:Shrikhand,Lobster,cursive;--font-body:'Comic Neue','Noto Sans TC',cursive;--focus-ring:var(--accent);}
+
+
+.card,.plan,.quote,.tile-c,.rows,.mock,.roi,.badge-card{border:4px double #FF5FA2;box-shadow:8px 8px 0 rgba(142,68,255,.45)}
+.plan.featured{border-color:#FFC700;box-shadow:8px 8px 0 #FF5FA2}
+.btn{border:3px solid #fff}
+.chip{border:3px double #FF5FA2;background:#fff}
+/* 漸變底會一路變化，字一定要坐喺白底上（唔可以白字直接放彩色） */
+.block{background:rgba(255,255,255,.62)}
+.block.band{background:rgba(255,255,255,.84)}
+.hero{background:rgba(255,255,255,.34)}
+.hero h1{color:#3B1B2C;text-shadow:2px 2px 0 #fff,4px 4px 0 #FFF200,7px 7px 0 #8E44FF}
+.sec-title{color:#3B1B2C;text-shadow:1px 1px 0 #fff,3px 3px 0 #FFC700}
+.eyebrow{background:#fff;color:#E0307A;padding:6px 14px;border:3px double #FF5FA2;transform:rotate(-2deg);letter-spacing:.06em}
+.lead{color:#2b0f1d;font-weight:700}
+.site-footer{color:#3B1B2C}
+.avatar{background:linear-gradient(#FFF200,#FF5FA2);color:#3B1B2C;border:3px solid #fff}
+.tile-c .ph{background-color:#C58B3A;background-image:radial-gradient(#3b2a12 5px,transparent 5.5px);background-size:18px 18px;border:3px double #fff}
+tr, .rows span{color:#5F2340}
+.foot-grid a,.foot-bottom{color:#3B1B2C}
+.tag{transform:rotate(-6deg);background:#FFF200;color:#3B1B2C;border:3px solid #FF5FA2}
+
+/* ---- 風格卡專用 ---- */
+body{background:var(--bg);color:var(--fg);font-family:var(--font-body)}
+.cp{max-width:1080px;margin:0 auto;padding:clamp(18px,4vw,40px)}
+.cp-head{border-bottom:2px solid var(--border);padding-bottom:18px;margin-bottom:26px}
+.cp-head h1{margin:.1em 0 .2em;font-family:var(--font-display);font-size:clamp(28px,5vw,46px)}
+.cp-meta{color:var(--muted);font-size:14px}
+.cp-tag{display:inline-block;border:1px solid var(--border);border-radius:999px;padding:3px 10px;font-size:12px;color:var(--muted);margin:0 6px 6px 0}
+.cp h2{font-family:var(--font-display);font-size:clamp(18px,2.4vw,24px);margin:34px 0 6px;padding-bottom:6px;border-bottom:1px solid var(--border)}
+.cp p.desc{color:var(--muted);margin:6px 0 14px;max-width:70ch}
+.sws{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:10px}
+.sw{border:1px solid var(--border);border-radius:10px;padding:9px;background:var(--surface);display:grid;gap:4px}
+.sw i{display:block;height:44px;border-radius:7px;border:1px solid var(--border)}
+.sw b{font-size:13px}.sw code{font:12px var(--font-mono,monospace);color:var(--muted)}
+.sw span{font-size:11px;color:var(--muted)}
+.typo div{border:1px solid var(--border);border-radius:10px;padding:12px 14px;margin-bottom:8px;background:var(--surface)}
+.typo .d{font-family:var(--font-display);font-size:32px;line-height:1.15}
+.typo .b{font-family:var(--font-body);font-size:16px}
+.typo .m{font-family:var(--font-mono,monospace);font-size:14px}
+.typo small{color:var(--muted);font-size:11px;display:block;margin-top:6px}
+.row{display:flex;gap:12px;flex-wrap:wrap;align-items:flex-start}
+.preview{border:1px dashed var(--border);border-radius:12px;overflow:hidden;margin-bottom:12px}
+.preview .lbl{font:11px var(--font-mono,monospace);color:var(--muted);padding:6px 10px;border-bottom:1px dashed var(--border)}
+.preview > div:last-child{transform-origin:top left}
+.cp-foot{margin-top:36px;padding-top:14px;border-top:1px solid var(--border);color:var(--muted);font-size:13px;display:flex;gap:14px;flex-wrap:wrap}
+.cp a{color:var(--accent)}
+@media print{.noprint{display:none}body{background:#fff}.cp{max-width:none;padding:0}.preview{page-break-inside:avoid}}
+</style></head><body>
+<div class="cp">
+  <div class="cp-head">
+    <span class="cp-tag">💥 張力反叛 Bold &amp; Raw</span><span class="cp-tag">15 個 block</span><span class="cp-tag">—</span>
+    <h1> Kitsch <span style="font-size:.6em;color:var(--muted)"></span></h1>
+    <p class="desc" style="font-size:17px;color:var(--fg)">反諷式擁抱「壞品味」—— 塑膠亮面、過時字體、撞花、廉價廣告感，campy 又好玩。</p>
+    <p class="cp-meta">示範品牌 <b>Tacky` / `Tacky Mart</b> · 主要 CTA「入手」· 行業：Gen Z 潮流品牌 · 次選 懷舊主題快閃店</p>
+  </div>
+
+  <h2>1 · 色票 Palette</h2>
+  <p class="desc">所有元件都只可以用呢組 token（換色 = 改呢幾行）。</p>
+  <div class="sws"><div class="sw"><i style="background:linear-gradient(135deg,#FF5FA2,#FFC700 55%,#1DD3B0)"></i><b>--bg</b><code>linear-gradient(135deg,#FF5FA2,#FFC700 55%,#1DD3B0)</code><span>底色 Background</span></div><div class="sw"><i style="background:#3B1B2C"></i><b>--fg</b><code>#3B1B2C</code><span>主文字 Text</span></div><div class="sw"><i style="background:#5F2340"></i><b>--muted</b><code>#5F2340</code><span>次要文字 Muted</span></div><div class="sw"><i style="background:#FFFFFF"></i><b>--surface</b><code>#FFFFFF</code><span>卡片面 Surface</span></div><div class="sw"><i style="background:#FF5FA2"></i><b>--border</b><code>#FF5FA2</code><span>分隔線 Border</span></div><div class="sw"><i style="background:#FF5FA2"></i><b>--accent</b><code>#FF5FA2</code><span>強調色 Accent</span></div><div class="sw"><i style="background:#FFFFFF"></i><b>--accent-fg</b><code>#FFFFFF</code><span>強調上文字</span></div><div class="sw"><i style="background:#1DD3B0"></i><b>--ok</b><code>#1DD3B0</code><span>成功 Success</span></div><div class="sw"><i style="background:#FF5FA2"></i><b>--warn</b><code>#FF5FA2</code><span>警告 Warning</span></div></div>
+
+  <h2>2 · 字體 Typography</h2>
+  <p class="desc">最多兩個字重；標題 Shrikhand,Lobster,cursive、正文 &#x27;Comic Neue&#x27;,&#x27;Noto Sans TC&#x27;,cursive。</p>
+  <div class="typo">
+    <div class="d">一頁講清成件事 <small>Display · Shrikhand,Lobster,cursive</small></div>
+    <div class="b">正文用 &#x27;Comic Neue&#x27;,&#x27;Noto Sans TC&#x27;,cursive：16px、行高 1.65，唔會超過 70 個中文字一行。<small>Body</small></div>
+    <div class="m">HK$1,280 · 2026-09-22 · #REF-0042 <small>Mono／數字對齊（ui-monospace）</small></div>
+  </div>
+
+  <h2>3 · 按鈕 Buttons</h2>
+  <p class="desc">11 個狀態齊：hover 升起、active 壓落、focus 外框（對比 ≥3:1）、disabled 變淡、loading／success。</p>
+  <div class="btn-row"><div class="state"><button class="btn btn-primary " type="button">Primary</button><small>Default</small></div><div class="state"><button class="btn btn-primary is-hover" type="button">Primary</button><small>Hover</small></div><div class="state"><button class="btn btn-primary is-active" type="button">Primary</button><small>Active</small></div><div class="state"><button class="btn btn-primary is-focus" type="button">Primary</button><small>Focus</small></div><div class="state"><button class="btn btn-primary " type="button" disabled>Primary</button><small>Disabled</small></div><div class="state"><button class="btn btn-primary btn-sm" type="button">Small</button><small>btn-sm</small></div><div class="state"><button class="btn btn-primary btn-lg" type="button">Large</button><small>btn-lg</small></div><div class="state"><button class="btn btn-primary btn-secondary" type="button">Secondary</button><small>Secondary</small></div></div>
+
+  <h2>4 · 組件 Components</h2>
+  <div class="row">
+    <article class="card" style="flex:1 1 260px"><span class="ico" aria-hidden="true">◆</span><h3>卡片標題</h3><p>一句講清重點，唔超過兩行。</p></article>
+    <div class="plan" style="flex:1 1 240px"><span class="tag">最受歡迎</span><h3>方案名</h3><div class="price">HK$1,280<small>/月</small></div>
+      <ul><li>包含咩</li><li>包含咩</li></ul><a class="btn btn-primary" href="#">揀呢個</a></div>
+    <blockquote class="quote" style="flex:1 1 260px">客人講嘅一句真話。<span class="avatar">阿</span><b>阿文</b><span>客戶 · 角色</span></blockquote>
+  </div>
+
+  <h2>5 · 真實 section 預覽</h2>
+  <p class="desc">以下係由正式 demo 直接抽落嚟（唔係另畫），所以卡同成品一定一致。</p>
+  <div class="preview"><div class="lbl">hero</div><div><section class="block hero" id="hero"><div class="wrap hero-grid"><div><span class="eyebrow rv">Drop 07 · 限量 300 件</span><h1>俗得漂亮</h1><p class="lead rv">Tacky Mart 每兩個月一次 drop：閃粉、豹紋、塑膠亮面 —— 明知俗，但你就係想要。</p><div class="actions rv"><a class="btn btn-primary" href="#cta">入手 <span class="i" aria-hidden="true">→</span></a><a class="btn btn-secondary" href="#product">睇 Drop 07</a></div><p class="note rv">會員 19:00 優先 · 公開發售 20:00 · 售完唔補</p></div><figure class="hero-art rv"><div class="deco" aria-hidden="true" style="inset:0;background:repeating-linear-gradient(45deg,#FF5FA2 0 14px,#FFC700 14px 28px,#1DD3B0 28px 42px)"></div><figcaption>Drop 主視覺位（生成 media/kitsch-hero.jpg 自動代入）</figcaption></figure></div></section></div></div><div class="preview"><div class="lbl">pricing</div><div><section class="block" id="pricing"><div class="wrap"><h2 class="sec-title">Drop 07 價目</h2><p class="sec-sub">全部香港印刷；滿 HK$400 免運。</p><div class="pricing"><article class="plan rv"><h3>貼紙同小物</h3><div class="price">HK$38 <small>起</small></div><p>入門款，最易入手。</p><ul><li>貼紙組 HK$38</li><li>鎖匙扣 HK$68</li><li>襪 HK$88</li><li>滿 $400 免運</li></ul><a class="btn btn-secondary" href="#cta">入手</a></article><article class="plan rv featured"><span class="tag">最多人搶</span><h3>Tee</h3><div class="price">HK$280 <small>/ 件</small></div><p>本季 3 個圖，全部限量。</p><ul><li>S–XXL</li><li>香港印刷</li><li>閃粉版加 HK$40</li><li>兩星期出貨</li></ul><a class="btn btn-primary" href="#cta">入手</a></article><article class="plan rv"><h3>外套</h3><div class="price">HK$680 <small>/ 件</small></div><p>限量 60 件，賣完唔補。</p><ul><li>限量 60 件</li><li>豹紋內里</li><li>編號卡</li><li>支援換碼一次</li></ul><a class="btn btn-secondary" href="#cta">入手</a></article></div></div></section></div></div>
+
+  <h2>6 · 動效（Pro 版）</h2>
+  <p class="desc">基本版純 CSS；Pro 版有載入幕、入場、scroll reveal、微互動。跟系統設定「減少動態」會自動降級。</p>
+  <p style="font:13px var(--font-mono,monospace);color:var(--muted)"></p>
+
+  <h2>7 · 點用</h2>
+  <ul style="color:var(--muted);font-size:14px">
+    <li>Tokens：<code>themes/kitsch.json</code>（含 <code>snippet_css</code> 同 Tailwind <code>theme.extend</code>）</li>
+    <li>Demo：<a href="../kitsch.html">基本版</a> · <a href="../kitsch-pro.html">Pro 動效版</a></li>
+    <li>改客人內容：<code>python3 gen_project.py brief.json</code>（自動驗 WCAG 4.5:1）</li>
+  </ul>
+
+  <div class="cp-foot">
+    <button class="btn btn-primary btn-sm noprint" type="button" onclick="window.print()">🖨️ Print／存 PDF</button>
+    <a href="index.html">← 全部風格卡</a>
+    <span>UIUX Style · Kitsch · 示範內容全部虛構</span>
+  </div>
+</div>
+</body></html>

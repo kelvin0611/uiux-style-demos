@@ -1,0 +1,58 @@
+{
+ "slug": "conceptual-sketch",
+ "name": "Conceptual Sketch",
+ "cn": "",
+ "family": "✏️ 藝術手作 Artistic & Handmade",
+ "industry": "UX 顧問／設計服務",
+ "brand": "Draft",
+ "cta": "預約傾 40 分鐘",
+ "sections": "rows`：服務 · `products`：案例 · `venue`：流程",
+ "css_variables": {
+  "--bg": "#FDFBF7",
+  "--fg": "#2F2F2F",
+  "--muted": "#575757",
+  "--surface": "#F4F2EC",
+  "--border": "#C9C4B8",
+  "--accent": "#1F4E9C",
+  "--accent-fg": "#FFFFFF",
+  "--accent-grad": "linear-gradient(180deg,#2E63B8,#1F4E9C)",
+  "--radius": "6px",
+  "--radius-sm": "4px",
+  "--shadow": "4px 4px 0 rgba(47,47,47,.14)",
+  "--btn-shadow": "3px 3px 0 rgba(31,78,156,.30)",
+  "--art-bg": "linear-gradient(#E4E7EE 1px,transparent 1px) 0 0/26px 26px,linear-gradient(90deg,#E4E7EE 1px,transparent 1px) 0 0/26px 26px,#FDFBF7",
+  "--media-bg": "repeating-linear-gradient(0deg,#E7E4DB 0 1px,transparent 1px 22px),#FDFBF7",
+  "--cta-bg": "linear-gradient(transparent 58%,#FFF36B 58% 92%,transparent 92%),#FDFBF7",
+  "--input-bg": "#FFFFFF",
+  "--ok": "#1F6B3B",
+  "--warn": "#B3402F",
+  "--hl": "#FFF36B",
+  "--font-hand": "'Caveat',cursive",
+  "--font-display": "'Architects Daughter','Noto Sans TC',cursive",
+  "--font-body": "'Patrick Hand','Noto Sans TC',cursive",
+  "--font-mono": "'Patrick Hand',ui-monospace,monospace",
+  "--focus-ring": "var(--accent)"
+ },
+ "fonts": {
+  "google_url": "https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Patrick+Hand&family=Caveat:wght@600&display=swap",
+  "display": "'Architects Daughter','Noto Sans TC',cursive",
+  "body": "'Patrick Hand','Noto Sans TC',cursive",
+  "mono": "'Patrick Hand',ui-monospace,monospace"
+ },
+ "radius": {
+  "base": "6px",
+  "sm": "4px"
+ },
+ "shadow": {
+  "card": "4px 4px 0 rgba(47,47,47,.14)",
+  "button": "3px 3px 0 rgba(31,78,156,.30)"
+ },
+ "focus_ring": "var(--accent)",
+ "motion": {},
+ "demo": {
+  "basic": "Demos/conceptual-sketch.html",
+  "pro": "Demos/conceptual-sketch-pro.html"
+ },
+ "snippet_css": ":root{\n  --bg: #FDFBF7;\n  --fg: #2F2F2F;\n  --muted: #575757;\n  --surface: #F4F2EC;\n  --border: #C9C4B8;\n  --accent: #1F4E9C;\n  --accent-fg: #FFFFFF;\n  --accent-grad: linear-gradient(180deg,#2E63B8,#1F4E9C);\n  --radius: 6px;\n  --radius-sm: 4px;\n  --shadow: 4px 4px 0 rgba(47,47,47,.14);\n  --btn-shadow: 3px 3px 0 rgba(31,78,156,.30);\n  --art-bg: linear-gradient(#E4E7EE 1px,transparent 1px) 0 0/26px 26px,linear-gradient(90deg,#E4E7EE 1px,transparent 1px) 0 0/26px 26px,#FDFBF7;\n  --media-bg: repeating-linear-gradient(0deg,#E7E4DB 0 1px,transparent 1px 22px),#FDFBF7;\n  --cta-bg: linear-gradient(transparent 58%,#FFF36B 58% 92%,transparent 92%),#FDFBF7;\n  --input-bg: #FFFFFF;\n  --ok: #1F6B3B;\n  --warn: #B3402F;\n  --hl: #FFF36B;\n  --font-hand: 'Caveat',cursive;\n  --font-display: 'Architects Daughter','Noto Sans TC',cursive;\n  --font-body: 'Patrick Hand','Noto Sans TC',cursive;\n  --font-mono: 'Patrick Hand',ui-monospace,monospace;\n  --focus-ring: var(--accent);\n}",
+ "snippet_tailwind": "// tailwind.config.js → theme.extend\n{\n  \"colors\": {\n    \"bg\": \"#FDFBF7\",\n    \"fg\": \"#2F2F2F\",\n    \"muted\": \"#575757\",\n    \"surface\": \"#F4F2EC\",\n    \"border\": \"#C9C4B8\",\n    \"accent\": \"#1F4E9C\",\n    \"accent-fg\": \"#FFFFFF\",\n    \"ok\": \"#1F6B3B\",\n    \"warn\": \"#B3402F\",\n    \"focus-ring\": \"var(--accent)\"\n  },\n  \"borderRadius\": {\n    \"DEFAULT\": \"4px\",\n    \"lg\": \"6px\"\n  },\n  \"fontFamily\": {\n    \"display\": [\n      \"'Architects Daughter','Noto Sans TC',cursive\"\n    ],\n    \"body\": [\n      \"'Patrick Hand','Noto Sans TC',cursive\"\n    ]\n  }\n}"
+}

@@ -1,0 +1,56 @@
+{
+ "slug": "art-nouveau",
+ "name": "Art Nouveau",
+ "cn": "",
+ "family": "🏛️ 古典人文 Heritage & Lifestyle",
+ "industry": "香氛／天然護膚",
+ "brand": "Verveine",
+ "cta": "選香",
+ "sections": "products`：香氣系列 · `venue`：成分同製作 · `rows`：禮盒",
+ "css_variables": {
+  "--bg": "#F2E8D5",
+  "--fg": "#5A4232",
+  "--muted": "#4E6146",
+  "--surface": "rgba(255,255,255,.68)",
+  "--border": "rgba(90,66,50,.24)",
+  "--accent": "#C98B7E",
+  "--accent-fg": "#2D2118",
+  "--accent-grad": "linear-gradient(135deg,#C98B7E,#C9A24B)",
+  "--radius": "18px",
+  "--radius-sm": "12px",
+  "--shadow": "0 10px 26px rgba(90,66,50,.14)",
+  "--btn-shadow": "0 4px 0 rgba(201,139,126,.4)",
+  "--art-bg": "radial-gradient(circle at 50% 38%,#F2E8D5 0 30%,#C9A24B 30% 31%,#E9D6A8 31% 44%,transparent 45%),linear-gradient(160deg,#E9D6A8,#C98B7E)",
+  "--media-bg": "linear-gradient(160deg,#E9D6A8,#8FA382)",
+  "--cta-bg": "linear-gradient(180deg,#F7EFDD,#E9D6A8)",
+  "--input-bg": "rgba(255,255,255,.9)",
+  "--ok": "#4E6146",
+  "--warn": "#A85A4A",
+  "--font-display": "'Cinzel Decorative','Noto Serif TC',serif",
+  "--font-body": "'Federo','Cormorant','Noto Serif TC',serif",
+  "--font-mono": "'Cormorant',ui-monospace,'SFMono-Regular',monospace",
+  "--focus-ring": "#B45E4C"
+ },
+ "fonts": {
+  "google_url": "https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Federo&family=Cormorant:ital,wght@0,500;1,500&display=swap",
+  "display": "'Cinzel Decorative','Noto Serif TC',serif",
+  "body": "'Federo','Cormorant','Noto Serif TC',serif",
+  "mono": "'Cormorant',ui-monospace,'SFMono-Regular',monospace"
+ },
+ "radius": {
+  "base": "18px",
+  "sm": "12px"
+ },
+ "shadow": {
+  "card": "0 10px 26px rgba(90,66,50,.14)",
+  "button": "0 4px 0 rgba(201,139,126,.4)"
+ },
+ "focus_ring": "#B45E4C",
+ "motion": {},
+ "demo": {
+  "basic": "Demos/art-nouveau.html",
+  "pro": "Demos/art-nouveau-pro.html"
+ },
+ "snippet_css": ":root{\n  --bg: #F2E8D5;\n  --fg: #5A4232;\n  --muted: #4E6146;\n  --surface: rgba(255,255,255,.68);\n  --border: rgba(90,66,50,.24);\n  --accent: #C98B7E;\n  --accent-fg: #2D2118;\n  --accent-grad: linear-gradient(135deg,#C98B7E,#C9A24B);\n  --radius: 18px;\n  --radius-sm: 12px;\n  --shadow: 0 10px 26px rgba(90,66,50,.14);\n  --btn-shadow: 0 4px 0 rgba(201,139,126,.4);\n  --art-bg: radial-gradient(circle at 50% 38%,#F2E8D5 0 30%,#C9A24B 30% 31%,#E9D6A8 31% 44%,transparent 45%),linear-gradient(160deg,#E9D6A8,#C98B7E);\n  --media-bg: linear-gradient(160deg,#E9D6A8,#8FA382);\n  --cta-bg: linear-gradient(180deg,#F7EFDD,#E9D6A8);\n  --input-bg: rgba(255,255,255,.9);\n  --ok: #4E6146;\n  --warn: #A85A4A;\n  --font-display: 'Cinzel Decorative','Noto Serif TC',serif;\n  --font-body: 'Federo','Cormorant','Noto Serif TC',serif;\n  --font-mono: 'Cormorant',ui-monospace,'SFMono-Regular',monospace;\n  --focus-ring: #B45E4C;\n}",
+ "snippet_tailwind": "// tailwind.config.js → theme.extend\n{\n  \"colors\": {\n    \"bg\": \"#F2E8D5\",\n    \"fg\": \"#5A4232\",\n    \"muted\": \"#4E6146\",\n    \"surface\": \"rgba(255,255,255,.68)\",\n    \"border\": \"rgba(90,66,50,.24)\",\n    \"accent\": \"#C98B7E\",\n    \"accent-fg\": \"#2D2118\",\n    \"ok\": \"#4E6146\",\n    \"warn\": \"#A85A4A\",\n    \"focus-ring\": \"#B45E4C\"\n  },\n  \"borderRadius\": {\n    \"DEFAULT\": \"12px\",\n    \"lg\": \"18px\"\n  },\n  \"fontFamily\": {\n    \"display\": [\n      \"'Cinzel Decorative','Noto Serif TC',serif\"\n    ],\n    \"body\": [\n      \"'Federo','Cormorant','Noto Serif TC',serif\"\n    ]\n  }\n}"
+}

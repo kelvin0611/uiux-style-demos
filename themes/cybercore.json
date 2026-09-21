@@ -1,0 +1,61 @@
+{
+ "slug": "cybercore",
+ "name": "Cybercore",
+ "cn": "",
+ "family": "👾 數碼懷舊 Retro Digital",
+ "industry": "網絡安全／滲透測試",
+ "brand": "Nullsec",
+ "cta": "索取樣本報告",
+ "sections": "rows`：服務範圍 · `venue`：流程同授權 · `chips`：合規（示範）",
+ "css_variables": {
+  "--bg": "#000018",
+  "--fg": "#00FF41",
+  "--muted": "#2FB862",
+  "--surface": "#0B0B2E",
+  "--border": "#C0C0C0",
+  "--accent": "#00FFFF",
+  "--accent-fg": "#00201F",
+  "--accent-grad": "linear-gradient(180deg,#5CFFFF,#00D9D9)",
+  "--radius": "0px",
+  "--radius-sm": "0px",
+  "--shadow": "inset 1px 1px 0 rgba(255,255,255,.35),inset -1px -1px 0 #000,3px 3px 0 rgba(0,0,0,.55)",
+  "--btn-shadow": "inset 1px 1px 0 rgba(255,255,255,.5),inset -1px -1px 0 #000,3px 3px 0 rgba(0,0,0,.6)",
+  "--art-bg": "linear-gradient(180deg,#000036,#000018)",
+  "--media-bg": "radial-gradient(rgba(255,255,255,.2) 1px,transparent 1.5px) 0 0/22px 22px,linear-gradient(180deg,#000030,#000018)",
+  "--cta-bg": "linear-gradient(180deg,#0B0B2E,#000018)",
+  "--input-bg": "#000020",
+  "--ok": "#00FF41",
+  "--warn": "#FF4466",
+  "--win-bar": "linear-gradient(90deg,#000080,#1084D0)",
+  "--win-bar-fg": "#FFFFFF",
+  "--chrome-fg": "#0A0A0A",
+  "--magenta": "#FF00FF",
+  "--yellow": "#FFFF00",
+  "--font-display": "'VT323','Noto Sans TC',monospace",
+  "--font-body": "'VT323','Noto Sans TC',system-ui,sans-serif",
+  "--font-mono": "'VT323',ui-monospace,Menlo,monospace",
+  "--focus-ring": "var(--accent)"
+ },
+ "fonts": {
+  "google_url": "https://fonts.googleapis.com/css2?family=VT323&display=swap",
+  "display": "'VT323','Noto Sans TC',monospace",
+  "body": "'VT323','Noto Sans TC',system-ui,sans-serif",
+  "mono": "'VT323',ui-monospace,Menlo,monospace"
+ },
+ "radius": {
+  "base": "0px",
+  "sm": "0px"
+ },
+ "shadow": {
+  "card": "inset 1px 1px 0 rgba(255,255,255,.35),inset -1px -1px 0 #000,3px 3px 0 rgba(0,0,0,.55)",
+  "button": "inset 1px 1px 0 rgba(255,255,255,.5),inset -1px -1px 0 #000,3px 3px 0 rgba(0,0,0,.6)"
+ },
+ "focus_ring": "var(--accent)",
+ "motion": {},
+ "demo": {
+  "basic": "Demos/cybercore.html",
+  "pro": "Demos/cybercore-pro.html"
+ },
+ "snippet_css": ":root{\n  --bg: #000018;\n  --fg: #00FF41;\n  --muted: #2FB862;\n  --surface: #0B0B2E;\n  --border: #C0C0C0;\n  --accent: #00FFFF;\n  --accent-fg: #00201F;\n  --accent-grad: linear-gradient(180deg,#5CFFFF,#00D9D9);\n  --radius: 0px;\n  --radius-sm: 0px;\n  --shadow: inset 1px 1px 0 rgba(255,255,255,.35),inset -1px -1px 0 #000,3px 3px 0 rgba(0,0,0,.55);\n  --btn-shadow: inset 1px 1px 0 rgba(255,255,255,.5),inset -1px -1px 0 #000,3px 3px 0 rgba(0,0,0,.6);\n  --art-bg: linear-gradient(180deg,#000036,#000018);\n  --media-bg: radial-gradient(rgba(255,255,255,.2) 1px,transparent 1.5px) 0 0/22px 22px,linear-gradient(180deg,#000030,#000018);\n  --cta-bg: linear-gradient(180deg,#0B0B2E,#000018);\n  --input-bg: #000020;\n  --ok: #00FF41;\n  --warn: #FF4466;\n  --win-bar: linear-gradient(90deg,#000080,#1084D0);\n  --win-bar-fg: #FFFFFF;\n  --chrome-fg: #0A0A0A;\n  --magenta: #FF00FF;\n  --yellow: #FFFF00;\n  --font-display: 'VT323','Noto Sans TC',monospace;\n  --font-body: 'VT323','Noto Sans TC',system-ui,sans-serif;\n  --font-mono: 'VT323',ui-monospace,Menlo,monospace;\n  --focus-ring: var(--accent);\n}",
+ "snippet_tailwind": "// tailwind.config.js → theme.extend\n{\n  \"colors\": {\n    \"bg\": \"#000018\",\n    \"fg\": \"#00FF41\",\n    \"muted\": \"#2FB862\",\n    \"surface\": \"#0B0B2E\",\n    \"border\": \"#C0C0C0\",\n    \"accent\": \"#00FFFF\",\n    \"accent-fg\": \"#00201F\",\n    \"ok\": \"#00FF41\",\n    \"warn\": \"#FF4466\",\n    \"focus-ring\": \"var(--accent)\"\n  },\n  \"borderRadius\": {\n    \"DEFAULT\": \"0px\",\n    \"lg\": \"0px\"\n  },\n  \"fontFamily\": {\n    \"display\": [\n      \"'VT323','Noto Sans TC',monospace\"\n    ],\n    \"body\": [\n      \"'VT323','Noto Sans TC',system-ui,sans-serif\"\n    ]\n  }\n}"
+}

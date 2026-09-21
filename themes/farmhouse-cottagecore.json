@@ -1,0 +1,55 @@
+{
+ "slug": "farmhouse-cottagecore",
+ "name": "Farmhouse & Cottagecore",
+ "cn": "",
+ "family": "🏛️ 古典人文 Heritage & Lifestyle",
+ "industry": "有機農產／手作食品",
+ "brand": "Thistle",
+ "cta": "訂蔬菜箱",
+ "sections": "products`：蔬菜箱 · `venue`：配送同保存 · `rows`：價目",
+ "css_variables": {
+  "--bg": "#FBF5E6",
+  "--fg": "#4A3A2C",
+  "--muted": "#6B4E37",
+  "--surface": "#FFFDF7",
+  "--border": "#E3CBA0",
+  "--accent": "#A34A31",
+  "--accent-fg": "#FFF6E8",
+  "--radius": "16px",
+  "--radius-sm": "10px",
+  "--shadow": "0 12px 26px rgba(107,78,55,.16)",
+  "--btn-shadow": "0 5px 0 rgba(163,74,49,.28)",
+  "--art-bg": "repeating-linear-gradient(90deg,rgba(163,74,49,.14) 0 12px,transparent 12px 24px),repeating-linear-gradient(0deg,rgba(106,138,90,.16) 0 12px,transparent 12px 24px)",
+  "--media-bg": "linear-gradient(180deg,#F3EAD3,#E3CBA0)",
+  "--cta-bg": "linear-gradient(180deg,#F5EEDC,#EBDFC4)",
+  "--input-bg": "#FFFDF7",
+  "--ok": "#4E7A46",
+  "--warn": "#A34A31",
+  "--font-display": "Fraunces,'Noto Serif TC',serif",
+  "--font-body": "Lora,'Noto Serif TC',serif",
+  "--font-mono": "Fraunces,ui-serif,serif",
+  "--focus-ring": "var(--accent)"
+ },
+ "fonts": {
+  "google_url": "https://fonts.googleapis.com/css2?family=Fraunces:wght@600&family=Caveat:wght@600&family=Lora:ital@0;1&display=swap",
+  "display": "Fraunces,'Noto Serif TC',serif",
+  "body": "Lora,'Noto Serif TC',serif",
+  "mono": "Fraunces,ui-serif,serif"
+ },
+ "radius": {
+  "base": "16px",
+  "sm": "10px"
+ },
+ "shadow": {
+  "card": "0 12px 26px rgba(107,78,55,.16)",
+  "button": "0 5px 0 rgba(163,74,49,.28)"
+ },
+ "focus_ring": "var(--accent)",
+ "motion": {},
+ "demo": {
+  "basic": "Demos/farmhouse-cottagecore.html",
+  "pro": "Demos/farmhouse-cottagecore-pro.html"
+ },
+ "snippet_css": ":root{\n  --bg: #FBF5E6;\n  --fg: #4A3A2C;\n  --muted: #6B4E37;\n  --surface: #FFFDF7;\n  --border: #E3CBA0;\n  --accent: #A34A31;\n  --accent-fg: #FFF6E8;\n  --radius: 16px;\n  --radius-sm: 10px;\n  --shadow: 0 12px 26px rgba(107,78,55,.16);\n  --btn-shadow: 0 5px 0 rgba(163,74,49,.28);\n  --art-bg: repeating-linear-gradient(90deg,rgba(163,74,49,.14) 0 12px,transparent 12px 24px),repeating-linear-gradient(0deg,rgba(106,138,90,.16) 0 12px,transparent 12px 24px);\n  --media-bg: linear-gradient(180deg,#F3EAD3,#E3CBA0);\n  --cta-bg: linear-gradient(180deg,#F5EEDC,#EBDFC4);\n  --input-bg: #FFFDF7;\n  --ok: #4E7A46;\n  --warn: #A34A31;\n  --font-display: Fraunces,'Noto Serif TC',serif;\n  --font-body: Lora,'Noto Serif TC',serif;\n  --font-mono: Fraunces,ui-serif,serif;\n  --focus-ring: var(--accent);\n}",
+ "snippet_tailwind": "// tailwind.config.js → theme.extend\n{\n  \"colors\": {\n    \"bg\": \"#FBF5E6\",\n    \"fg\": \"#4A3A2C\",\n    \"muted\": \"#6B4E37\",\n    \"surface\": \"#FFFDF7\",\n    \"border\": \"#E3CBA0\",\n    \"accent\": \"#A34A31\",\n    \"accent-fg\": \"#FFF6E8\",\n    \"ok\": \"#4E7A46\",\n    \"warn\": \"#A34A31\",\n    \"focus-ring\": \"var(--accent)\"\n  },\n  \"borderRadius\": {\n    \"DEFAULT\": \"10px\",\n    \"lg\": \"16px\"\n  },\n  \"fontFamily\": {\n    \"display\": [\n      \"Fraunces,'Noto Serif TC',serif\"\n    ],\n    \"body\": [\n      \"Lora,'Noto Serif TC',serif\"\n    ]\n  }\n}"
+}

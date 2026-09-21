@@ -1,0 +1,106 @@
+<!doctype html><html lang="zh-Hant-HK"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Vaporwave  · 風格卡</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=VT323&family=Noto+Sans+JP:wght@400;700&display=swap">
+<link rel="stylesheet" href="../blocks.css">
+<style>:root{--bg:linear-gradient(180deg,#14082B,#2B1055 52%,#46197A);--fg:#F7F3FF;--muted:#C9BEE8;--surface:rgba(255,255,255,.07);--border:rgba(255,255,255,.18);--accent:#01CDFE;--accent-fg:#07203A;--radius:0px;--radius-sm:0px;--shadow:0 0 0 2px rgba(1,205,254,.25);--btn-shadow:3px 3px 0 rgba(0,0,0,.45);--art-bg:linear-gradient(180deg,#B967FF,#FF71CE 58%,#FFFB96);--media-bg:linear-gradient(180deg,#B967FF,#FF71CE 58%,#FFFB96);--cta-bg:rgba(1,205,254,.12);--input-bg:#1B0E33;--ok:#05FFA1;--warn:#FF71CE;--font-display:VT323,monospace;--font-body:Tahoma,'Noto Sans JP','Noto Sans TC',sans-serif;--font-mono:VT323,monospace;--focus-ring:var(--accent);}
+
+
+body::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:998;background:repeating-linear-gradient(0deg,rgba(0,0,0,.18) 0 1px,transparent 1px 3px)}
+.hero h1{letter-spacing:0;font-size:clamp(24px,3.8vw,48px);color:#FFFB96;text-shadow:3px 3px 0 #FF71CE,6px 6px 0 #B967FF,0 0 40px rgba(255,113,206,.8)}
+.sec-title{font-family:VT323,monospace;letter-spacing:.16em;color:#01CDFE;text-shadow:2px 2px 0 #B967FF}
+.logo{font-family:VT323,monospace;letter-spacing:.2em;color:#01CDFE;text-shadow:0 0 12px #01CDFE}
+.nav a{border-radius:0;color:#E9D9FF}
+.nav a[aria-current=page]{background:#01CDFE;color:#07203A}
+.card,.plan,.quote,.tile-c,.rows,.mock,.log{border-radius:0;border:2px outset rgba(255,255,255,.35);background:rgba(20,8,43,.72)}
+.btn{border-radius:0;border:2px solid #fff;background:#C0C0C0;color:#111;box-shadow:inset 2px 2px 0 #fff,inset -2px -2px 0 #7b7b7b,3px 3px 0 rgba(0,0,0,.45)}
+.btn-primary{background:#FF71CE;color:#2B1055}
+.btn-secondary{background:#C0C0C0;color:#2B1055}
+.chip{border-radius:0;background:#C0C0C0;color:#111;border:2px outset #fff}
+.tag{background:#01CDFE;color:#07203A;border-radius:0}
+.avatar{border-radius:0;background:linear-gradient(#B967FF,#FF71CE);color:#14082B}
+.tile-c .ph,.hero-art{border-radius:0}
+.rows article:nth-child(odd),.log article:nth-child(odd){background:rgba(255,255,255,.05)}
+.lead{color:#EFE7FF}
+
+/* ---- 風格卡專用 ---- */
+body{background:var(--bg);color:var(--fg);font-family:var(--font-body)}
+.cp{max-width:1080px;margin:0 auto;padding:clamp(18px,4vw,40px)}
+.cp-head{border-bottom:2px solid var(--border);padding-bottom:18px;margin-bottom:26px}
+.cp-head h1{margin:.1em 0 .2em;font-family:var(--font-display);font-size:clamp(28px,5vw,46px)}
+.cp-meta{color:var(--muted);font-size:14px}
+.cp-tag{display:inline-block;border:1px solid var(--border);border-radius:999px;padding:3px 10px;font-size:12px;color:var(--muted);margin:0 6px 6px 0}
+.cp h2{font-family:var(--font-display);font-size:clamp(18px,2.4vw,24px);margin:34px 0 6px;padding-bottom:6px;border-bottom:1px solid var(--border)}
+.cp p.desc{color:var(--muted);margin:6px 0 14px;max-width:70ch}
+.sws{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:10px}
+.sw{border:1px solid var(--border);border-radius:10px;padding:9px;background:var(--surface);display:grid;gap:4px}
+.sw i{display:block;height:44px;border-radius:7px;border:1px solid var(--border)}
+.sw b{font-size:13px}.sw code{font:12px var(--font-mono,monospace);color:var(--muted)}
+.sw span{font-size:11px;color:var(--muted)}
+.typo div{border:1px solid var(--border);border-radius:10px;padding:12px 14px;margin-bottom:8px;background:var(--surface)}
+.typo .d{font-family:var(--font-display);font-size:32px;line-height:1.15}
+.typo .b{font-family:var(--font-body);font-size:16px}
+.typo .m{font-family:var(--font-mono,monospace);font-size:14px}
+.typo small{color:var(--muted);font-size:11px;display:block;margin-top:6px}
+.row{display:flex;gap:12px;flex-wrap:wrap;align-items:flex-start}
+.preview{border:1px dashed var(--border);border-radius:12px;overflow:hidden;margin-bottom:12px}
+.preview .lbl{font:11px var(--font-mono,monospace);color:var(--muted);padding:6px 10px;border-bottom:1px dashed var(--border)}
+.preview > div:last-child{transform-origin:top left}
+.cp-foot{margin-top:36px;padding-top:14px;border-top:1px solid var(--border);color:var(--muted);font-size:13px;display:flex;gap:14px;flex-wrap:wrap}
+.cp a{color:var(--accent)}
+@media print{.noprint{display:none}body{background:#fff}.cp{max-width:none;padding:0}.preview{page-break-inside:avoid}}
+</style></head><body>
+<div class="cp">
+  <div class="cp-head">
+    <span class="cp-tag">👾 數碼懷舊 Retro Digital</span><span class="cp-tag">15 個 block</span><span class="cp-tag">—</span>
+    <h1> Vaporwave <span style="font-size:.6em;color:var(--muted)"></span></h1>
+    <p class="desc" style="font-size:17px;color:var(--fg)">超現實、諷刺消費主義嘅 80–90s 懷舊 —— 粉紫、希臘石膏像、VHS 雜訊、Windows 95、日文字，夢幻又 lo-fi。</p>
+    <p class="cp-meta">示範品牌 <b>Virtual` / `Virtual Plaza</b> · 主要 CTA「入商場」· 行業：獨立音樂／網上電台 · 次選 遊戲、數碼懷舊產品</p>
+  </div>
+
+  <h2>1 · 色票 Palette</h2>
+  <p class="desc">所有元件都只可以用呢組 token（換色 = 改呢幾行）。</p>
+  <div class="sws"><div class="sw"><i style="background:linear-gradient(180deg,#14082B,#2B1055 52%,#46197A)"></i><b>--bg</b><code>linear-gradient(180deg,#14082B,#2B1055 52%,#46197A)</code><span>底色 Background</span></div><div class="sw"><i style="background:#F7F3FF"></i><b>--fg</b><code>#F7F3FF</code><span>主文字 Text</span></div><div class="sw"><i style="background:#C9BEE8"></i><b>--muted</b><code>#C9BEE8</code><span>次要文字 Muted</span></div><div class="sw"><i style="background:rgba(255,255,255,.07)"></i><b>--surface</b><code>rgba(255,255,255,.07)</code><span>卡片面 Surface</span></div><div class="sw"><i style="background:rgba(255,255,255,.18)"></i><b>--border</b><code>rgba(255,255,255,.18)</code><span>分隔線 Border</span></div><div class="sw"><i style="background:#01CDFE"></i><b>--accent</b><code>#01CDFE</code><span>強調色 Accent</span></div><div class="sw"><i style="background:#07203A"></i><b>--accent-fg</b><code>#07203A</code><span>強調上文字</span></div><div class="sw"><i style="background:#05FFA1"></i><b>--ok</b><code>#05FFA1</code><span>成功 Success</span></div><div class="sw"><i style="background:#FF71CE"></i><b>--warn</b><code>#FF71CE</code><span>警告 Warning</span></div></div>
+
+  <h2>2 · 字體 Typography</h2>
+  <p class="desc">最多兩個字重；標題 VT323,monospace、正文 Tahoma,&#x27;Noto Sans JP&#x27;,&#x27;Noto Sans TC&#x27;,sans-serif。</p>
+  <div class="typo">
+    <div class="d">一頁講清成件事 <small>Display · VT323,monospace</small></div>
+    <div class="b">正文用 Tahoma,&#x27;Noto Sans JP&#x27;,&#x27;Noto Sans TC&#x27;,sans-serif：16px、行高 1.65，唔會超過 70 個中文字一行。<small>Body</small></div>
+    <div class="m">HK$1,280 · 2026-09-22 · #REF-0042 <small>Mono／數字對齊（VT323,monospace）</small></div>
+  </div>
+
+  <h2>3 · 按鈕 Buttons</h2>
+  <p class="desc">11 個狀態齊：hover 升起、active 壓落、focus 外框（對比 ≥3:1）、disabled 變淡、loading／success。</p>
+  <div class="btn-row"><div class="state"><button class="btn btn-primary " type="button">Primary</button><small>Default</small></div><div class="state"><button class="btn btn-primary is-hover" type="button">Primary</button><small>Hover</small></div><div class="state"><button class="btn btn-primary is-active" type="button">Primary</button><small>Active</small></div><div class="state"><button class="btn btn-primary is-focus" type="button">Primary</button><small>Focus</small></div><div class="state"><button class="btn btn-primary " type="button" disabled>Primary</button><small>Disabled</small></div><div class="state"><button class="btn btn-primary btn-sm" type="button">Small</button><small>btn-sm</small></div><div class="state"><button class="btn btn-primary btn-lg" type="button">Large</button><small>btn-lg</small></div><div class="state"><button class="btn btn-primary btn-secondary" type="button">Secondary</button><small>Secondary</small></div></div>
+
+  <h2>4 · 組件 Components</h2>
+  <div class="row">
+    <article class="card" style="flex:1 1 260px"><span class="ico" aria-hidden="true">◆</span><h3>卡片標題</h3><p>一句講清重點，唔超過兩行。</p></article>
+    <div class="plan" style="flex:1 1 240px"><span class="tag">最受歡迎</span><h3>方案名</h3><div class="price">HK$1,280<small>/月</small></div>
+      <ul><li>包含咩</li><li>包含咩</li></ul><a class="btn btn-primary" href="#">揀呢個</a></div>
+    <blockquote class="quote" style="flex:1 1 260px">客人講嘅一句真話。<span class="avatar">阿</span><b>阿文</b><span>客戶 · 角色</span></blockquote>
+  </div>
+
+  <h2>5 · 真實 section 預覽</h2>
+  <p class="desc">以下係由正式 demo 直接抽落嚟（唔係另畫），所以卡同成品一定一致。</p>
+  <div class="preview"><div class="lbl">hero</div><div><section class="block hero" id="hero"><div class="wrap hero-grid"><div><span class="eyebrow rv">24 小時 · 香港時間</span><h1>ＡＥＳＴＨＥＴＩＣ<br>ＲＡＤＩＯ</h1><p class="lead rv">每日 24 小時，18 個節目。獨立音樂人優先，聽完可以買卡帶。</p><div class="actions rv"><a class="btn btn-primary" href="#cta">收聽直播 <span class="i" aria-hidden="true">→</span></a><a class="btn btn-secondary" href="#product">睇節目表</a></div><p class="note rv">免費收聽 · 支持者可以下載全部發行 · 節目表用香港時間</p></div><figure class="hero-art rv"><div class="deco" aria-hidden="true" style="inset:0;background:linear-gradient(180deg,#B967FF,#FF71CE 58%,#FFFB96)"></div><figcaption>視覺圖位（生成 media/vaporwave-hero.jpg 自動代入）</figcaption></figure></div></section></div></div><div class="preview"><div class="lbl">pricing</div><div><section class="block" id="pricing"><div class="wrap"><h2 class="sec-title">發行定價</h2><p class="sec-sub">支持者有折扣；全部附下載碼。</p><div class="pricing"><article class="plan rv"><h3>數位</h3><div class="price">HK$80 <small>/ 張</small></div><p>WAV + MP3。</p><ul><li>即時下載</li><li>支援 3 部裝置</li><li>支持者 9 折</li></ul><a class="btn btn-secondary" href="#cta">購買</a></article><article class="plan rv featured"><span class="tag">最多人買</span><h3>卡帶</h3><div class="price">HK$180 <small>/ 卷</small></div><p>限量編號，附下載碼。</p><ul><li>限量 150 卷</li><li>附編號卡</li><li>下載碼（WAV）</li><li>香港免運</li></ul><a class="btn btn-primary" href="#cta">購買</a></article><article class="plan rv"><h3>黑膠</h3><div class="price">HK$320 <small>/ 張</small></div><p>180g，限量 100。</p><ul><li>限量 100 張</li><li>180g 壓製</li><li>附海報</li><li>海外寄運按重量</li></ul><a class="btn btn-secondary" href="#cta">購買</a></article></div></div></section></div></div>
+
+  <h2>6 · 動效（Pro 版）</h2>
+  <p class="desc">基本版純 CSS；Pro 版有載入幕、入場、scroll reveal、微互動。跟系統設定「減少動態」會自動降級。</p>
+  <p style="font:13px var(--font-mono,monospace);color:var(--muted)"></p>
+
+  <h2>7 · 點用</h2>
+  <ul style="color:var(--muted);font-size:14px">
+    <li>Tokens：<code>themes/vaporwave.json</code>（含 <code>snippet_css</code> 同 Tailwind <code>theme.extend</code>）</li>
+    <li>Demo：<a href="../vaporwave.html">基本版</a> · <a href="../vaporwave-pro.html">Pro 動效版</a></li>
+    <li>改客人內容：<code>python3 gen_project.py brief.json</code>（自動驗 WCAG 4.5:1）</li>
+  </ul>
+
+  <div class="cp-foot">
+    <button class="btn btn-primary btn-sm noprint" type="button" onclick="window.print()">🖨️ Print／存 PDF</button>
+    <a href="index.html">← 全部風格卡</a>
+    <span>UIUX Style · Vaporwave · 示範內容全部虛構</span>
+  </div>
+</div>
+</body></html>

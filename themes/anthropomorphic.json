@@ -1,0 +1,55 @@
+{
+ "slug": "anthropomorphic",
+ "name": "Anthropomorphic",
+ "cn": "",
+ "family": "✏️ 藝術手作 Artistic & Handmade",
+ "industry": "兒童教育／STEM",
+ "brand": "Buddy` / `Buddy Tutor",
+ "cta": "免費試一堂",
+ "sections": "",
+ "css_variables": {
+  "--bg": "#FFFBF2",
+  "--fg": "#2B2B2B",
+  "--muted": "#6F6558",
+  "--surface": "#FFFFFF",
+  "--border": "#2B2B2B",
+  "--accent": "#FF6F61",
+  "--accent-fg": "#2B2B2B",
+  "--accent-grad": "linear-gradient(#FFC93C,#FF6F61)",
+  "--radius": "26px",
+  "--radius-sm": "16px",
+  "--shadow": "0 10px 0 rgba(43,43,43,.12)",
+  "--btn-shadow": "0 5px 0 #2B2B2B",
+  "--art-bg": "radial-gradient(circle at 30% 25%,#FFF1C9,#B5EAD7)",
+  "--media-bg": "radial-gradient(circle at 30% 25%,#FFF1C9,#B5EAD7)",
+  "--cta-bg": "#FFF1C9",
+  "--input-bg": "#FFFFFF",
+  "--ok": "#7ED957",
+  "--warn": "#FF6F61",
+  "--font-display": "Fredoka,Nunito,sans-serif",
+  "--font-body": "Nunito,\"Noto Sans TC\",sans-serif",
+  "--focus-ring": "#FF250F"
+ },
+ "fonts": {
+  "google_url": "https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@400;600;700&display=swap",
+  "display": "Fredoka,Nunito,sans-serif",
+  "body": "Nunito,\"Noto Sans TC\",sans-serif",
+  "mono": ""
+ },
+ "radius": {
+  "base": "26px",
+  "sm": "16px"
+ },
+ "shadow": {
+  "card": "0 10px 0 rgba(43,43,43,.12)",
+  "button": "0 5px 0 #2B2B2B"
+ },
+ "focus_ring": "#FF250F",
+ "motion": {},
+ "demo": {
+  "basic": "Demos/anthropomorphic.html",
+  "pro": "Demos/anthropomorphic-pro.html"
+ },
+ "snippet_css": ":root{\n  --bg: #FFFBF2;\n  --fg: #2B2B2B;\n  --muted: #6F6558;\n  --surface: #FFFFFF;\n  --border: #2B2B2B;\n  --accent: #FF6F61;\n  --accent-fg: #2B2B2B;\n  --accent-grad: linear-gradient(#FFC93C,#FF6F61);\n  --radius: 26px;\n  --radius-sm: 16px;\n  --shadow: 0 10px 0 rgba(43,43,43,.12);\n  --btn-shadow: 0 5px 0 #2B2B2B;\n  --art-bg: radial-gradient(circle at 30% 25%,#FFF1C9,#B5EAD7);\n  --media-bg: radial-gradient(circle at 30% 25%,#FFF1C9,#B5EAD7);\n  --cta-bg: #FFF1C9;\n  --input-bg: #FFFFFF;\n  --ok: #7ED957;\n  --warn: #FF6F61;\n  --font-display: Fredoka,Nunito,sans-serif;\n  --font-body: Nunito,\"Noto Sans TC\",sans-serif;\n  --focus-ring: #FF250F;\n}",
+ "snippet_tailwind": "// tailwind.config.js → theme.extend\n{\n  \"colors\": {\n    \"bg\": \"#FFFBF2\",\n    \"fg\": \"#2B2B2B\",\n    \"muted\": \"#6F6558\",\n    \"surface\": \"#FFFFFF\",\n    \"border\": \"#2B2B2B\",\n    \"accent\": \"#FF6F61\",\n    \"accent-fg\": \"#2B2B2B\",\n    \"ok\": \"#7ED957\",\n    \"warn\": \"#FF6F61\",\n    \"focus-ring\": \"#FF250F\"\n  },\n  \"borderRadius\": {\n    \"DEFAULT\": \"16px\",\n    \"lg\": \"26px\"\n  },\n  \"fontFamily\": {\n    \"display\": [\n      \"Fredoka,Nunito,sans-serif\"\n    ],\n    \"body\": [\n      \"Nunito,\\\"Noto Sans TC\\\",sans-serif\"\n    ]\n  }\n}"
+}

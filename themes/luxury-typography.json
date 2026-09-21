@@ -1,0 +1,55 @@
+{
+ "slug": "luxury-typography",
+ "name": "Luxury Typography",
+ "cn": "",
+ "family": "🏛️ 古典人文 Heritage & Lifestyle",
+ "industry": "高端時裝",
+ "brand": "Maison",
+ "cta": "預約私人導購",
+ "sections": "products`：系列 · `rows`：價目 · `venue`：服務同改衣",
+ "css_variables": {
+  "--bg": "#F5F1EA",
+  "--fg": "#0B0B0B",
+  "--muted": "#4D473F",
+  "--surface": "#FFFFFF",
+  "--border": "rgba(11,11,11,.22)",
+  "--accent": "#7A5F2A",
+  "--accent-fg": "#F5F1EA",
+  "--radius": "0px",
+  "--radius-sm": "0px",
+  "--shadow": "none",
+  "--btn-shadow": "none",
+  "--art-bg": "linear-gradient(150deg,#E6DFD3,#CBBFA9)",
+  "--media-bg": "linear-gradient(150deg,#E6DFD3,#CBBFA9)",
+  "--cta-bg": "#EFE7D9",
+  "--input-bg": "#FFFFFF",
+  "--ok": "#1F5C3A",
+  "--warn": "#8E2F1E",
+  "--font-display": "'Bodoni Moda','Noto Serif TC',serif",
+  "--font-body": "Montserrat,'Noto Sans TC',sans-serif",
+  "--font-mono": "ui-monospace,Menlo,monospace",
+  "--focus-ring": "var(--accent)"
+ },
+ "fonts": {
+  "google_url": "https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400;0,500;1,400&family=Montserrat:wght@400;500&display=swap",
+  "display": "'Bodoni Moda','Noto Serif TC',serif",
+  "body": "Montserrat,'Noto Sans TC',sans-serif",
+  "mono": "ui-monospace,Menlo,monospace"
+ },
+ "radius": {
+  "base": "0px",
+  "sm": "0px"
+ },
+ "shadow": {
+  "card": "none",
+  "button": "none"
+ },
+ "focus_ring": "var(--accent)",
+ "motion": {},
+ "demo": {
+  "basic": "Demos/luxury-typography.html",
+  "pro": "Demos/luxury-typography-pro.html"
+ },
+ "snippet_css": ":root{\n  --bg: #F5F1EA;\n  --fg: #0B0B0B;\n  --muted: #4D473F;\n  --surface: #FFFFFF;\n  --border: rgba(11,11,11,.22);\n  --accent: #7A5F2A;\n  --accent-fg: #F5F1EA;\n  --radius: 0px;\n  --radius-sm: 0px;\n  --shadow: none;\n  --btn-shadow: none;\n  --art-bg: linear-gradient(150deg,#E6DFD3,#CBBFA9);\n  --media-bg: linear-gradient(150deg,#E6DFD3,#CBBFA9);\n  --cta-bg: #EFE7D9;\n  --input-bg: #FFFFFF;\n  --ok: #1F5C3A;\n  --warn: #8E2F1E;\n  --font-display: 'Bodoni Moda','Noto Serif TC',serif;\n  --font-body: Montserrat,'Noto Sans TC',sans-serif;\n  --font-mono: ui-monospace,Menlo,monospace;\n  --focus-ring: var(--accent);\n}",
+ "snippet_tailwind": "// tailwind.config.js → theme.extend\n{\n  \"colors\": {\n    \"bg\": \"#F5F1EA\",\n    \"fg\": \"#0B0B0B\",\n    \"muted\": \"#4D473F\",\n    \"surface\": \"#FFFFFF\",\n    \"border\": \"rgba(11,11,11,.22)\",\n    \"accent\": \"#7A5F2A\",\n    \"accent-fg\": \"#F5F1EA\",\n    \"ok\": \"#1F5C3A\",\n    \"warn\": \"#8E2F1E\",\n    \"focus-ring\": \"var(--accent)\"\n  },\n  \"borderRadius\": {\n    \"DEFAULT\": \"0px\",\n    \"lg\": \"0px\"\n  },\n  \"fontFamily\": {\n    \"display\": [\n      \"'Bodoni Moda','Noto Serif TC',serif\"\n    ],\n    \"body\": [\n      \"Montserrat,'Noto Sans TC',sans-serif\"\n    ]\n  }\n}"
+}

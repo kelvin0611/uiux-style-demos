@@ -1,0 +1,55 @@
+{
+ "slug": "scrapbook",
+ "name": "Scrapbook",
+ "cn": "",
+ "family": "✏️ 藝術手作 Artistic & Handmade",
+ "industry": "婚禮攝影／活動紀錄",
+ "brand": "Snapbook",
+ "cta": "預約拍攝",
+ "sections": "rows`：方案 · `products`：作品 · `venue`：流程同交付",
+ "css_variables": {
+  "--bg": "#FDFCF8",
+  "--fg": "#2B2B2B",
+  "--muted": "#5F5A52",
+  "--surface": "#FFFFFF",
+  "--border": "#E3DCCB",
+  "--accent": "#B8433C",
+  "--accent-fg": "#FFFFFF",
+  "--radius": "10px",
+  "--radius-sm": "6px",
+  "--shadow": "2px 3px 0 rgba(43,43,43,.14)",
+  "--btn-shadow": "0 3px 0 rgba(43,43,43,.28)",
+  "--art-bg": "linear-gradient(160deg,#9FD3E6,#F6C28B 60%,#E07A5F)",
+  "--media-bg": "linear-gradient(160deg,#FBE3C5,#E8A87C)",
+  "--cta-bg": "#F6EFE0",
+  "--input-bg": "#FFFFFF",
+  "--ok": "#3F7D5A",
+  "--warn": "#B0421F",
+  "--font-display": "'Caveat','Noto Sans TC',cursive",
+  "--font-body": "'Lora','Noto Sans TC',serif",
+  "--font-mono": "'Special Elite',ui-monospace,monospace",
+  "--focus-ring": "var(--accent)"
+ },
+ "fonts": {
+  "google_url": "https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Special+Elite&family=Lora:ital,wght@0,400;1,400&display=swap",
+  "display": "'Caveat','Noto Sans TC',cursive",
+  "body": "'Lora','Noto Sans TC',serif",
+  "mono": "'Special Elite',ui-monospace,monospace"
+ },
+ "radius": {
+  "base": "10px",
+  "sm": "6px"
+ },
+ "shadow": {
+  "card": "2px 3px 0 rgba(43,43,43,.14)",
+  "button": "0 3px 0 rgba(43,43,43,.28)"
+ },
+ "focus_ring": "var(--accent)",
+ "motion": {},
+ "demo": {
+  "basic": "Demos/scrapbook.html",
+  "pro": "Demos/scrapbook-pro.html"
+ },
+ "snippet_css": ":root{\n  --bg: #FDFCF8;\n  --fg: #2B2B2B;\n  --muted: #5F5A52;\n  --surface: #FFFFFF;\n  --border: #E3DCCB;\n  --accent: #B8433C;\n  --accent-fg: #FFFFFF;\n  --radius: 10px;\n  --radius-sm: 6px;\n  --shadow: 2px 3px 0 rgba(43,43,43,.14);\n  --btn-shadow: 0 3px 0 rgba(43,43,43,.28);\n  --art-bg: linear-gradient(160deg,#9FD3E6,#F6C28B 60%,#E07A5F);\n  --media-bg: linear-gradient(160deg,#FBE3C5,#E8A87C);\n  --cta-bg: #F6EFE0;\n  --input-bg: #FFFFFF;\n  --ok: #3F7D5A;\n  --warn: #B0421F;\n  --font-display: 'Caveat','Noto Sans TC',cursive;\n  --font-body: 'Lora','Noto Sans TC',serif;\n  --font-mono: 'Special Elite',ui-monospace,monospace;\n  --focus-ring: var(--accent);\n}",
+ "snippet_tailwind": "// tailwind.config.js → theme.extend\n{\n  \"colors\": {\n    \"bg\": \"#FDFCF8\",\n    \"fg\": \"#2B2B2B\",\n    \"muted\": \"#5F5A52\",\n    \"surface\": \"#FFFFFF\",\n    \"border\": \"#E3DCCB\",\n    \"accent\": \"#B8433C\",\n    \"accent-fg\": \"#FFFFFF\",\n    \"ok\": \"#3F7D5A\",\n    \"warn\": \"#B0421F\",\n    \"focus-ring\": \"var(--accent)\"\n  },\n  \"borderRadius\": {\n    \"DEFAULT\": \"6px\",\n    \"lg\": \"10px\"\n  },\n  \"fontFamily\": {\n    \"display\": [\n      \"'Caveat','Noto Sans TC',cursive\"\n    ],\n    \"body\": [\n      \"'Lora','Noto Sans TC',serif\"\n    ]\n  }\n}"
+}

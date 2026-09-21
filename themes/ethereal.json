@@ -1,0 +1,55 @@
+{
+ "slug": "ethereal",
+ "name": "Ethereal",
+ "cn": "",
+ "family": "✏️ 藝術手作 Artistic & Handmade",
+ "industry": "冥想／wellness app",
+ "brand": "Halcyon",
+ "cta": "免費試",
+ "sections": "products`：練習 · `rows`：方案 · `venue`：支援",
+ "css_variables": {
+  "--bg": "#FBFAF8",
+  "--fg": "#3F3A4A",
+  "--muted": "#6B5B95",
+  "--surface": "#FFFFFF",
+  "--border": "#E4DCF0",
+  "--accent": "#6B5B95",
+  "--accent-fg": "#FFFFFF",
+  "--radius": "24px",
+  "--radius-sm": "14px",
+  "--shadow": "0 18px 40px rgba(107,91,149,.14)",
+  "--btn-shadow": "0 8px 24px rgba(107,91,149,.28)",
+  "--art-bg": "radial-gradient(at 22% 30%,#EBD5FF 0,transparent 42%),radial-gradient(at 78% 38%,#CDE9FF 0,transparent 42%),radial-gradient(at 50% 88%,#FFD3EA 0,transparent 42%)",
+  "--media-bg": "linear-gradient(120deg,#EBD5FF,#FFD3EA,#CDE9FF)",
+  "--cta-bg": "linear-gradient(120deg,#F3EBFF,#EAF4FF)",
+  "--input-bg": "#FFFFFF",
+  "--ok": "#3F7A63",
+  "--warn": "#A9556B",
+  "--font-display": "'Cormorant Garamond','Noto Serif TC',serif",
+  "--font-body": "Jost,'Noto Sans TC',sans-serif",
+  "--font-mono": "Jost,ui-sans-serif,system-ui,sans-serif",
+  "--focus-ring": "var(--accent)"
+ },
+ "fonts": {
+  "google_url": "https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;1,300;1,400&family=Jost:wght@300;400;500&display=swap",
+  "display": "'Cormorant Garamond','Noto Serif TC',serif",
+  "body": "Jost,'Noto Sans TC',sans-serif",
+  "mono": "Jost,ui-sans-serif,system-ui,sans-serif"
+ },
+ "radius": {
+  "base": "24px",
+  "sm": "14px"
+ },
+ "shadow": {
+  "card": "0 18px 40px rgba(107,91,149,.14)",
+  "button": "0 8px 24px rgba(107,91,149,.28)"
+ },
+ "focus_ring": "var(--accent)",
+ "motion": {},
+ "demo": {
+  "basic": "Demos/ethereal.html",
+  "pro": "Demos/ethereal-pro.html"
+ },
+ "snippet_css": ":root{\n  --bg: #FBFAF8;\n  --fg: #3F3A4A;\n  --muted: #6B5B95;\n  --surface: #FFFFFF;\n  --border: #E4DCF0;\n  --accent: #6B5B95;\n  --accent-fg: #FFFFFF;\n  --radius: 24px;\n  --radius-sm: 14px;\n  --shadow: 0 18px 40px rgba(107,91,149,.14);\n  --btn-shadow: 0 8px 24px rgba(107,91,149,.28);\n  --art-bg: radial-gradient(at 22% 30%,#EBD5FF 0,transparent 42%),radial-gradient(at 78% 38%,#CDE9FF 0,transparent 42%),radial-gradient(at 50% 88%,#FFD3EA 0,transparent 42%);\n  --media-bg: linear-gradient(120deg,#EBD5FF,#FFD3EA,#CDE9FF);\n  --cta-bg: linear-gradient(120deg,#F3EBFF,#EAF4FF);\n  --input-bg: #FFFFFF;\n  --ok: #3F7A63;\n  --warn: #A9556B;\n  --font-display: 'Cormorant Garamond','Noto Serif TC',serif;\n  --font-body: Jost,'Noto Sans TC',sans-serif;\n  --font-mono: Jost,ui-sans-serif,system-ui,sans-serif;\n  --focus-ring: var(--accent);\n}",
+ "snippet_tailwind": "// tailwind.config.js → theme.extend\n{\n  \"colors\": {\n    \"bg\": \"#FBFAF8\",\n    \"fg\": \"#3F3A4A\",\n    \"muted\": \"#6B5B95\",\n    \"surface\": \"#FFFFFF\",\n    \"border\": \"#E4DCF0\",\n    \"accent\": \"#6B5B95\",\n    \"accent-fg\": \"#FFFFFF\",\n    \"ok\": \"#3F7A63\",\n    \"warn\": \"#A9556B\",\n    \"focus-ring\": \"var(--accent)\"\n  },\n  \"borderRadius\": {\n    \"DEFAULT\": \"14px\",\n    \"lg\": \"24px\"\n  },\n  \"fontFamily\": {\n    \"display\": [\n      \"'Cormorant Garamond','Noto Serif TC',serif\"\n    ],\n    \"body\": [\n      \"Jost,'Noto Sans TC',sans-serif\"\n    ]\n  }\n}"
+}

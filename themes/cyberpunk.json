@@ -1,0 +1,55 @@
+{
+ "slug": "cyberpunk",
+ "name": "Cyberpunk",
+ "cn": "",
+ "family": "👾 數碼懷舊 Retro Digital",
+ "industry": "電子音樂節／夜店",
+ "brand": "NIGHT//CITY",
+ "cta": "買飛",
+ "sections": "lineup`：陣容 · `tickets`：票價 · `venue`：場地入場",
+ "css_variables": {
+  "--bg": "#0A0A0F",
+  "--fg": "#E0E0E0",
+  "--muted": "#A8A8BE",
+  "--surface": "#12121A",
+  "--border": "#2A2A3A",
+  "--accent": "#00F0FF",
+  "--accent-fg": "#04161A",
+  "--radius": "2px",
+  "--radius-sm": "2px",
+  "--shadow": "0 0 0 1px rgba(0,240,255,.18),0 12px 30px rgba(0,0,0,.55)",
+  "--btn-shadow": "0 0 0 1px rgba(0,240,255,.55),0 0 18px rgba(0,240,255,.35)",
+  "--art-bg": "linear-gradient(135deg,rgba(0,240,255,.22),rgba(255,0,60,.22)),repeating-linear-gradient(0deg,transparent 0 3px,rgba(0,240,255,.10) 3px 4px)",
+  "--media-bg": "linear-gradient(180deg,#12121A,#0A0A0F)",
+  "--cta-bg": "linear-gradient(180deg,#12121A,#0A0A0F)",
+  "--input-bg": "#0E0E16",
+  "--ok": "#46E08A",
+  "--warn": "#FF003C",
+  "--font-display": "Orbitron,'Noto Sans TC',sans-serif",
+  "--font-body": "Rajdhani,'Noto Sans TC',sans-serif",
+  "--font-mono": "'Share Tech Mono',ui-monospace,monospace",
+  "--focus-ring": "var(--accent)"
+ },
+ "fonts": {
+  "google_url": "https://fonts.googleapis.com/css2?family=Orbitron:wght@700;900&family=Rajdhani:wght@500;700&family=Share+Tech+Mono&display=swap",
+  "display": "Orbitron,'Noto Sans TC',sans-serif",
+  "body": "Rajdhani,'Noto Sans TC',sans-serif",
+  "mono": "'Share Tech Mono',ui-monospace,monospace"
+ },
+ "radius": {
+  "base": "2px",
+  "sm": "2px"
+ },
+ "shadow": {
+  "card": "0 0 0 1px rgba(0,240,255,.18),0 12px 30px rgba(0,0,0,.55)",
+  "button": "0 0 0 1px rgba(0,240,255,.55),0 0 18px rgba(0,240,255,.35)"
+ },
+ "focus_ring": "var(--accent)",
+ "motion": {},
+ "demo": {
+  "basic": "Demos/cyberpunk.html",
+  "pro": "Demos/cyberpunk-pro.html"
+ },
+ "snippet_css": ":root{\n  --bg: #0A0A0F;\n  --fg: #E0E0E0;\n  --muted: #A8A8BE;\n  --surface: #12121A;\n  --border: #2A2A3A;\n  --accent: #00F0FF;\n  --accent-fg: #04161A;\n  --radius: 2px;\n  --radius-sm: 2px;\n  --shadow: 0 0 0 1px rgba(0,240,255,.18),0 12px 30px rgba(0,0,0,.55);\n  --btn-shadow: 0 0 0 1px rgba(0,240,255,.55),0 0 18px rgba(0,240,255,.35);\n  --art-bg: linear-gradient(135deg,rgba(0,240,255,.22),rgba(255,0,60,.22)),repeating-linear-gradient(0deg,transparent 0 3px,rgba(0,240,255,.10) 3px 4px);\n  --media-bg: linear-gradient(180deg,#12121A,#0A0A0F);\n  --cta-bg: linear-gradient(180deg,#12121A,#0A0A0F);\n  --input-bg: #0E0E16;\n  --ok: #46E08A;\n  --warn: #FF003C;\n  --font-display: Orbitron,'Noto Sans TC',sans-serif;\n  --font-body: Rajdhani,'Noto Sans TC',sans-serif;\n  --font-mono: 'Share Tech Mono',ui-monospace,monospace;\n  --focus-ring: var(--accent);\n}",
+ "snippet_tailwind": "// tailwind.config.js → theme.extend\n{\n  \"colors\": {\n    \"bg\": \"#0A0A0F\",\n    \"fg\": \"#E0E0E0\",\n    \"muted\": \"#A8A8BE\",\n    \"surface\": \"#12121A\",\n    \"border\": \"#2A2A3A\",\n    \"accent\": \"#00F0FF\",\n    \"accent-fg\": \"#04161A\",\n    \"ok\": \"#46E08A\",\n    \"warn\": \"#FF003C\",\n    \"focus-ring\": \"var(--accent)\"\n  },\n  \"borderRadius\": {\n    \"DEFAULT\": \"2px\",\n    \"lg\": \"2px\"\n  },\n  \"fontFamily\": {\n    \"display\": [\n      \"Orbitron,'Noto Sans TC',sans-serif\"\n    ],\n    \"body\": [\n      \"Rajdhani,'Noto Sans TC',sans-serif\"\n    ]\n  }\n}"
+}

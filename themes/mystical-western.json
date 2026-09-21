@@ -1,0 +1,55 @@
+{
+ "slug": "mystical-western",
+ "name": "Mystical Western",
+ "cn": "",
+ "family": "🏛️ 古典人文 Heritage & Lifestyle",
+ "industry": "精釀烈酒",
+ "brand": "Sundown",
+ "cta": "訂購",
+ "sections": "products`：酒款 · `rows`：價目 · `venue`：配送同法律",
+ "css_variables": {
+  "--bg": "#1C2340",
+  "--fg": "#E7D3B0",
+  "--muted": "#C9A24B",
+  "--surface": "#262E52",
+  "--border": "#C9A24B",
+  "--accent": "#9E4522",
+  "--accent-fg": "#F6EAD6",
+  "--radius": "12px",
+  "--radius-sm": "8px",
+  "--shadow": "0 8px 24px rgba(0,0,0,.35)",
+  "--btn-shadow": "inset 0 0 0 3px #1C2340",
+  "--art-bg": "radial-gradient(circle at 50% 70%,#6E3B1E 0 30%,transparent 31%),linear-gradient(#1C2340,#B4552D)",
+  "--media-bg": "linear-gradient(160deg,#1C2340,#6E3B1E)",
+  "--cta-bg": "#262E52",
+  "--input-bg": "#232B4E",
+  "--ok": "#8FD9A0",
+  "--warn": "#E8A08B",
+  "--font-display": "Rye,'Noto Serif TC',serif",
+  "--font-body": "'Libre Baskerville','Noto Serif TC',serif",
+  "--font-mono": "ui-monospace,Menlo,monospace",
+  "--focus-ring": "#D05B2D"
+ },
+ "fonts": {
+  "google_url": "https://fonts.googleapis.com/css2?family=Rye&family=Libre+Baskerville:ital@0;1&display=swap",
+  "display": "Rye,'Noto Serif TC',serif",
+  "body": "'Libre Baskerville','Noto Serif TC',serif",
+  "mono": "ui-monospace,Menlo,monospace"
+ },
+ "radius": {
+  "base": "12px",
+  "sm": "8px"
+ },
+ "shadow": {
+  "card": "0 8px 24px rgba(0,0,0,.35)",
+  "button": "inset 0 0 0 3px #1C2340"
+ },
+ "focus_ring": "#D05B2D",
+ "motion": {},
+ "demo": {
+  "basic": "Demos/mystical-western.html",
+  "pro": "Demos/mystical-western-pro.html"
+ },
+ "snippet_css": ":root{\n  --bg: #1C2340;\n  --fg: #E7D3B0;\n  --muted: #C9A24B;\n  --surface: #262E52;\n  --border: #C9A24B;\n  --accent: #9E4522;\n  --accent-fg: #F6EAD6;\n  --radius: 12px;\n  --radius-sm: 8px;\n  --shadow: 0 8px 24px rgba(0,0,0,.35);\n  --btn-shadow: inset 0 0 0 3px #1C2340;\n  --art-bg: radial-gradient(circle at 50% 70%,#6E3B1E 0 30%,transparent 31%),linear-gradient(#1C2340,#B4552D);\n  --media-bg: linear-gradient(160deg,#1C2340,#6E3B1E);\n  --cta-bg: #262E52;\n  --input-bg: #232B4E;\n  --ok: #8FD9A0;\n  --warn: #E8A08B;\n  --font-display: Rye,'Noto Serif TC',serif;\n  --font-body: 'Libre Baskerville','Noto Serif TC',serif;\n  --font-mono: ui-monospace,Menlo,monospace;\n  --focus-ring: #D05B2D;\n}",
+ "snippet_tailwind": "// tailwind.config.js → theme.extend\n{\n  \"colors\": {\n    \"bg\": \"#1C2340\",\n    \"fg\": \"#E7D3B0\",\n    \"muted\": \"#C9A24B\",\n    \"surface\": \"#262E52\",\n    \"border\": \"#C9A24B\",\n    \"accent\": \"#9E4522\",\n    \"accent-fg\": \"#F6EAD6\",\n    \"ok\": \"#8FD9A0\",\n    \"warn\": \"#E8A08B\",\n    \"focus-ring\": \"#D05B2D\"\n  },\n  \"borderRadius\": {\n    \"DEFAULT\": \"8px\",\n    \"lg\": \"12px\"\n  },\n  \"fontFamily\": {\n    \"display\": [\n      \"Rye,'Noto Serif TC',serif\"\n    ],\n    \"body\": [\n      \"'Libre Baskerville','Noto Serif TC',serif\"\n    ]\n  }\n}"
+}

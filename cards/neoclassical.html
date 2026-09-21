@@ -1,0 +1,112 @@
+<!doctype html><html lang="zh-Hant-HK"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Neoclassical  · 風格卡</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=EB+Garamond:ital@0;1&display=swap">
+<link rel="stylesheet" href="../blocks.css">
+<style>:root{--bg:#F4F1EA;--fg:#22201C;--muted:#5A5A52;--surface:#FFFFFF;--border:#D9D1C0;--accent:#1F2A44;--accent-fg:#FFFFFF;--radius:2px;--radius-sm:2px;--shadow:0 1px 0 rgba(184,155,94,.45);--btn-shadow:none;--art-bg:linear-gradient(180deg,#FBF9F4,#E6E0D4);--media-bg:linear-gradient(180deg,#E6E0D4,#D9D1C0);--cta-bg:#1F2A44;--input-bg:#FFFFFF;--ok:#2C6B4F;--warn:#8C2F2F;--font-display:Cinzel,'Noto Serif TC',serif;--font-body:'EB Garamond','Noto Serif TC',serif;--font-mono:Cinzel,ui-monospace,monospace;--focus-ring:var(--accent);}
+
+
+.sec-title{font-family:var(--font-display);letter-spacing:.03em;font-weight:500}
+.sec-title::after{content:"";display:block;width:64px;height:1px;background:#B89B5E;margin-top:12px}
+.hero h1{font-family:var(--font-display);font-weight:500;letter-spacing:.01em}
+.hero .eyebrow{letter-spacing:.3em}
+.card,.plan,.quote,.tile-c,.rows,.log,.mock,.badge-card,.faq details{border:1px solid var(--border);box-shadow:0 1px 0 rgba(184,155,94,.4)}
+.rows,.log{border:1px solid var(--border)}
+.rows article:first-child,.log article:first-child{border-top:0}
+.steps li::before{background:var(--accent);color:var(--accent-fg);font-family:var(--font-display);border-radius:0}
+.chip{border-radius:0;background:var(--surface);border:1px solid #B89B5E;letter-spacing:.06em}
+.avatar{border-radius:0;background:var(--accent);color:var(--accent-fg);font-family:var(--font-display)}
+.tag{border-radius:0;background:#B89B5E;color:var(--accent);font-family:var(--font-display);letter-spacing:.1em}
+.tile-c .ph{border-radius:0;background:var(--media-bg);border-bottom:1px solid #B89B5E}
+.plan.featured{outline:1px solid #B89B5E;outline-offset:4px}
+.rows .cost,.tile-c .cost{font-family:var(--font-display);letter-spacing:.04em}
+.cta-band{background:var(--fg);border-color:var(--fg);color:var(--bg)}
+.cta-band h2{font-family:var(--font-display);font-weight:500;letter-spacing:.06em}
+.cta-band p{color:var(--bg);opacity:.85}
+.cta-band .btn-primary{background:#B89B5E;color:var(--accent)}
+.cta-band .btn-secondary{background:transparent;color:var(--bg);border-color:var(--bg)}
+.hero::after{content:"";position:absolute;right:5%;bottom:0;width:104px;height:200px;background:linear-gradient(90deg,#E6E0D4 0 12px,#FBF9F4 12px 24px,#E6E0D4 24px 36px,#FBF9F4 36px 48px,#E6E0D4 48px 60px);border:1px solid #B89B5E;opacity:.85;pointer-events:none}
+.pricing .plan{background:var(--surface)}
+body::before{content:"";position:fixed;left:0;right:0;top:0;height:6px;background:linear-gradient(90deg,#E6E0D4 0 8px,#F4F1EA 8px 16px);opacity:.9;z-index:98;pointer-events:none}
+
+/* ---- 風格卡專用 ---- */
+body{background:var(--bg);color:var(--fg);font-family:var(--font-body)}
+.cp{max-width:1080px;margin:0 auto;padding:clamp(18px,4vw,40px)}
+.cp-head{border-bottom:2px solid var(--border);padding-bottom:18px;margin-bottom:26px}
+.cp-head h1{margin:.1em 0 .2em;font-family:var(--font-display);font-size:clamp(28px,5vw,46px)}
+.cp-meta{color:var(--muted);font-size:14px}
+.cp-tag{display:inline-block;border:1px solid var(--border);border-radius:999px;padding:3px 10px;font-size:12px;color:var(--muted);margin:0 6px 6px 0}
+.cp h2{font-family:var(--font-display);font-size:clamp(18px,2.4vw,24px);margin:34px 0 6px;padding-bottom:6px;border-bottom:1px solid var(--border)}
+.cp p.desc{color:var(--muted);margin:6px 0 14px;max-width:70ch}
+.sws{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:10px}
+.sw{border:1px solid var(--border);border-radius:10px;padding:9px;background:var(--surface);display:grid;gap:4px}
+.sw i{display:block;height:44px;border-radius:7px;border:1px solid var(--border)}
+.sw b{font-size:13px}.sw code{font:12px var(--font-mono,monospace);color:var(--muted)}
+.sw span{font-size:11px;color:var(--muted)}
+.typo div{border:1px solid var(--border);border-radius:10px;padding:12px 14px;margin-bottom:8px;background:var(--surface)}
+.typo .d{font-family:var(--font-display);font-size:32px;line-height:1.15}
+.typo .b{font-family:var(--font-body);font-size:16px}
+.typo .m{font-family:var(--font-mono,monospace);font-size:14px}
+.typo small{color:var(--muted);font-size:11px;display:block;margin-top:6px}
+.row{display:flex;gap:12px;flex-wrap:wrap;align-items:flex-start}
+.preview{border:1px dashed var(--border);border-radius:12px;overflow:hidden;margin-bottom:12px}
+.preview .lbl{font:11px var(--font-mono,monospace);color:var(--muted);padding:6px 10px;border-bottom:1px dashed var(--border)}
+.preview > div:last-child{transform-origin:top left}
+.cp-foot{margin-top:36px;padding-top:14px;border-top:1px solid var(--border);color:var(--muted);font-size:13px;display:flex;gap:14px;flex-wrap:wrap}
+.cp a{color:var(--accent)}
+@media print{.noprint{display:none}body{background:#fff}.cp{max-width:none;padding:0}.preview{page-break-inside:avoid}}
+</style></head><body>
+<div class="cp">
+  <div class="cp-head">
+    <span class="cp-tag">🏛️ 古典人文 Heritage &amp; Lifestyle</span><span class="cp-tag">15 個 block</span><span class="cp-tag">—</span>
+    <h1> Neoclassical <span style="font-size:.6em;color:var(--muted)"></span></h1>
+    <p class="desc" style="font-size:17px;color:var(--fg)">秩序、對稱、克制嘅高雅 —— 大理石、羅馬柱、月桂葉、金色點綴，配端莊 serif，傳遞「永恆、可信、有份量」。</p>
+    <p class="cp-meta">示範品牌 <b>Athenaeum</b> · 主要 CTA「買飛」· 行業：博物館／文化機構</p>
+  </div>
+
+  <h2>1 · 色票 Palette</h2>
+  <p class="desc">所有元件都只可以用呢組 token（換色 = 改呢幾行）。</p>
+  <div class="sws"><div class="sw"><i style="background:#F4F1EA"></i><b>--bg</b><code>#F4F1EA</code><span>底色 Background</span></div><div class="sw"><i style="background:#22201C"></i><b>--fg</b><code>#22201C</code><span>主文字 Text</span></div><div class="sw"><i style="background:#5A5A52"></i><b>--muted</b><code>#5A5A52</code><span>次要文字 Muted</span></div><div class="sw"><i style="background:#FFFFFF"></i><b>--surface</b><code>#FFFFFF</code><span>卡片面 Surface</span></div><div class="sw"><i style="background:#D9D1C0"></i><b>--border</b><code>#D9D1C0</code><span>分隔線 Border</span></div><div class="sw"><i style="background:#1F2A44"></i><b>--accent</b><code>#1F2A44</code><span>強調色 Accent</span></div><div class="sw"><i style="background:#FFFFFF"></i><b>--accent-fg</b><code>#FFFFFF</code><span>強調上文字</span></div><div class="sw"><i style="background:#2C6B4F"></i><b>--ok</b><code>#2C6B4F</code><span>成功 Success</span></div><div class="sw"><i style="background:#8C2F2F"></i><b>--warn</b><code>#8C2F2F</code><span>警告 Warning</span></div></div>
+
+  <h2>2 · 字體 Typography</h2>
+  <p class="desc">最多兩個字重；標題 Cinzel,&#x27;Noto Serif TC&#x27;,serif、正文 &#x27;EB Garamond&#x27;,&#x27;Noto Serif TC&#x27;,serif。</p>
+  <div class="typo">
+    <div class="d">一頁講清成件事 <small>Display · Cinzel,&#x27;Noto Serif TC&#x27;,serif</small></div>
+    <div class="b">正文用 &#x27;EB Garamond&#x27;,&#x27;Noto Serif TC&#x27;,serif：16px、行高 1.65，唔會超過 70 個中文字一行。<small>Body</small></div>
+    <div class="m">HK$1,280 · 2026-09-22 · #REF-0042 <small>Mono／數字對齊（Cinzel,ui-monospace,monospace）</small></div>
+  </div>
+
+  <h2>3 · 按鈕 Buttons</h2>
+  <p class="desc">11 個狀態齊：hover 升起、active 壓落、focus 外框（對比 ≥3:1）、disabled 變淡、loading／success。</p>
+  <div class="btn-row"><div class="state"><button class="btn btn-primary " type="button">Primary</button><small>Default</small></div><div class="state"><button class="btn btn-primary is-hover" type="button">Primary</button><small>Hover</small></div><div class="state"><button class="btn btn-primary is-active" type="button">Primary</button><small>Active</small></div><div class="state"><button class="btn btn-primary is-focus" type="button">Primary</button><small>Focus</small></div><div class="state"><button class="btn btn-primary " type="button" disabled>Primary</button><small>Disabled</small></div><div class="state"><button class="btn btn-primary btn-sm" type="button">Small</button><small>btn-sm</small></div><div class="state"><button class="btn btn-primary btn-lg" type="button">Large</button><small>btn-lg</small></div><div class="state"><button class="btn btn-primary btn-secondary" type="button">Secondary</button><small>Secondary</small></div></div>
+
+  <h2>4 · 組件 Components</h2>
+  <div class="row">
+    <article class="card" style="flex:1 1 260px"><span class="ico" aria-hidden="true">◆</span><h3>卡片標題</h3><p>一句講清重點，唔超過兩行。</p></article>
+    <div class="plan" style="flex:1 1 240px"><span class="tag">最受歡迎</span><h3>方案名</h3><div class="price">HK$1,280<small>/月</small></div>
+      <ul><li>包含咩</li><li>包含咩</li></ul><a class="btn btn-primary" href="#">揀呢個</a></div>
+    <blockquote class="quote" style="flex:1 1 260px">客人講嘅一句真話。<span class="avatar">阿</span><b>阿文</b><span>客戶 · 角色</span></blockquote>
+  </div>
+
+  <h2>5 · 真實 section 預覽</h2>
+  <p class="desc">以下係由正式 demo 直接抽落嚟（唔係另畫），所以卡同成品一定一致。</p>
+  <div class="preview"><div class="lbl">hero</div><div><section class="block hero" id="hero"><div class="wrap hero-grid"><div><span class="eyebrow rv">示範館 · 香港 · 逢星期二休館</span><h1>距離原作<br>30 厘米</h1><p class="lead rv">3 個展廳、120 件常設展品，每件都標實測尺寸、材質同年份。</p><div class="actions rv"><a class="btn btn-primary" href="#cta">買飛 <span class="i" aria-hidden="true">→</span></a><a class="btn btn-secondary" href="#product">睇展覽</a></div><p class="note rv">學生 HK$40 · 星期三 18:00–21:00 免費入場（每批 40 人）</p></div><figure class="hero-art rv"><div class="deco" aria-hidden="true" style="inset:0;background:linear-gradient(180deg,#FBF9F4,#E6E0D4)"></div><figcaption>展廳相片位（生成 media/neoclassical-hero.jpg 自動代入）</figcaption></figure></div></section></div></div><div class="preview"><div class="lbl">pricing</div><div><section class="block" id="pricing"><div class="wrap"><h2 class="sec-title">三種買法</h2><p class="sec-sub">單次、年票、導賞團；全部即日網上買。</p><div class="pricing"><article class="plan rv"><h3>單次票</h3><div class="price">HK$80 <small>/ 人</small></div><p>包常設展。</p><ul><li>A／B 廳常設展</li><li>唔包特展</li><li>即日網上買</li><li>最後入場 17:15</li></ul><a class="btn btn-secondary" href="#cta">買飛</a></article><article class="plan rv featured"><span class="tag">最常買</span><h3>會員年票</h3><div class="price">HK$680 <small>/ 年</small></div><p>一年內常設展免費。</p><ul><li>常設展無限次</li><li>特展 5 折</li><li>導覽機免費借</li><li>每月會員通訊</li></ul><a class="btn btn-primary" href="#cta">買飛</a></article><article class="plan rv"><h3>導賞團</h3><div class="price">HK$120 <small>/ 人</small></div><p>45 分鐘，15 人一場。</p><ul><li>星期三、六 19:30</li><li>繁中或英文</li><li>含 4 件重點展品</li><li>要事先預約</li></ul><a class="btn btn-secondary" href="#cta">查檔期</a></article></div></div></section></div></div><div class="preview"><div class="lbl">venue</div><div><section class="block" id="venue"><div class="wrap"><h2 class="sec-title">導賞同開放時間</h2><p class="sec-sub">時間同限制寫明，唔會到場才知。</p><ul class="infolist"><li><b>開放時間</b><span>星期二至日 10:00–18:00（最後入場 17:15）；逢星期二休館</span></li><li><b>導賞時段</b><span>星期三、六 19:30；星期日 14:00（45 分鐘）</span></li><li><b>地點</b><span>示範區示例街 1 號（虛構地址，示範內容）</span></li><li><b>交通</b><span>港鐵站步行 8 分鐘；館內冇停車場</span></li><li><b>入場</b><span>分時段，每批 40 人；館內唔收現金</span></li><li><b>無障礙</b><span>A／B 廳升降機直達；C 廳入口 78 厘米闊，有輪椅坡道</span></li></ul></div></section></div></div>
+
+  <h2>6 · 動效（Pro 版）</h2>
+  <p class="desc">基本版純 CSS；Pro 版有載入幕、入場、scroll reveal、微互動。跟系統設定「減少動態」會自動降級。</p>
+  <p style="font:13px var(--font-mono,monospace);color:var(--muted)"></p>
+
+  <h2>7 · 點用</h2>
+  <ul style="color:var(--muted);font-size:14px">
+    <li>Tokens：<code>themes/neoclassical.json</code>（含 <code>snippet_css</code> 同 Tailwind <code>theme.extend</code>）</li>
+    <li>Demo：<a href="../neoclassical.html">基本版</a> · <a href="../neoclassical-pro.html">Pro 動效版</a></li>
+    <li>改客人內容：<code>python3 gen_project.py brief.json</code>（自動驗 WCAG 4.5:1）</li>
+  </ul>
+
+  <div class="cp-foot">
+    <button class="btn btn-primary btn-sm noprint" type="button" onclick="window.print()">🖨️ Print／存 PDF</button>
+    <a href="index.html">← 全部風格卡</a>
+    <span>UIUX Style · Neoclassical · 示範內容全部虛構</span>
+  </div>
+</div>
+</body></html>

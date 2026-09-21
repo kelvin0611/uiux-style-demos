@@ -1,0 +1,56 @@
+{
+ "slug": "gothic",
+ "name": "Gothic",
+ "cn": "",
+ "family": "🏛️ 古典人文 Heritage & Lifestyle",
+ "industry": "獨立書店／黑暗文學出版",
+ "brand": "Vellum",
+ "cta": "訂書",
+ "sections": "products`：書單 · `venue`：活動同朗讀會 · `rows`：周邊",
+ "css_variables": {
+  "--bg": "#0C0A0F",
+  "--fg": "#EAE6F0",
+  "--muted": "#BDB6CC",
+  "--surface": "#17121D",
+  "--border": "#4A3A58",
+  "--accent": "#E9C46A",
+  "--accent-fg": "#1A1020",
+  "--accent-grad": "linear-gradient(180deg,#F3D98C,#C9A34A)",
+  "--radius": "2px",
+  "--radius-sm": "2px",
+  "--shadow": "0 26px 60px rgba(0,0,0,.72)",
+  "--btn-shadow": "0 0 24px rgba(233,196,106,.22)",
+  "--art-bg": "radial-gradient(circle at 50% 34%,#5E0B1D 0 20%,#2A1638 21% 44%,#0C0A0F 45%)",
+  "--media-bg": "linear-gradient(180deg,#2A1638,#0C0A0F)",
+  "--cta-bg": "#1D1428",
+  "--input-bg": "#17121D",
+  "--ok": "#7FC79B",
+  "--warn": "#E0795F",
+  "--font-display": "'Cormorant Garamond','Noto Serif TC',serif",
+  "--font-body": "Lora,'Noto Serif TC',serif",
+  "--font-mono": "ui-monospace,'SF Mono',Menlo,monospace",
+  "--focus-ring": "var(--accent)"
+ },
+ "fonts": {
+  "google_url": "https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&family=Cormorant+Garamond:ital,wght@0,500;0,700;1,500&family=Lora:ital@0;1&display=swap",
+  "display": "'Cormorant Garamond','Noto Serif TC',serif",
+  "body": "Lora,'Noto Serif TC',serif",
+  "mono": "ui-monospace,'SF Mono',Menlo,monospace"
+ },
+ "radius": {
+  "base": "2px",
+  "sm": "2px"
+ },
+ "shadow": {
+  "card": "0 26px 60px rgba(0,0,0,.72)",
+  "button": "0 0 24px rgba(233,196,106,.22)"
+ },
+ "focus_ring": "var(--accent)",
+ "motion": {},
+ "demo": {
+  "basic": "Demos/gothic.html",
+  "pro": "Demos/gothic-pro.html"
+ },
+ "snippet_css": ":root{\n  --bg: #0C0A0F;\n  --fg: #EAE6F0;\n  --muted: #BDB6CC;\n  --surface: #17121D;\n  --border: #4A3A58;\n  --accent: #E9C46A;\n  --accent-fg: #1A1020;\n  --accent-grad: linear-gradient(180deg,#F3D98C,#C9A34A);\n  --radius: 2px;\n  --radius-sm: 2px;\n  --shadow: 0 26px 60px rgba(0,0,0,.72);\n  --btn-shadow: 0 0 24px rgba(233,196,106,.22);\n  --art-bg: radial-gradient(circle at 50% 34%,#5E0B1D 0 20%,#2A1638 21% 44%,#0C0A0F 45%);\n  --media-bg: linear-gradient(180deg,#2A1638,#0C0A0F);\n  --cta-bg: #1D1428;\n  --input-bg: #17121D;\n  --ok: #7FC79B;\n  --warn: #E0795F;\n  --font-display: 'Cormorant Garamond','Noto Serif TC',serif;\n  --font-body: Lora,'Noto Serif TC',serif;\n  --font-mono: ui-monospace,'SF Mono',Menlo,monospace;\n  --focus-ring: var(--accent);\n}",
+ "snippet_tailwind": "// tailwind.config.js → theme.extend\n{\n  \"colors\": {\n    \"bg\": \"#0C0A0F\",\n    \"fg\": \"#EAE6F0\",\n    \"muted\": \"#BDB6CC\",\n    \"surface\": \"#17121D\",\n    \"border\": \"#4A3A58\",\n    \"accent\": \"#E9C46A\",\n    \"accent-fg\": \"#1A1020\",\n    \"ok\": \"#7FC79B\",\n    \"warn\": \"#E0795F\",\n    \"focus-ring\": \"var(--accent)\"\n  },\n  \"borderRadius\": {\n    \"DEFAULT\": \"2px\",\n    \"lg\": \"2px\"\n  },\n  \"fontFamily\": {\n    \"display\": [\n      \"'Cormorant Garamond','Noto Serif TC',serif\"\n    ],\n    \"body\": [\n      \"Lora,'Noto Serif TC',serif\"\n    ]\n  }\n}"
+}

@@ -1,0 +1,59 @@
+{
+ "slug": "bohemian",
+ "name": "Bohemian",
+ "cn": "",
+ "family": "🏛️ 古典人文 Heritage & Lifestyle",
+ "industry": "手作市集／旅店",
+ "brand": "Wander",
+ "cta": "預約",
+ "sections": "rows`：房型 · `venue`：市集日期 · `products`：手作",
+ "css_variables": {
+  "--bg": "#FAF3E7",
+  "--fg": "#43301F",
+  "--muted": "#6B5544",
+  "--surface": "#F1E3CC",
+  "--border": "#D8C3A0",
+  "--accent": "#A0522D",
+  "--accent-fg": "#FFF7EC",
+  "--accent-grad": "linear-gradient(180deg,#A8552E,#8E4726)",
+  "--radius": "22px",
+  "--radius-sm": "14px",
+  "--shadow": "0 12px 26px rgba(74,52,38,.16)",
+  "--btn-shadow": "0 4px 0 rgba(74,52,38,.20)",
+  "--art-bg": "linear-gradient(#E8D5B7,#D99058 58%,#A0522D)",
+  "--media-bg": "linear-gradient(#E8D5B7,#C2703D)",
+  "--cta-bg": "linear-gradient(180deg,#F4D58D,#E8D5B7)",
+  "--input-bg": "#FFFDF8",
+  "--ok": "#4C5C40",
+  "--warn": "#B4441F",
+  "--gold": "#D4A017",
+  "--olive": "#5E6F50",
+  "--font-script": "'Allura',cursive",
+  "--font-display": "'Fraunces','Noto Serif TC',serif",
+  "--font-body": "'Lora','Noto Serif TC',serif",
+  "--font-mono": "'Lora',ui-serif,serif",
+  "--focus-ring": "var(--accent)"
+ },
+ "fonts": {
+  "google_url": "https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&family=Allura&family=Lora:ital@0;1&display=swap",
+  "display": "'Fraunces','Noto Serif TC',serif",
+  "body": "'Lora','Noto Serif TC',serif",
+  "mono": "'Lora',ui-serif,serif"
+ },
+ "radius": {
+  "base": "22px",
+  "sm": "14px"
+ },
+ "shadow": {
+  "card": "0 12px 26px rgba(74,52,38,.16)",
+  "button": "0 4px 0 rgba(74,52,38,.20)"
+ },
+ "focus_ring": "var(--accent)",
+ "motion": {},
+ "demo": {
+  "basic": "Demos/bohemian.html",
+  "pro": "Demos/bohemian-pro.html"
+ },
+ "snippet_css": ":root{\n  --bg: #FAF3E7;\n  --fg: #43301F;\n  --muted: #6B5544;\n  --surface: #F1E3CC;\n  --border: #D8C3A0;\n  --accent: #A0522D;\n  --accent-fg: #FFF7EC;\n  --accent-grad: linear-gradient(180deg,#A8552E,#8E4726);\n  --radius: 22px;\n  --radius-sm: 14px;\n  --shadow: 0 12px 26px rgba(74,52,38,.16);\n  --btn-shadow: 0 4px 0 rgba(74,52,38,.20);\n  --art-bg: linear-gradient(#E8D5B7,#D99058 58%,#A0522D);\n  --media-bg: linear-gradient(#E8D5B7,#C2703D);\n  --cta-bg: linear-gradient(180deg,#F4D58D,#E8D5B7);\n  --input-bg: #FFFDF8;\n  --ok: #4C5C40;\n  --warn: #B4441F;\n  --gold: #D4A017;\n  --olive: #5E6F50;\n  --font-script: 'Allura',cursive;\n  --font-display: 'Fraunces','Noto Serif TC',serif;\n  --font-body: 'Lora','Noto Serif TC',serif;\n  --font-mono: 'Lora',ui-serif,serif;\n  --focus-ring: var(--accent);\n}",
+ "snippet_tailwind": "// tailwind.config.js → theme.extend\n{\n  \"colors\": {\n    \"bg\": \"#FAF3E7\",\n    \"fg\": \"#43301F\",\n    \"muted\": \"#6B5544\",\n    \"surface\": \"#F1E3CC\",\n    \"border\": \"#D8C3A0\",\n    \"accent\": \"#A0522D\",\n    \"accent-fg\": \"#FFF7EC\",\n    \"ok\": \"#4C5C40\",\n    \"warn\": \"#B4441F\",\n    \"focus-ring\": \"var(--accent)\"\n  },\n  \"borderRadius\": {\n    \"DEFAULT\": \"14px\",\n    \"lg\": \"22px\"\n  },\n  \"fontFamily\": {\n    \"display\": [\n      \"'Fraunces','Noto Serif TC',serif\"\n    ],\n    \"body\": [\n      \"'Lora','Noto Serif TC',serif\"\n    ]\n  }\n}"
+}

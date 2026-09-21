@@ -1,0 +1,54 @@
+{
+ "slug": "memphis",
+ "name": "Memphis",
+ "cn": "",
+ "family": "💥 張力反叛 Bold & Raw",
+ "industry": "活動／音樂節",
+ "brand": "Milano` / `Milano Fest",
+ "cta": "買飛",
+ "sections": "",
+ "css_variables": {
+  "--bg": "#FFFFFF",
+  "--fg": "#111111",
+  "--muted": "#4B4B4B",
+  "--surface": "#FFFFFF",
+  "--border": "#111111",
+  "--accent": "#FF6FB5",
+  "--accent-fg": "#111111",
+  "--radius": "18px",
+  "--radius-sm": "10px",
+  "--shadow": "6px 6px 0 #111111",
+  "--btn-shadow": "6px 6px 0 #111111",
+  "--art-bg": "conic-gradient(from 45deg,#FF6FB5,#FFD23F,#3BCEAC,#3A86FF,#EE4266,#FF6FB5)",
+  "--media-bg": "conic-gradient(from 45deg,#FF6FB5,#FFD23F,#3BCEAC,#3A86FF,#FF6FB5)",
+  "--cta-bg": "#FFD23F",
+  "--input-bg": "#FFFFFF",
+  "--ok": "#3BCEAC",
+  "--warn": "#EE4266",
+  "--font-display": "Bungee,Poppins,sans-serif",
+  "--font-body": "Poppins,'Noto Sans TC',sans-serif",
+  "--focus-ring": "#FF1D8B"
+ },
+ "fonts": {
+  "google_url": "https://fonts.googleapis.com/css2?family=Bungee&family=Poppins:wght@400;600;800&display=swap",
+  "display": "Bungee,Poppins,sans-serif",
+  "body": "Poppins,'Noto Sans TC',sans-serif",
+  "mono": ""
+ },
+ "radius": {
+  "base": "18px",
+  "sm": "10px"
+ },
+ "shadow": {
+  "card": "6px 6px 0 #111111",
+  "button": "6px 6px 0 #111111"
+ },
+ "focus_ring": "#FF1D8B",
+ "motion": {},
+ "demo": {
+  "basic": "Demos/memphis.html",
+  "pro": "Demos/memphis-pro.html"
+ },
+ "snippet_css": ":root{\n  --bg: #FFFFFF;\n  --fg: #111111;\n  --muted: #4B4B4B;\n  --surface: #FFFFFF;\n  --border: #111111;\n  --accent: #FF6FB5;\n  --accent-fg: #111111;\n  --radius: 18px;\n  --radius-sm: 10px;\n  --shadow: 6px 6px 0 #111111;\n  --btn-shadow: 6px 6px 0 #111111;\n  --art-bg: conic-gradient(from 45deg,#FF6FB5,#FFD23F,#3BCEAC,#3A86FF,#EE4266,#FF6FB5);\n  --media-bg: conic-gradient(from 45deg,#FF6FB5,#FFD23F,#3BCEAC,#3A86FF,#FF6FB5);\n  --cta-bg: #FFD23F;\n  --input-bg: #FFFFFF;\n  --ok: #3BCEAC;\n  --warn: #EE4266;\n  --font-display: Bungee,Poppins,sans-serif;\n  --font-body: Poppins,'Noto Sans TC',sans-serif;\n  --focus-ring: #FF1D8B;\n}",
+ "snippet_tailwind": "// tailwind.config.js → theme.extend\n{\n  \"colors\": {\n    \"bg\": \"#FFFFFF\",\n    \"fg\": \"#111111\",\n    \"muted\": \"#4B4B4B\",\n    \"surface\": \"#FFFFFF\",\n    \"border\": \"#111111\",\n    \"accent\": \"#FF6FB5\",\n    \"accent-fg\": \"#111111\",\n    \"ok\": \"#3BCEAC\",\n    \"warn\": \"#EE4266\",\n    \"focus-ring\": \"#FF1D8B\"\n  },\n  \"borderRadius\": {\n    \"DEFAULT\": \"10px\",\n    \"lg\": \"18px\"\n  },\n  \"fontFamily\": {\n    \"display\": [\n      \"Bungee,Poppins,sans-serif\"\n    ],\n    \"body\": [\n      \"Poppins,'Noto Sans TC',sans-serif\"\n    ]\n  }\n}"
+}

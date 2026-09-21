@@ -1,0 +1,55 @@
+{
+ "slug": "mid-century",
+ "name": "Mid-Century",
+ "cn": "",
+ "family": "🏛️ 古典人文 Heritage & Lifestyle",
+ "industry": "復古 hi-fi／音響品牌",
+ "brand": "Sonor",
+ "cta": "預約試聽",
+ "sections": "products`：型號 · `rows`：規格 · `venue`：保養同維修",
+ "css_variables": {
+  "--bg": "#F4ECD8",
+  "--fg": "#2B2A28",
+  "--muted": "#5B554A",
+  "--surface": "#FFFFFF",
+  "--border": "#2B2A28",
+  "--accent": "#A34A17",
+  "--accent-fg": "#FFFFFF",
+  "--radius": "18px",
+  "--radius-sm": "12px",
+  "--shadow": "0 10px 24px rgba(43,42,40,.10)",
+  "--btn-shadow": "none",
+  "--art-bg": "radial-gradient(circle at 30% 40%,#E1A624 0 18%,transparent 19%),radial-gradient(circle at 65% 55%,#2A8C8C 0 22%,transparent 23%),#F4ECD8",
+  "--media-bg": "linear-gradient(150deg,#E1A624,#F4ECD8)",
+  "--cta-bg": "linear-gradient(180deg,#E1A624,#F4ECD8)",
+  "--input-bg": "#FFFDF6",
+  "--ok": "#1E6B5E",
+  "--warn": "#9B2C1F",
+  "--font-display": "'Josefin Sans','Noto Sans TC',sans-serif",
+  "--font-body": "'Work Sans','Noto Sans TC',sans-serif",
+  "--font-mono": "ui-monospace,Menlo,monospace",
+  "--focus-ring": "var(--accent)"
+ },
+ "fonts": {
+  "google_url": "https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=Work+Sans:wght@400;600&display=swap",
+  "display": "'Josefin Sans','Noto Sans TC',sans-serif",
+  "body": "'Work Sans','Noto Sans TC',sans-serif",
+  "mono": "ui-monospace,Menlo,monospace"
+ },
+ "radius": {
+  "base": "18px",
+  "sm": "12px"
+ },
+ "shadow": {
+  "card": "0 10px 24px rgba(43,42,40,.10)",
+  "button": "none"
+ },
+ "focus_ring": "var(--accent)",
+ "motion": {},
+ "demo": {
+  "basic": "Demos/mid-century.html",
+  "pro": "Demos/mid-century-pro.html"
+ },
+ "snippet_css": ":root{\n  --bg: #F4ECD8;\n  --fg: #2B2A28;\n  --muted: #5B554A;\n  --surface: #FFFFFF;\n  --border: #2B2A28;\n  --accent: #A34A17;\n  --accent-fg: #FFFFFF;\n  --radius: 18px;\n  --radius-sm: 12px;\n  --shadow: 0 10px 24px rgba(43,42,40,.10);\n  --btn-shadow: none;\n  --art-bg: radial-gradient(circle at 30% 40%,#E1A624 0 18%,transparent 19%),radial-gradient(circle at 65% 55%,#2A8C8C 0 22%,transparent 23%),#F4ECD8;\n  --media-bg: linear-gradient(150deg,#E1A624,#F4ECD8);\n  --cta-bg: linear-gradient(180deg,#E1A624,#F4ECD8);\n  --input-bg: #FFFDF6;\n  --ok: #1E6B5E;\n  --warn: #9B2C1F;\n  --font-display: 'Josefin Sans','Noto Sans TC',sans-serif;\n  --font-body: 'Work Sans','Noto Sans TC',sans-serif;\n  --font-mono: ui-monospace,Menlo,monospace;\n  --focus-ring: var(--accent);\n}",
+ "snippet_tailwind": "// tailwind.config.js → theme.extend\n{\n  \"colors\": {\n    \"bg\": \"#F4ECD8\",\n    \"fg\": \"#2B2A28\",\n    \"muted\": \"#5B554A\",\n    \"surface\": \"#FFFFFF\",\n    \"border\": \"#2B2A28\",\n    \"accent\": \"#A34A17\",\n    \"accent-fg\": \"#FFFFFF\",\n    \"ok\": \"#1E6B5E\",\n    \"warn\": \"#9B2C1F\",\n    \"focus-ring\": \"var(--accent)\"\n  },\n  \"borderRadius\": {\n    \"DEFAULT\": \"12px\",\n    \"lg\": \"18px\"\n  },\n  \"fontFamily\": {\n    \"display\": [\n      \"'Josefin Sans','Noto Sans TC',sans-serif\"\n    ],\n    \"body\": [\n      \"'Work Sans','Noto Sans TC',sans-serif\"\n    ]\n  }\n}"
+}

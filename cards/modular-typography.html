@@ -1,0 +1,104 @@
+<!doctype html><html lang="zh-Hant-HK"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Modular Typography  · 風格卡</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Inter:wght@400;500&display=swap">
+<link rel="stylesheet" href="../blocks.css">
+<style>:root{--bg:#FFFFFF;--fg:#0A0A0A;--muted:#555555;--surface:#F2F2F2;--border:#0A0A0A;--accent:#0B5FFF;--accent-fg:#FFFFFF;--radius:0px;--radius-sm:0px;--shadow:none;--btn-shadow:4px 4px 0 #0A0A0A;--art-bg:repeating-linear-gradient(90deg,#F2F2F2 0 24px,#fff 24px 48px);--media-bg:repeating-linear-gradient(90deg,#F2F2F2 0 24px,#fff 24px 48px);--cta-bg:#F2F2F2;--input-bg:#FFFFFF;--ok:#0B5FFF;--warn:#C81E1E;--font-display:'Space Grotesk','Noto Sans TC',sans-serif;--font-body:Inter,sans-serif;--font-mono:'Space Grotesk',monospace;--focus-ring:var(--accent);}
+
+
+.card,.tile-c,.quote,.plan,.rows,.log,.mock{border:1px solid #0A0A0A;border-radius:0;box-shadow:none;background:#fff}
+.hero h1{font-weight:700;letter-spacing:-.03em;line-height:.98}
+.sec-title{font-weight:500;letter-spacing:-.01em;text-transform:none}
+.sec-title::after{content:"";display:block;width:72px;height:6px;background:#0B5FFF;margin-top:10px}
+.btn{border-radius:0;border:1px solid #0A0A0A}
+.btn-primary{background:#0B5FFF;color:#fff}
+.btn-secondary{background:#fff;color:#0A0A0A}
+.chip{border-radius:0;background:#F2F2F2;border:1px solid #0A0A0A;font-size:12px}
+.avatar{border-radius:0;background:#0A0A0A;color:#fff}
+.tag{background:#FFD400;color:#0A0A0A;border-radius:0;border:1px solid #0A0A0A}
+.tile-c .ph{background:#fff;border-bottom:1px solid #0A0A0A;font-family:'Space Grotesk',sans-serif;font-size:44px;color:#0A0A0A;display:flex;align-items:center;justify-content:center}
+.plan.featured{outline:3px solid #0B5FFF;outline-offset:4px}
+.rows article b,.log article b{font-family:'Space Grotesk',sans-serif}
+.hero::before{content:"▦ ▦ ▦";position:absolute;right:4%;top:30px;font-size:26px;color:#0B5FFF;letter-spacing:.1em;opacity:.9;pointer-events:none}
+
+/* ---- 風格卡專用 ---- */
+body{background:var(--bg);color:var(--fg);font-family:var(--font-body)}
+.cp{max-width:1080px;margin:0 auto;padding:clamp(18px,4vw,40px)}
+.cp-head{border-bottom:2px solid var(--border);padding-bottom:18px;margin-bottom:26px}
+.cp-head h1{margin:.1em 0 .2em;font-family:var(--font-display);font-size:clamp(28px,5vw,46px)}
+.cp-meta{color:var(--muted);font-size:14px}
+.cp-tag{display:inline-block;border:1px solid var(--border);border-radius:999px;padding:3px 10px;font-size:12px;color:var(--muted);margin:0 6px 6px 0}
+.cp h2{font-family:var(--font-display);font-size:clamp(18px,2.4vw,24px);margin:34px 0 6px;padding-bottom:6px;border-bottom:1px solid var(--border)}
+.cp p.desc{color:var(--muted);margin:6px 0 14px;max-width:70ch}
+.sws{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:10px}
+.sw{border:1px solid var(--border);border-radius:10px;padding:9px;background:var(--surface);display:grid;gap:4px}
+.sw i{display:block;height:44px;border-radius:7px;border:1px solid var(--border)}
+.sw b{font-size:13px}.sw code{font:12px var(--font-mono,monospace);color:var(--muted)}
+.sw span{font-size:11px;color:var(--muted)}
+.typo div{border:1px solid var(--border);border-radius:10px;padding:12px 14px;margin-bottom:8px;background:var(--surface)}
+.typo .d{font-family:var(--font-display);font-size:32px;line-height:1.15}
+.typo .b{font-family:var(--font-body);font-size:16px}
+.typo .m{font-family:var(--font-mono,monospace);font-size:14px}
+.typo small{color:var(--muted);font-size:11px;display:block;margin-top:6px}
+.row{display:flex;gap:12px;flex-wrap:wrap;align-items:flex-start}
+.preview{border:1px dashed var(--border);border-radius:12px;overflow:hidden;margin-bottom:12px}
+.preview .lbl{font:11px var(--font-mono,monospace);color:var(--muted);padding:6px 10px;border-bottom:1px dashed var(--border)}
+.preview > div:last-child{transform-origin:top left}
+.cp-foot{margin-top:36px;padding-top:14px;border-top:1px solid var(--border);color:var(--muted);font-size:13px;display:flex;gap:14px;flex-wrap:wrap}
+.cp a{color:var(--accent)}
+@media print{.noprint{display:none}body{background:#fff}.cp{max-width:none;padding:0}.preview{page-break-inside:avoid}}
+</style></head><body>
+<div class="cp">
+  <div class="cp-head">
+    <span class="cp-tag">📐 秩序理性 Structure &amp; Order</span><span class="cp-tag">15 個 block</span><span class="cp-tag">—</span>
+    <h1> Modular Typography <span style="font-size:.6em;color:var(--muted)"></span></h1>
+    <p class="desc" style="font-size:17px;color:var(--fg)">將字母拆成網格同積木 —— 幾何字形、統一間距、可重組版面，結構、現代、帶玩味。</p>
+    <p class="cp-meta">示範品牌 <b>Modular` / `Modular Grid</b> · 主要 CTA「睇系統」· 行業：設計工作室／字體廠 · 次選 文化機構／展覽</p>
+  </div>
+
+  <h2>1 · 色票 Palette</h2>
+  <p class="desc">所有元件都只可以用呢組 token（換色 = 改呢幾行）。</p>
+  <div class="sws"><div class="sw"><i style="background:#FFFFFF"></i><b>--bg</b><code>#FFFFFF</code><span>底色 Background</span></div><div class="sw"><i style="background:#0A0A0A"></i><b>--fg</b><code>#0A0A0A</code><span>主文字 Text</span></div><div class="sw"><i style="background:#555555"></i><b>--muted</b><code>#555555</code><span>次要文字 Muted</span></div><div class="sw"><i style="background:#F2F2F2"></i><b>--surface</b><code>#F2F2F2</code><span>卡片面 Surface</span></div><div class="sw"><i style="background:#0A0A0A"></i><b>--border</b><code>#0A0A0A</code><span>分隔線 Border</span></div><div class="sw"><i style="background:#0B5FFF"></i><b>--accent</b><code>#0B5FFF</code><span>強調色 Accent</span></div><div class="sw"><i style="background:#FFFFFF"></i><b>--accent-fg</b><code>#FFFFFF</code><span>強調上文字</span></div><div class="sw"><i style="background:#0B5FFF"></i><b>--ok</b><code>#0B5FFF</code><span>成功 Success</span></div><div class="sw"><i style="background:#C81E1E"></i><b>--warn</b><code>#C81E1E</code><span>警告 Warning</span></div></div>
+
+  <h2>2 · 字體 Typography</h2>
+  <p class="desc">最多兩個字重；標題 &#x27;Space Grotesk&#x27;,&#x27;Noto Sans TC&#x27;,sans-serif、正文 Inter,sans-serif。</p>
+  <div class="typo">
+    <div class="d">一頁講清成件事 <small>Display · &#x27;Space Grotesk&#x27;,&#x27;Noto Sans TC&#x27;,sans-serif</small></div>
+    <div class="b">正文用 Inter,sans-serif：16px、行高 1.65，唔會超過 70 個中文字一行。<small>Body</small></div>
+    <div class="m">HK$1,280 · 2026-09-22 · #REF-0042 <small>Mono／數字對齊（&#x27;Space Grotesk&#x27;,monospace）</small></div>
+  </div>
+
+  <h2>3 · 按鈕 Buttons</h2>
+  <p class="desc">11 個狀態齊：hover 升起、active 壓落、focus 外框（對比 ≥3:1）、disabled 變淡、loading／success。</p>
+  <div class="btn-row"><div class="state"><button class="btn btn-primary " type="button">Primary</button><small>Default</small></div><div class="state"><button class="btn btn-primary is-hover" type="button">Primary</button><small>Hover</small></div><div class="state"><button class="btn btn-primary is-active" type="button">Primary</button><small>Active</small></div><div class="state"><button class="btn btn-primary is-focus" type="button">Primary</button><small>Focus</small></div><div class="state"><button class="btn btn-primary " type="button" disabled>Primary</button><small>Disabled</small></div><div class="state"><button class="btn btn-primary btn-sm" type="button">Small</button><small>btn-sm</small></div><div class="state"><button class="btn btn-primary btn-lg" type="button">Large</button><small>btn-lg</small></div><div class="state"><button class="btn btn-primary btn-secondary" type="button">Secondary</button><small>Secondary</small></div></div>
+
+  <h2>4 · 組件 Components</h2>
+  <div class="row">
+    <article class="card" style="flex:1 1 260px"><span class="ico" aria-hidden="true">◆</span><h3>卡片標題</h3><p>一句講清重點，唔超過兩行。</p></article>
+    <div class="plan" style="flex:1 1 240px"><span class="tag">最受歡迎</span><h3>方案名</h3><div class="price">HK$1,280<small>/月</small></div>
+      <ul><li>包含咩</li><li>包含咩</li></ul><a class="btn btn-primary" href="#">揀呢個</a></div>
+    <blockquote class="quote" style="flex:1 1 260px">客人講嘅一句真話。<span class="avatar">阿</span><b>阿文</b><span>客戶 · 角色</span></blockquote>
+  </div>
+
+  <h2>5 · 真實 section 預覽</h2>
+  <p class="desc">以下係由正式 demo 直接抽落嚟（唔係另畫），所以卡同成品一定一致。</p>
+  <div class="preview"><div class="lbl">hero</div><div><section class="block hero" id="hero"><div class="wrap hero-grid"><div><span class="eyebrow rv">字體產品 · 5 個字重 · 拉丁＋繁中</span><h1>字體就係系統</h1><p class="lead rv">一個家族由 Light 到 Black，字寬同字高對齊，排版唔會爆格。</p><div class="actions rv"><a class="btn btn-primary" href="#cta">試字 <span class="i" aria-hidden="true">→</span></a><a class="btn btn-secondary" href="#product">睇字重同價目</a></div><p class="note rv">桌面／網頁／App 授權分開賣 · 網頁用 CDN 一段 code 就裝好</p></div><figure class="hero-art rv"><div class="deco" aria-hidden="true" style="inset:0;background:repeating-linear-gradient(90deg,#F2F2F2 0 24px,#fff 24px 48px)"></div><figcaption>字體樣張圖位（生成 media/modular-typography-hero.jpg 自動代入）</figcaption></figure></div></section></div></div><div class="preview"><div class="lbl">pricing</div><div><section class="block" id="pricing"><div class="wrap"><h2 class="sec-title">授權</h2><p class="sec-sub">一次買，永久用；升級授權補差價就得。</p><div class="pricing"><article class="plan rv"><h3>網頁</h3><div class="price">HK$980 <small>/ 網域</small></div><p>網站同 landing page。</p><ul><li>1 個網域</li><li>每月 100 萬次瀏覽</li><li>CDN 或 self-host</li><li>永久授權</li></ul><a class="btn btn-secondary" href="#cta">試字</a></article><article class="plan rv featured"><span class="tag">設計師最常買</span><h3>桌面</h3><div class="price">HK$1,600 <small>/ 5 部機</small></div><p>設計師個人使用。</p><ul><li>5 部電腦</li><li>OTF + variable font</li><li>可用於客戶提案</li><li>永久授權</li></ul><a class="btn btn-primary" href="#cta">試字</a></article><article class="plan rv"><h3>App／嵌入</h3><div class="price">HK$4,800 <small>/ 產品</small></div><p>手機 app 或硬件。</p><ul><li>1 個產品</li><li>含 App 內嵌</li><li>可隨產品更新</li><li>技術支援</li></ul><a class="btn btn-secondary" href="#cta">索取報價</a></article></div></div></section></div></div>
+
+  <h2>6 · 動效（Pro 版）</h2>
+  <p class="desc">基本版純 CSS；Pro 版有載入幕、入場、scroll reveal、微互動。跟系統設定「減少動態」會自動降級。</p>
+  <p style="font:13px var(--font-mono,monospace);color:var(--muted)"></p>
+
+  <h2>7 · 點用</h2>
+  <ul style="color:var(--muted);font-size:14px">
+    <li>Tokens：<code>themes/modular-typography.json</code>（含 <code>snippet_css</code> 同 Tailwind <code>theme.extend</code>）</li>
+    <li>Demo：<a href="../modular-typography.html">基本版</a> · <a href="../modular-typography-pro.html">Pro 動效版</a></li>
+    <li>改客人內容：<code>python3 gen_project.py brief.json</code>（自動驗 WCAG 4.5:1）</li>
+  </ul>
+
+  <div class="cp-foot">
+    <button class="btn btn-primary btn-sm noprint" type="button" onclick="window.print()">🖨️ Print／存 PDF</button>
+    <a href="index.html">← 全部風格卡</a>
+    <span>UIUX Style · Modular Typography · 示範內容全部虛構</span>
+  </div>
+</div>
+</body></html>

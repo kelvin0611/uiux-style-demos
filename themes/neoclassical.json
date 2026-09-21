@@ -1,0 +1,55 @@
+{
+ "slug": "neoclassical",
+ "name": "Neoclassical",
+ "cn": "",
+ "family": "🏛️ 古典人文 Heritage & Lifestyle",
+ "industry": "博物館／文化機構",
+ "brand": "Athenaeum",
+ "cta": "買飛",
+ "sections": "rows`：展覽 · `venue`：導賞同開放時間 · `member`：會員",
+ "css_variables": {
+  "--bg": "#F4F1EA",
+  "--fg": "#22201C",
+  "--muted": "#5A5A52",
+  "--surface": "#FFFFFF",
+  "--border": "#D9D1C0",
+  "--accent": "#1F2A44",
+  "--accent-fg": "#FFFFFF",
+  "--radius": "2px",
+  "--radius-sm": "2px",
+  "--shadow": "0 1px 0 rgba(184,155,94,.45)",
+  "--btn-shadow": "none",
+  "--art-bg": "linear-gradient(180deg,#FBF9F4,#E6E0D4)",
+  "--media-bg": "linear-gradient(180deg,#E6E0D4,#D9D1C0)",
+  "--cta-bg": "#1F2A44",
+  "--input-bg": "#FFFFFF",
+  "--ok": "#2C6B4F",
+  "--warn": "#8C2F2F",
+  "--font-display": "Cinzel,'Noto Serif TC',serif",
+  "--font-body": "'EB Garamond','Noto Serif TC',serif",
+  "--font-mono": "Cinzel,ui-monospace,monospace",
+  "--focus-ring": "var(--accent)"
+ },
+ "fonts": {
+  "google_url": "https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=EB+Garamond:ital@0;1&display=swap",
+  "display": "Cinzel,'Noto Serif TC',serif",
+  "body": "'EB Garamond','Noto Serif TC',serif",
+  "mono": "Cinzel,ui-monospace,monospace"
+ },
+ "radius": {
+  "base": "2px",
+  "sm": "2px"
+ },
+ "shadow": {
+  "card": "0 1px 0 rgba(184,155,94,.45)",
+  "button": "none"
+ },
+ "focus_ring": "var(--accent)",
+ "motion": {},
+ "demo": {
+  "basic": "Demos/neoclassical.html",
+  "pro": "Demos/neoclassical-pro.html"
+ },
+ "snippet_css": ":root{\n  --bg: #F4F1EA;\n  --fg: #22201C;\n  --muted: #5A5A52;\n  --surface: #FFFFFF;\n  --border: #D9D1C0;\n  --accent: #1F2A44;\n  --accent-fg: #FFFFFF;\n  --radius: 2px;\n  --radius-sm: 2px;\n  --shadow: 0 1px 0 rgba(184,155,94,.45);\n  --btn-shadow: none;\n  --art-bg: linear-gradient(180deg,#FBF9F4,#E6E0D4);\n  --media-bg: linear-gradient(180deg,#E6E0D4,#D9D1C0);\n  --cta-bg: #1F2A44;\n  --input-bg: #FFFFFF;\n  --ok: #2C6B4F;\n  --warn: #8C2F2F;\n  --font-display: Cinzel,'Noto Serif TC',serif;\n  --font-body: 'EB Garamond','Noto Serif TC',serif;\n  --font-mono: Cinzel,ui-monospace,monospace;\n  --focus-ring: var(--accent);\n}",
+ "snippet_tailwind": "// tailwind.config.js → theme.extend\n{\n  \"colors\": {\n    \"bg\": \"#F4F1EA\",\n    \"fg\": \"#22201C\",\n    \"muted\": \"#5A5A52\",\n    \"surface\": \"#FFFFFF\",\n    \"border\": \"#D9D1C0\",\n    \"accent\": \"#1F2A44\",\n    \"accent-fg\": \"#FFFFFF\",\n    \"ok\": \"#2C6B4F\",\n    \"warn\": \"#8C2F2F\",\n    \"focus-ring\": \"var(--accent)\"\n  },\n  \"borderRadius\": {\n    \"DEFAULT\": \"2px\",\n    \"lg\": \"2px\"\n  },\n  \"fontFamily\": {\n    \"display\": [\n      \"Cinzel,'Noto Serif TC',serif\"\n    ],\n    \"body\": [\n      \"'EB Garamond','Noto Serif TC',serif\"\n    ]\n  }\n}"
+}

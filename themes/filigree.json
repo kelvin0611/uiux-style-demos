@@ -1,0 +1,56 @@
+{
+ "slug": "filigree",
+ "name": "Filigree",
+ "cn": "",
+ "family": "🏛️ 古典人文 Heritage & Lifestyle",
+ "industry": "高級珠寶",
+ "brand": "Filigrane",
+ "cta": "預約睇貨",
+ "sections": "products`：系列 · `rows`：訂製 · `venue`：保養同證書",
+ "css_variables": {
+  "--bg": "#14213D",
+  "--fg": "#FBF7EE",
+  "--muted": "#D5CEBC",
+  "--surface": "rgba(255,255,255,.06)",
+  "--border": "rgba(230,209,146,.38)",
+  "--accent": "#E6D192",
+  "--accent-fg": "#14213D",
+  "--accent-grad": "linear-gradient(120deg,#8C6F2E,#F3E4B0 45%,#BFA05A 55%,#8C6F2E)",
+  "--radius": "3px",
+  "--radius-sm": "2px",
+  "--shadow": "0 18px 40px rgba(0,0,0,.45)",
+  "--btn-shadow": "0 0 0 1px rgba(230,209,146,.45),0 10px 24px rgba(191,160,90,.20)",
+  "--art-bg": "radial-gradient(circle at 34% 30%,#FBF7EE,#F3E4B0 34%,#BFA05A 62%,#14213D)",
+  "--media-bg": "linear-gradient(140deg,#1E2C4C,#3A4766)",
+  "--cta-bg": "linear-gradient(140deg,#1B2743,#2A3960)",
+  "--input-bg": "#16233F",
+  "--ok": "#9BD8B0",
+  "--warn": "#E9A38E",
+  "--font-display": "'Cormorant Garamond','Noto Serif TC',serif",
+  "--font-body": "Lora,'Noto Serif TC',serif",
+  "--font-mono": "ui-monospace,'SF Mono',Menlo,monospace",
+  "--focus-ring": "var(--accent)"
+ },
+ "fonts": {
+  "google_url": "https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Great+Vibes&family=Lora&display=swap",
+  "display": "'Cormorant Garamond','Noto Serif TC',serif",
+  "body": "Lora,'Noto Serif TC',serif",
+  "mono": "ui-monospace,'SF Mono',Menlo,monospace"
+ },
+ "radius": {
+  "base": "3px",
+  "sm": "2px"
+ },
+ "shadow": {
+  "card": "0 18px 40px rgba(0,0,0,.45)",
+  "button": "0 0 0 1px rgba(230,209,146,.45),0 10px 24px rgba(191,160,90,.20)"
+ },
+ "focus_ring": "var(--accent)",
+ "motion": {},
+ "demo": {
+  "basic": "Demos/filigree.html",
+  "pro": "Demos/filigree-pro.html"
+ },
+ "snippet_css": ":root{\n  --bg: #14213D;\n  --fg: #FBF7EE;\n  --muted: #D5CEBC;\n  --surface: rgba(255,255,255,.06);\n  --border: rgba(230,209,146,.38);\n  --accent: #E6D192;\n  --accent-fg: #14213D;\n  --accent-grad: linear-gradient(120deg,#8C6F2E,#F3E4B0 45%,#BFA05A 55%,#8C6F2E);\n  --radius: 3px;\n  --radius-sm: 2px;\n  --shadow: 0 18px 40px rgba(0,0,0,.45);\n  --btn-shadow: 0 0 0 1px rgba(230,209,146,.45),0 10px 24px rgba(191,160,90,.20);\n  --art-bg: radial-gradient(circle at 34% 30%,#FBF7EE,#F3E4B0 34%,#BFA05A 62%,#14213D);\n  --media-bg: linear-gradient(140deg,#1E2C4C,#3A4766);\n  --cta-bg: linear-gradient(140deg,#1B2743,#2A3960);\n  --input-bg: #16233F;\n  --ok: #9BD8B0;\n  --warn: #E9A38E;\n  --font-display: 'Cormorant Garamond','Noto Serif TC',serif;\n  --font-body: Lora,'Noto Serif TC',serif;\n  --font-mono: ui-monospace,'SF Mono',Menlo,monospace;\n  --focus-ring: var(--accent);\n}",
+ "snippet_tailwind": "// tailwind.config.js → theme.extend\n{\n  \"colors\": {\n    \"bg\": \"#14213D\",\n    \"fg\": \"#FBF7EE\",\n    \"muted\": \"#D5CEBC\",\n    \"surface\": \"rgba(255,255,255,.06)\",\n    \"border\": \"rgba(230,209,146,.38)\",\n    \"accent\": \"#E6D192\",\n    \"accent-fg\": \"#14213D\",\n    \"ok\": \"#9BD8B0\",\n    \"warn\": \"#E9A38E\",\n    \"focus-ring\": \"var(--accent)\"\n  },\n  \"borderRadius\": {\n    \"DEFAULT\": \"2px\",\n    \"lg\": \"3px\"\n  },\n  \"fontFamily\": {\n    \"display\": [\n      \"'Cormorant Garamond','Noto Serif TC',serif\"\n    ],\n    \"body\": [\n      \"Lora,'Noto Serif TC',serif\"\n    ]\n  }\n}"
+}

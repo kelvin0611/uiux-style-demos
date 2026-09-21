@@ -1,0 +1,116 @@
+<!doctype html><html lang="zh-Hant-HK"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Neumorphism  · 風格卡</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="../blocks.css">
+<style>:root{--bg:#E0E5EC;--fg:#2D3748;--muted:#535E70;--surface:#F1F4F9;--border:#C8D0DC;--accent:#4F46D6;--accent-fg:#FFFFFF;--radius:22px;--radius-sm:14px;--shadow:9px 9px 18px #A3B1C6,-9px -9px 18px #FFFFFF;--btn-shadow:6px 6px 12px #A3B1C6,-6px -6px 12px #FFFFFF;--art-bg:radial-gradient(circle at 30% 28%,#FFFFFF,transparent 46%),linear-gradient(160deg,#E8EDF4,#D3DAE6);--media-bg:radial-gradient(circle at 34% 30%,#FFFFFF,transparent 48%),linear-gradient(160deg,#E4E9F1,#D3DAE6);--cta-bg:#EDF1F7;--input-bg:#E8ECF3;--ok:#1F7A57;--warn:#A32A3C;--font-display:Poppins,'Noto Sans TC',sans-serif;--font-body:Poppins,'Noto Sans TC',sans-serif;--font-mono:'Roboto Mono',ui-monospace,Menlo,monospace;--focus-ring:var(--accent);}
+
+
+.card,.plan,.quote,.tile-c,.rows,.log,.mock,.badge-card,.roi{border:0;background:var(--bg);box-shadow:var(--shadow)}
+.faq details{border:0;background:var(--bg);box-shadow:var(--shadow)}
+.sec-title{font-weight:600;letter-spacing:-.01em}
+.hero h1{font-weight:600;letter-spacing:-.02em}
+.rows,.log{border:0}
+.rows article,.log article{border-bottom:1px solid var(--border)}
+.rows article:last-child,.log article:last-child{border-bottom:0}
+.btn{border:0;box-shadow:var(--btn-shadow)}
+.btn-primary{background:var(--accent);color:var(--accent-fg)}
+.btn-secondary{background:var(--bg);color:var(--fg);box-shadow:var(--shadow)}
+.btn-secondary:hover,.btn-secondary.is-hover{box-shadow:inset 4px 4px 10px #A3B1C6,inset -4px -4px 10px #FFFFFF}
+input,select{border:0;background:var(--input-bg);box-shadow:inset 4px 4px 8px #A3B1C6,inset -4px -4px 8px #FFFFFF}
+.toggle{background:var(--border);box-shadow:inset 2px 2px 5px #A3B1C6,inset -2px -2px 5px #FFFFFF}
+.toggle:checked{background:var(--accent)}
+.chip{border:0;background:var(--bg);box-shadow:var(--shadow)}
+.avatar{border-radius:50%;background:var(--bg);color:var(--accent);box-shadow:var(--shadow)}
+.tag{background:var(--accent);color:var(--accent-fg);border-radius:999px;box-shadow:none}
+.tile-c .ph{background:var(--media-bg);box-shadow:inset 8px 8px 16px #A3B1C6,inset -8px -8px 16px #FFFFFF}
+.plan.featured{border:0;outline:0;box-shadow:var(--shadow)}
+.plan.featured::after{content:"";position:absolute;inset:8px;border-radius:18px;box-shadow:inset 0 0 0 2px var(--accent);pointer-events:none}
+.hero-art{border:0;box-shadow:inset 12px 12px 24px #A3B1C6,inset -12px -12px 24px #FFFFFF}
+.mock-row{border:0;background:var(--bg);box-shadow:inset 3px 3px 7px #A3B1C6,inset -3px -3px 7px #FFFFFF}
+.cta-band{border:0;background:var(--cta-bg);box-shadow:var(--shadow)}
+.band{background:var(--surface);border-block:0}
+.steps li::before{background:var(--bg);color:var(--accent);box-shadow:var(--shadow)}
+.hero::after{content:"";position:absolute;right:6%;top:12%;width:150px;height:150px;border-radius:50%;background:var(--bg);box-shadow:14px 14px 30px #A3B1C6,-14px -14px 30px #FFFFFF;pointer-events:none}
+
+/* ---- 風格卡專用 ---- */
+body{background:var(--bg);color:var(--fg);font-family:var(--font-body)}
+.cp{max-width:1080px;margin:0 auto;padding:clamp(18px,4vw,40px)}
+.cp-head{border-bottom:2px solid var(--border);padding-bottom:18px;margin-bottom:26px}
+.cp-head h1{margin:.1em 0 .2em;font-family:var(--font-display);font-size:clamp(28px,5vw,46px)}
+.cp-meta{color:var(--muted);font-size:14px}
+.cp-tag{display:inline-block;border:1px solid var(--border);border-radius:999px;padding:3px 10px;font-size:12px;color:var(--muted);margin:0 6px 6px 0}
+.cp h2{font-family:var(--font-display);font-size:clamp(18px,2.4vw,24px);margin:34px 0 6px;padding-bottom:6px;border-bottom:1px solid var(--border)}
+.cp p.desc{color:var(--muted);margin:6px 0 14px;max-width:70ch}
+.sws{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:10px}
+.sw{border:1px solid var(--border);border-radius:10px;padding:9px;background:var(--surface);display:grid;gap:4px}
+.sw i{display:block;height:44px;border-radius:7px;border:1px solid var(--border)}
+.sw b{font-size:13px}.sw code{font:12px var(--font-mono,monospace);color:var(--muted)}
+.sw span{font-size:11px;color:var(--muted)}
+.typo div{border:1px solid var(--border);border-radius:10px;padding:12px 14px;margin-bottom:8px;background:var(--surface)}
+.typo .d{font-family:var(--font-display);font-size:32px;line-height:1.15}
+.typo .b{font-family:var(--font-body);font-size:16px}
+.typo .m{font-family:var(--font-mono,monospace);font-size:14px}
+.typo small{color:var(--muted);font-size:11px;display:block;margin-top:6px}
+.row{display:flex;gap:12px;flex-wrap:wrap;align-items:flex-start}
+.preview{border:1px dashed var(--border);border-radius:12px;overflow:hidden;margin-bottom:12px}
+.preview .lbl{font:11px var(--font-mono,monospace);color:var(--muted);padding:6px 10px;border-bottom:1px dashed var(--border)}
+.preview > div:last-child{transform-origin:top left}
+.cp-foot{margin-top:36px;padding-top:14px;border-top:1px solid var(--border);color:var(--muted);font-size:13px;display:flex;gap:14px;flex-wrap:wrap}
+.cp a{color:var(--accent)}
+@media print{.noprint{display:none}body{background:#fff}.cp{max-width:none;padding:0}.preview{page-break-inside:avoid}}
+</style></head><body>
+<div class="cp">
+  <div class="cp-head">
+    <span class="cp-tag">🫧 立體質感 Tactile Surface</span><span class="cp-tag">15 個 block</span><span class="cp-tag">—</span>
+    <h1> Neumorphism <span style="font-size:.6em;color:var(--muted)"></span></h1>
+    <p class="desc" style="font-size:17px;color:var(--fg)">所有元素同背景係**同一種顏色**，靠一亮一暗兩個陰影「壓出嚟」或「凸出嚟」，好似同一塊塑膠模具。</p>
+    <p class="cp-meta">示範品牌 <b>Softone</b> · 主要 CTA「免費試」· 行業：家用音響控制 app</p>
+  </div>
+
+  <h2>1 · 色票 Palette</h2>
+  <p class="desc">所有元件都只可以用呢組 token（換色 = 改呢幾行）。</p>
+  <div class="sws"><div class="sw"><i style="background:#E0E5EC"></i><b>--bg</b><code>#E0E5EC</code><span>底色 Background</span></div><div class="sw"><i style="background:#2D3748"></i><b>--fg</b><code>#2D3748</code><span>主文字 Text</span></div><div class="sw"><i style="background:#535E70"></i><b>--muted</b><code>#535E70</code><span>次要文字 Muted</span></div><div class="sw"><i style="background:#F1F4F9"></i><b>--surface</b><code>#F1F4F9</code><span>卡片面 Surface</span></div><div class="sw"><i style="background:#C8D0DC"></i><b>--border</b><code>#C8D0DC</code><span>分隔線 Border</span></div><div class="sw"><i style="background:#4F46D6"></i><b>--accent</b><code>#4F46D6</code><span>強調色 Accent</span></div><div class="sw"><i style="background:#FFFFFF"></i><b>--accent-fg</b><code>#FFFFFF</code><span>強調上文字</span></div><div class="sw"><i style="background:#1F7A57"></i><b>--ok</b><code>#1F7A57</code><span>成功 Success</span></div><div class="sw"><i style="background:#A32A3C"></i><b>--warn</b><code>#A32A3C</code><span>警告 Warning</span></div></div>
+
+  <h2>2 · 字體 Typography</h2>
+  <p class="desc">最多兩個字重；標題 Poppins,&#x27;Noto Sans TC&#x27;,sans-serif、正文 Poppins,&#x27;Noto Sans TC&#x27;,sans-serif。</p>
+  <div class="typo">
+    <div class="d">一頁講清成件事 <small>Display · Poppins,&#x27;Noto Sans TC&#x27;,sans-serif</small></div>
+    <div class="b">正文用 Poppins,&#x27;Noto Sans TC&#x27;,sans-serif：16px、行高 1.65，唔會超過 70 個中文字一行。<small>Body</small></div>
+    <div class="m">HK$1,280 · 2026-09-22 · #REF-0042 <small>Mono／數字對齊（&#x27;Roboto Mono&#x27;,ui-monospace,Menlo,monospace）</small></div>
+  </div>
+
+  <h2>3 · 按鈕 Buttons</h2>
+  <p class="desc">11 個狀態齊：hover 升起、active 壓落、focus 外框（對比 ≥3:1）、disabled 變淡、loading／success。</p>
+  <div class="btn-row"><div class="state"><button class="btn btn-primary " type="button">Primary</button><small>Default</small></div><div class="state"><button class="btn btn-primary is-hover" type="button">Primary</button><small>Hover</small></div><div class="state"><button class="btn btn-primary is-active" type="button">Primary</button><small>Active</small></div><div class="state"><button class="btn btn-primary is-focus" type="button">Primary</button><small>Focus</small></div><div class="state"><button class="btn btn-primary " type="button" disabled>Primary</button><small>Disabled</small></div><div class="state"><button class="btn btn-primary btn-sm" type="button">Small</button><small>btn-sm</small></div><div class="state"><button class="btn btn-primary btn-lg" type="button">Large</button><small>btn-lg</small></div><div class="state"><button class="btn btn-primary btn-secondary" type="button">Secondary</button><small>Secondary</small></div></div>
+
+  <h2>4 · 組件 Components</h2>
+  <div class="row">
+    <article class="card" style="flex:1 1 260px"><span class="ico" aria-hidden="true">◆</span><h3>卡片標題</h3><p>一句講清重點，唔超過兩行。</p></article>
+    <div class="plan" style="flex:1 1 240px"><span class="tag">最受歡迎</span><h3>方案名</h3><div class="price">HK$1,280<small>/月</small></div>
+      <ul><li>包含咩</li><li>包含咩</li></ul><a class="btn btn-primary" href="#">揀呢個</a></div>
+    <blockquote class="quote" style="flex:1 1 260px">客人講嘅一句真話。<span class="avatar">阿</span><b>阿文</b><span>客戶 · 角色</span></blockquote>
+  </div>
+
+  <h2>5 · 真實 section 預覽</h2>
+  <p class="desc">以下係由正式 demo 直接抽落嚟（唔係另畫），所以卡同成品一定一致。</p>
+  <div class="preview"><div class="lbl">hero</div><div><section class="block hero" id="hero"><div class="wrap hero-grid"><div><span class="eyebrow rv">家用音響控制 · iOS／Android</span><h1>摸得出<br>手感嘅掣</h1><p class="lead rv">音量、EQ、多房間同步喺同一塊面板；浮雕只做裝飾，文字對比全部過 WCAG AA。</p><div class="actions rv"><a class="btn btn-primary" href="#cta">免費試 <span class="i" aria-hidden="true">→</span></a><a class="btn btn-secondary" href="#product">睇裝置</a></div><p class="note rv">支援 6 個品牌網絡喇叭 · 免費試 30 日 · 唔使輸入卡</p></div><figure class="hero-art rv"><div class="deco" aria-hidden="true" style="inset:0;background:radial-gradient(circle at 30% 28%,#FFFFFF,transparent 46%),linear-gradient(160deg,#E8EDF4,#D3DAE6)"></div><figcaption>介面相片位（生成 media/neumorphism-hero.jpg 自動代入）</figcaption></figure></div></section></div></div><div class="preview"><div class="lbl">pricing</div><div><section class="block" id="pricing"><div class="wrap"><h2 class="sec-title">三個方案</h2><p class="sec-sub">app 本身免費；要同步多房或接智能家居才付費。</p><div class="pricing"><article class="plan rv"><h3>免費</h3><div class="price">HK$0 <small>/ 月</small></div><p>3 個房間。</p><ul><li>3 個房間</li><li>2 組 EQ 預設</li><li>夜間模式</li><li>社群支援</li></ul><a class="btn btn-secondary" href="#cta">免費試</a></article><article class="plan rv featured"><span class="tag">最多人用</span><h3>家用</h3><div class="price">HK$38 <small>/ 月</small></div><p>最多人用。</p><ul><li>8 個房間同步</li><li>無限 EQ 預設</li><li>支援 96kHz</li><li>email 支援</li></ul><a class="btn btn-primary" href="#cta">免費試</a></article><article class="plan rv"><h3>自動化＋</h3><div class="price">HK$88 <small>/ 月</small></div><p>連燈同窗簾。</p><ul><li>上面全部</li><li>接 6 個智能家居品牌</li><li>場景排程 20 組</li><li>優先 email 支援</li></ul><a class="btn btn-secondary" href="#cta">免費試</a></article></div></div></section></div></div><div class="preview"><div class="lbl">venue</div><div><section class="block" id="venue"><div class="wrap"><h2 class="sec-title">支援同保養</h2><p class="sec-sub">回應時間同支援時間都寫明喺度。</p><ul class="infolist"><li><b>支援時間</b><span>星期一至五 10:00–19:00（HKT）；星期六 11:00–16:00</span></li><li><b>回應時間</b><span>email 1 個工作日；app 內回報 4 個鐘內首覆</span></li><li><b>保養</b><span>app 免費更新；硬件跟原廠（通常 1–2 年）</span></li><li><b>資料</b><span>EQ 設定可以匯出 JSON；帳號可以即時刪除</span></li><li><b>舊版支援</b><span>iOS 15／Android 10 以上；舊版只收安全更新</span></li></ul></div></section></div></div>
+
+  <h2>6 · 動效（Pro 版）</h2>
+  <p class="desc">基本版純 CSS；Pro 版有載入幕、入場、scroll reveal、微互動。跟系統設定「減少動態」會自動降級。</p>
+  <p style="font:13px var(--font-mono,monospace);color:var(--muted)"></p>
+
+  <h2>7 · 點用</h2>
+  <ul style="color:var(--muted);font-size:14px">
+    <li>Tokens：<code>themes/neumorphism.json</code>（含 <code>snippet_css</code> 同 Tailwind <code>theme.extend</code>）</li>
+    <li>Demo：<a href="../neumorphism.html">基本版</a> · <a href="../neumorphism-pro.html">Pro 動效版</a> · <a href="../neumorphism-pro.html?deep=1">🧪 深度效果</a></li>
+    <li>改客人內容：<code>python3 gen_project.py brief.json</code>（自動驗 WCAG 4.5:1）</li>
+  </ul>
+
+  <div class="cp-foot">
+    <button class="btn btn-primary btn-sm noprint" type="button" onclick="window.print()">🖨️ Print／存 PDF</button>
+    <a href="index.html">← 全部風格卡</a>
+    <span>UIUX Style · Neumorphism · 示範內容全部虛構</span>
+  </div>
+</div>
+</body></html>

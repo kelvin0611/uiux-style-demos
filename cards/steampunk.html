@@ -1,0 +1,107 @@
+<!doctype html><html lang="zh-Hant-HK"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Steampunk  · 風格卡</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&family=Special+Elite&family=Libre+Caslon+Text&display=swap">
+<link rel="stylesheet" href="../blocks.css">
+<style>:root{--bg:#23372E;--fg:#EAD9B8;--muted:#CDB893;--surface:#2A4034;--border:#4E3F2A;--accent:#E0B96A;--accent-fg:#2B1B10;--radius:5px;--radius-sm:3px;--shadow:0 10px 24px rgba(0,0,0,.45),inset 0 1px 0 rgba(224,185,106,.22);--btn-shadow:0 4px 0 rgba(122,90,34,.9);--art-bg:radial-gradient(circle at 50% 45%,#E0B96A 0 16%,#B5883E 17% 24%,#23372E 25%),radial-gradient(circle at 22% 22%,#E0B96A 0 3px,transparent 4px);--media-bg:linear-gradient(180deg,#4A2E1F,#2B1B10);--cta-bg:#3A2415;--input-bg:#1E2E26;--ok:#7FA99B;--warn:#D98B5F;--font-display:'IM Fell English SC','Noto Serif TC',serif;--font-body:'Libre Caslon Text','Noto Sans TC',serif;--font-mono:'Special Elite',ui-monospace,monospace;--focus-ring:var(--accent);}
+
+
+body{background-image:radial-gradient(circle at 20% 18%,rgba(224,185,106,.10),transparent 45%),radial-gradient(circle at 82% 78%,rgba(224,185,106,.08),transparent 50%)}
+.card,.tile-c,.quote,.plan,.rows,.log,.mock,.badge-card{background:var(--surface);border:1px solid var(--border);box-shadow:var(--shadow)}
+.card,.plan,.tile-c{position:relative}
+.card::before,.plan::before{content:"⚙";position:absolute;top:10px;right:12px;color:rgba(224,185,106,.35);font-size:18px;pointer-events:none}
+.hero h1,.sec-title{font-family:'IM Fell English SC','Noto Serif TC',serif;font-weight:400;letter-spacing:.01em}
+.sec-title::after{content:"";display:block;width:90px;height:3px;background:linear-gradient(90deg,var(--accent),transparent);margin-top:10px}
+.btn{border-radius:var(--radius-sm);border:1px solid var(--accent);font-weight:700}
+.btn-primary{background:linear-gradient(180deg,#E0B96A,#B5883E 50%,#7A5A22);color:var(--accent-fg);border-color:#7A5A22;text-shadow:0 1px 0 rgba(255,255,255,.25)}
+.btn-secondary{background:transparent;color:var(--accent)}
+.chip{border-radius:999px;background:rgba(224,185,106,.12);color:var(--fg);border:1px solid var(--border);font-family:'Special Elite',monospace;font-size:12px}
+.avatar{border-radius:50%;background:linear-gradient(180deg,#E0B96A,#7A5A22);color:var(--accent-fg);border:1px solid #7A5A22}
+.tag{background:#E0B96A;color:var(--accent-fg);border-radius:2px;font-family:'Special Elite',monospace;font-size:11px}
+.tile-c .ph{background-image:radial-gradient(circle at 50% 45%,#E0B96A 0 16%,#B5883E 17% 24%,#23372E 25%);color:#EAD9B8;font-size:38px}
+.plan.featured{outline:2px solid var(--accent);outline-offset:3px}
+.hero::after{content:"⚙";position:absolute;right:6%;bottom:8%;font-size:120px;color:rgba(224,185,106,.16);pointer-events:none}
+.hero-art figcaption{background:rgba(43,27,16,.75);color:#EAD9B8;padding:4px 8px;border-radius:3px}
+.stat .num{font-family:'IM Fell English SC',serif;color:var(--accent)}
+
+/* ---- 風格卡專用 ---- */
+body{background:var(--bg);color:var(--fg);font-family:var(--font-body)}
+.cp{max-width:1080px;margin:0 auto;padding:clamp(18px,4vw,40px)}
+.cp-head{border-bottom:2px solid var(--border);padding-bottom:18px;margin-bottom:26px}
+.cp-head h1{margin:.1em 0 .2em;font-family:var(--font-display);font-size:clamp(28px,5vw,46px)}
+.cp-meta{color:var(--muted);font-size:14px}
+.cp-tag{display:inline-block;border:1px solid var(--border);border-radius:999px;padding:3px 10px;font-size:12px;color:var(--muted);margin:0 6px 6px 0}
+.cp h2{font-family:var(--font-display);font-size:clamp(18px,2.4vw,24px);margin:34px 0 6px;padding-bottom:6px;border-bottom:1px solid var(--border)}
+.cp p.desc{color:var(--muted);margin:6px 0 14px;max-width:70ch}
+.sws{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:10px}
+.sw{border:1px solid var(--border);border-radius:10px;padding:9px;background:var(--surface);display:grid;gap:4px}
+.sw i{display:block;height:44px;border-radius:7px;border:1px solid var(--border)}
+.sw b{font-size:13px}.sw code{font:12px var(--font-mono,monospace);color:var(--muted)}
+.sw span{font-size:11px;color:var(--muted)}
+.typo div{border:1px solid var(--border);border-radius:10px;padding:12px 14px;margin-bottom:8px;background:var(--surface)}
+.typo .d{font-family:var(--font-display);font-size:32px;line-height:1.15}
+.typo .b{font-family:var(--font-body);font-size:16px}
+.typo .m{font-family:var(--font-mono,monospace);font-size:14px}
+.typo small{color:var(--muted);font-size:11px;display:block;margin-top:6px}
+.row{display:flex;gap:12px;flex-wrap:wrap;align-items:flex-start}
+.preview{border:1px dashed var(--border);border-radius:12px;overflow:hidden;margin-bottom:12px}
+.preview .lbl{font:11px var(--font-mono,monospace);color:var(--muted);padding:6px 10px;border-bottom:1px dashed var(--border)}
+.preview > div:last-child{transform-origin:top left}
+.cp-foot{margin-top:36px;padding-top:14px;border-top:1px solid var(--border);color:var(--muted);font-size:13px;display:flex;gap:14px;flex-wrap:wrap}
+.cp a{color:var(--accent)}
+@media print{.noprint{display:none}body{background:#fff}.cp{max-width:none;padding:0}.preview{page-break-inside:avoid}}
+</style></head><body>
+<div class="cp">
+  <div class="cp-head">
+    <span class="cp-tag">🏛️ 古典人文 Heritage &amp; Lifestyle</span><span class="cp-tag">15 個 block</span><span class="cp-tag">—</span>
+    <h1> Steampunk <span style="font-size:.6em;color:var(--muted)"></span></h1>
+    <p class="desc" style="font-size:17px;color:var(--fg)">維多利亞 × 蒸汽機械 × 科幻 —— 銅色齒輪、皮革、鉚釘、禮帽、蒸汽，冒險又復古未來。</p>
+    <p class="cp-meta">示範品牌 <b>Cogwheel</b> · 主要 CTA「預約維修」· 行業：手工錶／鐘錶維修</p>
+  </div>
+
+  <h2>1 · 色票 Palette</h2>
+  <p class="desc">所有元件都只可以用呢組 token（換色 = 改呢幾行）。</p>
+  <div class="sws"><div class="sw"><i style="background:#23372E"></i><b>--bg</b><code>#23372E</code><span>底色 Background</span></div><div class="sw"><i style="background:#EAD9B8"></i><b>--fg</b><code>#EAD9B8</code><span>主文字 Text</span></div><div class="sw"><i style="background:#CDB893"></i><b>--muted</b><code>#CDB893</code><span>次要文字 Muted</span></div><div class="sw"><i style="background:#2A4034"></i><b>--surface</b><code>#2A4034</code><span>卡片面 Surface</span></div><div class="sw"><i style="background:#4E3F2A"></i><b>--border</b><code>#4E3F2A</code><span>分隔線 Border</span></div><div class="sw"><i style="background:#E0B96A"></i><b>--accent</b><code>#E0B96A</code><span>強調色 Accent</span></div><div class="sw"><i style="background:#2B1B10"></i><b>--accent-fg</b><code>#2B1B10</code><span>強調上文字</span></div><div class="sw"><i style="background:#7FA99B"></i><b>--ok</b><code>#7FA99B</code><span>成功 Success</span></div><div class="sw"><i style="background:#D98B5F"></i><b>--warn</b><code>#D98B5F</code><span>警告 Warning</span></div></div>
+
+  <h2>2 · 字體 Typography</h2>
+  <p class="desc">最多兩個字重；標題 &#x27;IM Fell English SC&#x27;,&#x27;Noto Serif TC&#x27;,serif、正文 &#x27;Libre Caslon Text&#x27;,&#x27;Noto Sans TC&#x27;,serif。</p>
+  <div class="typo">
+    <div class="d">一頁講清成件事 <small>Display · &#x27;IM Fell English SC&#x27;,&#x27;Noto Serif TC&#x27;,serif</small></div>
+    <div class="b">正文用 &#x27;Libre Caslon Text&#x27;,&#x27;Noto Sans TC&#x27;,serif：16px、行高 1.65，唔會超過 70 個中文字一行。<small>Body</small></div>
+    <div class="m">HK$1,280 · 2026-09-22 · #REF-0042 <small>Mono／數字對齊（&#x27;Special Elite&#x27;,ui-monospace,monospace）</small></div>
+  </div>
+
+  <h2>3 · 按鈕 Buttons</h2>
+  <p class="desc">11 個狀態齊：hover 升起、active 壓落、focus 外框（對比 ≥3:1）、disabled 變淡、loading／success。</p>
+  <div class="btn-row"><div class="state"><button class="btn btn-primary " type="button">Primary</button><small>Default</small></div><div class="state"><button class="btn btn-primary is-hover" type="button">Primary</button><small>Hover</small></div><div class="state"><button class="btn btn-primary is-active" type="button">Primary</button><small>Active</small></div><div class="state"><button class="btn btn-primary is-focus" type="button">Primary</button><small>Focus</small></div><div class="state"><button class="btn btn-primary " type="button" disabled>Primary</button><small>Disabled</small></div><div class="state"><button class="btn btn-primary btn-sm" type="button">Small</button><small>btn-sm</small></div><div class="state"><button class="btn btn-primary btn-lg" type="button">Large</button><small>btn-lg</small></div><div class="state"><button class="btn btn-primary btn-secondary" type="button">Secondary</button><small>Secondary</small></div></div>
+
+  <h2>4 · 組件 Components</h2>
+  <div class="row">
+    <article class="card" style="flex:1 1 260px"><span class="ico" aria-hidden="true">◆</span><h3>卡片標題</h3><p>一句講清重點，唔超過兩行。</p></article>
+    <div class="plan" style="flex:1 1 240px"><span class="tag">最受歡迎</span><h3>方案名</h3><div class="price">HK$1,280<small>/月</small></div>
+      <ul><li>包含咩</li><li>包含咩</li></ul><a class="btn btn-primary" href="#">揀呢個</a></div>
+    <blockquote class="quote" style="flex:1 1 260px">客人講嘅一句真話。<span class="avatar">阿</span><b>阿文</b><span>客戶 · 角色</span></blockquote>
+  </div>
+
+  <h2>5 · 真實 section 預覽</h2>
+  <p class="desc">以下係由正式 demo 直接抽落嚟（唔係另畫），所以卡同成品一定一致。</p>
+  <div class="preview"><div class="lbl">hero</div><div><section class="block hero" id="hero"><div class="wrap hero-grid"><div><span class="eyebrow rv">香港 · 機械錶維修同保養 · 旺角工作坊</span><h1>隻錶可以再行<br>20 年</h1><p class="lead rv">機械錶洗油、換齒輪、換錶帶：先免費檢查同書面報價，確認之後才拆，唔會拆完先講數。</p><div class="actions rv"><a class="btn btn-primary" href="#cta">預約維修 <span class="i" aria-hidden="true">→</span></a><a class="btn btn-secondary" href="#product">睇維修服務</a></div><p class="note rv">檢查免費 · 洗油 5–10 個工作日 · 維修後保養 12 個月</p></div><figure class="hero-art rv"><div class="deco" aria-hidden="true" style="inset:0;background:radial-gradient(circle at 50% 45%,#E0B96A 0 16%,#B5883E 17% 24%,#23372E 25%),radial-gradient(circle at 22% 22%,#E0B96A 0 3px,transparent 4px)"></div><figcaption>工作檯相片位（生成 media/steampunk-hero.jpg 自動代入）</figcaption></figure></div></section></div></div><div class="preview"><div class="lbl">pricing</div><div><section class="block" id="pricing"><div class="wrap"><h2 class="sec-title">三個維修方案</h2><p class="sec-sub">檢查一律免費；報價後唔整唔收費（已訂零件除外）。</p><div class="pricing"><article class="plan rv"><h3>基本保養</h3><div class="price">HK$380 <small>/ 次</small></div><p>走時校正同檢查。</p><ul><li>打錶機測試</li><li>調快慢針</li><li>換膠圈（另計 HK$150）</li><li>即日取錶</li></ul><a class="btn btn-secondary" href="#cta">預約維修</a></article><article class="plan rv featured"><span class="tag">最常做</span><h3>機芯洗油</h3><div class="price">HK$1,480 <small>/ 次</small></div><p>自動／手動機芯全套。</p><ul><li>拆解、清洗、上油、裝配</li><li>24 小時走時測試</li><li>附走時數據單</li><li>機芯保養 12 個月</li></ul><a class="btn btn-primary" href="#cta">預約維修</a></article><article class="plan rv"><h3>舊錶復修</h3><div class="price">HK$2,800 <small>/ 起</small></div><p>缺件要搵舊件倉。</p><ul><li>鏽蝕同機芯評估</li><li>舊件搜購 3–6 星期</li><li>錶殼拋光（可選）</li><li>保養 6 個月</li></ul><a class="btn btn-secondary" href="#cta">問我們</a></article></div></div></section></div></div><div class="preview"><div class="lbl">venue</div><div><section class="block" id="venue"><div class="wrap"><h2 class="sec-title">保養須知</h2><p class="sec-sub">呢幾條做齊，可以遲 2–3 年才洗油。</p><ul class="infolist"><li><b>防水</b><span>3ATM 只防洗手濺水；游泳要 10ATM，膠圈每 2 年換一次</span></li><li><b>上鏈</b><span>手動錶每日同一時間上滿；自動錶放錶盒選每日 800 轉模式</span></li><li><b>磁場</b><span>遠離喇叭、磁扣同平板保護殼；受磁會快 30 秒以上，可免費消磁</span></li><li><b>洗油周期</b><span>5–7 年一次；長期唔戴就每月上鏈一次，唔好停住唔行</span></li><li><b>寄件同付款</b><span>建議順豐保價寄件；現金／FPS 付款，取錶時先驗走時單</span></li></ul></div></section></div></div>
+
+  <h2>6 · 動效（Pro 版）</h2>
+  <p class="desc">基本版純 CSS；Pro 版有載入幕、入場、scroll reveal、微互動。跟系統設定「減少動態」會自動降級。</p>
+  <p style="font:13px var(--font-mono,monospace);color:var(--muted)"></p>
+
+  <h2>7 · 點用</h2>
+  <ul style="color:var(--muted);font-size:14px">
+    <li>Tokens：<code>themes/steampunk.json</code>（含 <code>snippet_css</code> 同 Tailwind <code>theme.extend</code>）</li>
+    <li>Demo：<a href="../steampunk.html">基本版</a> · <a href="../steampunk-pro.html">Pro 動效版</a></li>
+    <li>改客人內容：<code>python3 gen_project.py brief.json</code>（自動驗 WCAG 4.5:1）</li>
+  </ul>
+
+  <div class="cp-foot">
+    <button class="btn btn-primary btn-sm noprint" type="button" onclick="window.print()">🖨️ Print／存 PDF</button>
+    <a href="index.html">← 全部風格卡</a>
+    <span>UIUX Style · Steampunk · 示範內容全部虛構</span>
+  </div>
+</div>
+</body></html>

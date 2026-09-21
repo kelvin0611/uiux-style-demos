@@ -1,0 +1,55 @@
+{
+ "slug": "wabi-sabi",
+ "name": "Wabi-Sabi",
+ "cn": "",
+ "family": "🏛️ 古典人文 Heritage & Lifestyle",
+ "industry": "陶藝工作室",
+ "brand": "Kanso",
+ "cta": "預約工作坊",
+ "sections": "rows`：工作坊 · `products`：作品 · `venue`：交通同須知",
+ "css_variables": {
+  "--bg": "#F2EDE4",
+  "--fg": "#3B3A36",
+  "--muted": "#635A4E",
+  "--surface": "#E9E2D6",
+  "--border": "#C9BFB0",
+  "--accent": "#8A5636",
+  "--accent-fg": "#FDFBF6",
+  "--radius": "16px",
+  "--radius-sm": "10px",
+  "--shadow": "0 10px 26px rgba(59,58,54,.10)",
+  "--btn-shadow": "0 2px 0 rgba(138,86,54,.35)",
+  "--art-bg": "radial-gradient(circle at 38% 32%,#E4DDD1,#A89A86 55%,#6F6353)",
+  "--media-bg": "radial-gradient(circle at 34% 30%,#E4DDD1,#C9BFB0)",
+  "--cta-bg": "#E9E2D6",
+  "--input-bg": "#FBF8F2",
+  "--ok": "#4E6B47",
+  "--warn": "#8C3B2E",
+  "--font-display": "Cormorant,'Noto Serif TC',serif",
+  "--font-body": "'Noto Sans TC',sans-serif",
+  "--font-mono": "'Cormorant',ui-monospace,serif",
+  "--focus-ring": "var(--accent)"
+ },
+ "fonts": {
+  "google_url": "https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,400;0,600;1,300&family=Noto+Sans+TC:wght@300;400;500&family=Noto+Serif+TC:wght@400;600&display=swap",
+  "display": "Cormorant,'Noto Serif TC',serif",
+  "body": "'Noto Sans TC',sans-serif",
+  "mono": "'Cormorant',ui-monospace,serif"
+ },
+ "radius": {
+  "base": "16px",
+  "sm": "10px"
+ },
+ "shadow": {
+  "card": "0 10px 26px rgba(59,58,54,.10)",
+  "button": "0 2px 0 rgba(138,86,54,.35)"
+ },
+ "focus_ring": "var(--accent)",
+ "motion": {},
+ "demo": {
+  "basic": "Demos/wabi-sabi.html",
+  "pro": "Demos/wabi-sabi-pro.html"
+ },
+ "snippet_css": ":root{\n  --bg: #F2EDE4;\n  --fg: #3B3A36;\n  --muted: #635A4E;\n  --surface: #E9E2D6;\n  --border: #C9BFB0;\n  --accent: #8A5636;\n  --accent-fg: #FDFBF6;\n  --radius: 16px;\n  --radius-sm: 10px;\n  --shadow: 0 10px 26px rgba(59,58,54,.10);\n  --btn-shadow: 0 2px 0 rgba(138,86,54,.35);\n  --art-bg: radial-gradient(circle at 38% 32%,#E4DDD1,#A89A86 55%,#6F6353);\n  --media-bg: radial-gradient(circle at 34% 30%,#E4DDD1,#C9BFB0);\n  --cta-bg: #E9E2D6;\n  --input-bg: #FBF8F2;\n  --ok: #4E6B47;\n  --warn: #8C3B2E;\n  --font-display: Cormorant,'Noto Serif TC',serif;\n  --font-body: 'Noto Sans TC',sans-serif;\n  --font-mono: 'Cormorant',ui-monospace,serif;\n  --focus-ring: var(--accent);\n}",
+ "snippet_tailwind": "// tailwind.config.js → theme.extend\n{\n  \"colors\": {\n    \"bg\": \"#F2EDE4\",\n    \"fg\": \"#3B3A36\",\n    \"muted\": \"#635A4E\",\n    \"surface\": \"#E9E2D6\",\n    \"border\": \"#C9BFB0\",\n    \"accent\": \"#8A5636\",\n    \"accent-fg\": \"#FDFBF6\",\n    \"ok\": \"#4E6B47\",\n    \"warn\": \"#8C3B2E\",\n    \"focus-ring\": \"var(--accent)\"\n  },\n  \"borderRadius\": {\n    \"DEFAULT\": \"10px\",\n    \"lg\": \"16px\"\n  },\n  \"fontFamily\": {\n    \"display\": [\n      \"Cormorant,'Noto Serif TC',serif\"\n    ],\n    \"body\": [\n      \"'Noto Sans TC',sans-serif\"\n    ]\n  }\n}"
+}

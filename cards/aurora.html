@@ -1,0 +1,95 @@
+<!doctype html><html lang="zh-Hant-HK"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Aurora  · 風格卡</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="../blocks.css">
+<style>:root{--bg:#070B1A;--fg:#EEF2FF;--muted:#C3CBE6;--surface:rgba(255,255,255,.06);--border:rgba(255,255,255,.14);--accent:#3CF2B4;--accent-fg:#04141C;--accent-grad:linear-gradient(100deg,#3CF2B4,#27C3F5 50%,#8B5CF6);--radius:24px;--radius-sm:14px;--shadow:0 20px 60px rgba(0,0,0,.42);--art-bg:radial-gradient(circle at 25% 20%,rgba(60,242,180,.75),transparent 60%),radial-gradient(circle at 76% 72%,rgba(139,92,246,.8),transparent 60%),#0d1428;--cta-bg:linear-gradient(120deg,rgba(60,242,180,.16),rgba(139,92,246,.22));--input-bg:rgba(7,11,26,.55);--btn-shadow:0 0 44px rgba(139,92,246,.45);--ok:#3CF2B4;--warn:#F472B6;--font-display:"Inter Tight",Inter,system-ui,sans-serif;--font-body:Inter,system-ui,sans-serif;--font-mono:ui-monospace,SFMono-Regular,Menlo,monospace;--focus-ring:var(--accent);}
+
+
+.hero h1{background:linear-gradient(100deg,#3CF2B4,#27C3F5 40%,#8B5CF6 74%,#F472B6);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero::before{content:"";position:absolute;left:-14%;top:-34%;width:min(760px,84vw);aspect-ratio:1;border-radius:50%;background:radial-gradient(circle,rgba(139,92,246,.5),transparent 62%);filter:blur(70px);z-index:0;pointer-events:none}
+.hero::after{content:"";position:absolute;right:-16%;top:-18%;width:min(620px,70vw);aspect-ratio:1;border-radius:50%;background:radial-gradient(circle,rgba(60,242,180,.42),transparent 62%);filter:blur(72px);z-index:0;pointer-events:none}
+.logo::before{content:"";width:16px;height:16px;border-radius:50%;background:linear-gradient(100deg,#3CF2B4,#8B5CF6);box-shadow:0 0 22px rgba(139,92,246,.7)}
+.hint{display:inline-block;border:1px dashed rgba(255,255,255,.28);border-radius:14px;padding:8px 14px;font-size:13px;color:#C3CBE6}
+
+/* ---- 風格卡專用 ---- */
+body{background:var(--bg);color:var(--fg);font-family:var(--font-body)}
+.cp{max-width:1080px;margin:0 auto;padding:clamp(18px,4vw,40px)}
+.cp-head{border-bottom:2px solid var(--border);padding-bottom:18px;margin-bottom:26px}
+.cp-head h1{margin:.1em 0 .2em;font-family:var(--font-display);font-size:clamp(28px,5vw,46px)}
+.cp-meta{color:var(--muted);font-size:14px}
+.cp-tag{display:inline-block;border:1px solid var(--border);border-radius:999px;padding:3px 10px;font-size:12px;color:var(--muted);margin:0 6px 6px 0}
+.cp h2{font-family:var(--font-display);font-size:clamp(18px,2.4vw,24px);margin:34px 0 6px;padding-bottom:6px;border-bottom:1px solid var(--border)}
+.cp p.desc{color:var(--muted);margin:6px 0 14px;max-width:70ch}
+.sws{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:10px}
+.sw{border:1px solid var(--border);border-radius:10px;padding:9px;background:var(--surface);display:grid;gap:4px}
+.sw i{display:block;height:44px;border-radius:7px;border:1px solid var(--border)}
+.sw b{font-size:13px}.sw code{font:12px var(--font-mono,monospace);color:var(--muted)}
+.sw span{font-size:11px;color:var(--muted)}
+.typo div{border:1px solid var(--border);border-radius:10px;padding:12px 14px;margin-bottom:8px;background:var(--surface)}
+.typo .d{font-family:var(--font-display);font-size:32px;line-height:1.15}
+.typo .b{font-family:var(--font-body);font-size:16px}
+.typo .m{font-family:var(--font-mono,monospace);font-size:14px}
+.typo small{color:var(--muted);font-size:11px;display:block;margin-top:6px}
+.row{display:flex;gap:12px;flex-wrap:wrap;align-items:flex-start}
+.preview{border:1px dashed var(--border);border-radius:12px;overflow:hidden;margin-bottom:12px}
+.preview .lbl{font:11px var(--font-mono,monospace);color:var(--muted);padding:6px 10px;border-bottom:1px dashed var(--border)}
+.preview > div:last-child{transform-origin:top left}
+.cp-foot{margin-top:36px;padding-top:14px;border-top:1px solid var(--border);color:var(--muted);font-size:13px;display:flex;gap:14px;flex-wrap:wrap}
+.cp a{color:var(--accent)}
+@media print{.noprint{display:none}body{background:#fff}.cp{max-width:none;padding:0}.preview{page-break-inside:avoid}}
+</style></head><body>
+<div class="cp">
+  <div class="cp-head">
+    <span class="cp-tag">🫧 立體質感 Tactile Surface</span><span class="cp-tag">15 個 block</span><span class="cp-tag">—</span>
+    <h1> Aurora <span style="font-size:.6em;color:var(--muted)"></span></h1>
+    <p class="desc" style="font-size:17px;color:var(--fg)">北極光般流動嘅虹彩漸變 —— 模糊光暈、半透明層、有機波形，夢幻、未來、冥想感。</p>
+    <p class="cp-meta">示範品牌 <b>Aurora` / `Aurora AI</b> · 主要 CTA「免費試用」· 行業：AI／SaaS landing · 次選 wellness／冥想 app</p>
+  </div>
+
+  <h2>1 · 色票 Palette</h2>
+  <p class="desc">所有元件都只可以用呢組 token（換色 = 改呢幾行）。</p>
+  <div class="sws"><div class="sw"><i style="background:#070B1A"></i><b>--bg</b><code>#070B1A</code><span>底色 Background</span></div><div class="sw"><i style="background:#EEF2FF"></i><b>--fg</b><code>#EEF2FF</code><span>主文字 Text</span></div><div class="sw"><i style="background:#C3CBE6"></i><b>--muted</b><code>#C3CBE6</code><span>次要文字 Muted</span></div><div class="sw"><i style="background:rgba(255,255,255,.06)"></i><b>--surface</b><code>rgba(255,255,255,.06)</code><span>卡片面 Surface</span></div><div class="sw"><i style="background:rgba(255,255,255,.14)"></i><b>--border</b><code>rgba(255,255,255,.14)</code><span>分隔線 Border</span></div><div class="sw"><i style="background:#3CF2B4"></i><b>--accent</b><code>#3CF2B4</code><span>強調色 Accent</span></div><div class="sw"><i style="background:#04141C"></i><b>--accent-fg</b><code>#04141C</code><span>強調上文字</span></div><div class="sw"><i style="background:#3CF2B4"></i><b>--ok</b><code>#3CF2B4</code><span>成功 Success</span></div><div class="sw"><i style="background:#F472B6"></i><b>--warn</b><code>#F472B6</code><span>警告 Warning</span></div></div>
+
+  <h2>2 · 字體 Typography</h2>
+  <p class="desc">最多兩個字重；標題 &quot;Inter Tight&quot;,Inter,system-ui,sans-serif、正文 Inter,system-ui,sans-serif。</p>
+  <div class="typo">
+    <div class="d">一頁講清成件事 <small>Display · &quot;Inter Tight&quot;,Inter,system-ui,sans-serif</small></div>
+    <div class="b">正文用 Inter,system-ui,sans-serif：16px、行高 1.65，唔會超過 70 個中文字一行。<small>Body</small></div>
+    <div class="m">HK$1,280 · 2026-09-22 · #REF-0042 <small>Mono／數字對齊（ui-monospace,SFMono-Regular,Menlo,monospace）</small></div>
+  </div>
+
+  <h2>3 · 按鈕 Buttons</h2>
+  <p class="desc">11 個狀態齊：hover 升起、active 壓落、focus 外框（對比 ≥3:1）、disabled 變淡、loading／success。</p>
+  <div class="btn-row"><div class="state"><button class="btn btn-primary " type="button">Primary</button><small>Default</small></div><div class="state"><button class="btn btn-primary is-hover" type="button">Primary</button><small>Hover</small></div><div class="state"><button class="btn btn-primary is-active" type="button">Primary</button><small>Active</small></div><div class="state"><button class="btn btn-primary is-focus" type="button">Primary</button><small>Focus</small></div><div class="state"><button class="btn btn-primary " type="button" disabled>Primary</button><small>Disabled</small></div><div class="state"><button class="btn btn-primary btn-sm" type="button">Small</button><small>btn-sm</small></div><div class="state"><button class="btn btn-primary btn-lg" type="button">Large</button><small>btn-lg</small></div><div class="state"><button class="btn btn-primary btn-secondary" type="button">Secondary</button><small>Secondary</small></div></div>
+
+  <h2>4 · 組件 Components</h2>
+  <div class="row">
+    <article class="card" style="flex:1 1 260px"><span class="ico" aria-hidden="true">◆</span><h3>卡片標題</h3><p>一句講清重點，唔超過兩行。</p></article>
+    <div class="plan" style="flex:1 1 240px"><span class="tag">最受歡迎</span><h3>方案名</h3><div class="price">HK$1,280<small>/月</small></div>
+      <ul><li>包含咩</li><li>包含咩</li></ul><a class="btn btn-primary" href="#">揀呢個</a></div>
+    <blockquote class="quote" style="flex:1 1 260px">客人講嘅一句真話。<span class="avatar">阿</span><b>阿文</b><span>客戶 · 角色</span></blockquote>
+  </div>
+
+  <h2>5 · 真實 section 預覽</h2>
+  <p class="desc">以下係由正式 demo 直接抽落嚟（唔係另畫），所以卡同成品一定一致。</p>
+  <div class="preview"><div class="lbl">hero</div><div><section class="block hero" id="hero"><div class="wrap hero-grid"><div><span class="eyebrow rv">AI 開發助手</span><h1>由需求到 PR，10 分鐘</h1><p class="lead rv">Aurora AI 幫每星期都要 ship 嘅產品團隊寫規格、出測試、交 PR —— 唔使等人排期。</p><div class="actions rv"><a class="btn btn-primary" href="#cta">免費試用 <span class="i" aria-hidden="true">→</span></a><a class="btn btn-secondary" href="#product">睇 2 分鐘 demo</a></div><p class="note rv">唔需要信用卡 · 支援 GitHub / GitLab</p></div><figure class="hero-art rv"><div class="deco" aria-hidden="true" style="inset:0;background:radial-gradient(circle at 25% 20%,rgba(60,242,180,.75),transparent 60%),radial-gradient(circle at 76% 72%,rgba(139,92,246,.8),transparent 60%),#0d1428"></div><figcaption>Hero 圖位（生成 media/aurora-hero.jpg 就會自動代入）</figcaption></figure></div></section></div></div><div class="preview"><div class="lbl">pricing</div><div><section class="block" id="pricing"><div class="wrap"><h2 class="sec-title">定價跟人數，唔跟功能鎖</h2><p class="sec-sub">所有 plan 都有完整 AI 功能；付費買嘅係協作、合規同支援。</p><div class="pricing"><article class="plan rv"><h3>Starter</h3><div class="price">HK$0 <small>/ 月</small></div><p>一個人試用，唔限時。</p><ul><li>1 個 repo</li><li>每月 30 次生成</li><li>社群支援</li><li>基本 diff review</li></ul><a class="btn btn-secondary" href="#cta">開始試</a></article><article class="plan rv featured"><span class="tag">最受歡迎</span><h3>Pro</h3><div class="price">HK$228 <small>/ seat / 月</small></div><p>團隊日常用嘅版本。</p><ul><li>無限 repo 同生成</li><li>自帶測試 + CI 整合</li><li>Slack / Linear 整合</li><li>團隊記憶同 convention</li><li>電郵支援（1 個工作日）</li></ul><a class="btn btn-primary" href="#cta">開始 14 日試用</a></article><article class="plan rv"><h3>Team</h3><div class="price">HK$620 <small>/ seat / 月</small></div><p>有合規要求嘅公司。</p><ul><li>SSO / SCIM</li><li>審計日誌</li><li>Zero retention 合約條款</li><li>專屬 Slack 支援 · SLA 4 小時</li><li>可以簽 DPA</li></ul><a class="btn btn-secondary" href="#cta">聯絡我們</a></article></div></div></section></div></div>
+
+  <h2>6 · 動效（Pro 版）</h2>
+  <p class="desc">基本版純 CSS；Pro 版有載入幕、入場、scroll reveal、微互動。跟系統設定「減少動態」會自動降級。</p>
+  <p style="font:13px var(--font-mono,monospace);color:var(--muted)"></p>
+
+  <h2>7 · 點用</h2>
+  <ul style="color:var(--muted);font-size:14px">
+    <li>Tokens：<code>themes/aurora.json</code>（含 <code>snippet_css</code> 同 Tailwind <code>theme.extend</code>）</li>
+    <li>Demo：<a href="../aurora.html">基本版</a> · <a href="../aurora-pro.html">Pro 動效版</a></li>
+    <li>改客人內容：<code>python3 gen_project.py brief.json</code>（自動驗 WCAG 4.5:1）</li>
+  </ul>
+
+  <div class="cp-foot">
+    <button class="btn btn-primary btn-sm noprint" type="button" onclick="window.print()">🖨️ Print／存 PDF</button>
+    <a href="index.html">← 全部風格卡</a>
+    <span>UIUX Style · Aurora · 示範內容全部虛構</span>
+  </div>
+</div>
+</body></html>

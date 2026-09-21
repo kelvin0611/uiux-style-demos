@@ -1,0 +1,54 @@
+{
+ "slug": "bauhaus",
+ "name": "Bauhaus",
+ "cn": "",
+ "family": "📐 秩序理性 Structure & Order",
+ "industry": "建築／設計工作室",
+ "brand": "Weimar` / `Weimar Studio",
+ "cta": "報名",
+ "sections": "",
+ "css_variables": {
+  "--bg": "#F2F0EB",
+  "--fg": "#101010",
+  "--muted": "#4A4A4A",
+  "--surface": "#FFFFFF",
+  "--border": "#101010",
+  "--accent": "#D62828",
+  "--accent-fg": "#FFFFFF",
+  "--radius": "0px",
+  "--radius-sm": "0px",
+  "--shadow": "none",
+  "--btn-shadow": "none",
+  "--art-bg": "linear-gradient(135deg,#D62828 0 33%,#F4C300 33% 66%,#0057B8 66%)",
+  "--media-bg": "linear-gradient(135deg,#0057B8 0 50%,#F4C300 50%)",
+  "--cta-bg": "#101010",
+  "--input-bg": "#FFFFFF",
+  "--ok": "#0057B8",
+  "--warn": "#D62828",
+  "--font-display": "Poppins,'Noto Sans TC',sans-serif",
+  "--font-body": "Inter,'Noto Sans TC',sans-serif",
+  "--focus-ring": "var(--accent)"
+ },
+ "fonts": {
+  "google_url": "https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap",
+  "display": "Poppins,'Noto Sans TC',sans-serif",
+  "body": "Inter,'Noto Sans TC',sans-serif",
+  "mono": ""
+ },
+ "radius": {
+  "base": "0px",
+  "sm": "0px"
+ },
+ "shadow": {
+  "card": "none",
+  "button": "none"
+ },
+ "focus_ring": "var(--accent)",
+ "motion": {},
+ "demo": {
+  "basic": "Demos/bauhaus.html",
+  "pro": "Demos/bauhaus-pro.html"
+ },
+ "snippet_css": ":root{\n  --bg: #F2F0EB;\n  --fg: #101010;\n  --muted: #4A4A4A;\n  --surface: #FFFFFF;\n  --border: #101010;\n  --accent: #D62828;\n  --accent-fg: #FFFFFF;\n  --radius: 0px;\n  --radius-sm: 0px;\n  --shadow: none;\n  --btn-shadow: none;\n  --art-bg: linear-gradient(135deg,#D62828 0 33%,#F4C300 33% 66%,#0057B8 66%);\n  --media-bg: linear-gradient(135deg,#0057B8 0 50%,#F4C300 50%);\n  --cta-bg: #101010;\n  --input-bg: #FFFFFF;\n  --ok: #0057B8;\n  --warn: #D62828;\n  --font-display: Poppins,'Noto Sans TC',sans-serif;\n  --font-body: Inter,'Noto Sans TC',sans-serif;\n  --focus-ring: var(--accent);\n}",
+ "snippet_tailwind": "// tailwind.config.js → theme.extend\n{\n  \"colors\": {\n    \"bg\": \"#F2F0EB\",\n    \"fg\": \"#101010\",\n    \"muted\": \"#4A4A4A\",\n    \"surface\": \"#FFFFFF\",\n    \"border\": \"#101010\",\n    \"accent\": \"#D62828\",\n    \"accent-fg\": \"#FFFFFF\",\n    \"ok\": \"#0057B8\",\n    \"warn\": \"#D62828\",\n    \"focus-ring\": \"var(--accent)\"\n  },\n  \"borderRadius\": {\n    \"DEFAULT\": \"0px\",\n    \"lg\": \"0px\"\n  },\n  \"fontFamily\": {\n    \"display\": [\n      \"Poppins,'Noto Sans TC',sans-serif\"\n    ],\n    \"body\": [\n      \"Inter,'Noto Sans TC',sans-serif\"\n    ]\n  }\n}"
+}

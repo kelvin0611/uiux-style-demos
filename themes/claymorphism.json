@@ -1,0 +1,60 @@
+{
+ "slug": "claymorphism",
+ "name": "Claymorphism",
+ "cn": "",
+ "family": "🫧 立體質感 Tactile Surface",
+ "industry": "兒童 app／親子產品",
+ "brand": "Clay",
+ "cta": "免費試",
+ "sections": "rows`：訂閱 · `products`：主題包 · `venue`：家長支援",
+ "css_variables": {
+  "--bg": "#F7F3FF",
+  "--fg": "#3A2340",
+  "--muted": "#5B4A6B",
+  "--surface": "#FFFFFF",
+  "--border": "#E7E1EE",
+  "--accent": "#6B3FA0",
+  "--accent-fg": "#FFFFFF",
+  "--accent-grad": "linear-gradient(180deg,#8A5CC4,#6B3FA0)",
+  "--radius": "30px",
+  "--radius-sm": "20px",
+  "--shadow": "0 12px 0 -4px rgba(58,35,64,.10),0 18px 28px rgba(58,35,64,.14),inset 0 -4px 0 rgba(58,35,64,.06)",
+  "--btn-shadow": "0 6px 0 rgba(107,63,160,.35)",
+  "--art-bg": "linear-gradient(180deg,#E9F1FF,#B8E1FF 45%,#FFD6E0)",
+  "--media-bg": "linear-gradient(180deg,#FFE9A8,#FFB5C8)",
+  "--cta-bg": "linear-gradient(180deg,#C3F0CA,#B8E1FF)",
+  "--input-bg": "#FFFFFF",
+  "--ok": "#1F7A45",
+  "--warn": "#C2185B",
+  "--clay-pink": "#FFD6E0",
+  "--clay-mint": "#C3F0CA",
+  "--clay-sky": "#B8E1FF",
+  "--clay-yellow": "#FFE9A8",
+  "--font-display": "'Fredoka','Noto Sans TC',sans-serif",
+  "--font-body": "'Nunito','Noto Sans TC',sans-serif",
+  "--font-mono": "'Nunito',ui-monospace,monospace",
+  "--focus-ring": "var(--accent)"
+ },
+ "fonts": {
+  "google_url": "https://fonts.googleapis.com/css2?family=Fredoka:wght@500;700&family=Nunito:wght@400;700&display=swap",
+  "display": "'Fredoka','Noto Sans TC',sans-serif",
+  "body": "'Nunito','Noto Sans TC',sans-serif",
+  "mono": "'Nunito',ui-monospace,monospace"
+ },
+ "radius": {
+  "base": "30px",
+  "sm": "20px"
+ },
+ "shadow": {
+  "card": "0 12px 0 -4px rgba(58,35,64,.10),0 18px 28px rgba(58,35,64,.14),inset 0 -4px 0 rgba(58,35,64,.06)",
+  "button": "0 6px 0 rgba(107,63,160,.35)"
+ },
+ "focus_ring": "var(--accent)",
+ "motion": {},
+ "demo": {
+  "basic": "Demos/claymorphism.html",
+  "pro": "Demos/claymorphism-pro.html"
+ },
+ "snippet_css": ":root{\n  --bg: #F7F3FF;\n  --fg: #3A2340;\n  --muted: #5B4A6B;\n  --surface: #FFFFFF;\n  --border: #E7E1EE;\n  --accent: #6B3FA0;\n  --accent-fg: #FFFFFF;\n  --accent-grad: linear-gradient(180deg,#8A5CC4,#6B3FA0);\n  --radius: 30px;\n  --radius-sm: 20px;\n  --shadow: 0 12px 0 -4px rgba(58,35,64,.10),0 18px 28px rgba(58,35,64,.14),inset 0 -4px 0 rgba(58,35,64,.06);\n  --btn-shadow: 0 6px 0 rgba(107,63,160,.35);\n  --art-bg: linear-gradient(180deg,#E9F1FF,#B8E1FF 45%,#FFD6E0);\n  --media-bg: linear-gradient(180deg,#FFE9A8,#FFB5C8);\n  --cta-bg: linear-gradient(180deg,#C3F0CA,#B8E1FF);\n  --input-bg: #FFFFFF;\n  --ok: #1F7A45;\n  --warn: #C2185B;\n  --clay-pink: #FFD6E0;\n  --clay-mint: #C3F0CA;\n  --clay-sky: #B8E1FF;\n  --clay-yellow: #FFE9A8;\n  --font-display: 'Fredoka','Noto Sans TC',sans-serif;\n  --font-body: 'Nunito','Noto Sans TC',sans-serif;\n  --font-mono: 'Nunito',ui-monospace,monospace;\n  --focus-ring: var(--accent);\n}",
+ "snippet_tailwind": "// tailwind.config.js → theme.extend\n{\n  \"colors\": {\n    \"bg\": \"#F7F3FF\",\n    \"fg\": \"#3A2340\",\n    \"muted\": \"#5B4A6B\",\n    \"surface\": \"#FFFFFF\",\n    \"border\": \"#E7E1EE\",\n    \"accent\": \"#6B3FA0\",\n    \"accent-fg\": \"#FFFFFF\",\n    \"ok\": \"#1F7A45\",\n    \"warn\": \"#C2185B\",\n    \"focus-ring\": \"var(--accent)\"\n  },\n  \"borderRadius\": {\n    \"DEFAULT\": \"20px\",\n    \"lg\": \"30px\"\n  },\n  \"fontFamily\": {\n    \"display\": [\n      \"'Fredoka','Noto Sans TC',sans-serif\"\n    ],\n    \"body\": [\n      \"'Nunito','Noto Sans TC',sans-serif\"\n    ]\n  }\n}"
+}

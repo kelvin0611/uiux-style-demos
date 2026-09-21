@@ -1,0 +1,55 @@
+{
+ "slug": "brutalism",
+ "name": "Brutalism",
+ "cn": "",
+ "family": "💥 張力反叛 Bold & Raw",
+ "industry": "開發者工具／開源項目",
+ "brand": "Brute` / `Brute CLI",
+ "cta": "睇 docs",
+ "sections": "",
+ "css_variables": {
+  "--bg": "#FFFFFF",
+  "--fg": "#000000",
+  "--muted": "#444444",
+  "--surface": "#F0F0F0",
+  "--border": "#000000",
+  "--accent": "#0000EE",
+  "--accent-fg": "#FFFFFF",
+  "--radius": "0px",
+  "--radius-sm": "0px",
+  "--shadow": "none",
+  "--btn-shadow": "none",
+  "--art-bg": "#C0C0C0",
+  "--media-bg": "#C0C0C0",
+  "--cta-bg": "#F0F0F0",
+  "--input-bg": "#FFFFFF",
+  "--ok": "#007700",
+  "--warn": "#AA0000",
+  "--font-display": "'Space Mono','Courier New',monospace",
+  "--font-body": "'Space Mono','Courier New',monospace",
+  "--font-mono": "'Space Mono',ui-monospace,Menlo,monospace",
+  "--focus-ring": "var(--accent)"
+ },
+ "fonts": {
+  "google_url": "https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap",
+  "display": "'Space Mono','Courier New',monospace",
+  "body": "'Space Mono','Courier New',monospace",
+  "mono": "'Space Mono',ui-monospace,Menlo,monospace"
+ },
+ "radius": {
+  "base": "0px",
+  "sm": "0px"
+ },
+ "shadow": {
+  "card": "none",
+  "button": "none"
+ },
+ "focus_ring": "var(--accent)",
+ "motion": {},
+ "demo": {
+  "basic": "Demos/brutalism.html",
+  "pro": "Demos/brutalism-pro.html"
+ },
+ "snippet_css": ":root{\n  --bg: #FFFFFF;\n  --fg: #000000;\n  --muted: #444444;\n  --surface: #F0F0F0;\n  --border: #000000;\n  --accent: #0000EE;\n  --accent-fg: #FFFFFF;\n  --radius: 0px;\n  --radius-sm: 0px;\n  --shadow: none;\n  --btn-shadow: none;\n  --art-bg: #C0C0C0;\n  --media-bg: #C0C0C0;\n  --cta-bg: #F0F0F0;\n  --input-bg: #FFFFFF;\n  --ok: #007700;\n  --warn: #AA0000;\n  --font-display: 'Space Mono','Courier New',monospace;\n  --font-body: 'Space Mono','Courier New',monospace;\n  --font-mono: 'Space Mono',ui-monospace,Menlo,monospace;\n  --focus-ring: var(--accent);\n}",
+ "snippet_tailwind": "// tailwind.config.js → theme.extend\n{\n  \"colors\": {\n    \"bg\": \"#FFFFFF\",\n    \"fg\": \"#000000\",\n    \"muted\": \"#444444\",\n    \"surface\": \"#F0F0F0\",\n    \"border\": \"#000000\",\n    \"accent\": \"#0000EE\",\n    \"accent-fg\": \"#FFFFFF\",\n    \"ok\": \"#007700\",\n    \"warn\": \"#AA0000\",\n    \"focus-ring\": \"var(--accent)\"\n  },\n  \"borderRadius\": {\n    \"DEFAULT\": \"0px\",\n    \"lg\": \"0px\"\n  },\n  \"fontFamily\": {\n    \"display\": [\n      \"'Space Mono','Courier New',monospace\"\n    ],\n    \"body\": [\n      \"'Space Mono','Courier New',monospace\"\n    ]\n  }\n}"
+}

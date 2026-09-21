@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="zh-Hant-HK"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Mystical Western · 神秘西部 — Sundown | UIUX Style Demo</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rye&family=Libre+Baskerville:ital@0;1&display=swap">
+<meta name="description" content="沙漠蒸餾廠小批量做：每批 600 瓶，標明蒸餾日期同桶號。門市可以試 3 款，付款後 2 個工作日寄出。">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Mystical Western · 神秘西部">
+<meta property="og:description" content="沙漠蒸餾廠小批量做：每批 600 瓶，標明蒸餾日期同桶號。門市可以試 3 款，付款後 2 個工作日寄出。">
+<meta name="twitter:card" content="summary_large_image">
+<meta property="og:image" content="media/og/mystical-western.png">
+<link rel="stylesheet" href="blocks.css">
+<style>:root{--bg:#1C2340;--fg:#E7D3B0;--muted:#C9A24B;--surface:#262E52;--border:#C9A24B;--accent:#9E4522;--accent-fg:#F6EAD6;--radius:12px;--radius-sm:8px;--shadow:0 8px 24px rgba(0,0,0,.35);--btn-shadow:inset 0 0 0 3px #1C2340;--art-bg:radial-gradient(circle at 50% 70%,#6E3B1E 0 30%,transparent 31%),linear-gradient(#1C2340,#B4552D);--media-bg:linear-gradient(160deg,#1C2340,#6E3B1E);--cta-bg:#262E52;--input-bg:#232B4E;--ok:#8FD9A0;--warn:#E8A08B;--font-display:Rye,'Noto Serif TC',serif;--font-body:'Libre Baskerville','Noto Serif TC',serif;--font-mono:ui-monospace,Menlo,monospace;--focus-ring:#D05B2D;}
+
+body::before{content:"";position:fixed;inset:0;z-index:-1;background:
+ radial-gradient(1.5px 1.5px at 12% 18%,rgba(255,255,255,.55),transparent),
+ radial-gradient(1.5px 1.5px at 62% 12%,rgba(255,255,255,.4),transparent),
+ radial-gradient(1.5px 1.5px at 82% 42%,rgba(255,255,255,.35),transparent)}
+.logo{font:400 24px Rye,serif;color:#C9A24B}
+.nav a{color:#E7D3B0}
+.nav a[aria-current]{color:#C9A24B;box-shadow:inset 0 -2px 0 #C9A24B}
+.hero::after{content:"✦ ✧ ✦";position:absolute;right:8%;top:18%;color:#C9A24B;font-size:22px;letter-spacing:.3em;pointer-events:none}
+.hero h1{font:400 clamp(38px,7vw,86px)/1.06 Rye,serif;color:#C9A24B}
+.eyebrow{color:#C9A24B}
+.sec-title{font:400 clamp(26px,3.4vw,36px)/1.15 Rye,serif;color:#C9A24B}
+.hero .lead{color:#F2E6CE}
+.btn{border-radius:4px;border:2px solid #C9A24B;font:700 16px 'Libre Baskerville',serif}
+.btn-primary{background:#9E4522;color:#F6EAD6;box-shadow:inset 0 0 0 3px #1C2340}
+.btn-secondary{background:transparent;color:#E7D3B0}
+.card,.quote,.plan,.rows,.mock,.tile-c{background:#262E52;border:2px solid #C9A24B;border-radius:12px;box-shadow:none}
+.avatar{background:#C9A24B;color:#1C2340;font-family:Rye,serif}
+.chip{background:#1C2340;border:1px solid #C9A24B;color:#E7D3B0}
+.tag{background:#C9A24B;color:#1C2340}
+.tile-c .ph{background-image:radial-gradient(circle at 50% 70%,#6E3B1E 0 30%,transparent 31%),linear-gradient(#1C2340,#B4552D);border-radius:6px}
+.plan.featured{outline:3px solid #C9A24B;outline-offset:3px}
+.rows article:nth-child(odd){background:#2C3560}
+.rows .cost,.tile-c .cost{color:#E7D3B0}
+.faq summary::after{color:#C9A24B}
+.infolist{border-top:1px solid #C9A24B;padding-top:14px}
+.infolist b{color:#C9A24B}
+.stat .num{color:#E7D3B0}
+</style>
+</head>
+<body>
+<div class="demo-bar"><span><a href="index.html">← 全部風格</a> · <b>🆕 42/57 🌵 Mystical Western 神秘西部（12 block 全頁版）</b></span><span><a href="mystical-western-pro.html">✨ Pro 版</a> · <a href="modular-typography.html">‹ Modular Typography</a> · <a href="nautical.html">Nautical ›</a> · <a href="obsidian://open?vault=Obsidian&file=04-%E5%85%A7%E5%AE%B9%E5%89%B5%E4%BD%9C/UIUX%20Style/Styles/Mystical Western">📝 Obsidian 筆記</a></span></div>
+<header class="site-header wrap"><div class="logo">Sundown</div><input type="checkbox" id="navToggle" class="nav-toggle-input" aria-label="開關選單"><label class="nav-toggle" for="navToggle">選單</label><nav class="nav" aria-label="主選單"><a href="#products" aria-current="page">酒款</a><a href="#rows">價目</a><a href="#venue">配送</a><a href="#pricing">訂購</a></nav><a class="btn btn-primary" href="#cta">訂購</a></header>
+<main>
+<section class="block hero" id="hero"><div class="wrap hero-grid"><div><span class="eyebrow rv">香港 · 小批量蒸餾 · 只限 18 歲以上</span><h1>星圖寫好嘅路</h1><p class="lead rv">沙漠蒸餾廠小批量做：每批 600 瓶，標明蒸餾日期同桶號。門市可以試 3 款，付款後 2 個工作日寄出。</p><div class="actions rv"><a class="btn btn-primary" href="#cta">訂購 <span class="i" aria-hidden="true">→</span></a><a class="btn btn-secondary" href="#product">睇酒款</a></div><p class="note rv">只限 18 歲以上 · 落單要填出生日期 · 收貨核對身份證</p></div><figure class="hero-art rv"><div class="deco" aria-hidden="true" style="inset:0;background:radial-gradient(circle at 50% 70%,#6E3B1E 0 30%,transparent 31%),linear-gradient(#1C2340,#B4552D)"></div><figcaption>酒瓶相片位（生成 media/mystical-western-hero.jpg 自動代入）</figcaption></figure></div></section>
+<section class="block tight trust band"><div class="wrap trust"><span class="lbl">合作（示範網站，全部虛構）：</span><span class="wordmark">Sundown Bar</span><span class="wordmark">Desert Room</span><span class="wordmark">Coyote Club</span><span class="wordmark">星塵酒吧</span><span class="wordmark">Radio Room</span></div></section>
+<section class="block" id="features"><div class="wrap"><h2 class="sec-title">四個做法</h2><p class="sec-sub">唔講「秘方」，講你收到嘅係咩。</p><div class="grid g4"><article class="card rv"><span class="ico" aria-hidden="true">🌵</span><h3>每批 600 瓶</h3><p>標明蒸餾日期同編號，賣完唔再出同批。</p></article><article class="card rv"><span class="ico" aria-hidden="true">☾</span><h3>夜間蒸餾</h3><p>夜晚 11 點至 3 點做，溫差細，酒體順啲。</p></article><article class="card rv"><span class="ico" aria-hidden="true">🥃</span><h3>門市試 3 款</h3><p>每款 15ml 免費試，唔使盲買。</p></article><article class="card rv"><span class="ico" aria-hidden="true">🧾</span><h3>成分寫明</h3><p>原料、酒精濃度、批號全部標示。</p></article></div></div></section>
+<section class="block band" id="product"><div class="wrap"><h2 class="sec-title">批次追蹤</h2><p class="sec-sub">每瓶掃碼就見到蒸餾日期、桶號同出貨紀錄。</p><div class="mock rv"><div class="mock-bar"><span class="mock-dot"></span><span class="mock-dot"></span><span class="mock-dot"></span><span style="margin-left:8px">Sundown · 批次 B-2607</span></div><div class="mock-body"><aside class="mock-side"><span><b>批次</b></span><span>B-2607</span><span><b>桶號</b></span><span>C-14</span><span><b>數量</b></span><span>600 瓶</span></aside><div class="mock-main"><div class="mock-row"><span class="pill">蒸餾</span> 2026-02-14 23:40–03:10</div><div class="mock-row"><span class="pill">入桶</span> 美國白橡木 · 全新燒桶</div><div class="mock-row"><span class="diff-add">+ 出貨：3 月 18 日 · 香港 240 瓶</span></div><div class="mock-row"><span class="pill">酒精</span> 46% ABV · 700ml · 附批號卡</div></div><aside class="mock-right"><span><b>蒸餾師</b></span><span>阿朗</span><span><b>下次裝瓶</b></span><span>4 月 9 日</span></aside></div></div><p class="note">示範版係靜態畫面；Pro 版會逐行打出嚟。</p></div></section>
+<section class="block"><div class="wrap"><h2 class="sec-title">三步訂到</h2><p class="sec-sub">落單到收貨嘅時間同要求都寫明。</p><ol class="steps"><li class="rv"><h3>睇酒款同批號</h3><p>每款寫明原料、濃度、蒸餾日期同剩餘瓶數。</p></li><li class="rv"><h3>核對年齡</h3><p>只限 18 歲以上：落單要填出生日期，收貨出示身份證核對。</p></li><li class="rv"><h3>付款同寄出</h3><p>付款後 2 個工作日寄；順豐冷鏈，可以指定送貨時段。</p></li></ol></div></section>
+<section class="block tight"><div class="wrap"><div class="stats"><div class="stat rv"><span class="num">600 瓶</span><span>每批產量</span></div><div class="stat rv"><span class="num">46%</span><span>酒精濃度（示範）</span></div><div class="stat rv"><span class="num">2 日</span><span>出貨時間</span></div><div class="stat rv"><span class="num">18+</span><span>只限成年 · 核對身份證</span></div></div></div></section>
+<section class="block" id="products"><div class="wrap"><h2 class="sec-title">酒款</h2><p class="sec-sub">三款常設；每個批號都可以追到蒸餾日期（只限 18 歲以上）。</p><div class="tiles"><article class="tile-c rv"><div class="ph wide" aria-hidden="true">🥃</div><h3>Desert Dawn</h3><p>單一麥芽風格 · 46% · 700ml</p><span class="cost">HK$680</span></article><article class="tile-c rv"><div class="ph wide" aria-hidden="true">🌵</div><h3>Cactus Smoke</h3><p>泥煤 × 仙人掌花 · 45% · 700ml</p><span class="cost">HK$760</span></article><article class="tile-c rv"><div class="ph wide" aria-hidden="true">☾</div><h3>Moon Rye</h3><p>黑麥 60% · 48% · 小批次</p><span class="cost">HK$820</span></article><article class="tile-c rv"><div class="ph wide" aria-hidden="true">🎁</div><h3>三款試飲組</h3><p>3 × 200ml · 附批號卡</p><span class="cost">HK$520</span></article></div></div></section>
+<section class="block"><div class="wrap"><h2 class="sec-title">客人點講</h2><p class="sec-sub">示範網站用虛構名；真評語會喺真實訂單後補。</p><div class="grid g2"><figure class="quote rv"><p>「佢哋寫明蒸餾日期同桶號，飲落同上次買嗰批真係有分別。」</p><figcaption class="who"><span class="avatar" aria-hidden="true">阿</span><span><b>阿朗</b><br>客人 · 酒吧</span></figcaption></figure><figure class="quote rv"><p>「送貨要出示身份證核對，雖然麻煩少少，但我覺得應該。」</p><figcaption class="who"><span class="avatar" aria-hidden="true">I</span><span><b>Ivy</b><br>客人 · 私人</span></figcaption></figure></div></div></section>
+<section class="block" id="rows"><div class="wrap"><h2 class="sec-title rv">價目</h2><p class="sec-sub rv">價錢已含冷鏈運費；6 瓶以上 9 折。只限 18 歲以上。</p><div class="rows"><article class="rv"><b>★ Desert Dawn 700ml</b><span>46% · 批號 B-2607 · 現貨</span><span class="cost">HK$680</span></article><article class="rv"><b>★ Cactus Smoke 700ml</b><span>45% · 批號 B-2605 · 現貨</span><span class="cost">HK$760</span></article><article class="rv"><b>Moon Rye 700ml</b><span>48% · 批號 B-2604 · 剩 180 瓶</span><span class="cost">HK$820</span></article><article class="rv"><b>三款試飲組</b><span>3 × 200ml · 附批號卡</span><span class="cost">HK$520</span></article><article class="rv"><b>私人選桶（6 瓶）</b><span>可挑桶號 · 貼自訂標籤 · 3 星期</span><span class="cost">HK$5,600 起</span></article></div><p class="note rv">以上係示範價目；只售 18 歲以上人士，價錢已含冷鏈運費。</p></div></section>
+<section class="block" id="pricing"><div class="wrap"><h2 class="sec-title">三個買法</h2><p class="sec-sub">只限 18 歲以上；落單前要確認年齡。</p><div class="pricing"><article class="plan rv"><h3>單瓶</h3><div class="price">HK$680 <small>/ 瓶起</small></div><p>揀一款試。</p><ul><li>Desert Dawn 700ml</li><li>含冷鏈運費</li><li>附批號卡</li><li>只限 18 歲以上</li></ul><a class="btn btn-secondary" href="#cta">訂購</a></article><article class="plan rv featured"><span class="tag">最多人訂</span><h3>試飲組</h3><div class="price">HK$520 <small>/ 組</small></div><p>3 款各 200ml。</p><ul><li>3 × 200ml</li><li>附批號卡</li><li>含冷鏈運費</li><li>只限 18 歲以上</li></ul><a class="btn btn-primary" href="#cta">訂購</a></article><article class="plan rv"><h3>私人選桶</h3><div class="price">HK$5,600 <small>/ 6 瓶起</small></div><p>自己揀桶號。</p><ul><li>6 瓶起</li><li>可貼自訂標籤</li><li>3 星期裝瓶</li><li>只限 18 歲以上</li></ul><a class="btn btn-secondary" href="#cta">訂購</a></article></div></div></section>
+<section class="block" id="venue"><div class="wrap"><h2 class="sec-title">配送同法律</h2><p class="sec-sub">香港法例：唔可以賣酒畀 18 歲以下人士。</p><ul class="infolist"><li><b>年齡限制</b><span>只售 18 歲以上；落單要填出生日期，收貨出示身份證</span></li><li><b>配送</b><span>順豐冷鏈 2 個工作日；離島加 1 日</span></li><li><b>運費</b><span>已含喺價錢內；6 瓶以上免運</span></li><li><b>退換</b><span>未開封 14 日內可以退；已開封唔可以退</span></li><li><b>法例</b><span>酒類唔可以轉售；我們唔會寄去唔准賣酒嘅地區</span></li></ul></div></section>
+<section class="block"><div class="wrap"><h2 class="sec-title">買之前想知</h2><p class="sec-sub">問唔到嘅 email 我們；酒精只售 18 歲以上人士。</p><div class="faq"><details class="rv"><summary>點證明我夠 18 歲？</summary><div class="ans">落單要填出生日期；收貨時出示香港身份證核對。</div></details><details class="rv"><summary>送貨要幾久？</summary><div class="ans">付款後 2 個工作日；順豐冷鏈，離島加 1 日。</div></details><details class="rv"><summary>可以寄海外嗎？</summary><div class="ans">唔可以。酒類入口要另申請牌照，我們只做香港本地。</div></details><details class="rv"><summary>開咗可以退嗎？</summary><div class="ans">唔可以。未開封 14 日內可以退，運費由客人付。</div></details><details class="rv"><summary>係唔係真蒸餾廠？</summary><div class="ans">唔係。示範網站：品牌、批號、價目同評語全部虛構。</div></details><details class="rv"><summary>含唔含麩質？</summary><div class="ans">Moon Rye 用黑麥；對麩質敏感要留意（示範資料）。</div></details></div></div></section>
+<section class="block" id="cta"><div class="wrap"><div class="cta-band rv"><h2>下一批 4 月 9 日裝瓶</h2><p>只限 18 歲以上；訂購時會核對年齡。</p><div class="actions"><a class="btn btn-primary" href="#">訂購</a><a class="btn btn-secondary" href="#">睇酒款</a></div></div></div></section>
+</main>
+<footer class="block site-footer"><div class="wrap"><div class="foot-grid"><div><h4>酒款</h4><a href="#">Desert Dawn</a><a href="#">Cactus Smoke</a><a href="#">Moon Rye</a><a href="#">三款試飲組</a></div><div><h4>服務</h4><a href="#">訂購</a><a href="#">私人選桶</a><a href="#">門市試飲</a><a href="#">批號查詢</a></div><div><h4>配送</h4><a href="#">順豐冷鏈</a><a href="#">運費同折扣</a><a href="#">退換須知</a><a href="#">18+ 年齡核對</a></div><div><h4>關於</h4><a href="#">Sundown 蒸餾廠</a><a href="#">蒸餾過程</a><a href="#">聯絡我們</a><a href="#">酒類法例</a></div><div><h4>新批次通知</h4><form class="news" onsubmit="return false"><label for="nl" style="display:none">新批次通知</label><input id="nl" type="email" placeholder="you@example.com"><button class="btn btn-primary" type="submit">訂閱</button></form></div></div><div class="foot-bottom"><span>© 2026 Sundown Distillery · 示範網站：品牌、批號、價目同評語全部虛構 · 只限 18 歲以上</span><span>IG · WhatsApp · 門市試飲</span></div></div></footer>
+<section class="block band" id="qa"><div class="wrap"><h2 class="sec-title">設計 QA · 按鈕同表單</h2><p class="sec-sub">同一套元素庫嘅 11 個按鈕狀態（含 loading／success／icon／size）+ 表單，用嚟驗風格嘅 focus／disabled／錯誤狀態夠唔夠清楚。</p><div class="btn-row"><div class="state"><button class="btn btn-primary " type="button">Primary</button><small>Default</small></div><div class="state"><button class="btn btn-primary is-hover" type="button">Primary</button><small>Hover</small></div><div class="state"><button class="btn btn-primary is-active" type="button">Primary</button><small>Active</small></div><div class="state"><button class="btn btn-primary is-focus" type="button">Primary</button><small>Focus</small></div><div class="state"><button class="btn btn-primary " type="button" disabled>Primary</button><small>Disabled</small></div><div class="state"><button class="btn btn-primary " type="button" data-state="loading"><span class="spin"></span> 傳送中…</button><small>Loading</small></div><div class="state"><button class="btn btn-primary " type="button" data-state="done">已收到 · 1 個工作日內覆你</button><small>Success</small></div><div class="state"><button class="btn btn-primary " type="button"><span class="i" aria-hidden="true">→</span> 下一步</button><small>Icon + arrow</small></div><div class="state"><button class="btn btn-primary btn-sm" type="button">Small</button><small>Small（btn-sm）</small></div><div class="state"><button class="btn btn-primary btn-lg" type="button">Large</button><small>Large（btn-lg）</small></div><div class="state"><button class="btn btn-secondary" type="button">Secondary</button><small>Secondary</small></div></div><form class="form" style="margin-top:38px" onsubmit="return false"><div class="field"><label for="n">你嘅名</label><input id="n" placeholder="例如：陳大文"></div><div class="field"><label for="e">工作電郵</label><input id="e" type="email" placeholder="you@company.com"></div><div class="field"><label for="c">團隊幾大？</label><select id="c"><option>1–5 人</option><option>6–20 人</option><option>21 人以上</option></select></div><label class="check"><input type="checkbox" class="toggle" checked> 接收產品更新</label><div><button class="btn btn-primary" type="submit">提交</button></div></form></div></section>
+<script>
+(function(){var s=document.getElementById('seats');if(!s)return;
+var o=document.getElementById('roiOut'),mo=document.getElementById('roiMoney'),so=document.getElementById('seatsOut');
+var H=6,R=900;
+function up(){var n=+s.value;so.textContent=n;var h=Math.round(n*H),m=h*R;
+o.textContent=h+' 小時 / 月';mo.textContent='約 HK$'+m.toLocaleString()+'（對比人手寫同樣嘅 PR）';}
+s.addEventListener('input',up);up();})();
+</script>
+<script>
+(function(){var f=document.querySelector('#qa form');if(!f)return;
+var b=f.querySelector('button[type=submit]');if(!b)return;
+var live=document.createElement('p');live.className='note';live.setAttribute('aria-live','polite');
+f.appendChild(live);
+f.addEventListener('submit',function(e){e.preventDefault();
+if(b.dataset.state==='loading')return;
+var label=b.textContent;b.dataset.state='loading';b.innerHTML='<span class="spin"></span> 傳送中…';
+setTimeout(function(){b.dataset.state='done';b.textContent='已收到 · 1 個工作日內覆你';
+live.textContent='（示範狀態：真表單要接後端；重新載入可以再試）';
+setTimeout(function(){b.dataset.state='';b.textContent=label;},2600);},900);});})();
+</script>
+</body></html>

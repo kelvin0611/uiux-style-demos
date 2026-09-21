@@ -1,0 +1,113 @@
+<!doctype html><html lang="zh-Hant-HK"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Claymorphism  · 風格卡</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;700&family=Nunito:wght@400;700&display=swap">
+<link rel="stylesheet" href="../blocks.css">
+<style>:root{--bg:#F7F3FF;--fg:#3A2340;--muted:#5B4A6B;--surface:#FFFFFF;--border:#E7E1EE;--accent:#6B3FA0;--accent-fg:#FFFFFF;--accent-grad:linear-gradient(180deg,#8A5CC4,#6B3FA0);--radius:30px;--radius-sm:20px;--shadow:0 12px 0 -4px rgba(58,35,64,.10),0 18px 28px rgba(58,35,64,.14),inset 0 -4px 0 rgba(58,35,64,.06);--btn-shadow:0 6px 0 rgba(107,63,160,.35);--art-bg:linear-gradient(180deg,#E9F1FF,#B8E1FF 45%,#FFD6E0);--media-bg:linear-gradient(180deg,#FFE9A8,#FFB5C8);--cta-bg:linear-gradient(180deg,#C3F0CA,#B8E1FF);--input-bg:#FFFFFF;--ok:#1F7A45;--warn:#C2185B;--clay-pink:#FFD6E0;--clay-mint:#C3F0CA;--clay-sky:#B8E1FF;--clay-yellow:#FFE9A8;--font-display:'Fredoka','Noto Sans TC',sans-serif;--font-body:'Nunito','Noto Sans TC',sans-serif;--font-mono:'Nunito',ui-monospace,monospace;--focus-ring:var(--accent);}
+
+
+body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;background:
+ radial-gradient(circle at 10% 12%,rgba(255,214,224,.55),transparent 42%),
+ radial-gradient(circle at 88% 20%,rgba(184,225,255,.55),transparent 44%),
+ radial-gradient(circle at 58% 94%,rgba(195,240,202,.5),transparent 48%)}
+.card,.plan,.quote,.tile-c,.rows,.mock,.faq details,.badge-card{border:0;background:var(--surface);box-shadow:var(--shadow)}
+.card:nth-child(1),.tile-c:nth-child(1){background:var(--clay-pink)}
+.card:nth-child(2),.tile-c:nth-child(2){background:var(--clay-mint)}
+.card:nth-child(3),.tile-c:nth-child(3){background:var(--clay-sky)}
+.card:nth-child(4),.tile-c:nth-child(4){background:var(--clay-yellow)}
+.card .ico{display:grid;place-items:center;width:58px;aspect-ratio:1;border-radius:50%;background:rgba(255,255,255,.72);font-size:30px;box-shadow:inset -4px -4px 8px rgba(58,35,64,.10),inset 4px 4px 8px #fff}
+.hero-art{border-radius:38px}
+.hero::after{content:"";position:absolute;right:7%;bottom:9%;width:112px;aspect-ratio:1;border-radius:38%;background:var(--clay-yellow);box-shadow:var(--shadow);opacity:.8;pointer-events:none}
+.btn{border:0;border-radius:999px}
+.btn-primary{background:var(--accent-grad,var(--accent));color:var(--accent-fg)}
+.btn-primary:active:not(:disabled){transform:translateY(3px) scale(.98)}
+.btn-secondary{background:var(--surface);color:var(--fg);box-shadow:var(--shadow)}
+.chip{border:0;border-radius:999px;background:var(--surface);box-shadow:0 6px 0 -2px rgba(58,35,64,.12)}
+.tag{border-radius:999px;background:var(--accent);color:var(--accent-fg)}
+.avatar{border-radius:50%;background:var(--clay-pink);color:var(--accent)}
+.tile-c .ph.wide{border-radius:24px;background-image:var(--media-bg)}
+.plan.featured{outline:4px solid rgba(107,63,160,.16);outline-offset:6px}
+.toggle:checked{background:var(--accent)}
+.steps li::before{box-shadow:var(--btn-shadow)}
+
+/* ---- 風格卡專用 ---- */
+body{background:var(--bg);color:var(--fg);font-family:var(--font-body)}
+.cp{max-width:1080px;margin:0 auto;padding:clamp(18px,4vw,40px)}
+.cp-head{border-bottom:2px solid var(--border);padding-bottom:18px;margin-bottom:26px}
+.cp-head h1{margin:.1em 0 .2em;font-family:var(--font-display);font-size:clamp(28px,5vw,46px)}
+.cp-meta{color:var(--muted);font-size:14px}
+.cp-tag{display:inline-block;border:1px solid var(--border);border-radius:999px;padding:3px 10px;font-size:12px;color:var(--muted);margin:0 6px 6px 0}
+.cp h2{font-family:var(--font-display);font-size:clamp(18px,2.4vw,24px);margin:34px 0 6px;padding-bottom:6px;border-bottom:1px solid var(--border)}
+.cp p.desc{color:var(--muted);margin:6px 0 14px;max-width:70ch}
+.sws{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:10px}
+.sw{border:1px solid var(--border);border-radius:10px;padding:9px;background:var(--surface);display:grid;gap:4px}
+.sw i{display:block;height:44px;border-radius:7px;border:1px solid var(--border)}
+.sw b{font-size:13px}.sw code{font:12px var(--font-mono,monospace);color:var(--muted)}
+.sw span{font-size:11px;color:var(--muted)}
+.typo div{border:1px solid var(--border);border-radius:10px;padding:12px 14px;margin-bottom:8px;background:var(--surface)}
+.typo .d{font-family:var(--font-display);font-size:32px;line-height:1.15}
+.typo .b{font-family:var(--font-body);font-size:16px}
+.typo .m{font-family:var(--font-mono,monospace);font-size:14px}
+.typo small{color:var(--muted);font-size:11px;display:block;margin-top:6px}
+.row{display:flex;gap:12px;flex-wrap:wrap;align-items:flex-start}
+.preview{border:1px dashed var(--border);border-radius:12px;overflow:hidden;margin-bottom:12px}
+.preview .lbl{font:11px var(--font-mono,monospace);color:var(--muted);padding:6px 10px;border-bottom:1px dashed var(--border)}
+.preview > div:last-child{transform-origin:top left}
+.cp-foot{margin-top:36px;padding-top:14px;border-top:1px solid var(--border);color:var(--muted);font-size:13px;display:flex;gap:14px;flex-wrap:wrap}
+.cp a{color:var(--accent)}
+@media print{.noprint{display:none}body{background:#fff}.cp{max-width:none;padding:0}.preview{page-break-inside:avoid}}
+</style></head><body>
+<div class="cp">
+  <div class="cp-head">
+    <span class="cp-tag">🫧 立體質感 Tactile Surface</span><span class="cp-tag">15 個 block</span><span class="cp-tag">—</span>
+    <h1> Claymorphism <span style="font-size:.6em;color:var(--muted)"></span></h1>
+    <p class="desc" style="font-size:17px;color:var(--fg)">將 UI 做成一粒粒軟膠黏土玩具 —— 大圓角、粉彩色、外陰影加兩層內陰影，胖嘟嘟、好想撳。</p>
+    <p class="cp-meta">示範品牌 <b>Clay</b> · 主要 CTA「免費試」· 行業：兒童 app／親子產品</p>
+  </div>
+
+  <h2>1 · 色票 Palette</h2>
+  <p class="desc">所有元件都只可以用呢組 token（換色 = 改呢幾行）。</p>
+  <div class="sws"><div class="sw"><i style="background:#F7F3FF"></i><b>--bg</b><code>#F7F3FF</code><span>底色 Background</span></div><div class="sw"><i style="background:#3A2340"></i><b>--fg</b><code>#3A2340</code><span>主文字 Text</span></div><div class="sw"><i style="background:#5B4A6B"></i><b>--muted</b><code>#5B4A6B</code><span>次要文字 Muted</span></div><div class="sw"><i style="background:#FFFFFF"></i><b>--surface</b><code>#FFFFFF</code><span>卡片面 Surface</span></div><div class="sw"><i style="background:#E7E1EE"></i><b>--border</b><code>#E7E1EE</code><span>分隔線 Border</span></div><div class="sw"><i style="background:#6B3FA0"></i><b>--accent</b><code>#6B3FA0</code><span>強調色 Accent</span></div><div class="sw"><i style="background:#FFFFFF"></i><b>--accent-fg</b><code>#FFFFFF</code><span>強調上文字</span></div><div class="sw"><i style="background:#1F7A45"></i><b>--ok</b><code>#1F7A45</code><span>成功 Success</span></div><div class="sw"><i style="background:#C2185B"></i><b>--warn</b><code>#C2185B</code><span>警告 Warning</span></div></div>
+
+  <h2>2 · 字體 Typography</h2>
+  <p class="desc">最多兩個字重；標題 &#x27;Fredoka&#x27;,&#x27;Noto Sans TC&#x27;,sans-serif、正文 &#x27;Nunito&#x27;,&#x27;Noto Sans TC&#x27;,sans-serif。</p>
+  <div class="typo">
+    <div class="d">一頁講清成件事 <small>Display · &#x27;Fredoka&#x27;,&#x27;Noto Sans TC&#x27;,sans-serif</small></div>
+    <div class="b">正文用 &#x27;Nunito&#x27;,&#x27;Noto Sans TC&#x27;,sans-serif：16px、行高 1.65，唔會超過 70 個中文字一行。<small>Body</small></div>
+    <div class="m">HK$1,280 · 2026-09-22 · #REF-0042 <small>Mono／數字對齊（&#x27;Nunito&#x27;,ui-monospace,monospace）</small></div>
+  </div>
+
+  <h2>3 · 按鈕 Buttons</h2>
+  <p class="desc">11 個狀態齊：hover 升起、active 壓落、focus 外框（對比 ≥3:1）、disabled 變淡、loading／success。</p>
+  <div class="btn-row"><div class="state"><button class="btn btn-primary " type="button">Primary</button><small>Default</small></div><div class="state"><button class="btn btn-primary is-hover" type="button">Primary</button><small>Hover</small></div><div class="state"><button class="btn btn-primary is-active" type="button">Primary</button><small>Active</small></div><div class="state"><button class="btn btn-primary is-focus" type="button">Primary</button><small>Focus</small></div><div class="state"><button class="btn btn-primary " type="button" disabled>Primary</button><small>Disabled</small></div><div class="state"><button class="btn btn-primary btn-sm" type="button">Small</button><small>btn-sm</small></div><div class="state"><button class="btn btn-primary btn-lg" type="button">Large</button><small>btn-lg</small></div><div class="state"><button class="btn btn-primary btn-secondary" type="button">Secondary</button><small>Secondary</small></div></div>
+
+  <h2>4 · 組件 Components</h2>
+  <div class="row">
+    <article class="card" style="flex:1 1 260px"><span class="ico" aria-hidden="true">◆</span><h3>卡片標題</h3><p>一句講清重點，唔超過兩行。</p></article>
+    <div class="plan" style="flex:1 1 240px"><span class="tag">最受歡迎</span><h3>方案名</h3><div class="price">HK$1,280<small>/月</small></div>
+      <ul><li>包含咩</li><li>包含咩</li></ul><a class="btn btn-primary" href="#">揀呢個</a></div>
+    <blockquote class="quote" style="flex:1 1 260px">客人講嘅一句真話。<span class="avatar">阿</span><b>阿文</b><span>客戶 · 角色</span></blockquote>
+  </div>
+
+  <h2>5 · 真實 section 預覽</h2>
+  <p class="desc">以下係由正式 demo 直接抽落嚟（唔係另畫），所以卡同成品一定一致。</p>
+  <div class="preview"><div class="lbl">hero</div><div><section class="block hero" id="hero"><div class="wrap hero-grid"><div><span class="eyebrow rv">香港 · 2–7 歲 · 家長 app 睇得到</span><h1>小朋友自己玩得</h1><p class="lead rv">用手指推泥膠嘅方式學形狀同加減數；玩幾久、玩咩，家長 app 全部睇得到。</p><div class="actions rv"><a class="btn btn-primary" href="#cta">免費試 <span class="i" aria-hidden="true">→</span></a><a class="btn btn-secondary" href="#product">睇主題包</a></div><p class="note rv">免費試 7 日 · 唔使信用卡 · 設定 5 分鐘</p></div><figure class="hero-art rv"><div class="deco" aria-hidden="true" style="inset:0;background:linear-gradient(180deg,#E9F1FF,#B8E1FF 45%,#FFD6E0)"></div><figcaption>介面相片位（生成 media/claymorphism-hero.jpg 自動代入）</figcaption></figure></div></section></div></div><div class="preview"><div class="lbl">pricing</div><div><section class="block" id="pricing"><div class="wrap"><h2 class="sec-title">三個方案</h2><p class="sec-sub">試完 7 日先收費，會提前 2 日通知你。</p><div class="pricing"><article class="plan rv"><h3>免費試</h3><div class="price">HK$0 <small>/ 7 日</small></div><p>唔使信用卡。</p><ul><li>2 個主題包</li><li>1 個小朋友</li><li>家長報告 1 次</li><li>時間上限功能全開</li></ul><a class="btn btn-secondary" href="#cta">免費試</a></article><article class="plan rv featured"><span class="tag">最多人揀</span><h3>家庭</h3><div class="price">HK$88 <small>/ 月</small></div><p>最常揀。</p><ul><li>4 個小朋友</li><li>全部 12 個主題包</li><li>離線下載</li><li>時間上限 + 家長鎖</li><li>每週報告</li></ul><a class="btn btn-primary" href="#cta">免費試</a></article><article class="plan rv"><h3>一年家庭</h3><div class="price">HK$880 <small>/ 年</small></div><p>一年一次付，平 2 個月。</p><ul><li>家庭方案全部功能</li><li>優先試新主題包</li><li>email 支援</li><li>可以中途轉月付</li></ul><a class="btn btn-secondary" href="#cta">免費試</a></article></div></div></section></div></div><div class="preview"><div class="lbl">venue</div><div><section class="block" id="venue"><div class="wrap"><h2 class="sec-title">家長支援同私隱</h2><p class="sec-sub">我們唔會賣你嘅資料，app 內亦冇廣告位。</p><ul class="infolist"><li><b>支援時間</b><span>星期一至五 10:00–19:00（HKT）；WhatsApp 平均 4 小時內覆</span></li><li><b>私隱</b><span>唔收集小朋友相片、位置或者通訊錄；戶口只用電郵</span></li><li><b>退款</b><span>App Store 14 日內可以申請退款，我們唔會阻你</span></li><li><b>裝置要求</b><span>iOS 14+／Android 9+；iPad 同 Android 平板都支援</span></li><li><b>幼稚園用</b><span>一班 20 部裝置可以開教室模式，要另外報價</span></li></ul></div></section></div></div>
+
+  <h2>6 · 動效（Pro 版）</h2>
+  <p class="desc">基本版純 CSS；Pro 版有載入幕、入場、scroll reveal、微互動。跟系統設定「減少動態」會自動降級。</p>
+  <p style="font:13px var(--font-mono,monospace);color:var(--muted)"></p>
+
+  <h2>7 · 點用</h2>
+  <ul style="color:var(--muted);font-size:14px">
+    <li>Tokens：<code>themes/claymorphism.json</code>（含 <code>snippet_css</code> 同 Tailwind <code>theme.extend</code>）</li>
+    <li>Demo：<a href="../claymorphism.html">基本版</a> · <a href="../claymorphism-pro.html">Pro 動效版</a> · <a href="../claymorphism-pro.html?deep=1">🧪 深度效果</a></li>
+    <li>改客人內容：<code>python3 gen_project.py brief.json</code>（自動驗 WCAG 4.5:1）</li>
+  </ul>
+
+  <div class="cp-foot">
+    <button class="btn btn-primary btn-sm noprint" type="button" onclick="window.print()">🖨️ Print／存 PDF</button>
+    <a href="index.html">← 全部風格卡</a>
+    <span>UIUX Style · Claymorphism · 示範內容全部虛構</span>
+  </div>
+</div>
+</body></html>

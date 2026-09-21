@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="zh-Hant-HK"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Cybercore · 網絡懷舊 — Nullsec | UIUX Style Demo</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=VT323&display=swap">
+<meta name="description" content="只接有書面授權嘅滲透測試；測試範圍、時間窗、緊急聯絡人全部寫入合約。">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Cybercore · 網絡懷舊">
+<meta property="og:description" content="只接有書面授權嘅滲透測試；測試範圍、時間窗、緊急聯絡人全部寫入合約。">
+<meta name="twitter:card" content="summary_large_image">
+<meta property="og:image" content="media/og/cybercore.png">
+<link rel="stylesheet" href="blocks.css">
+<style>:root{--bg:#000018;--fg:#00FF41;--muted:#2FB862;--surface:#0B0B2E;--border:#C0C0C0;--accent:#00FFFF;--accent-fg:#00201F;--accent-grad:linear-gradient(180deg,#5CFFFF,#00D9D9);--radius:0px;--radius-sm:0px;--shadow:inset 1px 1px 0 rgba(255,255,255,.35),inset -1px -1px 0 #000,3px 3px 0 rgba(0,0,0,.55);--btn-shadow:inset 1px 1px 0 rgba(255,255,255,.5),inset -1px -1px 0 #000,3px 3px 0 rgba(0,0,0,.6);--art-bg:linear-gradient(180deg,#000036,#000018);--media-bg:radial-gradient(rgba(255,255,255,.2) 1px,transparent 1.5px) 0 0/22px 22px,linear-gradient(180deg,#000030,#000018);--cta-bg:linear-gradient(180deg,#0B0B2E,#000018);--input-bg:#000020;--ok:#00FF41;--warn:#FF4466;--win-bar:linear-gradient(90deg,#000080,#1084D0);--win-bar-fg:#FFFFFF;--chrome-fg:#0A0A0A;--magenta:#FF00FF;--yellow:#FFFF00;--font-display:'VT323','Noto Sans TC',monospace;--font-body:'VT323','Noto Sans TC',system-ui,sans-serif;--font-mono:'VT323',ui-monospace,Menlo,monospace;--focus-ring:var(--accent);}
+
+body{font-size:18px;line-height:1.7}
+body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;background:
+ radial-gradient(rgba(255,255,255,.07) 1px,transparent 1.5px) 0 0/32px 32px,
+ radial-gradient(rgba(255,255,0,.06) 1px,transparent 1.5px) 16px 16px/64px 64px}
+.site-header{border:2px solid var(--border);background:var(--surface);padding:6px 10px;box-shadow:var(--shadow)}
+.logo{color:var(--accent);letter-spacing:.04em}
+.nav a{color:var(--muted);text-decoration:underline}
+.nav a:hover,.nav a[aria-current="page"]{color:var(--accent);background:transparent}
+.sec-title{display:inline-block;background:var(--win-bar);color:var(--win-bar-fg);padding:2px 12px;letter-spacing:.05em}
+.card,.plan,.quote,.rows,.tile-c,.mock,.faq details,.badge-card{border:2px solid var(--border);background:var(--surface);box-shadow:var(--shadow)}
+.card h3,.tile-c h3{background:var(--win-bar);color:var(--win-bar-fg);padding:3px 8px;margin:0 0 12px}
+.mock-bar{background:var(--win-bar);color:var(--win-bar-fg)}
+.mock-dot{background:var(--border)}
+.btn{border:2px solid var(--border);box-shadow:var(--btn-shadow)}
+.btn-secondary{background:var(--border);color:var(--chrome-fg);border-color:#fff}
+.btn:focus-visible{outline:2px dotted var(--accent);outline-offset:2px}
+.chip{border:1px solid var(--border);border-radius:0;background:var(--surface)}
+.tag{border-radius:0;background:var(--accent);color:var(--accent-fg)}
+.pill{border-radius:0}
+.avatar{border-radius:0;background:var(--win-bar);color:var(--win-bar-fg)}
+.tile-c .ph{background-image:var(--media-bg)}
+.hero h1{text-shadow:3px 3px 0 var(--magenta)}
+.hero .note::after{content:" ⚠ 網站建設中"}
+.eyebrow{color:var(--yellow);animation:bl 2s steps(1) infinite}
+@keyframes bl{50%{color:var(--magenta)}}
+.hero-art{border:2px solid var(--border)}
+.hero-art::before{content:"Nullsec — 授權測試示範畫面 _ □ ×";position:absolute;left:0;right:0;top:0;background:var(--win-bar);color:var(--win-bar-fg);font-size:15px;padding:3px 8px;z-index:2}
+.hero-art figcaption{left:8px;bottom:8px;background:rgba(0,0,0,.5);color:var(--win-bar-fg);padding:2px 6px;z-index:2}
+.stats{padding:16px;border:2px solid var(--border);background:var(--surface);box-shadow:var(--shadow)}
+.rows article:nth-child(odd){background:var(--bg)}
+.infolist li{border-bottom:1px dashed var(--muted)}
+.infolist b{color:var(--accent)}
+.plan.featured{border-color:var(--accent)}
+.win98-boot{width:min(420px,74vw);background:var(--border);color:var(--chrome-fg);border:2px solid #fff;border-right-color:#000;border-bottom-color:#000;padding:14px 16px 18px;box-shadow:5px 5px 0 rgba(0,0,0,.45);text-align:left}
+.win98-boot b{display:block;font:700 24px/1.15 var(--font-display)}
+.win98-boot .bar{height:16px;border:1px solid #000;background:#000;margin:12px 0 6px;padding:2px}
+.win98-boot .bar i{display:block;height:100%;width:62%;background:var(--accent)}
+.win98-boot small{color:var(--chrome-fg)}
+</style>
+</head>
+<body>
+<div class="demo-bar"><span><a href="index.html">← 全部風格</a> · <b>🆕 27/57 💾 Cybercore 網絡懷舊（12 block 全頁版）</b></span><span><a href="cybercore-pro.html">✨ Pro 版</a> · <a href="coquette.html">‹ Coquette</a> · <a href="cyberpunk.html">Cyberpunk ›</a> · <a href="obsidian://open?vault=Obsidian&file=04-%E5%85%A7%E5%AE%B9%E5%89%B5%E4%BD%9C/UIUX%20Style/Styles/Cybercore">📝 Obsidian 筆記</a></span></div>
+<header class="site-header wrap"><div class="logo">Nullsec</div><input type="checkbox" id="navToggle" class="nav-toggle-input" aria-label="開關選單"><label class="nav-toggle" for="navToggle">選單</label><nav class="nav" aria-label="主選單"><a href="#rows" aria-current="page">服務</a><a href="#venue">流程</a><a href="#chips">合規</a><a href="#pricing">價目</a></nav><a class="btn btn-primary" href="#cta">索取樣本報告</a></header>
+<main>
+<section class="block hero" id="hero"><div class="wrap hero-grid"><div><span class="eyebrow rv">香港 · 滲透測試 · 只做授權測試</span><h1>先授權，再測試</h1><p class="lead rv">只接有書面授權嘅滲透測試；測試範圍、時間窗、緊急聯絡人全部寫入合約。</p><div class="actions rv"><a class="btn btn-primary" href="#cta">索取樣本報告 <span class="i" aria-hidden="true">→</span></a><a class="btn btn-secondary" href="#product">睇服務範圍</a></div><p class="note rv">報價 2 個工作日 · 測試窗最早 5 個工作日後 · 樣本報告可以先睇</p></div><figure class="hero-art rv"><div class="deco" aria-hidden="true" style="inset:0;background:linear-gradient(180deg,#000036,#000018)"></div><figcaption>測試介面相片位（生成 media/cybercore-hero.jpg 自動代入）</figcaption></figure></div></section>
+<section class="block tight trust band"><div class="wrap trust"><span class="lbl">過往合作（示範網站，全部虛構）：</span><span class="wordmark">北角電業</span><span class="wordmark">Paperland</span><span class="wordmark">格仔雜貨</span><span class="wordmark">暖屋電器</span><span class="wordmark">社區中心</span></div></section>
+<section class="block" id="features"><div class="wrap"><h2 class="sec-title">四個做法</h2><p class="sec-sub">唔講黑客電影，講合約同報告寫咩。</p><div class="grid g4"><article class="card rv"><span class="ico" aria-hidden="true">🔑</span><h3>只做授權測試</h3><p>要有書面授權同指定範圍；冇授權唔接，包括自己公司未簽名。</p></article><article class="card rv"><span class="ico" aria-hidden="true">🕐</span><h3>時間窗寫明</h3><p>預設 22:00–06:00；出事 15 分鐘內通知你嘅緊急聯絡人。</p></article><article class="card rv"><span class="ico" aria-hidden="true">📄</span><h3>報告有重現步驟</h3><p>每個漏洞有 request／response、影響同修補建議。</p></article><article class="card rv"><span class="ico" aria-hidden="true">🔁</span><h3>修完免費覆測 1 次</h3><p>報告發出後 30 日內修好，可以約覆測一次。</p></article></div></div></section>
+<section class="block band" id="product"><div class="wrap"><h2 class="sec-title">測試進度畫面</h2><p class="sec-sub">客戶同我們睇同一份授權範圍同每日進度。</p><div class="mock rv"><div class="mock-bar"><span class="mock-dot"></span><span class="mock-dot"></span><span class="mock-dot"></span><span style="margin-left:8px">Nullsec · 授權測試 MXHK-2609</span></div><div class="mock-body"><aside class="mock-side"><span>範圍</span><span>3 個域名</span><span>2 個 API</span><span>狀態</span><span>進行中</span><span>時間窗</span><span>22:00–06:00</span></aside><div class="mock-main"><div class="mock-row"><span class="pill">已授權</span> 3 個域名 · 簽名人：客戶 IT 主管</div><div class="mock-row"><span class="diff-add">+ 高風險 1：舊版元件洩露內部設定（已即日通知）</span></div><div class="mock-row"><span class="pill">中風險</span> 3 項 · 報告草稿 60%</div><div class="mock-row"><span class="pill">下次測試窗</span> 3 月 19 日 22:00</div></div><aside class="mock-right"><span>測試員</span><span>Kay</span><span>緊急電話</span><span>24 小時有人接</span></aside></div></div><p class="note">示範版係靜態畫面；Pro 版會逐行打出嚟。</p></div></section>
+<section class="block"><div class="wrap"><h2 class="sec-title">四步流程</h2><p class="sec-sub">簽咗授權書才開工，冇例外。</p><ol class="steps"><li class="rv"><h3>傾範圍同簽授權</h3><p>講清域名、IP、時間窗；以簽名同日期為準。</p></li><li class="rv"><h3>報價同排期</h3><p>固定範圍固定價；測試窗最早 5 個工作日後。</p></li><li class="rv"><h3>測試（3–10 日）</h3><p>只在約定時間窗做，每日 09:00 交進度。</p></li><li class="rv"><h3>報告同覆測</h3><p>10 個工作日內交報告；30 日內免費覆測一次。</p></li></ol></div></section>
+<section class="block tight"><div class="wrap"><div class="stats"><div class="stat rv"><span class="num">2 個</span><span>工作天出報價</span></div><div class="stat rv"><span class="num">10 個</span><span>工作天交報告</span></div><div class="stat rv"><span class="num">15 分鐘</span><span>高風險通報上限</span></div><div class="stat rv"><span class="num">30 日</span><span>免費覆測期</span></div></div></div></section>
+<section class="block" id="rows"><div class="wrap"><h2 class="sec-title rv">服務範圍同價</h2><p class="sec-sub rv">只做有授權嘅測試；未經授權嘅要求一律唔接。</p><div class="rows"><article class="rv"><b>網站應用測試</b><span>3 個域名 · OWASP Top 10 · 報告 + 覆測</span><span class="cost">HK$38,000 起</span></article><article class="rv"><b>API 測試</b><span>2 個 API · 認證、權限、速率限制</span><span class="cost">HK$28,000 起</span></article><article class="rv"><b>內網測試</b><span>最多 50 部主機 · 要安排現場或者 VPN</span><span class="cost">HK$48,000 起</span></article><article class="rv"><b>手機 App 測試</b><span>iOS／Android · 反編譯同憑證檢查</span><span class="cost">HK$32,000 起</span></article><article class="rv"><b>修補覆測</b><span>報告發出後 30 日內一次</span><span class="cost">包含在內</span></article></div><p class="note rv">以上係示範價目；實際視乎範圍、測試窗同時數。</p></div></section>
+<section class="block"><div class="wrap"><h2 class="sec-title">客戶點講</h2><p class="sec-sub">示範網站用虛構名；真評語會喺真實項目後補。</p><div class="grid g2"><figure class="quote rv"><p>「報告寫得清楚，每個漏洞有重現步驟，我們 IT 直接跟住修。」</p><figcaption class="who"><span class="avatar" aria-hidden="true">陳</span><span><b>陳經理</b><br>客戶 · 製造業 IT</span></figcaption></figure><figure class="quote rv"><p>「開工前問得好細，連時間窗同緊急電話都寫入合約。」</p><figcaption class="who"><span class="avatar" aria-hidden="true">W</span><span><b>Winnie</b><br>客戶 · SaaS 營運</span></figcaption></figure></div></div></section>
+<section class="block" id="venue"><div class="wrap"><h2 class="sec-title">流程同授權要求</h2><p class="sec-sub">簽咗授權書才開工；冇授權嘅要求我們唔會做。</p><ul class="infolist"><li><b>授權書</b><span>要由有權限嘅人簽（通常係 IT 主管）；列明域名、IP、時間窗</span></li><li><b>時間窗</b><span>預設 22:00–06:00（HKT）；要避開生產高峰可以另議</span></li><li><b>緊急聯絡</b><span>測試期間 24 小時有人接電話；發現高風險 15 分鐘內通知</span></li><li><b>資料處理</b><span>測試數據只存喺加密機器，項目完結 30 日後刪除</span></li><li><b>唔會做</b><span>DDoS、騙同事密碼嘅社交工程、測試第三方未授權系統</span></li></ul></div></section>
+<section class="block" id="pricing"><div class="wrap"><h2 class="sec-title">三個範圍</h2><p class="sec-sub">固定範圍固定價；範圍未定可以先做 2 小時 scoping（HK$2,400，可扣落項目）。</p><div class="pricing"><article class="plan rv"><h3>單一網站</h3><div class="price">HK$38,000 <small>/ 專案起</small></div><p>一個域名開始。</p><ul><li>1 個域名</li><li>5 個工作日測試</li><li>報告 + 覆測</li><li>10 個工作天交報告</li></ul><a class="btn btn-secondary" href="#cta">索取樣本報告</a></article><article class="plan rv featured"><span class="tag">最多人問</span><h3>網站 + API</h3><div class="price">HK$58,000 <small>/ 專案起</small></div><p>最多人問。</p><ul><li>3 個域名 + 2 個 API</li><li>10 個工作日測試</li><li>每日進度同步</li><li>報告 + 覆測</li><li>緊急聯絡 24/7</li></ul><a class="btn btn-primary" href="#cta">索取樣本報告</a></article><article class="plan rv"><h3>內網 + App</h3><div class="price">HK$88,000 <small>/ 專案起</small></div><p>要安排現場或 VPN。</p><ul><li>最多 50 部主機</li><li>2 個手機 App</li><li>分段測試窗</li><li>報告 + 覆測</li></ul><a class="btn btn-secondary" href="#cta">索取報價</a></article></div></div></section>
+<section class="block" id="chips"><div class="wrap"><h2 class="sec-title">合規同認證（示範）</h2><p class="sec-sub">⚠️ 示範網站：以下全部只係介面示範，唔代表我們持有任何真實認證、牌照或者資格。</p><div class="chips"><span class="chip">ISO 27001（示範）</span><span class="chip">滲透測試授權書（示範）</span><span class="chip">保密協議 NDA（示範）</span><span class="chip">資料處理協議（示範）</span><span class="chip">OWASP Top 10（方法論）</span><span class="chip">報告加密交付</span><span class="chip">測試員背景審查（示範）</span><span class="chip">事故通報 SLA</span></div></div></section>
+<section class="block"><div class="wrap"><h2 class="sec-title">開工前想知</h2><p class="sec-sub">答唔到嘅可以 email 我們，兩個工作天內覆。</p><div class="faq"><details class="rv"><summary>冇授權可以做測試嗎？</summary><div class="ans">唔可以。冇書面授權一律唔接，包括「自己公司但簽名人唔喺度」嘅情況。</div></details><details class="rv"><summary>要唔要停機？</summary><div class="ans">唔使，測試窗預設 22:00–06:00；測生產環境會先用低風險方法。</div></details><details class="rv"><summary>報告有幾詳細？</summary><div class="ans">每個漏洞有重現步驟、影響、嚴重程度同修補建議，唔會只給你一個分數。</div></details><details class="rv"><summary>會唔會睇到客戶資料？</summary><div class="ans">唔會。測試數據加密存放，項目完結 30 日後刪除，可以簽 NDA。</div></details><details class="rv"><summary>你哋有咩認證？</summary><div class="ans">呢個係示範網站，唔代表我們持有任何真實認證。真項目我們提供測試員背景同方法論文件。</div></details><details class="rv"><summary>點報價？</summary><div class="ans">固定範圍固定價；範圍未定可以先做 2 小時 scoping，費用可扣落項目。</div></details></div></div></section>
+<section class="block" id="cta"><div class="wrap"><div class="cta-band rv"><h2>索取樣本報告</h2><p>睇完報告格式再決定要唔要報價。</p><div class="actions"><a class="btn btn-primary" href="#">索取樣本報告</a><a class="btn btn-secondary" href="#">睇服務範圍</a></div></div></div></section>
+</main>
+<footer class="block site-footer"><div class="wrap"><div class="foot-grid"><div><h4>服務</h4><a href="#">網站應用測試</a><a href="#">API 測試</a><a href="#">內網測試</a><a href="#">手機 App 測試</a></div><div><h4>流程</h4><a href="#">授權要求</a><a href="#">時間窗</a><a href="#">報告格式</a><a href="#">免費覆測</a></div><div><h4>合規</h4><a href="#">認證（示範）</a><a href="#">資料處理</a><a href="#">NDA 同保密</a><a href="#">事故通報</a></div><div><h4>公司</h4><a href="#">Nullsec 團隊</a><a href="#">測試員背景</a><a href="#">樣本報告</a><a href="#">私隱政策</a></div><div><h4>測試方法同更新通知</h4><form class="news" onsubmit="return false"><label for="nl" style="display:none">測試方法同更新通知</label><input id="nl" type="email" placeholder="you@company.com"><button class="btn btn-primary" type="submit">訂閱</button></form></div></div><div class="foot-bottom"><span>© 2026 Nullsec Security · 示範網站：公司、認證、數字同評語全部虛構</span><span>Email · GitHub · Signal</span></div></div></footer>
+<section class="block band" id="qa"><div class="wrap"><h2 class="sec-title">設計 QA · 按鈕同表單</h2><p class="sec-sub">同一套元素庫嘅 11 個按鈕狀態（含 loading／success／icon／size）+ 表單，用嚟驗風格嘅 focus／disabled／錯誤狀態夠唔夠清楚。</p><div class="btn-row"><div class="state"><button class="btn btn-primary " type="button">Primary</button><small>Default</small></div><div class="state"><button class="btn btn-primary is-hover" type="button">Primary</button><small>Hover</small></div><div class="state"><button class="btn btn-primary is-active" type="button">Primary</button><small>Active</small></div><div class="state"><button class="btn btn-primary is-focus" type="button">Primary</button><small>Focus</small></div><div class="state"><button class="btn btn-primary " type="button" disabled>Primary</button><small>Disabled</small></div><div class="state"><button class="btn btn-primary " type="button" data-state="loading"><span class="spin"></span> 傳送中…</button><small>Loading</small></div><div class="state"><button class="btn btn-primary " type="button" data-state="done">已收到 · 1 個工作日內覆你</button><small>Success</small></div><div class="state"><button class="btn btn-primary " type="button"><span class="i" aria-hidden="true">→</span> 下一步</button><small>Icon + arrow</small></div><div class="state"><button class="btn btn-primary btn-sm" type="button">Small</button><small>Small（btn-sm）</small></div><div class="state"><button class="btn btn-primary btn-lg" type="button">Large</button><small>Large（btn-lg）</small></div><div class="state"><button class="btn btn-secondary" type="button">Secondary</button><small>Secondary</small></div></div><form class="form" style="margin-top:38px" onsubmit="return false"><div class="field"><label for="n">你嘅名</label><input id="n" placeholder="例如：陳大文"></div><div class="field"><label for="e">工作電郵</label><input id="e" type="email" placeholder="you@company.com"></div><div class="field"><label for="c">團隊幾大？</label><select id="c"><option>1–5 人</option><option>6–20 人</option><option>21 人以上</option></select></div><label class="check"><input type="checkbox" class="toggle" checked> 接收產品更新</label><div><button class="btn btn-primary" type="submit">提交</button></div></form></div></section>
+<script>
+(function(){var s=document.getElementById('seats');if(!s)return;
+var o=document.getElementById('roiOut'),mo=document.getElementById('roiMoney'),so=document.getElementById('seatsOut');
+var H=6,R=900;
+function up(){var n=+s.value;so.textContent=n;var h=Math.round(n*H),m=h*R;
+o.textContent=h+' 小時 / 月';mo.textContent='約 HK$'+m.toLocaleString()+'（對比人手寫同樣嘅 PR）';}
+s.addEventListener('input',up);up();})();
+</script>
+<script>
+(function(){var f=document.querySelector('#qa form');if(!f)return;
+var b=f.querySelector('button[type=submit]');if(!b)return;
+var live=document.createElement('p');live.className='note';live.setAttribute('aria-live','polite');
+f.appendChild(live);
+f.addEventListener('submit',function(e){e.preventDefault();
+if(b.dataset.state==='loading')return;
+var label=b.textContent;b.dataset.state='loading';b.innerHTML='<span class="spin"></span> 傳送中…';
+setTimeout(function(){b.dataset.state='done';b.textContent='已收到 · 1 個工作日內覆你';
+live.textContent='（示範狀態：真表單要接後端；重新載入可以再試）';
+setTimeout(function(){b.dataset.state='';b.textContent=label;},2600);},900);});})();
+</script>
+</body></html>

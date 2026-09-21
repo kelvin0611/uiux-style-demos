@@ -1,0 +1,918 @@
+{
+ "count": 57,
+ "generated_for": "UIUX Style 57 個風格全頁版",
+ "styles": [
+  {
+   "slug": "acanthus",
+   "name": "Acanthus",
+   "family": "🏛️ 古典人文 Heritage & Lifestyle",
+   "industry": "婚禮統籌／高端花藝",
+   "brand": "Laurel",
+   "cta": "預約諮詢",
+   "accent": "#7A5C2E",
+   "bg": "#F6F2E8",
+   "font": "'Cormorant','Noto Serif TC',serif",
+   "blocks": 15,
+   "demo": {
+    "basic": "Demos/acanthus.html",
+    "pro": "Demos/acanthus-pro.html"
+   }
+  },
+  {
+   "slug": "anthropomorphic",
+   "name": "Anthropomorphic",
+   "family": "✏️ 藝術手作 Artistic & Handmade",
+   "industry": "兒童教育／STEM",
+   "brand": "Buddy` / `Buddy Tutor",
+   "cta": "免費試一堂",
+   "accent": "#FF6F61",
+   "bg": "#FFFBF2",
+   "font": "Fredoka,Nunito,sans-serif",
+   "blocks": 15,
+   "demo": {
+    "basic": "Demos/anthropomorphic.html",
+    "pro": "Demos/anthropomorphic-pro.html"
+   }
+  },
+  {
+   "slug": "art-deco",
+   "name": "Art Deco",
+   "family": "🏛️ 古典人文 Heritage & Lifestyle",
+   "industry": "精品酒店／雞尾酒吧",
+   "brand": "Gatsby",
+   "cta": "訂房",
+   "accent": "#D4AF37",
+   "bg": "#0B0B0C",
+   "font": "'Limelight','Poiret One','Noto Serif TC',serif",
+   "blocks": 15,
+   "demo": {
+    "basic": "Demos/art-deco.html",
+    "pro": "Demos/art-deco-pro.html"
+   }
+  },
+  {
+   "slug": "art-nouveau",
+   "name": "Art Nouveau",
+   "family": "🏛️ 古典人文 Heritage & Lifestyle",
+   "industry": "香氛／天然護膚",
+   "brand": "Verveine",
+   "cta": "選香",
+   "accent": "#C98B7E",
+   "bg": "#F2E8D5",
+   "font": "'Cinzel Decorative','Noto Serif TC',serif",
+   "blocks": 15,
+   "demo": {
+    "basic": "Demos/art-nouveau.html",
+    "pro": "Demos/art-nouveau-pro.html"
+   }
+  },
+  {
+   "slug": "aurora",
+   "name": "Aurora",
+   "family": "🫧 立體質感 Tactile Surface",
+   "industry": "AI／SaaS landing",
+   "brand": "Aurora` / `Aurora AI",
+   "cta": "免費試用",
+   "accent": "#3CF2B4",
+   "bg": "#070B1A",
+   "font": "\"Inter Tight\",Inter,system-ui,sans-serif",
+   "blocks": 15,
+   "demo": {
+    "basic": "Demos/aurora.html",
+    "pro": "Demos/aurora-pro.html"
+   }
+  },
+  {
+   "slug": "baroque",
+   "name": "Baroque",
+   "family": "🏛️ 古典人文 Heritage & Lifestyle",
+   "industry": "歌劇／表演藝術場館",
+   "brand": "Orfeo",
+   "cta": "買飛",
+   "accent": "#E8C766",
+   "bg": "#120D0A",
+   "font": "'Playfair Display','Noto Serif TC',serif",
+   "blocks": 15,
+   "demo": {
+    "basic": "Demos/baroque.html",
+    "pro": "Demos/baroque-pro.html"
+   }
+  },
+  {
+   "slug": "bauhaus",
+   "name": "Bauhaus",
+   "family": "📐 秩序理性 Structure & Order",
+   "industry": "建築／設計工作室",
+   "brand": "Weimar` / `Weimar Studio",
+   "cta": "報名",
+   "accent": "#D62828",
+   "bg": "#F2F0EB",
+   "font": "Poppins,'Noto Sans TC',sans-serif",
+   "blocks": 15,
+   "demo": {
+    "basic": "Demos/bauhaus.html",
+    "pro": "Demos/bauhaus-pro.html"
+   }
+  },
+  {
+   "slug": "bento-grid",
+   "name": "Bento Grid",
+   "family": "📐 秩序理性 Structure & Order",
+   "industry": "個人作品集／產品介紹頁",
+   "brand": "Bento",
+   "cta": "睇案例",
+   "accent": "#0071E3",
+   "bg": "#F5F5F7",
+   "font": "Inter,'Noto Sans TC',sans-serif",
+   "blocks": 15,
+   "demo": {
+    "basic": "Demos/bento-grid.html",
+    "pro": "Demos/bento-grid-pro.html"
+   }
+  },
+  {
+   "slug": "bohemian",
+   "name": "Bohemian",
+   "family": "🏛️ 古典人文 Heritage & Lifestyle",
+   "industry": "手作市集／旅店",
+   "brand": "Wander",
+   "cta": "預約",
+   "accent": "#A0522D",
+   "bg": "#FAF3E7",
+   "font": "'Fraunces','Noto Serif TC',serif",
+   "blocks": 15,
+   "demo": {
+    "basic": "Demos/bohemian.html",
+    "pro": "Demos/bohemian-pro.html"
+   }
+  },
+  {
+   "slug": "brutalism",
+   "name": "Brutalism",
+   "family": "💥 張力反叛 Bold & Raw",
+   "industry": "開發者工具／開源項目",
+   "brand": "Brute` / `Brute CLI",
+   "cta": "睇 docs",
+   "accent": "#0000EE",
+   "bg": "#FFFFFF",
+   "font": "'Space Mono','Courier New',monospace",
+   "blocks": 15,
+   "demo": {
+    "basic": "Demos/brutalism.html",
+    "pro": "Demos/brutalism-pro.html"
+   }
+  },
+  {
+   "slug": "claymorphism",
+   "name": "Claymorphism",
+   "family": "🫧 立體質感 Tactile Surface",
+   "industry": "兒童 app／親子產品",
+   "brand": "Clay",
+   "cta": "免費試",
+   "accent": "#6B3FA0",
+   "bg": "#F7F3FF",
+   "font": "'Fredoka','Noto Sans TC',sans-serif",
+   "blocks": 15,
+   "demo": {
+    "basic": "Demos/claymorphism.html",
+    "pro": "Demos/claymorphism-pro.html"
+   }
+  },
+  {
+   "slug": "conceptual-sketch",
+   "name": "Conceptual Sketch",
+   "family": "✏️ 藝術手作 Artistic & Handmade",
+   "industry": "UX 顧問／設計服務",
+   "brand": "Draft",
+   "cta": "預約傾 40 分鐘",
+   "accent": "#1F4E9C",
+   "bg": "#FDFBF7",
+   "font": "'Architects Daughter','Noto Sans TC',cursive",
+   "blocks": 15,
+   "demo": {
+    "basic": "Demos/conceptual-sketch.html",
+    "pro": "Demos/conceptual-sketch-pro.html"
+   }
+  },
+  {
+   "slug": "coquette",
+   "name": "Coquette",
+   "family": "🏛️ 古典人文 Heritage & Lifestyle",
+   "industry": "甜點烘焙／婚禮小物",
+   "brand": "Ribbon",
+   "cta": "訂蛋糕",
+   "accent": "#A8405F",
+   "bg": "#FFF8F6",
+   "font": "'Bodoni Moda','Noto Serif TC',serif",
+   "blocks": 15,
+   "demo": {
+    "basic": "Demos/coquette.html",
+    "pro": "Demos/coquette-pro.html"
+   }
+  },
+  {
+   "slug": "cybercore",
+   "name": "Cybercore",
+   "family": "👾 數碼懷舊 Retro Digital",
+   "industry": "網絡安全／滲透測試",
+   "brand": "Nullsec",
+   "cta": "索取樣本報告",
+   "accent": "#00FFFF",
+   "bg": "#000018",
+   "font": "'VT323','Noto Sans TC',monospace",
+   "blocks": 15,
+   "demo": {
+    "basic": "Demos/cybercore.html",
+    "pro": "Demos/cybercore-pro.html"
+   }
+  },
+  {
+   "slug": "cyberpunk",
+   "name": "Cyberpunk",
+   "family": "👾 數碼懷舊 Retro Digital",
+   "industry": "電子音樂節／夜店",
+   "brand": "NIGHT//CITY",
+   "cta": "買飛",
+   "accent": "#00F0FF",
+   "bg": "#0A0A0F",
+   "font": "Orbitron,'Noto Sans TC',sans-serif",
+   "blocks": 15,
+   "demo": {
+    "basic": "Demos/cyberpunk.html",
+    "pro": "Demos/cyberpunk-pro.html"
+   }
+  },
+  {
+   "slug": "dark-magic-academia",
+   "name": "Dark Magic Academia",
+   "family": "🏛️ 古典人文 Heritage & Lifestyle",
+   "industry": "推理遊戲／沉浸劇場",
+   "brand": "Umbra",
+   "cta": "報名",
+   "accent": "#C6A45A",
+   "bg": "#111014",
+   "font": "'Cinzel Decorative','Noto Serif TC',serif",
+   "blocks": 15,
+   "demo": {
+    "basic": "Demos/dark-magic-academia.html",
+    "pro": "Demos/dark-magic-academia-pro.html"
+   }
+  },
+  {
+   "slug": "editorial-design",
+   "name": "Editorial Design",
+   "family": "📐 秩序理性 Structure & Order",
+   "industry": "深度報導媒體",
+   "brand": "Broadsheet",
+   "cta": "訂閱",
+   "accent": "#C8102E",
+   "bg": "#FAF7F2",
+   "font": "'Playfair Display','Noto Serif TC',serif",
+   "blocks": 15,
+   "demo": {
+    "basic": "Demos/editorial-design.html",
+    "pro": "Demos/editorial-design-pro.html"
+   }
+  },
+  {
+   "slug": "ethereal",
+   "name": "Ethereal",
+   "family": "✏️ 藝術手作 Artistic & Handmade",
+   "industry": "冥想／wellness app",
+   "brand": "Halcyon",
+   "cta": "免費試",
+   "accent": "#6B5B95",
+   "bg": "#FBFAF8",
+   "font": "'Cormorant Garamond','Noto Serif TC',serif",
+   "blocks": 15,
+   "demo": {
+    "basic": "Demos/ethereal.html",
+    "pro": "Demos/ethereal-pro.html"
+   }
+  },
+  {
+   "slug": "farmhouse-cottagecore",
+   "name": "Farmhouse & Cottagecore",
+   "family": "🏛️ 古典人文 Heritage & Lifestyle",
+   "industry": "有機農產／手作食品",
+   "brand": "Thistle",
+   "cta": "訂蔬菜箱",
+   "accent": "#A34A31",
+   "bg": "#FBF5E6",
+   "font": "Fraunces,'Noto Serif TC',serif",
+   "blocks": 15,
+   "demo": {
+    "basic": "Demos/farmhouse-cottagecore.html",
+    "pro": "Demos/farmhouse-cottagecore-pro.html"
+   }
+  },
+  {
+   "slug": "filigree",
+   "name": "Filigree",
+   "family": "🏛️ 古典人文 Heritage & Lifestyle",
+   "industry": "高級珠寶",
+   "brand": "Filigrane",
+   "cta": "預約睇貨",
+   "accent": "#E6D192",
+   "bg": "#14213D",
+   "font": "'Cormorant Garamond','Noto Serif TC',serif",
+   "blocks": 15,
+   "demo": {
+    "basic": "Demos/filigree.html",
+    "pro": "Demos/filigree-pro.html"
+   }
+  },
+  {
+   "slug": "glassmorphism",
+   "name": "Glassmorphism",
+   "family": "🫧 立體質感 Tactile Surface",
+   "industry": "SaaS 儀表板／生產力工具",
+   "brand": "Prism",
+   "cta": "免費試",
+   "accent": "#B79CFF",
+   "bg": "#1B1436",
+   "font": "'Plus Jakarta Sans','Noto Sans TC',sans-serif",
+   "blocks": 15,
+   "demo": {
+    "basic": "Demos/glassmorphism.html",
+    "pro": "Demos/glassmorphism-pro.html"
+   }
+  },
+  {
+   "slug": "gothic",
+   "name": "Gothic",
+   "family": "🏛️ 古典人文 Heritage & Lifestyle",
+   "industry": "獨立書店／黑暗文學出版",
+   "brand": "Vellum",
+   "cta": "訂書",
+   "accent": "#E9C46A",
+   "bg": "#0C0A0F",
+   "font": "'Cormorant Garamond','Noto Serif TC',serif",
+   "blocks": 15,
+   "demo": {
+    "basic": "Demos/gothic.html",
+    "pro": "Demos/gothic-pro.html"
+   }
+  },
+  {
+   "slug": "graffiti",
+   "name": "Graffiti",
+   "family": "💥 張力反叛 Bold & Raw",
+   "industry": "街頭服飾／滑板",
+   "brand": "Sink` / `Sink Wears",
+   "cta": "落單",
+   "accent": "#39FF14",
+   "bg": "#141414",
+   "font": "'Permanent Marker',cursive",
+   "blocks": 15,
+   "demo": {
+    "basic": "Demos/graffiti.html",
+    "pro": "Demos/graffiti-pro.html"
+   }
+  },
+  {
+   "slug": "japandi",
+   "name": "Japandi",
+   "family": "🏛️ 古典人文 Heritage & Lifestyle",
+   "industry": "家居傢俬",
+   "brand": "Hinoki",
+   "cta": "預約睇展廳",
+   "accent": "#4A5741",
+   "bg": "#F7F4EE",
+   "font": "Jost,'Noto Sans TC',sans-serif",
+   "blocks": 15,
+   "demo": {
+    "basic": "Demos/japandi.html",
+    "pro": "Demos/japandi-pro.html"
+   }
+  },
+  {
+   "slug": "kawaii",
+   "name": "Kawaii",
+   "family": "✏️ 藝術手作 Artistic & Handmade",
+   "industry": "文具／生活雜貨",
+   "brand": "Momo` / `Momo Club",
+   "cta": "拎試用裝",
+   "accent": "#FF7FAE",
+   "bg": "#FFF7FA",
+   "font": "\"Mochiy Pop One\",\"M PLUS Rounded 1c\",sans-serif",
+   "blocks": 15,
+   "demo": {
+    "basic": "Demos/kawaii.html",
+    "pro": "Demos/kawaii-pro.html"
+   }
+  },
+  {
+   "slug": "kitsch",
+   "name": "Kitsch",
+   "family": "💥 張力反叛 Bold & Raw",
+   "industry": "Gen Z 潮流品牌",
+   "brand": "Tacky` / `Tacky Mart",
+   "cta": "入手",
+   "accent": "#FF5FA2",
+   "bg": "linear-gradient(135deg,#FF5FA2,#FFC700 55%,#1DD3B0)",
+   "font": "Shrikhand,Lobster,cursive",
+   "blocks": 15,
+   "demo": {
+    "basic": "Demos/kitsch.html",
+    "pro": "Demos/kitsch-pro.html"
+   }
+  },
+  {
+   "slug": "light-academia",
+   "name": "Light Academia",
+   "family": "🏛️ 古典人文 Heritage & Lifestyle",
+   "industry": "語言學校／補習",
+   "brand": "Lyceum",
+   "cta": "預約試堂",
+   "accent": "#4F5A3D",
+   "bg": "#F8F3E9",
+   "font": "'Cormorant Garamond','Noto Serif TC',serif",
+   "blocks": 15,
+   "demo": {
+    "basic": "Demos/light-academia.html",
+    "pro": "Demos/light-academia-pro.html"
+   }
+  },
+  {
+   "slug": "luxury-typography",
+   "name": "Luxury Typography",
+   "family": "🏛️ 古典人文 Heritage & Lifestyle",
+   "industry": "高端時裝",
+   "brand": "Maison",
+   "cta": "預約私人導購",
+   "accent": "#7A5F2A",
+   "bg": "#F5F1EA",
+   "font": "'Bodoni Moda','Noto Serif TC',serif",
+   "blocks": 15,
+   "demo": {
+    "basic": "Demos/luxury-typography.html",
+    "pro": "Demos/luxury-typography-pro.html"
+   }
+  },
+  {
+   "slug": "maximalism",
+   "name": "Maximalism",
+   "family": "💥 張力反叛 Bold & Raw",
+   "industry": "品牌體驗 agency",
+   "brand": "Carnival",
+   "cta": "開始對話",
+   "accent": "#FFD60A",
+   "bg": "#6A4C93",
+   "font": "'Bricolage Grotesque','Noto Sans TC',sans-serif",
+   "blocks": 15,
+   "demo": {
+    "basic": "Demos/maximalism.html",
+    "pro": "Demos/maximalism-pro.html"
+   }
+  },
+  {
+   "slug": "memphis",
+   "name": "Memphis",
+   "family": "💥 張力反叛 Bold & Raw",
+   "industry": "活動／音樂節",
+   "brand": "Milano` / `Milano Fest",
+   "cta": "買飛",
+   "accent": "#FF6FB5",
+   "bg": "#FFFFFF",
+   "font": "Bungee,Poppins,sans-serif",
+   "blocks": 15,
+   "demo": {
+    "basic": "Demos/memphis.html",
+    "pro": "Demos/memphis-pro.html"
+   }
+  },
+  {
+   "slug": "mid-century",
+   "name": "Mid-Century",
+   "family": "🏛️ 古典人文 Heritage & Lifestyle",
+   "industry": "復古 hi-fi／音響品牌",
+   "brand": "Sonor",
+   "cta": "預約試聽",
+   "accent": "#A34A17",
+   "bg": "#F4ECD8",
+   "font": "'Josefin Sans','Noto Sans TC',sans-serif",
+   "blocks": 15,
+   "demo": {
+    "basic": "Demos/mid-century.html",
+    "pro": "Demos/mid-century-pro.html"
+   }
+  },
+  {
+   "slug": "minimalism",
+   "name": "Minimalism",
+   "family": "📐 秩序理性 Structure & Order",
+   "industry": "生產力 app",
+   "brand": "Plain",
+   "cta": "免費試",
+   "accent": "#0B57D0",
+   "bg": "#FFFFFF",
+   "font": "Inter,'Noto Sans TC',sans-serif",
+   "blocks": 15,
+   "demo": {
+    "basic": "Demos/minimalism.html",
+    "pro": "Demos/minimalism-pro.html"
+   }
+  },
+  {
+   "slug": "mixed-media",
+   "name": "Mixed Media",
+   "family": "✏️ 藝術手作 Artistic & Handmade",
+   "industry": "獨立雜誌／出版",
+   "brand": "Collage` / `Collage Press",
+   "cta": "訂閱",
+   "accent": "#C2331F",
+   "bg": "#F1ECE2",
+   "font": "Anton,Impact,sans-serif",
+   "blocks": 15,
+   "demo": {
+    "basic": "Demos/mixed-media.html",
+    "pro": "Demos/mixed-media-pro.html"
+   }
+  },
+  {
+   "slug": "modular-typography",
+   "name": "Modular Typography",
+   "family": "📐 秩序理性 Structure & Order",
+   "industry": "設計工作室／字體廠",
+   "brand": "Modular` / `Modular Grid",
+   "cta": "睇系統",
+   "accent": "#0B5FFF",
+   "bg": "#FFFFFF",
+   "font": "'Space Grotesk','Noto Sans TC',sans-serif",
+   "blocks": 15,
+   "demo": {
+    "basic": "Demos/modular-typography.html",
+    "pro": "Demos/modular-typography-pro.html"
+   }
+  },
+  {
+   "slug": "mystical-western",
+   "name": "Mystical Western",
+   "family": "🏛️ 古典人文 Heritage & Lifestyle",
+   "industry": "精釀烈酒",
+   "brand": "Sundown",
+   "cta": "訂購",
+   "accent": "#9E4522",
+   "bg": "#1C2340",
+   "font": "Rye,'Noto Serif TC',serif",
+   "blocks": 15,
+   "demo": {
+    "basic": "Demos/mystical-western.html",
+    "pro": "Demos/mystical-western-pro.html"
+   }
+  },
+  {
+   "slug": "nautical",
+   "name": "Nautical",
+   "family": "🏛️ 古典人文 Heritage & Lifestyle",
+   "industry": "海鮮餐廳／海島旅遊",
+   "brand": "Harbour",
+   "cta": "訂位",
+   "accent": "#C8102E",
+   "bg": "#F3EEE3",
+   "font": "'Playfair Display','Noto Serif TC',serif",
+   "blocks": 15,
+   "demo": {
+    "basic": "Demos/nautical.html",
+    "pro": "Demos/nautical-pro.html"
+   }
+  },
+  {
+   "slug": "neo-brutalism",
+   "name": "Neo-Brutalism",
+   "family": "💥 張力反叛 Bold & Raw",
+   "industry": "創作者平台／作品集 hosting",
+   "brand": "Harsh",
+   "cta": "開免費戶口",
+   "accent": "#2F5BFF",
+   "bg": "#FFFDF5",
+   "font": "'Archivo Black','Noto Sans TC',sans-serif",
+   "blocks": 15,
+   "demo": {
+    "basic": "Demos/neo-brutalism.html",
+    "pro": "Demos/neo-brutalism-pro.html"
+   }
+  },
+  {
+   "slug": "neo-frutiger-aero",
+   "name": "Neo Frutiger Aero",
+   "family": "👾 數碼懷舊 Retro Digital",
+   "industry": "消費科技／SaaS",
+   "brand": "Aero` / `Aero Drive",
+   "cta": "即刻試",
+   "accent": "#1B9FD8",
+   "bg": "#E6F7FF",
+   "font": "'Varela Round',sans-serif",
+   "blocks": 15,
+   "demo": {
+    "basic": "Demos/neo-frutiger-aero.html",
+    "pro": "Demos/neo-frutiger-aero-pro.html"
+   }
+  },
+  {
+   "slug": "neoclassical",
+   "name": "Neoclassical",
+   "family": "🏛️ 古典人文 Heritage & Lifestyle",
+   "industry": "博物館／文化機構",
+   "brand": "Athenaeum",
+   "cta": "買飛",
+   "accent": "#1F2A44",
+   "bg": "#F4F1EA",
+   "font": "Cinzel,'Noto Serif TC',serif",
+   "blocks": 15,
+   "demo": {
+    "basic": "Demos/neoclassical.html",
+    "pro": "Demos/neoclassical-pro.html"
+   }
+  },
+  {
+   "slug": "neumorphism",
+   "name": "Neumorphism",
+   "family": "🫧 立體質感 Tactile Surface",
+   "industry": "家用音響控制 app",
+   "brand": "Softone",
+   "cta": "免費試",
+   "accent": "#4F46D6",
+   "bg": "#E0E5EC",
+   "font": "Poppins,'Noto Sans TC',sans-serif",
+   "blocks": 15,
+   "demo": {
+    "basic": "Demos/neumorphism.html",
+    "pro": "Demos/neumorphism-pro.html"
+   }
+  },
+  {
+   "slug": "pixel-art",
+   "name": "Pixel Art",
+   "family": "👾 數碼懷舊 Retro Digital",
+   "industry": "獨立遊戲",
+   "brand": "Pixelco",
+   "cta": "加入願望清單",
+   "accent": "#FFEC27",
+   "bg": "#1D2B53",
+   "font": "'Press Start 2P','Noto Sans TC',monospace",
+   "blocks": 15,
+   "demo": {
+    "basic": "Demos/pixel-art.html",
+    "pro": "Demos/pixel-art-pro.html"
+   }
+  },
+  {
+   "slug": "pointillism",
+   "name": "Pointillism",
+   "family": "✏️ 藝術手作 Artistic & Handmade",
+   "industry": "手作／藝術品牌",
+   "brand": "Stipple` / `Stipple Print",
+   "cta": "買作品",
+   "accent": "#7FB3D5",
+   "bg": "#FBF8F1",
+   "font": "Fraunces,'DM Serif Display',serif",
+   "blocks": 15,
+   "demo": {
+    "basic": "Demos/pointillism.html",
+    "pro": "Demos/pointillism-pro.html"
+   }
+  },
+  {
+   "slug": "pop-art",
+   "name": "Pop Art",
+   "family": "💥 張力反叛 Bold & Raw",
+   "industry": "零售促銷／快閃",
+   "brand": "Pow` / `Pow Store",
+   "cta": "BUY NOW",
+   "accent": "#C4001F",
+   "bg": "#FFFFFF",
+   "font": "Bangers,sans-serif",
+   "blocks": 15,
+   "demo": {
+    "basic": "Demos/pop-art.html",
+    "pro": "Demos/pop-art-pro.html"
+   }
+  },
+  {
+   "slug": "rebus",
+   "name": "Rebus",
+   "family": "✏️ 藝術手作 Artistic & Handmade",
+   "industry": "教育教材（語文／STEM）",
+   "brand": "Rebus Lab` / `Rebus Cards",
+   "cta": "解一題",
+   "accent": "#0F62FE",
+   "bg": "#FFFFFF",
+   "font": "'IBM Plex Sans','Archivo Black',sans-serif",
+   "blocks": 15,
+   "demo": {
+    "basic": "Demos/rebus.html",
+    "pro": "Demos/rebus-pro.html"
+   }
+  },
+  {
+   "slug": "scrapbook",
+   "name": "Scrapbook",
+   "family": "✏️ 藝術手作 Artistic & Handmade",
+   "industry": "婚禮攝影／活動紀錄",
+   "brand": "Snapbook",
+   "cta": "預約拍攝",
+   "accent": "#B8433C",
+   "bg": "#FDFCF8",
+   "font": "'Caveat','Noto Sans TC',cursive",
+   "blocks": 15,
+   "demo": {
+    "basic": "Demos/scrapbook.html",
+    "pro": "Demos/scrapbook-pro.html"
+   }
+  },
+  {
+   "slug": "shabby-chic",
+   "name": "Shabby Chic",
+   "family": "🏛️ 古典人文 Heritage & Lifestyle",
+   "industry": "婚禮佈置／家品店",
+   "brand": "Rosewood",
+   "cta": "預約場地佈置",
+   "accent": "#8E5B5B",
+   "bg": "#FAF6F0",
+   "font": "'Playfair Display','Noto Serif TC',serif",
+   "blocks": 15,
+   "demo": {
+    "basic": "Demos/shabby-chic.html",
+    "pro": "Demos/shabby-chic-pro.html"
+   }
+  },
+  {
+   "slug": "south-west-wild-west",
+   "name": "South West & Wild West",
+   "family": "🏛️ 古典人文 Heritage & Lifestyle",
+   "industry": "戶外用品／露營",
+   "brand": "Cactus",
+   "cta": "訂購裝備",
+   "accent": "#8E3B26",
+   "bg": "#EBD5B3",
+   "font": "'Alfa Slab One','Noto Sans TC',serif",
+   "blocks": 15,
+   "demo": {
+    "basic": "Demos/south-west-wild-west.html",
+    "pro": "Demos/south-west-wild-west-pro.html"
+   }
+  },
+  {
+   "slug": "steampunk",
+   "name": "Steampunk",
+   "family": "🏛️ 古典人文 Heritage & Lifestyle",
+   "industry": "手工錶／鐘錶維修",
+   "brand": "Cogwheel",
+   "cta": "預約維修",
+   "accent": "#E0B96A",
+   "bg": "#23372E",
+   "font": "'IM Fell English SC','Noto Serif TC',serif",
+   "blocks": 15,
+   "demo": {
+    "basic": "Demos/steampunk.html",
+    "pro": "Demos/steampunk-pro.html"
+   }
+  },
+  {
+   "slug": "surrealism",
+   "name": "Surrealism",
+   "family": "✏️ 藝術手作 Artistic & Handmade",
+   "industry": "沉浸式藝術展",
+   "brand": "Reverie",
+   "cta": "買飛",
+   "accent": "#2F5C93",
+   "bg": "#BEDDF1",
+   "font": "'Cormorant','Noto Serif TC',serif",
+   "blocks": 15,
+   "demo": {
+    "basic": "Demos/surrealism.html",
+    "pro": "Demos/surrealism-pro.html"
+   }
+  },
+  {
+   "slug": "swiss-design",
+   "name": "Swiss Design",
+   "family": "📐 秩序理性 Structure & Order",
+   "industry": "銀行／金融服務",
+   "brand": "Helvet",
+   "cta": "預約理財顧問",
+   "accent": "#C81E1E",
+   "bg": "#FFFFFF",
+   "font": "Inter,'Noto Sans TC',sans-serif",
+   "blocks": 15,
+   "demo": {
+    "basic": "Demos/swiss-design.html",
+    "pro": "Demos/swiss-design-pro.html"
+   }
+  },
+  {
+   "slug": "synthwave",
+   "name": "Synthwave",
+   "family": "👾 數碼懷舊 Retro Digital",
+   "industry": "復古賽車遊戲",
+   "brand": "Neon Drift",
+   "cta": "加入願望清單",
+   "accent": "#FF2E97",
+   "bg": "#0D0221",
+   "font": "Orbitron,'Noto Sans TC',sans-serif",
+   "blocks": 15,
+   "demo": {
+    "basic": "Demos/synthwave.html",
+    "pro": "Demos/synthwave-pro.html"
+   }
+  },
+  {
+   "slug": "tenebrism",
+   "name": "Tenebrism",
+   "family": "✏️ 藝術手作 Artistic & Handmade",
+   "industry": "高級餐飲／威士忌吧",
+   "brand": "Lumen` / `Lumen Table",
+   "cta": "訂位",
+   "accent": "#F2C57C",
+   "bg": "#050505",
+   "font": "'Playfair Display',serif",
+   "blocks": 15,
+   "demo": {
+    "basic": "Demos/tenebrism.html",
+    "pro": "Demos/tenebrism-pro.html"
+   }
+  },
+  {
+   "slug": "utilitarian",
+   "name": "Utilitarian",
+   "family": "📐 秩序理性 Structure & Order",
+   "industry": "工業／製造 b2b",
+   "brand": "Util` / `Util Spec",
+   "cta": "索取報價",
+   "accent": "#1A4FD6",
+   "bg": "#FFFFFF",
+   "font": "Inter,'Noto Sans TC',sans-serif",
+   "blocks": 15,
+   "demo": {
+    "basic": "Demos/utilitarian.html",
+    "pro": "Demos/utilitarian-pro.html"
+   }
+  },
+  {
+   "slug": "vaporwave",
+   "name": "Vaporwave",
+   "family": "👾 數碼懷舊 Retro Digital",
+   "industry": "獨立音樂／網上電台",
+   "brand": "Virtual` / `Virtual Plaza",
+   "cta": "入商場",
+   "accent": "#01CDFE",
+   "bg": "linear-gradient(180deg,#14082B,#2B1055 52%,#46197A)",
+   "font": "VT323,monospace",
+   "blocks": 15,
+   "demo": {
+    "basic": "Demos/vaporwave.html",
+    "pro": "Demos/vaporwave-pro.html"
+   }
+  },
+  {
+   "slug": "victorian",
+   "name": "Victorian",
+   "family": "🏛️ 古典人文 Heritage & Lifestyle",
+   "industry": "茶葉品牌",
+   "brand": "Thornfield",
+   "cta": "訂購茶葉",
+   "accent": "#6D1A36",
+   "bg": "#F4EBD9",
+   "font": "'Cormorant Garamond','Noto Serif TC',serif",
+   "blocks": 15,
+   "demo": {
+    "basic": "Demos/victorian.html",
+    "pro": "Demos/victorian-pro.html"
+   }
+  },
+  {
+   "slug": "wabi-sabi",
+   "name": "Wabi-Sabi",
+   "family": "🏛️ 古典人文 Heritage & Lifestyle",
+   "industry": "陶藝工作室",
+   "brand": "Kanso",
+   "cta": "預約工作坊",
+   "accent": "#8A5636",
+   "bg": "#F2EDE4",
+   "font": "Cormorant,'Noto Serif TC',serif",
+   "blocks": 15,
+   "demo": {
+    "basic": "Demos/wabi-sabi.html",
+    "pro": "Demos/wabi-sabi-pro.html"
+   }
+  },
+  {
+   "slug": "y2k-aesthetic",
+   "name": "Y2K Aesthetic",
+   "family": "👾 數碼懷舊 Retro Digital",
+   "industry": "潮流配飾／手機配件",
+   "brand": "Bubble",
+   "cta": "落單",
+   "accent": "#D10070",
+   "bg": "#E1F5FE",
+   "font": "Syne,'Noto Sans TC',sans-serif",
+   "blocks": 15,
+   "demo": {
+    "basic": "Demos/y2k-aesthetic.html",
+    "pro": "Demos/y2k-aesthetic-pro.html"
+   }
+  }
+ ]
+}

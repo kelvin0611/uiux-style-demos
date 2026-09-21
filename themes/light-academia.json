@@ -1,0 +1,56 @@
+{
+ "slug": "light-academia",
+ "name": "Light Academia",
+ "cn": "",
+ "family": "🏛️ 古典人文 Heritage & Lifestyle",
+ "industry": "語言學校／補習",
+ "brand": "Lyceum",
+ "cta": "預約試堂",
+ "sections": "courses`：課程 · `tutors`：師資 · `venue`：校舍資訊",
+ "css_variables": {
+  "--bg": "#F8F3E9",
+  "--fg": "#3E3328",
+  "--muted": "#5B4B3B",
+  "--surface": "#EFE7D6",
+  "--border": "#D9CCB4",
+  "--accent": "#4F5A3D",
+  "--accent-fg": "#FFFFFF",
+  "--accent-grad": "linear-gradient(90deg,#B79C7B,#8A8F6A)",
+  "--radius": "6px",
+  "--radius-sm": "4px",
+  "--shadow": "0 14px 34px rgba(62,51,40,.10)",
+  "--btn-shadow": "0 2px 0 rgba(62,51,40,.16)",
+  "--art-bg": "linear-gradient(115deg,rgba(255,236,190,.45) 0 40px,transparent 40px 90px),linear-gradient(180deg,#EADFCB,#C7D6DE)",
+  "--media-bg": "linear-gradient(180deg,#EFE7D6,#D9CCB4)",
+  "--cta-bg": "#EFE7D6",
+  "--input-bg": "#FFFFFF",
+  "--ok": "#3F6B4E",
+  "--warn": "#A6483A",
+  "--font-display": "'Cormorant Garamond','Noto Serif TC',serif",
+  "--font-body": "Lora,'Noto Serif TC',serif",
+  "--font-mono": "ui-monospace,'SF Mono',Menlo,monospace",
+  "--focus-ring": "var(--accent)"
+ },
+ "fonts": {
+  "google_url": "https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;1,500&family=Lora:ital@0;1&family=Homemade+Apple&display=swap",
+  "display": "'Cormorant Garamond','Noto Serif TC',serif",
+  "body": "Lora,'Noto Serif TC',serif",
+  "mono": "ui-monospace,'SF Mono',Menlo,monospace"
+ },
+ "radius": {
+  "base": "6px",
+  "sm": "4px"
+ },
+ "shadow": {
+  "card": "0 14px 34px rgba(62,51,40,.10)",
+  "button": "0 2px 0 rgba(62,51,40,.16)"
+ },
+ "focus_ring": "var(--accent)",
+ "motion": {},
+ "demo": {
+  "basic": "Demos/light-academia.html",
+  "pro": "Demos/light-academia-pro.html"
+ },
+ "snippet_css": ":root{\n  --bg: #F8F3E9;\n  --fg: #3E3328;\n  --muted: #5B4B3B;\n  --surface: #EFE7D6;\n  --border: #D9CCB4;\n  --accent: #4F5A3D;\n  --accent-fg: #FFFFFF;\n  --accent-grad: linear-gradient(90deg,#B79C7B,#8A8F6A);\n  --radius: 6px;\n  --radius-sm: 4px;\n  --shadow: 0 14px 34px rgba(62,51,40,.10);\n  --btn-shadow: 0 2px 0 rgba(62,51,40,.16);\n  --art-bg: linear-gradient(115deg,rgba(255,236,190,.45) 0 40px,transparent 40px 90px),linear-gradient(180deg,#EADFCB,#C7D6DE);\n  --media-bg: linear-gradient(180deg,#EFE7D6,#D9CCB4);\n  --cta-bg: #EFE7D6;\n  --input-bg: #FFFFFF;\n  --ok: #3F6B4E;\n  --warn: #A6483A;\n  --font-display: 'Cormorant Garamond','Noto Serif TC',serif;\n  --font-body: Lora,'Noto Serif TC',serif;\n  --font-mono: ui-monospace,'SF Mono',Menlo,monospace;\n  --focus-ring: var(--accent);\n}",
+ "snippet_tailwind": "// tailwind.config.js → theme.extend\n{\n  \"colors\": {\n    \"bg\": \"#F8F3E9\",\n    \"fg\": \"#3E3328\",\n    \"muted\": \"#5B4B3B\",\n    \"surface\": \"#EFE7D6\",\n    \"border\": \"#D9CCB4\",\n    \"accent\": \"#4F5A3D\",\n    \"accent-fg\": \"#FFFFFF\",\n    \"ok\": \"#3F6B4E\",\n    \"warn\": \"#A6483A\",\n    \"focus-ring\": \"var(--accent)\"\n  },\n  \"borderRadius\": {\n    \"DEFAULT\": \"4px\",\n    \"lg\": \"6px\"\n  },\n  \"fontFamily\": {\n    \"display\": [\n      \"'Cormorant Garamond','Noto Serif TC',serif\"\n    ],\n    \"body\": [\n      \"Lora,'Noto Serif TC',serif\"\n    ]\n  }\n}"
+}

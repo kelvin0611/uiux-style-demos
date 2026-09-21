@@ -1,0 +1,115 @@
+<!doctype html><html lang="zh-Hant-HK"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Cyberpunk  · 風格卡</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700;900&family=Rajdhani:wght@500;700&family=Share+Tech+Mono&display=swap">
+<link rel="stylesheet" href="../blocks.css">
+<style>:root{--bg:#0A0A0F;--fg:#E0E0E0;--muted:#A8A8BE;--surface:#12121A;--border:#2A2A3A;--accent:#00F0FF;--accent-fg:#04161A;--radius:2px;--radius-sm:2px;--shadow:0 0 0 1px rgba(0,240,255,.18),0 12px 30px rgba(0,0,0,.55);--btn-shadow:0 0 0 1px rgba(0,240,255,.55),0 0 18px rgba(0,240,255,.35);--art-bg:linear-gradient(135deg,rgba(0,240,255,.22),rgba(255,0,60,.22)),repeating-linear-gradient(0deg,transparent 0 3px,rgba(0,240,255,.10) 3px 4px);--media-bg:linear-gradient(180deg,#12121A,#0A0A0F);--cta-bg:linear-gradient(180deg,#12121A,#0A0A0F);--input-bg:#0E0E16;--ok:#46E08A;--warn:#FF003C;--font-display:Orbitron,'Noto Sans TC',sans-serif;--font-body:Rajdhani,'Noto Sans TC',sans-serif;--font-mono:'Share Tech Mono',ui-monospace,monospace;--focus-ring:var(--accent);}
+
+
+body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;
+ background:repeating-linear-gradient(0deg,rgba(0,240,255,.05) 0 1px,transparent 1px 3px)}
+.card,.plan,.quote,.tile-c,.mock,.rows,.log{border:1px solid var(--border);background:var(--surface);
+ clip-path:polygon(0 12px,12px 0,100% 0,100% calc(100% - 12px),calc(100% - 12px) 100%,0 100%)}
+.sec-title{font-family:var(--font-display);text-transform:uppercase;letter-spacing:.08em;color:var(--accent)}
+.sec-sub{font-family:var(--font-mono);font-size:13px;letter-spacing:.04em}
+.hero h1{font-family:var(--font-display);font-weight:900;letter-spacing:.02em;
+ text-shadow:0 0 18px rgba(0,240,255,.45)}
+.hero .eyebrow{font-family:var(--font-mono);color:var(--accent);letter-spacing:.16em;text-transform:uppercase}
+.btn{border-radius:0;font-family:var(--font-mono);text-transform:uppercase;letter-spacing:.1em}
+.btn-primary{background:var(--accent);color:var(--accent-fg);box-shadow:var(--btn-shadow)}
+.btn-secondary{background:transparent;color:var(--accent);border:1px solid var(--accent)}
+.chip{border-radius:0;background:#12121A;border:1px solid var(--border);font-family:var(--font-mono);font-size:12px}
+.avatar{border-radius:0;background:var(--accent);color:var(--accent-fg);font-family:var(--font-mono)}
+.tag{background:#FCEE0A;color:#0A0A0F;border-radius:0;font-family:var(--font-mono);font-size:11px}
+.plan.featured{outline:1px solid var(--accent);outline-offset:3px;box-shadow:var(--btn-shadow)}
+.tile-c .ph{background-image:none;background:#12121A;border-bottom:1px solid var(--border);
+ font-family:var(--font-display);font-size:34px;color:var(--accent);display:flex;align-items:center;justify-content:center}
+.rows article:nth-child(odd),.log article:nth-child(odd){background:#0E0E16}
+.rows article b,.log article b{font-family:var(--font-mono);color:var(--accent)}
+.cost,.stat .num{font-family:var(--font-mono);color:var(--accent)}
+.daygrid h3{font-family:var(--font-mono);color:var(--accent);text-transform:uppercase;letter-spacing:.1em}
+.daygrid li span{font-family:var(--font-mono);color:var(--muted)}
+.hero::after{content:"SYS · LIVE";position:absolute;right:4%;top:30px;font:400 12px 'Share Tech Mono',monospace;
+ color:#FF003C;letter-spacing:.24em;pointer-events:none}
+
+/* ---- 風格卡專用 ---- */
+body{background:var(--bg);color:var(--fg);font-family:var(--font-body)}
+.cp{max-width:1080px;margin:0 auto;padding:clamp(18px,4vw,40px)}
+.cp-head{border-bottom:2px solid var(--border);padding-bottom:18px;margin-bottom:26px}
+.cp-head h1{margin:.1em 0 .2em;font-family:var(--font-display);font-size:clamp(28px,5vw,46px)}
+.cp-meta{color:var(--muted);font-size:14px}
+.cp-tag{display:inline-block;border:1px solid var(--border);border-radius:999px;padding:3px 10px;font-size:12px;color:var(--muted);margin:0 6px 6px 0}
+.cp h2{font-family:var(--font-display);font-size:clamp(18px,2.4vw,24px);margin:34px 0 6px;padding-bottom:6px;border-bottom:1px solid var(--border)}
+.cp p.desc{color:var(--muted);margin:6px 0 14px;max-width:70ch}
+.sws{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:10px}
+.sw{border:1px solid var(--border);border-radius:10px;padding:9px;background:var(--surface);display:grid;gap:4px}
+.sw i{display:block;height:44px;border-radius:7px;border:1px solid var(--border)}
+.sw b{font-size:13px}.sw code{font:12px var(--font-mono,monospace);color:var(--muted)}
+.sw span{font-size:11px;color:var(--muted)}
+.typo div{border:1px solid var(--border);border-radius:10px;padding:12px 14px;margin-bottom:8px;background:var(--surface)}
+.typo .d{font-family:var(--font-display);font-size:32px;line-height:1.15}
+.typo .b{font-family:var(--font-body);font-size:16px}
+.typo .m{font-family:var(--font-mono,monospace);font-size:14px}
+.typo small{color:var(--muted);font-size:11px;display:block;margin-top:6px}
+.row{display:flex;gap:12px;flex-wrap:wrap;align-items:flex-start}
+.preview{border:1px dashed var(--border);border-radius:12px;overflow:hidden;margin-bottom:12px}
+.preview .lbl{font:11px var(--font-mono,monospace);color:var(--muted);padding:6px 10px;border-bottom:1px dashed var(--border)}
+.preview > div:last-child{transform-origin:top left}
+.cp-foot{margin-top:36px;padding-top:14px;border-top:1px solid var(--border);color:var(--muted);font-size:13px;display:flex;gap:14px;flex-wrap:wrap}
+.cp a{color:var(--accent)}
+@media print{.noprint{display:none}body{background:#fff}.cp{max-width:none;padding:0}.preview{page-break-inside:avoid}}
+</style></head><body>
+<div class="cp">
+  <div class="cp-head">
+    <span class="cp-tag">👾 數碼懷舊 Retro Digital</span><span class="cp-tag">15 個 block</span><span class="cp-tag">—</span>
+    <h1> Cyberpunk <span style="font-size:.6em;color:var(--muted)"></span></h1>
+    <p class="desc" style="font-size:17px;color:var(--fg)">High tech, low life」—— 純黑底、青黃紅霓虹、切角 HUD 框、mono 字、glitch、日文字，好似戰術頭盔入面嘅介面。</p>
+    <p class="cp-meta">示範品牌 <b>NIGHT//CITY</b> · 主要 CTA「買飛」· 行業：電子音樂節／夜店</p>
+  </div>
+
+  <h2>1 · 色票 Palette</h2>
+  <p class="desc">所有元件都只可以用呢組 token（換色 = 改呢幾行）。</p>
+  <div class="sws"><div class="sw"><i style="background:#0A0A0F"></i><b>--bg</b><code>#0A0A0F</code><span>底色 Background</span></div><div class="sw"><i style="background:#E0E0E0"></i><b>--fg</b><code>#E0E0E0</code><span>主文字 Text</span></div><div class="sw"><i style="background:#A8A8BE"></i><b>--muted</b><code>#A8A8BE</code><span>次要文字 Muted</span></div><div class="sw"><i style="background:#12121A"></i><b>--surface</b><code>#12121A</code><span>卡片面 Surface</span></div><div class="sw"><i style="background:#2A2A3A"></i><b>--border</b><code>#2A2A3A</code><span>分隔線 Border</span></div><div class="sw"><i style="background:#00F0FF"></i><b>--accent</b><code>#00F0FF</code><span>強調色 Accent</span></div><div class="sw"><i style="background:#04161A"></i><b>--accent-fg</b><code>#04161A</code><span>強調上文字</span></div><div class="sw"><i style="background:#46E08A"></i><b>--ok</b><code>#46E08A</code><span>成功 Success</span></div><div class="sw"><i style="background:#FF003C"></i><b>--warn</b><code>#FF003C</code><span>警告 Warning</span></div></div>
+
+  <h2>2 · 字體 Typography</h2>
+  <p class="desc">最多兩個字重；標題 Orbitron,&#x27;Noto Sans TC&#x27;,sans-serif、正文 Rajdhani,&#x27;Noto Sans TC&#x27;,sans-serif。</p>
+  <div class="typo">
+    <div class="d">一頁講清成件事 <small>Display · Orbitron,&#x27;Noto Sans TC&#x27;,sans-serif</small></div>
+    <div class="b">正文用 Rajdhani,&#x27;Noto Sans TC&#x27;,sans-serif：16px、行高 1.65，唔會超過 70 個中文字一行。<small>Body</small></div>
+    <div class="m">HK$1,280 · 2026-09-22 · #REF-0042 <small>Mono／數字對齊（&#x27;Share Tech Mono&#x27;,ui-monospace,monospace）</small></div>
+  </div>
+
+  <h2>3 · 按鈕 Buttons</h2>
+  <p class="desc">11 個狀態齊：hover 升起、active 壓落、focus 外框（對比 ≥3:1）、disabled 變淡、loading／success。</p>
+  <div class="btn-row"><div class="state"><button class="btn btn-primary " type="button">Primary</button><small>Default</small></div><div class="state"><button class="btn btn-primary is-hover" type="button">Primary</button><small>Hover</small></div><div class="state"><button class="btn btn-primary is-active" type="button">Primary</button><small>Active</small></div><div class="state"><button class="btn btn-primary is-focus" type="button">Primary</button><small>Focus</small></div><div class="state"><button class="btn btn-primary " type="button" disabled>Primary</button><small>Disabled</small></div><div class="state"><button class="btn btn-primary btn-sm" type="button">Small</button><small>btn-sm</small></div><div class="state"><button class="btn btn-primary btn-lg" type="button">Large</button><small>btn-lg</small></div><div class="state"><button class="btn btn-primary btn-secondary" type="button">Secondary</button><small>Secondary</small></div></div>
+
+  <h2>4 · 組件 Components</h2>
+  <div class="row">
+    <article class="card" style="flex:1 1 260px"><span class="ico" aria-hidden="true">◆</span><h3>卡片標題</h3><p>一句講清重點，唔超過兩行。</p></article>
+    <div class="plan" style="flex:1 1 240px"><span class="tag">最受歡迎</span><h3>方案名</h3><div class="price">HK$1,280<small>/月</small></div>
+      <ul><li>包含咩</li><li>包含咩</li></ul><a class="btn btn-primary" href="#">揀呢個</a></div>
+    <blockquote class="quote" style="flex:1 1 260px">客人講嘅一句真話。<span class="avatar">阿</span><b>阿文</b><span>客戶 · 角色</span></blockquote>
+  </div>
+
+  <h2>5 · 真實 section 預覽</h2>
+  <p class="desc">以下係由正式 demo 直接抽落嚟（唔係另畫），所以卡同成品一定一致。</p>
+  <div class="preview"><div class="lbl">hero</div><div><section class="block hero" id="hero"><div class="wrap hero-grid"><div><span class="eyebrow rv">香港 · 11 月 14–15 日 · 兩日兩舞台</span><h1>兩日十六組</h1><p class="lead rv">16 組 DJ 同 live act，兩個舞台輪住開；最早 20:00 入場，最遲 04:00 收場。</p><div class="actions rv"><a class="btn btn-primary" href="#cta">買飛 <span class="i" aria-hidden="true">→</span></a><a class="btn btn-secondary" href="#product">睇陣容</a></div><p class="note rv">HK$880 起 · 18 歲以上 · 要帶身份證</p></div><figure class="hero-art rv"><div class="deco" aria-hidden="true" style="inset:0;background:linear-gradient(135deg,rgba(0,240,255,.22),rgba(255,0,60,.22)),repeating-linear-gradient(0deg,transparent 0 3px,rgba(0,240,255,.10) 3px 4px)"></div><figcaption>現場相片位（生成 media/cyberpunk-hero.jpg 自動代入）</figcaption></figure></div></section></div></div><div class="preview"><div class="lbl">pricing</div><div><section class="block" id="pricing"><div class="wrap"><h2 class="sec-title">三種買法</h2><p class="sec-sub">全部已含手續費；11 月 1 日之後加價。</p><div class="pricing"><article class="plan rv"><h3>單日票</h3><div class="price">HK$680 <small>/ 張</small></div><p>揀 Day 1 或 Day 2。</p><ul><li>兩個舞台通用（當日）</li><li>20:00 開閘入場</li><li>不設退款</li><li>可加購寄存 HK$40</li></ul><a class="btn btn-secondary" href="#cta">買飛</a></article><article class="plan rv featured"><span class="tag">最多人買</span><h3>兩日通行證</h3><div class="price">HK$1,180 <small>/ 人</small></div><p>兩日都入得，最抵。</p><ul><li>Day 1 + Day 2</li><li>兩個舞台通用</li><li>優先入場通道</li><li>11 月 1 日前價</li></ul><a class="btn btn-primary" href="#cta">買飛</a></article><article class="plan rv"><h3>VIP 兩日票</h3><div class="price">HK$2,480 <small>/ 人</small></div><p>二樓觀景區同專用入口。</p><ul><li>二樓觀景區座位</li><li>專用入口唔使排隊</li><li>免費寄存 2 件</li><li>包一杯飲品</li></ul><a class="btn btn-secondary" href="#cta">買飛</a></article></div></div></section></div></div><div class="preview"><div class="lbl">venue</div><div><section class="block" id="venue"><div class="wrap"><h2 class="sec-title">場地同入場須知</h2><p class="sec-sub">地點、時間同禁止物品寫喺度。</p><ul class="infolist"><li><b>地點</b><span>九龍灣示範街 88 號 3 樓（虛構地址，示範用）</span></li><li><b>入場時間</b><span>20:00 開閘；23:30 之後唔可以再入場</span></li><li><b>年齡</b><span>18 歲以上；入場要出示身份證正本</span></li><li><b>禁止物品</b><span>玻璃樽、專業相機、外來音響；場內有免費飲水機</span></li><li><b>寄存同失物</b><span>寄存 HK$40／件；失物保留 7 日，之後銷毀</span></li></ul></div></section></div></div>
+
+  <h2>6 · 動效（Pro 版）</h2>
+  <p class="desc">基本版純 CSS；Pro 版有載入幕、入場、scroll reveal、微互動。跟系統設定「減少動態」會自動降級。</p>
+  <p style="font:13px var(--font-mono,monospace);color:var(--muted)"></p>
+
+  <h2>7 · 點用</h2>
+  <ul style="color:var(--muted);font-size:14px">
+    <li>Tokens：<code>themes/cyberpunk.json</code>（含 <code>snippet_css</code> 同 Tailwind <code>theme.extend</code>）</li>
+    <li>Demo：<a href="../cyberpunk.html">基本版</a> · <a href="../cyberpunk-pro.html">Pro 動效版</a> · <a href="../cyberpunk-pro.html?deep=1">🧪 深度效果</a></li>
+    <li>改客人內容：<code>python3 gen_project.py brief.json</code>（自動驗 WCAG 4.5:1）</li>
+  </ul>
+
+  <div class="cp-foot">
+    <button class="btn btn-primary btn-sm noprint" type="button" onclick="window.print()">🖨️ Print／存 PDF</button>
+    <a href="index.html">← 全部風格卡</a>
+    <span>UIUX Style · Cyberpunk · 示範內容全部虛構</span>
+  </div>
+</div>
+</body></html>

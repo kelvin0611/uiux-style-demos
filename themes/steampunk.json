@@ -1,0 +1,55 @@
+{
+ "slug": "steampunk",
+ "name": "Steampunk",
+ "cn": "",
+ "family": "🏛️ 古典人文 Heritage & Lifestyle",
+ "industry": "手工錶／鐘錶維修",
+ "brand": "Cogwheel",
+ "cta": "預約維修",
+ "sections": "rows`：維修服務 · `products`：零件 · `venue`：保養須知",
+ "css_variables": {
+  "--bg": "#23372E",
+  "--fg": "#EAD9B8",
+  "--muted": "#CDB893",
+  "--surface": "#2A4034",
+  "--border": "#4E3F2A",
+  "--accent": "#E0B96A",
+  "--accent-fg": "#2B1B10",
+  "--radius": "5px",
+  "--radius-sm": "3px",
+  "--shadow": "0 10px 24px rgba(0,0,0,.45),inset 0 1px 0 rgba(224,185,106,.22)",
+  "--btn-shadow": "0 4px 0 rgba(122,90,34,.9)",
+  "--art-bg": "radial-gradient(circle at 50% 45%,#E0B96A 0 16%,#B5883E 17% 24%,#23372E 25%),radial-gradient(circle at 22% 22%,#E0B96A 0 3px,transparent 4px)",
+  "--media-bg": "linear-gradient(180deg,#4A2E1F,#2B1B10)",
+  "--cta-bg": "#3A2415",
+  "--input-bg": "#1E2E26",
+  "--ok": "#7FA99B",
+  "--warn": "#D98B5F",
+  "--font-display": "'IM Fell English SC','Noto Serif TC',serif",
+  "--font-body": "'Libre Caslon Text','Noto Sans TC',serif",
+  "--font-mono": "'Special Elite',ui-monospace,monospace",
+  "--focus-ring": "var(--accent)"
+ },
+ "fonts": {
+  "google_url": "https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&family=Special+Elite&family=Libre+Caslon+Text&display=swap",
+  "display": "'IM Fell English SC','Noto Serif TC',serif",
+  "body": "'Libre Caslon Text','Noto Sans TC',serif",
+  "mono": "'Special Elite',ui-monospace,monospace"
+ },
+ "radius": {
+  "base": "5px",
+  "sm": "3px"
+ },
+ "shadow": {
+  "card": "0 10px 24px rgba(0,0,0,.45),inset 0 1px 0 rgba(224,185,106,.22)",
+  "button": "0 4px 0 rgba(122,90,34,.9)"
+ },
+ "focus_ring": "var(--accent)",
+ "motion": {},
+ "demo": {
+  "basic": "Demos/steampunk.html",
+  "pro": "Demos/steampunk-pro.html"
+ },
+ "snippet_css": ":root{\n  --bg: #23372E;\n  --fg: #EAD9B8;\n  --muted: #CDB893;\n  --surface: #2A4034;\n  --border: #4E3F2A;\n  --accent: #E0B96A;\n  --accent-fg: #2B1B10;\n  --radius: 5px;\n  --radius-sm: 3px;\n  --shadow: 0 10px 24px rgba(0,0,0,.45),inset 0 1px 0 rgba(224,185,106,.22);\n  --btn-shadow: 0 4px 0 rgba(122,90,34,.9);\n  --art-bg: radial-gradient(circle at 50% 45%,#E0B96A 0 16%,#B5883E 17% 24%,#23372E 25%),radial-gradient(circle at 22% 22%,#E0B96A 0 3px,transparent 4px);\n  --media-bg: linear-gradient(180deg,#4A2E1F,#2B1B10);\n  --cta-bg: #3A2415;\n  --input-bg: #1E2E26;\n  --ok: #7FA99B;\n  --warn: #D98B5F;\n  --font-display: 'IM Fell English SC','Noto Serif TC',serif;\n  --font-body: 'Libre Caslon Text','Noto Sans TC',serif;\n  --font-mono: 'Special Elite',ui-monospace,monospace;\n  --focus-ring: var(--accent);\n}",
+ "snippet_tailwind": "// tailwind.config.js → theme.extend\n{\n  \"colors\": {\n    \"bg\": \"#23372E\",\n    \"fg\": \"#EAD9B8\",\n    \"muted\": \"#CDB893\",\n    \"surface\": \"#2A4034\",\n    \"border\": \"#4E3F2A\",\n    \"accent\": \"#E0B96A\",\n    \"accent-fg\": \"#2B1B10\",\n    \"ok\": \"#7FA99B\",\n    \"warn\": \"#D98B5F\",\n    \"focus-ring\": \"var(--accent)\"\n  },\n  \"borderRadius\": {\n    \"DEFAULT\": \"3px\",\n    \"lg\": \"5px\"\n  },\n  \"fontFamily\": {\n    \"display\": [\n      \"'IM Fell English SC','Noto Serif TC',serif\"\n    ],\n    \"body\": [\n      \"'Libre Caslon Text','Noto Sans TC',serif\"\n    ]\n  }\n}"
+}

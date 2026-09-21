@@ -1,0 +1,55 @@
+{
+ "slug": "mixed-media",
+ "name": "Mixed Media",
+ "cn": "",
+ "family": "✏️ 藝術手作 Artistic & Handmade",
+ "industry": "獨立雜誌／出版",
+ "brand": "Collage` / `Collage Press",
+ "cta": "訂閱",
+ "sections": "",
+ "css_variables": {
+  "--bg": "#F1ECE2",
+  "--fg": "#1B1B1B",
+  "--muted": "#5A554C",
+  "--surface": "#FFFFFF",
+  "--border": "#1B1B1B",
+  "--accent": "#C2331F",
+  "--accent-fg": "#FFFFFF",
+  "--radius": "2px",
+  "--radius-sm": "2px",
+  "--shadow": "2px 3px 6px rgba(0,0,0,.22)",
+  "--btn-shadow": "2px 3px 6px rgba(0,0,0,.22)",
+  "--art-bg": "linear-gradient(135deg,#C9A77C,#C2331F 58%,#2D5BD1)",
+  "--media-bg": "linear-gradient(135deg,#C9A77C,#C2331F 58%,#2D5BD1)",
+  "--cta-bg": "#FFFFFF",
+  "--input-bg": "#F1ECE2",
+  "--ok": "#2D5BD1",
+  "--warn": "#C2331F",
+  "--font-display": "Anton,Impact,sans-serif",
+  "--font-body": "'IBM Plex Sans',Arial,sans-serif",
+  "--font-mono": "'Special Elite',Courier,monospace",
+  "--focus-ring": "var(--accent)"
+ },
+ "fonts": {
+  "google_url": "https://fonts.googleapis.com/css2?family=Anton&family=Special+Elite&family=IBM+Plex+Sans:wght@400;500;600&display=swap",
+  "display": "Anton,Impact,sans-serif",
+  "body": "'IBM Plex Sans',Arial,sans-serif",
+  "mono": "'Special Elite',Courier,monospace"
+ },
+ "radius": {
+  "base": "2px",
+  "sm": "2px"
+ },
+ "shadow": {
+  "card": "2px 3px 6px rgba(0,0,0,.22)",
+  "button": "2px 3px 6px rgba(0,0,0,.22)"
+ },
+ "focus_ring": "var(--accent)",
+ "motion": {},
+ "demo": {
+  "basic": "Demos/mixed-media.html",
+  "pro": "Demos/mixed-media-pro.html"
+ },
+ "snippet_css": ":root{\n  --bg: #F1ECE2;\n  --fg: #1B1B1B;\n  --muted: #5A554C;\n  --surface: #FFFFFF;\n  --border: #1B1B1B;\n  --accent: #C2331F;\n  --accent-fg: #FFFFFF;\n  --radius: 2px;\n  --radius-sm: 2px;\n  --shadow: 2px 3px 6px rgba(0,0,0,.22);\n  --btn-shadow: 2px 3px 6px rgba(0,0,0,.22);\n  --art-bg: linear-gradient(135deg,#C9A77C,#C2331F 58%,#2D5BD1);\n  --media-bg: linear-gradient(135deg,#C9A77C,#C2331F 58%,#2D5BD1);\n  --cta-bg: #FFFFFF;\n  --input-bg: #F1ECE2;\n  --ok: #2D5BD1;\n  --warn: #C2331F;\n  --font-display: Anton,Impact,sans-serif;\n  --font-body: 'IBM Plex Sans',Arial,sans-serif;\n  --font-mono: 'Special Elite',Courier,monospace;\n  --focus-ring: var(--accent);\n}",
+ "snippet_tailwind": "// tailwind.config.js → theme.extend\n{\n  \"colors\": {\n    \"bg\": \"#F1ECE2\",\n    \"fg\": \"#1B1B1B\",\n    \"muted\": \"#5A554C\",\n    \"surface\": \"#FFFFFF\",\n    \"border\": \"#1B1B1B\",\n    \"accent\": \"#C2331F\",\n    \"accent-fg\": \"#FFFFFF\",\n    \"ok\": \"#2D5BD1\",\n    \"warn\": \"#C2331F\",\n    \"focus-ring\": \"var(--accent)\"\n  },\n  \"borderRadius\": {\n    \"DEFAULT\": \"2px\",\n    \"lg\": \"2px\"\n  },\n  \"fontFamily\": {\n    \"display\": [\n      \"Anton,Impact,sans-serif\"\n    ],\n    \"body\": [\n      \"'IBM Plex Sans',Arial,sans-serif\"\n    ]\n  }\n}"
+}

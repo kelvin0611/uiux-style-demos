@@ -1,0 +1,56 @@
+{
+ "slug": "baroque",
+ "name": "Baroque",
+ "cn": "",
+ "family": "🏛️ 古典人文 Heritage & Lifestyle",
+ "industry": "歌劇／表演藝術場館",
+ "brand": "Orfeo",
+ "cta": "買飛",
+ "sections": "rows`：演出季 · `venue`：購票資訊 · `member`：會員",
+ "css_variables": {
+  "--bg": "#120D0A",
+  "--fg": "#F3E9D2",
+  "--muted": "#B9A47C",
+  "--surface": "rgba(255,255,255,.07)",
+  "--border": "rgba(232,199,102,.30)",
+  "--accent": "#E8C766",
+  "--accent-fg": "#2A0B10",
+  "--accent-grad": "linear-gradient(135deg,#A07C16,#E8C766 50%,#A07C16)",
+  "--radius": "4px",
+  "--radius-sm": "2px",
+  "--shadow": "0 16px 40px rgba(0,0,0,.65)",
+  "--btn-shadow": "0 0 0 1px rgba(232,199,102,.5)",
+  "--art-bg": "radial-gradient(circle at 50% 35%,#6b1a24,#2a0b10 70%),radial-gradient(420px 360px at 78% 50%,rgba(242,197,124,.18),transparent 70%)",
+  "--media-bg": "linear-gradient(160deg,#2a0b10,#5B0F1A)",
+  "--cta-bg": "radial-gradient(900px 500px at 70% 10%,#3a1a14,transparent),linear-gradient(#1f1410,#160e0b)",
+  "--input-bg": "rgba(255,255,255,.08)",
+  "--ok": "#2E7D5B",
+  "--warn": "#C24B4B",
+  "--font-display": "'Playfair Display','Noto Serif TC',serif",
+  "--font-body": "'Crimson Pro','Noto Serif TC',serif",
+  "--font-mono": "'Crimson Pro',ui-monospace,'SFMono-Regular',monospace",
+  "--focus-ring": "var(--accent)"
+ },
+ "fonts": {
+  "google_url": "https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,600&family=Crimson+Pro:ital@0;1&family=Pinyon+Script&display=swap",
+  "display": "'Playfair Display','Noto Serif TC',serif",
+  "body": "'Crimson Pro','Noto Serif TC',serif",
+  "mono": "'Crimson Pro',ui-monospace,'SFMono-Regular',monospace"
+ },
+ "radius": {
+  "base": "4px",
+  "sm": "2px"
+ },
+ "shadow": {
+  "card": "0 16px 40px rgba(0,0,0,.65)",
+  "button": "0 0 0 1px rgba(232,199,102,.5)"
+ },
+ "focus_ring": "var(--accent)",
+ "motion": {},
+ "demo": {
+  "basic": "Demos/baroque.html",
+  "pro": "Demos/baroque-pro.html"
+ },
+ "snippet_css": ":root{\n  --bg: #120D0A;\n  --fg: #F3E9D2;\n  --muted: #B9A47C;\n  --surface: rgba(255,255,255,.07);\n  --border: rgba(232,199,102,.30);\n  --accent: #E8C766;\n  --accent-fg: #2A0B10;\n  --accent-grad: linear-gradient(135deg,#A07C16,#E8C766 50%,#A07C16);\n  --radius: 4px;\n  --radius-sm: 2px;\n  --shadow: 0 16px 40px rgba(0,0,0,.65);\n  --btn-shadow: 0 0 0 1px rgba(232,199,102,.5);\n  --art-bg: radial-gradient(circle at 50% 35%,#6b1a24,#2a0b10 70%),radial-gradient(420px 360px at 78% 50%,rgba(242,197,124,.18),transparent 70%);\n  --media-bg: linear-gradient(160deg,#2a0b10,#5B0F1A);\n  --cta-bg: radial-gradient(900px 500px at 70% 10%,#3a1a14,transparent),linear-gradient(#1f1410,#160e0b);\n  --input-bg: rgba(255,255,255,.08);\n  --ok: #2E7D5B;\n  --warn: #C24B4B;\n  --font-display: 'Playfair Display','Noto Serif TC',serif;\n  --font-body: 'Crimson Pro','Noto Serif TC',serif;\n  --font-mono: 'Crimson Pro',ui-monospace,'SFMono-Regular',monospace;\n  --focus-ring: var(--accent);\n}",
+ "snippet_tailwind": "// tailwind.config.js → theme.extend\n{\n  \"colors\": {\n    \"bg\": \"#120D0A\",\n    \"fg\": \"#F3E9D2\",\n    \"muted\": \"#B9A47C\",\n    \"surface\": \"rgba(255,255,255,.07)\",\n    \"border\": \"rgba(232,199,102,.30)\",\n    \"accent\": \"#E8C766\",\n    \"accent-fg\": \"#2A0B10\",\n    \"ok\": \"#2E7D5B\",\n    \"warn\": \"#C24B4B\",\n    \"focus-ring\": \"var(--accent)\"\n  },\n  \"borderRadius\": {\n    \"DEFAULT\": \"2px\",\n    \"lg\": \"4px\"\n  },\n  \"fontFamily\": {\n    \"display\": [\n      \"'Playfair Display','Noto Serif TC',serif\"\n    ],\n    \"body\": [\n      \"'Crimson Pro','Noto Serif TC',serif\"\n    ]\n  }\n}"
+}

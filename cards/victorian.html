@@ -1,0 +1,109 @@
+<!doctype html><html lang="zh-Hant-HK"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Victorian  · 風格卡</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600&family=EB+Garamond:ital,wght@0,400;0,600;1,400&family=Noto+Serif+TC:wght@400;600&display=swap">
+<link rel="stylesheet" href="../blocks.css">
+<style>:root{--bg:#F4EBD9;--fg:#2A1E17;--muted:#5A4632;--surface:#FBF5E8;--border:#C9A227;--accent:#6D1A36;--accent-fg:#FBF5E8;--radius:2px;--radius-sm:2px;--shadow:0 8px 22px rgba(42,30,23,.16);--btn-shadow:0 3px 0 rgba(109,26,54,.42);--art-bg:radial-gradient(circle at 50% 40%,#8A2A4B,#2A1E17);--media-bg:linear-gradient(180deg,#FBF5E8,#E7D9BD);--cta-bg:#EFE3C8;--input-bg:#FBF5E8;--ok:#1F3B2D;--warn:#8A2A4B;--font-display:'Cormorant Garamond','Noto Serif TC',serif;--font-body:'EB Garamond','Noto Serif TC',serif;--font-mono:'EB Garamond',ui-monospace,serif;--focus-ring:var(--accent);}
+
+
+body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;
+ background:radial-gradient(circle,rgba(109,26,54,.07) 22%,transparent 23%) 0 0/34px 34px}
+.hero h1{font-weight:700;letter-spacing:.005em}
+.sec-title{font-weight:700}
+.sec-title::after{content:"";display:block;width:120px;height:1px;background:#C9A227;margin-top:14px;box-shadow:0 3px 0 -1px #6D1A36}
+.card,.plan,.quote,.tile-c,.rows,.log,.mock{border:1px solid #C9A227;border-radius:2px;background:#FBF5E8;
+ box-shadow:inset 0 0 0 3px #FBF5E8,inset 0 0 0 4px rgba(201,162,39,.55)}
+.btn{border-radius:2px;font-family:'Cormorant Garamond',serif;letter-spacing:.06em}
+.btn-primary{background:#6D1A36;color:#FBF5E8}
+.btn-secondary{background:#FBF5E8;color:#2A1E17;border:1px solid #6D1A36}
+.chip{border-radius:0;background:#FBF5E8;border:1px solid #C9A227;font-size:13px;letter-spacing:.04em}
+.avatar{border-radius:0;background:radial-gradient(circle,#8A2A4B,#2A1E17);color:#C9A227}
+.tag{background:#1F3B2D;color:#FBF5E8;border-radius:0;text-transform:uppercase;letter-spacing:.1em;font-size:11px}
+.tile-c .ph{border-radius:2px;background:linear-gradient(180deg,#FBF5E8,#E7D9BD);color:#6D1A36;border:1px solid #C9A227}
+.plan.featured{outline:2px solid #C9A227;outline-offset:4px}
+.hero::after{content:"❦";position:absolute;right:5%;bottom:6%;font-size:64px;color:#C9A227;opacity:.75;pointer-events:none}
+.rows article:nth-child(odd),.log article:nth-child(odd){background:rgba(201,162,39,.10)}
+.rows b,.log b{font-family:'Cormorant Garamond',serif;font-size:18px}
+.lead{font-style:italic}
+
+/* ---- 風格卡專用 ---- */
+body{background:var(--bg);color:var(--fg);font-family:var(--font-body)}
+.cp{max-width:1080px;margin:0 auto;padding:clamp(18px,4vw,40px)}
+.cp-head{border-bottom:2px solid var(--border);padding-bottom:18px;margin-bottom:26px}
+.cp-head h1{margin:.1em 0 .2em;font-family:var(--font-display);font-size:clamp(28px,5vw,46px)}
+.cp-meta{color:var(--muted);font-size:14px}
+.cp-tag{display:inline-block;border:1px solid var(--border);border-radius:999px;padding:3px 10px;font-size:12px;color:var(--muted);margin:0 6px 6px 0}
+.cp h2{font-family:var(--font-display);font-size:clamp(18px,2.4vw,24px);margin:34px 0 6px;padding-bottom:6px;border-bottom:1px solid var(--border)}
+.cp p.desc{color:var(--muted);margin:6px 0 14px;max-width:70ch}
+.sws{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:10px}
+.sw{border:1px solid var(--border);border-radius:10px;padding:9px;background:var(--surface);display:grid;gap:4px}
+.sw i{display:block;height:44px;border-radius:7px;border:1px solid var(--border)}
+.sw b{font-size:13px}.sw code{font:12px var(--font-mono,monospace);color:var(--muted)}
+.sw span{font-size:11px;color:var(--muted)}
+.typo div{border:1px solid var(--border);border-radius:10px;padding:12px 14px;margin-bottom:8px;background:var(--surface)}
+.typo .d{font-family:var(--font-display);font-size:32px;line-height:1.15}
+.typo .b{font-family:var(--font-body);font-size:16px}
+.typo .m{font-family:var(--font-mono,monospace);font-size:14px}
+.typo small{color:var(--muted);font-size:11px;display:block;margin-top:6px}
+.row{display:flex;gap:12px;flex-wrap:wrap;align-items:flex-start}
+.preview{border:1px dashed var(--border);border-radius:12px;overflow:hidden;margin-bottom:12px}
+.preview .lbl{font:11px var(--font-mono,monospace);color:var(--muted);padding:6px 10px;border-bottom:1px dashed var(--border)}
+.preview > div:last-child{transform-origin:top left}
+.cp-foot{margin-top:36px;padding-top:14px;border-top:1px solid var(--border);color:var(--muted);font-size:13px;display:flex;gap:14px;flex-wrap:wrap}
+.cp a{color:var(--accent)}
+@media print{.noprint{display:none}body{background:#fff}.cp{max-width:none;padding:0}.preview{page-break-inside:avoid}}
+</style></head><body>
+<div class="cp">
+  <div class="cp-head">
+    <span class="cp-tag">🏛️ 古典人文 Heritage &amp; Lifestyle</span><span class="cp-tag">15 個 block</span><span class="cp-tag">—</span>
+    <h1> Victorian <span style="font-size:.6em;color:var(--muted)"></span></h1>
+    <p class="desc" style="font-size:17px;color:var(--fg)">19 世紀英國嘅華麗裝飾 —— 花紋飾框、大馬士革紋（damask）、版畫插圖、Blackletter 同古典 serif、酒紅墨綠金，似打開一本古董書。</p>
+    <p class="cp-meta">示範品牌 <b>Thornfield</b> · 主要 CTA「訂購茶葉」· 行業：茶葉品牌</p>
+  </div>
+
+  <h2>1 · 色票 Palette</h2>
+  <p class="desc">所有元件都只可以用呢組 token（換色 = 改呢幾行）。</p>
+  <div class="sws"><div class="sw"><i style="background:#F4EBD9"></i><b>--bg</b><code>#F4EBD9</code><span>底色 Background</span></div><div class="sw"><i style="background:#2A1E17"></i><b>--fg</b><code>#2A1E17</code><span>主文字 Text</span></div><div class="sw"><i style="background:#5A4632"></i><b>--muted</b><code>#5A4632</code><span>次要文字 Muted</span></div><div class="sw"><i style="background:#FBF5E8"></i><b>--surface</b><code>#FBF5E8</code><span>卡片面 Surface</span></div><div class="sw"><i style="background:#C9A227"></i><b>--border</b><code>#C9A227</code><span>分隔線 Border</span></div><div class="sw"><i style="background:#6D1A36"></i><b>--accent</b><code>#6D1A36</code><span>強調色 Accent</span></div><div class="sw"><i style="background:#FBF5E8"></i><b>--accent-fg</b><code>#FBF5E8</code><span>強調上文字</span></div><div class="sw"><i style="background:#1F3B2D"></i><b>--ok</b><code>#1F3B2D</code><span>成功 Success</span></div><div class="sw"><i style="background:#8A2A4B"></i><b>--warn</b><code>#8A2A4B</code><span>警告 Warning</span></div></div>
+
+  <h2>2 · 字體 Typography</h2>
+  <p class="desc">最多兩個字重；標題 &#x27;Cormorant Garamond&#x27;,&#x27;Noto Serif TC&#x27;,serif、正文 &#x27;EB Garamond&#x27;,&#x27;Noto Serif TC&#x27;,serif。</p>
+  <div class="typo">
+    <div class="d">一頁講清成件事 <small>Display · &#x27;Cormorant Garamond&#x27;,&#x27;Noto Serif TC&#x27;,serif</small></div>
+    <div class="b">正文用 &#x27;EB Garamond&#x27;,&#x27;Noto Serif TC&#x27;,serif：16px、行高 1.65，唔會超過 70 個中文字一行。<small>Body</small></div>
+    <div class="m">HK$1,280 · 2026-09-22 · #REF-0042 <small>Mono／數字對齊（&#x27;EB Garamond&#x27;,ui-monospace,serif）</small></div>
+  </div>
+
+  <h2>3 · 按鈕 Buttons</h2>
+  <p class="desc">11 個狀態齊：hover 升起、active 壓落、focus 外框（對比 ≥3:1）、disabled 變淡、loading／success。</p>
+  <div class="btn-row"><div class="state"><button class="btn btn-primary " type="button">Primary</button><small>Default</small></div><div class="state"><button class="btn btn-primary is-hover" type="button">Primary</button><small>Hover</small></div><div class="state"><button class="btn btn-primary is-active" type="button">Primary</button><small>Active</small></div><div class="state"><button class="btn btn-primary is-focus" type="button">Primary</button><small>Focus</small></div><div class="state"><button class="btn btn-primary " type="button" disabled>Primary</button><small>Disabled</small></div><div class="state"><button class="btn btn-primary btn-sm" type="button">Small</button><small>btn-sm</small></div><div class="state"><button class="btn btn-primary btn-lg" type="button">Large</button><small>btn-lg</small></div><div class="state"><button class="btn btn-primary btn-secondary" type="button">Secondary</button><small>Secondary</small></div></div>
+
+  <h2>4 · 組件 Components</h2>
+  <div class="row">
+    <article class="card" style="flex:1 1 260px"><span class="ico" aria-hidden="true">◆</span><h3>卡片標題</h3><p>一句講清重點，唔超過兩行。</p></article>
+    <div class="plan" style="flex:1 1 240px"><span class="tag">最受歡迎</span><h3>方案名</h3><div class="price">HK$1,280<small>/月</small></div>
+      <ul><li>包含咩</li><li>包含咩</li></ul><a class="btn btn-primary" href="#">揀呢個</a></div>
+    <blockquote class="quote" style="flex:1 1 260px">客人講嘅一句真話。<span class="avatar">阿</span><b>阿文</b><span>客戶 · 角色</span></blockquote>
+  </div>
+
+  <h2>5 · 真實 section 預覽</h2>
+  <p class="desc">以下係由正式 demo 直接抽落嚟（唔係另畫），所以卡同成品一定一致。</p>
+  <div class="preview"><div class="lbl">hero</div><div><section class="block hero" id="hero"><div class="wrap hero-grid"><div><span class="eyebrow rv">香港 · 單一莊園 · 示範網站（虛構茶行）</span><h1>第三泡，<br>先見真章</h1><p class="lead rv">紅茶、烏龍、白茶：每批寫明莊園同採摘月份，可以先買 20 克試味。</p><div class="actions rv"><a class="btn btn-primary" href="#cta">訂購茶葉 <span class="i" aria-hidden="true">→</span></a><a class="btn btn-secondary" href="#product">睇茶款同價目</a></div><p class="note rv">滿 HK$380 免運 · 香港順豐 1–2 日 · 可以指定送貨時段</p></div><figure class="hero-art rv"><div class="deco" aria-hidden="true" style="inset:0;background:radial-gradient(circle at 50% 40%,#8A2A4B,#2A1E17)"></div><figcaption>茶罐相片位（生成 media/victorian-hero.jpg 自動代入）</figcaption></figure></div></section></div></div><div class="preview"><div class="lbl">pricing</div><div><section class="block" id="pricing"><div class="wrap"><h2 class="sec-title">訂購方式</h2><p class="sec-sub">試完先買大罐；年度訂購可以隨時暫停。</p><div class="pricing"><article class="plan rv"><h3>試味裝</h3><div class="price">HK$128 <small>/ 3 款</small></div><p>每款 20 克，附沖泡卡。</p><ul><li>可以自選 3 款</li><li>附沖泡卡同鋁袋</li><li>順豐到付（約 HK$30）</li></ul><a class="btn btn-secondary" href="#cta">訂購茶葉</a></article><article class="plan rv featured"><span class="tag">最多人訂</span><h3>茶櫃組合</h3><div class="price">HK$680 <small>/ 4 罐</small></div><p>自選 4 罐 50 克。</p><ul><li>自選 4 款 50 克</li><li>雙層鋁罐 + 茶則</li><li>香港免運</li><li>滿 HK$380 免運已經達成</li></ul><a class="btn btn-primary" href="#cta">訂購茶葉</a></article><article class="plan rv"><h3>年度訂購</h3><div class="price">HK$1,280 <small>/ 年</small></div><p>每季 2 罐，我們幫你揀。</p><ul><li>每季 2 罐（共 8 罐）</li><li>季節限定款優先</li><li>可以隨時暫停或改地址</li><li>每年 1 次茶會名額</li></ul><a class="btn btn-secondary" href="#cta">訂購茶葉</a></article></div></div></section></div></div><div class="preview"><div class="lbl">venue</div><div><section class="block" id="venue"><div class="wrap"><h2 class="sec-title">沖泡同配送</h2><p class="sec-sub">水溫同時間寫喺沖泡卡上面，跟住做就得。</p><ul class="infolist"><li><b>水溫</b><span>紅茶 90–95°C；烏龍 95°C；白茶 85°C（水滾後開蓋等 2 分鐘）</span></li><li><b>茶量同時間</b><span>3 克配 150 毫升；第一泡 45 秒，之後每泡加 10 秒</span></li><li><b>配送</b><span>香港順豐 1–2 個工作日；滿 HK$380 免運，離島另議</span></li><li><b>保存</b><span>避光密封，唔好同香料放埋一齊；開封後 6 個月內飲完</span></li><li><b>退換</b><span>未開封 14 日內可以退（運費我們付）；開封後品質問題可以換</span></li></ul></div></section></div></div>
+
+  <h2>6 · 動效（Pro 版）</h2>
+  <p class="desc">基本版純 CSS；Pro 版有載入幕、入場、scroll reveal、微互動。跟系統設定「減少動態」會自動降級。</p>
+  <p style="font:13px var(--font-mono,monospace);color:var(--muted)"></p>
+
+  <h2>7 · 點用</h2>
+  <ul style="color:var(--muted);font-size:14px">
+    <li>Tokens：<code>themes/victorian.json</code>（含 <code>snippet_css</code> 同 Tailwind <code>theme.extend</code>）</li>
+    <li>Demo：<a href="../victorian.html">基本版</a> · <a href="../victorian-pro.html">Pro 動效版</a> · <a href="../victorian-pro.html?deep=1">🧪 深度效果</a></li>
+    <li>改客人內容：<code>python3 gen_project.py brief.json</code>（自動驗 WCAG 4.5:1）</li>
+  </ul>
+
+  <div class="cp-foot">
+    <button class="btn btn-primary btn-sm noprint" type="button" onclick="window.print()">🖨️ Print／存 PDF</button>
+    <a href="index.html">← 全部風格卡</a>
+    <span>UIUX Style · Victorian · 示範內容全部虛構</span>
+  </div>
+</div>
+</body></html>

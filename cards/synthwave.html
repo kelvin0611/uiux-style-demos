@@ -1,0 +1,114 @@
+<!doctype html><html lang="zh-Hant-HK"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Synthwave  · 風格卡</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;900&family=Rajdhani:wght@500;700&family=Noto+Sans+TC:wght@400;700&display=swap">
+<link rel="stylesheet" href="../blocks.css">
+<style>:root{--bg:#0D0221;--fg:#F9F1FF;--muted:#C9A0FF;--surface:rgba(255,255,255,.08);--border:rgba(255,46,151,.45);--accent:#FF2E97;--accent-fg:#0D0221;--radius:2px;--radius-sm:2px;--shadow:0 0 0 1px rgba(255,46,151,.35),0 0 30px rgba(255,46,151,.22);--btn-shadow:0 0 18px rgba(0,240,255,.45);--art-bg:linear-gradient(180deg,#0D0221 0%,#2B0F54 40%,#AB1F65 72%,#0D0221 72.2%);--media-bg:linear-gradient(180deg,#F9F871,#FF8C42 45%,#FF2E97 80%);--cta-bg:rgba(0,240,255,.10);--input-bg:#150430;--ok:#3CF2B4;--warn:#F9F871;--font-display:Orbitron,'Noto Sans TC',sans-serif;--font-body:Rajdhani,'Noto Sans TC',sans-serif;--font-mono:Orbitron,ui-monospace,monospace;--focus-ring:var(--accent);}
+
+
+body::before{content:"";position:fixed;inset:auto 0 0 0;height:42vh;z-index:-1;pointer-events:none;background:
+ linear-gradient(transparent,rgba(255,46,151,.20)),
+ repeating-linear-gradient(90deg,rgba(0,240,255,.30) 0 1px,transparent 1px 46px),
+ repeating-linear-gradient(0deg,rgba(0,240,255,.22) 0 1px,transparent 1px 32px);
+ transform:perspective(320px) rotateX(64deg);transform-origin:bottom}
+body::after{content:"";position:fixed;inset:0;z-index:998;pointer-events:none;background:repeating-linear-gradient(0deg,rgba(0,0,0,.16) 0 1px,transparent 1px 3px)}
+.hero h1{font-family:Orbitron,sans-serif;font-weight:900;letter-spacing:.01em;color:#F9F1FF;text-shadow:0 0 20px rgba(255,46,151,.8),2px 2px 0 #FF2E97}
+.sec-title{font-family:Orbitron,sans-serif;letter-spacing:.06em;color:#00F0FF;text-shadow:0 0 14px rgba(0,240,255,.55)}
+.sec-title::after{content:"";display:block;width:88px;height:2px;margin-top:14px;background:linear-gradient(90deg,#FF2E97,#00F0FF)}
+.logo{font-family:Orbitron,sans-serif;letter-spacing:.14em;color:#FF2E97;text-shadow:0 0 14px rgba(255,46,151,.7)}
+.nav a{color:#C9A0FF}
+.nav a:hover,.nav a[aria-current=page]{background:rgba(255,46,151,.18);color:#F9F1FF}
+.card,.plan,.quote,.tile-c,.rows,.log,.mock{border-radius:2px;border:1px solid rgba(255,46,151,.45);background:rgba(21,4,48,.72)}
+.chip{border-radius:2px;border:1px solid rgba(0,240,255,.55);background:rgba(0,240,255,.10);color:#F9F1FF;font-size:13px}
+.btn{border-radius:2px;font-family:Orbitron,sans-serif;letter-spacing:.06em;font-size:14px}
+.btn-primary{background:#FF2E97;color:#0D0221;box-shadow:0 0 18px rgba(255,46,151,.55)}
+.btn-secondary{background:transparent;color:#00F0FF;border:1px solid #00F0FF}
+.avatar{border-radius:2px;background:linear-gradient(180deg,#FF2E97,#00F0FF);color:#0D0221}
+.tag{background:#00F0FF;color:#0D0221;border-radius:2px;letter-spacing:.1em;font-size:11px}
+.tile-c .ph{border-radius:2px;background:linear-gradient(180deg,#F9F871,#FF8C42 45%,#FF2E97);color:#0D0221}
+.plan.featured{outline:1px solid #00F0FF;outline-offset:3px;box-shadow:0 0 34px rgba(0,240,255,.25)}
+.rows article:nth-child(odd),.log article:nth-child(odd){background:rgba(255,255,255,.05)}
+.rows .cost{color:#00F0FF}
+.log b{color:#F9F871}
+
+/* ---- 風格卡專用 ---- */
+body{background:var(--bg);color:var(--fg);font-family:var(--font-body)}
+.cp{max-width:1080px;margin:0 auto;padding:clamp(18px,4vw,40px)}
+.cp-head{border-bottom:2px solid var(--border);padding-bottom:18px;margin-bottom:26px}
+.cp-head h1{margin:.1em 0 .2em;font-family:var(--font-display);font-size:clamp(28px,5vw,46px)}
+.cp-meta{color:var(--muted);font-size:14px}
+.cp-tag{display:inline-block;border:1px solid var(--border);border-radius:999px;padding:3px 10px;font-size:12px;color:var(--muted);margin:0 6px 6px 0}
+.cp h2{font-family:var(--font-display);font-size:clamp(18px,2.4vw,24px);margin:34px 0 6px;padding-bottom:6px;border-bottom:1px solid var(--border)}
+.cp p.desc{color:var(--muted);margin:6px 0 14px;max-width:70ch}
+.sws{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:10px}
+.sw{border:1px solid var(--border);border-radius:10px;padding:9px;background:var(--surface);display:grid;gap:4px}
+.sw i{display:block;height:44px;border-radius:7px;border:1px solid var(--border)}
+.sw b{font-size:13px}.sw code{font:12px var(--font-mono,monospace);color:var(--muted)}
+.sw span{font-size:11px;color:var(--muted)}
+.typo div{border:1px solid var(--border);border-radius:10px;padding:12px 14px;margin-bottom:8px;background:var(--surface)}
+.typo .d{font-family:var(--font-display);font-size:32px;line-height:1.15}
+.typo .b{font-family:var(--font-body);font-size:16px}
+.typo .m{font-family:var(--font-mono,monospace);font-size:14px}
+.typo small{color:var(--muted);font-size:11px;display:block;margin-top:6px}
+.row{display:flex;gap:12px;flex-wrap:wrap;align-items:flex-start}
+.preview{border:1px dashed var(--border);border-radius:12px;overflow:hidden;margin-bottom:12px}
+.preview .lbl{font:11px var(--font-mono,monospace);color:var(--muted);padding:6px 10px;border-bottom:1px dashed var(--border)}
+.preview > div:last-child{transform-origin:top left}
+.cp-foot{margin-top:36px;padding-top:14px;border-top:1px solid var(--border);color:var(--muted);font-size:13px;display:flex;gap:14px;flex-wrap:wrap}
+.cp a{color:var(--accent)}
+@media print{.noprint{display:none}body{background:#fff}.cp{max-width:none;padding:0}.preview{page-break-inside:avoid}}
+</style></head><body>
+<div class="cp">
+  <div class="cp-head">
+    <span class="cp-tag">👾 數碼懷舊 Retro Digital</span><span class="cp-tag">15 個 block</span><span class="cp-tag">—</span>
+    <h1> Synthwave <span style="font-size:.6em;color:var(--muted)"></span></h1>
+    <p class="desc" style="font-size:17px;color:var(--fg)">80 年代想像中嘅未來 —— 紫粉橙日落、無限延伸嘅霓虹網格地平線、鉻字、棕櫚樹、跑車，懷舊又浪漫。</p>
+    <p class="cp-meta">示範品牌 <b>Neon Drift</b> · 主要 CTA「加入願望清單」· 行業：復古賽車遊戲</p>
+  </div>
+
+  <h2>1 · 色票 Palette</h2>
+  <p class="desc">所有元件都只可以用呢組 token（換色 = 改呢幾行）。</p>
+  <div class="sws"><div class="sw"><i style="background:#0D0221"></i><b>--bg</b><code>#0D0221</code><span>底色 Background</span></div><div class="sw"><i style="background:#F9F1FF"></i><b>--fg</b><code>#F9F1FF</code><span>主文字 Text</span></div><div class="sw"><i style="background:#C9A0FF"></i><b>--muted</b><code>#C9A0FF</code><span>次要文字 Muted</span></div><div class="sw"><i style="background:rgba(255,255,255,.08)"></i><b>--surface</b><code>rgba(255,255,255,.08)</code><span>卡片面 Surface</span></div><div class="sw"><i style="background:rgba(255,46,151,.45)"></i><b>--border</b><code>rgba(255,46,151,.45)</code><span>分隔線 Border</span></div><div class="sw"><i style="background:#FF2E97"></i><b>--accent</b><code>#FF2E97</code><span>強調色 Accent</span></div><div class="sw"><i style="background:#0D0221"></i><b>--accent-fg</b><code>#0D0221</code><span>強調上文字</span></div><div class="sw"><i style="background:#3CF2B4"></i><b>--ok</b><code>#3CF2B4</code><span>成功 Success</span></div><div class="sw"><i style="background:#F9F871"></i><b>--warn</b><code>#F9F871</code><span>警告 Warning</span></div></div>
+
+  <h2>2 · 字體 Typography</h2>
+  <p class="desc">最多兩個字重；標題 Orbitron,&#x27;Noto Sans TC&#x27;,sans-serif、正文 Rajdhani,&#x27;Noto Sans TC&#x27;,sans-serif。</p>
+  <div class="typo">
+    <div class="d">一頁講清成件事 <small>Display · Orbitron,&#x27;Noto Sans TC&#x27;,sans-serif</small></div>
+    <div class="b">正文用 Rajdhani,&#x27;Noto Sans TC&#x27;,sans-serif：16px、行高 1.65，唔會超過 70 個中文字一行。<small>Body</small></div>
+    <div class="m">HK$1,280 · 2026-09-22 · #REF-0042 <small>Mono／數字對齊（Orbitron,ui-monospace,monospace）</small></div>
+  </div>
+
+  <h2>3 · 按鈕 Buttons</h2>
+  <p class="desc">11 個狀態齊：hover 升起、active 壓落、focus 外框（對比 ≥3:1）、disabled 變淡、loading／success。</p>
+  <div class="btn-row"><div class="state"><button class="btn btn-primary " type="button">Primary</button><small>Default</small></div><div class="state"><button class="btn btn-primary is-hover" type="button">Primary</button><small>Hover</small></div><div class="state"><button class="btn btn-primary is-active" type="button">Primary</button><small>Active</small></div><div class="state"><button class="btn btn-primary is-focus" type="button">Primary</button><small>Focus</small></div><div class="state"><button class="btn btn-primary " type="button" disabled>Primary</button><small>Disabled</small></div><div class="state"><button class="btn btn-primary btn-sm" type="button">Small</button><small>btn-sm</small></div><div class="state"><button class="btn btn-primary btn-lg" type="button">Large</button><small>btn-lg</small></div><div class="state"><button class="btn btn-primary btn-secondary" type="button">Secondary</button><small>Secondary</small></div></div>
+
+  <h2>4 · 組件 Components</h2>
+  <div class="row">
+    <article class="card" style="flex:1 1 260px"><span class="ico" aria-hidden="true">◆</span><h3>卡片標題</h3><p>一句講清重點，唔超過兩行。</p></article>
+    <div class="plan" style="flex:1 1 240px"><span class="tag">最受歡迎</span><h3>方案名</h3><div class="price">HK$1,280<small>/月</small></div>
+      <ul><li>包含咩</li><li>包含咩</li></ul><a class="btn btn-primary" href="#">揀呢個</a></div>
+    <blockquote class="quote" style="flex:1 1 260px">客人講嘅一句真話。<span class="avatar">阿</span><b>阿文</b><span>客戶 · 角色</span></blockquote>
+  </div>
+
+  <h2>5 · 真實 section 預覽</h2>
+  <p class="desc">以下係由正式 demo 直接抽落嚟（唔係另畫），所以卡同成品一定一致。</p>
+  <div class="preview"><div class="lbl">hero</div><div><section class="block hero" id="hero"><div class="wrap hero-grid"><div><span class="eyebrow rv">香港 · 示範網站（虛構遊戲）</span><h1>霓虹落山，<br>油門踩到底</h1><p class="lead rv">6 條黃昏賽道、12 部 80 年代原型車，離線單人計時賽；手把同塗裝全部可以自訂。</p><div class="actions rv"><a class="btn btn-primary" href="#cta">加入願望清單 <span class="i" aria-hidden="true">→</span></a><a class="btn btn-secondary" href="#product">睇版本同平台</a></div><p class="note rv">2026 年 Q4 推出 · Windows／macOS／Steam Deck · 無內購、無季票</p></div><figure class="hero-art rv"><div class="deco" aria-hidden="true" style="inset:0;background:linear-gradient(180deg,#0D0221 0%,#2B0F54 40%,#AB1F65 72%,#0D0221 72.2%)"></div><figcaption>遊戲截圖位（生成 media/synthwave-hero.jpg 自動代入）</figcaption></figure></div></section></div></div><div class="preview"><div class="lbl">pricing</div><div><section class="block" id="pricing"><div class="wrap"><h2 class="sec-title">三個買法</h2><p class="sec-sub">一次買斷，冇內購；通行證可以隨時停。</p><div class="pricing"><article class="plan rv"><h3>標準版</h3><div class="price">HK$128 <small>/ 套</small></div><p>6 條賽道、12 部車。</p><ul><li>完整單人計時賽</li><li>6 條黃昏賽道</li><li>12 部原型車</li><li>繁體中文介面</li></ul><a class="btn btn-secondary" href="#cta">加入願望清單</a></article><article class="plan rv featured"><span class="tag">最多人預購</span><h3>豪華版</h3><div class="price">HK$198 <small>/ 套</small></div><p>加 2 條夜間賽道同原聲帶。</p><ul><li>標準版全部內容</li><li>2 條夜間賽道</li><li>原聲帶（WAV + MP3）</li><li>數位畫集 48 頁</li></ul><a class="btn btn-primary" href="#cta">加入願望清單</a></article><article class="plan rv"><h3>賽道通行證</h3><div class="price">HK$68 <small>/ 季</small></div><p>每季新賽道同車款。</p><ul><li>每季 1 條賽道</li><li>每季 2 部車</li><li>唔買都玩得基礎賽道</li><li>隨時可以停</li></ul><a class="btn btn-secondary" href="#cta">加入願望清單</a></article></div></div></section></div></div><div class="preview"><div class="lbl">venue</div><div><section class="block" id="venue"><div class="wrap"><h2 class="sec-title">系統需求</h2><p class="sec-sub">規格係示範數字；試玩 Demo 可以自己跑測試。</p><ul class="infolist"><li><b>最低規格</b><span>Windows 10 64-bit · i5-8400／Ryzen 5 2600 · 8GB RAM · GTX 1050 Ti</span></li><li><b>建議規格</b><span>Windows 11 64-bit · i7-10700 · 16GB RAM · RTX 2060</span></li><li><b>儲存空間</b><span>12 GB（SSD 建議；用 HDD 讀取大約多 25 秒）</span></li><li><b>離線同存檔</b><span>單人模式完全離線；排行榜同雲端存檔需要連線</span></li><li><b>香港售價</b><span>Steam 香港區 HK$128；台灣 NT$398；內地 ¥68（示範數字）</span></li></ul></div></section></div></div>
+
+  <h2>6 · 動效（Pro 版）</h2>
+  <p class="desc">基本版純 CSS；Pro 版有載入幕、入場、scroll reveal、微互動。跟系統設定「減少動態」會自動降級。</p>
+  <p style="font:13px var(--font-mono,monospace);color:var(--muted)"></p>
+
+  <h2>7 · 點用</h2>
+  <ul style="color:var(--muted);font-size:14px">
+    <li>Tokens：<code>themes/synthwave.json</code>（含 <code>snippet_css</code> 同 Tailwind <code>theme.extend</code>）</li>
+    <li>Demo：<a href="../synthwave.html">基本版</a> · <a href="../synthwave-pro.html">Pro 動效版</a> · <a href="../synthwave-pro.html?deep=1">🧪 深度效果</a></li>
+    <li>改客人內容：<code>python3 gen_project.py brief.json</code>（自動驗 WCAG 4.5:1）</li>
+  </ul>
+
+  <div class="cp-foot">
+    <button class="btn btn-primary btn-sm noprint" type="button" onclick="window.print()">🖨️ Print／存 PDF</button>
+    <a href="index.html">← 全部風格卡</a>
+    <span>UIUX Style · Synthwave · 示範內容全部虛構</span>
+  </div>
+</div>
+</body></html>

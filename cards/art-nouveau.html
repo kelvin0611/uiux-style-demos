@@ -1,0 +1,108 @@
+<!doctype html><html lang="zh-Hant-HK"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Art Nouveau  · 風格卡</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Federo&family=Cormorant:ital,wght@0,500;1,500&display=swap">
+<link rel="stylesheet" href="../blocks.css">
+<style>:root{--bg:#F2E8D5;--fg:#5A4232;--muted:#4E6146;--surface:rgba(255,255,255,.68);--border:rgba(90,66,50,.24);--accent:#C98B7E;--accent-fg:#2D2118;--accent-grad:linear-gradient(135deg,#C98B7E,#C9A24B);--radius:18px;--radius-sm:12px;--shadow:0 10px 26px rgba(90,66,50,.14);--btn-shadow:0 4px 0 rgba(201,139,126,.4);--art-bg:radial-gradient(circle at 50% 38%,#F2E8D5 0 30%,#C9A24B 30% 31%,#E9D6A8 31% 44%,transparent 45%),linear-gradient(160deg,#E9D6A8,#C98B7E);--media-bg:linear-gradient(160deg,#E9D6A8,#8FA382);--cta-bg:linear-gradient(180deg,#F7EFDD,#E9D6A8);--input-bg:rgba(255,255,255,.9);--ok:#4E6146;--warn:#A85A4A;--font-display:'Cinzel Decorative','Noto Serif TC',serif;--font-body:'Federo','Cormorant','Noto Serif TC',serif;--font-mono:'Cormorant',ui-monospace,'SFMono-Regular',monospace;--focus-ring:#B45E4C;}
+
+
+body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;background:
+ radial-gradient(circle at 22% 16%,rgba(201,162,75,.14) 0 24%,transparent 25%),
+ radial-gradient(circle at 82% 74%,rgba(201,139,126,.14) 0 22%,transparent 23%)}
+.card,.plan,.quote,.tile-c,.rows,.log,.mock,.badge-card{border:1px solid var(--border);background:var(--surface);border-radius:var(--radius)}
+.card:nth-child(odd),.tile-c:nth-child(odd){background-image:linear-gradient(135deg,rgba(255,255,255,.35) 25%,transparent 25%);background-size:24px 24px}
+.sec-title{font-family:var(--font-display);font-weight:700;letter-spacing:.02em}
+.sec-title::after{content:"✿";display:block;color:var(--accent);font-size:20px;margin-top:6px}
+.hero h1{font-family:var(--font-display);line-height:1.12}
+.hero::after{content:"❀";position:absolute;right:5%;bottom:4%;font-size:120px;color:var(--accent);opacity:.22;pointer-events:none}
+.btn{border-radius:999px;font-family:var(--font-display)}
+.btn-primary{background:var(--accent);color:var(--accent-fg)}
+.btn-secondary{background:transparent;border:1px solid var(--accent);color:var(--fg)}
+.chip{border-radius:999px;border:1px solid var(--border);background:var(--surface)}
+.avatar{border-radius:50%;background:var(--accent-grad);color:var(--accent-fg)}
+.tag{background:#4E6146;color:#FBF5E9;border-radius:999px}
+.tile-c .ph{background-image:linear-gradient(135deg,rgba(255,255,255,.3) 25%,transparent 25%),linear-gradient(#8FA382,#C98B7E);background-size:28px 28px,auto}
+.plan.featured{outline:2px solid var(--accent);outline-offset:4px}
+.rows article:nth-child(odd),.log article:nth-child(odd){background:rgba(201,162,75,.10)}
+
+/* ---- 風格卡專用 ---- */
+body{background:var(--bg);color:var(--fg);font-family:var(--font-body)}
+.cp{max-width:1080px;margin:0 auto;padding:clamp(18px,4vw,40px)}
+.cp-head{border-bottom:2px solid var(--border);padding-bottom:18px;margin-bottom:26px}
+.cp-head h1{margin:.1em 0 .2em;font-family:var(--font-display);font-size:clamp(28px,5vw,46px)}
+.cp-meta{color:var(--muted);font-size:14px}
+.cp-tag{display:inline-block;border:1px solid var(--border);border-radius:999px;padding:3px 10px;font-size:12px;color:var(--muted);margin:0 6px 6px 0}
+.cp h2{font-family:var(--font-display);font-size:clamp(18px,2.4vw,24px);margin:34px 0 6px;padding-bottom:6px;border-bottom:1px solid var(--border)}
+.cp p.desc{color:var(--muted);margin:6px 0 14px;max-width:70ch}
+.sws{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:10px}
+.sw{border:1px solid var(--border);border-radius:10px;padding:9px;background:var(--surface);display:grid;gap:4px}
+.sw i{display:block;height:44px;border-radius:7px;border:1px solid var(--border)}
+.sw b{font-size:13px}.sw code{font:12px var(--font-mono,monospace);color:var(--muted)}
+.sw span{font-size:11px;color:var(--muted)}
+.typo div{border:1px solid var(--border);border-radius:10px;padding:12px 14px;margin-bottom:8px;background:var(--surface)}
+.typo .d{font-family:var(--font-display);font-size:32px;line-height:1.15}
+.typo .b{font-family:var(--font-body);font-size:16px}
+.typo .m{font-family:var(--font-mono,monospace);font-size:14px}
+.typo small{color:var(--muted);font-size:11px;display:block;margin-top:6px}
+.row{display:flex;gap:12px;flex-wrap:wrap;align-items:flex-start}
+.preview{border:1px dashed var(--border);border-radius:12px;overflow:hidden;margin-bottom:12px}
+.preview .lbl{font:11px var(--font-mono,monospace);color:var(--muted);padding:6px 10px;border-bottom:1px dashed var(--border)}
+.preview > div:last-child{transform-origin:top left}
+.cp-foot{margin-top:36px;padding-top:14px;border-top:1px solid var(--border);color:var(--muted);font-size:13px;display:flex;gap:14px;flex-wrap:wrap}
+.cp a{color:var(--accent)}
+@media print{.noprint{display:none}body{background:#fff}.cp{max-width:none;padding:0}.preview{page-break-inside:avoid}}
+</style></head><body>
+<div class="cp">
+  <div class="cp-head">
+    <span class="cp-tag">🏛️ 古典人文 Heritage &amp; Lifestyle</span><span class="cp-tag">15 個 block</span><span class="cp-tag">—</span>
+    <h1> Art Nouveau <span style="font-size:.6em;color:var(--muted)"></span></h1>
+    <p class="desc" style="font-size:17px;color:var(--fg)">自然啟發嘅流動曲線 —— 花卉、長髮女神、鞭形線、手寫字、彩繪玻璃，浪漫而有機。</p>
+    <p class="cp-meta">示範品牌 <b>Verveine</b> · 主要 CTA「選香」· 行業：香氛／天然護膚</p>
+  </div>
+
+  <h2>1 · 色票 Palette</h2>
+  <p class="desc">所有元件都只可以用呢組 token（換色 = 改呢幾行）。</p>
+  <div class="sws"><div class="sw"><i style="background:#F2E8D5"></i><b>--bg</b><code>#F2E8D5</code><span>底色 Background</span></div><div class="sw"><i style="background:#5A4232"></i><b>--fg</b><code>#5A4232</code><span>主文字 Text</span></div><div class="sw"><i style="background:#4E6146"></i><b>--muted</b><code>#4E6146</code><span>次要文字 Muted</span></div><div class="sw"><i style="background:rgba(255,255,255,.68)"></i><b>--surface</b><code>rgba(255,255,255,.68)</code><span>卡片面 Surface</span></div><div class="sw"><i style="background:rgba(90,66,50,.24)"></i><b>--border</b><code>rgba(90,66,50,.24)</code><span>分隔線 Border</span></div><div class="sw"><i style="background:#C98B7E"></i><b>--accent</b><code>#C98B7E</code><span>強調色 Accent</span></div><div class="sw"><i style="background:#2D2118"></i><b>--accent-fg</b><code>#2D2118</code><span>強調上文字</span></div><div class="sw"><i style="background:#4E6146"></i><b>--ok</b><code>#4E6146</code><span>成功 Success</span></div><div class="sw"><i style="background:#A85A4A"></i><b>--warn</b><code>#A85A4A</code><span>警告 Warning</span></div></div>
+
+  <h2>2 · 字體 Typography</h2>
+  <p class="desc">最多兩個字重；標題 &#x27;Cinzel Decorative&#x27;,&#x27;Noto Serif TC&#x27;,serif、正文 &#x27;Federo&#x27;,&#x27;Cormorant&#x27;,&#x27;Noto Serif TC&#x27;,serif。</p>
+  <div class="typo">
+    <div class="d">一頁講清成件事 <small>Display · &#x27;Cinzel Decorative&#x27;,&#x27;Noto Serif TC&#x27;,serif</small></div>
+    <div class="b">正文用 &#x27;Federo&#x27;,&#x27;Cormorant&#x27;,&#x27;Noto Serif TC&#x27;,serif：16px、行高 1.65，唔會超過 70 個中文字一行。<small>Body</small></div>
+    <div class="m">HK$1,280 · 2026-09-22 · #REF-0042 <small>Mono／數字對齊（&#x27;Cormorant&#x27;,ui-monospace,&#x27;SFMono-Regular&#x27;,monospace）</small></div>
+  </div>
+
+  <h2>3 · 按鈕 Buttons</h2>
+  <p class="desc">11 個狀態齊：hover 升起、active 壓落、focus 外框（對比 ≥3:1）、disabled 變淡、loading／success。</p>
+  <div class="btn-row"><div class="state"><button class="btn btn-primary " type="button">Primary</button><small>Default</small></div><div class="state"><button class="btn btn-primary is-hover" type="button">Primary</button><small>Hover</small></div><div class="state"><button class="btn btn-primary is-active" type="button">Primary</button><small>Active</small></div><div class="state"><button class="btn btn-primary is-focus" type="button">Primary</button><small>Focus</small></div><div class="state"><button class="btn btn-primary " type="button" disabled>Primary</button><small>Disabled</small></div><div class="state"><button class="btn btn-primary btn-sm" type="button">Small</button><small>btn-sm</small></div><div class="state"><button class="btn btn-primary btn-lg" type="button">Large</button><small>btn-lg</small></div><div class="state"><button class="btn btn-primary btn-secondary" type="button">Secondary</button><small>Secondary</small></div></div>
+
+  <h2>4 · 組件 Components</h2>
+  <div class="row">
+    <article class="card" style="flex:1 1 260px"><span class="ico" aria-hidden="true">◆</span><h3>卡片標題</h3><p>一句講清重點，唔超過兩行。</p></article>
+    <div class="plan" style="flex:1 1 240px"><span class="tag">最受歡迎</span><h3>方案名</h3><div class="price">HK$1,280<small>/月</small></div>
+      <ul><li>包含咩</li><li>包含咩</li></ul><a class="btn btn-primary" href="#">揀呢個</a></div>
+    <blockquote class="quote" style="flex:1 1 260px">客人講嘅一句真話。<span class="avatar">阿</span><b>阿文</b><span>客戶 · 角色</span></blockquote>
+  </div>
+
+  <h2>5 · 真實 section 預覽</h2>
+  <p class="desc">以下係由正式 demo 直接抽落嚟（唔係另畫），所以卡同成品一定一致。</p>
+  <div class="preview"><div class="lbl">hero</div><div><section class="block hero" id="hero"><div class="wrap hero-grid"><div><span class="eyebrow rv">香港 · 天然香氛同護膚 · 示範網站</span><h1>香氣先係記憶</h1><p class="lead rv">8 個香氣系列，用天然精油同植物油；成分表逐項寫出濃度，唔用「香精」兩個字帶過。</p><div class="actions rv"><a class="btn btn-primary" href="#cta">選香 <span class="i" aria-hidden="true">→</span></a><a class="btn btn-secondary" href="#product">睇香氣系列</a></div><p class="note rv">30 日無理由退（未開封）· 敏感肌可索取 3 款試用裝</p></div><figure class="hero-art rv"><div class="deco" aria-hidden="true" style="inset:0;background:radial-gradient(circle at 50% 38%,#F2E8D5 0 30%,#C9A24B 30% 31%,#E9D6A8 31% 44%,transparent 45%),linear-gradient(160deg,#E9D6A8,#C98B7E)"></div><figcaption>產品相片位（生成 media/art-nouveau-hero.jpg 自動代入）</figcaption></figure></div></section></div></div><div class="preview"><div class="lbl">pricing</div><div><section class="block" id="pricing"><div class="wrap"><h2 class="sec-title">三種買法</h2><p class="sec-sub">先試香，唔使一開始就買正裝。</p><div class="pricing"><article class="plan rv"><h3>試香套裝</h3><div class="price">HK$60 <small>/ 3 支 2ml</small></div><p>可以全額扣落正裝。</p><ul><li>3 款自選香氣</li><li>順豐送上門</li><li>香氣記錄卡 1 張</li><li>14 日內扣數</li></ul><a class="btn btn-secondary" href="#cta">選香</a></article><article class="plan rv featured"><span class="tag">最多人買</span><h3>30ml 正裝</h3><div class="price">HK$680 <small>/ 支起</small></div><p>最多人買嘅容量。</p><ul><li>18% 精油濃度</li><li>玻璃瓶 + 滴管</li><li>30 日無理由退（未開封）</li><li>免費換香 1 次</li></ul><a class="btn btn-primary" href="#cta">選香</a></article><article class="plan rv"><h3>護膚套裝</h3><div class="price">HK$980 <small>/ 套</small></div><p>潔面 + 面油 + 護手霜。</p><ul><li>無酒精配方</li><li>敏感肌試用報告</li><li>補充裝 8 折</li><li>香港免運</li></ul><a class="btn btn-secondary" href="#cta">選香</a></article></div></div></section></div></div><div class="preview"><div class="lbl">venue</div><div><section class="block" id="venue"><div class="wrap"><h2 class="sec-title">成分同製作</h2><p class="sec-sub">唔講「天然」兩個字就算，逐項寫出嚟。</p><ul class="infolist"><li><b>基底油</b><span>有機荷荷巴油、甜杏仁油（唔用礦物油）</span></li><li><b>精油濃度</b><span>香水 18%（EDP 級）；護膚油 2%</span></li><li><b>酒精</b><span>粟米發酵酒精 96.5%；可以要求無酒精版（香味較淡）</span></li><li><b>製作</b><span>香港工場小批量，每批 200 支，標籤印批次號</span></li><li><b>動物測試</b><span>唔做動物測試；原料供應商聲明可索取（示範文件）</span></li><li><b>保存</b><span>陰涼避光；開封後 12 個月內用完</span></li></ul></div></section></div></div>
+
+  <h2>6 · 動效（Pro 版）</h2>
+  <p class="desc">基本版純 CSS；Pro 版有載入幕、入場、scroll reveal、微互動。跟系統設定「減少動態」會自動降級。</p>
+  <p style="font:13px var(--font-mono,monospace);color:var(--muted)"></p>
+
+  <h2>7 · 點用</h2>
+  <ul style="color:var(--muted);font-size:14px">
+    <li>Tokens：<code>themes/art-nouveau.json</code>（含 <code>snippet_css</code> 同 Tailwind <code>theme.extend</code>）</li>
+    <li>Demo：<a href="../art-nouveau.html">基本版</a> · <a href="../art-nouveau-pro.html">Pro 動效版</a></li>
+    <li>改客人內容：<code>python3 gen_project.py brief.json</code>（自動驗 WCAG 4.5:1）</li>
+  </ul>
+
+  <div class="cp-foot">
+    <button class="btn btn-primary btn-sm noprint" type="button" onclick="window.print()">🖨️ Print／存 PDF</button>
+    <a href="index.html">← 全部風格卡</a>
+    <span>UIUX Style · Art Nouveau · 示範內容全部虛構</span>
+  </div>
+</div>
+</body></html>
