@@ -243,6 +243,7 @@ input:focus-visible,select:focus-visible{outline:2px solid var(--accent);outline
   .demo-bar{position:static;flex-wrap:nowrap;overflow-x:auto;gap:0 14px;padding:0 12px;font-size:12.5px;scrollbar-width:thin}
   .demo-bar a,.demo-bar b{min-height:44px;display:inline-flex;align-items:center;white-space:nowrap}
   .demo-bar span{display:inline-flex;align-items:center;gap:0 14px}
+  .foot-grid a{min-height:44px;display:flex;align-items:center}
 }
 @media (prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
 
