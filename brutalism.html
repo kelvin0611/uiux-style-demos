@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="zh-Hant-HK"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<html lang="zh-Hant-HK" class="is-basic"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Brutalism · 粗獷主義 — Brute | UIUX Style Demo</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap">
 <meta name="description" content="一句指令，將 40 個檔案嘅 refactor 交俾機器。開源、無 telemetry、單一 binary。">
@@ -8,71 +8,116 @@
 <meta property="og:description" content="一句指令，將 40 個檔案嘅 refactor 交俾機器。開源、無 telemetry、單一 binary。">
 <meta name="twitter:card" content="summary_large_image">
 <meta property="og:image" content="media/og/brutalism.png">
-<link rel="stylesheet" href="blocks.css">
-<style>:root{--bg:#FFFFFF;--fg:#000000;--muted:#444444;--surface:#F0F0F0;--border:#000000;--accent:#0000EE;--accent-fg:#FFFFFF;--radius:0px;--radius-sm:0px;--shadow:none;--btn-shadow:none;--art-bg:#C0C0C0;--media-bg:#C0C0C0;--cta-bg:#F0F0F0;--input-bg:#FFFFFF;--ok:#007700;--warn:#AA0000;--font-display:'Space Mono','Courier New',monospace;--font-body:'Space Mono','Courier New',monospace;--font-mono:'Space Mono',ui-monospace,Menlo,monospace;--focus-ring:var(--accent);}
-
-.card,.plan,.quote,.tile-c,.rows,.mock,.roi,.badge-card,.log,.codebox{border-radius:0;border:1px solid #000;box-shadow:none;background:#FFFFFF}
-.band{background:#F5F5F5}
-.rows article:nth-child(even),.log article:nth-child(even){background:#FAFAFA}
-.btn{border:1px solid #000;background:#E0E0E0;color:#000;text-transform:none;letter-spacing:0;font-weight:400}
-.btn-primary{background:#C0C0C0;color:#000}
-.btn-secondary{background:#FFFFFF;color:#0000EE;text-decoration:underline}
-.card h3,.tile-c h3,.log b,.rows b{font-weight:700}
-.chip{border:1px solid #000;border-radius:0;background:#FFFFFF}
-.tag{background:#000;color:#FFF;border-radius:0;transform:none;font-weight:400}
-.logo{letter-spacing:0;text-transform:none;font-weight:700}
-.nav a{border-radius:0}
-.avatar{border-radius:0;background:#C0C0C0;color:#000;border:1px solid #000}
-.tile-c .ph{border-radius:0;border:1px solid #000}
-.hero h1{font-weight:700;letter-spacing:-.02em}
-.sec-title{text-transform:none;letter-spacing:0}
-.lead{color:#000}
-.hero::before{content:"";position:absolute;right:4%;top:56px;width:min(300px,32vw);height:150px;border:1px solid #000;background:#C0C0C0;background-image:repeating-linear-gradient(90deg,#b3b3b3 0 1px,transparent 1px 20px),repeating-linear-gradient(0deg,#b3b3b3 0 1px,transparent 1px 20px);z-index:0;pointer-events:none}
-</style>
+<link rel="stylesheet" href="bespoke/_bar.css">
+<link rel="stylesheet" href="bespoke/brutalism.css">
+<style>:root{--bg:#FFFFFF;--fg:#000000;--muted:#444444;--surface:#F0F0F0;--border:#000000;--accent:#0000EE;--accent-fg:#FFFFFF;--radius:0px;--radius-sm:0px;--shadow:none;--btn-shadow:none;--art-bg:#C0C0C0;--media-bg:#C0C0C0;--cta-bg:#F0F0F0;--input-bg:#FFFFFF;--ok:#007700;--warn:#AA0000;--font-display:'Space Mono','Courier New',monospace;--font-body:'Space Mono','Courier New',monospace;--font-mono:'Space Mono',ui-monospace,Menlo,monospace;--focus-ring:var(--accent);}</style>
 </head>
 <body>
 <div class="demo-bar"><span><a href="index.html">← 全部風格</a> · <b>🆕 9/57 🧱 Brutalism 粗獷主義（12 block 全頁版）</b></span><span><a href="brutalism-pro.html">✨ Pro 版</a> · <a href="bohemian.html">‹ Bohemian</a> · <a href="claymorphism.html">Claymorphism ›</a> · <a href="obsidian://open?vault=Obsidian&file=04-%E5%85%A7%E5%AE%B9%E5%89%B5%E4%BD%9C/UIUX%20Style/Styles/Brutalism">📝 Obsidian 筆記</a></span></div>
-<header class="site-header wrap"><div class="logo">Brute</div><input type="checkbox" id="navToggle" class="nav-toggle-input" aria-label="開關選單"><label class="nav-toggle" for="navToggle">選單</label><nav class="nav" aria-label="主選單"><a href="#code" aria-current="page">docs</a><a href="#features">CLI</a><a href="#log">changelog</a><a href="#pricing">GitHub</a></nav><label class="nav-scrim" for="navToggle" aria-hidden="true"></label><a class="btn btn-primary" href="#cta">睇 docs</a></header>
-<main>
-<section class="block hero" id="hero"><div class="wrap hero-grid"><div><span class="eyebrow rv">v2.4.0 · MIT License · 11 MB</span><h1>Brute CLI</h1><p class="lead rv">一句指令，將 40 個檔案嘅 refactor 交俾機器。開源、無 telemetry、單一 binary。</p><div class="actions rv"><a class="btn btn-primary" href="#cta">睇 docs <span class="i" aria-hidden="true">→</span></a><a class="btn btn-secondary" href="#product">GitHub</a></div><p class="note rv">macOS / Linux · brew install brute · 唔需要帳號</p></div><figure class="hero-art has-media rv"><img src="media/brutalism-hero.jpg" alt="" loading="lazy"><figcaption>情境示意圖 · AI 生成</figcaption></figure></div></section>
-<section class="block tight trust band"><div class="wrap trust"><span class="lbl">用喺 production 嘅團隊（示範網站，公司名虛構）：</span><span class="wordmark">Terminal Works</span><span class="wordmark">Vector Labs</span><span class="wordmark">Bitforge</span><span class="wordmark">Plaintext</span><span class="wordmark">Cron Club</span></div></section>
-<section class="block" id="features"><div class="wrap"><h2 class="sec-title">四個 spec</h2><p class="sec-sub">全部都係實作決定，唔係 marketing。</p><div class="grid g4"><article class="card rv"><span class="ico" aria-hidden="true">🔒</span><h3>無 telemetry</h3><p>唔上報任何嘢；`--telemetry off` 都唔使打，預設就係 off。</p></article><article class="card rv"><span class="ico" aria-hidden="true">📦</span><h3>單一 binary 11 MB</h3><p>冇 runtime、冇 node_modules、冇 Docker 都跑得。</p></article><article class="card rv"><span class="ico" aria-hidden="true">🌐</span><h3>支援 20 種語言</h3><p>JS/TS、Python、PHP、Go、Rust、Java、Ruby…</p></article><article class="card rv"><span class="ico" aria-hidden="true">⚖️</span><h3>MIT 授權</h3><p>商用、內網、fork 都可以，唔使問。</p></article></div></div></section>
-<section class="block band" id="product"><div class="wrap"><h2 class="sec-title">終端機輸出</h2><p class="sec-sub">跑完即刻有 diff 摘要，你可以先睇再 apply。</p><div class="mock rv"><div class="mock-bar"><span class="mock-dot"></span><span class="mock-dot"></span><span class="mock-dot"></span><span style="margin-left:8px">bash — brute — 80×24</span></div><div class="mock-body"><aside class="mock-side"><span><b>files</b></span><span>40 changed</span><span>12 skipped</span><span>0 failed</span><span><b>time</b></span><span>4.8s</span></aside><div class="mock-main"><div class="mock-row">$ brute refactor --from js --to ts --dry-run</div><div class="mock-row">scan  40 files</div><div class="mock-row">plan  38 rewrites</div><div class="mock-row"><span class="diff-del">- var x = require("y")</span></div><div class="mock-row"><span class="diff-add">+ const x = await import("y")</span></div><div class="mock-row">run   brute apply --yes</div></div><aside class="mock-right"><span><b>exit</b></span><span>0</span><span><b>version</b></span><span>v2.4.0</span><span><b>deps</b></span><span>none</span></aside></div></div><p class="note">示範版係靜態輸出；Pro 版會逐行打出嚟。</p></div></section>
-<section class="block"><div class="wrap"><h2 class="sec-title">三步裝好</h2><p class="sec-sub">冇安裝精靈、冇帳號、冇 onboarding wizard。</p><ol class="steps"><li class="rv"><h3>brew install brute</h3><p>或者 curl 個 tarball 解壓，兩個 binary。</p></li><li class="rv"><h3>brute refactor --dry-run</h3><p>先睇 plan，唔會改你嘅檔案。</p></li><li class="rv"><h3>brute apply --yes</h3><p>套用改動，跟住自己跑 test。</p></li></ol></div></section>
-<section class="block tight"><div class="wrap"><div class="stats"><div class="stat rv"><span class="num">4,800</span><span>GitHub stars</span></div><div class="stat rv"><span class="num">120,000</span><span>每月下載</span></div><div class="stat rv"><span class="num">11 MB</span><span>binary 大小</span></div><div class="stat rv"><span class="num">0</span><span>telemetry 上報</span></div></div></div></section>
-<section class="block band" id="code"><div class="wrap"><h2 class="sec-title">Quickstart</h2><p class="sec-sub">兩個指令，冇 config 檔都可以跑。</p><pre class="codebox"><code># 1. 安裝（macOS / Linux）
+<div class="ticker" aria-hidden="true"><div>★ Brute 已上線 · v2.4.0 · MIT · 11 MB binary · 零 telemetry · 支援 20 種語言 · 由 HK 社群 維護 ★ Brute 已上線 · v2.4.0 · MIT · 11 MB binary · 零 telemetry · 支援 20 種語言 · 由 HK 社群 維護 ★ Brute 已上線 · v2.4.0 · MIT · 11 MB binary · 零 telemetry · 支援 20 種語言 · 由 HK 社群 維護 </div></div>
+
+<header class="hd">
+  <div class="wrap">
+    <a class="logo" href="#top">Brute</a>
+    <nav class="nv"><a href="#top">docs</a><a href="#top">CLI</a><a href="#top">changelog</a><a href="#top">GitHub</a></nav>
+    <a class="install" href="#code">$ brew install brute</a>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero">
+  <div class="wrap grid">
+    <div class="col-a">
+      <p class="kick">v2.4.0 · MIT License · 11 MB</p>
+      <h1>Brute CLI</h1>
+      <p class="lead">一句指令，將 40 個檔案嘅 refactor 交俾機器。開源、無 telemetry、單一 binary。</p>
+      <div class="acts">
+        <a class="bt bt-1" href="#code">睇 docs</a>
+        <a class="bt bt-2" href="#pricing">GitHub</a>
+      </div>
+      <p class="tiny">macOS / Linux · brew install brute · 唔需要帳號</p>
+    </div>
+    <div class="col-b">
+      <div class="term">
+        <div class="bar"><i></i><i></i><i></i><span>brute — zsh</span></div>
+        <pre># 1. 安裝（macOS / Linux）
 $ brew install brute
+
 # 2. 先睇 plan，唔會改檔案
 $ brute refactor --from js --to ts --dry-run
+</pre>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="shotband"><div class="wrap"><img src="media/brutalism-hero.jpg" alt="shot" loading="lazy"><p class="cap">終端機截圖位（生成 media/brutalism-hero.jpg 自動代入）</p></div></section>
+<section class="trust"><div class="wrap"><span class="lbl">用喺 production 嘅團隊（示範網站，公司名虛構）：</span><b>Terminal Works</b><b>Vector Labs</b><b>Bitforge</b><b>Plaintext</b><b>Cron Club</b></div></section>
+
+<section class="spec" id="spec">
+  <div class="wrap">
+    <h2>四個 spec</h2><p class="sub">全部都係實作決定，唔係 marketing。</p>
+    <table><tbody><tr><td class="k">🔒 無 telemetry</td><td>唔上報任何嘢；`--telemetry off` 都唔使打，預設就係 off。</td></tr><tr><td class="k">📦 單一 binary 11 MB</td><td>冇 runtime、冇 node_modules、冇 Docker 都跑得。</td></tr><tr><td class="k">🌐 支援 20 種語言</td><td>JS/TS、Python、PHP、Go、Rust、Java、Ruby…</td></tr><tr><td class="k">⚖️ MIT 授權</td><td>商用、內網、fork 都可以，唔使問。</td></tr></tbody></table>
+  </div>
+</section>
+
+<section class="twocol" id="code">
+  <div class="wrap">
+    <div>
+      <h2>Quickstart</h2><p class="sub">兩個指令，冇 config 檔都可以跑。</p>
+      <pre class="codebox"># 1. 安裝（macOS / Linux）
+$ brew install brute
+
+# 2. 先睇 plan，唔會改檔案
+$ brute refactor --from js --to ts --dry-run
+
 # 3. 套用
-$ brute apply --yes</code></pre><p class="note">Windows 用 WSL；Docker image 係 `brute:2.4.0`（15 MB），可以喺 CI 直接跑。</p></div></section>
-<section class="block"><div class="wrap"><h2 class="sec-title">開發者點講</h2><p class="sec-sub">示範網站用虛構名；真 quote 會喺 GitHub discussions 後補。</p><div class="grid g2"><figure class="quote rv"><p>「一個 binary 搞掂，CI 唔使再裝一層 runtime，build 快咗幾十秒。」</p><figcaption class="who"><span class="avatar" aria-hidden="true">C</span><span><b>Chris</b><br>Platform Engineer</span></figcaption></figure><figure class="quote rv"><p>「冇 telemetry 呢點已經夠，我哋直接過咗 security review。」</p><figcaption class="who"><span class="avatar" aria-hidden="true">N</span><span><b>Nadia</b><br>Security Lead</span></figcaption></figure></div></div></section>
-<section class="block" id="log"><div class="wrap"><h2 class="sec-title">Changelog</h2><p class="sec-sub">每個版本都有 breaking change 標明；舊版 config 可以繼續用。</p><div class="log"><article class="rv"><b>v2.4.0</b><ul><li>新增 `--dry-run` 預設行為（以前要打 flag）</li><li>支援 PHP 8.3 readonly class</li><li>修：monorepo 入面 symlink 會漏檔</li></ul></article><article class="rv"><b>v2.3.1</b><ul><li>修：Windows 路徑分隔符導致 diff 亂</li><li>加快大型 repo scan 約 30%</li></ul></article><article class="rv"><b>v2.3.0</b><ul><li>加入 Rust 支援</li><li>`brute apply` 可以指定只改某幾個檔案</li></ul></article></div></div></section>
-<section class="block" id="pricing"><div class="wrap"><h2 class="sec-title">價錢</h2><p class="sec-sub">CLI 免費開源；支援同 self-host 另外傾。</p><div class="pricing"><article class="plan rv"><h3>CLI</h3><div class="price">HK$0 <small>/ 永久</small></div><p>MIT 授權，商用都免費。</p><ul><li>全部功能</li><li>商用 OK</li><li>唔需要帳號</li><li>GitHub discussions 支援</li></ul><a class="btn btn-secondary" href="#cta">下載</a></article><article class="plan rv featured"><span class="tag">有 SLA 可以加購</span><h3>團隊支援</h3><div class="price">HK$2,800 <small>/ 月</small></div><p>10 個 seat 起。</p><ul><li>48 小時內回覆</li><li>private issue</li><li>可以視像 call</li><li>SLA 可以加購</li></ul><a class="btn btn-primary" href="#cta">查詢</a></article><article class="plan rv"><h3>企業 self-host</h3><div class="price">報價 <small>/ 年</small></div><p>內網部署同合規文件。</p><ul><li>內網 license</li><li>SBOM + 安全問卷</li><li>audit log</li><li>可以簽 NDA 同 DPA</li></ul><a class="btn btn-secondary" href="#cta">聯絡</a></article></div></div></section>
-<section class="block" id="chips"><div class="wrap"><h2 class="sec-title">整合同生態</h2><p class="sec-sub">CLI 之外仲有幾個官方／社群外掛。</p><div class="chips"><span class="chip">VS Code extension</span><span class="chip">Neovim plugin</span><span class="chip">GitHub Actions</span><span class="chip">GitLab CI</span><span class="chip">Docker image</span><span class="chip">pre-commit hook</span><span class="chip">Homebrew</span><span class="chip">asdf plugin</span></div></div></section>
-<section class="block"><div class="wrap"><h2 class="sec-title">FAQ</h2><p class="sec-sub">答唔到嘅開 GitHub issue，我哋每星期覆一次。</p><div class="faq"><details class="rv"><summary>會唔會上報任何資料？</summary><div class="ans">唔會。預設零 telemetry，`--version` 之外唔會發任何 request。</div></details><details class="rv"><summary>支援 Windows 嗎？</summary><div class="ans">WSL 下面跑得；原生 Windows build 係 v2.5 目標。</div></details><details class="rv"><summary>商用要唔要俾錢？</summary><div class="ans">唔使。MIT 授權，內網同商業環境都可以用。</div></details><details class="rv"><summary>可唔可以自己加語言支援？</summary><div class="ans">可以。`brute-lang-*` 係 plugin 制，寫個 JSON 對應表就得。</div></details><details class="rv"><summary>點貢獻？</summary><div class="ans">Fork → 開 branch → 加 test → PR。PR 要有 test 同 changelog 一行。</div></details></div></div></section>
-<section class="block" id="cta"><div class="wrap"><div class="cta-band rv"><h2>brew install brute</h2><p>v2.4.0 · MIT · 11 MB · 無 telemetry。</p><div class="actions"><a class="btn btn-primary" href="#">睇 docs</a><a class="btn btn-secondary" href="#">GitHub</a></div></div></div></section>
+$ brute apply --yes</pre>
+      <p class="tiny">Windows 用 WSL；Docker image 係 `brute:2.4.0`（15 MB），可以喺 CI 直接跑。</p>
+    </div>
+    <div>
+      <h2>Changelog</h2><p class="sub">每個版本都有 breaking change 標明；舊版 config 可以繼續用。</p>
+      <div class="rel"><h4>v2.4.0</h4><ul><li>新增 `--dry-run` 預設行為（以前要打 flag）</li><li>支援 PHP 8.3 readonly class</li><li>修：monorepo 入面 symlink 會漏檔</li></ul></div><div class="rel"><h4>v2.3.1</h4><ul><li>修：Windows 路徑分隔符導致 diff 亂</li><li>加快大型 repo scan 約 30%</li></ul></div><div class="rel"><h4>v2.3.0</h4><ul><li>加入 Rust 支援</li><li>`brute apply` 可以指定只改某幾個檔案</li></ul></div>
+    </div>
+  </div>
+</section>
+<section class="nums"><div class="wrap"><div class="num"><b data-count="4800">4,800</b><span>GitHub stars</span></div><div class="num"><b data-count="120000">120,000</b><span>每月下載</span></div><div class="num"><b data-count="11 MB">11 MB</b><span>binary 大小</span></div><div class="num"><b data-count="0">0</b><span>telemetry 上報</span></div></div></section>
+
+<section class="diff">
+  <div class="wrap">
+    <h2>終端機輸出</h2><p class="sub">跑完即刻有 diff 摘要，你可以先睇再 apply。</p>
+    <div class="dwrap">
+      <pre class="before">- 手改 40 個檔案</pre>
+      <pre class="after">+ ['&lt;b&gt;exit&lt;/b&gt;', '0', '&lt;b&gt;version&lt;/b&gt;', 'v2.4.0', '&lt;b&gt;deps&lt;/b&gt;', 'none']</pre>
+    </div>
+    <p class="tiny">['&lt;b&gt;files&lt;/b&gt;', '40 changed', '12 skipped', '0 failed', '&lt;b&gt;time&lt;/b&gt;', '4.8s']</p>
+  </div>
+</section>
+<section class="steps"><div class="wrap"><h2>三步裝好</h2><p class="sub">冇安裝精靈、冇帳號、冇 onboarding wizard。</p><ol><li><b>01</b><div><h3>brew install brute</h3><p>或者 curl 個 tarball 解壓，兩個 binary。</p></div></li><li><b>02</b><div><h3>brute refactor --dry-run</h3><p>先睇 plan，唔會改你嘅檔案。</p></div></li><li><b>03</b><div><h3>brute apply --yes</h3><p>套用改動，跟住自己跑 test。</p></div></li></ol></div></section>
+<section class="chips"><div class="wrap"><h2>整合同生態</h2><p class="sub">CLI 之外仲有幾個官方／社群外掛。</p><div class="row"><span>VS Code extension</span><span>Neovim plugin</span><span>GitHub Actions</span><span>GitLab CI</span><span>Docker image</span><span>pre-commit hook</span><span>Homebrew</span><span>asdf plugin</span></div></div></section>
+<section class="quotes"><div class="wrap"><h2>開發者點講</h2><blockquote><p>「一個 binary 搞掂，CI 唔使再裝一層 runtime，build 快咗幾十秒。」</p><cite>Chris — Platform Engineer</cite></blockquote><blockquote><p>「冇 telemetry 呢點已經夠，我哋直接過咗 security review。」</p><cite>Nadia — Security Lead</cite></blockquote></div></section>
+
+<section class="price" id="pricing">
+  <div class="wrap">
+    <h2>價錢</h2><p class="sub">CLI 免費開源；支援同 self-host 另外傾。</p>
+    <table class="ptab">
+      <thead><tr><th></th><th>CLI</th><th>團隊支援</th><th>企業 self-host</th></tr>
+      <tr class="prow"><th>價錢</th><td><b>HK$0</b><span>/ 永久</span><p>MIT 授權，商用都免費。</p><a class="bt bt-1" href="#cta">下載</a></td><td><b>HK$2,800</b><span>/ 月</span><p>10 個 seat 起。</p><a class="bt bt-1" href="#cta">查詢</a></td><td><b>報價</b><span>/ 年</span><p>內網部署同合規文件。</p><a class="bt bt-1" href="#cta">聯絡</a></td></tr></thead>
+      <tbody><tr><td>全部功能</td><td>48 小時內回覆</td><td>內網 license</td></tr><tr><td>商用 OK</td><td>private issue</td><td>SBOM + 安全問卷</td></tr><tr><td>唔需要帳號</td><td>可以視像 call</td><td>audit log</td></tr><tr><td>GitHub discussions 支援</td><td>SLA 可以加購</td><td>可以簽 NDA 同 DPA</td></tr></tbody>
+    </table>
+  </div>
+</section>
+<section class="faq"><div class="wrap"><h2>FAQ</h2><p class="sub">答唔到嘅開 GitHub issue，我哋每星期覆一次。</p><details><summary>會唔會上報任何資料？</summary><p>唔會。預設零 telemetry，`--version` 之外唔會發任何 request。</p></details><details><summary>支援 Windows 嗎？</summary><p>WSL 下面跑得；原生 Windows build 係 v2.5 目標。</p></details><details><summary>商用要唔要俾錢？</summary><p>唔使。MIT 授權，內網同商業環境都可以用。</p></details><details><summary>可唔可以自己加語言支援？</summary><p>可以。`brute-lang-*` 係 plugin 制，寫個 JSON 對應表就得。</p></details><details><summary>點貢獻？</summary><p>Fork → 開 branch → 加 test → PR。PR 要有 test 同 changelog 一行。</p></details></div></section>
+<section class="cta" id="cta"><div class="wrap"><h2>即刻試</h2><p></p><a class="bt bt-inv" href="#">睇 docs</a></div></section>
 </main>
-<footer class="block site-footer"><div class="wrap"><div class="foot-grid"><div><h4>docs</h4><a href="#">Quickstart</a><a href="#">CLI reference</a><a href="#">Plugins</a><a href="#">Migration</a></div><div><h4>專案</h4><a href="#">Changelog</a><a href="#">Roadmap</a><a href="#">Contributing</a><a href="#">Security policy</a></div><div><h4>社群</h4><a href="#">GitHub discussions</a><a href="#">Matrix room</a><a href="#">每週 office hour</a><a href="#">Blog</a></div><div><h4>授權</h4><a href="#">MIT</a><a href="#">SBOM</a><a href="#">Trademark policy</a><a href="#">聯絡我們</a></div><div><h4>版本通知</h4><form class="news" onsubmit="return false"><label for="nl" style="display:none">版本通知</label><input id="nl" type="email" placeholder="you@example.com"><button class="btn btn-primary" type="submit">訂閱</button></form></div></div><div class="foot-bottom"><span>© 2026 Brute（示範網站，非真實專案）· MIT · 由社群維護</span><span>GitHub · Matrix · RSS</span></div></div></footer>
-<section class="block band" id="qa"><div class="wrap"><h2 class="sec-title">設計 QA · 按鈕同表單</h2><p class="sec-sub">同一套元素庫嘅 11 個按鈕狀態（含 loading／success／icon／size）+ 表單，用嚟驗風格嘅 focus／disabled／錯誤狀態夠唔夠清楚。</p><div class="btn-row"><div class="state"><button class="btn btn-primary " type="button">Primary</button><small>Default</small></div><div class="state"><button class="btn btn-primary is-hover" type="button">Primary</button><small>Hover</small></div><div class="state"><button class="btn btn-primary is-active" type="button">Primary</button><small>Active</small></div><div class="state"><button class="btn btn-primary is-focus" type="button">Primary</button><small>Focus</small></div><div class="state"><button class="btn btn-primary " type="button" disabled>Primary</button><small>Disabled</small></div><div class="state"><button class="btn btn-primary " type="button" data-state="loading"><span class="spin"></span> 傳送中…</button><small>Loading</small></div><div class="state"><button class="btn btn-primary " type="button" data-state="done">已收到 · 1 個工作日內覆你</button><small>Success</small></div><div class="state"><button class="btn btn-primary " type="button"><span class="i" aria-hidden="true">→</span> 下一步</button><small>Icon + arrow</small></div><div class="state"><button class="btn btn-primary btn-sm" type="button">Small</button><small>Small（btn-sm）</small></div><div class="state"><button class="btn btn-primary btn-lg" type="button">Large</button><small>Large（btn-lg）</small></div><div class="state"><button class="btn btn-secondary" type="button">Secondary</button><small>Secondary</small></div></div><form class="form" style="margin-top:38px" onsubmit="return false"><div class="field"><label for="n">你嘅名</label><input id="n" placeholder="例如：陳大文"></div><div class="field"><label for="e">工作電郵</label><input id="e" type="email" placeholder="you@company.com"></div><div class="field"><label for="c">團隊幾大？</label><select id="c"><option>1–5 人</option><option>6–20 人</option><option>21 人以上</option></select></div><label class="check"><input type="checkbox" class="toggle" checked> 接收產品更新</label><div><button class="btn btn-primary" type="submit">提交</button></div></form></div></section>
-<script>
-(function(){var s=document.getElementById('seats');if(!s)return;
-var o=document.getElementById('roiOut'),mo=document.getElementById('roiMoney'),so=document.getElementById('seatsOut');
-var H=6,R=900;
-function up(){var n=+s.value;so.textContent=n;var h=Math.round(n*H),m=h*R;
-o.textContent=h+' 小時 / 月';mo.textContent='約 HK$'+m.toLocaleString()+'（對比人手寫同樣嘅 PR）';}
-s.addEventListener('input',up);up();})();
-</script>
-<script>
-(function(){var f=document.querySelector('#qa form');if(!f)return;
-var b=f.querySelector('button[type=submit]');if(!b)return;
-var live=document.createElement('p');live.className='note';live.setAttribute('aria-live','polite');
-f.appendChild(live);
-f.addEventListener('submit',function(e){e.preventDefault();
-if(b.dataset.state==='loading')return;
-var label=b.textContent;b.dataset.state='loading';b.innerHTML='<span class="spin"></span> 傳送中…';
-setTimeout(function(){b.dataset.state='done';b.textContent='已收到 · 1 個工作日內覆你';
-live.textContent='（示範狀態：真表單要接後端；重新載入可以再試）';
-setTimeout(function(){b.dataset.state='';b.textContent=label;},2600);},900);});})();
-</script>
+
+<footer class="ft">
+  <div class="wrap">
+    <div class="fgrid"><div><h4>docs</h4><a href='#'>Quickstart</a><a href='#'>CLI reference</a><a href='#'>Plugins</a><a href='#'>Migration</a></div><div><h4>專案</h4><a href='#'>Changelog</a><a href='#'>Roadmap</a><a href='#'>Contributing</a><a href='#'>Security policy</a></div><div><h4>社群</h4><a href='#'>GitHub discussions</a><a href='#'>Matrix room</a><a href='#'>每週 office hour</a><a href='#'>Blog</a></div><div><h4>授權</h4><a href='#'>MIT</a><a href='#'>SBOM</a><a href='#'>Trademark policy</a><a href='#'>聯絡我們</a></div></div>
+    <div class="news">
+      <h4>版本通知</h4>
+      <form onsubmit="return false"><input type="email" placeholder="you@example.com" aria-label="版本通知"><button class="bt bt-1" type="submit">訂閱</button></form>
+    </div>
+    <p class="legal">© 2026 Brute · 示範網站，公司同客戶名全部虛構 · 圖為 AI 生成示意 · MIT</p>
+  </div>
+</footer>
 </body></html>

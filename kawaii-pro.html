@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="zh-Hant-HK"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<html lang="zh-Hant-HK" class="is-pro"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Kawaii Pro（動效版）· 可愛 — Momo</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=M+PLUS+Rounded+1c:wght@400;700;800&display=swap">
 <meta name="description" content="Momo 出嘅貼紙、筆記簿同小物：粉彩、圓角、摸落舒服。買一支筆都會笑。">
@@ -8,62 +8,276 @@
 <meta property="og:description" content="Momo 出嘅貼紙、筆記簿同小物：粉彩、圓角、摸落舒服。買一支筆都會笑。">
 <meta name="twitter:card" content="summary_large_image">
 <meta property="og:image" content="media/og/kawaii.png">
-<link rel="stylesheet" href="blocks.css">
-<style>:root{--bg:#FFF7FA;--fg:#5B4636;--muted:#75665A;--surface:#FFFFFF;--border:#FFD9E6;--accent:#FF7FAE;--accent-fg:#4A3428;--accent-grad:linear-gradient(#FFB7C5,#FF7FAE);--radius:26px;--radius-sm:16px;--shadow:0 10px 24px rgba(255,183,197,.42);--btn-shadow:0 5px 0 #FF9EBB;--art-bg:radial-gradient(circle at 30% 25%,#FFF1A8,#FFB7C5);--media-bg:radial-gradient(circle at 30% 25%,#FFF1A8,#FFC9DD);--cta-bg:#FFE3EE;--input-bg:#FFF7FA;--ok:#B5EAD7;--warn:#FF7FAE;--font-display:"Mochiy Pop One","M PLUS Rounded 1c",sans-serif;--font-body:"M PLUS Rounded 1c","Noto Sans TC",sans-serif;--focus-ring:#FF0F67;}
-
-.card,.plan,.quote,.tile-c,.rows,.mock,.roi,.badge-card{border:2px dashed #FFD9E6}
-.tile-c,.plan{border-style:dashed}
-.btn{border:2px solid #FFD9E6}
-.logo::before{content:"✦";color:#FF7FAE;font-size:18px}
-.hero h1{text-shadow:2px 2px 0 #fff,4px 4px 0 #FFD9E6}
-.chip{border:2px dashed #FFB7C5;border-radius:999px;background:#FFF7FA}
-.avatar{background:linear-gradient(#FFB7C5,#FF7FAE)}
-.tag{transform:rotate(-3deg)}
-.hero::before{content:"";position:absolute;right:7%;top:10%;width:min(220px,24vw);aspect-ratio:1;border-radius:50%;background:radial-gradient(circle at 50% 56%,#FFF1A8,#FFDAC1);box-shadow:inset -8px -10px 0 rgba(255,183,197,.5);z-index:0;pointer-events:none}
-.hero::after{content:"";position:absolute;left:6%;top:16%;width:120px;height:70px;border-radius:50%;background:radial-gradient(circle,rgba(255,183,197,.5),transparent 70%);z-index:0;pointer-events:none}
-</style>
-<link rel="stylesheet" href="pro/motion.css">
+<link rel="stylesheet" href="bespoke/_bar.css">
+<link rel="stylesheet" href="bespoke/kawaii.css">
+<style>:root{--bg:#FFF7FA;--fg:#5B4636;--muted:#75665A;--surface:#FFFFFF;--border:#FFD9E6;--accent:#FF7FAE;--accent-fg:#4A3428;--accent-grad:linear-gradient(#FFB7C5,#FF7FAE);--radius:26px;--radius-sm:16px;--shadow:0 10px 24px rgba(255,183,197,.42);--btn-shadow:0 5px 0 #FF9EBB;--art-bg:radial-gradient(circle at 30% 25%,#FFF1A8,#FFB7C5);--media-bg:radial-gradient(circle at 30% 25%,#FFF1A8,#FFC9DD);--cta-bg:#FFE3EE;--input-bg:#FFF7FA;--ok:#B5EAD7;--warn:#FF7FAE;--font-display:"Mochiy Pop One","M PLUS Rounded 1c",sans-serif;--font-body:"M PLUS Rounded 1c","Noto Sans TC",sans-serif;--focus-ring:#FF0F67;}</style>
 </head>
 <body>
 <div class="demo-bar"><span><a href="index.html">← 全部風格</a> · <b>✨ 5/57 🌸 Kawaii 可愛 Pro（12 block + 動效）</b></span><span><a href="kawaii.html">對比基本版</a> · <a href="japandi-pro.html">‹ Japandi</a> · <a href="kitsch-pro.html">Kitsch ›</a> · <a href="obsidian://open?vault=Obsidian&file=04-%E5%85%A7%E5%AE%B9%E5%89%B5%E4%BD%9C/UIUX%20Style/Styles/Kawaii">📝 Obsidian 筆記</a></span></div>
-<div class="pro-curtain" aria-hidden="true" style="background:#FFF7FA"><div style="font:400 34px 'Mochiy Pop One',serif;color:#FF7FAE">♡ ✦ ♡</div></div>
-<header class="site-header wrap"><div class="logo">Momo</div><input type="checkbox" id="navToggle" class="nav-toggle-input" aria-label="開關選單"><label class="nav-toggle" for="navToggle">選單</label><nav class="nav" aria-label="主選單"><a href="#products" aria-current="page">商品</a><a href="#chips">聯乘</a><a href="#locations">門市</a><a href="#pricing">會員</a></nav><label class="nav-scrim" for="navToggle" aria-hidden="true"></label><a class="btn btn-primary" href="#cta">拎試用裝</a></header>
-<main>
-<section class="block hero" id="hero"><div class="wrap hero-grid"><div><span class="eyebrow rv">文具 · 生活雜貨 · 香港</span><h1>每日都想用嘅文具</h1><p class="lead rv">Momo 出嘅貼紙、筆記簿同小物：粉彩、圓角、摸落舒服。買一支筆都會笑。</p><div class="actions rv"><a class="btn btn-primary" href="#cta">拎試用裝 <span class="i" aria-hidden="true">→</span></a><a class="btn btn-secondary" href="#product">睇新品</a></div><p class="note rv">滿 HK$200 免運 · 三間門市可以自取</p></div><figure class="hero-art has-media rv"><img src="media/kawaii-hero.jpg" alt="" loading="lazy"><figcaption>情境示意圖 · AI 生成</figcaption></figure></div></section>
-<section class="block tight trust band"><div class="wrap trust"><span class="lbl">每月 8,000 張訂單，賣過俾（示範網站，虛構店名）：</span><span class="wordmark">小書店</span><span class="wordmark">文具研究所</span><span class="wordmark">格仔雜貨</span><span class="wordmark">雲朵咖啡</span><span class="wordmark">Paperland</span></div></section>
-<section class="block" id="features"><div class="wrap"><h2 class="sec-title">點解拎上手會笑</h2><p class="sec-sub">唔係得個樣 —— 用料同手感都有揀過。</p><div class="grid g4"><article class="card rv"><span class="ico" aria-hidden="true">🌸</span><h3>粉彩配色</h3><p>櫻花粉、薄荷、薰衣草、牛油黃，擺埋一齊都好睇。</p></article><article class="card rv"><span class="ico" aria-hidden="true">🫧</span><h3>圓角唔刺手</h3><p>全部邊位倒圓，放入筆袋唔會刮爛其他嘢。</p></article><article class="card rv"><span class="ico" aria-hidden="true">♡</span><h3>聯乘限定</h3><p>每一季同不同小店合作，賣完唔補。</p></article><article class="card rv"><span class="ico" aria-hidden="true">🏬</span><h3>門市摸得到</h3><p>三間門市齊現貨，試完先買都得。</p></article></div></div></section>
-<section class="block band" id="product"><div class="wrap"><h2 class="sec-title">網店介面</h2><p class="sec-sub">揀款、睇庫存、落單，三個步驟搞掂。</p><div class="mock rv"><div class="mock-bar"><span class="mock-dot"></span><span class="mock-dot"></span><span class="mock-dot"></span><span style="margin-left:8px">Momo 網店 · 新品 12 款</span></div><div class="mock-body"><aside class="mock-side"><span><b>分類</b></span><span>貼紙</span><span>筆記簿</span><span>筆類</span><span>聯乘</span><span><b>篩選</b></span><span>有現貨</span></aside><div class="mock-main"><div class="mock-row"><span class="pill">貼紙包</span> 甜夢系列 · 12 張 · HK$28</div><div class="mock-row"><span class="pill">筆記簿</span> A5 線圈 · 100 頁 · HK$48</div><div class="mock-row"><span class="pill">筆袋</span> 聯乘限定 · 剩 3 件 · HK$98</div><div class="mock-row"><span class="diff-add">+ 已加入購物車（3 件）</span></div></div><aside class="mock-right"><span><b>購物車</b></span><span>HK$174</span><span><b>運費</b></span><span>再買 $26 免運</span></aside></div></div><p class="note">示範版係靜態畫面；Pro 版會逐行打出嚟。</p></div></section>
-<section class="block"><div class="wrap"><h2 class="sec-title">買嘢三步</h2><p class="sec-sub">落單之後 1 個工作日內出貨。</p><ol class="steps"><li class="rv"><h3>揀款</h3><p>用分類或者「有現貨」篩選，睇得到每款剩幾件。</p></li><li class="rv"><h3>落單</h3><p>信用卡、FPS、PayMe 都得；滿 $200 免運。</p></li><li class="rv"><h3>收貨</h3><p>順豐送上門，或者約三間門市自取。</p></li></ol></div></section>
-<section class="block tight"><div class="wrap"><div class="stats"><div class="stat rv"><span class="num">8,000</span><span>張訂單／月</span></div><div class="stat rv"><span class="num">120 款</span><span>貼紙同小物</span></div><div class="stat rv"><span class="num">3 間</span><span>門市（旺角・銅鑼灣・沙田）</span></div><div class="stat rv"><span class="num">4.9/5</span><span>客人評分（示範數據）</span></div></div></div></section>
-<section class="block" id="products"><div class="wrap"><h2 class="sec-title">本季新品</h2><p class="sec-sub">全部門市有現貨，網店落單可以自取。</p><div class="tiles"><article class="tile-c rv"><div class="ph wide" aria-hidden="true">🌸</div><h3>甜夢貼紙包</h3><p>12 張入 · 防水 · 圓角</p><span class="cost">HK$28</span></article><article class="tile-c rv"><div class="ph wide" aria-hidden="true">📒</div><h3>A5 線圈筆記簿</h3><p>100 頁 · 80gsm · 5 色</p><span class="cost">HK$48</span></article><article class="tile-c rv"><div class="ph wide" aria-hidden="true">🖊️</div><h3>奶油色原子筆</h3><p>0.5mm 黑墨 · 3 支裝</p><span class="cost">HK$36</span></article><article class="tile-c rv"><div class="ph wide" aria-hidden="true">👜</div><h3>聯乘筆袋</h3><p>限定 300 件 · 防水布</p><span class="cost">HK$98</span></article></div></div></section>
-<section class="block"><div class="wrap"><h2 class="sec-title">客人點講</h2><p class="sec-sub">示範網站用虛構名；真評語會喺真實訂單後補。</p><div class="grid g2"><figure class="quote rv"><p>「貼紙質地好好，唔會一撕就爛，價錢又唔貴，已經回購第三次。」</p><figcaption class="who"><span class="avatar" aria-hidden="true">阿</span><span><b>阿欣</b><br>客人 · 旺角自取</span></figcaption></figure><figure class="quote rv"><p>「買嚟做禮物，包裝本身已經好靚，朋友即刻問我邊度買。」</p><figcaption class="who"><span class="avatar" aria-hidden="true">C</span><span><b>Cathy</b><br>客人 · 順豐送貨</span></figcaption></figure></div></div></section>
-<section class="block" id="chips"><div class="wrap"><h2 class="sec-title">今季聯乘（示範網站，品牌虛構）</h2><p class="sec-sub">每次同不同小店合作，賣完唔補貨。</p><div class="chips"><span class="chip">Momo × 小熊食堂</span><span class="chip">Momo × 甜夢工房</span><span class="chip">Momo × 雲朵咖啡</span><span class="chip">Momo × Paperland</span><span class="chip">Momo × 格仔雜貨</span></div></div></section>
-<section class="block" id="pricing"><div class="wrap"><h2 class="sec-title">會員計劃</h2><p class="sec-sub">唔想俾月費都得，散買一樣有會員價。</p><div class="pricing"><article class="plan rv"><h3>散買</h3><div class="price">HK$0 <small>/ 唔使入會</small></div><p>直接買，滿 $200 免運。</p><ul><li>網店同門市同價</li><li>滿 $200 免運</li><li>7 日退換</li></ul><a class="btn btn-secondary" href="#cta">去購物</a></article><article class="plan rv featured"><span class="tag">最受歡迎</span><h3>Momo Club</h3><div class="price">HK$38 <small>/ 月</small></div><p>每月一件小物 + 9 折。</p><ul><li>每月隨機小物一件</li><li>全店 9 折</li><li>新品優先買</li><li>生日雙倍積分</li></ul><a class="btn btn-primary" href="#cta">加入 Club</a></article><article class="plan rv"><h3>禮品包</h3><div class="price">報價 <small>/ 學校 · 公司</small></div><p>活動或員工禮物。</p><ul><li>可以印 logo</li><li>50 份起</li><li>三款預算可揀</li><li>香港本地出貨</li></ul><a class="btn btn-secondary" href="#cta">索取報價</a></article></div></div></section>
-<section class="block" id="locations"><div class="wrap"><h2 class="sec-title">門市</h2><p class="sec-sub">試完先買，全部有現貨；自取免運。</p><div class="tiles"><article class="tile-c rv"><div class="ph wide" aria-hidden="true">🏬</div><h3>旺角店</h3><p>西洋菜南街 · 12:00–22:00</p><span class="cost">自取 · 現貨齊</span></article><article class="tile-c rv"><div class="ph wide" aria-hidden="true">🏬</div><h3>銅鑼灣店</h3><p>白沙道 · 12:00–21:30</p><span class="cost">自取 · 聯乘限定</span></article><article class="tile-c rv"><div class="ph wide" aria-hidden="true">🏬</div><h3>沙田店</h3><p>新城市廣場 · 11:00–22:00</p><span class="cost">自取 · 親子工作坊</span></article></div></div></section>
-<section class="block"><div class="wrap"><h2 class="sec-title">買之前想知</h2><p class="sec-sub">問唔到嘅可以 WhatsApp 我們。</p><div class="faq"><details class="rv"><summary>運費幾多？</summary><div class="ans">順豐 HK$30，滿 HK$200 免運；門市自取免運費。</div></details><details class="rv"><summary>可唔可以退換？</summary><div class="ans">未拆封 7 日內可以換貨；貼紙一撕過就唔換（衛生理由）。</div></details><details class="rv"><summary>門市有冇現貨？</summary><div class="ans">網店顯示「有現貨」嘅款，三間門市同步有；限量聯乘只喺指定門市。</div></details><details class="rv"><summary>聯乘會唔會補貨？</summary><div class="ans">唔會。每次都係限量，賣完就冇。</div></details><details class="rv"><summary>可以幫襯禮物包裝？</summary><div class="ans">可以，加 HK$20 有 Momo 包裝紙同手寫卡。</div></details></div></div></section>
-<section class="block" id="cta"><div class="wrap"><div class="cta-band rv"><h2>新客送貼紙試用裝</h2><p>落單時輸入 WELCOME，加送隨機貼紙 3 張。</p><div class="actions"><a class="btn btn-primary" href="#">拎試用裝</a><a class="btn btn-secondary" href="#">睇新品</a></div></div></div></section>
+<div class="curtain" aria-hidden="true" style="background:#FFF7FA"><div><span>Momo ♡</span><span>loading…</span></div></div>
+<header class="hd">
+  <div class="wrap hdrow">
+    <a class="logo" href="#top"><span aria-hidden="true">♡</span>Momo</a>
+    <nav class="nv" aria-label="主選單"><a href="#products">商品</a><a href="#chips">聯乘</a><a href="#locations">門市</a><a href="#pricing">會員</a></nav>
+    <a class="bt bt-1 hdcta" href="#cta">拎試用裝</a>
+  </div>
+</header>
+<main id="top">
+<section class="hero">
+  <div class="wrap herogrid">
+    <div class="hero-l">
+      <span class="sticker kick">文具 · 生活雜貨 · 香港</span>
+      <h1>每日都想用嘅文具</h1>
+      <p class="lead">Momo 出嘅貼紙、筆記簿同小物：粉彩、圓角、摸落舒服。買一支筆都會笑。</p>
+      <div class="acts">
+        <a class="bt bt-1" href="#products">拎試用裝</a>
+        <a class="bt bt-2" href="#products">睇新品</a>
+      </div>
+      <p class="notes"><span>滿 HK$200 免運</span><span>三間門市可以自取</span></p>
+    </div>
+    <div class="hero-r">
+      <span class="blob b1" aria-hidden="true">🌸</span>
+      <span class="blob b2" aria-hidden="true">✦</span>
+      <span class="blob b3" aria-hidden="true">♡</span>
+    </div>
+  </div>
+</section>
+<section class="ph">
+  <div class="wrap">
+    <figure class="photo"><img src="media/kawaii-hero.jpg" alt="門市情境示意圖" loading="lazy"><figcaption>情境示意圖 · AI 生成</figcaption></figure>
+  </div>
+</section>
+<section class="trust">
+  <div class="wrap">
+    <p class="tlbl">每月 8,000 張訂單，賣過俾（示範網站，虛構店名）：</p>
+    <div class="trow"><span class="tstk tilt0">小書店</span><span class="tstk tilt1">文具研究所</span><span class="tstk tilt0">格仔雜貨</span><span class="tstk tilt1">雲朵咖啡</span><span class="tstk tilt0">Paperland</span></div>
+  </div>
+</section>
+<section class="goods" id="products">
+  <div class="wrap">
+    <h2>本季新品</h2><p class="sub">全部門市有現貨，網店落單可以自取。</p>
+    <div class="pgrid"><article class="pcard tilt0">
+  <span class="pico" aria-hidden="true">🌸</span>
+  <h3>甜夢貼紙包</h3>
+  <p>12 張入 · 防水 · 圓角</p>
+  <a class="prow" href="#pricing"><span class="pprice">HK$28</span><span aria-hidden="true">♡</span></a>
+</article><article class="pcard tilt1">
+  <span class="pico" aria-hidden="true">📒</span>
+  <h3>A5 線圈筆記簿</h3>
+  <p>100 頁 · 80gsm · 5 色</p>
+  <a class="prow" href="#pricing"><span class="pprice">HK$48</span><span aria-hidden="true">♡</span></a>
+</article><article class="pcard tilt0">
+  <span class="pico" aria-hidden="true">🖊️</span>
+  <h3>奶油色原子筆</h3>
+  <p>0.5mm 黑墨 · 3 支裝</p>
+  <a class="prow" href="#pricing"><span class="pprice">HK$36</span><span aria-hidden="true">♡</span></a>
+</article><article class="pcard tilt1">
+  <span class="pico" aria-hidden="true">👜</span>
+  <h3>聯乘筆袋</h3>
+  <p>限定 300 件 · 防水布</p>
+  <a class="prow" href="#pricing"><span class="pprice">HK$98</span><span aria-hidden="true">♡</span></a>
+</article></div>
+  </div>
+</section>
+<section class="feat">
+  <div class="wrap">
+    <h2>點解拎上手會笑</h2><p class="sub">唔係得個樣 —— 用料同手感都有揀過。</p>
+    <div class="fgrid"><article class="fcard tilt0">
+  <span class="fico" aria-hidden="true">🌸</span>
+  <h3>粉彩配色</h3><p>櫻花粉、薄荷、薰衣草、牛油黃，擺埋一齊都好睇。</p>
+</article><article class="fcard tilt1">
+  <span class="fico" aria-hidden="true">🫧</span>
+  <h3>圓角唔刺手</h3><p>全部邊位倒圓，放入筆袋唔會刮爛其他嘢。</p>
+</article><article class="fcard tilt0">
+  <span class="fico" aria-hidden="true">♡</span>
+  <h3>聯乘限定</h3><p>每一季同不同小店合作，賣完唔補。</p>
+</article><article class="fcard tilt1">
+  <span class="fico" aria-hidden="true">🏬</span>
+  <h3>門市摸得到</h3><p>三間門市齊現貨，試完先買都得。</p>
+</article></div>
+  </div>
+</section>
+<section class="stp">
+  <div class="wrap">
+    <h2>買嘢三步</h2><p class="sub">落單之後 1 個工作日內出貨。</p>
+    <ol class="steprow"><li><span class="stepn" aria-hidden="true">1</span>
+  <div><h3>揀款</h3><p>用分類或者「有現貨」篩選，睇得到每款剩幾件。</p></div></li><li><span class="stepn" aria-hidden="true">2</span>
+  <div><h3>落單</h3><p>信用卡、FPS、PayMe 都得；滿 $200 免運。</p></div></li><li><span class="stepn" aria-hidden="true">3</span>
+  <div><h3>收貨</h3><p>順豐送上門，或者約三間門市自取。</p></div></li></ol>
+  </div>
+</section>
+<section class="nums">
+  <div class="wrap sgrid"><div class="badge">
+  <b data-count="8000">8,000</b><span>張訂單／月</span>
+</div><div class="badge">
+  <b data-count="120">120 款</b><span>貼紙同小物</span>
+</div><div class="badge">
+  <b data-count="3">3 間</b><span>門市（旺角・銅鑼灣・沙田）</span>
+</div><div class="badge">
+  <b data-count="4.9">4.9/5</b><span>客人評分（示範數據）</span>
+</div></div>
+</section>
+<section class="loc" id="locations">
+  <div class="wrap">
+    <h2>門市</h2><p class="sub">試完先買，全部有現貨；自取免運。</p>
+    <div class="lgrid"><article class="lcard">
+  <span class="lico" aria-hidden="true">🏬</span>
+  <h3>旺角店</h3><p>西洋菜南街 · 12:00–22:00</p>
+  <span class="ltag">自取 · 現貨齊</span>
+</article><article class="lcard">
+  <span class="lico" aria-hidden="true">🏬</span>
+  <h3>銅鑼灣店</h3><p>白沙道 · 12:00–21:30</p>
+  <span class="ltag">自取 · 聯乘限定</span>
+</article><article class="lcard">
+  <span class="lico" aria-hidden="true">🏬</span>
+  <h3>沙田店</h3><p>新城市廣場 · 11:00–22:00</p>
+  <span class="ltag">自取 · 親子工作坊</span>
+</article></div>
+  </div>
+</section>
+<section class="wall" id="chips">
+  <div class="wrap">
+    <h2>今季聯乘（示範網站，品牌虛構）</h2><p class="sub">每次同不同小店合作，賣完唔補貨。</p>
+    <div class="wgrid"><span class="stk tilt0">Momo × 小熊食堂</span><span class="stk tilt1">Momo × 甜夢工房</span><span class="stk tilt2">Momo × 雲朵咖啡</span><span class="stk tilt0">Momo × Paperland</span><span class="stk tilt1">Momo × 格仔雜貨</span></div>
+  </div>
+</section>
+<section class="mock">
+  <div class="wrap">
+    <h2>網店介面</h2><p class="sub">揀款、睇庫存、落單，三個步驟搞掂。</p>
+    <div class="win">
+      <div class="wbar"><i></i><i></i><i></i><span>Momo 網店 · 新品 12 款</span></div>
+      <div class="wbody">
+        <ul class="wside"><li><b>分類</b></li><li>貼紙</li><li>筆記簿</li><li>筆類</li><li>聯乘</li><li><b>篩選</b></li><li>有現貨</li></ul>
+        <ul class="wmain"><li><span class="pill">貼紙包</span> 甜夢系列 · 12 張 · HK$28</li><li><span class="pill">筆記簿</span> A5 線圈 · 100 頁 · HK$48</li><li><span class="pill">筆袋</span> 聯乘限定 · 剩 3 件 · HK$98</li><li><span class="diff-add">+ 已加入購物車（3 件）</span></li></ul>
+        <ul class="wright"><li><b>購物車</b></li><li>HK$174</li><li><b>運費</b></li><li>再買 $26 免運</li></ul>
+      </div>
+    </div>
+    <p class="tiny">示範版係靜態畫面；Pro 版會逐行打出嚟。</p>
+  </div>
+</section>
+<section class="talk">
+  <div class="wrap">
+    <h2>客人點講</h2><p class="sub">示範網站用虛構名；真評語會喺真實訂單後補。</p>
+    <div class="bgrid"><figure class="bub">
+  <span class="face" aria-hidden="true">阿</span>
+  <blockquote><p>「貼紙質地好好，唔會一撕就爛，價錢又唔貴，已經回購第三次。」</p><figcaption><b>阿欣</b><br>客人 · 旺角自取</figcaption></blockquote>
+</figure><figure class="bub">
+  <span class="face" aria-hidden="true">C</span>
+  <blockquote><p>「買嚟做禮物，包裝本身已經好靚，朋友即刻問我邊度買。」</p><figcaption><b>Cathy</b><br>客人 · 順豐送貨</figcaption></blockquote>
+</figure></div>
+  </div>
+</section>
+<section class="club" id="pricing">
+  <div class="wrap">
+    <h2>會員計劃</h2><p class="sub">唔想俾月費都得，散買一樣有會員價。</p>
+    <div class="mgrid"><article class="mcard">
+  
+  <h3>散買</h3>
+  <p class="mprice"><b>HK$0</b><span>/ 唔使入會</span></p>
+  <p class="mdesc">直接買，滿 $200 免運。</p>
+  <ul><li>網店同門市同價</li><li>滿 $200 免運</li><li>7 日退換</li></ul>
+  <a class="bt bt-2" href="#cta">去購物</a>
+</article><article class="mcard feat">
+  <span class="ribbon">最受歡迎</span>
+  <h3>Momo Club</h3>
+  <p class="mprice"><b>HK$38</b><span>/ 月</span></p>
+  <p class="mdesc">每月一件小物 + 9 折。</p>
+  <ul><li>每月隨機小物一件</li><li>全店 9 折</li><li>新品優先買</li><li>生日雙倍積分</li></ul>
+  <a class="bt bt-1" href="#cta">加入 Club</a>
+</article><article class="mcard">
+  
+  <h3>禮品包</h3>
+  <p class="mprice"><b>報價</b><span>/ 學校 · 公司</span></p>
+  <p class="mdesc">活動或員工禮物。</p>
+  <ul><li>可以印 logo</li><li>50 份起</li><li>三款預算可揀</li><li>香港本地出貨</li></ul>
+  <a class="bt bt-2" href="#cta">索取報價</a>
+</article></div>
+  </div>
+</section>
+<section class="faqs">
+  <div class="wrap">
+    <h2>買之前想知</h2><p class="sub">問唔到嘅可以 WhatsApp 我們。</p>
+    <details class="chat">
+  <summary><span class="qface" aria-hidden="true">?</span><span class="q">運費幾多？</span></summary>
+  <div class="ans"><p>順豐 HK$30，滿 HK$200 免運；門市自取免運費。</p></div>
+</details><details class="chat">
+  <summary><span class="qface" aria-hidden="true">?</span><span class="q">可唔可以退換？</span></summary>
+  <div class="ans"><p>未拆封 7 日內可以換貨；貼紙一撕過就唔換（衛生理由）。</p></div>
+</details><details class="chat">
+  <summary><span class="qface" aria-hidden="true">?</span><span class="q">門市有冇現貨？</span></summary>
+  <div class="ans"><p>網店顯示「有現貨」嘅款，三間門市同步有；限量聯乘只喺指定門市。</p></div>
+</details><details class="chat">
+  <summary><span class="qface" aria-hidden="true">?</span><span class="q">聯乘會唔會補貨？</span></summary>
+  <div class="ans"><p>唔會。每次都係限量，賣完就冇。</p></div>
+</details><details class="chat">
+  <summary><span class="qface" aria-hidden="true">?</span><span class="q">可以幫襯禮物包裝？</span></summary>
+  <div class="ans"><p>可以，加 HK$20 有 Momo 包裝紙同手寫卡。</p></div>
+</details>
+  </div>
+</section>
+<section class="cta" id="cta">
+  <div class="wrap cwrap">
+    <span class="cdeco" aria-hidden="true">♡ ✦ ♡</span>
+    <h2>新客送貼紙試用裝</h2>
+    <p>落單時輸入 WELCOME，加送隨機貼紙 3 張。</p>
+    <div class="acts">
+      <a class="bt bt-1" href="#products">拎試用裝</a>
+      <a class="bt bt-3" href="#pricing">睇新品</a>
+    </div>
+  </div>
+</section>
 </main>
-<footer class="block site-footer"><div class="wrap"><div class="foot-grid"><div><h4>商品</h4><a href="#">貼紙</a><a href="#">筆記簿</a><a href="#">筆類</a><a href="#">聯乘限定</a></div><div><h4>店舖</h4><a href="#">旺角店</a><a href="#">銅鑼灣店</a><a href="#">沙田店</a><a href="#">營業時間</a></div><div><h4>客戶服務</h4><a href="#">運費同退換</a><a href="#">會員計劃</a><a href="#">禮品包</a><a href="#">聯絡我們</a></div><div><h4>關於</h4><a href="#">品牌故事</a><a href="#">合作洽談</a><a href="#">招聘</a><a href="#">私隱政策</a></div><div><h4>新品通知</h4><form class="news" onsubmit="return false"><label for="nl" style="display:none">新品通知</label><input id="nl" type="email" placeholder="you@example.com"><button class="btn btn-primary" type="submit">訂閱</button></form></div></div><div class="foot-bottom"><span>© 2026 Momo Studio · 示範網站：品牌、門市、數字同評語全部虛構</span><span>IG · Threads · WhatsApp</span></div></div></footer>
-<section class="block band" id="qa"><div class="wrap"><h2 class="sec-title">設計 QA · 按鈕同表單</h2><p class="sec-sub">同一套元素庫嘅 11 個按鈕狀態（含 loading／success／icon／size）+ 表單，用嚟驗風格嘅 focus／disabled／錯誤狀態夠唔夠清楚。</p><div class="btn-row"><div class="state"><button class="btn btn-primary " type="button">Primary</button><small>Default</small></div><div class="state"><button class="btn btn-primary is-hover" type="button">Primary</button><small>Hover</small></div><div class="state"><button class="btn btn-primary is-active" type="button">Primary</button><small>Active</small></div><div class="state"><button class="btn btn-primary is-focus" type="button">Primary</button><small>Focus</small></div><div class="state"><button class="btn btn-primary " type="button" disabled>Primary</button><small>Disabled</small></div><div class="state"><button class="btn btn-primary " type="button" data-state="loading"><span class="spin"></span> 傳送中…</button><small>Loading</small></div><div class="state"><button class="btn btn-primary " type="button" data-state="done">已收到 · 1 個工作日內覆你</button><small>Success</small></div><div class="state"><button class="btn btn-primary " type="button"><span class="i" aria-hidden="true">→</span> 下一步</button><small>Icon + arrow</small></div><div class="state"><button class="btn btn-primary btn-sm" type="button">Small</button><small>Small（btn-sm）</small></div><div class="state"><button class="btn btn-primary btn-lg" type="button">Large</button><small>Large（btn-lg）</small></div><div class="state"><button class="btn btn-secondary" type="button">Secondary</button><small>Secondary</small></div></div><form class="form" style="margin-top:38px" onsubmit="return false"><div class="field"><label for="n">你嘅名</label><input id="n" placeholder="例如：陳大文"></div><div class="field"><label for="e">工作電郵</label><input id="e" type="email" placeholder="you@company.com"></div><div class="field"><label for="c">團隊幾大？</label><select id="c"><option>1–5 人</option><option>6–20 人</option><option>21 人以上</option></select></div><label class="check"><input type="checkbox" class="toggle" checked> 接收產品更新</label><div><button class="btn btn-primary" type="submit">提交</button></div></form></div></section>
+<footer class="ft">
+  <div class="wave" aria-hidden="true"></div>
+  <section class="ftin">
+    <div class="wrap">
+      <div class="footgrid"><div><h4>商品</h4><a href="#">貼紙</a><a href="#">筆記簿</a><a href="#">筆類</a><a href="#">聯乘限定</a></div><div><h4>店舖</h4><a href="#">旺角店</a><a href="#">銅鑼灣店</a><a href="#">沙田店</a><a href="#">營業時間</a></div><div><h4>客戶服務</h4><a href="#">運費同退換</a><a href="#">會員計劃</a><a href="#">禮品包</a><a href="#">聯絡我們</a></div><div><h4>關於</h4><a href="#">品牌故事</a><a href="#">合作洽談</a><a href="#">招聘</a><a href="#">私隱政策</a></div></div>
+      <div class="news">
+        <h4>新品通知</h4>
+        <form onsubmit="return false">
+          <input type="email" placeholder="you@example.com" aria-label="新品通知">
+          <button class="bt bt-1" type="submit">訂閱</button>
+        </form>
+      </div>
+      <p class="legal">© 2026 Momo Studio · 示範網站：品牌、門市、數字同評語全部虛構 · IG · Threads · WhatsApp</p>
+    </div>
+  </section>
+</footer>
+
 <script>
-(function(){var s=document.getElementById('seats');if(!s)return;
-var o=document.getElementById('roiOut'),mo=document.getElementById('roiMoney'),so=document.getElementById('seatsOut');
-var H=6,R=900;
-function up(){var n=+s.value;so.textContent=n;var h=Math.round(n*H),m=h*R;
-o.textContent=h+' 小時 / 月';mo.textContent='約 HK$'+m.toLocaleString()+'（對比人手寫同樣嘅 PR）';}
-s.addEventListener('input',up);up();})();
+(function(){
+  if (!matchMedia('(prefers-reduced-motion:no-preference)').matches) {
+    document.documentElement.classList.add('no-anim'); return;
+  }
+  // 自動標記：hero 即刻入，其餘捲到才入
+  document.querySelectorAll('section > .wrap > *, section > *').forEach(function(el){
+    if (el.closest('.hero') || el.classList.contains('curtain')) return;
+    el.setAttribute('data-rv', '');
+  });
+  var io = new IntersectionObserver(function(es){
+    es.forEach(function(e){ if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, {threshold:.12, rootMargin:'0px 0px -8% 0px'});
+  document.querySelectorAll('[data-rv]').forEach(function(el){ io.observe(el); });
+  // 數字滾動
+  document.querySelectorAll('[data-count]').forEach(function(el){
+    var target = parseFloat(el.dataset.count), dec = (String(el.dataset.count).split('.')[1]||'').length;
+    var o = new IntersectionObserver(function(es){
+      es.forEach(function(e){
+        if (!e.isIntersecting) return; o.unobserve(el);
+        var t0 = performance.now(), dur = 1100;
+        (function step(t){
+          var p = Math.min(1, (t - t0) / dur), v = target * (1 - Math.pow(1 - p, 3));
+          el.textContent = v.toFixed(dec).replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+          if (p < 1) requestAnimationFrame(step);
+        })(t0);
+      });
+    }, {threshold:.5}); o.observe(el);
+  });
+  // 載入幕
+  var cur = document.querySelector('.curtain');
+  if (cur) { requestAnimationFrame(function(){ setTimeout(function(){ cur.classList.add('gone'); }, 240); }); }
+  ;
+})();
 </script>
-<script>
-(function(){var f=document.querySelector('#qa form');if(!f)return;
-var b=f.querySelector('button[type=submit]');if(!b)return;
-var live=document.createElement('p');live.className='note';live.setAttribute('aria-live','polite');
-f.appendChild(live);
-f.addEventListener('submit',function(e){e.preventDefault();
-if(b.dataset.state==='loading')return;
-var label=b.textContent;b.dataset.state='loading';b.innerHTML='<span class="spin"></span> 傳送中…';
-setTimeout(function(){b.dataset.state='done';b.textContent='已收到 · 1 個工作日內覆你';
-live.textContent='（示範狀態：真表單要接後端；重新載入可以再試）';
-setTimeout(function(){b.dataset.state='';b.textContent=label;},2600);},900);});})();
-</script>
-<script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script><script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollTrigger.min.js"></script><script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/SplitText.min.js"></script><script src="https://cdn.jsdelivr.net/npm/lenis@1/dist/lenis.min.js"></script><script>window.PRO={"intro": "pop", "reveal": "pop", "ease": "back.out(2.2)", "dur": 0.9, "stagger": 0.1, "lerp": 0.1, "magnetic": 0.4, "cursor": "trail", "trail": ["♡", "✦", "🌸", "⭐"], "trailColors": ["#FFB7C5", "#FF7FAE", "#B5EAD7", "#FFF1A8"], "trailSize": 26, "trailRate": 55, "parallax": 30, "curtain": "#FFF7FA", "spotlight": true, "spot": "rgba(255,183,197,.4)", "counters": ".stats .num", "grain": 0, "curtainHTML": "<div style=\"font:400 34px 'Mochiy Pop One',serif;color:#FF7FAE\">♡ ✦ ♡</div>"};</script><script src="pro/motion.js"></script>
+
 </body></html>

@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="zh-Hant-HK"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<html lang="zh-Hant-HK" class="is-pro"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Modular Typography Pro（動效版）· 模組字體 — Modular</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Inter:wght@400;500&display=swap">
 <meta name="description" content="一個家族由 Light 到 Black，字寬同字高對齊，排版唔會爆格。">
@@ -8,66 +8,172 @@
 <meta property="og:description" content="一個家族由 Light 到 Black，字寬同字高對齊，排版唔會爆格。">
 <meta name="twitter:card" content="summary_large_image">
 <meta property="og:image" content="media/og/modular-typography.png">
-<link rel="stylesheet" href="blocks.css">
-<style>:root{--bg:#FFFFFF;--fg:#0A0A0A;--muted:#555555;--surface:#F2F2F2;--border:#0A0A0A;--accent:#0B5FFF;--accent-fg:#FFFFFF;--radius:0px;--radius-sm:0px;--shadow:none;--btn-shadow:4px 4px 0 #0A0A0A;--art-bg:repeating-linear-gradient(90deg,#F2F2F2 0 24px,#fff 24px 48px);--media-bg:repeating-linear-gradient(90deg,#F2F2F2 0 24px,#fff 24px 48px);--cta-bg:#F2F2F2;--input-bg:#FFFFFF;--ok:#0B5FFF;--warn:#C81E1E;--font-display:'Space Grotesk','Noto Sans TC',sans-serif;--font-body:Inter,sans-serif;--font-mono:'Space Grotesk',monospace;--focus-ring:var(--accent);}
-
-.card,.tile-c,.quote,.plan,.rows,.log,.mock{border:1px solid #0A0A0A;border-radius:0;box-shadow:none;background:#fff}
-.hero h1{font-weight:700;letter-spacing:-.03em;line-height:.98}
-.sec-title{font-weight:500;letter-spacing:-.01em;text-transform:none}
-.sec-title::after{content:"";display:block;width:72px;height:6px;background:#0B5FFF;margin-top:10px}
-.btn{border-radius:0;border:1px solid #0A0A0A}
-.btn-primary{background:#0B5FFF;color:#fff}
-.btn-secondary{background:#fff;color:#0A0A0A}
-.chip{border-radius:0;background:#F2F2F2;border:1px solid #0A0A0A;font-size:12px}
-.avatar{border-radius:0;background:#0A0A0A;color:#fff}
-.tag{background:#FFD400;color:#0A0A0A;border-radius:0;border:1px solid #0A0A0A}
-.tile-c .ph{background:#fff;border-bottom:1px solid #0A0A0A;font-family:'Space Grotesk',sans-serif;font-size:44px;color:#0A0A0A;display:flex;align-items:center;justify-content:center}
-.plan.featured{outline:3px solid #0B5FFF;outline-offset:4px}
-.rows article b,.log article b{font-family:'Space Grotesk',sans-serif}
-.hero::before{content:"▦ ▦ ▦";position:absolute;right:4%;top:30px;font-size:26px;color:#0B5FFF;letter-spacing:.1em;opacity:.9;pointer-events:none}
-</style>
-<link rel="stylesheet" href="pro/motion.css">
+<link rel="stylesheet" href="bespoke/_bar.css">
+<link rel="stylesheet" href="bespoke/modular-typography.css">
+<style>:root{--bg:#FFFFFF;--fg:#0A0A0A;--muted:#555555;--surface:#F2F2F2;--border:#0A0A0A;--accent:#0B5FFF;--accent-fg:#FFFFFF;--radius:0px;--radius-sm:0px;--shadow:none;--btn-shadow:4px 4px 0 #0A0A0A;--art-bg:repeating-linear-gradient(90deg,#F2F2F2 0 24px,#fff 24px 48px);--media-bg:repeating-linear-gradient(90deg,#F2F2F2 0 24px,#fff 24px 48px);--cta-bg:#F2F2F2;--input-bg:#FFFFFF;--ok:#0B5FFF;--warn:#C81E1E;--font-display:'Space Grotesk','Noto Sans TC',sans-serif;--font-body:Inter,sans-serif;--font-mono:'Space Grotesk',monospace;--focus-ring:var(--accent);}</style>
 </head>
 <body>
 <div class="demo-bar"><span><a href="index.html">← 全部風格</a> · <b>✨ 16/57 ▦ Modular Typography 模組字體 Pro（12 block + 動效）</b></span><span><a href="modular-typography.html">對比基本版</a> · <a href="mixed-media-pro.html">‹ Mixed Media</a> · <a href="mystical-western-pro.html">Mystical Western ›</a> · <a href="obsidian://open?vault=Obsidian&file=04-%E5%85%A7%E5%AE%B9%E5%89%B5%E4%BD%9C/UIUX%20Style/Styles/Modular Typography">📝 Obsidian 筆記</a></span></div>
-<div class="pro-curtain" aria-hidden="true" style="background:#FFFFFF"><div style="font:700 30px 'Space Grotesk',sans-serif;letter-spacing:-.02em;color:#0B5FFF">Modular</div></div>
-<header class="site-header wrap"><div class="logo">Modular</div><input type="checkbox" id="navToggle" class="nav-toggle-input" aria-label="開關選單"><label class="nav-toggle" for="navToggle">選單</label><nav class="nav" aria-label="主選單"><a href="#rows" aria-current="page">字重</a><a href="#products">試字</a><a href="#chips">覆蓋</a><a href="#pricing">授權</a></nav><label class="nav-scrim" for="navToggle" aria-hidden="true"></label><a class="btn btn-primary" href="#cta">試字</a></header>
+<div class="curtain" aria-hidden="true" style="background:#FFFFFF"><div><span>Modular</span><span>模組字體</span></div></div>
+<header class="mt-hd" id="top">
+  <div class="wrap mt-hdrow">
+    <a class="mt-logo" href="#top">Modular</a>
+    <nav class="mt-nav"><a href="#rows">字重</a><a href="#products">試字</a><a href="#chips">覆蓋</a><a href="#pricing">授權</a></nav>
+    <a class="mt-btn mt-btn-1" href="#pricing">試字</a>
+  </div>
+</header>
 <main>
-<section class="block hero" id="hero"><div class="wrap hero-grid"><div><span class="eyebrow rv">字體產品 · 5 個字重 · 拉丁＋繁中</span><h1>字體就係系統</h1><p class="lead rv">一個家族由 Light 到 Black，字寬同字高對齊，排版唔會爆格。</p><div class="actions rv"><a class="btn btn-primary" href="#cta">試字 <span class="i" aria-hidden="true">→</span></a><a class="btn btn-secondary" href="#product">睇字重同價目</a></div><p class="note rv">桌面／網頁／App 授權分開賣 · 網頁用 CDN 一段 code 就裝好</p></div><figure class="hero-art has-media rv"><img src="media/modular-typography-hero.jpg" alt="" loading="lazy"><figcaption>情境示意圖 · AI 生成</figcaption></figure></div></section>
-<section class="block tight trust band"><div class="wrap trust"><span class="lbl">用緊（示範網站，全部虛構）：</span><span class="wordmark">Zine HK</span><span class="wordmark">Paperland</span><span class="wordmark">小書店</span><span class="wordmark">Maker Kids</span><span class="wordmark">格仔雜貨</span></div></section>
-<section class="block" id="features"><div class="wrap"><h2 class="sec-title">四個技術決定</h2><p class="sec-sub">唔講美學形容詞，講可量度嘅嘢。</p><div class="grid g4"><article class="card rv"><span class="ico" aria-hidden="true">▦</span><h3>5 個字重對齊</h3><p>每個字重嘅 x-height 同字寬對齊，換字重唔會走位。</p></article><article class="card rv"><span class="ico" aria-hidden="true">🔢</span><h3>Tabular 數字</h3><p>報價表、規格表對得正，唔會左右跳。</p></article><article class="card rv"><span class="ico" aria-hidden="true">🌏</span><h3>拉丁＋繁中</h3><p>繁中 7,000+ 字，唔使另外配中文字體。</p></article><article class="card rv"><span class="ico" aria-hidden="true">⚡</span><h3>網頁字體 68KB</h3><p>子集化之後按字重載入，唔會拖慢 LCP。</p></article></div></div></section>
-<section class="block band" id="product"><div class="wrap"><h2 class="sec-title">字重同排版測試</h2><p class="sec-sub">睇得到每個字重落喺真實版面嘅效果。</p><div class="mock rv"><div class="mock-bar"><span class="mock-dot"></span><span class="mock-dot"></span><span class="mock-dot"></span><span style="margin-left:8px">Modular · 排版測試</span></div><div class="mock-body"><aside class="mock-side"><span><b>字重</b></span><span>Light 300</span><span>Regular 400</span><span>Medium 500</span><span>Bold 700</span><span><b>字級</b></span><span>48 / 24 / 16</span></aside><div class="mock-main"><div class="mock-row"><span class="pill">標題</span> Modular Grotesk Bold 48/52 · -2% tracking</div><div class="mock-row"><span class="pill">正文</span> Regular 16/26 · 對齊 62 字元</div><div class="mock-row"><span class="diff-add">+ Tabular 數字：1,280 · 3,800 · 98,000（對齊）</span></div><div class="mock-row"><span class="pill">繁中</span> 7,000+ 字 · 同拉丁基線對齊</div></div><aside class="mock-right"><span><b>檔案</b></span><span>WOFF2 68KB</span><span><b>授權</b></span><span>網頁 · 1 個網域</span></aside></div></div><p class="note">示範版係靜態畫面；Pro 版會逐行打出嚟。</p></div></section>
-<section class="block"><div class="wrap"><h2 class="sec-title">三步用落網站</h2><p class="sec-sub">由試字到上線，10 分鐘內搞完。</p><ol class="steps"><li class="rv"><h3>試字</h3><p>在頁面輸入你嘅文字，即時睇 5 個字重。</p></li><li class="rv"><h3>買授權</h3><p>揀網頁／桌面／App；網頁按網域數。</p></li><li class="rv"><h3>貼一段 code</h3><p>我們給你 CDN 連結同 CSS；支援 self-host。</p></li></ol></div></section>
-<section class="block tight"><div class="wrap"><div class="stats"><div class="stat rv"><span class="num">5 個</span><span>字重</span></div><div class="stat rv"><span class="num">7,000+</span><span>繁中字數</span></div><div class="stat rv"><span class="num">68KB</span><span>網頁字體（子集）</span></div><div class="stat rv"><span class="num">4.8/5</span><span>設計師評分（示範數據）</span></div></div></div></section>
-<section class="block" id="rows"><div class="wrap"><h2 class="sec-title rv">字重同價目</h2><p class="sec-sub rv">可以單買一個字重，或者成套買（成套平 35%）。</p><div class="rows"><article class="rv"><b>Light 300</b><span>大字標題、精品品牌</span><span class="cost">HK$680</span></article><article class="rv"><b>Regular 400</b><span>正文、介面</span><span class="cost">HK$680</span></article><article class="rv"><b>Medium 500</b><span>小標題、按鈕</span><span class="cost">HK$680</span></article><article class="rv"><b>Bold 700</b><span>標題、數據重點</span><span class="cost">HK$680</span></article><article class="rv"><b>Black 900</b><span>海報、封面</span><span class="cost">HK$680</span></article><article class="rv"><b>全套 5 個字重</b><span>包含 variable font 版本</span><span class="cost">HK$2,200</span></article><article class="rv"><b>繁中子集（7,000 字）</b><span>可選加購，或自己子集化</span><span class="cost">HK$1,200</span></article></div><p class="note rv">以上係示範價目；每種授權（桌面／網頁／App）分開計。</p></div></section>
-<section class="block"><div class="wrap"><h2 class="sec-title">設計師點講</h2><p class="sec-sub">示範網站用虛構名；真評語會喺真實用戶後補。</p><div class="grid g2"><figure class="quote rv"><p>「換字重唔會走位，做規格表同價目表終於唔使逐格調。」</p><figcaption class="who"><span class="avatar" aria-hidden="true">阿</span><span><b>阿鵬</b><br>用戶 · 產品設計</span></figcaption></figure><figure class="quote rv"><p>「繁中唔使另配，一個家族搞完中英混排，交稿快好多。」</p><figcaption class="who"><span class="avatar" aria-hidden="true">C</span><span><b>Cindy</b><br>用戶 · 品牌設計</span></figcaption></figure></div></div></section>
-<section class="block" id="products"><div class="wrap"><h2 class="sec-title">試字樣本</h2><p class="sec-sub">每個樣本都可以喺上面嘅試字框試你自己嘅句子。</p><div class="tiles"><article class="tile-c rv"><div class="ph wide" aria-hidden="true">Aa</div><h3>Modular Light</h3><p>300 · 大字標題</p><span class="cost">HK$680</span></article><article class="tile-c rv"><div class="ph wide" aria-hidden="true">Aa</div><h3>Modular Regular</h3><p>400 · 正文</p><span class="cost">HK$680</span></article><article class="tile-c rv"><div class="ph wide" aria-hidden="true">Aa</div><h3>Modular Bold</h3><p>700 · 標題</p><span class="cost">HK$680</span></article><article class="tile-c rv"><div class="ph wide" aria-hidden="true">Aa</div><h3>Modular Black</h3><p>900 · 海報</p><span class="cost">HK$680</span></article></div></div></section>
-<section class="block" id="pricing"><div class="wrap"><h2 class="sec-title">授權</h2><p class="sec-sub">一次買，永久用；升級授權補差價就得。</p><div class="pricing"><article class="plan rv"><h3>網頁</h3><div class="price">HK$980 <small>/ 網域</small></div><p>網站同 landing page。</p><ul><li>1 個網域</li><li>每月 100 萬次瀏覽</li><li>CDN 或 self-host</li><li>永久授權</li></ul><a class="btn btn-secondary" href="#cta">試字</a></article><article class="plan rv featured"><span class="tag">設計師最常買</span><h3>桌面</h3><div class="price">HK$1,600 <small>/ 5 部機</small></div><p>設計師個人使用。</p><ul><li>5 部電腦</li><li>OTF + variable font</li><li>可用於客戶提案</li><li>永久授權</li></ul><a class="btn btn-primary" href="#cta">試字</a></article><article class="plan rv"><h3>App／嵌入</h3><div class="price">HK$4,800 <small>/ 產品</small></div><p>手機 app 或硬件。</p><ul><li>1 個產品</li><li>含 App 內嵌</li><li>可隨產品更新</li><li>技術支援</li></ul><a class="btn btn-secondary" href="#cta">索取報價</a></article></div></div></section>
-<section class="block" id="chips"><div class="wrap"><h2 class="sec-title">語言同字元覆蓋</h2><p class="sec-sub">子集化之後仍然夠用；特殊符號可以要求加。</p><div class="chips"><span class="chip">拉丁基本（A–Z a–z）</span><span class="chip">拉丁擴充（含越南文）</span><span class="chip">繁體中文 7,000+</span><span class="chip">標點全形</span><span class="chip">Tabular 數字</span><span class="chip">貨幣符號 HK$ ¥ € $</span><span class="chip">箭頭同符號</span><span class="chip">數學符號</span><span class="chip">Powerline（開發者）</span></div></div></section>
-<section class="block"><div class="wrap"><h2 class="sec-title">授權常見問題</h2><p class="sec-sub">問唔到嘅 email 我們，附上你嘅用途就得。</p><div class="faq"><details class="rv"><summary>一個網域可以幾個人用？</summary><div class="ans">網頁授權按網域計，唔限人數；桌面授權按機數。</div></details><details class="rv"><summary>可以改字形（修改再做衍生字體）嗎？</summary><div class="ans">唔可以，授權唔包含修改或轉售衍生字體。</div></details><details class="rv"><summary>Logo 可以用嗎？</summary><div class="ans">可以，桌面或 App 授權已經包含 logo 用途。</div></details><details class="rv"><summary>試用有冇限制？</summary><div class="ans">試字框可以免費用；正式用（網站／印刷）要買授權。</div></details><details class="rv"><summary>可唔可以自己子集化？</summary><div class="ans">可以，我們提供子集化指引同 script。</div></details></div></div></section>
-<section class="block" id="cta"><div class="wrap"><div class="cta-band rv"><h2>試字框免費用</h2><p>輸入你嘅句子，睇 5 個字重。</p><div class="actions"><a class="btn btn-primary" href="#">試字</a><a class="btn btn-secondary" href="#">睇字重同價目</a></div></div></div></section>
+<section class="mt-hero">
+  <div class="wrap">
+    <p class="mt-kick">字體產品 · 5 個字重 · 拉丁＋繁中</p>
+    <h1>字體就係系統</h1>
+    <div class="mt-herofoot">
+      <p class="mt-lead">一個家族由 Light 到 Black，字寬同字高對齊，排版唔會爆格。</p>
+      <div class="mt-acts">
+        <a class="mt-btn mt-btn-1" href="#products">試字</a>
+        <a class="mt-btn mt-btn-2" href="#rows">睇字重同價目</a>
+      </div>
+    </div>
+    <p class="mt-note">桌面／網頁／App 授權分開賣 · 網頁用 CDN 一段 code 就裝好</p>
+  </div>
+</section>
+<section class="mt-try">
+  <div class="wrap">
+    <div class="mt-tryhead"><span class="mt-lab">試字</span><span class="mt-lab2">Modular · 排版測試</span></div>
+    <div class="mt-trybox" contenteditable="true" spellcheck="false" role="textbox"
+         aria-label="試字" aria-multiline="false">字體就係系統</div>
+    <p class="mt-note">在頁面輸入你嘅文字，即時睇 5 個字重。</p>
+  </div>
+</section>
+<section class="mt-glyph">
+  <div class="wrap mt-glyphgrid">
+    <div class="mt-gls"><div class="mt-gl" style="font-weight:300"><span>Aa</span><small>Modular Light</small></div><div class="mt-gl" style="font-weight:400"><span>Aa</span><small>Modular Regular</small></div><div class="mt-gl" style="font-weight:500"><span>Aa</span><small>Modular Bold</small></div><div class="mt-gl" style="font-weight:700"><span>Aa</span><small>Modular Black</small></div></div>
+    <figure class="mt-fig"><img src="media/modular-typography-hero.jpg" alt="字體樣張圖位（生成 media/modular-typography-hero.jpg 自動代入）" loading="lazy"><figcaption>情境示意圖 · AI 生成</figcaption></figure>
+  </div>
+</section>
+<section class="mt-trust"><div class="wrap"><p class="mt-lab">用緊（示範網站，全部虛構）：</p><ul><li>Zine HK</li><li>Paperland</li><li>小書店</li><li>Maker Kids</li><li>格仔雜貨</li></ul></div></section>
+<section class="mt-rows" id="rows">
+  <div class="wrap">
+    <header class="mt-sechead"><h2>字重同價目</h2><p class="mt-sub">可以單買一個字重，或者成套買（成套平 35%）。</p></header>
+    <ol class="mt-ladder"><li class="w0"><span class="nm" style="font-weight:300">Light 300</span><span class="ds">大字標題、精品品牌</span><span class="pr">HK$680</span></li><li class="w1"><span class="nm" style="font-weight:400">Regular 400</span><span class="ds">正文、介面</span><span class="pr">HK$680</span></li><li class="w2"><span class="nm" style="font-weight:500">Medium 500</span><span class="ds">小標題、按鈕</span><span class="pr">HK$680</span></li><li class="w3"><span class="nm" style="font-weight:700">Bold 700</span><span class="ds">標題、數據重點</span><span class="pr">HK$680</span></li><li class="w4"><span class="nm" style="font-weight:900">Black 900</span><span class="ds">海報、封面</span><span class="pr">HK$680</span></li><li class="w5"><span class="nm" style="font-weight:400">全套 5 個字重</span><span class="ds">包含 variable font 版本</span><span class="pr">HK$2,200</span></li><li class="w6"><span class="nm" style="font-weight:400">繁中子集（7,000 字）</span><span class="ds">可選加購，或自己子集化</span><span class="pr">HK$1,200</span></li></ol>
+    <p class="mt-note">以上係示範價目；每種授權（桌面／網頁／App）分開計。</p>
+  </div>
+</section>
+<section class="mt-products" id="products">
+  <div class="wrap">
+    <header class="mt-sechead"><h2>試字樣本</h2><p class="mt-sub">每個樣本都可以喺上面嘅試字框試你自己嘅句子。</p></header>
+    <div class="mt-cards"><article class="mt-card"><div class="chip" aria-hidden="true" style="font-weight:300">Aa</div><div class="meta"><h3 style="font-weight:300">Modular Light</h3><p>300 · 大字標題</p><span class="pr">HK$680</span></div></article><article class="mt-card"><div class="chip" aria-hidden="true" style="font-weight:400">Aa</div><div class="meta"><h3 style="font-weight:400">Modular Regular</h3><p>400 · 正文</p><span class="pr">HK$680</span></div></article><article class="mt-card"><div class="chip" aria-hidden="true" style="font-weight:500">Aa</div><div class="meta"><h3 style="font-weight:500">Modular Bold</h3><p>700 · 標題</p><span class="pr">HK$680</span></div></article><article class="mt-card"><div class="chip" aria-hidden="true" style="font-weight:700">Aa</div><div class="meta"><h3 style="font-weight:700">Modular Black</h3><p>900 · 海報</p><span class="pr">HK$680</span></div></article></div>
+  </div>
+</section>
+<section class="mt-spec">
+  <div class="wrap">
+    <header class="mt-sechead"><h2>字重同排版測試</h2><p class="mt-sub">睇得到每個字重落喺真實版面嘅效果。</p></header>
+    <div class="mt-sheet">
+      <div class="mt-sbar"><b>Modular · 排版測試</b><span class="mt-lab2">Aa 300 · 400 · 500 · 700 · 900</span></div>
+      <div class="mt-sbody">
+        <aside class="mt-scol"><span><b>字重</b></span><span>Light 300</span><span>Regular 400</span><span>Medium 500</span><span>Bold 700</span><span><b>字級</b></span><span>48 / 24 / 16</span></aside>
+        <div class="mt-sm"><div class="ln"><span class="pill">標題</span> Modular Grotesk Bold 48/52 · -2% tracking</div><div class="ln"><span class="pill">正文</span> Regular 16/26 · 對齊 62 字元</div><div class="ln"><span class="diff-add">+ Tabular 數字：1,280 · 3,800 · 98,000（對齊）</span></div><div class="ln"><span class="pill">繁中</span> 7,000+ 字 · 同拉丁基線對齊</div></div>
+        <aside class="mt-scol"><span><b>檔案</b></span><span>WOFF2 68KB</span><span><b>授權</b></span><span>網頁 · 1 個網域</span></aside>
+      </div>
+    </div>
+    <p class="mt-note">示範版係靜態畫面；Pro 版會逐行打出嚟。</p>
+  </div>
+</section>
+<section class="mt-feat">
+  <div class="wrap">
+    <header class="mt-sechead"><h2>四個技術決定</h2><p class="mt-sub">唔講美學形容詞，講可量度嘅嘢。</p></header>
+    <div class="mt-fgrid"><article class="mt-f"><b aria-hidden="true">01</b><h3>5 個字重對齊</h3><p>每個字重嘅 x-height 同字寬對齊，換字重唔會走位。</p></article><article class="mt-f"><b aria-hidden="true">02</b><h3>Tabular 數字</h3><p>報價表、規格表對得正，唔會左右跳。</p></article><article class="mt-f"><b aria-hidden="true">03</b><h3>拉丁＋繁中</h3><p>繁中 7,000+ 字，唔使另外配中文字體。</p></article><article class="mt-f"><b aria-hidden="true">04</b><h3>網頁字體 68KB</h3><p>子集化之後按字重載入，唔會拖慢 LCP。</p></article></div>
+  </div>
+</section>
+<section class="mt-steps">
+  <div class="wrap">
+    <header class="mt-sechead"><h2>三步用落網站</h2><p class="mt-sub">由試字到上線，10 分鐘內搞完。</p></header>
+    <ol class="mt-line"><li><span class="n">1</span><h3>試字</h3><p>在頁面輸入你嘅文字，即時睇 5 個字重。</p></li><li><span class="n">2</span><h3>買授權</h3><p>揀網頁／桌面／App；網頁按網域數。</p></li><li><span class="n">3</span><h3>貼一段 code</h3><p>我們給你 CDN 連結同 CSS；支援 self-host。</p></li></ol>
+  </div>
+</section>
+<section class="mt-stats"><div class="wrap mt-ngrid"><div class="mt-num"><b>5 個</b><span>字重</span></div><div class="mt-num"><b>7,000+</b><span>繁中字數</span></div><div class="mt-num"><b>68KB</b><span>網頁字體（子集）</span></div><div class="mt-num"><b>4.8/5</b><span>設計師評分（示範數據）</span></div></div></section>
+<section class="mt-quotes">
+  <div class="wrap">
+    <header class="mt-sechead"><h2>設計師點講</h2><p class="mt-sub">示範網站用虛構名；真評語會喺真實用戶後補。</p></header>
+    <div class="mt-qgrid"><blockquote><p>換字重唔會走位，做規格表同價目表終於唔使逐格調。</p><cite>阿鵬 · 用戶 · 產品設計</cite></blockquote><blockquote><p>繁中唔使另配，一個家族搞完中英混排，交稿快好多。</p><cite>Cindy · 用戶 · 品牌設計</cite></blockquote></div>
+  </div>
+</section>
+<section class="mt-price" id="pricing">
+  <div class="wrap">
+    <header class="mt-sechead"><h2>授權</h2><p class="mt-sub">一次買，永久用；升級授權補差價就得。</p></header>
+    <div class="mt-pgrid"><article class="mt-plan"><header><h3 style="font-weight:500">網頁</h3></header><p class="price">HK$980<small>/ 網域</small></p><p class="desc">網站同 landing page。</p><ul><li>1 個網域</li><li>每月 100 萬次瀏覽</li><li>CDN 或 self-host</li><li>永久授權</li></ul><a class="mt-btn mt-btn-2" href="#pricing">試字</a></article><article class="mt-plan is-feat"><header><h3 style="font-weight:500">桌面</h3><span class="tag">設計師最常買</span></header><p class="price">HK$1,600<small>/ 5 部機</small></p><p class="desc">設計師個人使用。</p><ul><li>5 部電腦</li><li>OTF + variable font</li><li>可用於客戶提案</li><li>永久授權</li></ul><a class="mt-btn mt-btn-1" href="#pricing">試字</a></article><article class="mt-plan"><header><h3 style="font-weight:500">App／嵌入</h3></header><p class="price">HK$4,800<small>/ 產品</small></p><p class="desc">手機 app 或硬件。</p><ul><li>1 個產品</li><li>含 App 內嵌</li><li>可隨產品更新</li><li>技術支援</li></ul><a class="mt-btn mt-btn-2" href="#pricing">索取報價</a></article></div>
+  </div>
+</section>
+<section class="mt-chips" id="chips">
+  <div class="wrap">
+    <header class="mt-sechead"><h2>語言同字元覆蓋</h2><p class="mt-sub">子集化之後仍然夠用；特殊符號可以要求加。</p></header>
+    <ul class="mt-mods"><li><span>拉丁基本（A–Z a–z）</span></li><li><span>拉丁擴充（含越南文）</span></li><li><span>繁體中文 7,000+</span></li><li><span>標點全形</span></li><li><span>Tabular 數字</span></li><li><span>貨幣符號 HK$ ¥ € $</span></li><li><span>箭頭同符號</span></li><li><span>數學符號</span></li><li><span>Powerline（開發者）</span></li></ul>
+  </div>
+</section>
+<section class="mt-faq">
+  <div class="wrap">
+    <header class="mt-sechead"><h2>授權常見問題</h2><p class="mt-sub">問唔到嘅 email 我們，附上你嘅用途就得。</p></header>
+    <div class="mt-faqbox"><details><summary>一個網域可以幾個人用？</summary><p>網頁授權按網域計，唔限人數；桌面授權按機數。</p></details><details><summary>可以改字形（修改再做衍生字體）嗎？</summary><p>唔可以，授權唔包含修改或轉售衍生字體。</p></details><details><summary>Logo 可以用嗎？</summary><p>可以，桌面或 App 授權已經包含 logo 用途。</p></details><details><summary>試用有冇限制？</summary><p>試字框可以免費用；正式用（網站／印刷）要買授權。</p></details><details><summary>可唔可以自己子集化？</summary><p>可以，我們提供子集化指引同 script。</p></details></div>
+  </div>
+</section>
+<section class="mt-cta" id="cta">
+  <div class="wrap">
+    <h2>試字框免費用</h2>
+    <p>輸入你嘅句子，睇 5 個字重。</p>
+    <div class="mt-acts">
+      <a class="mt-btn mt-btn-1" href="#products">試字</a>
+      <a class="mt-btn mt-btn-2" href="#rows">睇字重同價目</a>
+    </div>
+    <div class="mt-ctaglyph" aria-hidden="true"><span>字</span><span>Aa</span></div>
+  </div>
+</section>
 </main>
-<footer class="block site-footer"><div class="wrap"><div class="foot-grid"><div><h4>字體</h4><a href="#">字重同價目</a><a href="#">試字</a><a href="#">繁中子集</a><a href="#">更新紀錄</a></div><div><h4>授權</h4><a href="#">網頁</a><a href="#">桌面</a><a href="#">App／嵌入</a><a href="#">升級授權</a></div><div><h4>開發</h4><a href="#">CDN 安裝</a><a href="#">self-host</a><a href="#">子集化 script</a><a href="#">設計 token</a></div><div><h4>關於</h4><a href="#">字體設計過程</a><a href="#">語言覆蓋</a><a href="#">聯絡我們</a><a href="#">授權條款</a></div><div><h4>字體更新通知</h4><form class="news" onsubmit="return false"><label for="nl" style="display:none">字體更新通知</label><input id="nl" type="email" placeholder="you@example.com"><button class="btn btn-primary" type="submit">訂閱</button></form></div></div><div class="foot-bottom"><span>© 2026 Modular Type Foundry · 示範網站：字體、價目、數字同評語全部虛構</span><span>Email · GitHub · Behance</span></div></div></footer>
-<section class="block band" id="qa"><div class="wrap"><h2 class="sec-title">設計 QA · 按鈕同表單</h2><p class="sec-sub">同一套元素庫嘅 11 個按鈕狀態（含 loading／success／icon／size）+ 表單，用嚟驗風格嘅 focus／disabled／錯誤狀態夠唔夠清楚。</p><div class="btn-row"><div class="state"><button class="btn btn-primary " type="button">Primary</button><small>Default</small></div><div class="state"><button class="btn btn-primary is-hover" type="button">Primary</button><small>Hover</small></div><div class="state"><button class="btn btn-primary is-active" type="button">Primary</button><small>Active</small></div><div class="state"><button class="btn btn-primary is-focus" type="button">Primary</button><small>Focus</small></div><div class="state"><button class="btn btn-primary " type="button" disabled>Primary</button><small>Disabled</small></div><div class="state"><button class="btn btn-primary " type="button" data-state="loading"><span class="spin"></span> 傳送中…</button><small>Loading</small></div><div class="state"><button class="btn btn-primary " type="button" data-state="done">已收到 · 1 個工作日內覆你</button><small>Success</small></div><div class="state"><button class="btn btn-primary " type="button"><span class="i" aria-hidden="true">→</span> 下一步</button><small>Icon + arrow</small></div><div class="state"><button class="btn btn-primary btn-sm" type="button">Small</button><small>Small（btn-sm）</small></div><div class="state"><button class="btn btn-primary btn-lg" type="button">Large</button><small>Large（btn-lg）</small></div><div class="state"><button class="btn btn-secondary" type="button">Secondary</button><small>Secondary</small></div></div><form class="form" style="margin-top:38px" onsubmit="return false"><div class="field"><label for="n">你嘅名</label><input id="n" placeholder="例如：陳大文"></div><div class="field"><label for="e">工作電郵</label><input id="e" type="email" placeholder="you@company.com"></div><div class="field"><label for="c">團隊幾大？</label><select id="c"><option>1–5 人</option><option>6–20 人</option><option>21 人以上</option></select></div><label class="check"><input type="checkbox" class="toggle" checked> 接收產品更新</label><div><button class="btn btn-primary" type="submit">提交</button></div></form></div></section>
+<footer class="mt-ft">
+  <div class="wrap">
+    <div class="mt-ftgrid"><div><h4>字體</h4><a href='#'>字重同價目</a><a href='#'>試字</a><a href='#'>繁中子集</a><a href='#'>更新紀錄</a></div><div><h4>授權</h4><a href='#'>網頁</a><a href='#'>桌面</a><a href='#'>App／嵌入</a><a href='#'>升級授權</a></div><div><h4>開發</h4><a href='#'>CDN 安裝</a><a href='#'>self-host</a><a href='#'>子集化 script</a><a href='#'>設計 token</a></div><div><h4>關於</h4><a href='#'>字體設計過程</a><a href='#'>語言覆蓋</a><a href='#'>聯絡我們</a><a href='#'>授權條款</a></div></div>
+    <form class="mt-news" onsubmit="return false">
+      <label for="mt-mail">字體更新通知</label>
+      <input id="mt-mail" type="email" placeholder="you@example.com">
+      <button class="mt-btn mt-btn-1" type="submit">訂閱</button>
+    </form>
+    <p class="mt-legal">© 2026 Modular Type Foundry · 示範網站：字體、價目、數字同評語全部虛構 · Email · GitHub · Behance</p>
+  </div>
+</footer>
+
 <script>
-(function(){var s=document.getElementById('seats');if(!s)return;
-var o=document.getElementById('roiOut'),mo=document.getElementById('roiMoney'),so=document.getElementById('seatsOut');
-var H=6,R=900;
-function up(){var n=+s.value;so.textContent=n;var h=Math.round(n*H),m=h*R;
-o.textContent=h+' 小時 / 月';mo.textContent='約 HK$'+m.toLocaleString()+'（對比人手寫同樣嘅 PR）';}
-s.addEventListener('input',up);up();})();
+(function(){
+  if (!matchMedia('(prefers-reduced-motion:no-preference)').matches) {
+    document.documentElement.classList.add('no-anim'); return;
+  }
+  // 自動標記：hero 即刻入，其餘捲到才入
+  document.querySelectorAll('section > .wrap > *, section > *').forEach(function(el){
+    if (el.closest('.hero') || el.classList.contains('curtain')) return;
+    el.setAttribute('data-rv', '');
+  });
+  var io = new IntersectionObserver(function(es){
+    es.forEach(function(e){ if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, {threshold:.12, rootMargin:'0px 0px -8% 0px'});
+  document.querySelectorAll('[data-rv]').forEach(function(el){ io.observe(el); });
+  // 數字滾動
+  document.querySelectorAll('[data-count]').forEach(function(el){
+    var target = parseFloat(el.dataset.count), dec = (String(el.dataset.count).split('.')[1]||'').length;
+    var o = new IntersectionObserver(function(es){
+      es.forEach(function(e){
+        if (!e.isIntersecting) return; o.unobserve(el);
+        var t0 = performance.now(), dur = 1100;
+        (function step(t){
+          var p = Math.min(1, (t - t0) / dur), v = target * (1 - Math.pow(1 - p, 3));
+          el.textContent = v.toFixed(dec).replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+          if (p < 1) requestAnimationFrame(step);
+        })(t0);
+      });
+    }, {threshold:.5}); o.observe(el);
+  });
+  // 載入幕
+  var cur = document.querySelector('.curtain');
+  if (cur) { requestAnimationFrame(function(){ setTimeout(function(){ cur.classList.add('gone'); }, 240); }); }
+  ;
+})();
 </script>
-<script>
-(function(){var f=document.querySelector('#qa form');if(!f)return;
-var b=f.querySelector('button[type=submit]');if(!b)return;
-var live=document.createElement('p');live.className='note';live.setAttribute('aria-live','polite');
-f.appendChild(live);
-f.addEventListener('submit',function(e){e.preventDefault();
-if(b.dataset.state==='loading')return;
-var label=b.textContent;b.dataset.state='loading';b.innerHTML='<span class="spin"></span> 傳送中…';
-setTimeout(function(){b.dataset.state='done';b.textContent='已收到 · 1 個工作日內覆你';
-live.textContent='（示範狀態：真表單要接後端；重新載入可以再試）';
-setTimeout(function(){b.dataset.state='';b.textContent=label;},2600);},900);});})();
-</script>
-<script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script><script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollTrigger.min.js"></script><script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/SplitText.min.js"></script><script src="https://cdn.jsdelivr.net/npm/lenis@1/dist/lenis.min.js"></script><script>window.PRO={"intro": "type", "reveal": "clip", "ease": "power3.out", "dur": 0.9, "stagger": 0.07, "lerp": 0.05, "magnetic": 0.12, "cursor": "pixel", "cursorColor": "#0B5FFF", "parallax": 14, "curtain": "#FFFFFF", "counters": ".stats .num", "curtainHTML": "<div style=\"font:700 30px 'Space Grotesk',sans-serif;letter-spacing:-.02em;color:#0B5FFF\">Modular</div>"};</script><script src="pro/motion.js"></script>
+
 </body></html>

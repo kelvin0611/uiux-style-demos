@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="zh-Hant-HK"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<html lang="zh-Hant-HK" class="is-basic"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Rebus · 畫謎 — Rebus Lab | UIUX Style Demo</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Archivo+Black&display=swap">
 <meta name="description" content="圖代字卡片同工作紙：教抽象概念（程式、邏輯、語文）唔使學生先識字。">
@@ -8,59 +8,249 @@
 <meta property="og:description" content="圖代字卡片同工作紙：教抽象概念（程式、邏輯、語文）唔使學生先識字。">
 <meta name="twitter:card" content="summary_large_image">
 <meta property="og:image" content="media/og/rebus.png">
-<link rel="stylesheet" href="blocks.css">
-<style>:root{--bg:#FFFFFF;--fg:#161616;--muted:#565656;--surface:#F4F4F4;--border:#DCDCDC;--accent:#0F62FE;--accent-fg:#FFFFFF;--radius:8px;--radius-sm:8px;--shadow:none;--btn-shadow:none;--art-bg:#F4F4F4;--media-bg:#F4F4F4;--cta-bg:#F4F4F4;--input-bg:#FFFFFF;--ok:#0F8A3C;--warn:#DA1E28;--font-display:'IBM Plex Sans','Archivo Black',sans-serif;--font-body:'IBM Plex Sans','Noto Sans TC',sans-serif;--focus-ring:var(--accent);}
-
-.card,.tile-c,.quote,.plan,.rows,.mock,.log{border:1px solid #DCDCDC;box-shadow:none;background:#F4F4F4}
-.tile-c .ph{background:#fff;border:2px solid #E0E0E0;border-radius:8px;color:#161616}
-.hero h1{display:flex;flex-wrap:wrap;align-items:baseline;gap:.14em}
-.hero h1 .pict{font-size:.82em;line-height:1}
-.sec-title{font-weight:700}
-.btn{border-radius:8px}
-.chip{border-radius:8px;background:#fff;border:1px solid #DCDCDC}
-.avatar{border-radius:8px;background:#0F62FE;color:#fff}
-.rows article:nth-child(odd),.log article:nth-child(odd){background:#fff}
-.hero::before{content:"";position:absolute;right:5%;top:64px;font-size:clamp(54px,10vw,120px);color:#F1C21B;z-index:0;pointer-events:none}
-</style>
+<link rel="stylesheet" href="bespoke/_bar.css">
+<link rel="stylesheet" href="bespoke/rebus.css">
+<style>:root{--bg:#FFFFFF;--fg:#161616;--muted:#565656;--surface:#F4F4F4;--border:#DCDCDC;--accent:#0F62FE;--accent-fg:#FFFFFF;--radius:8px;--radius-sm:8px;--shadow:none;--btn-shadow:none;--art-bg:#F4F4F4;--media-bg:#F4F4F4;--cta-bg:#F4F4F4;--input-bg:#FFFFFF;--ok:#0F8A3C;--warn:#DA1E28;--font-display:'IBM Plex Sans','Archivo Black',sans-serif;--font-body:'IBM Plex Sans','Noto Sans TC',sans-serif;--focus-ring:var(--accent);}</style>
 </head>
 <body>
 <div class="demo-bar"><span><a href="index.html">← 全部風格</a> · <b>🆕 6/57 🧩 Rebus 畫謎（12 block 全頁版）</b></span><span><a href="rebus-pro.html">✨ Pro 版</a> · <a href="pop-art.html">‹ Pop Art</a> · <a href="scrapbook.html">Scrapbook ›</a> · <a href="obsidian://open?vault=Obsidian&file=04-%E5%85%A7%E5%AE%B9%E5%89%B5%E4%BD%9C/UIUX%20Style/Styles/Rebus">📝 Obsidian 筆記</a></span></div>
-<header class="site-header wrap"><div class="logo">Rebus Lab</div><input type="checkbox" id="navToggle" class="nav-toggle-input" aria-label="開關選單"><label class="nav-toggle" for="navToggle">選單</label><nav class="nav" aria-label="主選單"><a href="#rows" aria-current="page">教材</a><a href="#products">樣本</a><a href="#pricing">報價</a><a href="#signup">聯絡</a></nav><label class="nav-scrim" for="navToggle" aria-hidden="true"></label><a class="btn btn-primary" href="#cta">索取樣本</a></header>
-<main>
-<section class="block hero" id="hero"><div class="wrap hero-grid"><div><span class="eyebrow rv">小一至中三 · 可配合課堂</span><h1><span class="pict" aria-hidden="true">🧩</span>用圖代字學概念</h1><p class="lead rv">圖代字卡片同工作紙：教抽象概念（程式、邏輯、語文）唔使學生先識字。</p><div class="actions rv"><a class="btn btn-primary" href="#cta">索取樣本 <span class="i" aria-hidden="true">→</span></a><a class="btn btn-secondary" href="#product">睇教材目錄</a></div><p class="note rv">學校可以申請試用包 · 到校班導師有性罪行定罪紀錄查核同保險</p></div><figure class="hero-art has-media rv"><img src="media/rebus-hero.jpg" alt="" loading="lazy"><figcaption>情境示意圖 · AI 生成</figcaption></figure></div></section>
-<section class="block tight trust band"><div class="wrap trust"><span class="lbl">用過嘅機構（示範網站，全部虛構）：</span><span class="wordmark">童學堂</span><span class="wordmark">Maker Kids</span><span class="wordmark">小先鋒</span><span class="wordmark">STEM LAB HK</span><span class="wordmark">社區中心</span></div></section>
-<section class="block" id="features"><div class="wrap"><h2 class="sec-title">四個教學設計決定</h2><p class="sec-sub">每一格圖都係為咗解決一個教學問題。</p><div class="grid g4"><article class="card rv"><span class="ico" aria-hidden="true">🧩</span><h3>圖代字</h3><p>一個圖 = 一個概念，學生唔使識字都跟得到。</p></article><article class="card rv"><span class="ico" aria-hidden="true">🖨️</span><h3>可以自己印</h3><p>PDF 授權，學校印幾多份都得。</p></article><article class="card rv"><span class="ico" aria-hidden="true">✍️</span><h3>附教學流程</h3><p>每套有 5 步流程同提問句，代課老師都教得到。</p></article><article class="card rv"><span class="ico" aria-hidden="true">🔤</span><h3>中英雙語</h3><p>同一張卡有中文同英文，方便語文課都用。</p></article></div></div></section>
-<section class="block band" id="product"><div class="wrap"><h2 class="sec-title">教材包入面有咩</h2><p class="sec-sub">一包 = 卡片 + 工作紙 + 海報 + 教學流程。</p><div class="mock rv"><div class="mock-bar"><span class="mock-dot"></span><span class="mock-dot"></span><span class="mock-dot"></span><span style="margin-left:8px">Rebus Lab · 教材包 · 入門級</span></div><div class="mock-body"><aside class="mock-side"><span><b>內容</b></span><span>圖卡 ×48</span><span>工作紙 ×6</span><span>海報 ×2</span><span><b>格式</b></span><span>PDF + 印刷版</span></aside><div class="mock-main"><div class="mock-row"><span class="pill">圖卡</span> 48 張 · 中英對照 · A5</div><div class="mock-row"><span class="pill">工作紙</span> 6 張 · 分 3 個難度</div><div class="mock-row"><span class="pill">海報</span> 2 張 · 課室用（A2）</div><div class="mock-row"><span class="diff-add">+ 教學流程 5 步（附提問句）</span></div></div><aside class="mock-right"><span><b>適合</b></span><span>小一至小三</span><span><b>堂數</b></span><span>2–3 堂</span></aside></div></div><p class="note">示範版係靜態畫面；Pro 版會逐行打出嚟。</p></div></section>
-<section class="block"><div class="wrap"><h2 class="sec-title">學校三步</h2><p class="sec-sub">先試，再決定。試用包唔使錢。</p><ol class="steps"><li class="rv"><h3>索取樣本</h3><p>填表拎 PDF 樣本頁（3 張卡 + 1 張工作紙），即刻電郵收到。</p></li><li class="rv"><h3>試教一堂</h3><p>用樣本上 30 分鐘，睇學生反應；我們可以提供流程建議。</p></li><li class="rv"><h3>訂購或到校</h3><p>買教材包自己教，或者我們派導師到校（報價另議）。</p></li></ol></div></section>
-<section class="block tight"><div class="wrap"><div class="stats"><div class="stat rv"><span class="num">120 間</span><span>用過嘅學校同機構（示範數據）</span></div><div class="stat rv"><span class="num">48 張</span><span>入門包圖卡</span></div><div class="stat rv"><span class="num">2–3 堂</span><span>每包建議堂數</span></div><div class="stat rv"><span class="num">4.7/5</span><span>老師評分（示範數據）</span></div></div></div></section>
-<section class="block" id="rows"><div class="wrap"><h2 class="sec-title rv">教材目錄</h2><p class="sec-sub rv">按級別分三套；每套都可以單買或者成套買。</p><div class="rows"><article class="rv"><b>入門套（小一至小三）</b><span>圖代字基礎、分類、次序 · 48 張卡 + 6 張工作紙</span><span class="cost">HK$480</span></article><article class="rv"><b>進階套（小四至小六）</b><span>邏輯、條件、簡單演算法 · 64 張卡 + 8 張工作紙</span><span class="cost">HK$680</span></article><article class="rv"><b>程式概念套（中一至中三）</b><span>變數、迴圈、函數嘅視覺化 · 72 張卡 + 10 張工作紙</span><span class="cost">HK$880</span></article><article class="rv"><b>全校授權</b><span>三套 PDF + 可自行印刷（一校 3 年）</span><span class="cost">HK$6,800</span></article><article class="rv"><b>到校課程</b><span>我們派導師，用同一套教材教（含查核同保險）</span><span class="cost">報價</span></article></div><p class="note rv">價錢係示範數字；學校可以先索取免費樣本頁再決定。</p></div></section>
-<section class="block"><div class="wrap"><h2 class="sec-title">老師點講</h2><p class="sec-sub">示範網站用虛構老師名；真評語會喺真實課堂後補。</p><div class="grid g2"><figure class="quote rv"><p>「班入面有兩個唔識字嘅學生，都可以一齊玩圖卡，唔會坐冷板。」</p><figcaption class="who"><span class="avatar" aria-hidden="true">李</span><span><b>李老師</b><br>小學 · 小二班主任</span></figcaption></figure><figure class="quote rv"><p>「附嘅提問句好有用，我第一次教呢個題目都有嘢問。」</p><figcaption class="who"><span class="avatar" aria-hidden="true">陳</span><span><b>陳老師</b><br>社區中心 · 課後班導師</span></figcaption></figure></div></div></section>
-<section class="block" id="products"><div class="wrap"><h2 class="sec-title">自由樣本</h2><p class="sec-sub">以下每樣都可以單獨申請 PDF 樣本頁。</p><div class="tiles"><article class="tile-c rv"><div class="ph wide" aria-hidden="true">🃏</div><h3>圖卡樣本</h3><p>3 張入門卡 · 中英對照 · 可列印</p><span class="cost">免費</span></article><article class="tile-c rv"><div class="ph wide" aria-hidden="true">📝</div><h3>工作紙樣本</h3><p>1 張 + 答案 · A4 可列印</p><span class="cost">免費</span></article><article class="tile-c rv"><div class="ph wide" aria-hidden="true">🗺️</div><h3>教學流程樣本</h3><p>5 步流程 + 提問句清單</p><span class="cost">免費</span></article></div></div></section>
-<section class="block" id="pricing"><div class="wrap"><h2 class="sec-title">價錢</h2><p class="sec-sub">教材包一次買，之後可以自己印；到校班另外報價。</p><div class="pricing"><article class="plan rv"><h3>單套</h3><div class="price">HK$480 <small>/ 套起</small></div><p>一套教材，課室用。</p><ul><li>48–72 張卡（印刷版）</li><li>工作紙 PDF</li><li>教學流程</li><li>可自行列印</li></ul><a class="btn btn-secondary" href="#cta">訂購</a></article><article class="plan rv featured"><span class="tag">最受歡迎</span><h3>全校授權</h3><div class="price">HK$6,800 <small>/ 校 · 3 年</small></div><p>三套齊，無限印刷。</p><ul><li>三套教材 PDF</li><li>可全校列印</li><li>3 年更新</li><li>教師工作坊一次（線上）</li></ul><a class="btn btn-primary" href="#cta">訂購</a></article><article class="plan rv"><h3>到校課程</h3><div class="price">報價 <small>/ 班</small></div><p>我們派導師入校。</p><ul><li>導師有性罪行定罪紀錄查核</li><li>第三者保險齊</li><li>附教案同工作紙</li><li>可按學校時間表安排</li></ul><a class="btn btn-secondary" href="#cta">索取報價</a></article></div></div></section>
-<section class="block band" id="signup"><div class="wrap"><h2 class="sec-title">索取樣本</h2><p class="sec-sub">填完即刻收到 PDF（唔使等審批）；我們唔會 sell 你。</p><form class="form" onsubmit="return false"><div class="field"><label for="signup-0">學校／機構名</label><input id="signup-0" type="text" placeholder="例如：示範小學"></div><div class="field"><label for="signup-1">你嘅角色</label><select id="signup-1"><option>老師</option><option>課程主任</option><option>圖書館主任</option><option>家長</option><option>其他</option></select></div><div class="field"><label for="signup-2">工作電郵</label><input id="signup-2" type="email" placeholder="you@school.edu.hk"></div><div class="field"><label for="signup-3">想睇邊套</label><select id="signup-3"><option>入門套（小一至小三）</option><option>進階套（小四至小六）</option><option>程式概念套（中一至中三）</option><option>三套都要</option></select></div><div class="field"><label for="signup-4">備註（可留空）</label><input id="signup-4" type="text" placeholder="例如：想配合常識科"></div><label class="check"><input type="checkbox" class="toggle" checked> 同意我們用電郵寄樣本同一封後續跟進</label><div><button class="btn btn-primary" type="submit">索取樣本</button></div></form></div></section>
-<section class="block"><div class="wrap"><h2 class="sec-title">學校常見問題</h2><p class="sec-sub">答唔到嘅可以 email，我們兩個工作日內覆。</p><div class="faq"><details class="rv"><summary>樣本要唔要錢？</summary><div class="ans">唔使，填表即刻收到 PDF 樣本頁。</div></details><details class="rv"><summary>可唔可以自己印刷？</summary><div class="ans">單套買可以印自己班用；全校授權就無限印。</div></details><details class="rv"><summary>可唔可以改內容？</summary><div class="ans">可以，授權版附 Word／可編輯檔；改完唔可以再轉售。</div></details><details class="rv"><summary>到校課程要幾多錢？</summary><div class="ans">按班數、鐘數同地點報價；導師查核同保險我們負責。</div></details><details class="rv"><summary>支援 SEN 學生嗎？</summary><div class="ans">圖代字設計本來就係為咗減少文字障礙，工作紙分 3 個難度。</div></details></div></div></section>
-<section class="block" id="cta"><div class="wrap"><div class="cta-band rv"><h2>先拎免費樣本頁</h2><p>3 張卡 + 1 張工作紙，即刻電郵收到。</p><div class="actions"><a class="btn btn-primary" href="#">索取樣本</a><a class="btn btn-secondary" href="#">睇教材目錄</a></div></div></div></section>
+<header class="hd">
+  <div class="wrap hdrow">
+    <a class="logo" href="#top"><span class="lmark" aria-hidden="true">🧩</span>Rebus Lab</a>
+    <nav class="nv" aria-label="主選單"><a href="#rows"><span class="nvico" aria-hidden="true">📚</span><span>教材</span></a><a href="#products"><span class="nvico" aria-hidden="true">🃏</span><span>樣本</span></a><a href="#pricing"><span class="nvico" aria-hidden="true">🧾</span><span>報價</span></a><a href="#signup"><span class="nvico" aria-hidden="true">✉️</span><span>聯絡</span></a></nav>
+    <a class="bt bt-1 hdcta" href="#signup">索取樣本</a>
+  </div>
+</header>
+<main id="top">
+<section class="hero">
+  <div class="wrap herogrid">
+    <div class="hero-l">
+      <p class="kick"><span class="knum" aria-hidden="true">①</span>小一至中三 · 可配合課堂</p>
+      <h1><span class="pict" aria-hidden="true">🧩</span>用圖代字學概念</h1>
+      <p class="lead">圖代字卡片同工作紙：教抽象概念（程式、邏輯、語文）唔使學生先識字。</p>
+      <div class="acts">
+        <a class="bt bt-1" href="#signup">索取樣本</a>
+        <a class="bt bt-2" href="#rows">睇教材目錄</a>
+      </div>
+      <ul class="notes"><li>學校可以申請試用包</li><li>到校班導師有性罪行定罪紀錄查核同保險</li></ul>
+    </div>
+    <div class="hero-r">
+      <div class="squares" aria-hidden="true">
+        <span>👁</span><span>🐛</span><span>Ｍ</span><span>🧩</span><span>＋</span><span>＝</span>
+        <span>▢</span><span>✓</span><span>?</span>
+      </div>
+      <p class="rvlabel">REBUS · 圖代字</p>
+    </div>
+  </div>
+</section>
+<section class="plate">
+  <div class="wrap">
+    <figure class="shotbox"><img src="media/rebus-hero.jpg" alt="教材情境示意圖" loading="lazy"><figcaption><span class="fnum" aria-hidden="true">圖 1</span>情境示意圖 · AI 生成</figcaption></figure>
+  </div>
+</section>
+<section class="trust">
+  <div class="wrap">
+    <p class="tlbl">用過嘅機構（示範網站，全部虛構）：</p>
+    <div class="trow"><span class="tik"><i aria-hidden="true">✓</i>童學堂</span><span class="tik"><i aria-hidden="true">✓</i>Maker Kids</span><span class="tik"><i aria-hidden="true">✓</i>小先鋒</span><span class="tik"><i aria-hidden="true">✓</i>STEM LAB HK</span><span class="tik"><i aria-hidden="true">✓</i>社區中心</span></div>
+  </div>
+</section>
+<section class="cat" id="rows">
+  <div class="wrap">
+    <h2>教材目錄</h2><p class="sub">按級別分三套；每套都可以單買或者成套買。</p>
+    <div class="tblwrap">
+      <table class="cat-t">
+        <caption class="tiny">教材目錄</caption>
+        <thead><tr><th class="n">#</th><th>名稱</th><th>內容</th><th class="p">價錢</th></tr></thead>
+        <tbody><tr><th scope="row" class="n">01</th><td class="c0">入門套（小一至小三）</td><td class="c1">圖代字基礎、分類、次序 · 48 張卡 + 6 張工作紙</td><td class="c2">HK$480</td></tr><tr><th scope="row" class="n">02</th><td class="c0">進階套（小四至小六）</td><td class="c1">邏輯、條件、簡單演算法 · 64 張卡 + 8 張工作紙</td><td class="c2">HK$680</td></tr><tr><th scope="row" class="n">03</th><td class="c0">程式概念套（中一至中三）</td><td class="c1">變數、迴圈、函數嘅視覺化 · 72 張卡 + 10 張工作紙</td><td class="c2">HK$880</td></tr><tr><th scope="row" class="n">04</th><td class="c0">全校授權</td><td class="c1">三套 PDF + 可自行印刷（一校 3 年）</td><td class="c2">HK$6,800</td></tr><tr><th scope="row" class="n">05</th><td class="c0">到校課程</td><td class="c1">我們派導師，用同一套教材教（含查核同保險）</td><td class="c2">報價</td></tr></tbody>
+      </table>
+    </div>
+    <p class="note-dash">價錢係示範數字；學校可以先索取免費樣本頁再決定。</p>
+  </div>
+</section>
+<section class="feat">
+  <div class="wrap">
+    <h2>四個教學設計決定</h2><p class="sub">每一格圖都係為咗解決一個教學問題。</p>
+    <div class="qcards"><article class="qcard">
+  <span class="qnum" aria-hidden="true">1</span>
+  <span class="qico" aria-hidden="true">🧩</span>
+  <h3>圖代字</h3><p>一個圖 = 一個概念，學生唔使識字都跟得到。</p>
+</article><article class="qcard">
+  <span class="qnum" aria-hidden="true">2</span>
+  <span class="qico" aria-hidden="true">🖨️</span>
+  <h3>可以自己印</h3><p>PDF 授權，學校印幾多份都得。</p>
+</article><article class="qcard">
+  <span class="qnum" aria-hidden="true">3</span>
+  <span class="qico" aria-hidden="true">✍️</span>
+  <h3>附教學流程</h3><p>每套有 5 步流程同提問句，代課老師都教得到。</p>
+</article><article class="qcard">
+  <span class="qnum" aria-hidden="true">4</span>
+  <span class="qico" aria-hidden="true">🔤</span>
+  <h3>中英雙語</h3><p>同一張卡有中文同英文，方便語文課都用。</p>
+</article></div>
+  </div>
+</section>
+<section class="stp">
+  <div class="wrap">
+    <h2>學校三步</h2><p class="sub">先試，再決定。試用包唔使錢。</p>
+    <ol class="steplist"><li>
+  <span class="snum" aria-hidden="true">01</span>
+  <div><h3>索取樣本</h3><p>填表拎 PDF 樣本頁（3 張卡 + 1 張工作紙），即刻電郵收到。</p></div>
+</li><li>
+  <span class="snum" aria-hidden="true">02</span>
+  <div><h3>試教一堂</h3><p>用樣本上 30 分鐘，睇學生反應；我們可以提供流程建議。</p></div>
+</li><li>
+  <span class="snum" aria-hidden="true">03</span>
+  <div><h3>訂購或到校</h3><p>買教材包自己教，或者我們派導師到校（報價另議）。</p></div>
+</li></ol>
+  </div>
+</section>
+<section class="dl" id="products">
+  <div class="wrap">
+    <h2>自由樣本</h2><p class="sub">以下每樣都可以單獨申請 PDF 樣本頁。</p>
+    <div class="dlist"><article class="dcard">
+  <span class="dico" aria-hidden="true">🃏</span>
+  <div class="dbody">
+    <h3>圖卡樣本</h3><p>3 張入門卡 · 中英對照 · 可列印</p>
+  </div>
+  <span class="dtag">免費</span>
+  <a class="dlink" href="#signup">PDF ↓</a>
+</article><article class="dcard">
+  <span class="dico" aria-hidden="true">📝</span>
+  <div class="dbody">
+    <h3>工作紙樣本</h3><p>1 張 + 答案 · A4 可列印</p>
+  </div>
+  <span class="dtag">免費</span>
+  <a class="dlink" href="#signup">PDF ↓</a>
+</article><article class="dcard">
+  <span class="dico" aria-hidden="true">🗺️</span>
+  <div class="dbody">
+    <h3>教學流程樣本</h3><p>5 步流程 + 提問句清單</p>
+  </div>
+  <span class="dtag">免費</span>
+  <a class="dlink" href="#signup">PDF ↓</a>
+</article></div>
+  </div>
+</section>
+<section class="pack">
+  <div class="wrap">
+    <h2>教材包入面有咩</h2><p class="sub">一包 = 卡片 + 工作紙 + 海報 + 教學流程。</p>
+    <div class="sheet">
+      <div class="sbar"><span>Rebus Lab · 教材包 · 入門級</span><span class="scount" aria-hidden="true">48 · 6 · 2</span></div>
+      <div class="sbody">
+        <ul class="slist"><li><b>內容</b></li><li>圖卡 ×48</li><li>工作紙 ×6</li><li>海報 ×2</li><li><b>格式</b></li><li>PDF + 印刷版</li></ul>
+        <ul class="smain"><li><span class="pill">圖卡</span> 48 張 · 中英對照 · A5</li><li><span class="pill">工作紙</span> 6 張 · 分 3 個難度</li><li><span class="pill">海報</span> 2 張 · 課室用（A2）</li><li><span class="diff-add">+ 教學流程 5 步（附提問句）</span></li></ul>
+        <ul class="smeta"><li><b>適合</b></li><li>小一至小三</li><li><b>堂數</b></li><li>2–3 堂</li></ul>
+      </div>
+    </div>
+    <p class="tiny">示範版係靜態畫面；Pro 版會逐行打出嚟。</p>
+  </div>
+</section>
+<section class="su" id="signup">
+  <div class="wrap">
+    <h2>索取樣本</h2><p class="sub">填完即刻收到 PDF（唔使等審批）；我們唔會 sell 你。</p>
+    <form class="sheetform" onsubmit="return false">
+      <div class="frow"><div class="field"><label for="su-1"><span class="fn">1</span>學校／機構名</label><input id="su-1" type="text" placeholder="例如：示範小學"></div><div class="field"><label for="su-2"><span class="fn">2</span>你嘅角色</label><select id="su-2"><option>老師</option><option>課程主任</option><option>圖書館主任</option><option>家長</option><option>其他</option></select></div><div class="field"><label for="su-3"><span class="fn">3</span>工作電郵</label><input id="su-3" type="email" placeholder="you@school.edu.hk"></div><div class="field"><label for="su-4"><span class="fn">4</span>想睇邊套</label><select id="su-4"><option>入門套（小一至小三）</option><option>進階套（小四至小六）</option><option>程式概念套（中一至中三）</option><option>三套都要</option></select></div><div class="field"><label for="su-5"><span class="fn">5</span>備註（可留空）</label><input id="su-5" type="text" placeholder="例如：想配合常識科"></div></div>
+      <label class="check"><input type="checkbox" checked> <span>同意我們用電郵寄樣本同一封後續跟進</span></label>
+      <button class="bt bt-1" type="submit">索取樣本</button>
+    </form>
+  </div>
+</section>
+<section class="mark">
+  <div class="wrap"><div class="sgrid"><div class="acell">
+  <b data-count="120">120 間</b><span>用過嘅學校同機構（示範數據）</span>
+</div><div class="acell">
+  <b data-count="48">48 張</b><span>入門包圖卡</span>
+</div><div class="acell">
+  <b data-count="2">2–3 堂</b><span>每包建議堂數</span>
+</div><div class="acell">
+  <b data-count="4.7">4.7/5</b><span>老師評分（示範數據）</span>
+</div></div></div>
+</section>
+<section class="quotes">
+  <div class="wrap">
+    <h2>老師點講</h2><p class="sub">示範網站用虛構老師名；真評語會喺真實課堂後補。</p>
+    <div class="qgrid"><figure class="mk">
+  <div class="mhead"><span class="mface" aria-hidden="true">李</span>
+    <span class="mwho"><b>李老師</b><br>小學 · 小二班主任</span></div>
+  <blockquote><p>「班入面有兩個唔識字嘅學生，都可以一齊玩圖卡，唔會坐冷板。」</p></blockquote>
+</figure><figure class="mk">
+  <div class="mhead"><span class="mface" aria-hidden="true">陳</span>
+    <span class="mwho"><b>陳老師</b><br>社區中心 · 課後班導師</span></div>
+  <blockquote><p>「附嘅提問句好有用，我第一次教呢個題目都有嘢問。」</p></blockquote>
+</figure></div>
+  </div>
+</section>
+<section class="price" id="pricing">
+  <div class="wrap">
+    <h2>價錢</h2><p class="sub">教材包一次買，之後可以自己印；到校班另外報價。</p>
+    <div class="pgrid"><article class="pcard">
+  
+  <h3>單套</h3>
+  <p class="pprice"><b>HK$480</b><span>/ 套起</span></p>
+  <p class="pdesc">一套教材，課室用。</p>
+  <ul><li><i aria-hidden="true">☑</i>48–72 張卡（印刷版）</li><li><i aria-hidden="true">☑</i>工作紙 PDF</li><li><i aria-hidden="true">☑</i>教學流程</li><li><i aria-hidden="true">☑</i>可自行列印</li></ul>
+  <a class="bt bt-2" href="#signup">訂購</a>
+</article><article class="pcard feat">
+  <span class="ptag">最受歡迎</span>
+  <h3>全校授權</h3>
+  <p class="pprice"><b>HK$6,800</b><span>/ 校 · 3 年</span></p>
+  <p class="pdesc">三套齊，無限印刷。</p>
+  <ul><li><i aria-hidden="true">☑</i>三套教材 PDF</li><li><i aria-hidden="true">☑</i>可全校列印</li><li><i aria-hidden="true">☑</i>3 年更新</li><li><i aria-hidden="true">☑</i>教師工作坊一次（線上）</li></ul>
+  <a class="bt bt-1" href="#signup">訂購</a>
+</article><article class="pcard">
+  
+  <h3>到校課程</h3>
+  <p class="pprice"><b>報價</b><span>/ 班</span></p>
+  <p class="pdesc">我們派導師入校。</p>
+  <ul><li><i aria-hidden="true">☑</i>導師有性罪行定罪紀錄查核</li><li><i aria-hidden="true">☑</i>第三者保險齊</li><li><i aria-hidden="true">☑</i>附教案同工作紙</li><li><i aria-hidden="true">☑</i>可按學校時間表安排</li></ul>
+  <a class="bt bt-2" href="#signup">索取報價</a>
+</article></div>
+  </div>
+</section>
+<section class="faq">
+  <div class="wrap">
+    <h2>學校常見問題</h2><p class="sub">答唔到嘅可以 email，我們兩個工作日內覆。</p>
+    <div class="faqlist"><details>
+  <summary><span class="fnum" aria-hidden="true">01</span>樣本要唔要錢？</summary>
+  <div class="ans"><p>唔使，填表即刻收到 PDF 樣本頁。</p></div>
+</details><details>
+  <summary><span class="fnum" aria-hidden="true">02</span>可唔可以自己印刷？</summary>
+  <div class="ans"><p>單套買可以印自己班用；全校授權就無限印。</p></div>
+</details><details>
+  <summary><span class="fnum" aria-hidden="true">03</span>可唔可以改內容？</summary>
+  <div class="ans"><p>可以，授權版附 Word／可編輯檔；改完唔可以再轉售。</p></div>
+</details><details>
+  <summary><span class="fnum" aria-hidden="true">04</span>到校課程要幾多錢？</summary>
+  <div class="ans"><p>按班數、鐘數同地點報價；導師查核同保險我們負責。</p></div>
+</details><details>
+  <summary><span class="fnum" aria-hidden="true">05</span>支援 SEN 學生嗎？</summary>
+  <div class="ans"><p>圖代字設計本來就係為咗減少文字障礙，工作紙分 3 個難度。</p></div>
+</details></div>
+  </div>
+</section>
+<section class="cta" id="cta">
+  <div class="wrap cwrap">
+    <h2>先拎免費樣本頁</h2><p>3 張卡 + 1 張工作紙，即刻電郵收到。</p>
+    <div class="acts">
+      <a class="bt bt-1" href="#signup">索取樣本</a>
+      <a class="bt bt-3" href="#rows">睇教材目錄</a>
+    </div>
+  </div>
+</section>
 </main>
-<footer class="block site-footer"><div class="wrap"><div class="foot-grid"><div><h4>教材</h4><a href="#">入門套</a><a href="#">進階套</a><a href="#">程式概念套</a><a href="#">全校授權</a></div><div><h4>學校</h4><a href="#">免費樣本</a><a href="#">教學流程</a><a href="#">到校課程</a><a href="#">教師工作坊</a></div><div><h4>資源</h4><a href="#">常見問題</a><a href="#">列印指引</a><a href="#">課堂示範片</a><a href="#">研究工作紙</a></div><div><h4>關於</h4><a href="#">Rebus Lab</a><a href="#">設計理念</a><a href="#">聯絡我們</a><a href="#">授權條款</a></div><div><h4>教材更新通知</h4><form class="news" onsubmit="return false"><label for="nl" style="display:none">教材更新通知</label><input id="nl" type="email" placeholder="you@school.edu.hk"><button class="btn btn-primary" type="submit">訂閱</button></form></div></div><div class="foot-bottom"><span>© 2026 Rebus Lab · 示範網站：機構、數字同評語全部虛構，非真實學校客戶</span><span>Email · WhatsApp · YouTube</span></div></div></footer>
-<section class="block band" id="qa"><div class="wrap"><h2 class="sec-title">設計 QA · 按鈕同表單</h2><p class="sec-sub">同一套元素庫嘅 11 個按鈕狀態（含 loading／success／icon／size）+ 表單，用嚟驗風格嘅 focus／disabled／錯誤狀態夠唔夠清楚。</p><div class="btn-row"><div class="state"><button class="btn btn-primary " type="button">Primary</button><small>Default</small></div><div class="state"><button class="btn btn-primary is-hover" type="button">Primary</button><small>Hover</small></div><div class="state"><button class="btn btn-primary is-active" type="button">Primary</button><small>Active</small></div><div class="state"><button class="btn btn-primary is-focus" type="button">Primary</button><small>Focus</small></div><div class="state"><button class="btn btn-primary " type="button" disabled>Primary</button><small>Disabled</small></div><div class="state"><button class="btn btn-primary " type="button" data-state="loading"><span class="spin"></span> 傳送中…</button><small>Loading</small></div><div class="state"><button class="btn btn-primary " type="button" data-state="done">已收到 · 1 個工作日內覆你</button><small>Success</small></div><div class="state"><button class="btn btn-primary " type="button"><span class="i" aria-hidden="true">→</span> 下一步</button><small>Icon + arrow</small></div><div class="state"><button class="btn btn-primary btn-sm" type="button">Small</button><small>Small（btn-sm）</small></div><div class="state"><button class="btn btn-primary btn-lg" type="button">Large</button><small>Large（btn-lg）</small></div><div class="state"><button class="btn btn-secondary" type="button">Secondary</button><small>Secondary</small></div></div><form class="form" style="margin-top:38px" onsubmit="return false"><div class="field"><label for="n">你嘅名</label><input id="n" placeholder="例如：陳大文"></div><div class="field"><label for="e">工作電郵</label><input id="e" type="email" placeholder="you@company.com"></div><div class="field"><label for="c">團隊幾大？</label><select id="c"><option>1–5 人</option><option>6–20 人</option><option>21 人以上</option></select></div><label class="check"><input type="checkbox" class="toggle" checked> 接收產品更新</label><div><button class="btn btn-primary" type="submit">提交</button></div></form></div></section>
-<script>
-(function(){var s=document.getElementById('seats');if(!s)return;
-var o=document.getElementById('roiOut'),mo=document.getElementById('roiMoney'),so=document.getElementById('seatsOut');
-var H=6,R=900;
-function up(){var n=+s.value;so.textContent=n;var h=Math.round(n*H),m=h*R;
-o.textContent=h+' 小時 / 月';mo.textContent='約 HK$'+m.toLocaleString()+'（對比人手寫同樣嘅 PR）';}
-s.addEventListener('input',up);up();})();
-</script>
-<script>
-(function(){var f=document.querySelector('#qa form');if(!f)return;
-var b=f.querySelector('button[type=submit]');if(!b)return;
-var live=document.createElement('p');live.className='note';live.setAttribute('aria-live','polite');
-f.appendChild(live);
-f.addEventListener('submit',function(e){e.preventDefault();
-if(b.dataset.state==='loading')return;
-var label=b.textContent;b.dataset.state='loading';b.innerHTML='<span class="spin"></span> 傳送中…';
-setTimeout(function(){b.dataset.state='done';b.textContent='已收到 · 1 個工作日內覆你';
-live.textContent='（示範狀態：真表單要接後端；重新載入可以再試）';
-setTimeout(function(){b.dataset.state='';b.textContent=label;},2600);},900);});})();
-</script>
+<footer class="ft">
+  <section class="ftin">
+    <div class="wrap">
+      <div class="fgrid"><div><h4>教材</h4><a href="#">入門套</a><a href="#">進階套</a><a href="#">程式概念套</a><a href="#">全校授權</a></div><div><h4>學校</h4><a href="#">免費樣本</a><a href="#">教學流程</a><a href="#">到校課程</a><a href="#">教師工作坊</a></div><div><h4>資源</h4><a href="#">常見問題</a><a href="#">列印指引</a><a href="#">課堂示範片</a><a href="#">研究工作紙</a></div><div><h4>關於</h4><a href="#">Rebus Lab</a><a href="#">設計理念</a><a href="#">聯絡我們</a><a href="#">授權條款</a></div></div>
+      <div class="news">
+        <h4>教材更新通知</h4>
+        <form onsubmit="return false">
+          <input type="email" placeholder="you@school.edu.hk" aria-label="教材更新通知">
+          <button class="bt bt-1" type="submit">訂閱</button>
+        </form>
+      </div>
+      <p class="legal">© 2026 Rebus Lab · 示範網站：機構、數字同評語全部虛構，非真實學校客戶 · Email · WhatsApp · YouTube</p>
+    </div>
+  </section>
+</footer>
 </body></html>

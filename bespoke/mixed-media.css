@@ -1,0 +1,300 @@
+/* =========================================================================
+   Mixed Media（Collage Press）— 手工版面 CSS：獨立雜誌 story
+   規則：紙感、報頭、不對稱拼貼、錯位圖文、剪報虛線、膠紙、印章、打字機字。
+   ========================================================================= */
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--fg);
+  font:16.5px/1.7 var(--font-body,"IBM Plex Sans",Arial,sans-serif);position:relative}
+body:before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;opacity:.07;
+  background-image:repeating-linear-gradient(0deg,var(--border) 0 1px,transparent 1px 5px)}
+img{max-width:100%;height:auto;display:block}
+.wrap{width:min(1120px,91vw);margin:auto}
+h1,h2,h3,h4{font-family:var(--font-display,"Anton",Impact,sans-serif);margin:0;font-weight:400;
+  line-height:1.1;letter-spacing:.01em}
+h2{font-size:clamp(26px,4vw,46px);text-transform:uppercase;background:var(--fg);color:var(--bg);
+  display:inline-block;padding:6px 16px;transform:rotate(-.5deg)}
+.sub{color:var(--muted);margin:1.1rem 0 1.9rem;max-width:60ch}
+.note{color:var(--muted);font-size:15.5px;margin:1.1rem 0 0}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--focus-ring,var(--accent));outline-offset:2px}
+
+/* ---- 按鈕（3 種）---- */
+.bt{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:50px;
+  padding:13px 22px;border:1.5px solid var(--border);border-radius:var(--radius,2px);
+  background:var(--surface);color:var(--fg);cursor:pointer;text-decoration:none;
+  font:600 16px/1 var(--font-body);box-shadow:var(--btn-shadow,2px 3px 6px rgba(0,0,0,.22));
+  transition:transform .15s ease,box-shadow .15s ease}
+.bt-a{background:var(--accent);color:var(--accent-fg);border-color:var(--accent)}
+.bt-b{background:var(--surface);color:var(--fg)}
+.bt-c{background:transparent;border-style:dashed;box-shadow:none}
+.bt:hover{transform:translate(-1px,-2px) rotate(-.6deg);box-shadow:var(--shadow)}
+.bt:active{transform:translate(1px,1px);box-shadow:none}
+.acts{display:flex;gap:12px;flex-wrap:wrap}
+
+/* ---- demo bar ---- */
+.demo-bar{background:var(--fg);color:var(--bg);font:13.5px/1.5 var(--font-mono,monospace);
+  padding:8px 16px;display:flex;flex-wrap:wrap;gap:6px 16px;justify-content:space-between}
+.demo-bar a{color:var(--bg);display:inline-flex;align-items:center;min-height:24px}
+
+/* ---- 報頭 ---- */
+.mast{padding:14px 0 0;border-bottom:3px double var(--fg);position:sticky;top:0;z-index:30;
+  background:var(--bg)}
+.mast .topline{display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+.stamp{display:inline-block;background:var(--ok);color:var(--accent-fg);padding:5px 12px;
+  transform:rotate(-2deg);font:400 15px/1.3 var(--font-mono,monospace)}
+.cat{margin:0;font:400 15px/1.4 var(--font-mono,monospace);color:var(--muted);letter-spacing:.06em}
+.mark{display:inline-flex;align-items:center;min-height:44px;text-decoration:none;
+  font:400 clamp(26px,4.4vw,46px)/1 var(--font-display);letter-spacing:.06em;text-transform:uppercase}
+.go{margin-left:auto;display:inline-flex;align-items:center;min-height:46px;padding:10px 18px;
+  background:var(--accent);color:var(--accent-fg);text-decoration:none;font-weight:600;
+  border:1.5px solid var(--border)}
+.nv{display:flex;flex-wrap:wrap;gap:0;margin-top:8px;border-top:1px solid var(--fg)}
+.nv a{display:inline-flex;align-items:center;min-height:44px;padding:6px 18px;text-decoration:none;
+  border-right:1px solid var(--fg);font:400 15.5px/1 var(--font-mono,monospace);letter-spacing:.08em}
+.nv a:first-child{border-left:1px solid var(--fg)}
+.nv a:hover{background:var(--accent);color:var(--accent-fg)}
+
+/* ---- 1 hero：不對稱拼貼 ---- */
+.hero{padding:clamp(26px,5vw,58px) 0 0;overflow:hidden}
+.hgrid{display:grid;grid-template-columns:1.14fr .86fr;gap:clamp(22px,4vw,56px);align-items:start}
+.headline{transform:rotate(-.6deg);padding-top:clamp(0px,2vw,22px)}
+.headline h1{font-size:clamp(40px,7.4vw,104px);text-transform:uppercase;line-height:1;margin-bottom:18px}
+.headline .sub{font-size:clamp(16.5px,1.7vw,19.5px);max-width:44ch}
+.note{color:var(--muted)}
+.cover{position:relative;margin:0;transform:rotate(1.4deg);padding:12px;background:var(--surface);
+  border:1px solid var(--border);box-shadow:var(--shadow,2px 3px 6px rgba(0,0,0,.22))}
+.cover img,.blankcut{clip-path:polygon(0 3%,5% 0,97% 1.5%,100% 95%,95% 100%,3% 98%)}
+.blankcut{height:min(50vw,420px)}
+.cover figcaption{font:400 15px/1.5 var(--font-mono,monospace);color:var(--muted);padding-top:9px}
+.tape{position:absolute;left:-16px;top:-14px;width:104px;height:30px;background:var(--cta-bg);
+  border:1px dashed var(--muted);transform:rotate(-8deg);display:block}
+.sidenote{grid-column:1/-1;margin:clamp(20px,3vw,40px) 0 0;padding-bottom:10px;overflow:hidden;
+  white-space:nowrap;color:var(--muted);font:400 15px/1.4 var(--font-mono,monospace);
+  border-bottom:1px dashed var(--border)}
+
+/* ---- 2 通路剪報帶 ---- */
+.strip{background:var(--fg);color:var(--bg);margin-top:clamp(20px,3vw,38px)}
+.strip .wrap{display:flex;align-items:center;gap:14px 30px;padding:20px 0;flex-wrap:wrap}
+.strip .lbl{margin:0;font:400 15px/1.4 var(--font-mono,monospace);opacity:.85}
+.marks{display:flex;flex-wrap:wrap;gap:10px 14px;margin:0}
+.marks span{border:1px dashed currentColor;padding:5px 12px;font:400 clamp(16px,1.8vw,20px)/1.4
+  var(--font-display);letter-spacing:.04em}
+
+/* ---- 3 期數目錄 ---- */
+.contents{padding:clamp(32px,5.5vw,72px) 0}
+.issues{display:grid;gap:clamp(14px,2vw,22px);margin-top:10px}
+.issue{background:var(--surface);border:1px solid var(--border);padding:clamp(16px,2.4vw,26px);
+  box-shadow:var(--shadow,2px 3px 6px rgba(0,0,0,.22));min-width:0}
+.issue.i0{transform:rotate(-.5deg)}
+.issue.i1{transform:rotate(.6deg);margin-left:clamp(0px,4vw,60px)}
+.issue.i2{transform:rotate(-.3deg);margin-right:clamp(0px,6vw,90px)}
+.issue.i3{transform:rotate(.4deg);margin-left:clamp(0px,2vw,30px)}
+.ino{margin:0 0 10px;font:400 clamp(20px,2.8vw,32px)/1.15 var(--font-display);text-transform:uppercase}
+.issue ul{list-style:none;margin:0;padding:0 0 12px;display:grid;gap:6px}
+.issue{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(10px,2vw,30px);
+  align-items:start}
+.issue li{display:flex;gap:10px;color:var(--muted);font-size:15.5px}
+.issue li:before{content:"—";color:var(--accent)}
+.cutline{grid-column:1/-1;display:block;border-bottom:1px dashed var(--border)}
+
+/* ---- 4 專欄剪報 ---- */
+.columns{padding:clamp(32px,5.5vw,72px) 0;border-top:1px dashed var(--border)}
+.cgrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(18px,3vw,34px)}
+.clip{position:relative;background:var(--surface);border:1px solid var(--border);padding:22px;
+  box-shadow:var(--shadow,2px 3px 6px rgba(0,0,0,.22));min-width:0}
+.clip:before{content:"";position:absolute;left:50%;top:-13px;width:92px;height:26px;
+  transform:translateX(-50%) rotate(-3deg);background:var(--cta-bg);border:1px dashed var(--muted)}
+.clip.c0{transform:rotate(-.7deg)}
+.clip.c1{transform:rotate(.8deg)}
+.clip.c2{transform:rotate(.5deg)}
+.clip.c3{transform:rotate(-.4deg)}
+.clipico{display:block;font-size:28px;margin-bottom:10px}
+.clip h3{font-size:clamp(19px,2.3vw,26px);text-transform:uppercase;margin-bottom:8px}
+.clip p{margin:0;color:var(--muted);font-size:15.5px}
+
+/* ---- 5 編輯部排版台 ---- */
+.desk{padding:clamp(32px,5.5vw,72px) 0;background:var(--surface);border-top:1px solid var(--border);
+  border-bottom:1px solid var(--border)}
+.slab{border:1px solid var(--border);background:var(--bg);padding:clamp(14px,2vw,22px)}
+.slabhead{margin:0 0 16px;padding-bottom:12px;border-bottom:1px dashed var(--border);
+  font:400 15.5px/1.4 var(--font-mono,monospace);color:var(--accent)}
+.scols{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.5fr) minmax(0,.8fr);gap:clamp(12px,2vw,24px)}
+.scol{list-style:none;margin:0;padding:0;min-width:0}
+.scol li{padding:9px 0;border-bottom:1px dotted var(--border);color:var(--muted);
+  font:400 15.5px/1.6 var(--font-mono,monospace);overflow-wrap:anywhere}
+.scol li:last-child{border-bottom:0}
+.scol li b{display:block;color:var(--fg);text-transform:uppercase;font-weight:400}
+.scol.mid li{color:var(--fg)}
+.pill{display:inline-block;background:var(--accent);color:var(--accent-fg);padding:2px 9px;
+  margin-right:6px;font-size:15px}
+.diff-add{color:var(--ok);font-weight:600}
+.diff-del{color:var(--warn);text-decoration:line-through}
+
+/* ---- 6 數字報頭 ---- */
+.figures{border-top:3px double var(--fg);padding:clamp(26px,4vw,48px) 0}
+.figures .wrap{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px}
+.fig{border-left:1px solid var(--fg);padding-left:16px;min-width:0}
+.fig:first-child{border-left:0;padding-left:0}
+.fig b{display:block;font:400 clamp(26px,3.6vw,46px)/1.05 var(--font-display);text-transform:uppercase}
+.fig span{display:block;margin-top:8px;color:var(--muted);font-size:15px}
+
+/* ---- 7 投稿須知 ---- */
+.noticeboard{padding:clamp(32px,5.5vw,72px) 0}
+.vtable{border-top:1px solid var(--fg);border-bottom:3px double var(--fg)}
+.vrow{display:grid;grid-template-columns:minmax(0,150px) minmax(0,1fr);gap:clamp(10px,2.6vw,28px);
+  padding:15px 0;border-bottom:1px dashed var(--border);align-items:baseline}
+.vrow .k{font:400 15.5px/1.5 var(--font-mono,monospace);text-transform:uppercase;color:var(--accent)}
+.vrow .v{color:var(--fg)}
+
+/* ---- 8 販售通路 ---- */
+.outlets{padding:clamp(32px,5.5vw,72px) 0;background:var(--surface);border-top:1px solid var(--border);
+  border-bottom:1px solid var(--border)}
+.tagwall{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:12px 14px}
+.tagwall li{border:1px solid var(--border);background:var(--bg);padding:10px 16px;font-size:15.5px;
+  box-shadow:2px 3px 0 var(--border)}
+.tagwall li.t0{transform:rotate(-1.4deg)}
+.tagwall li.t1{transform:rotate(1.6deg)}
+.tagwall li.t2{transform:rotate(-.8deg)}
+.tagwall li.t3{transform:rotate(1deg)}
+.tagwall li:hover{background:var(--accent);color:var(--accent-fg)}
+
+/* ---- 9 引言剪報 ---- */
+.pullquotes{padding:clamp(32px,5.5vw,72px) 0}
+.pull{position:relative;margin:0 0 clamp(20px,3vw,34px);padding:clamp(18px,2.6vw,28px);
+  background:var(--surface);border:1px solid var(--border);max-width:88%;
+  box-shadow:var(--shadow,2px 3px 6px rgba(0,0,0,.22))}
+.pull:nth-of-type(odd){transform:rotate(-.6deg)}
+.pull:nth-of-type(even){transform:rotate(.7deg);margin-left:auto}
+.pull p{margin:0 0 12px;font:400 clamp(19px,2.6vw,30px)/1.28 var(--font-display)}
+.scis{position:absolute;right:-12px;top:-14px;font-size:24px;transform:rotate(12deg)}
+.pull cite{font-style:normal;font:400 15px/1.5 var(--font-mono,monospace);color:var(--muted)}
+
+/* ---- 10 編輯部欄 ---- */
+.staff{padding:clamp(28px,4.5vw,58px) 0;border-top:1px dashed var(--border)}
+.sgrid{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:clamp(18px,3vw,40px);
+  align-items:start}
+.staff h4{font-size:clamp(20px,2.4vw,28px);text-transform:uppercase;margin-bottom:10px}
+.staff .sig{margin:0 0 6px;font:400 clamp(18px,2.2vw,24px)/1.3 var(--font-display)}
+.staff .meta{margin:0;color:var(--muted);font:400 15.5px/1.6 var(--font-mono,monospace)}
+.stafflinks{display:flex;flex-direction:column;border-top:1px solid var(--fg)}
+.stafflinks a{display:flex;align-items:center;min-height:44px;text-decoration:none;font-size:15.5px;
+  border-bottom:1px solid var(--fg);padding:4px 2px}
+.stafflinks a:hover{background:var(--accent);color:var(--accent-fg)}
+
+/* ---- 11 訂閱方案 ---- */
+.subscribe{padding:clamp(32px,5.5vw,72px) 0;border-top:1px dashed var(--border)}
+.pgrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(16px,2.6vw,28px);
+  align-items:start}
+.plan{position:relative;background:var(--surface);border:1px solid var(--border);
+  padding:22px;display:flex;flex-direction:column;min-width:0;
+  box-shadow:var(--shadow,2px 3px 6px rgba(0,0,0,.22))}
+.plan.p0{transform:rotate(-.7deg)}
+.plan.p1{transform:rotate(.6deg) translateY(-8px);border-width:2px;border-color:var(--accent)}
+.plan.p2{transform:rotate(-.4deg)}
+.plan h3{font-size:21px;text-transform:uppercase;margin-bottom:10px}
+.tag{display:inline-block;align-self:flex-start;background:var(--accent);color:var(--accent-fg);
+  padding:4px 11px;font:400 15px/1.4 var(--font-mono,monospace);transform:rotate(-3deg);
+  margin-bottom:10px}
+.amount{margin:0 0 8px;font:400 clamp(24px,3vw,36px)/1.1 var(--font-display)}
+.amount i{font-style:normal;font-size:15px;color:var(--muted)}
+.desc{margin:0 0 16px;color:var(--muted);font-size:15.5px}
+.plan ul{list-style:none;margin:0 0 20px;padding:0;display:grid;gap:9px}
+.plan li{display:flex;gap:9px;font-size:15.5px}
+.plan li:before{content:"▍";color:var(--accent)}
+.plan .bt{margin-top:auto}
+
+/* ---- 12 訂閱三步 ---- */
+.how{padding:clamp(32px,5.5vw,72px) 0;background:var(--surface);border-top:1px solid var(--border);
+  border-bottom:1px solid var(--border)}
+.steps{list-style:none;margin:0;padding:0}
+.steps li{display:grid;grid-template-columns:minmax(0,90px) minmax(0,1fr);gap:clamp(12px,2vw,28px);
+  padding:clamp(16px,2.4vw,26px) 0;border-bottom:1px dashed var(--border);align-items:start}
+.steps li:last-child{border-bottom:0}
+.steps b{font:400 clamp(26px,3.4vw,42px)/1 var(--font-display);color:var(--accent)}
+.steps h3{font-size:clamp(19px,2.3vw,26px);text-transform:uppercase;margin-bottom:6px}
+.steps p{margin:0;color:var(--muted)}
+
+/* ---- 13 問答 ---- */
+.ask{padding:clamp(32px,5.5vw,72px) 0}
+.faqbox{max-width:860px}
+.faqbox details{border-bottom:1px dashed var(--border);padding:2px 0}
+.faqbox summary{cursor:pointer;display:flex;gap:12px;align-items:center;min-height:58px;
+  font:400 clamp(17px,2.1vw,22px)/1.45 var(--font-body);font-weight:600;list-style:none}
+.faqbox summary::-webkit-details-marker{display:none}
+.faqbox summary:before{content:"？";color:var(--accent);font-family:var(--font-display);font-size:22px}
+.faqbox details[open] summary:before{content:"！"}
+.faqbox p{margin:0 0 20px 34px;color:var(--muted)}
+
+/* ---- 14 截稿 CTA ---- */
+.deadline{background:var(--accent);color:var(--accent-fg);padding:clamp(34px,6vw,78px) 0;
+  border-top:1px solid var(--border)}
+.deadline h2{background:var(--accent-fg);color:var(--accent);transform:rotate(-1deg);
+  font-size:clamp(28px,5vw,56px)}
+.deadline p{margin:20px 0 24px;max-width:50ch;font-size:17px}
+
+/* ---- 15 footer ---- */
+.newsletter{background:var(--surface);border-top:1px dashed var(--border);padding:26px 0}
+.newsletter h4{font-size:20px;text-transform:uppercase;margin-bottom:12px}
+.newsletter form{display:flex;gap:10px;flex-wrap:wrap}
+.newsletter input{flex:1 1 260px;min-height:50px;padding:12px 16px;font:16px/1.4 var(--font-body);
+  color:var(--fg);background:var(--input-bg);border:1px solid var(--border)}
+.colophon{background:var(--bg);padding:clamp(26px,4vw,48px) 0;border-top:3px double var(--fg)}
+.fcols{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:22px}
+.fcols h4{font:400 16px/1.4 var(--font-display);text-transform:uppercase;margin-bottom:10px}
+.fcols a{display:flex;align-items:center;min-height:40px;text-decoration:none;font-size:15.5px;
+  color:var(--muted)}
+.fcols a:hover{color:var(--accent)}
+.legal{margin:16px 0 0;font-size:15px;color:var(--muted);font-family:var(--font-mono,monospace)}
+
+/* ---- Pro：載入幕 + 揭示 ---- */
+.curtain{position:fixed;inset:0;z-index:999;display:grid;place-items:center;color:var(--accent);
+  font:400 clamp(24px,5vw,48px)/1.2 var(--font-display);letter-spacing:.14em;text-transform:uppercase;
+  transition:opacity .7s ease,visibility .7s}
+.curtain div{display:grid;gap:8px;text-align:center}
+.curtain span{display:block}
+.curtain.gone{opacity:0;visibility:hidden}
+.is-pro [data-rv]{opacity:0;transform:translateY(16px) rotate(-1.2deg);
+  transition:opacity .75s ease,transform .75s cubic-bezier(.2,.7,.2,1)}
+.is-pro [data-rv].in{opacity:1;transform:none}
+.is-pro .no-anim [data-rv]{opacity:1;transform:none}
+
+/* ---- 平板 ---- */
+@media(max-width:1000px){
+  .hgrid{grid-template-columns:minmax(0,1fr)}
+  .cover{transform:rotate(1deg)}
+  .scols{grid-template-columns:minmax(0,1fr)}
+  .sgrid{grid-template-columns:minmax(0,1fr)}
+  .pgrid{grid-template-columns:minmax(0,1fr)}
+  .fgrid,.figures .wrap{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .fcols{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .issue.i1,.issue.i2,.issue.i3{margin-left:0;margin-right:0}
+  .issue{grid-template-columns:minmax(0,1fr)}
+  .pull{max-width:none;margin-left:0!important}
+}
+/* ---- 手機 ---- */
+@media(max-width:720px){
+  body{font-size:16.5px}
+  .mast{position:static}
+  .go{margin-left:0;width:100%;justify-content:center;min-height:46px}
+  .nv a{flex:1 1 44%;justify-content:center;min-height:46px;border-bottom:1px solid var(--fg)}
+  .headline{transform:none}
+  .headline h1{font-size:clamp(34px,11vw,52px)}
+  .cover{transform:rotate(.8deg);padding:10px}
+  .issue,.clip,.plan,.pull{transform:none!important}
+  .cgrid,.pgrid{grid-template-columns:minmax(0,1fr)}
+  .figures .wrap{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .fig{border-left:0;padding-left:0}
+  .vrow,.steps li{grid-template-columns:minmax(0,1fr);gap:6px}
+  .fcols{grid-template-columns:minmax(0,1fr)}
+  .fcols a{min-height:44px}
+  .strip .wrap{gap:10px}
+  .acts .bt{width:100%}
+  .demo-bar{font-size:15px}
+  .demo-bar a{min-height:44px;min-width:44px}
+}
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  .is-pro [data-rv]{opacity:1!important;transform:none!important}
+  .curtain{display:none!important}
+}

@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="zh-Hant-HK"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<html lang="zh-Hant-HK" class="is-basic"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Utilitarian · 功能主義 — Util | UIUX Style Demo</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
 <meta name="description" content="規格表、報價單、客製要求放埋一齊，版本同審批紀錄都追得到。">
@@ -8,62 +8,112 @@
 <meta property="og:description" content="規格表、報價單、客製要求放埋一齊，版本同審批紀錄都追得到。">
 <meta name="twitter:card" content="summary_large_image">
 <meta property="og:image" content="media/og/utilitarian.png">
-<link rel="stylesheet" href="blocks.css">
-<style>:root{--bg:#FFFFFF;--fg:#101418;--muted:#5A6470;--surface:#F7F8FA;--border:#D5DAE0;--accent:#1A4FD6;--accent-fg:#FFFFFF;--radius:3px;--radius-sm:3px;--shadow:none;--btn-shadow:none;--art-bg:#F0F3F7;--media-bg:#F0F3F7;--cta-bg:#F7F8FA;--input-bg:#FFFFFF;--ok:#0E7A46;--warn:#B4232C;--font-display:Inter,'Noto Sans TC',sans-serif;--font-body:Inter,'Noto Sans TC',sans-serif;--font-mono:'IBM Plex Mono',ui-monospace,monospace;--focus-ring:var(--accent);}
-
-.card,.tile-c,.quote,.plan,.rows,.log,.mock{border:1px solid #D5DAE0;border-radius:3px;box-shadow:none}
-.sec-title{font-weight:600;font-size:clamp(20px,2.4vw,26px)}
-table,.rows,.log,.codebox{font-variant-numeric:tabular-nums}
-.rows article{display:grid;grid-template-columns:1.4fr 2fr auto;gap:16px;border-bottom:1px solid #E7EAEE}
-.rows article:first-child,.log article:first-child{font-family:'IBM Plex Mono',monospace;font-size:13px;color:#5A6470}
-.btn{border-radius:3px}
-.btn-secondary{background:#fff;border:1px solid #C7CDD4;color:#101418}
-.chip{border-radius:3px;background:#F0F3F7;border:1px solid #D5DAE0;font-family:'IBM Plex Mono',monospace;font-size:12px}
-.avatar{border-radius:3px;background:#F0F3F7;color:#101418;border:1px solid #D5DAE0;font-family:'IBM Plex Mono',monospace}
-.tag{background:#101418;color:#fff;border-radius:3px;font-family:'IBM Plex Mono',monospace;font-size:11px}
-.tile-c .ph{background:#F7F8FA;border:1px dashed #C7CDD4;color:#5A6470;font-family:'IBM Plex Mono',monospace}
-.hero::after{content:"SPEC · v4.2";position:absolute;right:4%;top:34px;font:500 12px 'IBM Plex Mono',monospace;color:#8A94A0;letter-spacing:.14em;pointer-events:none}
-.stat .num{font-family:'IBM Plex Mono',monospace;font-size:clamp(22px,3vw,30px)}
-</style>
+<link rel="stylesheet" href="bespoke/_bar.css">
+<link rel="stylesheet" href="bespoke/utilitarian.css">
+<style>:root{--bg:#FFFFFF;--fg:#101418;--muted:#5A6470;--surface:#F7F8FA;--border:#D5DAE0;--accent:#1A4FD6;--accent-fg:#FFFFFF;--radius:3px;--radius-sm:3px;--shadow:none;--btn-shadow:none;--art-bg:#F0F3F7;--media-bg:#F0F3F7;--cta-bg:#F7F8FA;--input-bg:#FFFFFF;--ok:#0E7A46;--warn:#B4232C;--font-display:Inter,'Noto Sans TC',sans-serif;--font-body:Inter,'Noto Sans TC',sans-serif;--font-mono:'IBM Plex Mono',ui-monospace,monospace;--focus-ring:var(--accent);}</style>
 </head>
 <body>
 <div class="demo-bar"><span><a href="index.html">← 全部風格</a> · <b>🆕 15/57 🧾 Utilitarian 功能主義（12 block 全頁版）</b></span><span><a href="utilitarian-pro.html">✨ Pro 版</a> · <a href="tenebrism.html">‹ Tenebrism</a> · <a href="vaporwave.html">Vaporwave ›</a> · <a href="obsidian://open?vault=Obsidian&file=04-%E5%85%A7%E5%AE%B9%E5%89%B5%E4%BD%9C/UIUX%20Style/Styles/Utilitarian">📝 Obsidian 筆記</a></span></div>
-<header class="site-header wrap"><div class="logo">Util</div><input type="checkbox" id="navToggle" class="nav-toggle-input" aria-label="開關選單"><label class="nav-toggle" for="navToggle">選單</label><nav class="nav" aria-label="主選單"><a href="#rows" aria-current="page">功能</a><a href="#pricing">方案</a><a href="#venue">SLA</a><a href="#chips">認證</a></nav><label class="nav-scrim" for="navToggle" aria-hidden="true"></label><a class="btn btn-primary" href="#cta">預約示範</a></header>
-<main>
-<section class="block hero" id="hero"><div class="wrap hero-grid"><div><span class="eyebrow rv">B2B · 規格同報價管理</span><h1>規格唔再對唔上</h1><p class="lead rv">規格表、報價單、客製要求放埋一齊，版本同審批紀錄都追得到。</p><div class="actions rv"><a class="btn btn-primary" href="#cta">預約示範 <span class="i" aria-hidden="true">→</span></a><a class="btn btn-secondary" href="#product">睇功能對比</a></div><p class="note rv">匯入現有 Excel · 30 日試用 · 唔收上線費</p></div><figure class="hero-art has-media rv"><img src="media/utilitarian-hero.jpg" alt="" loading="lazy"><figcaption>情境示意圖 · AI 生成</figcaption></figure></div></section>
-<section class="block tight trust band"><div class="wrap trust"><span class="lbl">用過（示範網站，全部虛構）：</span><span class="wordmark">北角電業</span><span class="wordmark">暖屋電器</span><span class="wordmark">Paperland</span><span class="wordmark">格仔雜貨</span><span class="wordmark">社區中心</span></div></section>
-<section class="block" id="features"><div class="wrap"><h2 class="sec-title">四個核心功能</h2><p class="sec-sub">唔要多餘嘢，要對得返數。</p><div class="grid g4"><article class="card rv"><span class="ico" aria-hidden="true">🧾</span><h3>規格版本紀錄</h3><p>邊個幾時改咗邊一行，全部有紀錄同 diff。</p></article><article class="card rv"><span class="ico" aria-hidden="true">🔁</span><h3>報價對規格</h3><p>自動檢查報價單同規格有冇出入，出 warning 清單。</p></article><article class="card rv"><span class="ico" aria-hidden="true">✅</span><h3>審批流</h3><p>可以設 1–3 級審批；簽完鎖版本唔可以再改。</p></article><article class="card rv"><span class="ico" aria-hidden="true">📤</span><h3>匯出 Excel／PDF</h3><p>客戶要公文格式就出，唔使手抄。</p></article></div></div></section>
-<section class="block band" id="product"><div class="wrap"><h2 class="sec-title">規格對比畫面</h2><p class="sec-sub">左右對照，紅色就係出入嘅地方。</p><div class="mock rv"><div class="mock-bar"><span class="mock-dot"></span><span class="mock-dot"></span><span class="mock-dot"></span><span style="margin-left:8px">Util Spec · PO-2026-0417</span></div><div class="mock-body"><aside class="mock-side"><span><b>清單</b></span><span>待審批 4</span><span>已鎖定 12</span><span>有出入 2</span><span><b>版本</b></span><span>v4.2</span></aside><div class="mock-main"><div class="mock-row"><span class="pill">SKU-1180</span> 線徑 2.5mm → <span class="diff-del">2.0mm</span> · 報價未更新</div><div class="mock-row"><span class="diff-add">+ 已鎖定：SKU-1120 v3（3 月 12 日 · 陳經理簽）</span></div><div class="mock-row"><span class="pill">審批</span> 2 / 3 級完成</div><div class="mock-row"><span class="pill">匯出</span> 最後一次：3 月 15 日</div></div><aside class="mock-right"><span><b>負責</b></span><span>採購部</span><span><b>下次審批</b></span><span>3 月 18 日</span></aside></div></div><p class="note">示範版係靜態畫面；Pro 版會逐行打出嚟。</p></div></section>
-<section class="block"><div class="wrap"><h2 class="sec-title">三步上線</h2><p class="sec-sub">唔使 IT 部門配合都可以開始。</p><ol class="steps"><li class="rv"><h3>匯入 Excel</h3><p>支援 CSV／XLSX；欄位對應可以自己改。</p></li><li class="rv"><h3>設定審批同權限</h3><p>邊個可以改、邊個只可以睇、幾級審批。</p></li><li class="rv"><h3>試行一條產品線</h3><p>先用一個項目跑 2–4 星期，再決定全公司推。</p></li></ol></div></section>
-<section class="block tight"><div class="wrap"><div class="stats"><div class="stat rv"><span class="num">3 級</span><span>審批層數上限</span></div><div class="stat rv"><span class="num">4.2 版</span><span>版本紀錄深度</span></div><div class="stat rv"><span class="num">30 日</span><span>免費試用</span></div><div class="stat rv"><span class="num">99.5%</span><span>試用期可用率（示範數據）</span></div></div></div></section>
-<section class="block" id="rows"><div class="wrap"><h2 class="sec-title rv">方案功能對比</h2><p class="sec-sub rv">三個方案嘅分別只有功能同審批層數，唔會鎖你嘅資料。</p><div class="rows rows-wide"><article class="rv"><b>用戶數</b><span>3 人</span><span>15 人</span><span class="cost">不限</span></article><article class="rv"><b>規格版本紀錄</b><span>90 日</span><span>3 年</span><span class="cost">永久</span></article><article class="rv"><b>審批層數</b><span>1 級</span><span>2 級</span><span class="cost">3 級</span></article><article class="rv"><b>Excel／PDF 匯出</b><span>✓</span><span>✓</span><span class="cost">✓</span></article><article class="rv"><b>API 同 webhook</b><span>—</span><span>✓</span><span class="cost">✓</span></article><article class="rv"><b>單一登入（SSO）</b><span>—</span><span>—</span><span class="cost">✓</span></article><article class="rv"><b>資料匯出</b><span>隨時</span><span>隨時</span><span class="cost">隨時（含 API）</span></article></div><p class="note rv">表格係示範內容；實際功能以合約為準。</p></div></section>
-<section class="block"><div class="wrap"><h2 class="sec-title">用戶點講</h2><p class="sec-sub">示範網站用虛構名；真評語會喺真實客戶後補。</p><div class="grid g2"><figure class="quote rv"><p>「以前要 email 來回對規格，而家佢一改我就收到 warning。」</p><figcaption class="who"><span class="avatar" aria-hidden="true">陳</span><span><b>陳經理</b><br>客戶 · 採購</span></figcaption></figure><figure class="quote rv"><p>「匯出公文格式可以直接交客戶，唔使再排版。」</p><figcaption class="who"><span class="avatar" aria-hidden="true">W</span><span><b>Winnie</b><br>客戶 · 業務</span></figcaption></figure></div></div></section>
-<section class="block" id="venue"><div class="wrap"><h2 class="sec-title">SLA 同支援級別</h2><p class="sec-sub">回應時間寫明喺合約，唔係口頭承諾。</p><ul class="infolist"><li><b>服務可用率</b><span>99.5%（試用）／99.9%（企業，附月結報告）</span></li><li><b>一級事故回應</b><span>1 個工作小時（企業）／4 個工作小時（團隊）</span></li><li><b>支援時間</b><span>星期一至五 09:00–19:00（HKT）；企業 24/7 熱線</span></li><li><b>資料保存</b><span>每日備份，保留 30 日；可以要求即時匯出全部資料</span></li><li><b>退出安排</b><span>隨時可以取消；取消後 30 日內可以匯出，之後刪除</span></li></ul></div></section>
-<section class="block" id="pricing"><div class="wrap"><h2 class="sec-title">三個方案</h2><p class="sec-sub">按人頭計，唔收上線費；年付 9 折。</p><div class="pricing"><article class="plan rv"><h3>小型</h3><div class="price">HK$980 <small>/ 月</small></div><p>3 人，一條產品線。</p><ul><li>3 個用戶</li><li>90 日版本紀錄</li><li>1 級審批</li><li>Email 支援</li></ul><a class="btn btn-secondary" href="#cta">免費試 30 日</a></article><article class="plan rv featured"><span class="tag">最多人用</span><h3>團隊</h3><div class="price">HK$3,800 <small>/ 月</small></div><p>15 人，最常揀。</p><ul><li>15 個用戶</li><li>3 年版本紀錄</li><li>2 級審批</li><li>API 同 webhook</li><li>4 小時事故回應</li></ul><a class="btn btn-primary" href="#cta">預約示範</a></article><article class="plan rv"><h3>企業</h3><div class="price">報價 <small>/ 年</small></div><p>不限人數，SSO。</p><ul><li>不限用戶</li><li>永久版本紀錄</li><li>3 級審批 + SSO</li><li>99.9% 可用率 + 月結報告</li><li>24/7 熱線</li></ul><a class="btn btn-secondary" href="#cta">索取報價</a></article></div></div></section>
-<section class="block" id="chips"><div class="wrap"><h2 class="sec-title">合規同認證</h2><p class="sec-sub">⚠️ 示範網站：以下係介面示範，唔代表真實持有任何認證。</p><div class="chips"><span class="chip">SOC 2 Type II（示範）</span><span class="chip">ISO 27001（示範）</span><span class="chip">ISO 9001（示範）</span><span class="chip">單一登入 SSO</span><span class="chip">資料留港</span><span class="chip">每日備份</span><span class="chip">審計日誌</span><span class="chip">角色權限</span></div></div></section>
-<section class="block"><div class="wrap"><h2 class="sec-title">採購同 IT 常見問題</h2><p class="sec-sub">答唔到嘅可以 email 我們，兩個工作日內覆。</p><div class="faq"><details class="rv"><summary>可以自架（on-premise）嗎？</summary><div class="ans">可以，企業方案支援；報價按伺服器數量。</div></details><details class="rv"><summary>資料放喺邊？</summary><div class="ans">香港區伺服器；可以要求書面資料處理協議。</div></details><details class="rv"><summary>有冇 SOC 2／ISO 認證？</summary><div class="ans">呢個係示範網站，唔代表真實持有；真實情況要在合約前提供證明文件。</div></details><details class="rv"><summary>點計費？</summary><div class="ans">按用戶數，月付或年付；取消隨時可以，冇綁約期。</div></details><details class="rv"><summary>可唔可以 API 接我們嘅 ERP？</summary><div class="ans">團隊方案起有 API 同 webhook；我們提供欄位對應文件。</div></details></div></div></section>
-<section class="block" id="cta"><div class="wrap"><div class="cta-band rv"><h2>免費試 30 日</h2><p>匯入你現有嘅 Excel 就跑得。</p><div class="actions"><a class="btn btn-primary" href="#">預約示範</a><a class="btn btn-secondary" href="#">睇功能對比</a></div></div></div></section>
-</main>
-<footer class="block site-footer"><div class="wrap"><div class="foot-grid"><div><h4>產品</h4><a href="#">功能</a><a href="#">方案同價目</a><a href="#">API 文件</a><a href="#">更新紀錄</a></div><div><h4>支援</h4><a href="#">SLA</a><a href="#">支援級別</a><a href="#">狀態頁</a><a href="#">常見問題</a></div><div><h4>合規</h4><a href="#">資料處理協議</a><a href="#">資料留港</a><a href="#">審計日誌</a><a href="#">安全政策</a></div><div><h4>公司</h4><a href="#">關於我們</a><a href="#">客戶案例</a><a href="#">聯絡</a><a href="#">私隱政策</a></div><div><h4>產品更新通知</h4><form class="news" onsubmit="return false"><label for="nl" style="display:none">產品更新通知</label><input id="nl" type="email" placeholder="you@company.com"><button class="btn btn-primary" type="submit">訂閱</button></form></div></div><div class="foot-bottom"><span>© 2026 Util Spec · 示範網站：公司、認證、數字同評語全部虛構</span><span>Email · LinkedIn · GitHub</span></div></div></footer>
-<section class="block band" id="qa"><div class="wrap"><h2 class="sec-title">設計 QA · 按鈕同表單</h2><p class="sec-sub">同一套元素庫嘅 11 個按鈕狀態（含 loading／success／icon／size）+ 表單，用嚟驗風格嘅 focus／disabled／錯誤狀態夠唔夠清楚。</p><div class="btn-row"><div class="state"><button class="btn btn-primary " type="button">Primary</button><small>Default</small></div><div class="state"><button class="btn btn-primary is-hover" type="button">Primary</button><small>Hover</small></div><div class="state"><button class="btn btn-primary is-active" type="button">Primary</button><small>Active</small></div><div class="state"><button class="btn btn-primary is-focus" type="button">Primary</button><small>Focus</small></div><div class="state"><button class="btn btn-primary " type="button" disabled>Primary</button><small>Disabled</small></div><div class="state"><button class="btn btn-primary " type="button" data-state="loading"><span class="spin"></span> 傳送中…</button><small>Loading</small></div><div class="state"><button class="btn btn-primary " type="button" data-state="done">已收到 · 1 個工作日內覆你</button><small>Success</small></div><div class="state"><button class="btn btn-primary " type="button"><span class="i" aria-hidden="true">→</span> 下一步</button><small>Icon + arrow</small></div><div class="state"><button class="btn btn-primary btn-sm" type="button">Small</button><small>Small（btn-sm）</small></div><div class="state"><button class="btn btn-primary btn-lg" type="button">Large</button><small>Large（btn-lg）</small></div><div class="state"><button class="btn btn-secondary" type="button">Secondary</button><small>Secondary</small></div></div><form class="form" style="margin-top:38px" onsubmit="return false"><div class="field"><label for="n">你嘅名</label><input id="n" placeholder="例如：陳大文"></div><div class="field"><label for="e">工作電郵</label><input id="e" type="email" placeholder="you@company.com"></div><div class="field"><label for="c">團隊幾大？</label><select id="c"><option>1–5 人</option><option>6–20 人</option><option>21 人以上</option></select></div><label class="check"><input type="checkbox" class="toggle" checked> 接收產品更新</label><div><button class="btn btn-primary" type="submit">提交</button></div></form></div></section>
-<script>
-(function(){var s=document.getElementById('seats');if(!s)return;
-var o=document.getElementById('roiOut'),mo=document.getElementById('roiMoney'),so=document.getElementById('seatsOut');
-var H=6,R=900;
-function up(){var n=+s.value;so.textContent=n;var h=Math.round(n*H),m=h*R;
-o.textContent=h+' 小時 / 月';mo.textContent='約 HK$'+m.toLocaleString()+'（對比人手寫同樣嘅 PR）';}
-s.addEventListener('input',up);up();})();
-</script>
-<script>
-(function(){var f=document.querySelector('#qa form');if(!f)return;
-var b=f.querySelector('button[type=submit]');if(!b)return;
-var live=document.createElement('p');live.className='note';live.setAttribute('aria-live','polite');
-f.appendChild(live);
-f.addEventListener('submit',function(e){e.preventDefault();
-if(b.dataset.state==='loading')return;
-var label=b.textContent;b.dataset.state='loading';b.innerHTML='<span class="spin"></span> 傳送中…';
-setTimeout(function(){b.dataset.state='done';b.textContent='已收到 · 1 個工作日內覆你';
-live.textContent='（示範狀態：真表單要接後端；重新載入可以再試）';
-setTimeout(function(){b.dataset.state='';b.textContent=label;},2600);},900);});})();
-</script>
+<header class="ut-hd" id="top">
+  <div class="wrap ut-hdrow">
+    <div class="ut-docid"><span class="ut-ver">Util Spec · PO-2026-0417</span><a class="ut-brand" href="#top">Util</a></div>
+    <nav class="ut-nav"><a href="#rows">功能</a><a href="#pricing">方案</a><a href="#venue">SLA</a><a href="#chips">認證</a></nav>
+    <a class="ut-btn ut-btn-1 ut-hdcta" href="#cta">預約示範</a>
+  </div>
+</header>
+<div class="wrap ut-docgrid">
+<aside class="ut-toc" aria-label="目錄">
+  <p class="ut-tochead">Util Spec · PO-2026-0417</p>
+  <ol><li><a href="#s1"><span>§1</span>四個核心功能</a></li><li><a href="#rows"><span>§2</span>方案功能對比</a></li><li><a href="#s3"><span>§3</span>規格對比畫面</a></li><li><a href="#s4"><span>§4</span>三步上線</a></li><li><a href="#venue"><span>§5</span>SLA 同支援級別</a></li><li><a href="#s6"><span>§6</span>用戶點講</a></li><li><a href="#pricing"><span>§7</span>三個方案</a></li><li><a href="#chips"><span>§8</span>合規同認證</a></li><li><a href="#s9"><span>§9</span>採購同 IT 常見問題</a></li><li><a href="#cta"><span>§10</span>免費試 30 日</a></li></ol>
+</aside>
+<div class="ut-doc"><main>
+<section class="ut-cover">
+  <p class="ut-kick">B2B · 規格同報價管理</p>
+  <h1>規格唔再對唔上</h1>
+  <p class="ut-lead">規格表、報價單、客製要求放埋一齊，版本同審批紀錄都追得到。</p>
+  <div class="ut-acts">
+    <a class="ut-btn ut-btn-1" href="#cta">預約示範</a>
+    <a class="ut-btn ut-btn-2" href="#rows">睇功能對比</a>
+    <a class="ut-btn ut-btn-3" href="#pricing">三個方案</a>
+  </div>
+  <p class="ut-note">匯入現有 Excel · 30 日試用 · 唔收上線費</p>
+</section>
+<section class="ut-meta">
+  <table><caption>唔要多餘嘢，要對得返數。</caption><tbody>
+    <tr><th scope="row">文件編號</th><td>Util Spec · PO-2026-0417</td></tr>
+    <tr><th scope="row">審批層數上限</th><td>3 級</td></tr><tr><th scope="row">版本紀錄深度</th><td>4.2 版</td></tr><tr><th scope="row">免費試用</th><td>30 日</td></tr><tr><th scope="row">試用期可用率（示範數據）</th><td>99.5%</td></tr>
+  </tbody></table>
+</section>
+<section class="ut-fig"><figure><img src="media/utilitarian-hero.jpg" alt="介面相片位（生成 media/utilitarian-hero.jpg 自動代入）" loading="lazy"><figcaption>圖 1 · 情境示意圖 · AI 生成</figcaption></figure></section>
+<section class="ut-trust"><span class="ut-tl">用過（示範網站，全部虛構）：</span><b>北角電業</b><b>暖屋電器</b><b>Paperland</b><b>格仔雜貨</b><b>社區中心</b></section>
+<section class="ut-sec" id="s1">
+  <header class="ut-sechead"><span class="ut-no">§1</span><h2>四個核心功能</h2><p class="ut-sub">唔要多餘嘢，要對得返數。</p></header>
+  <div class="ut-scroll"><table class="ut-tab"><tbody><tr><th scope="row">1.1</th><td class="ic" aria-hidden="true">🧾</td><td class="nm">規格版本紀錄</td><td>邊個幾時改咗邊一行，全部有紀錄同 diff。</td></tr><tr><th scope="row">1.2</th><td class="ic" aria-hidden="true">🔁</td><td class="nm">報價對規格</td><td>自動檢查報價單同規格有冇出入，出 warning 清單。</td></tr><tr><th scope="row">1.3</th><td class="ic" aria-hidden="true">✅</td><td class="nm">審批流</td><td>可以設 1–3 級審批；簽完鎖版本唔可以再改。</td></tr><tr><th scope="row">1.4</th><td class="ic" aria-hidden="true">📤</td><td class="nm">匯出 Excel／PDF</td><td>客戶要公文格式就出，唔使手抄。</td></tr></tbody></table></div>
+</section>
+<section class="ut-sec" id="rows">
+  <header class="ut-sechead"><span class="ut-no">§2</span><h2>方案功能對比</h2><p class="ut-sub">三個方案嘅分別只有功能同審批層數，唔會鎖你嘅資料。</p></header>
+  <div class="ut-scroll"><table class="ut-tab ut-matrix"><thead><tr><th></th><th scope="col">小型</th><th scope="col">團隊</th><th scope="col">企業</th></tr></thead><tbody><tr><th scope="row">用戶數</th><td>3 人</td><td>15 人</td><td>不限</td></tr><tr><th scope="row">規格版本紀錄</th><td>90 日</td><td>3 年</td><td>永久</td></tr><tr><th scope="row">審批層數</th><td>1 級</td><td>2 級</td><td>3 級</td></tr><tr><th scope="row">Excel／PDF 匯出</th><td class="ok">✓</td><td class="ok">✓</td><td class="ok">✓</td></tr><tr><th scope="row">API 同 webhook</th><td class="no">—</td><td class="ok">✓</td><td class="ok">✓</td></tr><tr><th scope="row">單一登入（SSO）</th><td class="no">—</td><td class="no">—</td><td class="ok">✓</td></tr><tr><th scope="row">資料匯出</th><td>隨時</td><td>隨時</td><td>隨時（含 API）</td></tr></tbody></table></div><p class="ut-note">表格係示範內容；實際功能以合約為準。</p>
+</section>
+<section class="ut-sec" id="s3">
+  <header class="ut-sechead"><span class="ut-no">§3</span><h2>規格對比畫面</h2><p class="ut-sub">左右對照，紅色就係出入嘅地方。</p></header>
+  <div class="ut-screen">
+      <div class="ut-sbar"><b>Util Spec · PO-2026-0417</b><span>v4.2</span></div>
+      <div class="ut-sbody">
+        <aside class="ut-scol"><span><b>清單</b></span><span>待審批 4</span><span>已鎖定 12</span><span>有出入 2</span><span><b>版本</b></span><span>v4.2</span></aside>
+        <div class="ut-sm"><div class="row"><span class="pill">SKU-1180</span> 線徑 2.5mm → <span class="diff-del">2.0mm</span> · 報價未更新</div><div class="row"><span class="diff-add">+ 已鎖定：SKU-1120 v3（3 月 12 日 · 陳經理簽）</span></div><div class="row"><span class="pill">審批</span> 2 / 3 級完成</div><div class="row"><span class="pill">匯出</span> 最後一次：3 月 15 日</div></div>
+        <aside class="ut-scol"><span><b>負責</b></span><span>採購部</span><span><b>下次審批</b></span><span>3 月 18 日</span></aside>
+      </div>
+    </div><p class="ut-note">示範版係靜態畫面；Pro 版會逐行打出嚟。</p>
+</section>
+<section class="ut-sec" id="s4">
+  <header class="ut-sechead"><span class="ut-no">§4</span><h2>三步上線</h2><p class="ut-sub">唔使 IT 部門配合都可以開始。</p></header>
+  <ol class="ut-proc"><li><b>1.</b><div><h3>匯入 Excel</h3><p>支援 CSV／XLSX；欄位對應可以自己改。</p></div></li><li><b>2.</b><div><h3>設定審批同權限</h3><p>邊個可以改、邊個只可以睇、幾級審批。</p></div></li><li><b>3.</b><div><h3>試行一條產品線</h3><p>先用一個項目跑 2–4 星期，再決定全公司推。</p></div></li></ol>
+</section>
+<section class="ut-sec" id="s5">
+  <header class="ut-sechead"><span class="ut-no">§5</span><h2>Util Spec · PO-2026-0417</h2><p class="ut-sub">唔要多餘嘢，要對得返數。</p></header>
+  <div class="ut-scroll"><table class="ut-tab ut-nums"><tbody><tr><td class="v">3 級</td><td>審批層數上限</td></tr><tr><td class="v">4.2 版</td><td>版本紀錄深度</td></tr><tr><td class="v">30 日</td><td>免費試用</td></tr><tr><td class="v">99.5%</td><td>試用期可用率（示範數據）</td></tr></tbody></table></div>
+</section>
+<section class="ut-sec" id="venue">
+  <header class="ut-sechead"><span class="ut-no">§6</span><h2>SLA 同支援級別</h2><p class="ut-sub">回應時間寫明喺合約，唔係口頭承諾。</p></header>
+  <div class="ut-scroll"><table class="ut-tab"><tbody><tr><th scope="row">服務可用率</th><td>99.5%（試用）／99.9%（企業，附月結報告）</td></tr><tr><th scope="row">一級事故回應</th><td>1 個工作小時（企業）／4 個工作小時（團隊）</td></tr><tr><th scope="row">支援時間</th><td>星期一至五 09:00–19:00（HKT）；企業 24/7 熱線</td></tr><tr><th scope="row">資料保存</th><td>每日備份，保留 30 日；可以要求即時匯出全部資料</td></tr><tr><th scope="row">退出安排</th><td>隨時可以取消；取消後 30 日內可以匯出，之後刪除</td></tr></tbody></table></div>
+</section>
+<section class="ut-sec" id="s7">
+  <header class="ut-sechead"><span class="ut-no">§7</span><h2>用戶點講</h2><p class="ut-sub">示範網站用虛構名；真評語會喺真實客戶後補。</p></header>
+  <div class="ut-qgrid"><figure class="ut-q"><blockquote>以前要 email 來回對規格，而家佢一改我就收到 warning。</blockquote><figcaption>陳經理 · 客戶 · 採購</figcaption></figure><figure class="ut-q"><blockquote>匯出公文格式可以直接交客戶，唔使再排版。</blockquote><figcaption>Winnie · 客戶 · 業務</figcaption></figure></div>
+</section>
+<section class="ut-sec" id="pricing">
+  <header class="ut-sechead"><span class="ut-no">§8</span><h2>三個方案</h2><p class="ut-sub">按人頭計，唔收上線費；年付 9 折。</p></header>
+  <div class="ut-scroll"><table class="ut-tab ut-plans"><thead><tr><th scope="col"></th><th scope="col">小型</th><th scope="col">團隊</th><th scope="col">企業</th></tr><tr class="r2"><th scope="row"></th><td><b>HK$980</b><small>/ 月</small><p>3 人，一條產品線。</p></td><td><b>HK$3,800</b><small>/ 月</small><p>15 人，最常揀。</p></td><td><b>報價</b><small>/ 年</small><p>不限人數，SSO。</p></td></tr></thead><tbody><tr><td>3 個用戶</td><td>15 個用戶</td><td>不限用戶</td></tr><tr><td>90 日版本紀錄</td><td>3 年版本紀錄</td><td>永久版本紀錄</td></tr><tr><td>1 級審批</td><td>2 級審批</td><td>3 級審批 + SSO</td></tr><tr><td>Email 支援</td><td>API 同 webhook</td><td>99.9% 可用率 + 月結報告</td></tr><tr><td>—</td><td>4 小時事故回應</td><td>24/7 熱線</td></tr></tbody><tfoot><tr><th scope="row"></th><td><a class="ut-btn ut-btn-2" href="#cta">免費試 30 日</a></td><td><a class="ut-btn ut-btn-1" href="#cta">預約示範</a></td><td><a class="ut-btn ut-btn-2" href="#cta">索取報價</a></td></tr></tfoot></table></div>
+</section>
+<section class="ut-sec" id="chips">
+  <header class="ut-sechead"><span class="ut-no">§9</span><h2>合規同認證</h2><p class="ut-sub">⚠️ 示範網站：以下係介面示範，唔代表真實持有任何認證。</p></header>
+  <ul class="ut-chips"><li><span class="mk" aria-hidden="true"></span>SOC 2 Type II（示範）</li><li><span class="mk" aria-hidden="true"></span>ISO 27001（示範）</li><li><span class="mk" aria-hidden="true"></span>ISO 9001（示範）</li><li><span class="mk" aria-hidden="true"></span>單一登入 SSO</li><li><span class="mk" aria-hidden="true"></span>資料留港</li><li><span class="mk" aria-hidden="true"></span>每日備份</li><li><span class="mk" aria-hidden="true"></span>審計日誌</li><li><span class="mk" aria-hidden="true"></span>角色權限</li></ul>
+</section>
+<section class="ut-sec" id="s9">
+  <header class="ut-sechead"><span class="ut-no">§10</span><h2>採購同 IT 常見問題</h2><p class="ut-sub">答唔到嘅可以 email 我們，兩個工作日內覆。</p></header>
+  <div class="ut-qa"><details><summary><span>10.1</span>可以自架（on-premise）嗎？</summary><p>可以，企業方案支援；報價按伺服器數量。</p></details><details><summary><span>10.2</span>資料放喺邊？</summary><p>香港區伺服器；可以要求書面資料處理協議。</p></details><details><summary><span>10.3</span>有冇 SOC 2／ISO 認證？</summary><p>呢個係示範網站，唔代表真實持有；真實情況要在合約前提供證明文件。</p></details><details><summary><span>10.4</span>點計費？</summary><p>按用戶數，月付或年付；取消隨時可以，冇綁約期。</p></details><details><summary><span>10.5</span>可唔可以 API 接我們嘅 ERP？</summary><p>團隊方案起有 API 同 webhook；我們提供欄位對應文件。</p></details></div>
+</section>
+<section class="ut-cta" id="cta">
+  <div class="ut-ctabox">
+    <span class="ut-no">§11</span>
+    <h2>免費試 30 日</h2>
+    <p>匯入你現有嘅 Excel 就跑得。</p>
+    <div class="ut-acts">
+      <a class="ut-btn ut-btn-1" href="#">預約示範</a>
+      <a class="ut-btn ut-btn-2" href="#rows">睇功能對比</a>
+    </div>
+  </div>
+</section>
+</main></div></div>
+<footer class="ut-ft">
+  <div class="wrap">
+    <div class="ut-ftgrid"><div><h4>產品</h4><a href='#'>功能</a><a href='#'>方案同價目</a><a href='#'>API 文件</a><a href='#'>更新紀錄</a></div><div><h4>支援</h4><a href='#'>SLA</a><a href='#'>支援級別</a><a href='#'>狀態頁</a><a href='#'>常見問題</a></div><div><h4>合規</h4><a href='#'>資料處理協議</a><a href='#'>資料留港</a><a href='#'>審計日誌</a><a href='#'>安全政策</a></div><div><h4>公司</h4><a href='#'>關於我們</a><a href='#'>客戶案例</a><a href='#'>聯絡</a><a href='#'>私隱政策</a></div></div>
+    <form class="ut-news" onsubmit="return false">
+      <label for="ut-mail">產品更新通知</label>
+      <input id="ut-mail" type="email" placeholder="you@company.com">
+      <button class="ut-btn ut-btn-1" type="submit">訂閱</button>
+    </form>
+    <p class="ut-legal"><span>© 2026 Util Spec · 示範網站：公司、認證、數字同評語全部虛構</span><span>Email · LinkedIn · GitHub</span></p>
+  </div>
+</footer>
 </body></html>

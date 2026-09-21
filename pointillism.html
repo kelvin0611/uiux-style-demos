@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="zh-Hant-HK"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<html lang="zh-Hant-HK" class="is-basic"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Pointillism · 點彩 — Stipple | UIUX Style Demo</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&family=DM+Sans:wght@400;500;700&display=swap">
 <meta name="description" content="每一件都係手點上色，唔用印刷。可以照你嘅相片做，2–4 星期完成。">
@@ -8,54 +8,143 @@
 <meta property="og:description" content="每一件都係手點上色，唔用印刷。可以照你嘅相片做，2–4 星期完成。">
 <meta name="twitter:card" content="summary_large_image">
 <meta property="og:image" content="media/og/pointillism.png">
-<link rel="stylesheet" href="blocks.css">
-<style>:root{--bg:#FBF8F1;--fg:#2E3A44;--muted:#5F6B75;--surface:#FFFFFF;--border:#E2DCD0;--accent:#7FB3D5;--accent-fg:#12303F;--focus-ring:#2F6E8F;--radius:14px;--radius-sm:10px;--shadow:0 8px 18px rgba(80,100,120,.14);--btn-shadow:none;--art-bg:radial-gradient(circle at 30% 25%,#F4D35E,#7FB3D5);--media-bg:radial-gradient(circle at 30% 25%,#F4D35E,#A3C585);--cta-bg:#F1EAE0;--input-bg:#FFFFFF;--ok:#6FA37A;--warn:#C4573F;--font-display:Fraunces,'DM Serif Display',serif;--font-body:'DM Sans','Noto Sans TC',sans-serif;}
-
-body{background-image:radial-gradient(rgba(127,179,213,.32) 1.1px,transparent 1.5px),radial-gradient(rgba(244,165,130,.28) 1.1px,transparent 1.5px);background-size:22px 22px,34px 34px;background-position:0 0,11px 17px}
-.card,.tile-c,.quote,.plan,.rows,.mock{border-radius:14px}
-.tile-c .ph{background-image:radial-gradient(#F4D35E 3px,transparent 3.4px),radial-gradient(#A3C585 3px,transparent 3.4px),radial-gradient(#7FB3D5 3px,transparent 3.4px);background-size:14px 14px,20px 20px,28px 28px;background-position:0 0,7px 7px,14px 14px;color:transparent}
-.sec-title{font-weight:600}
-.hero::before{content:"";position:absolute;right:-6%;top:-8%;width:min(420px,44vw);aspect-ratio:1;border-radius:50%;background-image:radial-gradient(#7FB3D5 2.6px,transparent 3.1px),radial-gradient(#F4A582 2.6px,transparent 3.1px);background-size:14px 14px,20px 20px;background-position:0 0,7px 7px;opacity:.5;-webkit-mask-image:radial-gradient(circle,#000 36%,transparent 70%);mask-image:radial-gradient(circle,#000 36%,transparent 70%);z-index:0;pointer-events:none}
-</style>
+<link rel="stylesheet" href="bespoke/_bar.css">
+<link rel="stylesheet" href="bespoke/pointillism.css">
+<style>:root{--bg:#FBF8F1;--fg:#2E3A44;--muted:#5F6B75;--surface:#FFFFFF;--border:#E2DCD0;--accent:#7FB3D5;--accent-fg:#12303F;--focus-ring:#2F6E8F;--radius:14px;--radius-sm:10px;--shadow:0 8px 18px rgba(80,100,120,.14);--btn-shadow:none;--art-bg:radial-gradient(circle at 30% 25%,#F4D35E,#7FB3D5);--media-bg:radial-gradient(circle at 30% 25%,#F4D35E,#A3C585);--cta-bg:#F1EAE0;--input-bg:#FFFFFF;--ok:#6FA37A;--warn:#C4573F;--font-display:Fraunces,'DM Serif Display',serif;--font-body:'DM Sans','Noto Sans TC',sans-serif;}</style>
 </head>
 <body>
 <div class="demo-bar"><span><a href="index.html">← 全部風格</a> · <b>🆕 3/57 🔵 Pointillism 點彩（12 block 全頁版）</b></span><span><a href="pointillism-pro.html">✨ Pro 版</a> · <a href="pixel-art.html">‹ Pixel Art</a> · <a href="pop-art.html">Pop Art ›</a> · <a href="obsidian://open?vault=Obsidian&file=04-%E5%85%A7%E5%AE%B9%E5%89%B5%E4%BD%9C/UIUX%20Style/Styles/Pointillism">📝 Obsidian 筆記</a></span></div>
-<header class="site-header wrap"><div class="logo">Stipple</div><input type="checkbox" id="navToggle" class="nav-toggle-input" aria-label="開關選單"><label class="nav-toggle" for="navToggle">選單</label><nav class="nav" aria-label="主選單"><a href="#products" aria-current="page">作品</a><a href="#rows">價目</a><a href="#venue">運送</a><a href="#pricing">定價</a></nav><label class="nav-scrim" for="navToggle" aria-hidden="true"></label><a class="btn btn-primary" href="#cta">訂購作品</a></header>
-<main>
-<section class="block hero" id="hero"><div class="wrap hero-grid"><div><span class="eyebrow rv">手繪點彩 · 香港工作室</span><h1>用點砌出你嘅風景</h1><p class="lead rv">每一件都係手點上色，唔用印刷。可以照你嘅相片做，2–4 星期完成。</p><div class="actions rv"><a class="btn btn-primary" href="#cta">訂購作品 <span class="i" aria-hidden="true">→</span></a><a class="btn btn-secondary" href="#product">睇客製流程</a></div><p class="note rv">50% 訂金開工 · 香港免運 · 每件附簽名卡同保養指引</p></div><figure class="hero-art has-media rv"><img src="media/pointillism-hero.jpg" alt="" loading="lazy"><figcaption>情境示意圖 · AI 生成</figcaption></figure></div></section>
-<section class="block tight trust band"><div class="wrap trust"><span class="lbl">擺過嘅地方（示範網站，全部虛構）：</span><span class="wordmark">小畫廊</span><span class="wordmark">手作市集</span><span class="wordmark">Art Walk</span><span class="wordmark">咖啡畫牆</span><span class="wordmark">Zine HK</span></div></section>
-<section class="block" id="features"><div class="wrap"><h2 class="sec-title">四件事你可能想知</h2><p class="sec-sub">手繪冇 shortcut，所以講清楚時間同價錢。</p><div class="grid g4"><article class="card rv"><span class="ico" aria-hidden="true">🔵</span><h3>每一點都係手點</h3><p>唔用印刷、唔用貼紙，一件平均 12,000+ 點。</p></article><article class="card rv"><span class="ico" aria-hidden="true">📷</span><h3>可以照你相片</h3><p>風景、寵物、婚照、舊樓都可以；唔使係專業相。</p></article><article class="card rv"><span class="ico" aria-hidden="true">⏳</span><h3>2–4 星期</h3><p>落單後先出草圖，你 OK 先開始手繪。</p></article><article class="card rv"><span class="ico" aria-hidden="true">📦</span><h3>裱框同保險運送</h3><p>香港免運，海外寄 DHL 並附保險。</p></article></div></div></section>
-<section class="block band" id="product"><div class="wrap"><h2 class="sec-title">工作室排單表</h2><p class="sec-sub">透明睇到自己件作品排到第幾、幾時交。</p><div class="mock rv"><div class="mock-bar"><span class="mock-dot"></span><span class="mock-dot"></span><span class="mock-dot"></span><span style="margin-left:8px">Stipple Studio · 排單（3 月）</span></div><div class="mock-body"><aside class="mock-side"><span><b>階段</b></span><span>草圖</span><span>手繪</span><span>裱框</span><span>寄出</span><span><b>本週</b></span><span>6 件</span></aside><div class="mock-main"><div class="mock-row"><span class="pill">#241</span> A4 風景 · 手繪中 · 完成 68%</div><div class="mock-row"><span class="pill">#242</span> 30×40 寵物 · 草圖待確認</div><div class="mock-row"><span class="diff-add">+ #240 已寄出（順豐 SF1234…）</span></div><div class="mock-row"><span class="pill">交期</span> 平均 19 日</div></div><aside class="mock-right"><span><b>你嘅單</b></span><span>#243 · A5</span><span><b>下一步</b></span><span>等你確認草圖</span></aside></div></div><p class="note">示範版係靜態畫面；Pro 版會逐行打出嚟。</p></div></section>
-<section class="block"><div class="wrap"><h2 class="sec-title">客製流程（4 步）</h2><p class="sec-sub">每一步都會等你確認先繼續，唔會自己決定。</p><ol class="steps"><li class="rv"><h3>落單 · 付 50% 訂金</h3><p>揀尺寸、交相片；訂金鎖排單位置。</p></li><li class="rv"><h3>草圖確認 · 1 次修改</h3><p>我出鉛筆草圖同配色樣，你可以改一次。</p></li><li class="rv"><h3>手繪 · 2–4 星期</h3><p>點彩要分層上色，中間會 send 進度相。</p></li><li class="rv"><h3>裱框寄出 · 付尾數</h3><p>完成後確認相，付尾數就寄，附簽名卡。</p></li></ol></div></section>
-<section class="block tight"><div class="wrap"><div class="stats"><div class="stat rv"><span class="num">12,000+</span><span>每件平均點數</span></div><div class="stat rv"><span class="num">2–4 星期</span><span>平均交期</span></div><div class="stat rv"><span class="num">300+</span><span>已完成作品</span></div><div class="stat rv"><span class="num">4.9/5</span><span>客人評分（示範數據）</span></div></div></div></section>
-<section class="block" id="products"><div class="wrap"><h2 class="sec-title">現貨作品</h2><p class="sec-sub">以下係已完成嘅作品，可以直接買；想訂製就睇落面價目。</p><div class="tiles"><article class="tile-c rv"><div class="ph wide" aria-hidden="true">🌅</div><h3>晨霧（A5）</h3><p>手繪點彩 · 附簽名卡 · 無框</p><span class="cost">HK$680</span></article><article class="tile-c rv"><div class="ph wide" aria-hidden="true">🌊</div><h3>海邊小屋（A4）</h3><p>手繪點彩 · 附簽名卡 · 可加框</p><span class="cost">HK$1,280</span></article><article class="tile-c rv"><div class="ph wide" aria-hidden="true">🌳</div><h3>樹影（30×40）</h3><p>手繪點彩 · 實木框 · 限量 1 件</p><span class="cost">HK$2,480</span></article><article class="tile-c rv"><div class="ph wide" aria-hidden="true">🐈</div><h3>客製寵物（A5 起）</h3><p>照你相片做 · 4–6 星期</p><span class="cost">HK$780 起</span></article></div></div></section>
-<section class="block"><div class="wrap"><h2 class="sec-title">客人點講</h2><p class="sec-sub">示範網站用虛構名；真評語會喺真實訂單後補。</p><div class="grid g2"><figure class="quote rv"><p>「用我哋婚照做，出嚟嘅色比相片更暖，擺喺廳日日都會望。」</p><figcaption class="who"><span class="avatar" aria-hidden="true">阿</span><span><b>阿欣</b><br>客人 · 30×40 訂製</span></figcaption></figure><figure class="quote rv"><p>「中間會 send 進度相，我以為要等好耐，其實三個星期就到。」</p><figcaption class="who"><span class="avatar" aria-hidden="true">S</span><span><b>Sam</b><br>客人 · A4 風景</span></figcaption></figure></div></div></section>
-<section class="block" id="rows"><div class="wrap"><h2 class="sec-title rv">尺寸同價目</h2><p class="sec-sub rv">價錢按尺寸同複雜度；加框另計，訂金 50%。</p><div class="rows"><article class="rv"><b>A5（14.8×21cm）</b><span>1–2 個主體 · 約 6,000 點</span><span class="cost">HK$680</span></article><article class="rv"><b>A4（21×29.7cm）</b><span>2–3 個主體 · 約 12,000 點</span><span class="cost">HK$1,280</span></article><article class="rv"><b>30×40cm</b><span>風景／多人 · 約 25,000 點</span><span class="cost">HK$2,480</span></article><article class="rv"><b>50×70cm 或以上</b><span>大型作品 · 需先報價</span><span class="cost">HK$4,800 起</span></article><article class="rv"><b>實木框（可選）</b><span>A5／A4／30×40 都有</span><span class="cost">HK$280 起</span></article></div><p class="note rv">訂金 50% 開工；草圖可以改 1 次，超出範圍按 HK$300／次計。</p></div></section>
-<section class="block" id="pricing"><div class="wrap"><h2 class="sec-title">定價</h2><p class="sec-sub">唔收額外服務費；訂金 50%，尾數寄出前付。</p><div class="pricing"><article class="plan rv"><h3>小品</h3><div class="price">HK$680 <small>/ 件</small></div><p>A5，1–2 個主體。</p><ul><li>約 6,000 點</li><li>草圖 1 次修改</li><li>附簽名卡</li><li>香港免運</li></ul><a class="btn btn-secondary" href="#cta">訂購</a></article><article class="plan rv featured"><span class="tag">最受歡迎</span><h3>標準</h3><div class="price">HK$1,280 <small>/ 件</small></div><p>A4，最常做嘅尺寸。</p><ul><li>約 12,000 點</li><li>草圖 1 次修改</li><li>可加實木框 HK$280</li><li>進度相 2 次</li></ul><a class="btn btn-primary" href="#cta">訂購</a></article><article class="plan rv"><h3>大幅／商業</h3><div class="price">HK$4,800 <small>/ 件起</small></div><p>50×70cm 或授權用途。</p><ul><li>可多人／全景</li><li>商用授權另議</li><li>可以分 3 期付</li><li>專人跟進</li></ul><a class="btn btn-secondary" href="#cta">索取報價</a></article></div></div></section>
-<section class="block" id="venue"><div class="wrap"><h2 class="sec-title">運送同保養</h2><p class="sec-sub">每件都會裱好、包好、買保險先寄。</p><ul class="infolist"><li><b>交期</b><span>現貨 3 個工作日；客製 2–4 星期（旺季 5–6 星期）</span></li><li><b>香港運費</b><span>免運（順豐到付除外）；可以約工作室自取</span></li><li><b>海外</b><span>DHL，運費按尺寸報價，會買全額保險</span></li><li><b>包裝</b><span>氣泡紙 + 硬紙板 + 防水袋；破損即場拍照可重做或退款</span></li><li><b>保養</b><span>避免陽光直射同潮濕；用軟毛掃除塵，唔好濕抹</span></li></ul></div></section>
-<section class="block"><div class="wrap"><h2 class="sec-title">訂製前想知</h2><p class="sec-sub">問唔到嘅可以 WhatsApp 我們。</p><div class="faq"><details class="rv"><summary>要提供咩相片？</summary><div class="ans">自然光、清晰就可以；風景最好有正面同細節各一張。</div></details><details class="rv"><summary>可以改幾次？</summary><div class="ans">草圖階段可以改 1 次（構圖／主體），開始手繪之後唔可以改。</div></details><details class="rv"><summary>幾時收到？</summary><div class="ans">現貨 3 個工作日；客製 2–4 星期，中間會 send 進度相。</div></details><details class="rv"><summary>可唔可以退？</summary><div class="ans">客製作品開工後唔可以退；現貨未開封 7 日內可以退。</div></details><details class="rv"><summary>海外寄唔寄？</summary><div class="ans">寄，DHL 報價，會買全額保險；關稅由買家付。</div></details></div></div></section>
-<section class="block" id="cta"><div class="wrap"><div class="cta-band rv"><h2>本季排單仲有位</h2><p>落單付 50% 訂金就鎖位置。</p><div class="actions"><a class="btn btn-primary" href="#">訂購作品</a><a class="btn btn-secondary" href="#">睇客製流程</a></div></div></div></section>
+<header class="hd">
+  <div class="wrap">
+    <a class="mark" href="#top"><span class="o" aria-hidden="true">●</span>Stipple</a>
+    <nav class="nv" aria-label="主選單"><a href="#products">作品</a><a href="#rows">價目</a><a href="#venue">運送</a><a href="#pricing">定價</a></nav>
+    <p class="cat">手作藝術／客製畫作</p>
+    <a class="go" href="#pricing">訂購作品</a>
+  </div>
+</header>
+<main id="top">
+<section class="hero">
+  <div class="wrap hgrid">
+    <div class="say">
+      <p class="eyebrow">手繪點彩 · 香港工作室</p>
+      <h1>用點砌出你嘅風景</h1>
+      <p class="note">50% 訂金開工 · 香港免運 · 每件附簽名卡同保養指引</p>
+      <div class="acts">
+        <a class="bt bt-a" href="#products">訂購作品</a>
+        <a class="bt bt-b" href="#pricing">睇客製流程</a>
+      </div>
+    </div>
+    <figure class="canvas">
+      <span class="pricetag">HK$680</span>
+      <img src="media/pointillism-hero.jpg" alt="作品情境示意圖（AI 生成）" loading="lazy">
+      <figcaption>情境示意圖 · AI 生成</figcaption>
+    </figure>
+  </div>
+  <p class="dotline wide" aria-hidden="true">········································</p>
+</section>
+<section class="places">
+  <div class="wrap">
+    <p class="lbl">擺過嘅地方（示範網站，全部虛構）：</p>
+    <ul><li>小畫廊</li><li>手作市集</li><li>Art Walk</li><li>咖啡畫牆</li><li>Zine HK</li></ul>
+  </div>
+</section>
+<section class="gallery" id="products">
+  <div class="wrap">
+    <h2>現貨作品</h2><p class="sub">以下係已完成嘅作品，可以直接買；想訂製就睇落面價目。</p>
+    <p class="dotline wide" aria-hidden="true">········································</p>
+    <div class="works"><article class="work s3" style="--r:1 / 1"><div class="frame"><span aria-hidden="true">🌅</span></div><h3>晨霧（A5）</h3><p>手繪點彩 · 附簽名卡 · 無框</p><span class="tagp">HK$680</span></article><article class="work s3" style="--r:5 / 4"><div class="frame"><span aria-hidden="true">🌊</span></div><h3>海邊小屋（A4）</h3><p>手繪點彩 · 附簽名卡 · 可加框</p><span class="tagp">HK$1,280</span></article><article class="work s2" style="--r:3 / 4"><div class="frame"><span aria-hidden="true">🌳</span></div><h3>樹影（30×40）</h3><p>手繪點彩 · 實木框 · 限量 1 件</p><span class="tagp">HK$2,480</span></article><article class="work s4" style="--r:4 / 3"><div class="frame"><span aria-hidden="true">🐈</span></div><h3>客製寵物（A5 起）</h3><p>照你相片做 · 4–6 星期</p><span class="tagp">HK$780 起</span></article></div>
+  </div>
+</section>
+<section class="sizes" id="rows">
+  <div class="wrap">
+    <h2>尺寸同價目</h2><p class="sub">價錢按尺寸同複雜度；加框另計，訂金 50%。</p>
+    <div class="catalog"><div class="line"><span class="sz">A5（14.8×21cm）</span><span class="dots" aria-hidden="true"></span><span class="tagp">HK$680</span><span class="det">1–2 個主體 · 約 6,000 點</span></div><div class="line"><span class="sz">A4（21×29.7cm）</span><span class="dots" aria-hidden="true"></span><span class="tagp">HK$1,280</span><span class="det">2–3 個主體 · 約 12,000 點</span></div><div class="line"><span class="sz">30×40cm</span><span class="dots" aria-hidden="true"></span><span class="tagp">HK$2,480</span><span class="det">風景／多人 · 約 25,000 點</span></div><div class="line"><span class="sz">50×70cm 或以上</span><span class="dots" aria-hidden="true"></span><span class="tagp">HK$4,800 起</span><span class="det">大型作品 · 需先報價</span></div><div class="line"><span class="sz">實木框（可選）</span><span class="dots" aria-hidden="true"></span><span class="tagp">HK$280 起</span><span class="det">A5／A4／30×40 都有</span></div></div>
+    <p class="note">訂金 50% 開工；草圖可以改 1 次，超出範圍按 HK$300／次計。</p>
+  </div>
+</section>
+<section class="facts">
+  <div class="wrap">
+    <h2>四件事你可能想知</h2><p class="sub">手繪冇 shortcut，所以講清楚時間同價錢。</p>
+    <ul class="flist"><li><span class="d" aria-hidden="true">🔵</span><div><h3>每一點都係手點</h3><p>唔用印刷、唔用貼紙，一件平均 12,000+ 點。</p></div></li><li><span class="d" aria-hidden="true">📷</span><div><h3>可以照你相片</h3><p>風景、寵物、婚照、舊樓都可以；唔使係專業相。</p></div></li><li><span class="d" aria-hidden="true">⏳</span><div><h3>2–4 星期</h3><p>落單後先出草圖，你 OK 先開始手繪。</p></div></li><li><span class="d" aria-hidden="true">📦</span><div><h3>裱框同保險運送</h3><p>香港免運，海外寄 DHL 並附保險。</p></div></li></ul>
+  </div>
+</section>
+<section class="numbers"><div class="wrap"><div class="num n0"><b>12,000+</b><span>每件平均點數</span></div><div class="num n1"><b>2–4 星期</b><span>平均交期</span></div><div class="num n2"><b>300+</b><span>已完成作品</span></div><div class="num n3"><b>4.9/5</b><span>客人評分（示範數據）</span></div></div><p class="dotline wide" aria-hidden="true">········································</p></section>
+<section class="queue">
+  <div class="wrap">
+    <h2>工作室排單表</h2><p class="sub">透明睇到自己件作品排到第幾、幾時交。</p>
+    <div class="board">
+      <p class="bhead">Stipple Studio · 排單（3 月）</p>
+      <div class="bcols">
+        <ul class="bcol"><li><b>階段</b></li><li>草圖</li><li>手繪</li><li>裱框</li><li>寄出</li><li><b>本週</b></li><li>6 件</li></ul>
+        <ul class="bcol mid"><li><span class="pill">#241</span> A4 風景 · 手繪中 · 完成 68%</li><li><span class="pill">#242</span> 30×40 寵物 · 草圖待確認</li><li><span class="diff-add">+ #240 已寄出（順豐 SF1234…）</span></li><li><span class="pill">交期</span> 平均 19 日</li></ul>
+        <ul class="bcol"><li><b>你嘅單</b></li><li>#243 · A5</li><li><b>下一步</b></li><li>等你確認草圖</li></ul>
+      </div>
+    </div>
+    <p class="note">示範版係靜態畫面；Pro 版會逐行打出嚟。</p>
+  </div>
+</section>
+<section class="process">
+  <div class="wrap">
+    <h2>客製流程（4 步）</h2><p class="sub">每一步都會等你確認先繼續，唔會自己決定。</p>
+    <ol class="track"><li><span class="dot" aria-hidden="true">1</span><h3>落單 · 付 50% 訂金</h3><p>揀尺寸、交相片；訂金鎖排單位置。</p></li><li><span class="dot" aria-hidden="true">2</span><h3>草圖確認 · 1 次修改</h3><p>我出鉛筆草圖同配色樣，你可以改一次。</p></li><li><span class="dot" aria-hidden="true">3</span><h3>手繪 · 2–4 星期</h3><p>點彩要分層上色，中間會 send 進度相。</p></li><li><span class="dot" aria-hidden="true">4</span><h3>裱框寄出 · 付尾數</h3><p>完成後確認相，付尾數就寄，附簽名卡。</p></li></ol>
+  </div>
+</section>
+<section class="statement">
+  <div class="wrap">
+    <p class="big">每一件都係手點上色，唔用印刷。可以照你嘅相片做，2–4 星期完成。</p>
+    <p class="sign">— Stipple</p>
+    <p class="dotline wide" aria-hidden="true">······························</p>
+  </div>
+</section>
+<section class="voices">
+  <div class="wrap">
+    <h2>客人點講</h2><p class="sub">示範網站用虛構名；真評語會喺真實訂單後補。</p>
+    <div class="qgrid"><figure class="quote"><p>用我哋婚照做，出嚟嘅色比相片更暖，擺喺廳日日都會望。</p><figcaption><b>阿欣</b><span>客人 · 30×40 訂製</span></figcaption></figure><figure class="quote"><p>中間會 send 進度相，我以為要等好耐，其實三個星期就到。</p><figcaption><b>Sam</b><span>客人 · A4 風景</span></figcaption></figure></div>
+  </div>
+</section>
+<section class="pricing" id="pricing">
+  <div class="wrap">
+    <h2>定價</h2><p class="sub">唔收額外服務費；訂金 50%，尾數寄出前付。</p>
+    <div class="pgrid"><article class="plan"><h3>小品</h3><p class="amount">HK$680<i>/ 件</i></p><p class="desc">A5，1–2 個主體。</p><ul><li>約 6,000 點</li><li>草圖 1 次修改</li><li>附簽名卡</li><li>香港免運</li></ul><a class="bt bt-b" href="#products">訂購</a></article><article class="plan hot"><span class="tagp top">最受歡迎</span><h3>標準</h3><p class="amount">HK$1,280<i>/ 件</i></p><p class="desc">A4，最常做嘅尺寸。</p><ul><li>約 12,000 點</li><li>草圖 1 次修改</li><li>可加實木框 HK$280</li><li>進度相 2 次</li></ul><a class="bt bt-a" href="#products">訂購</a></article><article class="plan"><h3>大幅／商業</h3><p class="amount">HK$4,800<i>/ 件起</i></p><p class="desc">50×70cm 或授權用途。</p><ul><li>可多人／全景</li><li>商用授權另議</li><li>可以分 3 期付</li><li>專人跟進</li></ul><a class="bt bt-b" href="#products">索取報價</a></article></div>
+  </div>
+</section>
+<section class="shipping" id="venue">
+  <div class="wrap">
+    <h2>運送同保養</h2><p class="sub">每件都會裱好、包好、買保險先寄。</p>
+    <div class="stable"><div class="srow"><span class="k">交期</span><span class="v">現貨 3 個工作日；客製 2–4 星期（旺季 5–6 星期）</span></div><div class="srow"><span class="k">香港運費</span><span class="v">免運（順豐到付除外）；可以約工作室自取</span></div><div class="srow"><span class="k">海外</span><span class="v">DHL，運費按尺寸報價，會買全額保險</span></div><div class="srow"><span class="k">包裝</span><span class="v">氣泡紙 + 硬紙板 + 防水袋；破損即場拍照可重做或退款</span></div><div class="srow"><span class="k">保養</span><span class="v">避免陽光直射同潮濕；用軟毛掃除塵，唔好濕抹</span></div></div>
+  </div>
+</section>
+<section class="ask">
+  <div class="wrap">
+    <h2>訂製前想知</h2><p class="sub">問唔到嘅可以 WhatsApp 我們。</p>
+    <div class="faqbox"><details><summary>要提供咩相片？</summary><p>自然光、清晰就可以；風景最好有正面同細節各一張。</p></details><details><summary>可以改幾次？</summary><p>草圖階段可以改 1 次（構圖／主體），開始手繪之後唔可以改。</p></details><details><summary>幾時收到？</summary><p>現貨 3 個工作日；客製 2–4 星期，中間會 send 進度相。</p></details><details><summary>可唔可以退？</summary><p>客製作品開工後唔可以退；現貨未開封 7 日內可以退。</p></details><details><summary>海外寄唔寄？</summary><p>寄，DHL 報價，會買全額保險；關稅由買家付。</p></details></div>
+  </div>
+</section>
+<section class="cta" id="cta">
+  <div class="wrap">
+    <p class="dotline wide" aria-hidden="true">························</p>
+    <h2>本季排單仲有位</h2><p>落單付 50% 訂金就鎖位置。</p>
+    <div class="acts">
+      <a class="bt bt-a" href="#products">訂購作品</a>
+      <a class="bt bt-b" href="#pricing">睇客製流程</a>
+    </div>
+  </div>
+</section>
 </main>
-<footer class="block site-footer"><div class="wrap"><div class="foot-grid"><div><h4>作品</h4><a href="#">現貨</a><a href="#">客製</a><a href="#">加框</a><a href="#">禮物卡</a></div><div><h4>訂購</h4><a href="#">價目</a><a href="#">客製流程</a><a href="#">運送同保養</a><a href="#">付款方式</a></div><div><h4>合作</h4><a href="#">商用授權</a><a href="#">畫廊合作</a><a href="#">工作坊</a><a href="#">傳媒</a></div><div><h4>關於</h4><a href="#">工作室</a><a href="#">手繪過程</a><a href="#">聯絡我們</a><a href="#">私隱政策</a></div><div><h4>新作品通知</h4><form class="news" onsubmit="return false"><label for="nl" style="display:none">新作品通知</label><input id="nl" type="email" placeholder="you@example.com"><button class="btn btn-primary" type="submit">訂閱</button></form></div></div><div class="foot-bottom"><span>© 2026 Stipple Studio · 示範網站：工作室、作品、數字同評語全部虛構</span><span>IG · Threads · Etsy</span></div></div></footer>
-<section class="block band" id="qa"><div class="wrap"><h2 class="sec-title">設計 QA · 按鈕同表單</h2><p class="sec-sub">同一套元素庫嘅 11 個按鈕狀態（含 loading／success／icon／size）+ 表單，用嚟驗風格嘅 focus／disabled／錯誤狀態夠唔夠清楚。</p><div class="btn-row"><div class="state"><button class="btn btn-primary " type="button">Primary</button><small>Default</small></div><div class="state"><button class="btn btn-primary is-hover" type="button">Primary</button><small>Hover</small></div><div class="state"><button class="btn btn-primary is-active" type="button">Primary</button><small>Active</small></div><div class="state"><button class="btn btn-primary is-focus" type="button">Primary</button><small>Focus</small></div><div class="state"><button class="btn btn-primary " type="button" disabled>Primary</button><small>Disabled</small></div><div class="state"><button class="btn btn-primary " type="button" data-state="loading"><span class="spin"></span> 傳送中…</button><small>Loading</small></div><div class="state"><button class="btn btn-primary " type="button" data-state="done">已收到 · 1 個工作日內覆你</button><small>Success</small></div><div class="state"><button class="btn btn-primary " type="button"><span class="i" aria-hidden="true">→</span> 下一步</button><small>Icon + arrow</small></div><div class="state"><button class="btn btn-primary btn-sm" type="button">Small</button><small>Small（btn-sm）</small></div><div class="state"><button class="btn btn-primary btn-lg" type="button">Large</button><small>Large（btn-lg）</small></div><div class="state"><button class="btn btn-secondary" type="button">Secondary</button><small>Secondary</small></div></div><form class="form" style="margin-top:38px" onsubmit="return false"><div class="field"><label for="n">你嘅名</label><input id="n" placeholder="例如：陳大文"></div><div class="field"><label for="e">工作電郵</label><input id="e" type="email" placeholder="you@company.com"></div><div class="field"><label for="c">團隊幾大？</label><select id="c"><option>1–5 人</option><option>6–20 人</option><option>21 人以上</option></select></div><label class="check"><input type="checkbox" class="toggle" checked> 接收產品更新</label><div><button class="btn btn-primary" type="submit">提交</button></div></form></div></section>
-<script>
-(function(){var s=document.getElementById('seats');if(!s)return;
-var o=document.getElementById('roiOut'),mo=document.getElementById('roiMoney'),so=document.getElementById('seatsOut');
-var H=6,R=900;
-function up(){var n=+s.value;so.textContent=n;var h=Math.round(n*H),m=h*R;
-o.textContent=h+' 小時 / 月';mo.textContent='約 HK$'+m.toLocaleString()+'（對比人手寫同樣嘅 PR）';}
-s.addEventListener('input',up);up();})();
-</script>
-<script>
-(function(){var f=document.querySelector('#qa form');if(!f)return;
-var b=f.querySelector('button[type=submit]');if(!b)return;
-var live=document.createElement('p');live.className='note';live.setAttribute('aria-live','polite');
-f.appendChild(live);
-f.addEventListener('submit',function(e){e.preventDefault();
-if(b.dataset.state==='loading')return;
-var label=b.textContent;b.dataset.state='loading';b.innerHTML='<span class="spin"></span> 傳送中…';
-setTimeout(function(){b.dataset.state='done';b.textContent='已收到 · 1 個工作日內覆你';
-live.textContent='（示範狀態：真表單要接後端；重新載入可以再試）';
-setTimeout(function(){b.dataset.state='';b.textContent=label;},2600);},900);});})();
-</script>
+<footer class="ft">
+  <section class="newsletter">
+    <div class="wrap">
+      <h4>新作品通知</h4>
+      <form onsubmit="return false"><input type="email" placeholder="you@example.com" aria-label="新作品通知">
+      <button class="bt bt-a" type="submit">訂閱</button></form>
+    </div>
+  </section>
+  <section class="colophon">
+    <div class="wrap">
+      <div class="fcols"><div><h4>作品</h4><a href="#">現貨</a><a href="#">客製</a><a href="#">加框</a><a href="#">禮物卡</a></div><div><h4>訂購</h4><a href="#">價目</a><a href="#">客製流程</a><a href="#">運送同保養</a><a href="#">付款方式</a></div><div><h4>合作</h4><a href="#">商用授權</a><a href="#">畫廊合作</a><a href="#">工作坊</a><a href="#">傳媒</a></div><div><h4>關於</h4><a href="#">工作室</a><a href="#">手繪過程</a><a href="#">聯絡我們</a><a href="#">私隱政策</a></div></div>
+      <p class="legal">© 2026 Stipple Studio · 示範網站：工作室、作品、數字同評語全部虛構</p>
+      <p class="legal">IG · Threads · Etsy</p>
+    </div>
+  </section>
+</footer>
 </body></html>

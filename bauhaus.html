@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="zh-Hant-HK"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<html lang="zh-Hant-HK" class="is-basic"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Bauhaus · 包浩斯 — Weimar | UIUX Style Demo</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap">
 <meta name="description" content="品牌識別、網站、展覽視覺：一次由結構做起，唔係執靚個樣就算。">
@@ -8,63 +8,134 @@
 <meta property="og:description" content="品牌識別、網站、展覽視覺：一次由結構做起，唔係執靚個樣就算。">
 <meta name="twitter:card" content="summary_large_image">
 <meta property="og:image" content="media/og/bauhaus.png">
-<link rel="stylesheet" href="blocks.css">
-<style>:root{--bg:#F2F0EB;--fg:#101010;--muted:#4A4A4A;--surface:#FFFFFF;--border:#101010;--accent:#D62828;--accent-fg:#FFFFFF;--radius:0px;--radius-sm:0px;--shadow:none;--btn-shadow:none;--art-bg:linear-gradient(135deg,#D62828 0 33%,#F4C300 33% 66%,#0057B8 66%);--media-bg:linear-gradient(135deg,#0057B8 0 50%,#F4C300 50%);--cta-bg:#101010;--input-bg:#FFFFFF;--ok:#0057B8;--warn:#D62828;--font-display:Poppins,'Noto Sans TC',sans-serif;--font-body:Inter,'Noto Sans TC',sans-serif;--focus-ring:var(--accent);}
-
-.card,.tile-c,.quote,.plan,.rows,.log,.mock{border:1.5px solid #101010;box-shadow:none;background:#fff}
-.sec-title{font-weight:600;letter-spacing:-.01em}
-.hero h1{font-weight:700}
-.hero::before{content:"";position:absolute;left:-40px;top:40px;width:120px;height:120px;border-radius:50%;background:#F4C300;z-index:0;pointer-events:none}
-.hero::after{content:"";position:absolute;right:6%;bottom:6%;width:0;height:0;border-left:56px solid transparent;border-right:56px solid transparent;border-bottom:96px solid #D62828;z-index:0;pointer-events:none}
-.btn{border-radius:0;border:1.5px solid #101010}
-.btn-primary{background:#D62828;color:#fff}
-.btn-secondary{background:#fff;color:#101010}
-.chip{border-radius:0;background:#fff;border:1.5px solid #101010;text-transform:uppercase;letter-spacing:.06em;font-size:12px}
-.avatar{border-radius:0;background:#0057B8;color:#fff}
-.tag{background:#F4C300;color:#101010;border-radius:0}
-.tile-c .ph{background-image:none;background:#F4C300;color:#101010;border-bottom:1.5px solid #101010}
-.plan.featured{outline:3px solid #0057B8;outline-offset:3px}
-.rows article:nth-child(odd),.log article:nth-child(odd){background:#F7F5F1}
-</style>
+<link rel="stylesheet" href="bespoke/_bar.css">
+<link rel="stylesheet" href="bespoke/bauhaus.css">
+<style>:root{--bg:#F2F0EB;--fg:#101010;--muted:#4A4A4A;--surface:#FFFFFF;--border:#101010;--accent:#D62828;--accent-fg:#FFFFFF;--radius:0px;--radius-sm:0px;--shadow:none;--btn-shadow:none;--art-bg:linear-gradient(135deg,#D62828 0 33%,#F4C300 33% 66%,#0057B8 66%);--media-bg:linear-gradient(135deg,#0057B8 0 50%,#F4C300 50%);--cta-bg:#101010;--input-bg:#FFFFFF;--ok:#0057B8;--warn:#D62828;--font-display:Poppins,'Noto Sans TC',sans-serif;--font-body:Inter,'Noto Sans TC',sans-serif;--focus-ring:var(--accent);}</style>
 </head>
 <body>
 <div class="demo-bar"><span><a href="index.html">← 全部風格</a> · <b>🆕 14/57 🔺 Bauhaus 包浩斯（12 block 全頁版）</b></span><span><a href="bauhaus-pro.html">✨ Pro 版</a> · <a href="baroque.html">‹ Baroque</a> · <a href="bento-grid.html">Bento Grid ›</a> · <a href="obsidian://open?vault=Obsidian&file=04-%E5%85%A7%E5%AE%B9%E5%89%B5%E4%BD%9C/UIUX%20Style/Styles/Bauhaus">📝 Obsidian 筆記</a></span></div>
-<header class="site-header wrap"><div class="logo">Weimar</div><input type="checkbox" id="navToggle" class="nav-toggle-input" aria-label="開關選單"><label class="nav-toggle" for="navToggle">選單</label><nav class="nav" aria-label="主選單"><a href="#rows" aria-current="page">服務</a><a href="#products">案例</a><a href="#venue">流程</a><a href="#pricing">價目</a></nav><label class="nav-scrim" for="navToggle" aria-hidden="true"></label><a class="btn btn-primary" href="#cta">開始對話</a></header>
+<header class="bh-hd" id="top">
+  <div class="wrap bh-hdrow">
+    <a class="bh-logo" href="#top"><span class="mk" aria-hidden="true"><i></i><i></i><i></i></span>Weimar</a>
+    <nav class="bh-nav"><a href="#rows">服務</a><a href="#products">案例</a><a href="#venue">流程</a><a href="#pricing">價目</a></nav>
+    <a class="bh-btn bh-btn-1 bh-hdcta" href="#cta">開始對話</a>
+  </div>
+</header>
 <main>
-<section class="block hero" id="hero"><div class="wrap hero-grid"><div><span class="eyebrow rv">香港 · 品牌同網站設計</span><h1>由幾何開始</h1><p class="lead rv">品牌識別、網站、展覽視覺：一次由結構做起，唔係執靚個樣就算。</p><div class="actions rv"><a class="btn btn-primary" href="#cta">開始對話 <span class="i" aria-hidden="true">→</span></a><a class="btn btn-secondary" href="#product">睇案例</a></div><p class="note rv">小團隊（3 人）· 同時最多接 2 個項目 · 報價有效期 30 日</p></div><figure class="hero-art has-media rv"><img src="media/bauhaus-hero.jpg" alt="" loading="lazy"><figcaption>情境示意圖 · AI 生成</figcaption></figure></div></section>
-<section class="block tight trust band"><div class="wrap trust"><span class="lbl">合作過（示範網站，全部虛構）：</span><span class="wordmark">小書店</span><span class="wordmark">Maker Kids</span><span class="wordmark">格仔雜貨</span><span class="wordmark">Zine HK</span><span class="wordmark">社區中心</span></div></section>
-<section class="block" id="features"><div class="wrap"><h2 class="sec-title">四個做法</h2><p class="sec-sub">設計係解決問題，唔係裝修。</p><div class="grid g4"><article class="card rv"><span class="ico" aria-hidden="true">🔺</span><h3>由結構起</h3><p>先做資訊架構同版面網格，之後才談外觀。</p></article><article class="card rv"><span class="ico" aria-hidden="true">📐</span><h3>可以落地</h3><p>交付設計系統同前端 spec，工程師唔使猜。</p></article><article class="card rv"><span class="ico" aria-hidden="true">🎨</span><h3>三個版本先揀</h3><p>概念階段出 3 個方向，揀完才落細。</p></article><article class="card rv"><span class="ico" aria-hidden="true">📅</span><h3>檔期寫明</h3><p>確認後排期，每週一次進度同步。</p></article></div></div></section>
-<section class="block band" id="product"><div class="wrap"><h2 class="sec-title">項目睇板</h2><p class="sec-sub">客戶同我們睇同一個板，唔會各自記進度。</p><div class="mock rv"><div class="mock-bar"><span class="mock-dot"></span><span class="mock-dot"></span><span class="mock-dot"></span><span style="margin-left:8px">Weimar Studio · 項目 2609</span></div><div class="mock-body"><aside class="mock-side"><span><b>階段</b></span><span>研究</span><span>架構</span><span>視覺</span><span>交付</span><span><b>完成</b></span><span>62%</span></aside><div class="mock-main"><div class="mock-row"><span class="pill">本週</span> 出 3 個品牌方向（星期五）</div><div class="mock-row"><span class="diff-add">+ 客戶已確認資訊架構（3 月 12 日）</span></div><div class="mock-row"><span class="pill">待辦</span> 字體測試 · 版面草圖</div><div class="mock-row"><span class="pill">交付</span> Figma + 前端 spec</div></div><aside class="mock-right"><span><b>負責</b></span><span>Ka Ho（主設計）</span><span><b>下次會議</b></span><span>星期五 15:00</span></aside></div></div><p class="note">示範版係靜態畫面；Pro 版會逐行打出嚟。</p></div></section>
-<section class="block"><div class="wrap"><h2 class="sec-title">合作流程</h2><p class="sec-sub">四個階段，每階段尾都有一個確認點。</p><ol class="steps"><li class="rv"><h3>傾需求（免費 40 分鐘）</h3><p>講清目標、客群、預算同檔期；我們講明可以做同唔可以做。</p></li><li class="rv"><h3>報價同排期</h3><p>分階段報價，確認後我們保留檔期；報價 30 日內有效。</p></li><li class="rv"><h3>設計（3–6 星期）</h3><p>架構 → 3 個方向 → 落細；每週同步一次。</p></li><li class="rv"><h3>交付同支援</h3><p>交付設計系統、字體清單、前端 spec；上線後 14 日免費微調。</p></li></ol></div></section>
-<section class="block tight"><div class="wrap"><div class="stats"><div class="stat rv"><span class="num">3 人</span><span>小團隊（唔外判）</span></div><div class="stat rv"><span class="num">2 個</span><span>同期最多項目</span></div><div class="stat rv"><span class="num">4–8 星期</span><span>典型項目期</span></div><div class="stat rv"><span class="num">4.9/5</span><span>客戶評分（示範數據）</span></div></div></div></section>
-<section class="block" id="rows"><div class="wrap"><h2 class="sec-title rv">服務同收費</h2><p class="sec-sub rv">唔收「無限修改」陷阱；改動範圍寫喺報價入面。</p><div class="rows"><article class="rv"><b>品牌識別</b><span>標誌、色彩、字體系統、基本應用指引</span><span class="cost">HK$48,000 起</span></article><article class="rv"><b>網站設計（含前端 spec）</b><span>資訊架構、版面、元件庫、交接文件</span><span class="cost">HK$68,000 起</span></article><article class="rv"><b>展覽／活動視覺</b><span>主視覺、場地導視、印刷品</span><span class="cost">HK$32,000 起</span></article><article class="rv"><b>設計系統維護</b><span>每月更新、新頁面延伸</span><span class="cost">HK$8,000 / 月</span></article><article class="rv"><b>品牌健康檢查</b><span>2 小時工作坊 + 書面建議</span><span class="cost">HK$6,800</span></article></div><p class="note rv">以上係示範價目；實際視乎範圍同急件與否。</p></div></section>
-<section class="block"><div class="wrap"><h2 class="sec-title">客戶點講</h2><p class="sec-sub">示範網站用虛構名；真評語會喺真實項目後補。</p><div class="grid g2"><figure class="quote rv"><p>「佢哋先問我們賣咩、客人係邊個，之後才畫。第一個方向已經 get 到。」</p><figcaption class="who"><span class="avatar" aria-hidden="true">阿</span><span><b>阿瑩</b><br>客戶 · 生活品牌</span></figcaption></figure><figure class="quote rv"><p>「交嘅 spec 好清楚，我們工程師冇問過一次「呢個間距係幾多」。」</p><figcaption class="who"><span class="avatar" aria-hidden="true">M</span><span><b>Marco</b><br>客戶 · 教育平台</span></figcaption></figure></div></div></section>
-<section class="block" id="products"><div class="wrap"><h2 class="sec-title">案例</h2><p class="sec-sub">每個案例都寫明做咗咩、做咗幾久。</p><div class="tiles"><article class="tile-c rv"><div class="ph wide" aria-hidden="true">🏪</div><h3>街角選物</h3><p>品牌識別 + 店面導視 · 2026</p><span class="cost">6 星期</span></article><article class="tile-c rv"><div class="ph wide" aria-hidden="true">📚</div><h3>小書店</h3><p>網站設計 + 線上書單 · 2025</p><span class="cost">5 星期</span></article><article class="tile-c rv"><div class="ph wide" aria-hidden="true">🧩</div><h3>Maker Kids</h3><p>課程視覺系統 · 2025</p><span class="cost">4 星期</span></article><article class="tile-c rv"><div class="ph wide" aria-hidden="true">🎪</div><h3>Zine Fair</h3><p>活動主視覺 + 印刷 · 2025</p><span class="cost">3 星期</span></article></div></div></section>
-<section class="block" id="pricing"><div class="wrap"><h2 class="sec-title">套餐</h2><p class="sec-sub">可以只做其中一部分，唔一定要成套買。</p><div class="pricing"><article class="plan rv"><h3>品牌健康檢查</h3><div class="price">HK$6,800 <small>/ 次</small></div><p>睇你現有品牌同網站。</p><ul><li>2 小時工作坊</li><li>書面建議 8–12 頁</li><li>優先次序清單</li><li>30 分鐘問答</li></ul><a class="btn btn-secondary" href="#cta">預約</a></article><article class="plan rv featured"><span class="tag">最常做</span><h3>品牌識別</h3><div class="price">HK$48,000 <small>/ 專案起</small></div><p>最多人做嘅方案。</p><ul><li>3 個方向 → 1 個落細</li><li>色彩同字體系統</li><li>應用指引（提案／IG／店頭）</li><li>可編輯原始檔</li></ul><a class="btn btn-primary" href="#cta">開始對話</a></article><article class="plan rv"><h3>品牌＋網站</h3><div class="price">HK$98,000 <small>/ 專案起</small></div><p>一次做齊，交前端 spec。</p><ul><li>上面全部</li><li>資訊架構 + 版面設計</li><li>元件庫 + 前端 spec</li><li>上線後 14 日支援</li></ul><a class="btn btn-secondary" href="#cta">開始對話</a></article></div></div></section>
-<section class="block" id="venue"><div class="wrap"><h2 class="sec-title">檔期同報價方式</h2><p class="sec-sub">報價前我們會先講清楚，唔會拖。</p><ul class="infolist"><li><b>檔期</b><span>3 月尾至 5 月已排滿；下一個開檔期係 6 月初</span></li><li><b>報價</b><span>分階段報價（研究／設計／交付），50% 訂金開工</span></li><li><b>會議</b><span>每週一次 45 分鐘線上同步，紀錄 24 小時內發你</span></li><li><b>急件</b><span>兩星期內要交會加 30%，而且要視乎當時檔期</span></li><li><b>唔接嘅</b><span>純抄款、無限修改、要求用未授權字體</span></li></ul></div></section>
-<section class="block"><div class="wrap"><h2 class="sec-title">合作前想知</h2><p class="sec-sub">問唔到嘅 email 我們。</p><div class="faq"><details class="rv"><summary>可以改幾多次？</summary><div class="ans">每階段 2 輪；超出範圍按日費 HK$3,200 計，事前會講明。</div></details><details class="rv"><summary>字體要另外買嗎？</summary><div class="ans">網頁字用 Google Fonts 就免費；商業字體授權由你買，我們會報價。</div></details><details class="rv"><summary>會唔會出 Figma 檔？</summary><div class="ans">會，交付可編輯 Figma 同元件庫，連命名規則。</div></details><details class="rv"><summary>可唔可以只做網站唔做品牌？</summary><div class="ans">可以，但要先做一次健康檢查確認現有品牌夠不夠用。</div></details><details class="rv"><summary>做完之後邊個維護？</summary><div class="ans">可以自己維護，或者每月 HK$8,000 我們幫你延伸新頁。</div></details></div></div></section>
-<section class="block" id="cta"><div class="wrap"><div class="cta-band rv"><h2>下一個檔期係 6 月初</h2><p>先傾 40 分鐘，唔收費。</p><div class="actions"><a class="btn btn-primary" href="#">開始對話</a><a class="btn btn-secondary" href="#">睇案例</a></div></div></div></section>
+<section class="bh-hero">
+  <div class="wrap bh-herogrid">
+    <div class="bh-hcopy">
+      <p class="bh-kick"><span class="sq" aria-hidden="true"></span>香港 · 品牌同網站設計</p>
+      <h1>由幾何開始</h1>
+      <p class="bh-lead">品牌識別、網站、展覽視覺：一次由結構做起，唔係執靚個樣就算。</p>
+      <div class="bh-acts">
+        <a class="bh-btn bh-btn-1" href="#cta">開始對話</a>
+        <a class="bh-btn bh-btn-2" href="#products">睇案例</a>
+      </div>
+      <p class="bh-note">小團隊（3 人）· 同時最多接 2 個項目 · 報價有效期 30 日</p>
+    </div>
+    <div class="bh-hart">
+      <div class="bh-geo bh-geo-hero" aria-hidden="true"><i class="s1"></i><i class="c1"></i><i class="t1"></i><i class="s2"></i><i class="c2"></i><i class="b1"></i></div>
+      <ul class="bh-key">
+        <li><i class="k-red" aria-hidden="true"></i>由結構起</li>
+        <li><i class="k-blue" aria-hidden="true"></i>可以落地</li>
+      </ul>
+    </div>
+  </div>
+</section>
+<section class="bh-band"><figure class="wrap bh-fig"><img src="media/bauhaus-hero.jpg" alt="作品相片位（生成 media/bauhaus-hero.jpg 自動代入）" loading="lazy"><figcaption>情境示意圖 · AI 生成</figcaption></figure></section>
+<section class="bh-trust"><div class="wrap"><p class="bh-tl">合作過（示範網站，全部虛構）：</p><ul><li>小書店</li><li>Maker Kids</li><li>格仔雜貨</li><li>Zine HK</li><li>社區中心</li></ul></div></section>
+<section class="bh-rows" id="rows">
+  <div class="wrap">
+    <header class="bh-sechead"><h2>服務同收費</h2><p class="bh-sub">唔收「無限修改」陷阱；改動範圍寫喺報價入面。</p></header>
+    <ol class="bh-serv"><li><span class="n">01</span><div class="tx"><h3>品牌識別</h3><p>標誌、色彩、字體系統、基本應用指引</p></div><span class="pr">HK$48,000 起</span></li><li><span class="n">02</span><div class="tx"><h3>網站設計（含前端 spec）</h3><p>資訊架構、版面、元件庫、交接文件</p></div><span class="pr">HK$68,000 起</span></li><li><span class="n">03</span><div class="tx"><h3>展覽／活動視覺</h3><p>主視覺、場地導視、印刷品</p></div><span class="pr">HK$32,000 起</span></li><li><span class="n">04</span><div class="tx"><h3>設計系統維護</h3><p>每月更新、新頁面延伸</p></div><span class="pr">HK$8,000 / 月</span></li><li><span class="n">05</span><div class="tx"><h3>品牌健康檢查</h3><p>2 小時工作坊 + 書面建議</p></div><span class="pr">HK$6,800</span></li></ol>
+    <p class="bh-note">以上係示範價目；實際視乎範圍同急件與否。</p>
+  </div>
+</section>
+<section class="bh-wall" id="products">
+  <div class="wrap">
+    <header class="bh-sechead"><h2>案例</h2><p class="bh-sub">每個案例都寫明做咗咩、做咗幾久。</p></header>
+    <div class="bh-wallgrid"><article class="bh-work w0"><div class="ph" aria-hidden="true">🏪</div><h3>街角選物</h3><p>品牌識別 + 店面導視 · 2026</p><span class="dur">6 星期</span></article><article class="bh-work w1"><div class="ph" aria-hidden="true">📚</div><h3>小書店</h3><p>網站設計 + 線上書單 · 2025</p><span class="dur">5 星期</span></article><article class="bh-work w2"><div class="ph" aria-hidden="true">🧩</div><h3>Maker Kids</h3><p>課程視覺系統 · 2025</p><span class="dur">4 星期</span></article><article class="bh-work w0"><div class="ph" aria-hidden="true">🎪</div><h3>Zine Fair</h3><p>活動主視覺 + 印刷 · 2025</p><span class="dur">3 星期</span></article></div>
+  </div>
+</section>
+<section class="bh-board">
+  <div class="wrap">
+    <header class="bh-sechead"><h2>項目睇板</h2><p class="bh-sub">客戶同我們睇同一個板，唔會各自記進度。</p></header>
+    <div class="bh-panel">
+      <div class="bh-pbar"><span class="dot"></span><span class="dot"></span><span class="dot"></span><b>Weimar Studio · 項目 2609</b></div>
+      <div class="bh-pbody">
+        <aside class="bh-pcol"><span><b>階段</b></span><span>研究</span><span>架構</span><span>視覺</span><span>交付</span><span><b>完成</b></span><span>62%</span></aside>
+        <div class="bh-pmain"><div class="row"><span class="pill">本週</span> 出 3 個品牌方向（星期五）</div><div class="row"><span class="diff-add">+ 客戶已確認資訊架構（3 月 12 日）</span></div><div class="row"><span class="pill">待辦</span> 字體測試 · 版面草圖</div><div class="row"><span class="pill">交付</span> Figma + 前端 spec</div></div>
+        <aside class="bh-pcol"><span><b>負責</b></span><span>Ka Ho（主設計）</span><span><b>下次會議</b></span><span>星期五 15:00</span></aside>
+      </div>
+    </div>
+    <p class="bh-note">示範版係靜態畫面；Pro 版會逐行打出嚟。</p>
+  </div>
+</section>
+<section class="bh-feat">
+  <div class="wrap">
+    <header class="bh-sechead"><h2>四個做法</h2><p class="bh-sub">設計係解決問題，唔係裝修。</p></header>
+    <div class="bh-fgrid"><article class="bh-fc c0"><span class="ic" aria-hidden="true">🔺</span><h3>由結構起</h3><p>先做資訊架構同版面網格，之後才談外觀。</p></article><article class="bh-fc c1"><span class="ic" aria-hidden="true">📐</span><h3>可以落地</h3><p>交付設計系統同前端 spec，工程師唔使猜。</p></article></div>
+  </div>
+</section>
+<section class="bh-feat-b">
+  <div class="wrap bh-flist"><article class="bh-fline"><span class="ic" aria-hidden="true">🎨</span><h3>三個版本先揀</h3><p>概念階段出 3 個方向，揀完才落細。</p></article><article class="bh-fline"><span class="ic" aria-hidden="true">📅</span><h3>檔期寫明</h3><p>確認後排期，每週一次進度同步。</p></article></div>
+</section>
+<section class="bh-steps">
+  <div class="wrap">
+    <header class="bh-sechead"><h2>合作流程</h2><p class="bh-sub">四個階段，每階段尾都有一個確認點。</p></header>
+    <ol class="bh-stair"><li class="s1"><span class="num">01</span><div><h3>傾需求（免費 40 分鐘）</h3><p>講清目標、客群、預算同檔期；我們講明可以做同唔可以做。</p></div></li><li class="s2"><span class="num">02</span><div><h3>報價同排期</h3><p>分階段報價，確認後我們保留檔期；報價 30 日內有效。</p></div></li><li class="s3"><span class="num">03</span><div><h3>設計（3–6 星期）</h3><p>架構 → 3 個方向 → 落細；每週同步一次。</p></div></li><li class="s4"><span class="num">04</span><div><h3>交付同支援</h3><p>交付設計系統、字體清單、前端 spec；上線後 14 日免費微調。</p></div></li></ol>
+  </div>
+</section>
+<section class="bh-stats"><div class="wrap bh-sgrid"><div class="cell k0"><b>3 人</b><span>小團隊（唔外判）</span></div><div class="cell k1"><b>2 個</b><span>同期最多項目</span></div><div class="cell k2"><b>4–8 星期</b><span>典型項目期</span></div><div class="cell k3"><b>4.9/5</b><span>客戶評分（示範數據）</span></div></div></section>
+<section class="bh-quotes">
+  <div class="wrap">
+    <header class="bh-sechead"><h2>客戶點講</h2><p class="bh-sub">示範網站用虛構名；真評語會喺真實項目後補。</p></header>
+    <div class="bh-qgrid"><blockquote><p>佢哋先問我們賣咩、客人係邊個，之後才畫。第一個方向已經 get 到。</p><cite>阿瑩 · 客戶 · 生活品牌</cite></blockquote><blockquote><p>交嘅 spec 好清楚，我們工程師冇問過一次「呢個間距係幾多」。</p><cite>Marco · 客戶 · 教育平台</cite></blockquote></div>
+  </div>
+</section>
+<section class="bh-price" id="pricing">
+  <div class="wrap">
+    <header class="bh-sechead"><h2>套餐</h2><p class="bh-sub">可以只做其中一部分，唔一定要成套買。</p></header>
+    <div class="bh-pgrid"><article class="bh-plan"><span class="top" aria-hidden="true"></span><h3>品牌健康檢查</h3><p class="price">HK$6,800<small>/ 次</small></p><p class="desc">睇你現有品牌同網站。</p><ul><li>2 小時工作坊</li><li>書面建議 8–12 頁</li><li>優先次序清單</li><li>30 分鐘問答</li></ul><a class="bh-btn bh-btn-2" href="#cta">預約</a></article><article class="bh-plan is-feat"><span class="top" aria-hidden="true"></span><span class="tag">最常做</span><h3>品牌識別</h3><p class="price">HK$48,000<small>/ 專案起</small></p><p class="desc">最多人做嘅方案。</p><ul><li>3 個方向 → 1 個落細</li><li>色彩同字體系統</li><li>應用指引（提案／IG／店頭）</li><li>可編輯原始檔</li></ul><a class="bh-btn bh-btn-2" href="#cta">開始對話</a></article><article class="bh-plan"><span class="top" aria-hidden="true"></span><h3>品牌＋網站</h3><p class="price">HK$98,000<small>/ 專案起</small></p><p class="desc">一次做齊，交前端 spec。</p><ul><li>上面全部</li><li>資訊架構 + 版面設計</li><li>元件庫 + 前端 spec</li><li>上線後 14 日支援</li></ul><a class="bh-btn bh-btn-2" href="#cta">開始對話</a></article></div>
+  </div>
+</section>
+<section class="bh-info" id="venue">
+  <div class="wrap">
+    <header class="bh-sechead"><h2>檔期同報價方式</h2><p class="bh-sub">報價前我們會先講清楚，唔會拖。</p></header>
+    <ul class="bh-deflist"><li><b>檔期</b><span>3 月尾至 5 月已排滿；下一個開檔期係 6 月初</span></li><li><b>報價</b><span>分階段報價（研究／設計／交付），50% 訂金開工</span></li><li><b>會議</b><span>每週一次 45 分鐘線上同步，紀錄 24 小時內發你</span></li><li><b>急件</b><span>兩星期內要交會加 30%，而且要視乎當時檔期</span></li><li><b>唔接嘅</b><span>純抄款、無限修改、要求用未授權字體</span></li></ul>
+  </div>
+</section>
+<section class="bh-faq">
+  <div class="wrap">
+    <header class="bh-sechead"><h2>合作前想知</h2><p class="bh-sub">問唔到嘅 email 我們。</p></header>
+    <div class="bh-faqbox"><details><summary>可以改幾多次？</summary><p>每階段 2 輪；超出範圍按日費 HK$3,200 計，事前會講明。</p></details><details><summary>字體要另外買嗎？</summary><p>網頁字用 Google Fonts 就免費；商業字體授權由你買，我們會報價。</p></details><details><summary>會唔會出 Figma 檔？</summary><p>會，交付可編輯 Figma 同元件庫，連命名規則。</p></details><details><summary>可唔可以只做網站唔做品牌？</summary><p>可以，但要先做一次健康檢查確認現有品牌夠不夠用。</p></details><details><summary>做完之後邊個維護？</summary><p>可以自己維護，或者每月 HK$8,000 我們幫你延伸新頁。</p></details></div>
+  </div>
+</section>
+<section class="bh-cta" id="cta">
+  <div class="wrap bh-ctagrid">
+    <div>
+      <h2>下一個檔期係 6 月初</h2>
+      <p>先傾 40 分鐘，唔收費。</p>
+      <div class="bh-acts"><a class="bh-btn bh-btn-3" href="#">開始對話</a>
+      <a class="bh-btn bh-btn-4" href="#products">睇案例</a></div>
+    </div>
+    <div class="bh-geo bh-geo-cta" aria-hidden="true"><i class="s1"></i><i class="c1"></i><i class="t1"></i><i class="s2"></i><i class="c2"></i><i class="b1"></i></div>
+  </div>
+</section>
 </main>
-<footer class="block site-footer"><div class="wrap"><div class="foot-grid"><div><h4>服務</h4><a href="#">品牌識別</a><a href="#">網站設計</a><a href="#">展覽視覺</a><a href="#">設計系統維護</a></div><div><h4>作品</h4><a href="#">案例總覽</a><a href="#">品牌</a><a href="#">網站</a><a href="#">展覽</a></div><div><h4>工作室</h4><a href="#">我們點做</a><a href="#">合作流程</a><a href="#">檔期</a><a href="#">常見問題</a></div><div><h4>聯絡</h4><a href="#">開始對話</a><a href="#">報價須知</a><a href="#">字體同授權</a><a href="#">私隱政策</a></div><div><h4>檔期同新案例</h4><form class="news" onsubmit="return false"><label for="nl" style="display:none">檔期同新案例</label><input id="nl" type="email" placeholder="you@example.com"><button class="btn btn-primary" type="submit">訂閱</button></form></div></div><div class="foot-bottom"><span>© 2026 Weimar Studio · 示範網站：工作室、案例、價目同評語全部虛構</span><span>IG · Behance · LinkedIn</span></div></div></footer>
-<section class="block band" id="qa"><div class="wrap"><h2 class="sec-title">設計 QA · 按鈕同表單</h2><p class="sec-sub">同一套元素庫嘅 11 個按鈕狀態（含 loading／success／icon／size）+ 表單，用嚟驗風格嘅 focus／disabled／錯誤狀態夠唔夠清楚。</p><div class="btn-row"><div class="state"><button class="btn btn-primary " type="button">Primary</button><small>Default</small></div><div class="state"><button class="btn btn-primary is-hover" type="button">Primary</button><small>Hover</small></div><div class="state"><button class="btn btn-primary is-active" type="button">Primary</button><small>Active</small></div><div class="state"><button class="btn btn-primary is-focus" type="button">Primary</button><small>Focus</small></div><div class="state"><button class="btn btn-primary " type="button" disabled>Primary</button><small>Disabled</small></div><div class="state"><button class="btn btn-primary " type="button" data-state="loading"><span class="spin"></span> 傳送中…</button><small>Loading</small></div><div class="state"><button class="btn btn-primary " type="button" data-state="done">已收到 · 1 個工作日內覆你</button><small>Success</small></div><div class="state"><button class="btn btn-primary " type="button"><span class="i" aria-hidden="true">→</span> 下一步</button><small>Icon + arrow</small></div><div class="state"><button class="btn btn-primary btn-sm" type="button">Small</button><small>Small（btn-sm）</small></div><div class="state"><button class="btn btn-primary btn-lg" type="button">Large</button><small>Large（btn-lg）</small></div><div class="state"><button class="btn btn-secondary" type="button">Secondary</button><small>Secondary</small></div></div><form class="form" style="margin-top:38px" onsubmit="return false"><div class="field"><label for="n">你嘅名</label><input id="n" placeholder="例如：陳大文"></div><div class="field"><label for="e">工作電郵</label><input id="e" type="email" placeholder="you@company.com"></div><div class="field"><label for="c">團隊幾大？</label><select id="c"><option>1–5 人</option><option>6–20 人</option><option>21 人以上</option></select></div><label class="check"><input type="checkbox" class="toggle" checked> 接收產品更新</label><div><button class="btn btn-primary" type="submit">提交</button></div></form></div></section>
-<script>
-(function(){var s=document.getElementById('seats');if(!s)return;
-var o=document.getElementById('roiOut'),mo=document.getElementById('roiMoney'),so=document.getElementById('seatsOut');
-var H=6,R=900;
-function up(){var n=+s.value;so.textContent=n;var h=Math.round(n*H),m=h*R;
-o.textContent=h+' 小時 / 月';mo.textContent='約 HK$'+m.toLocaleString()+'（對比人手寫同樣嘅 PR）';}
-s.addEventListener('input',up);up();})();
-</script>
-<script>
-(function(){var f=document.querySelector('#qa form');if(!f)return;
-var b=f.querySelector('button[type=submit]');if(!b)return;
-var live=document.createElement('p');live.className='note';live.setAttribute('aria-live','polite');
-f.appendChild(live);
-f.addEventListener('submit',function(e){e.preventDefault();
-if(b.dataset.state==='loading')return;
-var label=b.textContent;b.dataset.state='loading';b.innerHTML='<span class="spin"></span> 傳送中…';
-setTimeout(function(){b.dataset.state='done';b.textContent='已收到 · 1 個工作日內覆你';
-live.textContent='（示範狀態：真表單要接後端；重新載入可以再試）';
-setTimeout(function(){b.dataset.state='';b.textContent=label;},2600);},900);});})();
-</script>
+<footer class="bh-ft">
+  <div class="wrap">
+    <div class="bh-ftgrid"><div><h4>服務</h4><a href='#'>品牌識別</a><a href='#'>網站設計</a><a href='#'>展覽視覺</a><a href='#'>設計系統維護</a></div><div><h4>作品</h4><a href='#'>案例總覽</a><a href='#'>品牌</a><a href='#'>網站</a><a href='#'>展覽</a></div><div><h4>工作室</h4><a href='#'>我們點做</a><a href='#'>合作流程</a><a href='#'>檔期</a><a href='#'>常見問題</a></div><div><h4>聯絡</h4><a href='#'>開始對話</a><a href='#'>報價須知</a><a href='#'>字體同授權</a><a href='#'>私隱政策</a></div></div>
+    <div class="bh-news">
+      <h4>檔期同新案例</h4>
+      <form onsubmit="return false">
+        <label class="sr" for="bh-mail">檔期同新案例</label>
+        <input id="bh-mail" type="email" placeholder="you@example.com">
+        <button class="bh-btn bh-btn-1" type="submit">訂閱</button>
+      </form>
+    </div>
+    <p class="bh-legal">© 2026 Weimar Studio · 示範網站：工作室、案例、價目同評語全部虛構 · IG · Behance · LinkedIn</p>
+  </div>
+</footer>
 </body></html>

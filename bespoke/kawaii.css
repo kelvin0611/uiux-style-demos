@@ -1,0 +1,298 @@
+/* =========================================================================
+   Kawaii（Momo 文具・生活雜貨）— 手工版面 CSS
+   規則：粉彩漸變底、極圓潤（24–32px）、貼紙傾斜徽章、圓卡、對話泡、波浪 footer
+   顏色／字體一律只用 spec tokens 嘅 CSS 變數。
+   ========================================================================= */
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;color:var(--fg);background:var(--bg);
+  background-image:linear-gradient(180deg,var(--bg) 0%,var(--surface) 30%,var(--bg) 62%,var(--cta-bg) 100%);
+  font:15.5px/1.72 var(--font-body);letter-spacing:.001em}
+img{max-width:100%;height:auto;display:block}
+.wrap{width:min(1160px,92vw);margin:auto}
+h1,h2,h3,h4{margin:0;font-family:var(--font-display);line-height:1.16;font-weight:400}
+h2{font-size:clamp(26px,4.4vw,40px)}
+.sub{color:var(--muted);margin:.55rem 0 1.9rem;max-width:60ch}
+.tiny{color:var(--muted);font-size:14px;margin-top:1rem}
+a{color:inherit}
+section{position:relative}
+
+/* ---- demo bar（bespoke 頁唔載 blocks.css，所以自己照顧）---- */
+.demo-bar{position:relative;z-index:99;display:flex;gap:6px 14px;flex-wrap:wrap;justify-content:space-between;
+  align-items:center;padding:6px 16px;background:var(--fg);color:var(--surface);font:13px/1.5 var(--font-body)}
+.demo-bar a{color:var(--surface);text-decoration:underline;white-space:nowrap}
+.demo-bar b{color:var(--surface)}
+
+/* ---- 按鈕（三種：實心貼紙 / 白卡 / 虛線 ghost）---- */
+.bt{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:48px;padding:12px 22px;
+  border-radius:999px;border:2px solid var(--accent);background:var(--surface);color:var(--fg);
+  text-decoration:none;font:700 15.5px/1.2 var(--font-body);cursor:pointer;
+  transition:transform .16s ease,box-shadow .16s ease,background .16s ease}
+.bt-1{background:var(--accent);color:var(--accent-fg);box-shadow:var(--btn-shadow)}
+.bt-1:hover{transform:translateY(2px);box-shadow:0 3px 0 var(--accent)}
+.bt-1:active{transform:translateY(5px);box-shadow:none}
+.bt-2{border-color:var(--border);box-shadow:0 5px 0 var(--border)}
+.bt-2:hover{background:var(--cta-bg);transform:translateY(2px);box-shadow:0 3px 0 var(--border)}
+.bt-2:active{transform:translateY(5px);box-shadow:none}
+.bt-3{border-style:dashed;background:transparent}
+.bt-3:hover{background:var(--surface);transform:translateY(2px)}
+.bt:focus-visible,.nv a:focus-visible,.fgrid a:focus-visible,.footgrid a:focus-visible,
+.prow:focus-visible,summary:focus-visible,input:focus-visible{outline:3px solid var(--focus-ring);outline-offset:3px}
+
+/* ---- header：浮動 pill ---- */
+.hd{position:sticky;top:0;z-index:30;background:var(--surface);border-bottom:2px solid var(--border)}
+.hdrow{display:flex;align-items:center;gap:12px;padding:10px 0;flex-wrap:wrap}
+.logo{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:2px 4px;text-decoration:none;
+  font-family:var(--font-display);font-size:clamp(21px,3.2vw,28px);color:var(--fg)}
+.logo span{color:var(--accent)}
+.nv{display:flex;gap:8px;margin-left:auto;flex-wrap:wrap}
+.nv a{display:inline-flex;align-items:center;min-height:44px;padding:9px 16px;border-radius:999px;
+  background:var(--bg);border:2px solid var(--border);text-decoration:none;font-size:15px}
+.nv a:hover{background:var(--accent);color:var(--accent-fg);border-color:var(--accent)}
+.hdcta{min-height:44px;padding:10px 18px}
+
+/* ---- hero ---- */
+.hero{padding:clamp(26px,5vw,60px) 0 clamp(14px,3vw,28px)}
+.herogrid{display:grid;grid-template-columns:1.35fr .65fr;gap:clamp(18px,3vw,40px);align-items:center}
+.sticker{display:inline-block;padding:8px 16px;border-radius:999px;background:var(--surface);
+  border:2px dashed var(--accent);color:var(--fg);font-size:14.5px;transform:rotate(-2.4deg);box-shadow:var(--shadow)}
+.hero h1{font-size:clamp(36px,7.4vw,74px);margin:16px 0 14px;text-shadow:3px 3px 0 var(--surface),6px 6px 0 var(--border)}
+.hero .lead{font-size:clamp(15.5px,1.7vw,19px);max-width:46ch;margin:0 0 22px;color:var(--fg)}
+.acts{display:flex;gap:12px;flex-wrap:wrap}
+.notes{display:flex;flex-wrap:wrap;gap:8px;margin:20px 0 0;padding:0;list-style:none}
+.notes span{display:inline-flex;align-items:center;min-height:36px;padding:6px 14px;border-radius:999px;
+  background:var(--surface);border:2px solid var(--border);font-size:14px;color:var(--fg)}
+.hero-r{display:flex;flex-direction:column;gap:18px;align-items:center}
+.blob{width:clamp(74px,11vw,124px);aspect-ratio:1;border-radius:50%;display:grid;place-items:center;
+  font-size:clamp(28px,4vw,44px);background:var(--art-bg);box-shadow:var(--shadow)}
+.blob.b1{transform:rotate(-8deg)}
+.blob.b2{background:var(--cta-bg);transform:rotate(7deg)}
+.blob.b3{background:var(--border);transform:rotate(-5deg)}
+
+/* ---- 圓角相卡 ---- */
+.ph{padding:6px 0 clamp(20px,4vw,44px)}
+.photo{position:relative;margin:0;border-radius:32px;overflow:hidden;background:var(--surface);
+  border:6px solid var(--surface);box-shadow:var(--shadow);transform:rotate(-.5deg)}
+.photo img{width:100%;height:clamp(200px,40vw,420px);object-fit:cover;border-radius:26px}
+.photo figcaption{position:absolute;left:14px;bottom:14px;background:var(--surface);color:var(--fg);
+  border:2px solid var(--border);border-radius:999px;padding:8px 16px;font-size:13.5px}
+
+/* ---- 信任貼紙帶 ---- */
+.trust{padding:clamp(16px,3vw,30px) 0}
+.trust .wrap{background:var(--surface);border:2px solid var(--border);border-radius:32px;
+  padding:clamp(20px,3vw,34px);box-shadow:var(--shadow)}
+.tlbl{margin:0 0 16px;font-size:15px;color:var(--muted)}
+.trow{display:flex;flex-wrap:wrap;gap:12px}
+.tstk{display:inline-flex;align-items:center;min-height:44px;padding:8px 18px;border-radius:999px;
+  background:var(--bg);border:2px dashed var(--accent);font-family:var(--font-display);font-size:15px}
+.tilt0{transform:rotate(-1.4deg)}
+.tilt1{transform:rotate(1.3deg)}
+.tilt2{transform:rotate(-2deg)}
+
+/* ---- 商品格（主軸）---- */
+.goods{padding:clamp(30px,5vw,58px) 0}
+.pgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:clamp(14px,2vw,22px)}
+.pcard{background:var(--surface);border:2px dashed var(--border);border-radius:28px;padding:22px 18px;
+  text-align:center;display:flex;flex-direction:column;gap:10px;transition:transform .18s ease,box-shadow .18s ease}
+.pcard:hover{transform:translateY(-6px) rotate(0deg);box-shadow:var(--shadow)}
+.pico{width:58px;height:58px;margin:0 auto;border-radius:50%;display:grid;place-items:center;
+  font-size:26px;background:var(--art-bg)}
+.pcard h3{font-size:19px}
+.pcard p{margin:0;color:var(--muted);font-size:15px;flex:1}
+.prow{display:flex;align-items:center;justify-content:space-between;gap:10px;min-height:44px;
+  padding:9px 16px;border-radius:999px;background:var(--cta-bg);border:2px solid var(--border);
+  text-decoration:none;font-weight:700}
+.prow:hover{background:var(--accent);color:var(--accent-fg);border-color:var(--accent)}
+.pprice{font-family:var(--font-display)}
+
+/* ---- 貼紙 features ---- */
+.feat{padding:clamp(30px,5vw,58px) 0}
+.fgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:clamp(14px,2vw,20px)}
+.fcard{background:var(--surface);border:2px solid var(--border);border-radius:24px;padding:22px 18px;
+  box-shadow:var(--shadow)}
+.fcard:hover{transform:rotate(0deg)}
+.fico{font-size:26px;display:block;margin-bottom:8px}
+.fcard h3{font-size:18px;margin-bottom:6px}
+.fcard p{margin:0;color:var(--muted);font-size:15px}
+
+/* ---- 圓卡步驟 ---- */
+.stp{padding:clamp(30px,5vw,58px) 0}
+.steprow{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(16px,3vw,34px);list-style:none;margin:0;padding:0}
+.steprow li{position:relative;display:flex;gap:14px;background:var(--surface);border:2px solid var(--border);
+  border-radius:28px;padding:20px}
+.steprow li:not(:last-child)::after{content:"♡";position:absolute;right:-19px;top:24px;color:var(--accent);font-size:20px}
+.stepn{flex:0 0 46px;height:46px;border-radius:50%;display:grid;place-items:center;
+  background:var(--accent-grad);color:var(--accent-fg);font-family:var(--font-display);font-size:20px}
+.steprow h3{font-size:18px;margin-bottom:4px}
+.steprow p{margin:0;color:var(--muted);font-size:15px}
+
+/* ---- 徽章數字 ---- */
+.nums{padding:clamp(24px,4vw,44px) 0}
+.sgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:clamp(12px,2vw,20px)}
+.badge{background:var(--surface);border:2px dashed var(--accent);border-radius:32px;padding:22px 16px;text-align:center}
+.badge b{display:block;font-family:var(--font-display);font-size:clamp(26px,3.6vw,38px);line-height:1.1}
+.badge span{display:block;margin-top:6px;font-size:14px;color:var(--muted)}
+
+/* ---- 分店卡 ---- */
+.loc{padding:clamp(30px,5vw,58px) 0}
+.lgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(14px,2vw,22px)}
+.lcard{background:var(--surface);border:2px solid var(--border);border-radius:28px;padding:22px;box-shadow:var(--shadow)}
+.lico{font-size:26px}
+.lcard h3{font-size:19px;margin:8px 0 6px}
+.lcard p{margin:0 0 12px;color:var(--muted);font-size:15px}
+.ltag{display:inline-flex;align-items:center;min-height:36px;padding:6px 14px;border-radius:999px;
+  background:var(--cta-bg);border:2px solid var(--border);font-size:14px}
+
+/* ---- 聯乘貼紙牆 ---- */
+.wall{padding:clamp(26px,4vw,50px) 0}
+.wgrid{display:flex;flex-wrap:wrap;gap:14px}
+.stk{display:inline-flex;align-items:center;min-height:48px;padding:10px 20px;border-radius:999px;
+  background:var(--surface);border:2px dashed var(--accent);font-family:var(--font-display);
+  font-size:15px;box-shadow:var(--shadow)}
+.stk:hover{background:var(--cta-bg);transform:rotate(0deg) scale(1.03)}
+
+/* ---- 網店 mock ---- */
+.mock{padding:clamp(30px,5vw,58px) 0}
+.win{background:var(--surface);border:2px solid var(--border);border-radius:28px;overflow:hidden;
+  box-shadow:var(--shadow)}
+.wbar{display:flex;align-items:center;gap:7px;padding:12px 16px;background:var(--cta-bg);border-bottom:2px solid var(--border)}
+.wbar i{width:12px;height:12px;border-radius:50%;background:var(--border);display:block}
+.wbar span{margin-left:10px;font-size:14px;color:var(--fg)}
+.wbody{display:grid;grid-template-columns:minmax(0,180px) minmax(0,1fr) minmax(0,170px);gap:0}
+.wbody ul{list-style:none;margin:0;padding:16px;min-width:0}
+.wside{border-right:2px dashed var(--border)}
+.wright{border-left:2px dashed var(--border)}
+.wbody li{min-height:34px;display:flex;align-items:center;font-size:14.5px;margin-bottom:6px;color:var(--muted);flex-wrap:wrap;gap:6px}
+.wside li b,.wright li b{color:var(--fg);font-size:14px}
+.wmain li{border-radius:16px;background:var(--bg);padding:10px 14px;color:var(--fg)}
+.wright li{font-family:var(--font-display);font-size:15px;color:var(--fg)}
+.pill{display:inline-flex;align-items:center;padding:3px 12px;border-radius:999px;background:var(--accent);
+  color:var(--accent-fg);font-size:13px}
+.diff-add{display:inline-flex;align-items:center;padding:6px 14px;border-radius:999px;background:var(--ok);color:var(--fg);font-size:14px}
+.diff-del{display:inline-flex;align-items:center;padding:6px 14px;border-radius:999px;background:var(--warn);color:var(--fg);font-size:14px}
+
+/* ---- 對話泡引言 ---- */
+.talk{padding:clamp(30px,5vw,58px) 0}
+.bgrid{display:grid;grid-template-columns:repeat(2,1fr);gap:clamp(16px,3vw,34px)}
+.bub{display:flex;gap:16px;margin:0;align-items:flex-start}
+.face{flex:0 0 54px;height:54px;border-radius:50%;display:grid;place-items:center;background:var(--accent-grad);
+  color:var(--accent-fg);font-family:var(--font-display);font-size:22px}
+.bub blockquote{position:relative;margin:0;background:var(--surface);border:2px solid var(--border);
+  border-radius:26px;padding:20px;box-shadow:var(--shadow)}
+.bub blockquote::before{content:"";position:absolute;left:-17px;top:24px;border:9px solid transparent;
+  border-right-color:var(--surface)}
+.bub p{margin:0 0 10px;font-size:15.5px}
+.bub figcaption{font-size:14px;color:var(--muted)}
+.bub figcaption b{color:var(--fg)}
+
+/* ---- 會員圓卡（有絲帶）---- */
+.club{padding:clamp(30px,5vw,58px) 0}
+.mgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(16px,2.5vw,26px);align-items:start}
+.mcard{position:relative;background:var(--surface);border:2px solid var(--border);border-radius:32px;
+  padding:30px 22px 24px;text-align:center;display:flex;flex-direction:column;gap:12px}
+.mcard.feat{border-color:var(--accent);box-shadow:var(--shadow);transform:translateY(-6px)}
+.ribbon{position:absolute;top:-14px;left:50%;transform:translateX(-50%) rotate(-2.5deg);
+  background:var(--accent);color:var(--accent-fg);border-radius:999px;padding:7px 18px;font-size:13.5px;
+  font-family:var(--font-display);white-space:nowrap;box-shadow:var(--shadow)}
+.mcard h3{font-size:21px}
+.mprice{margin:0;display:flex;flex-direction:column;gap:2px;align-items:center}
+.mprice b{font-family:var(--font-display);font-size:clamp(24px,3vw,32px)}
+.mprice span{font-size:14px;color:var(--muted)}
+.mdesc{margin:0;color:var(--muted);font-size:15px}
+.mcard ul{list-style:none;margin:0;padding:0;text-align:left;flex:1}
+.mcard li{padding:9px 0 9px 26px;position:relative;font-size:15px;border-top:2px dashed var(--border)}
+.mcard li:first-child{border-top:0}
+.mcard li::before{content:"♡";position:absolute;left:0;color:var(--accent)}
+
+/* ---- 聊天泡泡 FAQ ---- */
+.faqs{padding:clamp(30px,5vw,58px) 0}
+.chat{margin-bottom:14px}
+.chat summary{display:flex;align-items:center;gap:12px;min-height:52px;padding:12px 20px;border-radius:999px;
+  background:var(--surface);border:2px solid var(--border);cursor:pointer;list-style:none;font-weight:700;font-size:15.5px}
+.chat summary::-webkit-details-marker{display:none}
+.chat summary::marker{content:""}
+.qface{flex:0 0 30px;height:30px;border-radius:50%;display:grid;place-items:center;
+  background:var(--accent-grad);color:var(--accent-fg);font-family:var(--font-display);font-size:15px}
+.chat:hover summary{background:var(--cta-bg)}
+.chat .ans{position:relative;margin:12px 0 0 30px;background:var(--bg);border:2px dashed var(--accent);
+  border-radius:26px;padding:18px 20px}
+.chat .ans p{margin:0;color:var(--fg);font-size:15px;max-width:74ch}
+.chat[open] summary{background:var(--cta-bg);border-color:var(--accent)}
+
+/* ---- 大圓 CTA ---- */
+.cta{padding:clamp(30px,5vw,64px) 0}
+.cwrap{position:relative;background:var(--accent-grad);color:var(--accent-fg);border-radius:32px;
+  padding:clamp(30px,6vw,66px);text-align:center;box-shadow:var(--shadow);overflow:hidden}
+.cdeco{display:block;font-family:var(--font-display);font-size:20px;margin-bottom:10px}
+.cwrap h2{font-size:clamp(28px,5vw,46px);text-shadow:3px 3px 0 var(--surface)}
+.cwrap p{max-width:52ch;margin:14px auto 24px}
+.cwrap .acts{justify-content:center}
+
+/* ---- footer（頂部波浪）---- */
+.ft{position:relative}
+.ft .wave{height:26px;background-image:radial-gradient(circle at 50% 100%,var(--surface) 62%,transparent 63%);
+  background-size:64px 26px;background-repeat:repeat-x}
+.ftin{background:var(--surface);padding:clamp(26px,4vw,46px) 0 clamp(20px,3vw,34px)}
+.footgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;
+  border-bottom:2px dashed var(--border);padding-bottom:22px}
+.footgrid h4{font-size:16px;margin-bottom:10px;font-family:var(--font-display)}
+.footgrid a{display:block;padding:8px 0;text-decoration:none;font-size:15px;min-height:40px;color:var(--fg)}
+.footgrid a:hover{color:var(--accent);text-decoration:underline}
+.news{margin-top:22px}
+.news h4{font-size:16px;margin-bottom:10px;font-family:var(--font-display)}
+.news form{display:flex;gap:10px;flex-wrap:wrap}
+.news input{flex:1 1 250px;min-height:48px;padding:12px 18px;border-radius:999px;background:var(--input-bg);
+  border:2px solid var(--border);color:var(--fg);font:15.5px var(--font-body)}
+.legal{margin:24px 0 0;font-size:13.5px;color:var(--muted)}
+
+/* ---- Pro：載入幕 + 揭示 ---- */
+.curtain{position:fixed;inset:0;z-index:999;display:grid;place-items:center;transition:opacity .5s ease,visibility .5s}
+.curtain div{display:grid;gap:10px;text-align:center}
+.curtain span{display:block;font-family:var(--font-display);font-size:clamp(20px,3.6vw,34px);color:var(--accent-fg);
+  background:var(--accent);border-radius:999px;padding:10px 26px;box-shadow:var(--shadow)}
+.curtain.gone{opacity:0;visibility:hidden}
+.is-pro [data-rv]{opacity:0;transform:translateY(20px) scale(.985);
+  transition:opacity .5s ease,transform .55s cubic-bezier(.2,.8,.3,1.2)}
+.is-pro [data-rv].in,html.no-anim [data-rv]{opacity:1;transform:none}
+
+/* ---- 響應式 ---- */
+@media(max-width:980px){
+  .herogrid{grid-template-columns:1fr}
+  .hero-r{flex-direction:row;justify-content:center}
+  .pgrid,.fgrid,.footgrid,.sgrid{grid-template-columns:repeat(2,1fr)}
+  .steprow{grid-template-columns:1fr}
+  .steprow li:not(:last-child)::after{display:none}
+  .bgrid,.mgrid,.lgrid{grid-template-columns:1fr}
+  .wbody{grid-template-columns:1fr}
+  .wside,.wright{border:0;border-bottom:2px dashed var(--border)}
+  .leafgrid{grid-template-columns:1fr}
+}
+@media(max-width:720px){
+  .nv{margin-left:0;width:100%}
+  .nv a{flex:1 1 46%;justify-content:center}
+  .hdcta{width:100%}
+  .pgrid,.fgrid{grid-template-columns:1fr}
+  .bt{width:100%}
+  .acts .bt{width:100%}
+  .footgrid{grid-template-columns:repeat(2,1fr);gap:14px}
+  .footgrid a{min-height:44px;display:flex;align-items:center}
+  .demo-bar a,.demo-bar b{min-height:44px;display:inline-flex;align-items:center}
+  .prow,.notes span,.ltag,.tstk,.stk{min-height:44px}
+  .stk,.tstk{width:100%;justify-content:center}
+  .photo img{height:clamp(170px,52vw,300px)}
+  .photo figcaption{position:static;margin:10px;border-radius:20px}
+  .bub{gap:12px}
+  .face{flex:0 0 44px;height:44px;font-size:18px}
+  .chat .ans{margin-left:0}
+  .fcard,.pcard{transform:none}
+  .mcard.feat{transform:none}
+  /* 手機字級下限 15px（display type 除外）*/
+  body,p,li,span,b,i,small,cite,figcaption,td,th,summary,label,a,button,input,select,input::placeholder{
+    font-size:max(15px,1em)!important}
+  .is-pro [data-rv]{transform:translateY(14px)}
+}
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  .is-pro [data-rv]{opacity:1;transform:none}
+  .curtain{display:none}
+}

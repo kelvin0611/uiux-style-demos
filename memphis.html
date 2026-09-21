@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="zh-Hant-HK"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<html lang="zh-Hant-HK" class="is-basic"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Memphis · 孟菲斯 — Milano | UIUX Style Demo</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bungee&family=Poppins:wght@400;600;800&display=swap">
 <meta name="description" content="Milano Fest 2026 —— 本地樂隊、電子、嘻哈同一個週末上台，兩個舞台輪流開聲。">
@@ -8,60 +8,250 @@
 <meta property="og:description" content="Milano Fest 2026 —— 本地樂隊、電子、嘻哈同一個週末上台，兩個舞台輪流開聲。">
 <meta name="twitter:card" content="summary_large_image">
 <meta property="og:image" content="media/og/memphis.png">
-<link rel="stylesheet" href="blocks.css">
-<style>:root{--bg:#FFFFFF;--fg:#111111;--muted:#4B4B4B;--surface:#FFFFFF;--border:#111111;--accent:#FF6FB5;--accent-fg:#111111;--radius:18px;--radius-sm:10px;--shadow:6px 6px 0 #111111;--btn-shadow:6px 6px 0 #111111;--art-bg:conic-gradient(from 45deg,#FF6FB5,#FFD23F,#3BCEAC,#3A86FF,#EE4266,#FF6FB5);--media-bg:conic-gradient(from 45deg,#FF6FB5,#FFD23F,#3BCEAC,#3A86FF,#FF6FB5);--cta-bg:#FFD23F;--input-bg:#FFFFFF;--ok:#3BCEAC;--warn:#EE4266;--font-display:Bungee,Poppins,sans-serif;--font-body:Poppins,'Noto Sans TC',sans-serif;--focus-ring:#FF1D8B;}
-
-.card,.plan,.quote,.tile-c,.rows,.mock,.roi,.badge-card{border:3px solid #111;box-shadow:6px 6px 0 #111}
-.btn{border:3px solid #111}
-.chip{border:3px solid #111;box-shadow:3px 3px 0 #111;border-radius:0}
-.hero h1{color:#111;text-shadow:5px 5px 0 #FF6FB5,10px 10px 0 #3BCEAC}
-.eyebrow{background:#3A86FF;color:#fff;padding:6px 14px;border:3px solid #111;transform:rotate(-2deg);box-shadow:4px 4px 0 #111}
-.sec-title{letter-spacing:.01em}
-.avatar{border:3px solid #111;background:#3BCEAC;color:#111}
-.tile-c .ph{border:3px solid #111;border-radius:10px}
-.tag{transform:rotate(-4deg);border:3px solid #111}
-.plan.featured{transform:translateY(-6px) rotate(-1deg)}
-.rows article:nth-child(odd){background:rgba(255,210,63,.22)}
-</style>
+<link rel="stylesheet" href="bespoke/_bar.css">
+<link rel="stylesheet" href="bespoke/memphis.css">
+<style>:root{--bg:#FFFFFF;--fg:#111111;--muted:#4B4B4B;--surface:#FFFFFF;--border:#111111;--accent:#FF6FB5;--accent-fg:#111111;--radius:18px;--radius-sm:10px;--shadow:6px 6px 0 #111111;--btn-shadow:6px 6px 0 #111111;--art-bg:conic-gradient(from 45deg,#FF6FB5,#FFD23F,#3BCEAC,#3A86FF,#EE4266,#FF6FB5);--media-bg:conic-gradient(from 45deg,#FF6FB5,#FFD23F,#3BCEAC,#3A86FF,#FF6FB5);--cta-bg:#FFD23F;--input-bg:#FFFFFF;--ok:#3BCEAC;--warn:#EE4266;--font-display:Bungee,Poppins,sans-serif;--font-body:Poppins,'Noto Sans TC',sans-serif;--focus-ring:#FF1D8B;}</style>
 </head>
 <body>
 <div class="demo-bar"><span><a href="index.html">← 全部風格</a> · <b>🆕 7/57 🌀 Memphis 孟菲斯（12 block 全頁版）</b></span><span><a href="memphis-pro.html">✨ Pro 版</a> · <a href="maximalism.html">‹ Maximalism</a> · <a href="mid-century.html">Mid-Century ›</a> · <a href="obsidian://open?vault=Obsidian&file=04-%E5%85%A7%E5%AE%B9%E5%89%B5%E4%BD%9C/UIUX%20Style/Styles/Memphis">📝 Obsidian 筆記</a></span></div>
-<header class="site-header wrap"><div class="logo">Milano</div><input type="checkbox" id="navToggle" class="nav-toggle-input" aria-label="開關選單"><label class="nav-toggle" for="navToggle">選單</label><nav class="nav" aria-label="主選單"><a href="#lineup" aria-current="page">陣容</a><a href="#venue">場地</a><a href="#tickets">售票</a><a href="#pricing">加購</a></nav><label class="nav-scrim" for="navToggle" aria-hidden="true"></label><a class="btn btn-primary" href="#cta">買飛</a></header>
-<main>
-<section class="block hero" id="hero"><div class="wrap hero-grid"><div><span class="eyebrow rv">2026 · 西九 · 兩日</span><h1>兩日，18 隊，聲到你耳鳴</h1><p class="lead rv">Milano Fest 2026 —— 本地樂隊、電子、嘻哈同一個週末上台，兩個舞台輪流開聲。</p><div class="actions rv"><a class="btn btn-primary" href="#cta">買飛 <span class="i" aria-hidden="true">→</span></a><a class="btn btn-secondary" href="#product">睇陣容</a></div><p class="note rv">早鳥至 3 月 7 日 · 學生半價 · 兩日票先有早鳥</p></div><figure class="hero-art has-media rv"><img src="media/memphis-hero.jpg" alt="" loading="lazy"><figcaption>情境示意圖 · AI 生成</figcaption></figure></div></section>
-<section class="block tight trust band"><div class="wrap trust"><span class="lbl">去年 12,000 人入場，贊助（示範網站，虛構品牌）：</span><span class="wordmark">白日夢唱片</span><span class="wordmark">電波可樂</span><span class="wordmark">Neon Taxi</span><span class="wordmark">Soda Pop</span><span class="wordmark">Reverb</span></div></section>
-<section class="block" id="features"><div class="wrap"><h2 class="sec-title">場內有咩</h2><p class="sec-sub">唔係只有舞台 —— 由下午到收場都有嘢做。</p><div class="grid g4"><article class="card rv"><span class="ico" aria-hidden="true">🎸</span><h3>18 隊本地樂隊</h3><p>獨立、後搖、City Pop、嘻哈，兩個舞台輪流。</p></article><article class="card rv"><span class="ico" aria-hidden="true">🎧</span><h3>兩個舞台</h3><p>主舞台 A 場 6,000 人；B 場係電子同 DJ set，開到收場。</p></article><article class="card rv"><span class="ico" aria-hidden="true">🚚</span><h3>12 部食物車</h3><p>港式、日式、墨西哥、純素都齊，場內唔收現金。</p></article><article class="card rv"><span class="ico" aria-hidden="true">💡</span><h3>夜間光影裝置</h3><p>入黑之後草地有互動燈光，可以坐低抖。</p></article></div></div></section>
-<section class="block band" id="product"><div class="wrap"><h2 class="sec-title">售票 App 畫面</h2><p class="sec-sub">買完即刻有 QR，入場唔使列印；日程可以加入手機行事曆。</p><div class="mock rv"><div class="mock-bar"><span class="mock-dot"></span><span class="mock-dot"></span><span class="mock-dot"></span><span style="margin-left:8px">Milano Fest · 我嘅飛</span></div><div class="mock-body"><aside class="mock-side"><span><b>日程</b></span><span>Day 1</span><span>Day 2</span><span><b>舞台</b></span><span>A 場</span><span>B 場</span></aside><div class="mock-main"><div class="mock-row"><span class="pill">Day 1 · 20:30</span> 白日夢唱片（A 場）</div><div class="mock-row"><span class="pill">Day 1 · 22:00</span> Neon Taxi（B 場 DJ set）</div><div class="mock-row"><span class="pill">Day 2 · 21:15</span> 電波可樂全員演出（A 場）</div><div class="mock-row"><span class="diff-add">+ 已加入行事曆（2 項）</span></div></div><aside class="mock-right"><span><b>我嘅飛</b></span><span>兩日票 × 2</span><span><b>入場</b></span><span>QR 已就緒</span></aside></div></div><p class="note">示範版係靜態畫面；Pro 版會逐行打出嚟。</p></div></section>
-<section class="block"><div class="wrap"><h2 class="sec-title">入場三步</h2><p class="sec-sub">由買飛到入閘，唔需要列印任何嘢。</p><ol class="steps"><li class="rv"><h3>買飛</h3><p>揀一日票或者兩日票，學生記住揀學生票。</p></li><li class="rv"><h3>收 QR</h3><p>確認電郵有 QR，亦可以喺 App 打開。</p></li><li class="rv"><h3>入場</h3><p>14:00 開閘，最後入場 21:00；帶身份證核對學生票。</p></li></ol></div></section>
-<section class="block tight"><div class="wrap"><div class="stats"><div class="stat rv"><span class="num">12,000</span><span>去年入場人數</span></div><div class="stat rv"><span class="num">18 隊</span><span>本地樂隊</span></div><div class="stat rv"><span class="num">2 個</span><span>舞台，一連兩日</span></div><div class="stat rv"><span class="num">4.7/5</span><span>上年觀眾評分（示範數據）</span></div></div></div></section>
-<section class="block band" id="lineup"><div class="wrap"><h2 class="sec-title">陣容（示範網站，全部虛構樂隊）</h2><p class="sec-sub">兩個舞台輪流，時間表會喺開場前兩星期公佈最終版。</p><div class="daygrid"><div><h3>Day 1 · 3 月 14 日</h3><ul><li><b>白日夢唱片</b><span>20:30 · A 場</span></li><li><b>Neon Taxi</b><span>22:00 · B 場</span></li><li><b>Soda Pop</b><span>18:00 · A 場</span></li><li><b>電波可樂</b><span>19:15 · B 場</span></li><li><b>Reverb</b><span>16:30 · A 場</span></li></ul></div><div><h3>Day 2 · 3 月 15 日</h3><ul><li><b>電波可樂</b><span>21:15 · A 場</span></li><li><b>夜貓電台 DJ</b><span>22:30 · B 場</span></li><li><b>格仔雜貨樂團</b><span>19:00 · A 場</span></li><li><b>Paperland</b><span>17:30 · B 場</span></li><li><b>小書店三重奏</b><span>15:00 · A 場</span></li></ul></div></div></div></section>
-<section class="block"><div class="wrap"><h2 class="sec-title">上年觀眾點講</h2><p class="sec-sub">示範網站用虛構名；真評語會喺真實場次後補。</p><div class="grid g2"><figure class="quote rv"><p>「兩個舞台距離好近，可以兩邊走，唔似其他 festival 行到腳斷。」</p><figcaption class="who"><span class="avatar" aria-hidden="true">阿</span><span><b>阿豪</b><br>上年觀眾</span></figcaption></figure><figure class="quote rv"><p>「B 場 DJ set 開到最後一刻，草地坐低聽好 chill，明年一定再嚟。」</p><figcaption class="who"><span class="avatar" aria-hidden="true">Y</span><span><b>Yuki</b><br>上年觀眾</span></figcaption></figure></div></div></section>
-<section class="block" id="venue"><div class="wrap"><h2 class="sec-title">場地同交通</h2><p class="sec-sub">戶外草地，可以帶地墊；唔准帶玻璃樽同專業相機。</p><ul class="infolist"><li><b>地點</b><span>西九文化區藝術公園（草地場）</span></li><li><b>港鐵</b><span>九龍站 E4 出口，行 8 分鐘；柯士甸站 D2 出口，行 12 分鐘</span></li><li><b>巴士</b><span>8、11、215X、281A 藝術公園站落車</span></li><li><b>尾班車</b><span>港鐵 00:45；散場有加班巴士去旺角同觀塘</span></li><li><b>入場</b><span>14:00 開閘 · 最後入場 21:00 · 散場 23:30</span></li></ul></div></section>
-<section class="block" id="pricing"><div class="wrap"><h2 class="sec-title">場內加購</h2><p class="sec-sub">買飛之後可以加購，入場前都可以加。</p><div class="pricing"><article class="plan rv"><h3>飲品券</h3><div class="price">HK$120 <small>/ 5 杯</small></div><p>場內任何飲品檔通用。</p><ul><li>5 杯（任何飲品）</li><li>唔收手續費</li><li>可以轉贈朋友</li></ul><a class="btn btn-secondary" href="#cta">加購</a></article><article class="plan rv featured"><span class="tag">最抵</span><h3>週邊套裝</h3><div class="price">HK$420 <small>/ 一套</small></div><p>Tee + 毛巾 + 貼紙。</p><ul><li>限量 Tee（S–XL）</li><li>紀念毛巾</li><li>貼紙組</li><li>現場自取或順豐寄</li></ul><a class="btn btn-primary" href="#cta">加購</a></article><article class="plan rv"><h3>VIP 體驗</h3><div class="price">HK$980 <small>/ 一位</small></div><p>前台專區同後台導覽。</p><ul><li>前台專區位置</li><li>後台導覽 30 分鐘</li><li>免費飲品 3 杯</li><li>獨立入口同洗手間</li></ul><a class="btn btn-secondary" href="#cta">加購</a></article></div></div></section>
-<section class="block" id="tickets"><div class="wrap"><h2 class="sec-title rv">售票階段</h2><p class="sec-sub rv">早鳥限量，賣完即刻轉下一階段；兩日票比買兩張一日票平。</p><div class="rows"><article class="rv"><b>早鳥一日票</b><span>3 月 7 日前 · 限量 2,000 張</span><span class="cost">HK$680</span></article><article class="rv"><b>預售一日票</b><span>3 月 8–13 日</span><span class="cost">HK$880</span></article><article class="rv"><b>兩日票</b><span>限量 · 可以兩日自由出入</span><span class="cost">HK$1,480</span></article><article class="rv"><b>即場一日票</b><span>現場售票處 · 售完即止</span><span class="cost">HK$1,080</span></article></div><p class="note rv">所有階段都有學生票半價，入場要出示學生證。</p></div></section>
-<section class="block"><div class="wrap"><h2 class="sec-title">入場前要知</h2><p class="sec-sub">答唔到嘅可以 IG DM 我們。</p><div class="faq"><details class="rv"><summary>可以帶水同食物嗎？</summary><div class="ans">可以帶空水樽（場內有加水站）；唔准帶玻璃樽同外來酒精。</div></details><details class="rv"><summary>有冇儲物櫃？</summary><div class="ans">有，現場可以租，HK$40／日，先到先得。</div></details><details class="rv"><summary>落雨點算？</summary><div class="ans">大雨會暫停演出，惡劣天氣安排會喺開場前 3 小時喺 IG 公佈。</div></details><details class="rv"><summary>未滿 18 歲可以入場嗎？</summary><div class="ans">16 歲以下要成人陪同；酒精區只限 18 歲以上。</div></details><details class="rv"><summary>可以退票嗎？</summary><div class="ans">活動取消全額退；個人原因可以轉讓，唔可以退。</div></details></div></div></section>
-<section class="block" id="cta"><div class="wrap"><div class="cta-band rv"><h2>早鳥仲有 3 日</h2><p>限量 2,000 張，賣完即刻轉預售價。</p><div class="actions"><a class="btn btn-primary" href="#">買早鳥飛</a><a class="btn btn-secondary" href="#">睇陣容</a></div></div></div></section>
+<div class="bleed"><div class="tick" aria-hidden="true"><div>Milano ★ 2026 · 西九 · 兩日 ★ 早鳥仲有 3 日 ★ 早鳥至 3 月 7 日 · 學生半價 · 兩日票先有早鳥Milano ★ 2026 · 西九 · 兩日 ★ 早鳥仲有 3 日 ★ 早鳥至 3 月 7 日 · 學生半價 · 兩日票先有早鳥 ★ </div></div></div>
+<header class="hd">
+  <div class="wrap hdrow">
+    <a class="logo" href="#top">Milano</a>
+    <nav class="nv" aria-label="主選單"><a href="#lineup">陣容</a><a href="#venue">場地</a><a href="#tickets">售票</a><a href="#pricing">加購</a></nav>
+    <a class="bt bt-1 hdcta" href="#tickets">買飛</a>
+  </div>
+</header>
+<main id="top">
+<section class="hero">
+  <div class="wrap hgrid">
+    <div class="hl">
+      <span class="eyebrow">2026 · 西九 · 兩日</span>
+      <h1>兩日，18 隊，聲到你耳鳴</h1>
+      <p class="lead">Milano Fest 2026 —— 本地樂隊、電子、嘻哈同一個週末上台，兩個舞台輪流開聲。</p>
+      <div class="acts">
+        <a class="bt bt-1" href="#tickets">買飛</a>
+        <a class="bt bt-2" href="#lineup">睇陣容</a>
+      </div>
+    </div>
+    <div class="hr"><figure class="poster-art"><img src="media/memphis-hero.jpg" alt="音樂節情境示意圖" loading="lazy"><figcaption>情境示意圖 · AI 生成</figcaption></figure></div>
+  </div>
+  <div class="wrap"><ul class="notes"><span>早鳥至 3 月 7 日</span><span>學生半價</span><span>兩日票先有早鳥</span></ul></div>
+</section>
+<div class="bleed"><section class="board" id="tickets">
+  <div class="wrap">
+    <div class="bdhead">
+      <p class="bdcap">早鳥仲有 3 日</p>
+      <p class="bdtxt">限量 2,000 張，賣完即刻轉預售價。</p>
+    </div>
+    <div class="flip"><div class="fcell"><b>HK$680</b><span class="fname">早鳥一日票</span><span class="fnote">3 月 7 日前 · 限量 2,000 張</span></div><div class="fcell"><b>HK$880</b><span class="fname">預售一日票</span><span class="fnote">3 月 8–13 日</span></div><div class="fcell"><b>HK$1,480</b><span class="fname">兩日票</span><span class="fnote">限量 · 可以兩日自由出入</span></div><div class="fcell"><b>HK$1,080</b><span class="fname">即場一日票</span><span class="fnote">現場售票處 · 售完即止</span></div></div>
+    <p class="bdnote">所有階段都有學生票半價，入場要出示學生證。</p>
+  </div>
+</section></div>
+<section class="trust">
+  <div class="wrap">
+    <p class="tlbl">去年 12,000 人入場，贊助（示範網站，虛構品牌）：</p>
+    <div class="trow"><span class="tblk t0">白日夢唱片</span><span class="tblk t1">電波可樂</span><span class="tblk t2">Neon Taxi</span><span class="tblk t3">Soda Pop</span><span class="tblk t0">Reverb</span></div>
+  </div>
+</section>
+<section class="feat">
+  <div class="wrap">
+    <h2>場內有咩</h2><p class="sub">唔係只有舞台 —— 由下午到收場都有嘢做。</p>
+    <div class="frow2"><article class="fcard t1">
+  <span class="fico" aria-hidden="true">🎸</span>
+  <h3>18 隊本地樂隊</h3><p>獨立、後搖、City Pop、嘻哈，兩個舞台輪流。</p>
+</article><article class="fcard t2">
+  <span class="fico" aria-hidden="true">🎧</span>
+  <h3>兩個舞台</h3><p>主舞台 A 場 6,000 人；B 場係電子同 DJ set，開到收場。</p>
+</article><article class="fcard t3">
+  <span class="fico" aria-hidden="true">🚚</span>
+  <h3>12 部食物車</h3><p>港式、日式、墨西哥、純素都齊，場內唔收現金。</p>
+</article><article class="fcard t0">
+  <span class="fico" aria-hidden="true">💡</span>
+  <h3>夜間光影裝置</h3><p>入黑之後草地有互動燈光，可以坐低抖。</p>
+</article></div>
+  </div>
+</section>
+<section class="lineup" id="lineup">
+  <div class="wrap">
+    <h2>陣容（示範網站，全部虛構樂隊）</h2><p class="sub">兩個舞台輪流，時間表會喺開場前兩星期公佈最終版。</p>
+    <div class="daygrid"><div class="day">
+  <h3 class="dayh">Day 1 · 3 月 14 日</h3>
+  <ol class="acts-l"><li class="act t0">
+  <span class="atime">20:30</span>
+  <span class="aname">白日夢唱片</span>
+  <span class="astage">A 場</span>
+</li><li class="act t1">
+  <span class="atime">22:00</span>
+  <span class="aname">Neon Taxi</span>
+  <span class="astage">B 場</span>
+</li><li class="act t2">
+  <span class="atime">18:00</span>
+  <span class="aname">Soda Pop</span>
+  <span class="astage">A 場</span>
+</li><li class="act t3">
+  <span class="atime">19:15</span>
+  <span class="aname">電波可樂</span>
+  <span class="astage">B 場</span>
+</li><li class="act t0">
+  <span class="atime">16:30</span>
+  <span class="aname">Reverb</span>
+  <span class="astage">A 場</span>
+</li></ol>
+</div><div class="day">
+  <h3 class="dayh">Day 2 · 3 月 15 日</h3>
+  <ol class="acts-l"><li class="act t1">
+  <span class="atime">21:15</span>
+  <span class="aname">電波可樂</span>
+  <span class="astage">A 場</span>
+</li><li class="act t2">
+  <span class="atime">22:30</span>
+  <span class="aname">夜貓電台 DJ</span>
+  <span class="astage">B 場</span>
+</li><li class="act t3">
+  <span class="atime">19:00</span>
+  <span class="aname">格仔雜貨樂團</span>
+  <span class="astage">A 場</span>
+</li><li class="act t0">
+  <span class="atime">17:30</span>
+  <span class="aname">Paperland</span>
+  <span class="astage">B 場</span>
+</li><li class="act t1">
+  <span class="atime">15:00</span>
+  <span class="aname">小書店三重奏</span>
+  <span class="astage">A 場</span>
+</li></ol>
+</div></div>
+  </div>
+</section>
+<section class="venue" id="venue">
+  <div class="wrap vgrid">
+    <div class="map" aria-hidden="true">
+      <span class="pin">📍</span>
+      <span class="blk g1"></span><span class="blk g2"></span>
+      <span class="stageA">A</span><span class="stageB">B</span>
+      <span class="blk g3"></span>
+      <span class="water"></span>
+    </div>
+    <div class="vinfo">
+      <h2>場地同交通</h2><p class="sub">戶外草地，可以帶地墊；唔准帶玻璃樽同專業相機。</p>
+      <ul class="vlist"><li><b>地點</b><span>西九文化區藝術公園（草地場）</span></li><li><b>港鐵</b><span>九龍站 E4 出口，行 8 分鐘；柯士甸站 D2 出口，行 12 分鐘</span></li><li><b>巴士</b><span>8、11、215X、281A 藝術公園站落車</span></li><li><b>尾班車</b><span>港鐵 00:45；散場有加班巴士去旺角同觀塘</span></li><li><b>入場</b><span>14:00 開閘 · 最後入場 21:00 · 散場 23:30</span></li></ul>
+    </div>
+  </div>
+</section>
+<section class="nums">
+  <div class="wrap sgrid"><div class="scell t0">
+  <b data-count="12000">12,000</b><span>去年入場人數</span>
+</div><div class="scell t1">
+  <b data-count="18">18 隊</b><span>本地樂隊</span>
+</div><div class="scell t2">
+  <b data-count="2">2 個</b><span>舞台，一連兩日</span>
+</div><div class="scell t3">
+  <b data-count="4.7">4.7/5</b><span>上年觀眾評分（示範數據）</span>
+</div></div>
+</section>
+<section class="quotes">
+  <div class="wrap">
+    <h2>上年觀眾點講</h2><p class="sub">示範網站用虛構名；真評語會喺真實場次後補。</p>
+    <div class="qgrid"><figure class="qcard t0">
+  <blockquote><p>「兩個舞台距離好近，可以兩邊走，唔似其他 festival 行到腳斷。」</p></blockquote>
+  <figcaption><b>阿豪</b><span>上年觀眾</span></figcaption>
+</figure><figure class="qcard t1">
+  <blockquote><p>「B 場 DJ set 開到最後一刻，草地坐低聽好 chill，明年一定再嚟。」</p></blockquote>
+  <figcaption><b>Yuki</b><span>上年觀眾</span></figcaption>
+</figure></div>
+  </div>
+</section>
+<section class="mock">
+  <div class="wrap">
+    <h2>售票 App 畫面</h2><p class="sub">買完即刻有 QR，入場唔使列印；日程可以加入手機行事曆。</p>
+    <div class="phone">
+      <div class="pbar"><span>Milano Fest · 我嘅飛</span></div>
+      <div class="pbody">
+        <ul class="pside"><li><b>日程</b></li><li>Day 1</li><li>Day 2</li><li><b>舞台</b></li><li>A 場</li><li>B 場</li></ul>
+        <ul class="pmain"><li><span class="pill">Day 1 · 20:30</span> 白日夢唱片（A 場）</li><li><span class="pill">Day 1 · 22:00</span> Neon Taxi（B 場 DJ set）</li><li><span class="pill">Day 2 · 21:15</span> 電波可樂全員演出（A 場）</li><li><span class="diff-add">+ 已加入行事曆（2 項）</span></li></ul>
+        <ul class="pright"><li><b>我嘅飛</b></li><li>兩日票 × 2</li><li><b>入場</b></li><li>QR 已就緒</li></ul>
+      </div>
+    </div>
+    <p class="tiny">示範版係靜態畫面；Pro 版會逐行打出嚟。</p>
+  </div>
+</section>
+<section class="stp">
+  <div class="wrap">
+    <h2>入場三步</h2><p class="sub">由買飛到入閘，唔需要列印任何嘢。</p>
+    <ol class="stepgrid"><li class="t1"><b aria-hidden="true">1</b><h3>買飛</h3><p>揀一日票或者兩日票，學生記住揀學生票。</p></li><li class="t2"><b aria-hidden="true">2</b><h3>收 QR</h3><p>確認電郵有 QR，亦可以喺 App 打開。</p></li><li class="t3"><b aria-hidden="true">3</b><h3>入場</h3><p>14:00 開閘，最後入場 21:00；帶身份證核對學生票。</p></li></ol>
+  </div>
+</section>
+<section class="price" id="pricing">
+  <div class="wrap">
+    <h2>場內加購</h2><p class="sub">買飛之後可以加購，入場前都可以加。</p>
+    <div class="pgrid"><article class="pcard t0">
+  
+  <h3>飲品券</h3>
+  <p class="pprice"><b>HK$120</b><span>/ 5 杯</span></p>
+  <p class="pdesc">場內任何飲品檔通用。</p>
+  <ul><li>5 杯（任何飲品）</li><li>唔收手續費</li><li>可以轉贈朋友</li></ul>
+  <a class="bt bt-2" href="#tickets">加購</a>
+</article><article class="pcard feat t1">
+  <span class="tag">最抵</span>
+  <h3>週邊套裝</h3>
+  <p class="pprice"><b>HK$420</b><span>/ 一套</span></p>
+  <p class="pdesc">Tee + 毛巾 + 貼紙。</p>
+  <ul><li>限量 Tee（S–XL）</li><li>紀念毛巾</li><li>貼紙組</li><li>現場自取或順豐寄</li></ul>
+  <a class="bt bt-1" href="#tickets">加購</a>
+</article><article class="pcard t2">
+  
+  <h3>VIP 體驗</h3>
+  <p class="pprice"><b>HK$980</b><span>/ 一位</span></p>
+  <p class="pdesc">前台專區同後台導覽。</p>
+  <ul><li>前台專區位置</li><li>後台導覽 30 分鐘</li><li>免費飲品 3 杯</li><li>獨立入口同洗手間</li></ul>
+  <a class="bt bt-2" href="#tickets">加購</a>
+</article></div>
+  </div>
+</section>
+<section class="tix" id="tickets"><div class="wrap"><h2>售票階段</h2><p class="sub">早鳥限量，賣完即刻轉下一階段；兩日票比買兩張一日票平。</p><div class="tixgrid"><article class="tcell t0"><b>HK$680</b><h3>早鳥一日票</h3><p class="when">3 月 7 日前 · 限量 2,000 張</p></article><article class="tcell t1"><b>HK$880</b><h3>預售一日票</h3><p class="when">3 月 8–13 日</p></article><article class="tcell t2"><b>HK$1,480</b><h3>兩日票</h3><p class="when">限量 · 可以兩日自由出入</p></article><article class="tcell t3"><b>HK$1,080</b><h3>即場一日票</h3><p class="when">現場售票處 · 售完即止</p></article></div><p class="tnote">所有階段都有學生票半價，入場要出示學生證。</p></div></section>
+<section class="faq">
+  <div class="wrap">
+    <h2>入場前要知</h2><p class="sub">答唔到嘅可以 IG DM 我們。</p>
+    <div class="flist"><details class="t0">
+  <summary>可以帶水同食物嗎？</summary><div class="ans"><p>可以帶空水樽（場內有加水站）；唔准帶玻璃樽同外來酒精。</p></div>
+</details><details class="t1">
+  <summary>有冇儲物櫃？</summary><div class="ans"><p>有，現場可以租，HK$40／日，先到先得。</p></div>
+</details><details class="t2">
+  <summary>落雨點算？</summary><div class="ans"><p>大雨會暫停演出，惡劣天氣安排會喺開場前 3 小時喺 IG 公佈。</p></div>
+</details><details class="t3">
+  <summary>未滿 18 歲可以入場嗎？</summary><div class="ans"><p>16 歲以下要成人陪同；酒精區只限 18 歲以上。</p></div>
+</details><details class="t0">
+  <summary>可以退票嗎？</summary><div class="ans"><p>活動取消全額退；個人原因可以轉讓，唔可以退。</p></div>
+</details></div>
+  </div>
+</section>
+<section class="cta" id="cta">
+  <div class="wrap cwrap">
+    <span class="cdeco c1" aria-hidden="true"></span>
+    <span class="cdeco c2" aria-hidden="true"></span>
+    <h2>早鳥仲有 3 日</h2>
+    <p>限量 2,000 張，賣完即刻轉預售價。</p>
+    <div class="acts">
+      <a class="bt bt-1" href="#tickets">買早鳥飛</a>
+      <a class="bt bt-3" href="#lineup">睇陣容</a>
+    </div>
+  </div>
+</section>
 </main>
-<footer class="block site-footer"><div class="wrap"><div class="foot-grid"><div><h4>活動</h4><a href="#">陣容</a><a href="#">時間表</a><a href="#">場地圖</a><a href="#">加購</a></div><div><h4>售票</h4><a href="#">早鳥票</a><a href="#">預售票</a><a href="#">兩日票</a><a href="#">學生票</a></div><div><h4>資訊</h4><a href="#">入場須知</a><a href="#">交通安排</a><a href="#">食物同飲品</a><a href="#">常見問題</a></div><div><h4>聯絡</h4><a href="#">合作洽談</a><a href="#">傳媒聯絡</a><a href="#">義工報名</a><a href="#">私隱政策</a></div><div><h4>售票通知</h4><form class="news" onsubmit="return false"><label for="nl" style="display:none">售票通知</label><input id="nl" type="email" placeholder="you@example.com"><button class="btn btn-primary" type="submit">訂閱</button></form></div></div><div class="foot-bottom"><span>© 2026 Milano Fest · 示範網站：主辦、樂隊、贊助同數字全部虛構</span><span>IG · Threads · YouTube</span></div></div></footer>
-<section class="block band" id="qa"><div class="wrap"><h2 class="sec-title">設計 QA · 按鈕同表單</h2><p class="sec-sub">同一套元素庫嘅 11 個按鈕狀態（含 loading／success／icon／size）+ 表單，用嚟驗風格嘅 focus／disabled／錯誤狀態夠唔夠清楚。</p><div class="btn-row"><div class="state"><button class="btn btn-primary " type="button">Primary</button><small>Default</small></div><div class="state"><button class="btn btn-primary is-hover" type="button">Primary</button><small>Hover</small></div><div class="state"><button class="btn btn-primary is-active" type="button">Primary</button><small>Active</small></div><div class="state"><button class="btn btn-primary is-focus" type="button">Primary</button><small>Focus</small></div><div class="state"><button class="btn btn-primary " type="button" disabled>Primary</button><small>Disabled</small></div><div class="state"><button class="btn btn-primary " type="button" data-state="loading"><span class="spin"></span> 傳送中…</button><small>Loading</small></div><div class="state"><button class="btn btn-primary " type="button" data-state="done">已收到 · 1 個工作日內覆你</button><small>Success</small></div><div class="state"><button class="btn btn-primary " type="button"><span class="i" aria-hidden="true">→</span> 下一步</button><small>Icon + arrow</small></div><div class="state"><button class="btn btn-primary btn-sm" type="button">Small</button><small>Small（btn-sm）</small></div><div class="state"><button class="btn btn-primary btn-lg" type="button">Large</button><small>Large（btn-lg）</small></div><div class="state"><button class="btn btn-secondary" type="button">Secondary</button><small>Secondary</small></div></div><form class="form" style="margin-top:38px" onsubmit="return false"><div class="field"><label for="n">你嘅名</label><input id="n" placeholder="例如：陳大文"></div><div class="field"><label for="e">工作電郵</label><input id="e" type="email" placeholder="you@company.com"></div><div class="field"><label for="c">團隊幾大？</label><select id="c"><option>1–5 人</option><option>6–20 人</option><option>21 人以上</option></select></div><label class="check"><input type="checkbox" class="toggle" checked> 接收產品更新</label><div><button class="btn btn-primary" type="submit">提交</button></div></form></div></section>
-<script>
-(function(){var s=document.getElementById('seats');if(!s)return;
-var o=document.getElementById('roiOut'),mo=document.getElementById('roiMoney'),so=document.getElementById('seatsOut');
-var H=6,R=900;
-function up(){var n=+s.value;so.textContent=n;var h=Math.round(n*H),m=h*R;
-o.textContent=h+' 小時 / 月';mo.textContent='約 HK$'+m.toLocaleString()+'（對比人手寫同樣嘅 PR）';}
-s.addEventListener('input',up);up();})();
-</script>
-<script>
-(function(){var f=document.querySelector('#qa form');if(!f)return;
-var b=f.querySelector('button[type=submit]');if(!b)return;
-var live=document.createElement('p');live.className='note';live.setAttribute('aria-live','polite');
-f.appendChild(live);
-f.addEventListener('submit',function(e){e.preventDefault();
-if(b.dataset.state==='loading')return;
-var label=b.textContent;b.dataset.state='loading';b.innerHTML='<span class="spin"></span> 傳送中…';
-setTimeout(function(){b.dataset.state='done';b.textContent='已收到 · 1 個工作日內覆你';
-live.textContent='（示範狀態：真表單要接後端；重新載入可以再試）';
-setTimeout(function(){b.dataset.state='';b.textContent=label;},2600);},900);});})();
-</script>
+<footer class="ft">
+  <section class="ftin">
+    <div class="wrap">
+      <div class="fgrid"><div class="t0"><h4>活動</h4><a href="#">陣容</a><a href="#">時間表</a><a href="#">場地圖</a><a href="#">加購</a></div><div class="t1"><h4>售票</h4><a href="#">早鳥票</a><a href="#">預售票</a><a href="#">兩日票</a><a href="#">學生票</a></div><div class="t2"><h4>資訊</h4><a href="#">入場須知</a><a href="#">交通安排</a><a href="#">食物同飲品</a><a href="#">常見問題</a></div><div class="t3"><h4>聯絡</h4><a href="#">合作洽談</a><a href="#">傳媒聯絡</a><a href="#">義工報名</a><a href="#">私隱政策</a></div></div>
+      <div class="news">
+        <h4>售票通知</h4>
+        <form onsubmit="return false">
+          <input type="email" placeholder="you@example.com" aria-label="售票通知">
+          <button class="bt bt-1" type="submit">訂閱</button>
+        </form>
+      </div>
+      <p class="legal">© 2026 Milano Fest · 示範網站：主辦、樂隊、贊助同數字全部虛構 · IG · Threads · YouTube</p>
+    </div>
+  </section>
+</footer>
 </body></html>

@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="zh-Hant-HK"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<html lang="zh-Hant-HK" class="is-pro"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Kitsch Pro（動效版）· 媚俗 — Tacky</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lobster&family=Shrikhand&family=Comic+Neue:wght@400;700&display=swap">
 <meta name="description" content="Tacky Mart 每兩個月一次 drop：閃粉、豹紋、塑膠亮面 —— 明知俗，但你就係想要。">
@@ -8,70 +8,248 @@
 <meta property="og:description" content="Tacky Mart 每兩個月一次 drop：閃粉、豹紋、塑膠亮面 —— 明知俗，但你就係想要。">
 <meta name="twitter:card" content="summary_large_image">
 <meta property="og:image" content="media/og/kitsch.png">
-<link rel="stylesheet" href="blocks.css">
-<style>:root{--bg:linear-gradient(135deg,#FF5FA2,#FFC700 55%,#1DD3B0);--fg:#3B1B2C;--muted:#5F2340;--surface:#FFFFFF;--border:#FF5FA2;--accent:#FF5FA2;--accent-fg:#FFFFFF;--accent-grad:linear-gradient(#FF8FC0,#FF5FA2);--radius:20px;--radius-sm:12px;--shadow:8px 8px 0 rgba(142,68,255,.55);--btn-shadow:0 6px 0 #8E44FF;--art-bg:repeating-linear-gradient(45deg,#FF5FA2 0 14px,#FFC700 14px 28px,#1DD3B0 28px 42px);--media-bg:repeating-linear-gradient(45deg,#C58B3A 0 10px,#FFC700 10px 20px,#8E44FF 20px 30px);--cta-bg:#FFFFFF;--input-bg:#FFFDE7;--ok:#1DD3B0;--warn:#FF5FA2;--font-display:Shrikhand,Lobster,cursive;--font-body:'Comic Neue','Noto Sans TC',cursive;--focus-ring:var(--accent);}
-
-.card,.plan,.quote,.tile-c,.rows,.mock,.roi,.badge-card{border:4px double #FF5FA2;box-shadow:8px 8px 0 rgba(142,68,255,.45)}
-.plan.featured{border-color:#FFC700;box-shadow:8px 8px 0 #FF5FA2}
-.btn{border:3px solid #fff}
-.chip{border:3px double #FF5FA2;background:#fff}
-/* 漸變底會一路變化，字一定要坐喺白底上（唔可以白字直接放彩色） */
-.block{background:rgba(255,255,255,.62)}
-.block.band{background:rgba(255,255,255,.84)}
-.hero{background:rgba(255,255,255,.34)}
-.hero h1{color:#3B1B2C;text-shadow:2px 2px 0 #fff,4px 4px 0 #FFF200,7px 7px 0 #8E44FF}
-.sec-title{color:#3B1B2C;text-shadow:1px 1px 0 #fff,3px 3px 0 #FFC700}
-.eyebrow{background:#fff;color:#E0307A;padding:6px 14px;border:3px double #FF5FA2;transform:rotate(-2deg);letter-spacing:.06em}
-.lead{color:#2b0f1d;font-weight:700}
-.site-footer{color:#3B1B2C}
-.avatar{background:linear-gradient(#FFF200,#FF5FA2);color:#3B1B2C;border:3px solid #fff}
-.tile-c .ph{background-color:#C58B3A;background-image:radial-gradient(#3b2a12 5px,transparent 5.5px);background-size:18px 18px;border:3px double #fff}
-tr, .rows span{color:#5F2340}
-.foot-grid a,.foot-bottom{color:#3B1B2C}
-.tag{transform:rotate(-6deg);background:#FFF200;color:#3B1B2C;border:3px solid #FF5FA2}
-</style>
-<link rel="stylesheet" href="pro/motion.css">
+<link rel="stylesheet" href="bespoke/_bar.css">
+<link rel="stylesheet" href="bespoke/kitsch.css">
+<style>:root{--bg:linear-gradient(135deg,#FF5FA2,#FFC700 55%,#1DD3B0);--fg:#3B1B2C;--muted:#5F2340;--surface:#FFFFFF;--border:#FF5FA2;--accent:#FF5FA2;--accent-fg:#FFFFFF;--accent-grad:linear-gradient(#FF8FC0,#FF5FA2);--radius:20px;--radius-sm:12px;--shadow:8px 8px 0 rgba(142,68,255,.55);--btn-shadow:0 6px 0 #8E44FF;--art-bg:repeating-linear-gradient(45deg,#FF5FA2 0 14px,#FFC700 14px 28px,#1DD3B0 28px 42px);--media-bg:repeating-linear-gradient(45deg,#C58B3A 0 10px,#FFC700 10px 20px,#8E44FF 20px 30px);--cta-bg:#FFFFFF;--input-bg:#FFFDE7;--ok:#1DD3B0;--warn:#FF5FA2;--font-display:Shrikhand,Lobster,cursive;--font-body:'Comic Neue','Noto Sans TC',cursive;--focus-ring:var(--accent);}</style>
 </head>
 <body>
 <div class="demo-bar"><span><a href="index.html">← 全部風格</a> · <b>✨ 8/57 🦩 Kitsch 媚俗 Pro（12 block + 動效）</b></span><span><a href="kitsch.html">對比基本版</a> · <a href="kawaii-pro.html">‹ Kawaii</a> · <a href="light-academia-pro.html">Light Academia ›</a> · <a href="obsidian://open?vault=Obsidian&file=04-%E5%85%A7%E5%AE%B9%E5%89%B5%E4%BD%9C/UIUX%20Style/Styles/Kitsch">📝 Obsidian 筆記</a></span></div>
-<div class="pro-curtain" aria-hidden="true" style="background:#FF5FA2"><div style="font:400 34px Shrikhand,cursive;color:#FFF200;text-shadow:4px 4px 0 #8E44FF">so bad it's good</div></div>
-<header class="site-header wrap"><div class="logo">Tacky</div><input type="checkbox" id="navToggle" class="nav-toggle-input" aria-label="開關選單"><label class="nav-toggle" for="navToggle">選單</label><nav class="nav" aria-label="主選單"><a href="#countdown" aria-current="page">Drop 07</a><a href="#chips">聯名</a><a href="#member">會員</a><a href="#pricing">價目</a></nav><label class="nav-scrim" for="navToggle" aria-hidden="true"></label><a class="btn btn-primary" href="#cta">入手</a></header>
-<main>
-<section class="block hero" id="hero"><div class="wrap hero-grid"><div><span class="eyebrow rv">Drop 07 · 限量 300 件</span><h1>俗得漂亮</h1><p class="lead rv">Tacky Mart 每兩個月一次 drop：閃粉、豹紋、塑膠亮面 —— 明知俗，但你就係想要。</p><div class="actions rv"><a class="btn btn-primary" href="#cta">入手 <span class="i" aria-hidden="true">→</span></a><a class="btn btn-secondary" href="#product">睇 Drop 07</a></div><p class="note rv">會員 19:00 優先 · 公開發售 20:00 · 售完唔補</p></div><figure class="hero-art has-media rv"><img src="media/kitsch-hero.jpg" alt="" loading="lazy"><figcaption>情境示意圖 · AI 生成</figcaption></figure></div></section>
-<section class="block tight trust band"><div class="wrap trust"><span class="lbl">上三次 drop 都 48 小時內售完，媒體（示範網站，虛構）：</span><span class="wordmark">潮流日報</span><span class="wordmark">Zine HK</span><span class="wordmark">夜貓電台</span><span class="wordmark">格仔雜貨</span><span class="wordmark">Soda Pop</span></div></section>
-<section class="block" id="features"><div class="wrap"><h2 class="sec-title">點解要搶</h2><p class="sec-sub">限量、本地、夠俗 —— 三個原因。</p><div class="grid g4"><article class="card rv"><span class="ico" aria-hidden="true">🦩</span><h3>限量唔補貨</h3><p>每個 drop 300 件，賣完就係冇。</p></article><article class="card rv"><span class="ico" aria-hidden="true">🎨</span><h3>香港自家印</h3><p>印刷同包裝都喺香港做，兩星期內出貨。</p></article><article class="card rv"><span class="ico" aria-hidden="true">✨</span><h3>閃粉唔甩</h3><p>閃粉壓入膠面唔用膠水，洗兩次都唔會甩。</p></article><article class="card rv"><span class="ico" aria-hidden="true">📦</span><h3>神秘包裹</h3><p>骨灰級會員每季收到一件未公開樣板。</p></article></div></div></section>
-<section class="block band" id="product"><div class="wrap"><h2 class="sec-title">Drop 07 頁面</h2><p class="sec-sub">倒數、庫存、售罄狀態全部即時同一個頁面睇到。</p><div class="mock rv"><div class="mock-bar"><span class="mock-dot"></span><span class="mock-dot"></span><span class="mock-dot"></span><span style="margin-left:8px">Tacky Mart · Drop 07</span></div><div class="mock-body"><aside class="mock-side"><span><b>本季</b></span><span>貼紙</span><span>Tee</span><span>外套</span><span><b>狀態</b></span><span>會員優先中</span></aside><div class="mock-main"><div class="mock-row"><span class="pill">貼紙組</span> 剩 82 件 · HK$38</div><div class="mock-row"><span class="pill">Tee</span> 剩 31 件 · HK$280</div><div class="mock-row"><span class="diff-del">- 閃粉外套 · 已售完</span></div><div class="mock-row"><span class="diff-add">+ 你已加入購物車（1 件）</span></div></div><aside class="mock-right"><span><b>倒數</b></span><span>公開發售 20:00</span><span><b>你嘅等級</b></span><span>粉絲 · 優先 1 小時</span></aside></div></div><p class="note">示範版係靜態畫面；Pro 版會逐行打出嚟。</p></div></section>
-<section class="block"><div class="wrap"><h2 class="sec-title">搶嘢三步</h2><p class="sec-sub">會員真係快一步，唔係 marketing 講法。</p><ol class="steps"><li class="rv"><h3>加入會員</h3><p>最低級免費；付費會員可以早一個鐘入場買。</p></li><li class="rv"><h3>19:00 入場</h3><p>會員優先時段，庫存會即時更新。</p></li><li class="rv"><h3>落單</h3><p>信用卡、FPS、PayMe；兩星期內出貨。</p></li></ol></div></section>
-<section class="block tight"><div class="wrap"><div class="stats"><div class="stat rv"><span class="num">300 件</span><span>每個 drop 限量</span></div><div class="stat rv"><span class="num">48 小時</span><span>上三次售完時間</span></div><div class="stat rv"><span class="num">2 星期</span><span>香港印刷出貨</span></div><div class="stat rv"><span class="num">4.6/5</span><span>客人評分（示範數據）</span></div></div></div></section>
-<section class="block" id="countdown"><div class="wrap"><h2 class="sec-title">Drop 07 時間表</h2><p class="sec-sub">所有時間都係香港時間；會員優先時段要登入先見到。</p><div class="cd"><div class="rv"><b>3 月 14 日</b><span>19:00 會員優先入場</span></div><div class="rv"><b>20:00</b><span>公開發售</span></div><div class="rv"><b>300 件</b><span>全季限量（6 款）</span></div><div class="rv"><b>48 小時</b><span>預計售完時間</span></div></div></div></section>
-<section class="block"><div class="wrap"><h2 class="sec-title">客人點講</h2><p class="sec-sub">示範網站用虛構名；真評語會喺真實 drop 後補。</p><div class="grid g2"><figure class="quote rv"><p>「明知俗，但著上身真係好開心，朋友個個問邊度買。」</p><figcaption class="who"><span class="avatar" aria-hidden="true">阿</span><span><b>阿康</b><br>客人 · Drop 06</span></figcaption></figure><figure class="quote rv"><p>「閃粉真係冇甩，洗咗三次都仲閃，意外地耐用。」</p><figcaption class="who"><span class="avatar" aria-hidden="true">M</span><span><b>Mandy</b><br>骨灰級會員</span></figcaption></figure></div></div></section>
-<section class="block" id="chips"><div class="wrap"><h2 class="sec-title">本季聯名（示範網站，品牌虛構）</h2><p class="sec-sub">每次同不同單位搞事，做完就冇。</p><div class="chips"><span class="chip">Tacky × 電波可樂</span><span class="chip">Tacky × 夜貓電台</span><span class="chip">Tacky × 白日夢唱片</span><span class="chip">Tacky × Soda Pop</span><span class="chip">Tacky × Zine HK</span></div></div></section>
-<section class="block" id="pricing"><div class="wrap"><h2 class="sec-title">Drop 07 價目</h2><p class="sec-sub">全部香港印刷；滿 HK$400 免運。</p><div class="pricing"><article class="plan rv"><h3>貼紙同小物</h3><div class="price">HK$38 <small>起</small></div><p>入門款，最易入手。</p><ul><li>貼紙組 HK$38</li><li>鎖匙扣 HK$68</li><li>襪 HK$88</li><li>滿 $400 免運</li></ul><a class="btn btn-secondary" href="#cta">入手</a></article><article class="plan rv featured"><span class="tag">最多人搶</span><h3>Tee</h3><div class="price">HK$280 <small>/ 件</small></div><p>本季 3 個圖，全部限量。</p><ul><li>S–XXL</li><li>香港印刷</li><li>閃粉版加 HK$40</li><li>兩星期出貨</li></ul><a class="btn btn-primary" href="#cta">入手</a></article><article class="plan rv"><h3>外套</h3><div class="price">HK$680 <small>/ 件</small></div><p>限量 60 件，賣完唔補。</p><ul><li>限量 60 件</li><li>豹紋內里</li><li>編號卡</li><li>支援換碼一次</li></ul><a class="btn btn-secondary" href="#cta">入手</a></article></div></div></section>
-<section class="block" id="member"><div class="wrap"><h2 class="sec-title">會員等級</h2><p class="sec-sub">等級越高，越早入場同越多神秘嘢。</p><div class="tiles"><article class="tile-c rv"><div class="ph wide" aria-hidden="true">🦩</div><h3>路過</h3><p>註冊即入，收到 drop 通知。</p><span class="cost">免費</span></article><article class="tile-c rv"><div class="ph wide" aria-hidden="true">✨</div><h3>粉絲</h3><p>早 1 小時入場，生日多一件貼紙。</p><span class="cost">HK$88 / 年</span></article><article class="tile-c rv"><div class="ph wide" aria-hidden="true">💀</div><h3>骨灰級</h3><p>早 1 小時 + 每季神秘包裹 + 樣板投票權。</p><span class="cost">HK$288 / 年</span></article></div></div></section>
-<section class="block"><div class="wrap"><h2 class="sec-title">搶之前想知</h2><p class="sec-sub">問唔到嘅 IG DM 我們。</p><div class="faq"><details class="rv"><summary>會唔會補貨？</summary><div class="ans">唔會。每個 drop 做完就冇，下季係完全唔同設計。</div></details><details class="rv"><summary>閃粉會唔會甩？</summary><div class="ans">閃粉壓入膠面，正常洗滌唔會甩；唔好乾衣。</div></details><details class="rv"><summary>寄唔寄外地？</summary><div class="ans">香港、澳門、台灣同新加坡都可以，運費按重量計。</div></details><details class="rv"><summary>可唔可以退換？</summary><div class="ans">未拆封 7 日內可以換碼；限量品售完唔可以換款。</div></details><details class="rv"><summary>會員點升級？</summary><div class="ans">喺帳戶頁買會籍即時生效，優先時段當季就可以用。</div></details></div></div></section>
-<section class="block" id="cta"><div class="wrap"><div class="cta-band rv"><h2>Drop 07 · 3 月 14 日</h2><p>會員 19:00 優先，公開發售 20:00。</p><div class="actions"><a class="btn btn-primary" href="#">加入會員</a><a class="btn btn-secondary" href="#">睇 Drop 07</a></div></div></div></section>
+<div class="curtain" aria-hidden="true" style="background:#FF5FA2"><div><span>so bad it's good</span><span>loading…</span></div></div>
+<div class="bleed"><div class="banner" aria-hidden="true"><div>Tacky ★ Drop 07 · 限量 300 件 ★ 會員 19:00 優先 · 公開發售 20:00 · 售完唔補 ★ Drop 07 · 3 月 14 日Tacky ★ Drop 07 · 限量 300 件 ★ 會員 19:00 優先 · 公開發售 20:00 · 售完唔補 ★ Drop 07 · 3 月 14 日 ★ </div></div></div>
+<header class="hd">
+  <div class="wrap hdrow">
+    <a class="logo" href="#top"><span aria-hidden="true">🦩</span>Tacky</a>
+    <nav class="nv" aria-label="主選單"><a class="nvchip c0" href="#countdown">Drop 07</a><a class="nvchip c1" href="#chips">聯名</a><a class="nvchip c2" href="#member">會員</a><a class="nvchip c0" href="#pricing">價目</a></nav>
+    <a class="bt bt-1 hdcta" href="#member">入手</a>
+  </div>
+</header>
+<main id="top">
+<section class="hero">
+  <div class="wrap hgrid">
+    <div class="hl panel">
+      <span class="eyebrow">Drop 07 · 限量 300 件</span>
+      <h1>俗得漂亮</h1>
+      <p class="lead">Tacky Mart 每兩個月一次 drop：閃粉、豹紋、塑膠亮面 —— 明知俗，但你就係想要。</p>
+      <div class="acts">
+        <a class="bt bt-1" href="#countdown">入手</a>
+        <a class="bt bt-2" href="#pricing">睇 Drop 07</a>
+      </div>
+      <div class="sticks"><span class="stick s0">會員 19:00 優先</span><span class="stick s1">公開發售 20:00</span><span class="stick s2">售完唔補</span></div>
+    </div>
+    <div class="hr"><figure class="polaroid"><img src="media/kitsch-hero.jpg" alt="Drop 主視覺情境示意圖" loading="lazy"><figcaption>情境示意圖 · AI 生成</figcaption></figure></div>
+  </div>
+</section>
+<section class="drop" id="countdown">
+  <div class="wrap panel">
+    <h2>Drop 07 時間表</h2><p class="sub">所有時間都係香港時間；會員優先時段要登入先見到。</p>
+    <div class="cdgrid"><div class="cdbox c0">
+  <b>3 月 14 日</b><span>19:00 會員優先入場</span>
+</div><div class="cdbox c1">
+  <b>20:00</b><span>公開發售</span>
+</div><div class="cdbox c2">
+  <b>300 件</b><span>全季限量（6 款）</span>
+</div><div class="cdbox c0">
+  <b>48 小時</b><span>預計售完時間</span>
+</div></div>
+  </div>
+</section>
+<section class="trust">
+  <div class="wrap panel">
+    <p class="tlbl">上三次 drop 都 48 小時內售完，媒體（示範網站，虛構）：</p>
+    <div class="trow"><span class="tst s0">潮流日報</span><span class="tst s1">Zine HK</span><span class="tst s2">夜貓電台</span><span class="tst s3">格仔雜貨</span><span class="tst s0">Soda Pop</span></div>
+  </div>
+</section>
+<section class="feat">
+  <div class="wrap panel">
+    <h2>點解要搶</h2><p class="sub">限量、本地、夠俗 —— 三個原因。</p>
+    <div class="fgrid"><article class="fcard c0">
+  <span class="fico" aria-hidden="true">🦩</span>
+  <h3>限量唔補貨</h3><p>每個 drop 300 件，賣完就係冇。</p>
+</article><article class="fcard c1">
+  <span class="fico" aria-hidden="true">🎨</span>
+  <h3>香港自家印</h3><p>印刷同包裝都喺香港做，兩星期內出貨。</p>
+</article><article class="fcard c2">
+  <span class="fico" aria-hidden="true">✨</span>
+  <h3>閃粉唔甩</h3><p>閃粉壓入膠面唔用膠水，洗兩次都唔會甩。</p>
+</article><article class="fcard c0">
+  <span class="fico" aria-hidden="true">📦</span>
+  <h3>神秘包裹</h3><p>骨灰級會員每季收到一件未公開樣板。</p>
+</article></div>
+  </div>
+</section>
+<section class="chips" id="chips">
+  <div class="wrap panel">
+    <h2>本季聯名（示範網站，品牌虛構）</h2><p class="sub">每次同不同單位搞事，做完就冇。</p>
+    <div class="chgrid"><span class="bigchip c0">Tacky × 電波可樂</span><span class="bigchip c1">Tacky × 夜貓電台</span><span class="bigchip c2">Tacky × 白日夢唱片</span><span class="bigchip c0">Tacky × Soda Pop</span><span class="bigchip c1">Tacky × Zine HK</span></div>
+  </div>
+</section>
+<section class="member" id="member">
+  <div class="wrap panel">
+    <h2>會員等級</h2><p class="sub">等級越高，越早入場同越多神秘嘢。</p>
+    <div class="mgrid"><article class="mcard c0">
+  <span class="mico" aria-hidden="true">🦩</span>
+  <h3>路過</h3><p>註冊即入，收到 drop 通知。</p>
+  <span class="mprice">免費</span>
+</article><article class="mcard c1">
+  <span class="mico" aria-hidden="true">✨</span>
+  <h3>粉絲</h3><p>早 1 小時入場，生日多一件貼紙。</p>
+  <span class="mprice">HK$88 / 年</span>
+</article><article class="mcard c2">
+  <span class="mico" aria-hidden="true">💀</span>
+  <h3>骨灰級</h3><p>早 1 小時 + 每季神秘包裹 + 樣板投票權。</p>
+  <span class="mprice">HK$288 / 年</span>
+</article></div>
+  </div>
+</section>
+<section class="mock">
+  <div class="wrap panel">
+    <h2>Drop 07 頁面</h2><p class="sub">倒數、庫存、售罄狀態全部即時同一個頁面睇到。</p>
+    <div class="app">
+      <div class="abar"><span>Tacky Mart · Drop 07</span><span class="adots" aria-hidden="true">● ● ●</span></div>
+      <div class="abody">
+        <ul class="aside"><li><b>本季</b></li><li>貼紙</li><li>Tee</li><li>外套</li><li><b>狀態</b></li><li>會員優先中</li></ul>
+        <ul class="amain"><li><span class="pill">貼紙組</span> 剩 82 件 · HK$38</li><li><span class="pill">Tee</span> 剩 31 件 · HK$280</li><li><span class="diff-del">- 閃粉外套 · 已售完</span></li><li><span class="diff-add">+ 你已加入購物車（1 件）</span></li></ul>
+        <ul class="aright"><li><b>倒數</b></li><li>公開發售 20:00</li><li><b>你嘅等級</b></li><li>粉絲 · 優先 1 小時</li></ul>
+      </div>
+    </div>
+    <p class="tiny">示範版係靜態畫面；Pro 版會逐行打出嚟。</p>
+  </div>
+</section>
+<section class="nums">
+  <div class="wrap panel"><div class="sgrid"><div class="stat c0">
+  <b data-count="300">300 件</b><span>每個 drop 限量</span>
+</div><div class="stat c1">
+  <b data-count="48">48 小時</b><span>上三次售完時間</span>
+</div><div class="stat c2">
+  <b data-count="2">2 星期</b><span>香港印刷出貨</span>
+</div><div class="stat c0">
+  <b data-count="4.6">4.6/5</b><span>客人評分（示範數據）</span>
+</div></div></div>
+</section>
+<section class="stp">
+  <div class="wrap panel">
+    <h2>搶嘢三步</h2><p class="sub">會員真係快一步，唔係 marketing 講法。</p>
+    <ol class="stepgrid"><li class="c1"><b aria-hidden="true">1</b><h3>加入會員</h3><p>最低級免費；付費會員可以早一個鐘入場買。</p></li><li class="c2"><b aria-hidden="true">2</b><h3>19:00 入場</h3><p>會員優先時段，庫存會即時更新。</p></li><li class="c0"><b aria-hidden="true">3</b><h3>落單</h3><p>信用卡、FPS、PayMe；兩星期內出貨。</p></li></ol>
+  </div>
+</section>
+<section class="quotes">
+  <div class="wrap panel">
+    <h2>客人點講</h2><p class="sub">示範網站用虛構名；真評語會喺真實 drop 後補。</p>
+    <div class="qgrid"><figure class="qcard c0">
+  <span class="qico" aria-hidden="true">阿</span>
+  <blockquote><p>「明知俗，但著上身真係好開心，朋友個個問邊度買。」</p></blockquote>
+  <figcaption><b>阿康</b><span>客人 · Drop 06</span></figcaption>
+</figure><figure class="qcard c1">
+  <span class="qico" aria-hidden="true">M</span>
+  <blockquote><p>「閃粉真係冇甩，洗咗三次都仲閃，意外地耐用。」</p></blockquote>
+  <figcaption><b>Mandy</b><span>骨灰級會員</span></figcaption>
+</figure></div>
+  </div>
+</section>
+<section class="price" id="pricing">
+  <div class="wrap panel">
+    <h2>Drop 07 價目</h2><p class="sub">全部香港印刷；滿 HK$400 免運。</p>
+    <div class="pgrid"><article class="pcard c0">
+  
+  <h3>貼紙同小物</h3>
+  <p class="pprice"><b>HK$38</b><span>起</span></p>
+  <p class="pdesc">入門款，最易入手。</p>
+  <ul><li>貼紙組 HK$38</li><li>鎖匙扣 HK$68</li><li>襪 HK$88</li><li>滿 $400 免運</li></ul>
+  <a class="bt bt-2" href="#member">入手</a>
+</article><article class="pcard c1 feat">
+  <span class="tag">最多人搶</span>
+  <h3>Tee</h3>
+  <p class="pprice"><b>HK$280</b><span>/ 件</span></p>
+  <p class="pdesc">本季 3 個圖，全部限量。</p>
+  <ul><li>S–XXL</li><li>香港印刷</li><li>閃粉版加 HK$40</li><li>兩星期出貨</li></ul>
+  <a class="bt bt-1" href="#member">入手</a>
+</article><article class="pcard c2">
+  
+  <h3>外套</h3>
+  <p class="pprice"><b>HK$680</b><span>/ 件</span></p>
+  <p class="pdesc">限量 60 件，賣完唔補。</p>
+  <ul><li>限量 60 件</li><li>豹紋內里</li><li>編號卡</li><li>支援換碼一次</li></ul>
+  <a class="bt bt-2" href="#member">入手</a>
+</article></div>
+  </div>
+</section>
+<section class="faq">
+  <div class="wrap panel">
+    <h2>搶之前想知</h2><p class="sub">問唔到嘅 IG DM 我們。</p>
+    <div class="flist"><details class="c0">
+  <summary>會唔會補貨？</summary><div class="ans"><p>唔會。每個 drop 做完就冇，下季係完全唔同設計。</p></div>
+</details><details class="c1">
+  <summary>閃粉會唔會甩？</summary><div class="ans"><p>閃粉壓入膠面，正常洗滌唔會甩；唔好乾衣。</p></div>
+</details><details class="c2">
+  <summary>寄唔寄外地？</summary><div class="ans"><p>香港、澳門、台灣同新加坡都可以，運費按重量計。</p></div>
+</details><details class="c0">
+  <summary>可唔可以退換？</summary><div class="ans"><p>未拆封 7 日內可以換碼；限量品售完唔可以換款。</p></div>
+</details><details class="c1">
+  <summary>會員點升級？</summary><div class="ans"><p>喺帳戶頁買會籍即時生效，優先時段當季就可以用。</p></div>
+</details></div>
+  </div>
+</section>
+<section class="cta" id="cta">
+  <div class="wrap cwrap">
+    <h2>Drop 07 · 3 月 14 日</h2>
+    <p>會員 19:00 優先，公開發售 20:00。</p>
+    <div class="acts">
+      <a class="bt bt-1" href="#member">加入會員</a>
+      <a class="bt bt-3" href="#countdown">睇 Drop 07</a>
+    </div>
+  </div>
+</section>
 </main>
-<footer class="block site-footer"><div class="wrap"><div class="foot-grid"><div><h4>本季</h4><a href="#">貼紙同小物</a><a href="#">Tee</a><a href="#">外套</a><a href="#">聯名款</a></div><div><h4>購買</h4><a href="#">運費同出貨</a><a href="#">退換政策</a><a href="#">會員計劃</a><a href="#">神秘包裹</a></div><div><h4>搞事</h4><a href="#">聯名洽談</a><a href="#">徵稿</a><a href="#">Pop-up 合作</a><a href="#">傳媒</a></div><div><h4>關於</h4><a href="#">品牌故事</a><a href="#">招聘</a><a href="#">條款</a><a href="#">私隱政策</a></div><div><h4>Drop 通知</h4><form class="news" onsubmit="return false"><label for="nl" style="display:none">Drop 通知</label><input id="nl" type="email" placeholder="you@example.com"><button class="btn btn-primary" type="submit">訂閱</button></form></div></div><div class="foot-bottom"><span>© 2026 Tacky Mart · 示範網站：品牌、聯名、數字同評語全部虛構</span><span>IG · Threads · 小紅書</span></div></div></footer>
-<section class="block band" id="qa"><div class="wrap"><h2 class="sec-title">設計 QA · 按鈕同表單</h2><p class="sec-sub">同一套元素庫嘅 11 個按鈕狀態（含 loading／success／icon／size）+ 表單，用嚟驗風格嘅 focus／disabled／錯誤狀態夠唔夠清楚。</p><div class="btn-row"><div class="state"><button class="btn btn-primary " type="button">Primary</button><small>Default</small></div><div class="state"><button class="btn btn-primary is-hover" type="button">Primary</button><small>Hover</small></div><div class="state"><button class="btn btn-primary is-active" type="button">Primary</button><small>Active</small></div><div class="state"><button class="btn btn-primary is-focus" type="button">Primary</button><small>Focus</small></div><div class="state"><button class="btn btn-primary " type="button" disabled>Primary</button><small>Disabled</small></div><div class="state"><button class="btn btn-primary " type="button" data-state="loading"><span class="spin"></span> 傳送中…</button><small>Loading</small></div><div class="state"><button class="btn btn-primary " type="button" data-state="done">已收到 · 1 個工作日內覆你</button><small>Success</small></div><div class="state"><button class="btn btn-primary " type="button"><span class="i" aria-hidden="true">→</span> 下一步</button><small>Icon + arrow</small></div><div class="state"><button class="btn btn-primary btn-sm" type="button">Small</button><small>Small（btn-sm）</small></div><div class="state"><button class="btn btn-primary btn-lg" type="button">Large</button><small>Large（btn-lg）</small></div><div class="state"><button class="btn btn-secondary" type="button">Secondary</button><small>Secondary</small></div></div><form class="form" style="margin-top:38px" onsubmit="return false"><div class="field"><label for="n">你嘅名</label><input id="n" placeholder="例如：陳大文"></div><div class="field"><label for="e">工作電郵</label><input id="e" type="email" placeholder="you@company.com"></div><div class="field"><label for="c">團隊幾大？</label><select id="c"><option>1–5 人</option><option>6–20 人</option><option>21 人以上</option></select></div><label class="check"><input type="checkbox" class="toggle" checked> 接收產品更新</label><div><button class="btn btn-primary" type="submit">提交</button></div></form></div></section>
+<footer class="ft">
+  <section class="ftin">
+    <div class="wrap panel">
+      <div class="footgrid"><div class="c0"><h4>本季</h4><a href="#">貼紙同小物</a><a href="#">Tee</a><a href="#">外套</a><a href="#">聯名款</a></div><div class="c1"><h4>購買</h4><a href="#">運費同出貨</a><a href="#">退換政策</a><a href="#">會員計劃</a><a href="#">神秘包裹</a></div><div class="c2"><h4>搞事</h4><a href="#">聯名洽談</a><a href="#">徵稿</a><a href="#">Pop-up 合作</a><a href="#">傳媒</a></div><div class="c0"><h4>關於</h4><a href="#">品牌故事</a><a href="#">招聘</a><a href="#">條款</a><a href="#">私隱政策</a></div></div>
+      <div class="news">
+        <h4>Drop 通知</h4>
+        <form onsubmit="return false">
+          <input type="email" placeholder="you@example.com" aria-label="Drop 通知">
+          <button class="bt bt-1" type="submit">訂閱</button>
+        </form>
+      </div>
+      <p class="legal">© 2026 Tacky Mart · 示範網站：品牌、聯名、數字同評語全部虛構 · IG · Threads · 小紅書</p>
+    </div>
+  </section>
+</footer>
+
 <script>
-(function(){var s=document.getElementById('seats');if(!s)return;
-var o=document.getElementById('roiOut'),mo=document.getElementById('roiMoney'),so=document.getElementById('seatsOut');
-var H=6,R=900;
-function up(){var n=+s.value;so.textContent=n;var h=Math.round(n*H),m=h*R;
-o.textContent=h+' 小時 / 月';mo.textContent='約 HK$'+m.toLocaleString()+'（對比人手寫同樣嘅 PR）';}
-s.addEventListener('input',up);up();})();
+(function(){
+  if (!matchMedia('(prefers-reduced-motion:no-preference)').matches) {
+    document.documentElement.classList.add('no-anim'); return;
+  }
+  // 自動標記：hero 即刻入，其餘捲到才入
+  document.querySelectorAll('section > .wrap > *, section > *').forEach(function(el){
+    if (el.closest('.hero') || el.classList.contains('curtain')) return;
+    el.setAttribute('data-rv', '');
+  });
+  var io = new IntersectionObserver(function(es){
+    es.forEach(function(e){ if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, {threshold:.12, rootMargin:'0px 0px -8% 0px'});
+  document.querySelectorAll('[data-rv]').forEach(function(el){ io.observe(el); });
+  // 數字滾動
+  document.querySelectorAll('[data-count]').forEach(function(el){
+    var target = parseFloat(el.dataset.count), dec = (String(el.dataset.count).split('.')[1]||'').length;
+    var o = new IntersectionObserver(function(es){
+      es.forEach(function(e){
+        if (!e.isIntersecting) return; o.unobserve(el);
+        var t0 = performance.now(), dur = 1100;
+        (function step(t){
+          var p = Math.min(1, (t - t0) / dur), v = target * (1 - Math.pow(1 - p, 3));
+          el.textContent = v.toFixed(dec).replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+          if (p < 1) requestAnimationFrame(step);
+        })(t0);
+      });
+    }, {threshold:.5}); o.observe(el);
+  });
+  // 載入幕
+  var cur = document.querySelector('.curtain');
+  if (cur) { requestAnimationFrame(function(){ setTimeout(function(){ cur.classList.add('gone'); }, 240); }); }
+  ;
+})();
 </script>
-<script>
-(function(){var f=document.querySelector('#qa form');if(!f)return;
-var b=f.querySelector('button[type=submit]');if(!b)return;
-var live=document.createElement('p');live.className='note';live.setAttribute('aria-live','polite');
-f.appendChild(live);
-f.addEventListener('submit',function(e){e.preventDefault();
-if(b.dataset.state==='loading')return;
-var label=b.textContent;b.dataset.state='loading';b.innerHTML='<span class="spin"></span> 傳送中…';
-setTimeout(function(){b.dataset.state='done';b.textContent='已收到 · 1 個工作日內覆你';
-live.textContent='（示範狀態：真表單要接後端；重新載入可以再試）';
-setTimeout(function(){b.dataset.state='';b.textContent=label;},2600);},900);});})();
-</script>
-<script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script><script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollTrigger.min.js"></script><script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/SplitText.min.js"></script><script src="https://cdn.jsdelivr.net/npm/lenis@1/dist/lenis.min.js"></script><script>window.PRO={"intro": "pop", "reveal": "pop", "ease": "back.out(2.6)", "dur": 0.85, "stagger": 0.1, "lerp": 0.11, "magnetic": 0.38, "cursor": "trail", "trail": ["⭐", "💖", "✨", "🌟"], "trailGlow": true, "trailColors": ["#FFF200", "#FF5FA2", "#8E44FF", "#1DD3B0"], "trailSize": 30, "trailRate": 46, "parallax": 34, "curtain": "#FF5FA2", "grain": 0.07, "counters": ".stats .num", "curtainHTML": "<div style=\"font:400 34px Shrikhand,cursive;color:#FFF200;text-shadow:4px 4px 0 #8E44FF\">so bad it's good</div>"};</script><script src="pro/motion.js"></script>
+
 </body></html>
