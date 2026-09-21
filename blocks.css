@@ -46,6 +46,8 @@ a{color:inherit}
 .hero-art{position:relative;border-radius:var(--radius);min-height:330px;background:var(--art-bg,var(--surface));border:1px solid var(--border);overflow:hidden}
 .hero-art img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
 .hero-art figcaption{position:absolute;left:16px;bottom:14px;font-size:13px;color:var(--muted)}
+/* 有真圖時：圖說要有底片，否則疊喺圖上對比不足（任何圖都讀得到） */
+.hero-art.has-media figcaption{color:#fff;background:rgba(0,0,0,.55);padding:3px 10px;border-radius:999px;backdrop-filter:blur(4px);text-shadow:0 1px 2px rgba(0,0,0,.5)}
 
 /* ---------- 3 trust bar ---------- */
 .trust{display:flex;flex-wrap:wrap;gap:12px 30px;align-items:center}
